@@ -1,0 +1,28 @@
+{
+	"viewHeader": {
+		"disbursementNumber": "Disbursement Number 1234",
+		"disbursementStatus": "Scheduled"
+	},
+	"blueBox": {
+		"amountDisbursed": 1000,
+		"sentDate": "2021-03-19"
+	},
+	"disbursementCard": {
+		"payer": "",
+		"accountOwner": "Ann Barret",
+		"disbursementReason": "",
+		"disbursementChannel": "Check",
+		"issuingCompanyName": "W Insurance Company"
+	},
+	"statementCard": {
+		"disbursementStatement": "0000000002"
+	},
+	"tablesCard": {
+		"DisbursementLines": [{
+			"transactionNumber": "C107",
+			"accountType": "Claim Account",
+			"amountDisbursed": 1000,
+			"canceled": "No"
+		}]
+	}
+}

@@ -1,0 +1,6 @@
+{
+    "paymentId": {"dataType": "string", "defaultValue": ""},
+    "paymentChannel": {"dataType": "string", "defaultValue": ""},
+    "payer": {"dataType": "string", "defaultValue": ""},
+    "issuingCompany": {"dataType": "string", "defaultValue": ""}
+}

@@ -1,0 +1,77 @@
+{
+  "changeConfig": {
+    "leftCard": {
+      "element": ["Current Address"],
+      "className": " col-12 col-lg-5 mb-4 mb-lg-0 p-4 current-address-left-card",
+      "changeType": "Address",
+      "type": "expression",
+      "mappings": [
+        {
+          "mapElement": "currentAddress",     
+
+          "expression":  "`${data.line1 ? `${data.line1}, ` : ''}${data.line2 ? `${data.line2}, ` : ''}${ (data.zipCodeAndCity && data.zipCodeAndCity.city) ? `${data.zipCodeAndCity.city}, ` : '' }${data.district ? `${data.district}, ` : ''}${(data.zipCodeAndCity && data.zipCodeAndCity.zipCode ) ? `${data.zipCodeAndCity.zipCode}, ` : ''}${data.country || ''}`"
+        }
+      ]
+    },
+    "rightCard": {
+      "element": ["New Address"],
+      "className": " col-12 col-lg-6 offset-lg-1 p-4 current-address-right-card",
+      "changeType": "Address",
+      "type": "expression",
+
+      "mappings": [
+        {
+          "mapElement": "newAddress",
+          "expression":  "`${rightData.lineOne ? `${rightData.lineOne}, ` : ''}${rightData.lineTwo ? `${rightData.lineTwo}, ` : ''}${ (rightData.city) ? `${rightData.city}, ` : '' }${rightData.district ? `${rightData.district} ` : ''}${(rightData.zipCode ) ? `${rightData.zipCode}, ` : ''}${rightData.country || ''}`"
+          
+        }
+      ]
+    }
+  },
+  "elements": [
+    [
+      {
+        "name": "effectiveDate",
+        "label": "Effective Date",
+        "placement": "col-lg-3",
+        "type": "readOnly",
+        "getValuesFrom": "NewAddress",
+        "image": "calender_icon_medium.png",
+        "config": {
+          "valueType": "date",
+          "format" : "MM/DD/YYYY"
+        }
+      }
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "Current Address"
+      }
+    ],
+    [
+      {
+        "name": "currentAddress",
+        "type": "readOnly",
+        "label": "Current Address",
+        "value": "",
+        "hideLabel": true
+      }
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "New Address"
+      }
+    ],
+    [
+      {
+        "name": "newAddress",
+        "type": "readOnly",
+        "label": "New Address",
+        "value": "",
+        "hideLabel": true
+      }
+    ]
+  ]
+}

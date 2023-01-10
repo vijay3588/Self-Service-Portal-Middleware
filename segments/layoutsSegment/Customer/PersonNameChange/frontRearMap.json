@@ -1,0 +1,62 @@
+[
+  {
+    "frontDataSegment": "values.NewPersonName",
+    "rearDataSegment": "input",
+    "rearDataSegmentClass":"aSPLI_CreateOrUpdatePerson_Data",
+    "rearDataSegmentType": "object",
+    "mappingSectorOnly":true,
+    "frontSegmentForm": "NewPersonName"
+  },
+  {
+    "frontDataSegment": "values.NewPersonName",
+    "rearDataSegment": "personIdentity",
+    "rearDataSegmentClass":"aSPLI_Person",
+    "rearDataSegmentPath": "input",
+    "rearDataSegmentType": "object",
+    "reduxObject": true,
+    "reduxDataSegmentPath": "loggedUserEntity._Result.personIdentityHistories",
+    "frontSegmentForm": "NewPersonName",
+    "defaultSectorMapping" : [
+      {
+        "frontSector": "",
+        "rearSector": "sSN",
+        "defaultValue": ""
+      }]
+  },
+  {
+    "frontDataSegment": "",
+    "rearDataSegment": "clientId",
+    "rearDataSegmentClass":"clientIds",
+    "rearDataSegmentPath": "input",
+    "rearDataSegmentType": "object",
+    "reduxObject": true,
+    "reduxDataSegmentPath": "loggedUserEntity._Result"
+  },
+  {
+    "frontDataSegment": "",
+    "rearDataSegment": "contactInformations",
+    "rearDataSegmentClass":"aSPCB_ActorContact",
+    "rearDataSegmentPath": "input",
+    "rearDataSegmentType": "object",
+    "reduxObject": true,
+    "reduxDataSegmentPath": "loggedUserEntity._Result"
+  },
+  {
+    "frontDataSegment": "",
+    "rearDataSegment": "correspondences",
+    "rearDataSegmentClass":"aSPCB_Correspondence",
+    "rearDataSegmentPath": "input",
+    "rearDataSegmentType": "object",
+    "reduxObject": true,
+    "reduxDataSegmentPath": "loggedUserEntity._Result"
+  },
+  {
+    "frontDataSegment": "",
+    "rearDataSegment": "paymentMethods",
+    "rearDataSegmentPath": "input",
+    "rearDataSegmentType": "data",
+    "rearSegmentData": [],
+    "reduxObject":true
+  }
+
+]

@@ -1,0 +1,10 @@
+{
+    "externalPolicyId": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "thirdPartyID": {
+        "dataType": "string",
+        "defaultValue": ""
+    }
+}

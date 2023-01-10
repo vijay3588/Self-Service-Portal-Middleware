@@ -1,0 +1,36 @@
+{
+    "name": {
+        "dataType": "string",
+        "defaultValue": "",
+        "dataConfig": {
+            "configType": "additionSector",
+            "sector": "name",
+            "splitText": " "
+        }
+    },
+    "address": {
+        "dataType": "string",
+        "defaultValue": "",
+        "dataConfig": {
+            "configType": "addressFormat",
+            "format": "line1 ? 'line1, ' : ''; line2 ? 'line2, ' : '';  city ? 'city, ' : '';  zipCode ? 'zipCode, ' : '';  country ? 'country ' : ''; ",
+            "subDataSegment": "zipCodeAndCity"
+        }
+    },
+    "eMail": {
+        "dataType": "string",
+        "defaultValue": "",
+        "dataConfig": {
+            "configType": "preText",
+            "text": "Email: "
+        }
+    },
+    "phone": {
+        "dataType": "string",
+        "defaultValue": "",
+        "dataConfig": {
+            "configType": "preText",
+            "text": "Phone: "
+        }
+    }
+}

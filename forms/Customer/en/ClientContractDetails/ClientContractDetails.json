@@ -1,0 +1,371 @@
+{
+	"cards": [{
+		"title": "panelCard",
+		"type": "panelCard",
+		"name": "panelCard",
+		"cardMembers": [
+			{
+				"cardElements": [
+					{
+						"cardConfig": {
+							"showHeader": true,
+							"showFooter": false,
+							"className": "col-md-12 col-lg-12 pr-0",
+							"alignmentClass": "ml-n3"
+						},
+						"panelHeader": {
+							"config": {
+								"style": {
+									"fontSize": "14px",
+									"backgroundColor": "#f8f8f9",
+									"fontFamily": "Roboto",
+									"fontWeight": "500",
+									"fontStretch": "normal",
+									"color": "#333333",
+									"padding": "0px 240px 0px 25px"
+								}
+							},
+							"elements": [
+								{
+									"type": "selectList",
+									"name": "contractNumber",
+									"label": "contractNumber",
+									"placement": "col-lg-6 col-md-10 px-0",
+									"options": "",
+									"optionKind": "apiCall",
+									"config": {
+										"placementClass": "  col-md-8 select-label-content"
+									},
+		
+									"displayConfig": {
+										"show": true,
+										"validation": {
+											"condition": "> 1"
+										},
+										"valuesFrom": "props.selectOptions"
+									},
+									"subElement": {
+										"type": "tile",
+										"name": "paymentStatus",
+										"style": {
+											"fontSize": "12px",
+											"color": "#00a190",
+											"borderRadius": "4px",
+											"border": "solid 1px #00a190"
+										},
+										"config": {
+											"displayName": "InvoiceStatusConstants"
+										},
+										"placement": "col-lg-3 col-sm-5"
+									},
+									"validations": {}
+								}									
+							]
+						},
+						"panelBody": {
+							"config": {
+								"className": "card-scroll"
+							},
+							"elements": [
+								{
+									"title": "treeData1",
+									"type": "TreeCard",
+									"name": "treeData1"
+								}
+							]
+						},
+						"panelFooter": {
+							"elements": []
+						}
+					}
+				]
+			}
+		]
+	}],
+	"treeData1": {
+		"treeGroup": [
+			{
+				"treeBody": [
+					{
+						"treeLayout": [
+							{
+								"section": [
+									[
+										{
+											"text": "Policy ID",
+											"placement": "col-lg-4 col-sm-4; mt-2 text-14b"
+										},
+										{
+											"text": "Effective Date",
+											"placement": "col-lg-2 col-sm-2; mt-2 text-14b"
+										},
+										{
+											"text": "Signature Date",
+											"placement": "col-lg-2 col-sm-2; mt-2 text-14b"
+										},
+										{
+											"text": "Termination Date",
+											"placement": "col-lg-2 col-sm-2; mt-2 text-14b"
+										},
+										{
+											"text": "Status",
+											"placement": "col-lg-2 col-sm-2; mt-2 text-14b"
+										}
+									],
+									[
+										{
+											"collapse": true,
+											"value": "",
+											"placement": "col-lg-4 col-sm-4 prod-text-14",
+											"sector": "internalPolicyId"
+										},
+										{
+											"elementor": true,
+											"content": "",
+											"placement": "row col-lg-2 col-sm-2 prod-text-14",
+											"sector": "effectiveDate",
+											"name": "coverage-effectivedate",
+											"value": "",
+											"type": "readOnly",
+											"insideSpan": true,
+											"config": {
+												"valueType": "date",
+												"format": "MM/DD/YYYY"
+											}
+
+
+										},
+										{
+											"elementor": true,
+											"content": "",
+											"placement": "col-lg-2 col-sm-2 prod-text-14",
+											"sector": "signatureDate",
+											"name": " coverage-subscrpitiondate",
+											"value": "",
+											"type": "readOnly",
+											"insideSpan": true,
+											"config": {
+												"valueType": "date",
+												"format": "MM/DD/YYYY"
+											}
+										},
+										{
+											"elementor": true,
+											"content": "",
+											"placement": "col-lg-2 col-sm-2 prod-text-14",
+											"sector": "terminationDate",
+											"name": " coverage-subscrpitiondate",
+											"value": "",
+											"type": "readOnly",
+											"insideSpan": true,
+											"config": {
+												"valueType": "date",
+												"format": "MM/DD/YYYY"
+											}
+										},
+										{
+											"elementor": true,
+											"content": "",
+											"placement": "col-lg-2 col-sm-2 prod-text-14",
+											"sector": "status",
+											"name": "status-label",
+											"value": "",
+											"type": "tile",
+											"config": {
+												"displayName": "StatusConstants"
+											}
+										},
+										{
+											"subTreeLayout": {
+												"section": [
+													[
+														{
+															"value": "",
+															"placement": "col-lg-2 col-sm-2 text-14b",
+															"sector": "ownerLastName"
+														},
+														{
+															"subTreeLayout": {
+																"section": 
+																[
+																	[
+																		{
+																			"collapse": true,
+																			"value": "Coverage Information",
+																			"placement": "itemText"
+																		},
+																		{
+																			"subTreeLayout": {
+																				"section": 
+																				[
+																					[
+																						{
+																							"text": "Name",
+																							"placement": "col-lg-2 col-sm-2 text-14"
+																						},
+																						{
+																							"text": "Paid To Date",
+																							"placement": "col-lg-2 col-sm-2 text-14"
+																						},
+																						{
+																							"text": "Effective Date",
+																							"placement": "col-lg-2 col-sm-2 text-14"
+																						},
+																						{
+																							"text": "Premium",
+																							"placement": "col-lg-2 col-sm-2 text-14"
+																						},
+																						{
+																							"text": "Coverage Amount",
+																							"placement": "col-lg-2 col-sm-2 text-14"
+																						},
+																						{
+																							"text": "Paid Status",
+																							"placement": "col-lg-2 col-sm-2 text-14"
+																						}
+																					],
+																					[
+																						{
+																							"placement": "col-lg-2 col-sm-2 text-14",
+																							"sector": "name"
+																						},
+																						{
+																							"elementor": true,
+																							"content": "",
+																							"placement": "col-lg-2 col-sm-2 text-14b",
+																							"sector": "paidToDate",
+																							"name": "coverage-effectivedate",
+																							"value": "",
+																							"type": "readOnly",
+																							"insideSpan": true,
+																							"config": {
+																								"valueType": "date",
+																								"format": "MM/DD/YYYY"
+																							}
+																						},
+																						{
+
+																							"elementor": true,
+																							"content": "",
+																							"placement": "col-lg-2 col-sm-2 text-14b",
+																							"sector": "effectiveDate",
+																							"name": "coverage-effectivedate",
+																							"value": "",
+																							"type": "readOnly",
+																							"insideSpan": true,
+																							"config": {
+																								"valueType": "date",
+																								"format": "MM/DD/YYYY"
+																							}
+																						},
+																						{
+																							"placement": "col-lg-2 col-sm-2 text-14",
+																							"sector": "premium"
+																						},
+																						{
+																							"placement": "col-lg-2 col-sm-2 text-14",
+																							"sector": "coverageAmount"
+																						},
+																						{
+																							"placement": "col-lg-2 col-sm-2 text-14",
+																							"sector": "paidStatus"
+																						}
+																					]																					
+																				],
+																				"placement": "subheaderPlainContainer",
+																				"dataSegment": "coverages"
+																			}
+																		},
+																		{
+																			"subTreeLayout": {
+																				"section": 
+																				[
+																					[
+																						{
+																							"text": "Attributes List",
+																							"placement": "col-lg-2 col-sm-2 text-14"
+																						}
+																					],
+																					[
+																						{
+																							"arrayList": true,
+																							"content": {
+																								"header": "fieldName",
+																								"item": "fieldValue",
+																								"sector": "amount"
+																							},
+																							"placement": {
+																								"header": "tableHeader",
+																								"item": "tableItem"
+																							},
+																							"sector": "additionalDatas"
+																						}
+																					]																					
+																				],
+																				"placement": "subheaderPlainContainer",
+																				"dataSegment": "coverages"
+																			}
+																		}
+																	]
+																],
+																"placement": "treeSectionLayout"
+															}
+														}
+													]
+												],
+												"placement": "treeSubLayout"
+												
+											}
+										}
+									]
+								],
+								"placement": "treeBodyLayout",
+								"dataSegment": "lifeContract"
+							}							
+						],
+						"placement": ""
+					}
+				]
+			}
+		]
+	},
+	"placementStyle": [
+
+		{
+			"treeBodyLayout": {
+				"placement": "row col-lg-12 col-sm-12 treeBodyLayout"
+			}
+		},
+		{
+			"treeSubLayout": {
+				"placement": "row col-lg-12 col-sm-12 treeSubLayout list-row"
+			}
+		},
+		{
+			"treeSectionLayout": {
+				"placement": "col-lg-12 col-sm-12 list-row treeSectionLayout"
+			}
+		},
+		{
+			"subheaderPlainContainer": {
+				"placement": "col-lg-11 col-sm-11 text-16 sub-header-plain-container list-border"
+			}
+		},
+		{
+			"itemText": {
+				"placement": "col-lg-3 col-sm-3 text-14"
+			}
+		},
+		{
+			"tableItem": {
+				"placement": "col-lg-3 col-sm-3 prod-text-14 table-item"
+			}
+		},
+		{
+			"tableHeader": {
+				"placement": "col-lg-13 col-sm-3 prod-text-14 table-header"
+			}
+		}
+	]
+}
+

@@ -1,0 +1,9 @@
+[
+  {
+    "frontDataSegment": "additionalInformation",
+    "frontDataSegmentPath": "legalEntityBuid",
+    "rearDataSegment": "legalEntityBuidId",
+    "rearDataSegmentPath": "",
+    "rearDataSegmentType": "object"
+  }
+]

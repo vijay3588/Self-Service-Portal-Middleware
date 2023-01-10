@@ -1,0 +1,12 @@
+{
+  "sectionHeaderBgColor": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "sectionHeaderBreadcrumbsFontColor":{
+    "dataType": "string",
+    "defaultValue": ""
+  }
+
+
+}

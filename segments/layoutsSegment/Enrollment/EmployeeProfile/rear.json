@@ -1,0 +1,29 @@
+{
+  "actor": {
+    "dataType": "object",
+    "name": "aSLI_Manage_Employee"
+  },
+
+  "actorDataExtension": {
+    "dataType": "string",
+    "defaultValue": null
+  },
+  "bUID": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "dataHistory": {
+    "dataType": "array",
+    "defaultValue": []
+  },
+
+  "correspondences": {
+    "dataType": "array",
+    "name": "aSPCB_Correspondence"
+  },
+
+  "className": {
+    "dataType": "string",
+    "defaultValue": "aSPLI_PersonData"
+  }
+}

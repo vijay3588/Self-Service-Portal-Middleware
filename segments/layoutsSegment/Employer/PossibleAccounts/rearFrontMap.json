@@ -1,0 +1,15 @@
+[
+    {
+        "frontSegment": "loanInfo",
+        "dataParentSegment": "",
+        "dataSegmentType": "object",
+        "defaultSectorMapping": [
+            {
+                "frontSector": "possibleAccountBuid",
+                "rearSector": "buid",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            }
+        ]
+    }
+]

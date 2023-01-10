@@ -1,0 +1,66 @@
+{
+  "effectiveDate": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "addressUsage": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "address": {
+    "dataType": "object",
+    "name": "aSPCB_US_PostalAddress"
+  },
+  "isDefaultCorrespondance": {
+    "dataType": "boolean",
+    "defaultValue": ""
+  },
+  "privatePhone": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "privatePhoneExtension": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "officePhone": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "officePhoneExtension": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "cellPhone": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "fax": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "eMail": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "mediaType": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "isInvalid": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "reasonForInvalidAddress": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "buid": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "className": {
+    "dataType": "string",
+    "defaultValue": "aSPCB_Correspondence"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "data": {
+    "dataType": "string",
+    "defaultValue": null
+  },
+  "identifier": {
+    "dataType": "object",
+    "name": "aSPLI_LegalEntityIdentifier"
+  }
+}

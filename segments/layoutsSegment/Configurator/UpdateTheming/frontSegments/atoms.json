@@ -1,0 +1,32 @@
+{
+  "boxcardBgColor": { "dataType": "string", "defaultValue": "" },
+  "linearGradientTopColor": { "dataType": "string", "defaultValue": "" },
+  "linearGradientBottomColor": { "dataType": "string", "defaultValue": "" },
+  "headerBgColor": { "dataType": "string", "defaultValue": "" },
+  "headerFontColor": { "dataType": "string", "defaultValue": "" },
+  "headerHover": { "dataType": "string", "defaultValue": "" },
+  "headerColor": { "dataType": "string", "defaultValue": "" },
+  "treeCardBgColor": { "dataType": "string", "defaultValue": "" },
+  "primaryBgColor": { "dataType": "string", "defaultValue": "" },
+  "primaryColor": { "dataType": "string", "defaultValue": "" },
+  "primaryBgColorHover": { "dataType": "string", "defaultValue": "" },
+  "primaryOutlineHoverColor": { "dataType": "string", "defaultValue": "" },
+  "primaryOutlineBgColor": { "dataType": "string", "defaultValue": "" },
+  "landingPanelLoginButton": { "dataType": "string", "defaultValue": "" },
+  "primaryGroupOutlineBgColor": { "dataType": "string", "defaultValue": "" },
+  "primaryGroupOutlineColor": { "dataType": "string", "defaultValue": "" },
+  "primaryGroupOutlineHoverBgColor": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "primaryGroupOutlineHoverColor": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "radioButtonGroupBgColor": { "dataType": "string", "defaultValue": "" },
+  "radioButtonGroupColor": { "dataType": "string", "defaultValue": "" },
+  "closeButtonBgColor": { "dataType": "string", "defaultValue": "" },
+  "closeButtonColor": { "dataType": "string", "defaultValue": "" },
+  "buttonDropdownItemColor": { "dataType": "string", "defaultValue": "" },
+  "iconDropDownItemColor": { "dataType": "string", "defaultValue": "" }
+}

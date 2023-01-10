@@ -1,0 +1,117 @@
+{
+  "changeConfig": {
+    "leftCard": {
+      "element": ["Current Email","Current Cell Phone"],
+      "className": "col-12 col-lg-5 mb-4 mb-lg-0 p-4 current-address-left-card",
+      "changeType": "Correspondence",
+      "type": "expression",
+      "mappings": [
+        {
+          "mapElement": "currentEmail",
+          "expression": "`${data.eMail || ''}`"  
+        },
+        {
+          "mapElement": "currentCellPhone",
+          "expression": "`${data.cellPhone || ''}`"  
+        }
+      ]
+    },
+    "rightCard": {
+      "element": ["New Email Address", "Email Address","New Cell Phone","Phone Number"],
+      "className": " col-12 col-lg-6 offset-lg-1 p-4 current-address-right-card"
+    }
+  },
+  "elements": [
+    [
+      {
+        "type": "date",
+        "name": "effectiveDate",
+        "rearSector": "effectiveDate",
+        "label": "Effective Date",
+        "placement": "col-md-3",
+        "currentDate": true,
+				"image": "calender_icon_medium.png",
+				"config": {
+					"valueType": "date",
+					"format": "MM/DD/YYYY"
+				},
+        "validations": {
+					"string": {
+						"required": "This field is required"
+					}
+				}
+      }
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "Current Email"
+      }
+    ],
+    [
+      {
+        "name": "currentEmail",
+        "type": "readOnly",
+        "label": "Current Email",
+        "value": "",
+        "hideLabel": true
+      }
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "Current Cell Phone"
+      }
+    ],
+    [
+      {
+        "name": "currentCellPhone",
+        "type": "readOnly",
+        "label": "Current Cell Phone",
+        "value": "",
+        "hideLabel": true
+      }
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "New Email Address"
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "name": "newEmail",
+        "rearSector": "eMail",
+        "label": "Email Address",
+        "validations": {
+          "string": {
+            "required": "mandatory field"
+          }
+        },
+        "placement": "col-md-12 col-12"
+      }
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "New Cell Phone"
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "name": "newCellPhone",
+        "rearSector": "cellPhone",
+        "label": "Phone Number",
+        "validations": {
+          "string": {
+            "required": "mandatory field"
+          }
+        },
+        "placement": "col-md-12 col-12"
+      }
+    ]
+
+  ]
+}

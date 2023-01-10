@@ -1,0 +1,5 @@
+[
+	{ "value": "cttPayment", "text": "Payment" },
+	{ "value": "cttInvoice", "text": "Invoice" },
+	{ "value": "cttDisbursement", "text": "Disbursement" }
+]

@@ -1,0 +1,1708 @@
+{ 
+  "cases": {
+    "open-reenrollment": [
+      "calendarHeader",
+      "daysRemaining",
+      "welcomeBanner",
+      "welcomeTextContainer",
+      "reviewProfile",
+      "dependents",
+      "productElections",
+      "preConfirmation",
+      "records",
+      "listContainerBanner",
+      "elegibleBenefits",
+      "daysLeft",
+      "listComponentBanner",
+      "startEnrollmentBtn",
+      "currentBenefitsPanel",
+      "lifeEventPanel",
+      "profileInformationPanelGroup"
+    ],
+    "editEnrollmentDuringOE": [
+      "calendarHeader",
+      "daysLeftReview",
+      "welcomeBanner",
+      "welcomeTextContainer",
+      "reviewProfile",
+      "dependents",
+      "productElections",
+      "preConfirmation",
+      "records",
+      "listContainerBanner",
+      "enrolledBenefits",
+      "reviewBenefitsElection",
+      "listComponentBanner2",
+      "reviewAndUpdatetBtn",
+      "currentBenefitsPanel",
+      "lifeEventPanel",
+      "profileInformationPanelGroup"
+    ],
+    "newOE": [
+      "calendarHeader",
+      "daysRemaining",
+      "welcomeBanner",
+      "welcomeTextContainer",
+      "reviewProfile",
+      "dependents",
+      "productElections",
+      "preConfirmation",
+      "records",
+      "listContainerBanner",
+      "elegibleBenefits",
+      "daysLeft",
+      "listComponentBanner",
+      "startEnrollmentBtn",
+      "profileInformationPanelNewHire"
+    ],
+    "editNewEnrollmentDuringOE": [
+      "welcomeBanner",
+      "welcomeTextContainer",
+      "reviewProfile",
+      "dependents",
+      "productElections",
+      "preConfirmation",
+      "records",
+      "listContainerBanner",
+      "currentBenefits",
+      "reviewCurrentBenefits",
+      "listComponentBanner2",
+      "reviewAndUpdatetBtn",
+      "lifeEventPanel",
+      "profileInformationPanel"
+    ],
+    "case5": [
+      "calendarHeader",
+      "newHireDaysRemaining",
+      "welcomeBanner",
+      "welcomeTextContainer",
+      "reviewProfile",
+      "dependents",
+      "productElections",
+      "preConfirmation",
+      "records",
+      "listContainerBanner",
+      "newHireEnrollmentCurrent",
+      "daysLeftNewHire",
+      "listComponentBanner",
+      "startEnrollmentBtn",
+      "profileInformationPanelNewHire",
+      "openEnrollmentImagePanel"
+    ],
+    "case6": [
+      "calendarHeader",
+      "newHireDaysRemaining",
+      "welcomeBanner",
+      "welcomeTextContainer",
+      "reviewProfile",
+      "dependents",
+      "productElections",
+      "preConfirmation",
+      "records",
+      "listContainerBanner",
+      "newHireEnrollmentCurrent",
+      "daysLeftNewHire",
+      "listComponentBanner",
+      "startEnrollmentBtn",
+      "profileInformationPanelNewHire"
+    ]
+  },
+  "header": {
+    "view": {
+      "displayName": "Welcome Ann",
+      "title": "Welcome Ann"
+    },
+    "breadcrumbs": [],
+    "leftColumnClass": "col-lg-6 col-md-4 col-12 col-sm-12 py-2",
+    "rightColumnClass": "col-lg-6 col-md-8 col-sm-12 py-2 col-12 d-flex justify-content-end",
+    "elements": [
+      {
+        "id": "calendarHeader",
+        "type": "readOnly",
+        "name": "calendarHeader",
+        "label": "",
+        "readOnlyClassWrapper": "mx-3",
+        "image": "calendar_home.png",
+        "config": {
+          "className": "",
+          "style": {
+            "fontWeight": "600",
+            "color": "#0077A0",
+            "fontSize": "1.25rem",
+            "lineHeight": "1.688rem"
+          }
+        }
+      },
+      {
+        "id": "daysRemaining",
+        "type": "label",
+        "name": "daysRemaining",
+        "label": "2023 Open Enrollment:",
+        "value": "2023 Open Enrollment:",
+        "subtitle": "21 days remaining",
+        "hasSubtitle": true,
+        "config": {
+          "className": "px-0 py-0 mx-0 my-0 listContainerTitle",
+          "subtitleClassName": "px-2 font-weight-normal",
+          "style": {
+            "fontWeight": "600",
+            "color": "#0077A0",
+            "fontSize": "1.25rem",
+            "lineHeight": "1.688rem"
+          }
+        }
+      },
+      {
+        "id": "daysLeftReview",
+        "type": "label",
+        "name": "daysLeftReview",
+        "label": "2023 Open Enrollment:",
+        "value": "2023 Open Enrollment:",
+        "subtitle": "15 days left to review your benefits",
+        "hasSubtitle": true,
+        "config": {
+          "className": "px-0 py-0 mx-0 my-0 listContainerTitle",
+          "subtitleClassName": "px-2 font-weight-normal",
+          "style": {
+            "fontWeight": "600",
+            "color": "#0077A0",
+            "fontSize": "1.25rem",
+            "lineHeight": "1.688rem"
+          }
+        }
+      },
+      {
+        "id": "newHireDaysRemaining",
+        "type": "label",
+        "name": "daysLeftReview",
+        "label": "2022 New Hire Enrollment:",
+        "value": "2022 New Hire Enrollment:",
+        "subtitle": "15 days remaining",
+        "hasSubtitle": true,
+        "config": {
+          "className": "px-0 py-0 mx-0 my-0 listContainerTitle",
+          "subtitleClassName": "px-2 font-weight-normal",
+          "style": {
+            "fontWeight": "600",
+            "color": "#0077A0",
+            "fontSize": "1.25rem",
+            "lineHeight": "1.688rem"
+          }
+        }
+      }
+    ]
+  },
+  "colorBanner": {
+    "className": "d-flex col-12 px-0",
+    "style": {
+      "backgroundColor": "#35425B",
+      "maxHeight": "26.5rem"
+    },
+    "elements": [
+      {
+        "id": "welcomeBanner",
+        "type": "readOnly",
+        "name": "welcomeBanner",
+        "label": "",
+        "image": "welcome-banner.png",
+        "config": {
+          "className": "col-4 align-items-center px-0 col-sm-6 col-md-6 col-lg-4 d-none d-sm-flex d-md-flex d-lg-flex col-xl-4 justify-content-start",
+          "style": {}
+        }
+      },
+      {
+        "id": "welcomeTextContainer",
+        "type": "textContainer",
+        "name": "welcomeTextContainer",
+        "title": "Elect and Manage your benefits enrollments at your fingertips.",
+        "titleStyle": {
+          "fontSize": "2rem",
+          "lineHeight": "2.75rem",
+          "color": "#D1E0EC",
+          "paddingBottom": "1rem"
+        },
+        "titleClassName": "my-0 pt-1",
+        "descriptionContainerStyle": {
+          "fontSize": "0.875rem",
+          "lineHeight": "1.188rem",
+          "color": "#FFFFFF"
+        },
+        "descriptionTitle": "This portal will allow you to enroll in or make changes to the existing enrolled benefits.",
+        "descriptionTitleClassName": "my-3",
+        "descriptionSubtitle": "Follow these steps to enroll.",
+        "descriptionSubtitleClassName": "my-3",
+        "hasList": true,
+        "listClassName": "px-0 my-0",
+        "listElements": [
+          {
+            "id": "reviewProfile",
+            "text": "1. Review your profile",
+            "className": "",
+            "style": {}
+          },
+          {
+            "id": "dependents",
+            "text": "2. Add/Update dependents",
+            "className": "",
+            "style": {}
+          },
+          {
+            "id": "productElections",
+            "text": "3. Make your product elections and select beneficiaries",
+            "className": "",
+            "style": {}
+          },
+          {
+            "id": "preConfirmation",
+            "text": "4. Review the pre-confirmation page and make edits if necessary",
+            "className": "",
+            "style": {}
+          },
+          {
+            "id": "records",
+            "text": "5. Once confirmed, make sure you print your confirmation statement and retain a copy for your records",
+            "className": "",
+            "style": {}
+          }
+        ],
+        "config": {
+          "className": "col-4 py-3 d-sm-none d-none d-md-none d-lg-block col-md-4 col-lg-4 col-xl-4",
+          "style": {
+            "height": "100%",
+            "display": "flex",
+            "flexFlow": "column"
+          }
+        }
+      },
+      {
+        "type": "listContainer",
+        "id": "listContainerBanner",
+        "containerClassName": "my-2 py-4 px-4 mr-3 mr-lg-5 mr-md-5",
+        "containerStyle": {
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": "4px",
+          "height": "95%",
+          "maxHeight": "26.5rem"
+        },
+        "elements": [
+          {
+            "id": "elegibleBenefits",
+            "type": "label",
+            "name": "elegibleBenefits",
+            "label": "2023 Eligible Benefits",
+            "placement": "col-lg-12 col-md-12 text-20",
+            "value": "2023 Eligible Benefits",
+            "config": {
+              "className": "d-flex pb-md-3 pb-2 pb-lg-3 listContainerTitle",
+              "style": {
+                "color": "#001F52",
+                "fontSize": "1.25rem",
+                "lineHeight": "1.688rem",
+                "fontWeight": "600"
+              }
+            }
+          },
+          {
+            "id": "enrolledBenefits",
+            "type": "label",
+            "name": "enrolledBenefits",
+            "label": "2023 Enrolled Benefits",
+            "placement": "col-lg-12 col-md-12 text-20",
+            "value": "2023 Enrolled Benefits",
+            "config": {
+              "className": "d-flex pb-md-3 pb-2 pb-lg-3 listContainerTitle",
+              "style": {
+                "color": "#001F52",
+                "fontSize": "1.25rem",
+                "lineHeight": "1.688rem",
+                "fontWeight": "600"
+              }
+            }
+          },
+          {
+            "id": "currentBenefits",
+            "type": "label",
+            "name": "currentBenefits",
+            "label": "Your Current Benefits",
+            "placement": "col-lg-12 col-md-12 text-20",
+            "value": "Your Current Benefits",
+            "config": {
+              "className": "d-flex pb-md-3 pb-2 pb-lg-3 listContainerTitle",
+              "style": {
+                "color": "#001F52",
+                "fontSize": "1.25rem",
+                "lineHeight": "1.688rem",
+                "fontWeight": "600"
+              }
+            }
+          },
+          {
+            "id": "newHireEnrollment",
+            "type": "label",
+            "name": "newHireEnrollment",
+            "label": "2023 New Hire Enrollment",
+            "placement": "col-lg-12 col-md-12 text-20",
+            "value": "2023 New Hire Enrollment",
+            "config": {
+              "className": "d-flex pb-md-3 pb-2 pb-lg-3 listContainerTitle",
+              "style": {
+                "color": "#001F52",
+                "fontSize": "1.25rem",
+                "lineHeight": "1.688rem",
+                "fontWeight": "600"
+              }
+            }
+          },
+          {
+            "id": "newHireEnrollmentCurrent",
+            "type": "label",
+            "name": "newHireEnrollmentCurrent",
+            "label": "2022 New Hire Enrollment",
+            "placement": "col-lg-12 col-md-12 text-20",
+            "value": "2022 New Hire Enrollment",
+            "config": {
+              "className": "d-flex pb-md-3 pb-2 pb-lg-3 listContainerTitle",
+              "style": {
+                "color": "#001F52",
+                "fontSize": "1.25rem",
+                "lineHeight": "1.688rem",
+                "fontWeight": "600"
+              }
+            }
+          },
+          {
+            "id": "daysLeft",
+            "type": "label",
+            "name": "daysLeft",
+            "label": "Only 21 days left to build your personalized package of benefits for 2023.",
+            "placement": "my-0",
+            "value": "Only 21 days left to build your personalized package of benefits for 2023.",
+            "config": {
+              "className": "d-flex py-2",
+              "style": {
+                "color": "#202020",
+                "fontSize": "0.875rem",
+                "lineHeight": "1.188rem"
+              }
+            }
+          },
+          {
+            "id": "daysLeftNewHire",
+            "type": "label",
+            "name": "daysLeftNewHire",
+            "label": "Only 15 days left to build your personalized package of benefits for 2022.",
+            "placement": "my-0",
+            "value": "Only 15 days left to build your personalized package of benefits for 2022.",
+            "config": {
+              "className": "d-flex py-2",
+              "style": {
+                "color": "#202020",
+                "fontSize": "0.875rem",
+                "lineHeight": "1.188rem"
+              }
+            }
+          },
+          {
+            "id": "reviewBenefitsElection",
+            "type": "label",
+            "name": "reviewBenefitsElection",
+            "label": "You can review and make changes to your benefits election for the year 2023.",
+            "placement": "my-0",
+            "value": "You can review and make changes to your benefits election for the year 2023.",
+            "config": {
+              "className": "d-flex py-2",
+              "style": {
+                "color": "#202020",
+                "fontSize": "0.875rem",
+                "lineHeight": "1.188rem"
+              }
+            }
+          },
+          {
+            "id": "reviewCurrentBenefits",
+            "type": "label",
+            "name": "reviewCurrentBenefits",
+            "label": "Review and update the current benefits for the year 2023.",
+            "placement": "my-0",
+            "value": "Review and update the current benefits for the year 2023.",
+            "config": {
+              "className": "d-flex py-2",
+              "style": {
+                "color": "#202020",
+                "fontSize": "0.875rem",
+                "lineHeight": "1.188rem"
+              }
+            }
+          },
+          {
+            "id": "listComponentBanner",
+            "type": "listComponent",
+            "listClassName": "px-0 my-3 listItemsContainer",
+            "listStyle": {
+              "fontSize": "0.875rem",
+              "lineHeight": "1.188rem",
+              "color": "#202020",
+              "fontWeight": "600",
+              "maxHeight": "12rem",
+              "overflowX": "auto"
+            },
+            "elements": [
+              {
+                "id": "accidentalInsurance",
+                "type": "imageText",
+                "className": "py-2",
+                "style": {
+                  "borderBottom": "1px solid #DADADA"
+                },
+                "name": "Accident Insurance",
+                "label": "Accident Insurance",
+                "containerClassName": "px-3 py-0 my-0",
+                "fileName": "aflac.png",
+                "imageStyle": {
+                  "width": "80px",
+                  "height": "30px"
+                },
+                "textClassName": "px-3 py-0 my-0"
+              },
+              {
+                "id": "criticalIllnessInsurance",
+                "type": "imageText",
+                "className": "py-2",
+                "style": {
+                  "borderBottom": "1px solid #DADADA"
+                },
+                "name": "Critical Illness Insurance",
+                "label": "Critical Illness Insurance",
+                "containerClassName": "px-3 py-0 my-0",
+                "fileName": "aflac.png",
+                "imageStyle": {
+                  "width": "80px",
+                  "height": "30px"
+                },
+                "textClassName": "px-3 py-0 my-0"
+              },
+              {
+                "id": "legalInsurance",
+                "type": "imageText",
+                "className": "py-2",
+                "style": {
+                  "borderBottom": "1px solid #DADADA"
+                },
+                "name": "Legal Insurance",
+                "label": "Legal Insurance",
+                "containerClassName": "px-3 py-0 my-0",
+                "fileName": "Metlife.png",
+                "imageStyle": {
+                  "width": "80px",
+                  "height": "30px"
+                },
+                "textClassName": "px-3 py-0 my-0"
+              },
+              {
+                "id": "identityProtection",
+                "type": "imageText",
+                "className": "py-2",
+                "style": {
+                  "borderBottom": "1px solid #DADADA"
+                },
+                "name": "Identity Protection",
+                "label": "Identity Protection",
+                "containerClassName": "px-3 py-0 my-0",
+                "fileName": "Allstate-Logo.png",
+                "imageStyle": {
+                  "width": "80px",
+                  "height": "30px"
+                },
+                "textClassName": "px-3 py-0 my-0"
+              },
+              {
+                "id": "nationwide",
+                "type": "imageText",
+                "className": "py-2",
+                "style": {
+                  "borderBottom": "1px solid #DADADA"
+                },
+                "name": "Nationwide",
+                "label": "Nationwide",
+                "containerClassName": "px-3 py-0 my-0",
+                "fileName": "nationwide-logo.png",
+                "imageStyle": {
+                  "width": "80px",
+                  "height": "30px"
+                },
+                "textClassName": "px-3 py-0 my-0"
+              }
+            ]
+          },
+          {
+            "id": "listComponentBanner2",
+            "type": "listComponent",
+            "listClassName": "px-0 my-3",
+            "listStyle": {
+              "fontSize": "0.875rem",
+              "lineHeight": "1.188rem",
+              "color": "#202020",
+              "fontWeight": "600",
+              "maxHeight": "16rem",
+              "overflowX": "auto"
+            },
+            "elements": [
+              {
+                "type": "imageText",
+                "className": "py-2",
+                "style": {
+                  "borderBottom": "1px solid #DADADA"
+                },
+                "name": "Accident Insurance",
+                "label": "Accident Insurance",
+                "containerClassName": "px-3 py-0 my-0",
+                "containerStyle": {
+                  "width": "60%"
+                },
+                "fileName": "aflac.png",
+                "imageStyle": {
+                  "width": "80px",
+                  "height": "30px"
+                },
+                "textClassName": "px-2 py-0 my-0",
+                "subtitleClassName": "px-2 py-0 my-0",
+                "subtitleStyle": {
+                  "fontFamily": "NotoSansLight"
+                },
+                "badgeStyle": {
+                  "color": "#002C77",
+                  "backgroundColor": "#C7EDFF",
+                  "border": "1px solid #76D3FF",
+                  "fontSize": "0.625rem",
+                  "borderRadius": "2px"
+                },
+                "bagdeClassName": "py-0 px-2",
+                "badgeContainerStyle": {
+                  "width": "20%",
+                  "alignSelf": "baseline"
+                },
+                "badgeContainerClassName": "d-flex justify-content-end"
+              },
+              {
+                "type": "imageText",
+                "className": "py-2",
+                "style": {
+                  "borderBottom": "1px solid #DADADA"
+                },
+                "name": "Critical Illness Insurance",
+                "label": "Critical Illness Insurance",
+                "containerClassName": "px-3 py-0 my-0",
+                "containerStyle": {
+                  "width": "60%"
+                },
+                "fileName": "aflac.png",
+                "imageStyle": {
+                  "width": "80px",
+                  "height": "30px"
+                },
+                "textClassName": "px-2 py-0 my-0",
+                "subtitleClassName": "px-2 py-0 my-0",
+                "subtitleStyle": {
+                  "fontFamily": "NotoSansLight"
+                },
+                "badgeStyle": {
+                  "color": "#002C77",
+                  "backgroundColor": "#C7EDFF",
+                  "border": "1px solid #76D3FF",
+                  "fontSize": "0.625rem",
+                  "borderRadius": "2px"
+                },
+                "bagdeClassName": "py-0 px-2",
+                "badgeContainerStyle": {
+                  "width": "20%",
+                  "alignSelf": "baseline"
+                },
+                "badgeContainerClassName": "d-flex justify-content-end"
+              },
+              {
+                "type": "imageText",
+                "className": "py-2",
+                "style": {
+                  "borderBottom": "1px solid #DADADA"
+                },
+                "name": "Legal Insurance",
+                "label": "Legal Insurance",
+                "containerClassName": "px-3 py-0 my-0",
+                "fileName": "Metlife.png",
+                "containerStyle": {
+                  "width": "60%"
+                },
+                "imageStyle": {
+                  "width": "80px",
+                  "height": "30px"
+                },
+                "textClassName": "px-2 py-0 my-0",
+                "badge": "Waived",
+                "subtitleClassName": "px-2 py-0 my-0",
+                "subtitleStyle": {
+                  "fontFamily": "NotoSansLight"
+                },
+                "badgeStyle": {
+                  "color": "#565656",
+                  "backgroundColor": "#EBEBEB",
+                  "border": "1px solid #DADADA",
+                  "fontSize": "0.625rem",
+                  "borderRadius": "2px"
+                },
+                "bagdeClassName": "py-0 px-2",
+                "badgeContainerStyle": {
+                  "width": "20%",
+                  "alignSelf": "baseline"
+                },
+                "badgeContainerClassName": "d-flex justify-content-end"
+              },
+              {
+                "id": "identityProtection",
+                "type": "imageText",
+                "className": "py-2",
+                "style": {
+                  "borderBottom": "1px solid #DADADA"
+                },
+                "name": "Identity Protection",
+                "label": "Identity Protection",
+                "containerClassName": "px-3 py-0 my-0",
+                "fileName": "Allstate-Logo.png",
+                "containerStyle": {
+                  "width": "60%"
+                },
+                "imageStyle": {
+                  "width": "80px",
+                  "height": "30px"
+                },
+                "textClassName": "px-2 py-0 my-0",
+                "badge": "Waived",
+                "subtitleClassName": "px-2 py-0 my-0",
+                "subtitleStyle": {
+                  "fontFamily": "NotoSansLight"
+                },
+                "badgeStyle": {
+                  "color": "#565656",
+                  "backgroundColor": "#EBEBEB",
+                  "border": "1px solid #DADADA",
+                  "fontSize": "0.625rem",
+                  "borderRadius": "2px"
+                },
+                "bagdeClassName": "py-0 px-2",
+                "badgeContainerStyle": {
+                  "width": "20%",
+                  "alignSelf": "baseline"
+                },
+                "badgeContainerClassName": "d-flex justify-content-end"
+              }
+            ]
+          },
+          {
+            "id": "startEnrollmentBtn",
+            "type": "button",
+            "name": "Get Started",
+            "className": "my-3 d-flex my-lg-5 my-md-4 current-benefits-get-started",
+            "hidden": false,
+            "config": {
+              "type": "redirect",
+              "redirectURL": "/enrollment/employeeProfile"
+            },
+
+            "apiCallURL": [
+              {
+                "url": "/initNewEnrollmentProcess",
+                "method": "POST",
+                "payload": [
+                  {
+                    "payloadType": "evalString",
+                    "payloadKey": "data",
+                    "payloadValue": "formik.values"
+                  },
+                  {
+                    "payloadType": "evalObject",
+                    "payloadKey": "currentReduxState",
+                    "payloadValue": [
+                      {
+                        "reduxKey": "employeeBuid",
+                        "reduxValue": "currentReduxState.auth?.loggedUserEntity?.data?.personDetails?._Result[0]?.bUID"
+                      },
+                      {
+                        "reduxKey": "contractBuid",
+                        "reduxValue": "currentReduxState.entities?.response?.onLoadResponseList?.SearchGBPForLegalEntity?._Result[0]?.contract?.buid"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "url": "/getListOfEligibleProducts",
+                "method": "POST",
+                "payload": [
+                  {
+                    "payloadType": "evalString",
+                    "payloadKey": "processBuid",
+                    "payloadValue": "respArray[0]?._Result?.processEntity?.buid"
+                  }
+                ]
+              }
+            
+              
+            ],
+            "label": "Get Started",
+            "apiCall": true,
+            "placement": "",
+            "header": false,
+            "outerDiv": true,
+            "validations": {}
+          },
+          {
+            "id": "reviewAndUpdatetBtn",
+            "type": "button",
+            "name": "Review and Update",
+            "className": "my-3 d-flex my-lg-4 my-md-4 current-benefits-button",
+            "hidden": false,
+            "config": {
+              "type": "redirect",
+              "redirectURL": "/enrollment/employeeProfile"
+            },
+            "label": "Review and Update",
+            "apiCall": true,
+            "placement": "",
+            "header": false,
+            "outerDiv": true,
+            "validations": {}
+          }
+        ],
+        "config": {
+          "className": "col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 pr-0 pl-md-4 pl-lg-4",
+          "style": {}
+        }
+      }
+    ]
+  },
+  "cards": [
+    {
+      "title": "panelCard",
+      "type": "panelCard",
+      "name": "panelCard",
+      "config": {
+        "className": "px-md-5"
+      },
+      "cardMembers": [
+        {
+          "id": "currentBenefitsPanel",
+          "hasContainer": false,
+          "containerClassName": "",
+          "cardElements": [
+            {
+              "cardConfig": {
+                "showHeader": false,
+                "showFooter": false,
+                "className": "col-md-6 col-lg-4 mb-3 panelContainerCurrentBefefits",
+                "style": {
+                  "height": "100%",
+                  "minHeight": "26.5rem"
+                }
+              },
+              "panelHeader": {
+                "config": {
+                  "style": {
+                    "fontSize": "14px",
+                    "backgroundColor": "#F8FAFC",
+                    "fontFamily": "Roboto",
+                    "fontWeight": "500",
+                    "fontStretch": "normal",
+                    "color": "#333333",
+                    "padding": ""
+                  }
+                },
+                "elements": []
+              },
+              "panelBody": {
+                "config": {
+                  "className": "card-scroll panelSimpleContainer",
+                  "style": {
+                    "width": "100%"
+                  }
+                },
+                "elements": [
+                  {
+                    "type": "listContainer",
+                    "containerClassName": "",
+                    "containerStyle": {
+                      "backgroundColor": "#F8FAFC",
+                      "borderRadius": "4px"
+                    },
+                    "elements": [
+                      {
+                        "type": "label",
+                        "name": "currentBenefits",
+                        "label": "Current Benefits 2022",
+                        "placement": "col-lg-12 col-md-12 text-20 ",
+                        "value": "Current Benefits 2022",
+                        "config": {
+                          "className": "d-flex panel-title",
+                          "style": {
+                            "color": "#001F52",
+                            "fontSize": "1.25rem",
+                            "lineHeight": "1.688rem",
+                            "fontFamily": "NotoSansMedium"
+                          }
+                        }
+                      },
+                      {
+                        "type": "label",
+                        "name": "reviewCurrentBenefits",
+                        "label": "Review and make changes to the current benefits for the year 2022.",
+                        "placement": "",
+                        "value": "Review and make changes to the current benefits for the year 2022.",
+                        "config": {
+                          "className": "d-flex panel-text",
+                          "style": {
+                            "color": "#202020",
+                            "fontSize": "0.875rem",
+                            "lineHeight": "1.188rem"
+                          }
+                        }
+                      },
+                      {
+                        "type": "listComponent",
+                        "listClassName": "px-0 my-0 mx-0 panel-list",
+                        "listStyle": {
+                          "fontSize": "0.875rem",
+                          "lineHeight": "1.188rem",
+                          "color": "#202020",
+                          "fontWeight": "600",
+                          "maxHeight": "16rem",
+                          "overflowX": "auto"
+                        },
+                        "elements": [
+                          {
+                            "type": "imageText",
+                            "className": "py-2",
+                            "style": {
+                              "borderBottom": "1px solid #DADADA"
+                            },
+                            "name": "Accident Insurance",
+                            "label": "Accident Insurance",
+                            "containerClassName": "px-3 py-0 my-0",
+                            "containerStyle": {
+                              "width": "60%"
+                            },
+                            "fileName": "aflac.png",
+                            "imageStyle": {
+                              "width": "80px",
+                              "height": "30px"
+                            },
+                            "textClassName": "px-2 py-0 my-0",
+                            "subtitleClassName": "px-2 py-0 my-0",
+                            "subtitleStyle": {
+                              "fontFamily": "NotoSansLight"
+                            },
+                            "subtitle":  "Employee + Spouse",
+                            "badgeStyle": {
+                              "color": "#002C77",
+                              "backgroundColor": "#C7EDFF",
+                              "border": "1px solid #76D3FF",
+                              "fontSize": "0.625rem",
+                              "borderRadius": "2px"
+                            },
+                            "bagdeClassName": "py-0 px-2",
+                            "badgeContainerStyle": {
+                              "width": "20%",
+                              "alignSelf": "baseline"
+                            },
+                            "badgeContainerClassName": "d-flex justify-content-end"
+                          },
+                          {
+                            "type": "imageText",
+                            "className": "py-2",
+                            "style": {
+                              "borderBottom": "1px solid #DADADA"
+                            },
+                            "name": "Critical Illness Insurance",
+                            "label": "Critical Illness Insurance",
+                            "containerClassName": "px-3 py-0 my-0",
+                            "containerStyle": {
+                              "width": "60%"
+                            },
+                            "fileName": "aflac.png",
+                            "imageStyle": {
+                              "width": "80px",
+                              "height": "30px"
+                            },
+                            "textClassName": "px-2 py-0 my-0",
+                            "subtitleClassName": "px-2 py-0 my-0",
+                            "subtitleStyle": {
+                              "fontFamily": "NotoSansLight"
+                            },
+                            "subtitle":  "Value - $20,000.00",
+                            "badgeStyle": {
+                              "color": "#002C77",
+                              "backgroundColor": "#C7EDFF",
+                              "border": "1px solid #76D3FF",
+                              "fontSize": "0.625rem",
+                              "borderRadius": "2px"
+                            },
+                            "bagdeClassName": "py-0 px-2",
+                            "badgeContainerStyle": {
+                              "width": "20%",
+                              "alignSelf": "baseline"
+                            },
+                            "badgeContainerClassName": "d-flex justify-content-end"
+                          },
+                          {
+                            "type": "imageText",
+                            "className": "py-2",
+                            "style": {
+                              "borderBottom": "1px solid #DADADA"
+                            },
+                            "name": "Legal Insurance",
+                            "label": "Legal Insurance",
+                            "containerClassName": "px-3 py-0 my-0",
+                            "fileName": "Metlife.png",
+                            "containerStyle": {
+                              "width": "60%"
+                            },
+                            "imageStyle": {
+                              "width": "80px",
+                              "height": "30px"
+                            },
+                            "textClassName": "px-2 py-0 my-0",
+                            "badge": "Waived",
+                            "subtitleClassName": "px-2 py-0 my-0",
+                            "subtitleStyle": {
+                              "fontFamily": "NotoSansLight"
+                            },
+                            "badgeStyle": {
+                              "color": "#565656",
+                              "backgroundColor": "#EBEBEB",
+                              "border": "1px solid #DADADA",
+                              "fontSize": "0.625rem",
+                              "borderRadius": "2px"
+                            },
+                            "bagdeClassName": "py-0 px-2",
+                            "badgeContainerStyle": {
+                              "width": "20%",
+                              "alignSelf": "baseline"
+                            },
+                            "badgeContainerClassName": "d-flex justify-content-end"
+                          },
+                          {
+                            "id": "identityProtection",
+                            "type": "imageText",
+                            "className": "py-2",
+                            "style": {
+                              "borderBottom": "1px solid #DADADA"
+                            },
+                            "name": "Identity Protection",
+                            "label": "Identity Protection",
+                            "containerClassName": "px-3 py-0 my-0",
+                            "fileName": "Allstate-Logo.png",
+                            "containerStyle": {
+                              "width": "60%"
+                            },
+                            "imageStyle": {
+                              "width": "80px",
+                              "height": "30px"
+                            },
+                            "textClassName": "px-2 py-0 my-0",
+                            "badge": "Waived",
+                            "subtitleClassName": "px-2 py-0 my-0",
+                            "subtitleStyle": {
+                              "fontFamily": "NotoSansLight"
+                            },
+                            "badgeStyle": {
+                              "color": "#565656",
+                              "backgroundColor": "#EBEBEB",
+                              "border": "1px solid #DADADA",
+                              "fontSize": "0.625rem",
+                              "borderRadius": "2px"
+                            },
+                            "bagdeClassName": "py-0 px-2",
+                            "badgeContainerStyle": {
+                              "width": "20%",
+                              "alignSelf": "baseline"
+                            },
+                            "badgeContainerClassName": "d-flex justify-content-end"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "button",
+                        "name": "reviewUpdate",
+                        "label": "Review and Update",
+                        "outline": true,
+                        "placement": "col-md-12 col-lg-12",
+                        "className": "px-3 py-1 list-button"
+                      }
+                    ],
+                    "config": {
+                      "className": "col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4",
+                      "style": {}
+                    }
+                  }
+                ]
+              },
+              "panelFooter": {
+                "elements": []
+              }
+            }
+          ]
+        },
+        {
+          "id": "lifeEventPanel",
+          "hasContainer": false,
+          "containerClassName": "",
+          "cardElements": [
+            {
+              "cardConfig": {
+                "showHeader": false,
+                "showFooter": false,
+                "className": "col-md-6 col-lg-4 mb-3",
+                "style": {
+                  "height": "100%"
+                }
+              },
+              "panelHeader": {
+                "config": {
+                  "style": {
+                    "fontSize": "14px",
+                    "backgroundColor": "#f8f8f9",
+                    "fontFamily": "Roboto",
+                    "fontWeight": "500",
+                    "fontStretch": "normal",
+                    "color": "#333333",
+                    "padding": ""
+                  }
+                },
+                "elements": []
+              },
+              "panelBody": {
+                "config": {
+                  "className": "card-scroll panelSimpleContainer",
+                  "style": {
+                    "width": "100%",
+                    "minHeight": "26.75rem"
+                  }
+                },
+                "elements": [
+                  {
+                    "type": "label",
+                    "name": "LifeEventTitle",
+                    "label": "Have You Had a Life Event?",
+                    "placement": "col-lg-12 col-md-12 text-20 panel-title",
+                    "value": "Have You Had a Life Event?",
+                    "config": {
+                      "className": ""
+                    }
+                  },
+                  {
+                    "type": "label",
+                    "name": "LifeEventContent",
+                    "label": "Certain changes in your life make you eligible to update or change your benefits outside of the regular Open Enrollment period.",
+                    "placement": "col-lg-12 col-md-12 text-14 panel-text",
+                    "value": "Certain changes in your life make you eligible to update or change your benefits outside of the regular Open Enrollment period.",
+                    "config": {
+                      "className": ""
+                    }
+                  },
+                  {
+                    "type": "label",
+                    "name": "LifeEventHeaderInfo",
+                    "label": "* You have 30 days from the date of selected life event to make changes to benefit elections.",
+                    "placement": "col-lg-12 col-md-12 text-italic panel-subtext",
+                    "value": "* You have 30 days from the date of selected life event to make changes to benefit elections.",
+                    "config": {
+                      "className": ""
+                    }
+                  },
+
+                  {
+                    "type": "label",
+                    "name": "LifeEventInlineHeader",
+                    "label": "What is Life Event?",
+                    "placement": "col-lg-12 col-md-12 text-inline-header",
+                    "value": "What is Life Event?",
+                    "config": {
+                      "className": ""
+                    }
+                  },
+                  {
+                    "type": "label",
+                    "name": "LifeEventInlineContent",
+                    "label": "A change in your situation — like getting married, having a baby, that can make you eligible for a Special Enrollment Period, allowing you to enroll in health insurance outside the yearly Open Enrollment Period.",
+                    "placement": "col-lg-12 col-md-12 text-inline",
+                    "value": "A change in your situation — like getting married, having a baby, that can make you eligible for a Special Enrollment Period, allowing you to enroll in health insurance outside the yearly Open Enrollment Period.",
+                    "config": {
+                      "className": "",
+                      "style": {
+                        "minHeight": "5rem"
+                      }
+                    }
+                  },
+                  {
+                    "type": "button",
+                    "name": "Register a Life Event",
+                    "label": "Register a Life Event",
+                    "outline": true,
+                    "placement": "",
+                    "className": "px-3 py-1 life-event-button",
+                    "config": {
+                      "type": "redirect",
+                      "redirectURL": "/enrollment/lifeEvent"
+                    }
+                  }
+                ]
+              },
+              "panelFooter": {
+                "elements": []
+              }
+            }
+          ]
+        },
+        {
+          "id": "profileInformationPanel",
+          "hasContainer": true,
+          "containerClassName": "col-md-6 col-lg-8 mb-3 mb-lg-0 d-flex flex-column flex-lg-row justify-content-between",
+          "cardElements": [
+            {
+              "cardConfig": {
+                "showHeader": false,
+                "showFooter": false,
+                "className": "pr-lg-2"
+              },
+              "panelHeader": {
+                "config": {
+                  "style": {
+                    "fontSize": "14px",
+                    "backgroundColor": "#f8f8f9",
+                    "fontFamily": "Roboto",
+                    "fontWeight": "500",
+                    "fontStretch": "normal",
+                    "color": "#333333",
+                    "padding": ""
+                  }
+                },
+                "elements": []
+              },
+              "panelBody": {
+                "config": {
+                  "className": "card-scroll panelSimpleContainer",
+                  "style": {
+                    "minHeight": "12.5rem",
+                    "overflow": "hidden"
+                  }
+                },
+                "elements": [
+                  {
+                    "type": "label",
+                    "name": "ProfileBodyHeader",
+                    "label": "Keeping Your Profile Information Up to Date",
+                    "placement": "col-lg-12 col-md-12  text-16 panel-title",
+                    "value": "Keeping Your Profile Information Up to Date",
+                    "config": {
+                      "className": ""
+                    }
+                  },
+                  {
+                    "type": "label",
+                    "name": "ProfileBodyContent",
+                    "label": "Make sure your profile information kept up to date as it may impact your benefits.",
+                    "placement": "col-lg-12 col-md-12 text-14 panel-text",
+                    "value": "Make sure your profile information kept up to date as it may impact your benefits.",
+                    "config": {
+                      "className": ""
+                    }
+                  },
+                  {
+                    "type": "button",
+                    "name": "ManageProfile",
+                    "label": "Manage Profile",
+                    "outline": true,
+                    "placement": "",
+                    "className": "px-3 py-1 panel-button"
+                  }
+                ]
+              },
+              "panelFooter": {
+                "elements": []
+              }
+            },
+            {
+              "cardConfig": {
+                "showHeader": false,
+                "showFooter": false,
+                "className": "mt-3 mt-lg-0 pl-lg-4"
+              },
+              "panelHeader": {
+                "config": {
+                  "style": {
+                    "fontSize": "14px",
+                    "backgroundColor": "#f8f8f9",
+                    "fontFamily": "Roboto",
+                    "fontWeight": "500",
+                    "fontStretch": "normal",
+                    "color": "#333333",
+                    "padding": ""
+                  }
+                },
+                "elements": []
+              },
+              "panelBody": {
+                "config": {
+                  "className": "card-scroll panelSimpleContainer",
+                  "style": {
+                    "minHeight": "12.5rem",
+                    "overflow": "hidden"
+                  }
+                },
+                "elements": [
+                  {
+                    "type": "label",
+                    "name": "manageBeneficiariesBodyHeader",
+                    "label": "View and Manage Your Beneficiaries",
+                    "placement": "col-lg-12 col-md-12 text-16 panel-title",
+                    "value": "View and Manage Your Beneficiaries",
+                    "config": {
+                      "className": ""
+                    }
+                  },
+                  {
+                    "type": "label",
+                    "name": "manageBeneficiariesBodyContent",
+                    "label": "Review that the beneficiary information on the file for your benefits is accurate.",
+                    "placement": "col-lg-12 col-md-12 text-14 panel-text",
+                    "value": "Review that the beneficiary information on the file for your benefits is accurate.",
+                    "config": {
+                      "className": ""
+                    }
+                  },
+
+                  {
+                    "type": "button",
+                    "name": "manageBeneficiary",
+                    "label": "Manage Beneficiary",
+                    "outline": true,
+                    "placement": "",
+                    "className": "px-3 py-1 panel-button"
+                  }
+                ]
+              },
+              "panelFooter": {
+                "elements": []
+              }
+            }
+          ]
+        },
+        {
+          "id": "profileInformationPanelGroup",
+          "hasContainer": true,
+          "containerClassName": "col-md-6 col-lg-4 mb-3 d-flex flex-column justify-content-between",
+          "cardElements": [
+            {
+              "cardConfig": {
+                "showHeader": false,
+                "showFooter": false,
+                "className": ""
+              },
+              "panelHeader": {
+                "config": {
+                  "style": {
+                    "fontSize": "14px",
+                    "backgroundColor": "#f8f8f9",
+                    "fontFamily": "Roboto",
+                    "fontWeight": "500",
+                    "fontStretch": "normal",
+                    "color": "#333333",
+                    "padding": ""
+                  }
+                },
+                "elements": []
+              },
+              "panelBody": {
+                "config": {
+                  "className": "card-scroll panelSimpleContainer"
+                },
+                "elements": [
+                  {
+                    "type": "label",
+                    "name": "ProfileBodyHeader",
+                    "label": "Keeping Your Profile Information Up to Date",
+                    "placement": "col-lg-12 col-md-12 text-16 panel-title",
+                    "value": "Keeping Your Profile Information Up to Date",
+                    "config": {
+                      "className": ""
+                    }
+                  },
+                  {
+                    "type": "label",
+                    "name": "ProfileBodyContent",
+                    "label": "Make sure your profile information kept up to date as it may impact your benefits.",
+                    "placement": "col-lg-12 col-md-12 text-14 panel-text",
+                    "value": "Make sure your profile information kept up to date as it may impact your benefits.",
+                    "config": {
+                      "className": ""
+                    }
+                  },
+                  {
+                    "type": "button",
+                    "name": "ManageProfile",
+                    "label": "Manage Profile",
+                    "outline": true,
+                    "placement": "",
+                    "className": "px-3 py-1 panel-button"
+                  }
+                ]
+              },
+              "panelFooter": {
+                "elements": []
+              }
+            },
+            {
+              "cardConfig": {
+                "showHeader": false,
+                "showFooter": false,
+                "className": "mt-3"
+              },
+              "panelHeader": {
+                "config": {
+                  "style": {
+                    "fontSize": "14px",
+                    "backgroundColor": "#f8f8f9",
+                    "fontFamily": "Roboto",
+                    "fontWeight": "500",
+                    "fontStretch": "normal",
+                    "color": "#333333",
+                    "padding": ""
+                  }
+                },
+                "elements": []
+              },
+              "panelBody": {
+                "config": {
+                  "className": "card-scroll panelSimpleContainer"
+                },
+                "elements": [
+                  {
+                    "type": "label",
+                    "name": "manageBeneficiariesBodyHeader",
+                    "label": "View and Manage Your Beneficiaries",
+                    "placement": "col-lg-12 col-md-12 text-16 panel-title",
+                    "value": "View and Manage Your Beneficiaries",
+                    "config": {
+                      "className": ""
+                    }
+                  },
+                  {
+                    "type": "label",
+                    "name": "manageBeneficiariesBodyContent",
+                    "label": "Review that the beneficiary information on the file for your benefits is accurate.",
+                    "placement": "col-lg-12 col-md-12 text-14 panel-text",
+                    "value": "Review that the beneficiary information on the file for your benefits is accurate.",
+                    "config": {
+                      "className": ""
+                    }
+                  },
+
+                  {
+                    "type": "button",
+                    "name": "manageBeneficiary",
+                    "label": "Manage Beneficiary",
+                    "outline": true,
+                    "placement": "",
+                    "className": "px-3 py-1 panel-button"
+                  }
+                ]
+              },
+              "panelFooter": {
+                "elements": []
+              }
+            }
+          ]
+        },
+        {
+          "id": "profileInformationPanelSingle",
+          "hasContainer": true,
+          "containerClassName": "col-md-6 col-lg-4 mb-3 d-flex flex-column justify-content-between",
+          "cardElements": [
+            {
+              "cardConfig": {
+                "showHeader": false,
+                "showFooter": false,
+                "className": ""
+              },
+              "panelHeader": {
+                "config": {
+                  "style": {
+                    "fontSize": "14px",
+                    "backgroundColor": "#f8f8f9",
+                    "fontFamily": "Roboto",
+                    "fontWeight": "500",
+                    "fontStretch": "normal",
+                    "color": "#333333",
+                    "padding": ""
+                  }
+                },
+                "elements": []
+              },
+              "panelBody": {
+                "config": {
+                  "className": "card-scroll",
+                  "style": {
+                    "minHeight": "16rem",
+                    "padding": "20px !important"
+                  }
+                },
+                "elements": [
+                  {
+                    "type": "label",
+                    "name": "ProfileBodyHeader",
+                    "label": "Keeping Your Profile Information Up to Date",
+                    "placement": "col-lg-12 col-md-12  text-16",
+                    "value": "Keeping Your Profile Information Up to Date",
+                    "config": {
+                      "className": "",
+                      "style": {
+                        "padding": "0 !important",
+                        "paddingBottom": "16px !important"
+                      }
+                    }
+                  },
+                  {
+                    "type": "label",
+                    "name": "ProfileBodyContent",
+                    "label": "Make sure your profile information kept up to date as it may impact your benefits.",
+                    "placement": "col-lg-12 col-md-12 text-14",
+                    "value": "Make sure your profile information kept up to date as it may impact your benefits.",
+                    "config": {
+                      "className": "",
+                      "style": {
+                        "padding": "0 !important"
+                      }
+                    }
+                  },
+                  {
+                    "type": "button",
+                    "name": "ManageProfile",
+                    "label": "Manage Profile",
+                    "outline": true,
+                    "placement": "px-md-2 px-2",
+                    "className": "mt-5 px-3 py-1 mb-md-3",
+                    "config": {
+                      "style": {
+                        "padding": "0 !important",
+                        "margin": "0 !important",
+                        "marginTop": "50px !important"
+                      }
+                    }
+                  }
+                ]
+              },
+              "panelFooter": {
+                "elements": []
+              }
+            }
+          ]
+        },
+        {
+          "id": "profileInformationPanelNewHire",
+          "hasContainer": true,
+          "containerClassName": "col-md-6 col-lg-4 mb-3 d-flex flex-column justify-content-between",
+          "cardElements": [
+            {
+              "cardConfig": {
+                "showHeader": false,
+                "showFooter": false,
+                "className": ""
+              },
+              "panelHeader": {
+                "config": {
+                  "style": {
+                    "fontSize": "14px",
+                    "backgroundColor": "#f8f8f9",
+                    "fontFamily": "Roboto",
+                    "fontWeight": "500",
+                    "fontStretch": "normal",
+                    "color": "#333333",
+                    "padding": ""
+                  }
+                },
+                "elements": []
+              },
+              "panelBody": {
+                "config": {
+                  "className": "card-scroll panelSimpleContainer",
+                  "style": {
+                    "minHeight": "12.5rem",
+                    "overflow": "hidden"
+                  }
+                },
+                "elements": [
+                  {
+                    "type": "label",
+                    "name": "ProfileBodyHeader",
+                    "label": "Keeping Your Profile Information Up to Date",
+                    "placement": "col-lg-12 col-md-12 text-16 panel-title",
+                    "value": "Keeping Your Profile Information Up to Date",
+                    "config": {
+                      "className": ""
+                    }
+                  },
+                  {
+                    "type": "label",
+                    "name": "ProfileBodyContent",
+                    "label": "Make sure your profile information kept up to date as it may impact your benefits.",
+                    "placement": "col-lg-12 col-md-12 text-14 py-2 panel-text",
+                    "value": "Make sure your profile information kept up to date as it may impact your benefits.",
+                    "config": {
+                      "className": ""
+                    }
+                  },
+                  {
+                    "type": "button",
+                    "name": "ManageProfile",
+                    "label": "Manage Profile",
+                    "outline": true,
+                    "placement": "",
+                    "className": "px-3 py-1 panel-button"
+                  }
+                ]
+              },
+              "panelFooter": {
+                "elements": []
+              }
+            }
+          ]
+        },
+        {
+          "id": "manageBeneficiariesPanel",
+          "hasContainer": true,
+          "containerClassName": "col-md-6 col-lg-4 mb-3 d-flex flex-column justify-content-between",
+          "cardElements": [
+            {
+              "cardConfig": {
+                "showHeader": false,
+                "showFooter": false,
+                "className": ""
+              },
+              "panelHeader": {
+                "config": {
+                  "style": {
+                    "fontSize": "14px",
+                    "backgroundColor": "#f8f8f9",
+                    "fontFamily": "Roboto",
+                    "fontWeight": "500",
+                    "fontStretch": "normal",
+                    "color": "#333333",
+                    "padding": ""
+                  }
+                },
+                "elements": []
+              },
+              "panelBody": {
+                "config": {
+                  "className": "card-scroll panelContainer",
+                  "style": {
+                    "minHeight": "13.5rem"
+                  }
+                },
+                "elements": [
+                  {
+                    "type": "label",
+                    "name": "manageBeneficiariesBodyHeader",
+                    "label": "View and Manage Your Beneficiaries",
+                    "placement": "col-lg-12 col-md-12 text-16",
+                    "value": "View and Manage Your Beneficiaries",
+                    "config": {
+                      "className": ""
+                    }
+                  },
+                  {
+                    "type": "label",
+                    "name": "manageBeneficiariesBodyContent",
+                    "label": "Review that the beneficiary information on the file for your benefits is accurate.",
+                    "placement": "col-lg-12 col-md-12 text-14 py-2",
+                    "value": "Review that the beneficiary information on the file for your benefits is accurate.",
+                    "config": {
+                      "className": ""
+                    }
+                  },
+
+                  {
+                    "type": "button",
+                    "name": "manageBeneficiary",
+                    "label": "Manage Beneficiary",
+                    "outline": true,
+                    "placement": "px-md-2 px-2",
+                    "className": "px-3 py-1 mb-md-3 mt-3 mt-md-5 mt-lg-5"
+                  }
+                ]
+              },
+              "panelFooter": {
+                "elements": []
+              }
+            }
+          ]
+        },
+        {
+          "id": "openEnrollmentImagePanel",
+          "hasContainer": false,
+          "containerClassName": "col-md-6 col-lg-4 mb-3 d-flex flex-column justify-content-between",
+          "cardElements": [
+            {
+              "cardConfig": {
+                "showHeader": false,
+                "showFooter": false,
+                "showBorder": false,
+                "alignmentClass": "",
+                "className": "col-md-12 col-lg-8 mb-3"
+              },
+              "panelHeader": {
+                "config": {
+                  "style": {
+                    "fontSize": "14px",
+                    "backgroundColor": "#f8f8f9",
+                    "fontFamily": "Roboto",
+                    "fontWeight": "500",
+                    "fontStretch": "normal",
+                    "color": "#333333",
+                    "padding": ""
+                  }
+                },
+                "elements": []
+              },
+              "panelBody": {
+                "config": {
+                  "className": "",
+                  "alignment": "row"
+                },
+                "elements": [
+                  {
+                    "type": "readOnly",
+                    "name": "contract",
+                    "display": "block",
+                    "labelTitle": "Year 2023 Open Enrollment is Live Now!",
+                    "value": "Please complete your new hire enrollment and then get on to open enrollment for the year 2023.",
+                    "placement": "",
+                    "validations": {},
+                    "containerClassName": "col-12 col-lg-6 col-md-6 ",
+                    "styleClass": "panelborder",
+                    "imageClassWrapper": "col-md-6",
+                    "responseFrom": "ContractInformation",
+                    "image": "new-hire.png",
+                    "divClassName": "col-12",
+                    "contentClassName": "ml-3 pl-1 pr-3 mr-3 py-0",
+                    "labelClassName": "ml-0 pl-2 mt-3"
+                  }
+                ]
+              },
+              "panelFooter": {
+                "elements": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

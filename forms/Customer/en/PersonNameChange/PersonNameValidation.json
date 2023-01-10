@@ -1,0 +1,111 @@
+{
+  "changeConfig": {
+    "leftCard": {
+      "element": [
+        "Current Name",
+        "First Name",
+        "Last Name"
+      ],
+      "className": " col-12 col-lg-5 mb-4 mb-lg-0 p-4 current-name-left-card",
+      "changeType": "PersonName",
+      "type": "expression",
+      "mappings": [
+        {
+          "mapElement": "firstName",
+          "expression": "`${data.name || ''}`"
+        },
+        {
+          "mapElement": "lastName",
+          "expression": "`${data.shortName || ''}`"
+        }
+      ]
+    },
+    "rightCard": {
+      "element": ["New Name", "First Name ", "Last Name "],
+      "className": " col-12 col-lg-6 offset-lg-1 p-4 current-name-right-card",
+      "mapElement": "newName",
+      "changeType": "PersonName",
+      "type": "expression",
+      "value": ""
+    }
+  },
+  "elements": [
+    [
+      {
+        "name": "effectiveDate",
+        "label": "Effective Date",
+        "placement": "col-lg-3",
+        "type": "readOnly",
+        "getValuesFrom": "NewPersonName",
+        "image": "calender_icon_medium.png",
+        "config": {
+          "valueType": "date",
+          "format" : "MM/DD/YYYY"
+        }
+      }
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "Current Name"
+      }
+    ],
+    [
+      {
+        "name": "currentName",
+        "type": "readOnly",
+        "label": "Current Name",
+        "value": "",
+        "hideLabel": true
+  }
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "New Name"
+    
+      }
+    ],
+    [
+      {
+        "name": "newName",
+        "type": "readOnly",
+        "label": "New Name",
+        "value": "",
+        "hideLabel": true
+      }
+    ],
+    [
+      {
+        "name": "name",
+        "label": "First Name ",
+        "type": "readOnly",
+        "getValuesFrom": "NewPersonName"
+      }
+    ],
+    [
+      {
+        "name": "shortName",
+        "label": "Last Name ",
+        "type": "readOnly",
+        "getValuesFrom": "NewPersonName"
+      }
+    ],
+    [
+      {
+        "label": "First Name",
+        "name":"firstName",
+        "type": "readOnly",
+        "getValuesFromData": "name"
+      }
+    ],
+    [
+      {
+        "label": "Last Name",
+        "type": "readOnly",
+        "name":"lastName",
+        "getValuesFromData": "shortName"
+      }
+    ]
+  ]
+}

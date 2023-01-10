@@ -1,0 +1,268 @@
+{
+  "isMultiple": true,
+  "multiConfig": {
+    "maxAdds": 100,
+    "tableHeader": [
+      {
+        "value": "Contact Name",
+        "config": {
+          "className": ""
+        }
+      },
+      {
+        "value": "Role",
+        "config": {
+          "className": "d-none d-sm-table-cell"
+        }
+      },
+      {
+        "value": "Adresse postale",
+        "config": {
+          "className": "d-none d-lg-table-cell"
+        }
+      },
+      {
+        "value": "Phone Number",
+        "config": {
+          "className": "d-none d-sm-table-cell"
+        }
+      },
+      {
+        "value": "Email",
+        "config": {
+          "className": "d-none d-sm-table-cell"
+        }
+      },
+      {
+        "value": "Preferred Contact Method",
+        "config": {
+          "className": "d-none d-lg-table-cell"
+        }
+      }
+    ],
+    "tableRow": [
+      {
+        "value": "data.contactName",
+        "type": "expression",
+        "config": {
+          "className": ""
+        }
+      },
+      {
+        "value": "data.role",
+        "type": "expression",
+        "config": {
+          "className": "d-none d-sm-table-cell"
+        }
+      },
+      {
+        "value": "`${data.lineOne}, ${data.city} ${data.state} ${data.zipCode}`",
+        "type": "expression",
+        "config": {
+          "className": "d-none d-lg-table-cell"
+        }
+      },
+      {
+        "value": "data.phoneNumberPrimary",
+        "type": "expression",
+        "config": {
+          "className": "d-none d-sm-table-cell"
+        }
+      },
+      {
+        "value": "eamil",
+        "type": "email",
+        "config": {
+          "className": "d-none d-sm-table-cell"
+        }
+      },
+
+      {
+        "value": "data.preferredContactMethod",
+        "type": "expression",
+        "config": {
+          "className": "d-none d-lg-table-cell"
+        }
+      }
+    ],
+    "addButtonLabel": "New Contact Person",
+    "editButtonLabel": " Edit Contact Person"
+  },
+  "elements": [
+    [
+      {
+        "type": "text",
+        "name": "contactName",
+        "label": "Contact Name",
+        "placement": "col-md-5 col-12",
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis"
+          }
+        }
+      },
+      {
+        "type": "text",
+        "value": "test",
+        "name": "relationToEmployee",
+        "label": "Relation to Employee",
+        "placement": "col-md-5 col-12",
+        "validations": {}
+      }
+    ],
+    [
+      {
+        "type": "select",
+        "name": "existingAddress",
+        "label": "Select an Existing Address",
+        "placement": "col-md-5 col-12",
+        "validations": {}
+      },
+      {
+        "type": "checkbox",
+        "name": "createNewAddress",
+        "label": "Create New Address",
+        "placement": "col-md-5 col-12"
+      }
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "Adresse postale"
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "name": "lineOne",
+        "label": "Line 1",
+        "placement": "col-md-6 col-12",
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis"
+          }
+        }
+      },
+      {
+        "type": "text",
+        "name": "lineTwo",
+        "label": "Line 2",
+        "placement": "col-md-6 col-12"
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "name": "city",
+        "label": "Ville",
+        "placement": "col-md-4 col-12",
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis"
+          }
+        }
+      },
+      {
+        "type": "select",
+        "name": "state",
+        "label": "État",
+        "placement": "col-md-2 col-12",
+        "options": [
+          { "value": "ca", "text": "California" },
+          { "value": "mn", "text": "Minnesota" },
+          { "value": "nj", "text": "New Jersey" }
+        ],
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis"
+          }
+        }
+      },
+      {
+        "type": "text",
+        "name": "zipCode",
+        "label": "Code postal",
+        "placement": "col-md-2 col-12",
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis"
+          }
+        }
+      },
+      {
+        "type": "select",
+        "name": "country",
+        "label": "Pays",
+        "value": "USA",
+        "placement": "col-md-4 col-12",
+        "options": [
+          { "value": "us", "text": "United States" },
+          { "value": "ca", "text": "Canada" },
+          { "value": "mx", "text": "Mexico" }
+        ],
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis"
+          }
+        }
+      }
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "Phone and Email Information"
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "name": "phoneNumberPrimary",
+        "label": "Phone Number (Primary)",
+        "placement": "col-md-4 col-12"
+      },
+      {
+        "type": "text",
+        "name": "extPrimary",
+        "label": "Ext",
+        "placement": "col-md-2 col-12"
+      },
+      {
+        "type": "text",
+        "name": "phoneNumberSecondary",
+        "label": "Phone Number (Secondary)",
+        "placement": "col-md-4 col-12"
+      },
+      {
+        "type": "text",
+        "name": "extSecondary",
+        "label": "Ext",
+        "placement": "col-md-2 col-12"
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "name": "faxNumber",
+        "label": "Fax Number",
+        "placement": "col-md-4 col-12"
+      },
+      {
+        "type": "email",
+        "name": "email",
+        "label": "Email",
+        "placement": "col-md-4 col-12"
+      },
+      {
+        "type": "select",
+        "name": "preferredContactMethod",
+        "label": "Preferred Contact Method",
+        "placement": "col-md-4 col-12",
+        "options": [
+          { "value": "Mail Only", "text": "Mail Only" },
+          { "value": "Email Only", "text": "Email Only" },
+          { "value": "Mail and Email", "text": "Mail and Email" }
+        ]
+      }
+    ]
+  ]
+}

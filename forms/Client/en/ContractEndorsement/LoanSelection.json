@@ -1,0 +1,275 @@
+{
+	"elements": [
+		[
+			{
+				"title": "panelCard",
+				"type": "panelCard",
+				"name": "panelCard",
+				"cardMembers": [
+					{
+						"cardElements": [
+							{
+								"cardConfig": {
+									"showHeader": true,
+									"showFooter": false,
+									"className": "col-md-12 col-lg-12 pr-0",
+									"alignmentClass": "ml-n3"
+								},
+								"panelHeader": {
+									"config": {
+										"style": {
+											"fontSize": "14px",
+											"backgroundColor": "#f8f8f9",
+											"fontFamily": "Roboto",
+											"fontWeight": "500",
+											"fontStretch": "normal",
+											"color": "#333333",
+											"padding": "0px 10px 0px 0px"
+										}
+									},
+									"elements": [
+										{
+											"type": "label",
+											"name": "",
+											"label": "",
+											"placement": "col-lg-1 col-sm-2; mt-2 text-14",
+											"value": ""
+										},
+										{
+											"type": "label",
+											"name": "ProductsandCoverages",
+											"label": "CONTRACT NUMBER",
+											"placement": "col-lg-3 col-sm-2; mt-2 text-14",
+											"value": "CONTRACT NUMBER"
+										},
+										{
+											"type": "label",
+											"name": "ProductsandCoverages",
+											"label": "STATUS",
+											"placement": "col-lg-2 col-sm-2; mt-2 text-14",
+											"value": "STATUS"
+										},
+
+										{
+											"type": "label",
+											"name": "ProductsandCoverages",
+											"label": "EFFECTIVE DATE",
+											"placement": "col-lg-2 col-sm-2; mt-2 text-14",
+											"value": "EFFECTIVE DATE"
+										},
+
+										{
+											"type": "label",
+											"name": "ProductsandCoverages",
+											"label": "END DATE",
+											"placement": "col-lg-2 col-sm-2; mt-2 text-14",
+											"value": "END DATE"
+										}
+									]
+								},
+								"panelBody": {
+									"config": {
+										"className": "card-scroll"
+									},
+									"elements": [
+										{
+											"title": "contracts",
+											"type": "statementCard",
+											"name": "contracts",
+											"placement": "",
+											"cardMembers": [
+												{
+													"type": "radioButton",
+													"name": "contractBuid",
+													"placement": "col-1",
+													"getDynamicButtons": true,
+													"validations": {},
+													"buttons": [
+														{
+															"label": "",
+															"value": ""
+														}
+													]
+												},
+												{
+													"type": "readOnly",
+													"name": "internalPolicyId",
+													"placement": "col-3",
+													"hideLabel": true,
+													"validations": {}
+												},
+												{
+													"type": "readOnly",
+													"name": "status",
+													"placement": "col-2",
+													"hideLabel": true,
+													"validations": {},
+													"config": {
+														"optionsname": "StatusConstants"
+													}
+												},
+												{
+													"type": "readOnly",
+													"name": "effectiveDate",
+													"placement": "col-2",
+													"hideLabel": true,
+													"validations": {},
+													"config": {
+														"valueType": "date",
+														"format": "MM/DD/YYYY"
+													}
+												},
+												{
+													"type": "readOnly",
+													"name": "endDate",
+													"placement": "col-2",
+													"hideLabel": true,
+													"validations": {},
+													"config": {
+														"valueType": "date",
+														"format": "MM/DD/YYYY"
+													}
+												},
+												{
+													"displayConfigInfo": {
+														"field": "contractBuid",
+														"show": true,
+														"takenFrom": "contracts"
+													},
+													"title": "tablesCard",
+													"name": "loans",
+													
+													"type": "tablesCard",
+													"cardMembers": [
+														{
+															"cardConfig": {
+																"tableTitle": "loans",
+																"displayTitle" : "Loans",
+																"tableImage": "",
+																"multiLevelTable": true,
+																"headerClassName": "header-text m-0 ml-4 mt-sm-4",
+												                 "bodyClassName": "col-lg-12 ml-4"
+															
+															},
+															"table": {
+																"tableHeader": [
+																	{
+																		"value": "",
+																		"config": {
+																			"className": ""
+																		}
+																	},
+																	{
+																		"value": "TYPE OF LOAN",
+																		"config": {
+																			"className": ""
+																		}
+																	},
+																	{
+																		"value": "THE PRINCIPAL AMOUNT",
+																		"config": {
+																			"className": ""
+																		}
+																	},
+																	{
+																		"value": "LENDER",
+																		"config": {
+																			"className": "col"
+																		}
+																	},
+																	{
+																		"value": "PERIODIC PAYMENT",
+																		"config": {
+																			"className": "col"
+																		}
+																	},
+																	{
+																		"value": "LOAN DURATION (IN MONTHS)",
+																		"config": {
+																			"className": "col"
+																		}
+																	}
+																],
+																"tableRowData": [
+																	{
+																		"value": "data.loanBuid",
+																		"element": {
+																			"rearSector": "",
+																			"rearDataSegmentPath": "",
+																			"name": "loanBuid",
+																			"type": "checkbox",
+																			"label": "",
+																			"placement": "",
+																			"validations": {}
+																		},
+																		"rearSector": "",
+																		"rearDataSegmentPath": "",
+																		"type": "expression",
+																		"config": {
+																			"valueType": "inputAction",
+																			"className": ""
+																		}
+																	},
+																	{
+																		"value": "data.loanType",
+																		"rearSector": "operation",
+																		"rearDataSegmentPath": "",
+																		"type": "expression",
+																		"config": {
+																			"optionsname": "AddressTypeConstants",
+																			"className": ""
+																		}
+																	},
+																	{
+																		"value": "data.principalAmount",
+																		"rearSector": "amount",
+																		"rearDataSegmentPath": "grossAmount",
+																		"type": "expression",
+																		"valuetype": "currency",
+																		"locale":"de-DE",
+																		"currency":"EUR"
+																	},
+																	{
+																		"value": "data.lender",
+																		"rearSector": "receivedDate",
+																		"rearDataSegmentPath": "",
+																		"type": "expression"
+																	},
+																	{
+																		"value": "data.periodicAmount",
+																		"rearSector": "receivedDate",
+																		"rearDataSegmentPath": "",
+																		"type": "expression",
+																		"valuetype": "currency",
+																		"locale":"de-DE",
+																		"currency":"EUR"
+																	},
+																	{
+																		"value": "data.loanTerm",
+																		"rearSector": "receivedDate",
+																		"rearDataSegmentPath": "",
+																		"type": "expression"
+																	}
+																]
+															}
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								"panelFooter": {
+									"elements": []
+								}
+							}
+						]
+					}
+				],
+				"label": "First Name",
+				"placement": "col-12",
+				"validations": {}
+			}
+		]
+	]
+}

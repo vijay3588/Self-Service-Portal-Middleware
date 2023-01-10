@@ -1,0 +1,14 @@
+{
+    "internalClaimId": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "externalClaimId": {
+        "dataType": "string",
+        "defaultValue": 0
+    },
+    "buid": {
+        "dataType": "string",
+        "defaultValue": ""
+    }
+}

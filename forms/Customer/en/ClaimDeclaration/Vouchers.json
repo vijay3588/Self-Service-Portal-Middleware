@@ -1,0 +1,76 @@
+{
+  "elements": [
+    [
+      {
+        "cardMembers": [
+          {
+            "cardConfig": {
+              "tableTitle": "",
+              "tableImage": "",
+              "tableSegment": "Claims"
+            },
+            "table": {
+              "tableHeader": [
+                {
+                  "value": "Reference",
+                  "config": {
+                    "className": ""
+                  }
+                },
+                {
+                  "value": "Status",
+                  "config": {
+                    "className": ""
+                  }
+                },
+                {
+                  "value": "Actions",
+                  "config": {
+                    "className": ""
+                  }
+                }
+              ],
+              "tableRowData": [
+                {
+                  "value": "data.description",
+                  "rearSector": "",
+                  "rearDataSegmentPath": "",
+                  "type": "expression",
+                  "config": {
+                    "className": ""
+                  }
+                },
+                {
+                  "value": "data.status",
+                  "type": "expression",
+                  "config": {
+                    "optionsname": "StatusConstants",
+                    "valueType": "status",
+                    "value": "",
+                    "style": { }
+                  }
+                },
+                {
+                  "name": "uploadAction",
+                  "rearSector": "",
+                  "rearDataSegmentPath": "",
+                  "type": "expression",
+                  "config": {
+                    "valueType": "action",
+                    "className": ""
+                  }
+                }
+              ]
+            }
+          }
+        ] ,
+        
+        "title": "tablesCard",
+        "name": "tablesCard",
+        "type": "tablesCard"
+      }
+      
+    ]
+
+  ]
+}

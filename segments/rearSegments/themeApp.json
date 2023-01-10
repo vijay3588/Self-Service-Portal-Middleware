@@ -1,0 +1,10 @@
+{
+  "appBgColor": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "appColor": {
+    "dataType": "string",
+    "defaultValue": ""
+  }
+}

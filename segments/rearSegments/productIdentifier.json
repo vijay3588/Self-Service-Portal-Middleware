@@ -1,0 +1,10 @@
+{
+    "issuingCompanyCode": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "productCode": {
+        "dataType": "string",
+        "defaultValue": ""
+    }
+}

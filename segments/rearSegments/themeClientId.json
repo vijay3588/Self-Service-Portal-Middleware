@@ -1,0 +1,6 @@
+{
+  "clientId": {
+    "dataType": "string",
+    "defaultValue": ""
+  }
+}

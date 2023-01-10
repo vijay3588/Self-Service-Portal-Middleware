@@ -1,0 +1,26 @@
+{
+  "className": {
+    "dataType": "string",
+    "defaultValue": "aSPCB_CreatePayment"
+  },
+  "paymentId": {
+    "dataType": "object",
+    "name": "paymentId"
+  },
+  "payor": {
+    "dataType": "object",
+    "name": "payor"
+  },
+  "paymentChannel": {
+    "dataType": "object",
+    "name": "paymentChannel"
+  },
+  "paymentInfo": {
+    "dataType": "object",
+    "name": "aSPCB_Payment"
+  },
+  "paymentTargets": {
+    "dataType": "array",
+    "name": "aSPCB_CreateSuspenseAccountPayment"
+  }
+}

@@ -1,0 +1,10 @@
+{
+    "contractBuid": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "maxSize": {
+        "dataType": "number",
+        "defaultValue": 10
+    }
+}

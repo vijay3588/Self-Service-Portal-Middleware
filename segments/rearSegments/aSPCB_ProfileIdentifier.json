@@ -1,0 +1,18 @@
+{
+  "className": {
+    "dataType": "string",
+    "defaultValue": "aSPCB_ProfileIdentifier"
+  },
+  "bUID": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "description": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "code": {
+    "dataType": "string",
+    "defaultValue": "WC"
+  }
+}

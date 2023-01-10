@@ -1,0 +1,16 @@
+[
+  {
+    "frontDataSegment": "body",
+    "rearDataSegmentClass": "inputQuote",
+    "rearDataSegment":"input",
+    "rearDataSegmentType": "object",
+    "rearDataSegmentPath": "input",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "buid",
+        "rearSector": "buid",
+        "defaultValue": ""
+      }
+    ]
+  }
+]

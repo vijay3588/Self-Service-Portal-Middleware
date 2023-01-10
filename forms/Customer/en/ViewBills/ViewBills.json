@@ -1,0 +1,222 @@
+{
+  "cards": [
+    {
+      "title": "tablesCard",
+      "name": "tablesCard",
+      "type": "tablesCard",
+      "cardMembers": [
+        {
+          "cardConfig": {
+            "tableTitle": "bills",
+            "displayTitle" : "Bills",
+            "tableImage": "invoicebills.png"
+          },
+          "table": {
+            "tableHeader": [
+              {
+                "value": "Bill Number",
+                "config": {
+                  "className": ""
+                }
+              },
+              {
+                "value": "",
+                "config": {
+                  "className": ""
+                }
+              },
+              {
+                "value": "Period From",
+                "config": {
+                  "className": ""
+                }
+              },
+              {
+                "value": "Period To",
+                "config": {
+                  "className": ""
+                }
+              },
+              {
+                "value": "Amount Billed",
+                "config": {
+                  "className": ""
+                }
+              },
+              {
+                "value": "Policy Number",
+                "config": {
+                  "className": ""
+                }
+              },
+              {
+                "value": "Due Date",
+                "config": {
+                  "className": ""
+                }
+              },
+              {
+                "value": "Paid Amount",
+                "config": {
+                  "className": ""
+                }
+              }
+            ],
+            "tableRowData": [
+              {
+                "value": "data.billNumber",
+                "rearSector": "billNumber", 
+                "rearDataSegmentPath":"",
+                "type": "expression",
+                "config": {
+                  "optionsname": "AddressTypeConstants",
+                  "className": ""
+                }
+              },
+              {
+                "value": "data.pastBill",
+                "type": "expression",
+                "config": {
+                  "valueType": "status",
+                  "value": "PAST DUE",
+                  "tileImage": "clock.png",
+                  "style": {
+                    "fontSize": "11px",
+                    "color": "#d51b61",
+                    "borderRadius": "4px",
+                    "border": "solid 1px #d51b61",
+                    "padding": "4.5px 9.9px 4.5px 9.9px",
+                    "position": "relative",
+                    "bottom": "2px"
+                  }
+                }
+              },
+              {
+                "value": "data.fromDate",
+                "rearSector": "fromDate", 
+                "rearDataSegmentPath":"",
+                "type": "expression",
+                "config": {
+                  "valueType": "date",
+                  "format": "MM/DD/YYYY"
+                }
+              },
+              {
+                "value": "data.toDate",
+                "rearSector": "toDate", 
+                "rearDataSegmentPath":"",
+                "type": "expression",
+                "config": {
+                  "valueType": "date",
+                  "format": "MM/DD/YYYY"
+                }
+              },
+              {
+                "value": "data.amount",
+                "rearSector": "amount", 
+                "rearDataSegmentPath":"amount",
+                "type": "expression",
+                "config": {
+                  "className": ""
+                },
+                "valuetype": "currency",
+                "locale": "en-US",
+                "currency": "USD"
+              },
+              {
+                "value": "data.contractNumber",
+                "rearSector": "contractNumber", 
+                "rearDataSegmentPath":"",
+                "type": "expression",
+                "config": {
+                  "className": ""
+                }
+              },
+              {
+                "value": "data.dueDate",
+                "rearSector": "dueDate", 
+                "rearDataSegmentPath":"",
+                "type": "expression",
+                "config": {
+                  "className": ""
+                }
+              },
+              {
+                "value": "data.paidAmount",
+                "rearSector": "paidAmount", 
+                "rearDataSegmentPath":"",
+                "type": "expression",
+                "config": {
+                  "className": ""
+                }
+              }
+            ]
+          }
+        },
+        {
+          "cardConfig": {
+            "tableTitle": "payments",
+            "tableImage": "invoicepayment.png"
+          },
+          "table": {
+            "tableHeader": [
+              {
+                "value": "Payment Number",
+                "config": {
+                  "className": ""
+                }
+              },
+              {
+                "value": "Amount Paid",
+                "config": {
+                  "className": ""
+                }
+              },
+              {
+                "value": "Received Date",
+                "config": {
+                  "className": "col"
+                }
+              }
+            ],
+            "tableRowData": [
+              {
+                "value": "data.paymentNumber",
+                "rearSector": "operation", 
+                "rearDataSegmentPath":"",
+                "type": "expression",
+                "config": {
+                  "optionsname": "AddressTypeConstants",
+                  "className": ""
+                }
+              },
+
+              {
+                "value": "data.amountPaid",
+                "rearSector": "amount", 
+                "rearDataSegmentPath":"grossAmount",
+                "type": "expression",
+                "config": {
+                  "className": ""
+                },
+                "valuetype": "currency",
+                "locale": "en-US",
+                "currency": "USD"
+              },
+              {
+                "value": "data.receivedDate",
+                "rearSector": "receivedDate", 
+                "rearDataSegmentPath":"",
+                "type": "expression",
+                "config": {
+                  "valueType": "date",
+                  "format": "MM/DD/YYYY"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

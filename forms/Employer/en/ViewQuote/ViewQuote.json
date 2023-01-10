@@ -1,0 +1,1178 @@
+{
+	"cards": [
+		{
+			"cardMembers": [{
+				"cardElements": [
+					
+					{
+						"type": "selectList",
+						"name": "contractNumber",
+						"label": "contractNumber",
+						"placement": "col-lg-6 col-md-10 px-0",
+						"options": "",
+						"optionKind": "apiCall",
+						"config": {
+							"placementClass": "  col-md-8 select-label-content"
+						},
+
+						"displayConfig": {
+							"show": true,
+							"validation": {
+								"condition": "> 1"
+							},
+							"valuesFrom": "props.selectOptions"
+						},
+						"subElement": {
+							"type": "tile",
+							"name": "paymentStatus",
+							"style": {
+								"fontSize": "12px",
+								"color": "#00a190",
+								"borderRadius": "4px",
+								"border": "solid 1px #00a190"
+							},
+							"config": {
+								"displayName": "InvoiceStatusConstants"
+							},
+							"placement": "col-lg-3 col-sm-5"
+						},
+						"validations": {}
+					}]
+			}],
+
+			"type": "titleCard",
+			"name": "viewHeader",
+			"config": {
+				"showBorder": true,
+				"className": "row mb-4"
+			}
+		},
+		{
+			"name": "blueBox",
+			"type": "boxCard",
+
+			"cardMembers": [{
+					"cardConfig": {
+						"className": "col-lg-12 col-md-12 pl-0 remove-pr-mobile",
+						"styleClassName": "boxcard-border-flex",
+						"style": {}
+					},
+					"cardElements": [{
+							"type": "readOnly",
+							"name": "effectiveDate",
+							"label": "Effective Date",
+							"placement": "col-lg-6 col-sm-6",
+							"validations": {},
+							"image": "amount-due.png",
+							"config": {
+								"valueType": "date",
+								"format": "MM/DD/YYYY"
+							}
+						},
+						{
+							"type": "readOnly",
+							"name": "renewalDate",
+							"label": "Valid up to Date",
+							"placement": "col-lg-6 col-sm-6",
+							"value": "12/12/2020",
+							"image": "openenrollment-renewal.png",
+							"config": {
+								"valueType": "date",
+								"format": "MM/DD/YYYY"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "panelCard",
+			"type": "panelCard",
+			"name": "panelCard",
+			"cardMembers": [{
+				"cardElements": [{
+					"cardConfig": {
+						"showHeader": true,
+						"showFooter": false,
+						"className": "col-md-12 col-lg-12 pr-0",
+						"alignmentClass": "ml-n3"
+					},
+					"panelHeader": {
+						"elements": [{
+								"type": "readOnly",
+								"name": "currentAmountDue",
+								"label": "",
+								"placement": "mr-3",
+								"validations": {},
+								"image": "life-insurance.png"
+							},
+							{
+								"type": "label",
+								"name": "ProductsandCoverages",
+								"label": "Products and Coverages",
+								"placement": "mr-3",
+								"value": "Products and Coverages",
+								"config": {
+									"className": "enrollment-number"
+								}
+							}
+						]
+					},
+					"panelBody": {
+						"config": {
+							"className": "card-scroll"
+						},
+						"elements": [{
+							"title": "prodAndCoverage",
+							"type": "ViewListCard",
+							"name": "prodAndCoverage",
+
+							"treeConfiguration": {
+								"branchHead": [{
+									"leaflets": [{
+											"field": "COVERAGES",
+											"contentType": "arrowProdHeaderText"
+										},
+										{
+											"field": "EFFECTIVE DATE",
+											"contentType": "prodHeaderText"
+										},
+										{
+											"field": "PAID THROUGH DATE",
+
+											"contentType": "prodHeaderText"
+										},
+										{
+											"field": "STATUS",
+											"contentType": "prodHeaderText"
+										}
+									],
+									"apiObject": "",
+									"contentType": "prodHeaderContainer"
+								}],
+								"branch1": [{
+									"leaflets": [{
+											"dataObject": "",
+											"field": "optionName",
+											"contentType": "prodArrowItem"
+										},
+										{
+											"dataObject": "",
+											"field": "effectiveDate",
+											"contentType": "prodItem"
+										},
+										{
+											"dataObject": "",
+											"field": "paidToDate",
+											"contentType": "prodItem"
+										},
+										{
+											"dataObject": "",
+											"field": "status",
+											"contentType": "prodItem"
+										}
+									],
+									"apiObject": "coverageGeneralInformation",
+									"contentType": "listPlainContainer1"
+								}],
+
+								"branch2": [{
+									"leaflets": [{
+											"contentType": "Elementor",
+											"placement": "col-lg-1 col-sm-1 text-14 table-header text-center-align",
+											"Content": "",
+											"type": "image",
+											"name": "date",
+											"label": "Date",
+											"filename": "amount-due.png",
+											"hideDefaultClass": true
+										},
+										{
+											"placement": "col-lg-3 col-sm-3; mt-2 text-14",
+											"Content": "Subscription Date",
+											"contentType": "Elementor",
+											"type": "readOnly",
+											"name": "effectiveDate",
+											"label": "Subscription Date",
+											"value": "",
+											"field": "effectiveDate"
+										},
+										{
+											"placement": "col-lg-4 col-sm-4; mt-2 text-14",
+											"Content": "Effective Date",
+											"contentType": "Elementor",
+											"type": "readOnly",
+											"name": "effectiveDate",
+											"label": "Effective Date",
+											"value": "",
+											"field": "effectiveDate"
+										}
+									],
+									"apiObject": "coverageGeneralInformation",
+									"contentType": "subListPlainContainer"
+								}],
+								"branch3": [{
+									"leaflets": [
+
+
+										{
+											"Content": "Effective Date: 01/01/2019",
+											"contentType": "subheaderSingleContainer1"
+										}
+
+									]
+								}],
+                "branch4": [{
+									"leaflets": [
+										{
+                      
+											"Content": "Plan Designs",
+											"contentType": "headerSingleContainer1"                     
+										}
+
+									]
+								}],
+                "branch5": [{
+									"leaflets": [
+										{
+                      
+											"Content": "Plan Name",
+											"contentType": "tableHeader"                     
+										}
+
+									]
+								}],
+                "branch6": [{
+									"leaflets": [
+										{
+                      
+											"Content": "",
+											"contentType": "tableItem"                     
+										}
+
+									]
+								}]
+
+
+
+
+
+							}
+						}]
+					},
+					"panelFooter": {
+						"elements": []
+					}
+				}]
+			}]
+		},
+		{
+			"title": "panelCard",
+			"type": "panelCard",
+			"name": "panelCard",
+			"cardMembers": [{	
+				"cardElements": [{
+						"cardConfig": {
+							"showHeader": true,
+							"showFooter": false,
+							"className": "col-md-12 col-lg-6 mb-3 reset-padding",
+							"alignmentClass": "ml-n3"
+						},
+						"panelHeader": {
+							"config": {
+								"className": "px-3 py-1"
+							},
+							"elements": [{
+									"type": "readOnly",
+									"name": "currentAmountDue",
+									"label": "",
+									"placement": "mr-3",
+									"validations": {},
+									"image": "employee.png"
+								},
+								{
+									"type": "label",
+									"name": "ProductsandCoverages",
+									"label": "Member Classes",
+									"placement": "mr-1",
+									"value": "Member Classes",
+									"config": {
+										"className": "enrollment-number"
+									}
+								},
+								{
+									"type": "label",
+									"name": "memberClassCount",
+									"label": "",
+									"placement": "",
+									"value": "",
+									"config": {
+										"className": "enrollment-number",
+										"style": {
+											"fontFamily": "Roboto",
+											"fontSize": "18px",
+											"fontWeight": "500",
+											"fontStretch": "normal",
+											"color": "#040404"
+										}
+									}
+								}
+							]
+						},
+						"panelBody": {
+							"config": {
+								"className": "card-scroll"
+							},
+							"elements": [{
+								"title": "memberClass",
+								"type": "panelCard",
+								"name": "memberClass",
+								"cardMembers": [{
+									"cardElements": [{
+										"cardConfig": {
+											"showHeader": true,
+											"showFooter": false,
+											"className": "col-md-12 col-lg-12 mb-3",
+											"displayType": "multiple"
+										},
+										"panelHeader": {
+											"config": {
+												"className": "px-3",
+												"style": {
+													"backgroundColor": "#f8f8f9"
+												}
+											},
+											"elements": [{
+													"type": "label",
+													"name": "className",
+													"label": "Payment Number",
+													"placement": "",
+													"value": "",
+													"config": {
+														"style": {
+															"fontFamily": "Roboto",
+															"fontSize": "18px",
+															"fontWeight": "500",
+															"fontStretch": "normal",
+															"color": "#040404"
+														}
+													}
+												},
+												{
+													"type": "tile",
+													"name": "paymentStatus",
+													"style": {
+														"fontSize": "12px",
+														"color": "#00a190",
+														"borderRadius": "4px",
+														"border": "solid 1px #00a190"
+													},
+													"config": {
+														"displayName": "InvoiceStatusConstants"
+													},
+													"valueConfig": {
+														"source": ["effectiveDate", "endDate"],
+														"conditions": [{
+																"rule": "<",
+																"value": "cActive"
+															},
+															{
+																"rule": ">",
+																"value": "cTerminated"
+															}
+														]
+													},
+													"placement": "col-lg-3 col-sm-5"
+												}
+											]
+										},
+										"panelBody": {
+											"config": {
+												"alignment": "row"
+											},
+											"elements": [{
+													"type": "readOnly",
+													"name": "code",
+													"label": "Code",
+													"placement": "col-lg-4 col-sm-4",
+													"value": "12/12/2020",
+													"image": "number.png"
+												},
+												{
+													"type": "readOnly",
+													"name": "effectiveDate",
+													"label": "Effective Date",
+													"placement": "col-lg-4 col-sm-4",
+													"validations": {},
+													"image": "calendar.png",
+													"config": {
+														"valueType": "date",
+														"format": "MM/DD/YYYY"
+													}
+												}
+											]
+										},
+										"panelFooter": {
+											"elements": []
+										}
+									}]
+								}]
+							}]
+						}
+					},
+					{
+						"cardConfig": {
+							"showHeader": true,
+							"showFooter": false,
+							"className": "col-md-12 col-lg-6 mb-3 pr-0 reset-padding",
+							"alignmentClass": "ml-n3"
+						},
+						"panelHeader": {
+							"elements": [{
+									"type": "readOnly",
+									"name": "currentAmountDue",
+									"label": "",
+									"placement": "mr-3",
+									"validations": {},
+									"image": "division.png"
+								},
+								{
+									"type": "label",
+									"name": "ProductsandCoverages",
+									"label": "Divisions",
+									"placement": "mr-1",
+									"value": "Divisions",
+									"config": {
+										"className": "enrollment-number"
+									}
+								},
+								{
+									"type": "label",
+									"name": "divisionsCount",
+									"label": "",
+									"placement": "",
+									"value": "",
+									"config": {
+										"className": "enrollment-number",
+										"style": {
+											"fontFamily": "Roboto",
+											"fontSize": "18px",
+											"fontWeight": "500",
+											"fontStretch": "normal",
+											"color": "#040404"
+										}
+									}
+								}
+							]
+						},
+						"panelBody": {
+							"config": {
+								"className": "card-scroll"
+							},
+							"elements": [{
+								"title": "divisions",
+								"type": "panelCard",
+								"name": "divisions",
+								"cardMembers": [{
+									"cardElements": [{
+										"cardConfig": {
+											"showHeader": true,
+											"showFooter": false,
+											"className": "col-md-12 col-lg-12 mb-3",
+											"displayType": "multiple"
+										},
+										"panelHeader": {
+											"config": {
+												"className": "px-3",
+												"style": {
+													"backgroundColor": "#f8f8f9"
+												}
+											},
+											"elements": [{
+													"type": "label",
+													"name": "name",
+													"label": "Payment Number",
+													"placement": "",
+													"value": "",
+													"config": {
+														"style": {
+															"fontFamily": "Roboto",
+															"fontSize": "18px",
+															"fontWeight": "500",
+															"fontStretch": "normal",
+															"color": "#040404"
+														}
+													}
+												},
+												{
+													"type": "tile",
+													"name": "paymentStatus",
+													"style": {
+														"fontSize": "12px",
+														"color": "#00a190",
+														"borderRadius": "4px",
+														"border": "solid 1px #00a190"
+													},
+													"config": {
+														"displayName": "InvoiceStatusConstants"
+													},
+													"placement": "col-lg-3 col-sm-5",
+													"valueConfig": {
+														"source": ["effectiveDate", "endDate"],
+														"conditions": [{
+																"rule": "<",
+																"value": "cActive"
+															},
+															{
+																"rule": ">",
+																"value": "cTerminated"
+															}
+														]
+													}
+												}
+											]
+										},
+										"panelBody": {
+											"config": {
+												"alignment": "row"
+											},
+											"elements": [{
+													"type": "readOnly",
+													"name": "address",
+													"label": "Address",
+													"placement": "col-lg-4 col-sm-4",
+													"value": "12/12/2020",
+													"image": "location.png"
+												},
+												{
+													"type": "readOnly",
+													"name": "effectiveDate",
+													"label": "Effective Date",
+													"placement": "col-lg-4 col-sm-4",
+													"validations": {},
+													"image": "calendar_right.png",
+													"config": {
+														"valueType": "date",
+														"format": "MM/DD/YYYY"
+													}
+												}
+											]
+										},
+										"panelFooter": {
+											"elements": []
+										}
+									}]
+								}]
+							}]
+						}
+					}
+				]
+			}]
+		},
+		{
+			"title": "panelCard",
+			"type": "panelCard",
+			"name": "panelCard",
+			"cardMembers": [{
+					"cardElements": [{
+						"cardConfig": {
+							"showHeader": true,
+							"showFooter": false,
+							"className": "col-md-12 col-lg-12 mb-3 reset-padding",
+							"alignmentClass": "ml-n3"
+						},
+						"panelHeader": {
+							"config": {
+								"className": "px-3"
+							},
+							"elements": [{
+									"type": "readOnly",
+									"name": "currentAmountDue",
+									"label": "",
+									"placement": "mr-3",
+									"validations": {},
+									"image": "contract.png"
+								},
+								{
+									"type": "label",
+									"name": "ProductsandCoverages",
+									"label": "Contract Information",
+									"placement": "mr-1",
+									"value": "Contract Information",
+									"config": {
+										"className": "enrollment-number"
+									}
+								}
+							]
+						},
+						"panelBody": {
+							"config": {
+								"className": "card-scroll",
+								"alignment": "row"
+							},
+							"elements": [{
+									"type": "readOnly",
+									"name": "situsState",
+									"label": "Situs State",
+									"placement": "col-lg-6 col-sm-6",
+									"validations": {},
+									"image": "location.png",
+									"isNotMultiple": true
+								},
+								{
+									"type": "readOnly",
+									"name": "groupSize",
+									"label": "Group Size",
+									"placement": "col-lg-6 col-sm-6",
+									"validations": {},
+									"image": "group.png"
+								}
+							]
+						},
+						"panelFooter": {
+							"elements": []
+						}
+					}]
+				}
+			]
+		}
+	],
+	"metadata":{
+		"prodAndCoverage": {
+			"header": [{
+				"header": [{
+					"content": [{
+						"content": [
+							[{
+								"content": "Term Life Insurance",
+								"placement": "",
+								"sector": "optionName",
+								"dataSegment": "coverageGeneralInformation"
+							}]
+						],
+						"placement": "prodCardHeader"
+					}]
+				}],
+				"list": [{
+					"content": [{
+							"content": [
+								[{
+										"content": "COVERAGES",
+										"placement": "arrowProdHeaderText"
+									},
+									{
+										"content": "EFFECTIVE DATE",
+										"placement": "prodHeaderText"
+									},
+									{
+										"content": "PAID THROUGH DATE",
+										"placement": "prodHeaderText"
+									},
+									{
+										"content": "STATUS",
+										"placement": "prodHeaderText"
+									}
+								]
+							],
+							"placement": "prodHeaderContainer"
+						},
+						{
+							"content": [
+								[{
+										"content": "",
+										"placement": "prodArrowItem",
+										"dataObject": "",
+										"sector": "optionName",
+										"dataSegment": "coverageGeneralInformation"
+									},
+									{
+										"content": "",
+										"placement": "row col-lg-2 col-sm-2 prod-text-14",
+										"dataObject": "",
+										"sector": "effectiveDate",
+										"dataSegment": "coverageGeneralInformation",
+										"name": "coverage-effectivedate",
+										"label": "Effective Date",
+										"elementor": true,
+										"value": "",
+										"hideLabel": true,
+										"type": "readOnly",
+										"insideSpan": true,
+										"config": {
+											"valueType": "date",
+											"format": "MM/DD/YYYY"
+										}
+									},
+									{
+										"content": "",
+										"placement": "row col-lg-2 col-sm-2 prod-text-14",
+										"dataObject": "",
+										"sector": "subscriptionDate",
+										"dataSegment": "coverageGeneralInformation",
+										"name": " coverage-subscrpitiondate",
+										"label": "Effective Date",
+										"elementor": true,
+										"value": "",
+										"hideLabel": true,
+										"type": "readOnly",
+										"insideSpan": true,
+										"config": {
+											"valueType": "date",
+											"format": "MM/DD/YYYY"
+										}
+									},
+	
+									{
+										"elementor": true,
+										"content": "",
+										"placement": "row col-lg-2 col-sm-2 prod-text-14",
+										"dataObject": "",
+										"sector": "status",
+										"dataSegment": "coverageGeneralInformation",
+										"name": "status-label",
+										"type": "tile",
+										"label": "",
+										"value": "",
+										"hideLabel": true,
+										"config": {
+											"displayName": "InvoiceStatusConstants",
+											"style": {
+												"fontSize": "14px",
+												"borderRadius": "4px",
+												"backgroundColor": "#ef5a88",
+												"fontFamily": "Roboto",
+												"fontWeight": "500",
+												"fontStretch": "normal",
+												"color": "#ffffff",
+												"padding": "0px 19px 0px"
+											}
+										}
+									}
+								],
+								[{
+									"subList": {
+										"content": [
+											[{
+													"content": "",
+													"elementor": true,
+													"placement": "col-lg-1 col-sm-1 text-14 table-header text-center-align",
+													"type": "image",
+													"name": "date",
+													"label": "Date",
+													"filename": "amount-due.png",
+													"hideDefaultClass": true,
+													"value": ""
+												},
+												{
+													"content": "Subscription Date",
+													"elementor": true,
+													"placement": "col-lg-3 col-sm-3; mt-2 text-14",
+													"type": "readOnly",
+													"name": "effectiveDate",
+													"label": "Subscription Date",
+													"value": "",
+													"sector": "subscriptionDate",
+													"dataSegment": "coverageGeneralInformation",
+													"config": {
+														"valueType": "date",
+														"format": "MM/DD/YYYY"
+													}
+												},
+												{
+													"content": "Effective Date",
+													"elementor": true,
+													"placement": "col-lg-4 col-sm-4; mt-2 text-14",
+													"type": "readOnly",
+													"name": "effectiveDate",
+													"label": "Effective Date",
+													"value": "",
+													"sector": "effectiveDate",
+													"dataSegment": "coverageGeneralInformation",
+													"config": {
+														"valueType": "date",
+														"format": "MM/DD/YYYY"
+													}
+												}
+											]
+										],
+										"placement": "subListPlainContainer"
+									}
+								}],
+								[{
+									"subList": {
+										"content": [
+											[{
+													"content": "Coverage Attributes",
+													"placement": "headerSingleContainer1"
+												},
+												{
+													"content": "Attributes List",
+													"placement": "subheaderSingleContainer1"
+												},
+												{
+													"subChildList": {
+														"content": [
+															[{
+																"arrayList": true,
+																"content": {
+																	"header": "fieldName",
+																	"item": "fieldValue",
+																	"sector": "amount"
+																},
+																"placement": {
+																	"header": "tableHeader",
+																	"item": "tableItem"
+																},
+																"sector": "additionalDatas",
+																"dataSegment": "coverageGeneralInformation"
+															}]
+														],
+														"placement": "subTableContainer"
+													}
+												}
+											]
+										],
+										"placement": "subListPlainContainer"
+									}
+								}],
+								[{
+									"subList": {
+										"content": [
+											[{
+													"content": "Plan Designs",
+													"placement": "headerSingleContainer1"
+												},
+												{
+													"content": "Effective Date: ",
+													"elementor": true,
+													"appendText": true,
+													"placement": "col-lg-11 col-sm-11 child-caret-prod prod-text-14 prod-sub-header-single-container",
+													"sector": "effectiveDatePD",
+													"dataSegment": "planDesigns",
+													"type": "readOnly",
+													"name": "plandesign-effectivedate",
+													"label": "Effective Date",
+													"value": "",
+													"hideLabel": true,
+													"insideSpan": true,
+													"config": {
+														"valueType": "date",
+														"format": "MM/DD/YYYY"
+													}
+												},
+												{
+													"subChildList": {
+														"content": [
+															[{
+																	"content": "Plan Name",
+																	"placement": "tableHeader"
+																},
+																{
+																	"content": "",
+																	"placement": "tableItem",
+																	"sector": "name",
+																	"dataSegment": "planDesigns"
+																}
+															],
+															[{
+																	"content": "Plan Code",
+																	"placement": "tableHeader"
+																},
+																{
+																	"content": "",
+																	"placement": "tableItem",
+																	"sector": "identifier",
+																	"dataSegment": "planDesigns"
+																}
+															],
+															[{
+																	"content": "Plan Effective Date",
+																	"placement": "tableHeader"
+																},
+																{
+																	"content": "",
+																	"placement": "tableItem",
+																	"sector": "effectiveDatePD",
+																	"dataSegment": "planDesigns"
+																}
+															],
+															[{
+																"arrayList": true,
+																"content": {
+																	"header": "attributeName",
+																	"item": "attributeValue"
+																},
+																"placement": {
+																	"header": "tableHeader",
+																	"item": "tableItem"
+																},
+																"sector": "attributesPD",
+																"dataSegment": "planDesigns"
+															}],
+															[{
+																"arrayList": true,
+																"content": {
+																	"header": "name",
+																	"item": "member",
+																	"subItem": "attributes",
+																	"subContent": {
+																		"header": "fieldName",
+																		"item": "fieldValue"
+																	}
+																},
+																"placement": {
+																	"header": "tableHeaderLine",
+																	"item": "tableItemLine",
+																	"subPlacement": {
+																		"header": "tableHeaderLine",
+																		"item": "tableItemLineAtt"
+																	}
+																},
+																"sector": "eligibleMemberClasses",
+																"dataSegment": ""
+															}],
+															[{
+																"content": "Benefits",
+																"placement": "tableSingleItem"
+															}],
+															[{
+																"arrayList": true,
+																"content": {
+																	"header": "name",
+																	"item": "subscribed",
+																	"subItem": "attributes",
+																	"subContent": {
+																		"header": "fieldName",
+																		"item": "fieldValue"
+																	}
+																},
+																"placement": {
+																	"header": "tableHeader",
+																	"item": "tableItem",
+																	"subPlacement": {
+																		"header": "tableHeaderAtt",
+																		"item": "tableItem"
+																	}
+																},
+																"sector": "subscribedBenefits",
+																"dataSegment": "subscribedBenefits"
+															}]
+														],
+														"placement": "subTableContainer"
+													}
+												}
+											]
+										],
+										"placement": "subListPlainContainer"
+									}
+								}],
+								[{
+									"subList": {
+										"content": [
+											[{
+													"content": "Participation",
+													"placement": "headerSingleContainer1"
+												},
+												{
+													"subChildList": {
+														"content": [
+															[{
+																"placement": "col-lg-3 col-sm-3; mt-2 itemText",
+																"content": "Subscription Date",
+																"elementor": true,
+																"type": "readOnly",
+																"name": "effectiveDate",
+																"label": "Total Eligible Employees",
+																"value": "",
+																"sector": "eligibleEmployees",
+																"dataSegment": "coverageGeneralInformation"
+															}],
+															[{
+																	"placement": "col-lg-2 col-sm-2; mt-2 itemText",
+																	"content": "Subscription Date",
+																	"elementor": true,
+																	"type": "readOnly",
+																	"name": "effectiveDate",
+																	"label": "Required Participation",
+																	"value": ""
+																},
+																{
+																	"placement": "col-lg-3 col-sm-3;  itemText ",
+																	"content": "",
+																	"elementor": true,
+																	"type": "progressBar",
+																	"name": "progressBar",
+																	"bgColor": "blue",
+																	"value": "",
+																	"sector": "requiredParticipation",
+																	"dataSegment": "coverageGeneralInformation"
+																}
+															],
+															[{
+																	"placement": "col-lg-2 col-sm-2; itemText",
+																	"content": "Subscription Date",
+																	"elementor": true,
+																	"type": "readOnly",
+																	"name": "effectiveDate",
+																	"label": "Current Participation",
+																	"value": ""
+																},
+																{
+																	"placement": "col-lg-3 col-sm-3;  itemText",
+																	"content": "",
+																	"elementor": true,
+																	"type": "progressBar",
+																	"name": "progressBar",
+																	"bgColor": "green",
+																	"value": "",
+																	"sector": "currentParticipationNumber",
+																	"dataSegment": "coverageGeneralInformation"
+																}
+															],
+															[{
+																	"placement": "col-lg-2 col-sm-2; mt-2 itemText",
+																	"content": "Subscription Date",
+																	"elementor": true,
+																	"type": "readOnly",
+																	"name": "effectiveDate",
+																	"label": "Initial Participation",
+																	"value": ""
+																},
+																{
+																	"placement": "col-lg-3 col-sm-3; mb-2 itemText",
+																	"content": "",
+																	"elementor": true,
+																	"type": "progressBar",
+																	"name": "progressBar",
+																	"value": "",
+																	"sector": "actualParticipationNumber",
+																	"dataSegment": "coverageGeneralInformation",
+																	"bgColor": "vilot"
+																}
+															]
+														],
+														"placement": "subBoxPlainContainer"
+													}
+												}
+											]
+										],
+										"placement": "subListPlainContainer"
+									}
+								}]
+							],
+							"placement": "listPlainContainer1"
+						}
+					],
+					"placement": "prodCardItem"
+				}]
+			}]
+		}
+	},
+	"placementStyle":[
+		{
+		  "itemText": {
+			"placement": "col-lg-2 col-sm-2 text-16"
+		  }
+		},
+		{
+		  "prodCardHeader": {
+			"placement": "row col-lg-12 col-sm-12 prod-card-header"
+		  }
+		},
+		{
+		  "prodCardItem": {
+			"placement": "row col-lg-12 col-sm-12 prod-card-item"
+		  }
+		},
+		{
+		  "prodHeaderContainer": {
+			"placement": "col-lg-12 col-sm-12 tprod-header-container"
+		  }
+		},
+		{
+		  "arrowProdHeaderText": {
+			"placement": "row col-lg-4 col-sm-4 prod-text-14 font-bold"
+		  }
+		},
+		{
+		  "prodHeaderText": {
+			"placement": "row col-lg-2 col-sm-2 prod-text-14 font-bold"
+		  }
+		},
+		{
+		  "prodArrowItem": {
+			"placement": "row col-lg-4 col-sm-4 caret-prod prod-text-14 font-bold font-block"
+		  }
+		},
+		{
+		  "prodItem": {
+			"placement": "row col-lg-2 col-sm-2 prod-text-14"
+		  }
+		},
+		{
+		  "listPlainContainer1": {
+			"placement": "col-lg-12 col-sm-12 list-border padding-left"
+		  }
+		},
+		{
+		  "subListPlainContainer": {
+			"placement": "col-lg-12 col-sm-12 nested list-border padding-zero margin-top-bottom"
+		  }
+		},
+		{
+		  "subTableContainer": {
+			"placement": "col-lg-11 col-sm-11 nested table-border"
+		  }
+		},
+		{
+		  "subBoxPlainContainer": {
+			"placement": "sub-box-container"
+		  }
+		},
+		{
+		  "headerSingleContainer1": {
+			"placement": "col-lg-12 col-sm-12 prod-header-single-container"
+		  }
+		},
+		{
+		  "subheaderSingleContainer1": {
+			"placement": "col-lg-11 col-sm-11 child-caret-prod prod-text-14 prod-sub-header-single-container"
+		  }
+		},
+		{
+		  "tableHeader": {
+			"placement": "col-lg-13 col-sm-3 prod-text-14 table-header"
+		  }
+		},
+		{
+		  "tableHeaderLine": {
+			"placement": "col-lg-13 col-sm-3 lst-text-14 table-header-line"
+		  }
+		},
+		{
+		  "tableHeaderAtt": {
+			"placement": "col-lg-13 col-sm-3 text-th table-header"
+		  }
+		},
+		{
+		  "tableItem": {
+			"placement": "col-lg-3 col-sm-3 prod-text-14 table-item"
+		  }
+		},
+		{
+		  "tableItemLine": {
+			"placement": "col-lg-3 col-sm-3 lst-text-14 table-item-line"
+		  }
+		},
+		{
+		  "tableItemLineAtt": {
+			"placement": "col-lg-3 col-sm-3 prod-text-att table-item-line"
+		  }
+		},
+		{
+		  "tableSingleItem": {
+			"placement": "col-lg-12 col-sm-12 prod-text-14 table-item-bold"
+		  }
+		}
+	]
+}

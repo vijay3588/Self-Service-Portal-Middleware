@@ -1,0 +1,19 @@
+ {
+   
+  "hideOption": {
+    "dataType": "boolean",
+    "defaultValue": false
+  },
+     
+  "optionKey": {
+    "dataType": "string",
+    "defaultValue": "text"
+  },
+  "optionValue": {
+    "dataType": "string",
+    "defaultValue": "text"
+  }
+
+
+ 
+}

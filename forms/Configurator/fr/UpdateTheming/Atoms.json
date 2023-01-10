@@ -1,0 +1,375 @@
+{
+  "elements": [
+    [
+      {
+        "type": "color",
+        "name": "boxcardBgColor",
+        "label": "Box card Bg Color",
+        "value": "",
+        "update": {
+          "reduxPath": "atoms.boxcard.boxcardBgColor",
+          "formikPath": "Atoms"
+        },
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "This field is required"
+          }
+        }
+      },
+      {
+        "type": "color",
+        "name": "linearGradientTopColor", 
+        "label": "Boxcard Linear Gradient Top Color",
+        "value": "",
+        "update": {
+          "reduxPath": "atoms.boxcard.linearGradientTopColor",
+          "formikPath": "Atoms"
+        },
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "color",
+        "name": "linearGradientBottomColor",
+        "label": "Boxcard Linear Gradient Bottom Color",
+        "value": "",
+        "update": {
+          "reduxPath": "atoms.boxcard.linearGradientBottomColor",
+          "formikPath": "Atoms"
+        },
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "color",
+        "name": "headerBgColor",
+        "label": "Table Header Bg Color",
+        "value": "", 
+        "update": {
+          "reduxPath": "atoms.table.headerBgColor",
+          "formikPath": "Atoms"
+        },
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "color",
+        "name": "headerHover",
+        "label": "Table Header Hover Bg Color",
+        "value": "",
+        "update": {
+          "reduxPath": "atoms.table.headerHover",
+          "formikPath": "Atoms"
+        },
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        } 
+      },
+      {
+        "type": "color",
+        "name": "headerColor",
+        "label": "Table Header Font Color",
+        "value": "",
+        "placement": "themingElement",
+        "update": {
+          "reduxPath": "atoms.table.headerColor",
+          "formikPath": "Atoms"
+        }, 
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+
+      {
+        "type": "color",
+        "name": "treeCardBgColor",
+        "label": "Tree Card Bg Color",
+        "value": "",
+        "update": {
+          "reduxPath": "atoms.treeCard.treeCardBgColor",
+          "formikPath": "Atoms"
+        },
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "color",
+        "name": "primaryBgColor",
+        "label": "Primary Button Bg Color",
+        "value": "",
+        "placement": "themingElement",
+        "update": {
+          "reduxPath": "atoms.button.primaryBgColor",
+          "formikPath": "Atoms"
+        },
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "color",
+        "name": "primaryColor",
+        "label": "Primary Button Font Color",
+        "value": "",
+        "update": {
+          "reduxPath": "atoms.button.primaryColor",
+          "formikPath": "Atoms"
+        },
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "color",
+        "name": "primaryBgColorHover",
+        "label": "Primary Button Bg Color Hover",
+        "value": "",
+        "update": {
+          "reduxPath": "atoms.button.primaryBgColorHover",
+          "formikPath": "Atoms"
+        },
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "color",
+        "name": "primaryOutlineHoverColor",
+        "label": "Primary Outline Bg Hover",
+        "value": "",
+        "update": {
+          "reduxPath": "atoms.button.primaryOutlineHoverColor",
+          "formikPath": "Atoms"
+        },
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "color",
+        "name": "primaryOutlineBgColor",
+        "label": "Primary Outline Bg Color",
+        "value": "",
+        "update": {
+          "reduxPath": "atoms.button.primaryOutlineBgColor",
+          "formikPath": "Atoms"
+        },
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "color",
+        "name": "landingPanelLoginButton",
+        "label": "Landing Panel Login Button Bg Color",
+        "value": "",
+        "update": {
+          "reduxPath": "atoms.button.landingPanelLoginButton",
+          "formikPath": "Atoms"
+        },
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "color",
+        "name": "primaryGroupOutlineBgColor",
+        "label": "Primary Group Outline Bg Color",
+        "update": {
+          "reduxPath": "atoms.button.primaryGroupOutlineBgColor",
+          "formikPath": "Atoms"
+        },
+        "value": "",
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "color",
+        "name": "primaryGroupOutlineColor",
+        "label": "Primary Group Outine Font Color",
+        "value": "",
+        "update": {
+          "reduxPath": "atoms.button.primaryGroupOutlineColor",
+          "formikPath": "Atoms"
+        },
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "color",
+        "name": "primaryGroupOutlineHoverBgColor",
+        "label": "Primary Group Outline Hover Bg Color ",
+        "placement": "themingElement",
+        "value": "",
+        "update": {
+          "reduxPath": "atoms.button.primaryGroupOutlineHoverBgColor",
+          "formikPath": "Atoms"
+        },
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "color",
+        "name": "primaryGroupOutlineHoverColor",
+        "label": "Primary Group Outline Hover Font Color",
+        "value": "",
+        "placement": "themingElement",
+        "update": {
+          "reduxPath": "atoms.button.primaryGroupOutlineHoverColor",
+          "formikPath": "Atoms"
+        },
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "color",
+        "name": "radioButtonGroupBgColor",
+        "label": "Radio Button Group Bg Color",
+        "placement": "themingElement",
+        "value": "",
+        "update": {
+          "reduxPath": "atoms.button.radioButtonGroupBgColor",
+          "formikPath": "Atoms"
+        },
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "color",
+        "name": "radioButtonGroupColor",
+        "value": "",
+        "label": "Radio Button Group Font Color",
+        "placement": "themingElement",
+        "update": {
+          "reduxPath": "atoms.button.radioButtonGroupColor",
+          "formikPath": "Atoms"
+        },
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "color",
+        "name": "closeButtonBgColor",
+        "label": "Close Button Bg Color",
+        "value": "",  
+        "update": {
+          "reduxPath": "atoms.button.closeButtonBgColor",
+          "formikPath": "Atoms"
+        },
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "color",
+        "name": "closeButtonColor",
+        "label": "Close Button Font Color",
+        "value": "",
+        "update": {
+          "reduxPath": "atoms.button.closeButtonColor",
+          "formikPath": "Atoms"
+        },
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "color",
+        "name": "buttonDropDownItemColor",
+        "label": "Button Dropdown Item Font Color",
+        "value": "",
+        "update": {
+          "reduxPath": "atoms.buttonDropdown.buttonDropDownItemColor",
+          "formikPath": "Atoms"
+        },
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "color",
+        "name": "iconDropDownItemColor",
+        "label": "Icon Dropdown Item Font Color",
+        "value": "",
+        "update": {
+          "reduxPath": "atoms.iconDropdown.iconDropDownItemColor",
+          "formikPath": "Atoms"
+        },
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      }
+    ]
+  ]
+}

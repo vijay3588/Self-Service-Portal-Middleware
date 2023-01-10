@@ -1,0 +1,10 @@
+{
+  "data": {
+    "dataType": "string",
+    "defaultValue": null
+  },
+  "identifier": {
+    "dataType": "string",
+    "defaultValue": null
+  }
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "frontDataSegment": "EmployeeProfile",
+    "frontDataSegmentPath": "values",
+    "rearDataSegment": "actor",
+    "rearDataSegmentClass": "aSPLI_Person",
+    "rearDataSegmentPath": "data.person.data",
+    "rearDataSegmentType": "object"
+  },
+  {
+    "frontDataSegment": "EmployeeProfile",
+    "frontDataSegmentPath": "values",
+    "rearDataSegment": "correspondences",
+    "rearDataSegmentClass": "aSPCB_Correspondence",
+    "rearDataSegmentPath": "data.person.data",
+    "rearDataSegmentType": "array"
+  }
+]

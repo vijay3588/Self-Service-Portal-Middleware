@@ -1,0 +1,25 @@
+[
+
+    {
+        "frontSegment": "searchOperations",
+        "dataParentSegment": "",
+        "dataSegmentType": "array",
+        "defaultSectorMapping": [
+            {
+                "frontSector": "actionDescription",
+                "rearSector": "actionDescription",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "actionTitle",
+                "rearSector": "actionTitle",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "date",
+                "rearSector": "date",
+                "defaultValue": ""
+            }
+        ]
+    }
+]

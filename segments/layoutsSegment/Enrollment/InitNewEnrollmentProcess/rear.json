@@ -1,0 +1,13 @@
+[
+  {
+    "frontDataSegment": "values",
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "disbursementBuid",
+        "rearSector": "disbursementBuid",
+        "defaultValue": ""
+      }
+    ]
+  }
+]

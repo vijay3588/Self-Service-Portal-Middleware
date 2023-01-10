@@ -1,0 +1,11 @@
+{
+    "invoiceBuid": {
+        "dataType": "string",
+        "defaultValue": "aSPCB_Correspondence"
+    },
+    "maxSize": {
+        "dataType": "number",
+        "defaultValue": 0
+    }
+}
+

@@ -1,0 +1,14 @@
+{
+    "internalPolicyIdentifier": {
+        "dataType": "object",
+        "name": "internalPolicyIdentifier"
+    },
+    "externalPolicyIdentifier": {
+        "dataType": "object",
+        "name": "externalPolicyIdentifier"
+    },
+    "buid": {
+        "dataType": "string",
+        "defaultValue": ""
+    }
+}

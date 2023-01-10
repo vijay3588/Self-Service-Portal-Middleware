@@ -1,0 +1,90 @@
+{
+  "changeConfig": {
+    "leftCard": {
+      "element": [
+        "Current Broker Name",
+        "Broker Name"
+      ],
+      "className": " col-12 col-lg-5 mb-4 mb-lg-0 p-4 current-name-left-card",
+      "changeType": "Name",
+      "type": "expression",
+      "mappings": [
+        {
+          "mapElement": "brokerName",
+          "expression": "`${data.name || ''}`"
+        }
+      ]
+    },
+    "rightCard": {
+      "element": ["New Broker Name", "Broker Name "],
+      "className": " col-12 col-lg-6 offset-lg-1 p-4 current-name-right-card",
+      "mapElement": "newName",
+      "changeType": "Name",
+      "type": "expression",
+      "value": ""
+    }
+  },
+  "elements": [
+    [
+      {
+        "name": "effectiveDate",
+        "label": "Effective Date",
+        "placement": "col-lg-3",
+        "type": "readOnly",
+        "getValuesFrom": "BrokerNewName",
+        "image": "calender_icon_medium.png",
+        "config": {
+          "valueType": "date",
+          "format" : "MM/DD/YYYY"
+        }
+      }
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "Current Broker Name"
+      }
+    ],
+    [
+      {
+        "name": "currentName",
+        "type": "readOnly",
+        "label": "Current Broker Name",
+        "value": "",
+        "hideLabel": true
+      }
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "New Broker Name"
+      }
+    ],
+    [
+      {
+        "name": "newName",
+        "type": "readOnly",
+        "label": "New Broker Name",
+        "value": "",
+        "hideLabel": true
+      }
+    ],
+    [
+      {
+        "name": "name",
+        "label": "Broker Name ",
+        "type": "readOnly",
+        "getValuesFrom": "BrokerNewName"
+      }
+    ],
+ 
+    [
+      {
+        "label": "Broker Name",
+        "name":"brokerName",
+        "type": "readOnly",
+        "getValuesFromData": "name"
+      }
+    ]
+  ]
+}

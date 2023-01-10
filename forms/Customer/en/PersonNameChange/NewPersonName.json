@@ -1,0 +1,114 @@
+{
+  "changeConfig": {
+    "leftCard": {
+      "element": [
+        "Current Name",
+        "First Name",
+        "Last Name"
+      ],
+      "className": "col-12 col-lg-5 mb-4 mb-lg-0 p-4 current-name-left-card",
+      "changeType": "PersonName",
+      "type": "expression",
+      "mappings": [
+        {
+          "mapElement": "firstName",
+          "expression": "`${data.name || ''}`"
+        },
+        {
+          "mapElement": "lastName",
+          "expression": "`${data.shortName || ''}`"
+        }
+      ]
+    },
+    "rightCard": {
+      "element": ["New Name", "First Name ", "Last Name "],
+      "className": " col-12 col-lg-6 offset-lg-1 p-4 current-name-right-card"
+    }
+  },
+  "elements": [
+    [
+      {
+        "type": "date",
+        "name": "effectiveDate",
+        "rearSector": "updateDate",
+        "label": "Effective Date",
+        "placement": "col-md-3",
+        "currentDate": true,
+				"image": "calender_icon_medium.png",
+				"config": {
+					"valueType": "date",
+					"format": "MM/DD/YYYY"
+				},
+        "validations": {
+					"string": {
+						"required": "This field is required"
+					}
+				}
+      }
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "Current Name"
+      }
+    ],
+    [
+      {
+        "name": "currentName",
+        "type": "readOnly",
+        "label": "Current Name",
+        "value": "",
+        "hideLabel": true
+      }
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "New Name"
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "name": "name",
+        "rearSector": "name",
+        "label": "First Name ",
+        "validations": {
+          "string": {
+            "required": "mandatory field"
+          }
+        },
+        "placement": "col-md-12 col-12 mb-3"
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "name": "shortName",
+        "rearSector": "shortName",
+        "label": "Last Name ",
+        "validations": {
+          "string":{
+            "required": "mandatory field"
+          }
+        },
+        "placement": "col-md-12 col-12 mb-3"
+      }
+    ],
+    [
+      {
+        "label": "First Name",
+        "type": "readOnly",
+        "name": "firstName"
+      }
+    ],
+    [
+      {
+        "label": "Last Name",
+        "type": "readOnly",
+        "getValuesFromData": "shortName",
+        "name": "lastName"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,5 @@
+{ 
+    "description": {"dataType": "string", "defaultValue":""}, 
+    "percent": {"dataType": "number", "defaultValue":""}, 
+    "fraction": {"dataType": "number", "defaultValue":""}
+}

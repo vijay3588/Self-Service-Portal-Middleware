@@ -1,0 +1,113 @@
+{
+  "changeConfig": {
+    "leftCard": {
+      "element": ["Current Email","Current Cell Phone"],
+      "className": " col-12 col-lg-5 mb-4 mb-lg-0 p-4 current-address-left-card",
+      "changeType": "Correspondence",
+      "type": "expression",
+      "mappings": [
+        {
+          "mapElement": "currentEmail",
+          "expression": "`${data.eMail || ''}`"  
+        },
+        {
+          "mapElement": "currentCellPhone",
+          "expression": "`${data.cellPhone || ''}`"  
+        }
+      ]
+    },
+    "rightCard": {
+      "element": ["New Email Address","New Cell Phone"],
+      "className": " col-12 col-lg-6 offset-lg-1 p-4 current-address-right-card",
+      "changeType": "Correspondence",
+      "type": "expression",
+
+      "mappings": [
+        {
+          "mapElement": "newEmail",
+          "expression":  "`${rightData.newEmail ? `${rightData.newEmail}` : ''}`"
+        },
+        {
+          "mapElement": "newCellPhone",
+          "expression":  "`${rightData.newCellPhone ? `${rightData.newCellPhone}` : ''}`"
+        }
+      ]
+    }
+  },
+  "elements": [
+    [
+      {
+        "name": "effectiveDate",
+        "label": "Effective Date",
+        "placement": "col-lg-3",
+        "type": "readOnly",
+        "getValuesFrom": "NewContactInformation",
+        "image": "calender_icon_medium.png",
+        "config": {
+          "valueType": "date",
+          "format" : "MM/DD/YYYY"
+        }
+      }
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "Current Email"
+      }
+    ],
+    [
+      {
+        "name": "currentEmail",
+        "type": "readOnly",
+        "label": "Current Email",
+        "value": "",
+        "hideLabel": true
+      }
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "Current Cell Phone"
+      }
+    ],
+    [
+      {
+        "name": "currentCellPhone",
+        "type": "readOnly",
+        "label": "Current Cell Phone",
+        "value": "",
+        "hideLabel": true
+      }
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "New Email Address"
+      }
+    ],
+    [
+      {
+        "name": "newEmail",
+        "type": "readOnly",
+        "label": "New Email Address",
+        "value": "",
+        "hideLabel": true
+      }
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "New Cell Phone"
+      }
+    ],
+    [
+      {
+        "name": "newCellPhone",
+        "type": "readOnly",
+        "label": "New Cell Phone",
+        "value": "",
+        "hideLabel": true
+      }
+    ]
+  ]
+}

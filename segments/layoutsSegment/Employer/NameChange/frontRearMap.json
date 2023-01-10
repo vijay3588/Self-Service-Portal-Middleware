@@ -1,0 +1,35 @@
+[
+  {
+    "frontDataSegment": "values.NewName",
+    "rearDataSegment": "legalEntityIdentity",
+    "rearDataSegmentPath": "input.loggedUserEntity",
+    "rearDataSegmentType": "object",
+    "reduxObject": true,
+    "reduxDataSegmentPath": "loggedUserEntity._Result",
+    "frontSegmentForm": "NewName"
+  },
+  {
+    "frontDataSegment": "",
+    "rearDataSegment": "loginInformation",
+    "rearDataSegmentPath": "input",
+    "rearDataSegmentType": "data",
+    "rearSegmentData": null,
+    "reduxObject": true
+  },
+  {
+    "frontDataSegment": "",
+    "rearDataSegment": "legalEntityDivision",
+    "rearDataSegmentPath": "input",
+    "rearDataSegmentType": "data",
+    "rearSegmentData": [],
+    "reduxObject": true
+  },
+  {
+    "frontDataSegment": "",
+    "rearDataSegment": "paymentMethods",
+    "rearDataSegmentPath": "input",
+    "rearDataSegmentType": "data",
+    "rearSegmentData": [],
+    "reduxObject": true
+  }
+]

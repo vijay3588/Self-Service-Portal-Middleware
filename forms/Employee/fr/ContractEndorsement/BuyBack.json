@@ -1,0 +1,112 @@
+{
+	"elements": [
+		[
+			{
+				"name": "effectiveDate",
+				"type": "date",
+				"label": "Date d’effet",
+				"placement": "col-md-4 col-12",
+				"currentDate": true,
+				"image": "calender_icon_medium.png",
+				"config": {
+					"valueType": "date",
+					"format": "MM/DD/YYYY"
+				},
+				"validations": {
+					"string": {
+						"required": "Ce champ est requis"
+					}
+				}
+			}
+		],
+		[
+			{
+				"type": "readOnly",
+				"name": "loanAmount",
+				"label": "Montant du prêt",
+				"placement": "col-md-4 col-12",
+				"valueConfig": {
+					"reduxObject": "onNextResponseList",
+					"mapperObject": {
+						"value": "`${ currentObject.GetPrincipalBalanceForLoan && currentObject.GetPrincipalBalanceForLoan.principalBalanceForLoan || '0' }`"
+					}
+				},
+				"config": {
+					"valueType": "currency",
+					"locale": "fr-FR",
+					"currency": "EUR"
+				}
+			},
+
+			{
+				"type": "checkbox",
+				"name": "fullReimbursment",
+				"rearSector": "",
+				"label": "Rachat total",
+				"placement": "col-md-4 col-12"
+			}
+		],
+		[
+			{
+				"disabled": "fullReimbursment",
+				"config": {
+					"disableValue": true
+				},
+				"name": "redemptionAmount",
+				"rearSector": "amount",
+				"rearDataSegment": "baseSalaryAmount",
+				"label": "Montant du rachat",
+				"type": "currency",
+				"locale": "fr-FR",
+				"currency": "EUR",
+				"groupSeperator": " ",				
+
+				"decimal": 0,
+				"placement": "col-md-4 col-12",
+				"validations": {
+					"string": {
+						"required": "Ce champ est requis"
+					}
+				},
+				"manipulationServiceConfig" :   {
+					"affectElement" : "reimbursementAmount",
+					"manipulationFunction" : "subraction",
+					"manipulationSRCA" : "loanAmount",
+					"manipulationSRCB" : "redemptionAmount"
+				  }
+			},
+			{
+				"disabled": "fullReimbursment",
+				"name": "reimbursementAmount",
+				"rearSector": "",
+				"rearDataSegment": "",
+				"label": "Nouveau Montant du prêt",
+				"type": "readOnly",
+			
+				"decimal": 0,
+				"placement": "col-md-4 col-12  mt-n2",
+				"validations": {
+					"string": {
+						"required": "Ce champ est requis"
+					}
+				},
+				"config": {
+					"disableValue": true,
+					"valueType": "currency",
+					"locale": "fr-FR",
+					"currency": "EUR"
+				}
+			}
+		],
+		[
+			{
+				"type": "button",
+				"name": "uploadDocuments",
+				"label": "Sélectionner et télécharger le justificatif de la banque",
+				"className": "",
+				"config": {},
+				"placement": "col-md-5 col-12"
+			}
+		]
+	]
+}

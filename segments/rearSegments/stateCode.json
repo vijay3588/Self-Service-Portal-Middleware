@@ -1,0 +1,14 @@
+{
+    "stateName": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "stateCode": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "stateLabel": {
+        "dataType": "string",
+        "defaultValue": ""
+    }
+}

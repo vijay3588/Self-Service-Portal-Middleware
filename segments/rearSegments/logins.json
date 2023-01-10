@@ -1,0 +1,10 @@
+{
+  "data": {
+    "dataType": "object",
+    "name": "aSPCB_ExternalApplicationUserData"
+  },
+  "identifier": {
+    "dataType": "string",
+    "defaultValue": null
+  }
+}

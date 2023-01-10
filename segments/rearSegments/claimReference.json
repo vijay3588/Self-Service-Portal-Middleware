@@ -1,0 +1,16 @@
+{
+
+    "data": {
+        "dataType": "object",
+        "name": "claimData"
+    },
+    "identifier": {
+        "dataType": "string",
+        "defaultValue": null
+    },
+    "withOptionsInitializedToStudy": {
+        "dataType": "boolean",
+        "defaultValue": true
+    }
+}
+

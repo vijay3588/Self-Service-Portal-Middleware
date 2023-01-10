@@ -1,0 +1,11 @@
+{
+    "paymentFunctionalIdentifier": {
+      "dataType": "string",
+      "defaultValue": ""
+    },
+    "buid": {
+      "dataType": "string",
+      "defaultValue": ""
+    }
+  }
+  

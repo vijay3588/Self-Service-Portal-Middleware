@@ -1,0 +1,19 @@
+{
+    "className": {
+      "dataType": "string",
+      "defaultValue": "aSPCB_CreateSuspenseAccountPayment"
+    },
+    "clientId": {
+        "dataType": "object",
+        "name": "clientIds"
+      },    
+    "amount": {
+      "dataType": "object",
+      "name": "amount",
+      "dataConfig": {
+        "configType": "number",
+        "currency": "$"
+      }
+    }
+  }
+  

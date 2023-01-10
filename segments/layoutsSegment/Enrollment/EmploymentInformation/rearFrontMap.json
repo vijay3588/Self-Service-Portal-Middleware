@@ -1,0 +1,49 @@
+
+[
+   
+    {
+      "frontSegment": "employmentInformation",
+      "dataParentSegment": "",
+      "dataSegmentType": "object",
+      "defaultSectorMapping": [
+        {
+          "frontSector": "employerName",
+          "rearSector": "description",
+          "rearDataSegmentPath": "legalEntity.identifier",
+          "defaultValue": ""
+        },
+        {
+          "frontSector": "divisionCode",
+          "rearSector": "worksiteState",
+          "rearDataSegmentPath": "employee",
+          "defaultValue": ""
+        },
+        {
+          "frontSector": "workLocation",
+          "rearSector": "worksiteState",
+          "rearDataSegmentPath": "employee",
+          "defaultValue": ""
+        },
+        {
+          "frontSector": "salary",
+          "rearSector": "amount",
+          "rearDataSegmentPath": "employee.baseSalaryAmount",
+          "defaultValue": ""
+        },
+        {
+          "frontSector": "payFrequency",
+          "rearSector": "workingHoursDefinedForFrequency",
+          "rearDataSegmentPath": "employee",
+          "defaultValue": ""
+        },
+        {
+          "frontSector": "employmentStatus",
+          "rearSector": "employmentStatus",
+          "rearDataSegmentPath": "employee",
+          "defaultValue": ""
+        }
+        
+      
+      ]
+    }
+]

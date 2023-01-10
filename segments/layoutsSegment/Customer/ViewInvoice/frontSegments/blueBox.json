@@ -1,0 +1,8 @@
+{ 
+    "currentAmountDue": {"dataType": "number", "defaultValue": 0}, 
+    "dueDate": {"dataType": "number", "defaultValue": 0}, 
+    "amountDue": {"dataType": "number", "defaultValue": 0},  
+    "disbursementStatus": {"dataType": "date", "defaultValue": "", 
+        "dataConfig":{"configType":"getPastDays", "endString":" days remaining"} 
+    } 
+}

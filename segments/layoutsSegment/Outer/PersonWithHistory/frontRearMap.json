@@ -1,0 +1,15 @@
+[
+  {
+    "frontDataSegment": "body",
+    "rearDataSegment":"clientIdentifiers",
+    "rearDataSegmentType": "object",
+    "rearDataSegmentPath": "input",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "authReqData",
+        "rearSector": "buid",
+        "defaultValue": ""
+      }
+    ]
+  }
+]

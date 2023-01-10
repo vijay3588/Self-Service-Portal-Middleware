@@ -1,0 +1,14 @@
+[
+  {
+    "frontDataSegment": "formValues",
+    "rearDataSegment": "brokerIdentity",
+    "rearDataSegmentPath": "input",
+    "rearDataSegmentType": "object",
+    "reduxObject":true,
+    "frontSegmentForm": "BrokerNewName",
+    "reduxDataSegmentPath": "brokerEntity",
+    "defaultSectorMapping" : [
+      {"frontSector": "shortName", "rearSector": "name", "defaultValue": 0}
+    ]
+  }
+]

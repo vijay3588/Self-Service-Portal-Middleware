@@ -1,0 +1,51 @@
+{
+  "elements": [
+    [ 
+      {
+        "type": "date",
+        "name": "eventDate",
+        "rearSector": "eventDate",
+        "label": "Date de l’arrêt de travail",
+        "placement": "col-md-4 col-12",
+        "validations": {
+          "date": {
+            "required": "Ce champ est requis"
+          }
+        }
+      },
+      {
+        "type": "date",
+        "name": "eventEndDate",
+        "rearSector": "eventEndDate",
+        "label": "Date de fin de l'arrêt de travail (facultatif)",
+        "placement": "col-md-4 col-12",
+        "validations": {     
+        }
+      }
+     
+    ],
+    [
+      {
+        "type": "select",
+        "name": "disabilityKindVersion",
+        "label": "Type de fait générateur",
+        "rearSector": "disabilityKindVersion",
+        "placement": "col-md-4 col-12",
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis"
+          }
+        },
+        "options":[
+          {"value": "meUndefined","text":"Indéfini"},
+          {"value": "ckIllness","text":"Maladie"}, 
+          {"value": "ckAccident","text":"Accident"}, 
+          {"value": "ckHospitalization","text":"Hospitalisation"}, 
+          {"value": "ckMaternity","text":"Maternité"},
+          {"value": "ckPaternity","text":"Paternité"} 
+      ]
+      }
+    ]
+
+  ]
+}

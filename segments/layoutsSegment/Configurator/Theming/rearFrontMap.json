@@ -1,0 +1,78 @@
+[
+    {
+        "frontSegment": "components",
+        "dataParentSegment": "components",
+        "dataSegmentType": "object",
+        "defaultSectorMapping": [
+            {
+                "frontSector": "appBackgroundColor",
+                "rearSector": "shortName",
+                "rearDataSegmentPath": "legalEntityIdentity",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "mainBackgroundColor",
+                "rearSector": "internalClientId",
+                "rearDataSegmentPath": "clientId",
+                "defaultValue": ""
+            }
+          
+        ]
+    },
+    {
+        "frontSegment": "molecules",
+        "dataParentSegment": "molecules",
+        "dataSegmentType": "object",
+        "defaultSectorMapping": [
+            {
+                "frontSector": "panelBgColor",
+                "rearSector": "addressUsage",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "modalHeaderBgColor",
+                "rearSector": "isDefaultCorrespondance",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            }
+        
+        ]
+    },
+    {
+        "frontSegment": "cells",
+        "dataParentSegment": "paymentMethods",
+        "dataSegmentType": "array",
+        "defaultSectorMapping": [
+            {
+                "frontSector": "stepperNavigationBgColor",
+                "rearSector": "name",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            }
+      
+           
+        ]
+    },
+    {
+        "frontSegment": "atoms",
+        "dataParentSegment": "contactInformations",
+        "dataSegmentType": "array",
+        "defaultSectorMapping": [
+            {
+                "frontSector": "boxcardBgColor",
+                "rearSector": "addressUsage",
+                "rearDataSegmentPath": "",
+                "defaultValue": "0"
+            },
+            {
+                "frontSector": "tableHeaderBgColor",
+                "rearSector": "isDefaultCorrespondance",
+                "rearDataSegmentPath": "correspondence",
+                "defaultValue": ""
+            }
+            
+        ]
+    }
+   
+]

@@ -1,0 +1,22 @@
+{
+    "dateType": {
+        "dataType": "string",
+        "defaultValue": "cQuoteValidityEndDate"
+    },
+    "fromDate": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "toDate": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "quoteType": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "quoteStatus": {
+        "dataType": "string",
+        "defaultValue": "csAllQuoteStatuses"
+    }
+}

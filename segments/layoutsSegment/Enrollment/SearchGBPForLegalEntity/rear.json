@@ -1,0 +1,10 @@
+{
+  "legalEntityBuidId": {
+    "dataType": "string",
+    "name": "legalEntityBuidId"
+  },
+  "maxSize": {
+    "dataType": "number",
+    "defaultValue": 4
+  }
+}

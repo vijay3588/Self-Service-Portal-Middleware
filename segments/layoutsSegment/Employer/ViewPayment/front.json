@@ -1,0 +1,6 @@
+{
+  "viewHeader": {"dataType": "object", "name": "viewHeader" },
+  "blueBox": {"dataType": "object", "name": "blueBox" },
+  "paymentsCard": {"dataType": "object", "name": "paymentsCard" },
+  "tablesCard": {"dataType": "object", "name": "tablesCard" }
+}

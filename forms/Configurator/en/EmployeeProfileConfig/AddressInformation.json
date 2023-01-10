@@ -1,0 +1,198 @@
+{
+  "elements": [
+    [
+      {
+        "type": "panelSideHeader",
+        "outerDiv": false,
+        "name": "Employee Address Information",
+        "label": "Employee Address Information",
+        "placement": "col-md-6 pt-3",
+        "formSideBigHeader": "Employee Address Information",
+        "header": true
+      }
+    ],
+
+    [
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "DataField",
+        "rearSector": "shortName",
+        "label": "Data Field",
+        "mapping": true,
+        "labelTitle": "Data Field",
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "Required Field",
+        "rearSector": "shortName",
+        "label": "Required Field",
+        "mapping": true,
+        "labelTitle": "Required Field",
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "Toggle Field On/Off",
+        "rearSector": "shortName",
+        "label": "Toggle Field On/Off",
+        "mapping": true,
+        "labelTitle": "Toggle Field On/Off",
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "Editable Label",
+        "rearSector": "shortName",
+        "label": "Editable Label",
+        "mapping": true,
+        "labelTitle": "Editable Label",
+
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "Editable Field",
+        "rearSector": "shortName",
+        "label": "Editable Field",
+        "mapping": true,
+        "labelTitle": "Editable Field",
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      }
+    ],
+
+    [
+      {
+        "type": "readOnly",
+        "disabled": true,
+
+        "name": "personalEmail",
+
+        "rearSector": "personalEmail",
+
+        "mapping": true,
+        "labelTitle": "Personal Email",
+
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "checkbox",
+        "name": "personalEmailAddressRequired",
+        "label": "",
+        "placement": "col-md-5 col-lg-2 col-12"
+      },
+      {
+        "type": "checkbox",
+        "name": "personalEmailAddressToggle",
+        "label": "",
+        "placement": "col-md-5 col-lg-2 col-12"
+      },
+      {
+        "type": "checkbox",
+        "name": "personalEmailAddressEditable",
+        "label": "",
+        "placement": "col-md-5 col-lg-2  col-12"
+      },
+      {
+        "type": "checkbox",
+        "name": "personalEmailAddressChangedByEmp",
+        "label": "",
+        "placement": "col-md-5 col-lg-2 col-12"
+      }
+    ],
+    [
+      {
+        "type": "readOnly",
+        "disabled": true,
+
+        "name": "personalPhone",
+
+        "rearSector": "personalPhone",
+
+        "mapping": true,
+        "labelTitle": "Personal Phone",
+
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "checkbox",
+        "name": "personalPhoneRequired",
+        "label": "",
+        "placement": "col-md-5 col-lg-2 col-12"
+      },
+      {
+        "type": "checkbox",
+        "name": "personalPhoneToggle",
+        "label": "",
+        "placement": "col-md-5 col-lg-2 col-12"
+      },
+
+      {
+        "type": "checkbox",
+        "name": "personalPhoneEditable",
+        "label": "",
+        "placement": "col-md-5 col-lg-2  col-12"
+      },
+      {
+        "type": "checkbox",
+        "name": "personalPhoneChangedByEmp",
+        "label": "",
+        "placement": "col-md-5 col-lg-2 col-12"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "isMultiple": false,
+  "multiConfig": {
+    "maxAdds": 3,
+    "tableHeader": [
+      {
+        "value": "Address Type",
+        "config": {
+          "className": ""
+        }
+      },
+      {
+        "value": "Mailing Address",
+        "config": {
+          "className": ""
+        }
+      },
+      {
+        "value": "Phone Number",
+        "config": {
+          "className": ""
+        }
+      },
+      {
+        "value": "Email",
+        "config": {
+          "className": ""
+        }
+      }
+    ],
+    "tableRow": [
+      {
+        "value": "data.typeOfAddress",
+        "config": {
+          "optionsname": "AccountTypeConstants"
+        },
+        "type": "expression"
+      },
+      {
+        "value": "`${data.lineOne}, ${data.city} ${data.state} ${data.zipCode}`",
+        "type": "expression"
+      },
+      {
+        "value": "data.phoneNumberPrimary",
+        "type": "expression"
+      },
+      {
+        "value": "email",
+        "type": "email"
+      }
+    ],
+    "addButtonLabel": " New Division"
+  },
+  "elements": [
+    [
+      {
+        "type": "text",
+        "name": "employeeId",
+        "rearSector": "employeeID",
+        "label": "Employee ID",
+        "placement": "col-md-4 col-12",
+        "validations": {
+          "string": {
+            "required": "This field is required"
+          }
+        }
+      },
+      {
+        "type": "date",
+        "name": "hireDate",
+        "rearSector": "hireDate",
+        "label": "Hire Date",
+        "placement": "col-md-2 col-12",
+        "validations": {
+          "date": {
+            "required": "This field is required",
+            "max": {
+              "limit": 0,
+              "unit": "y",
+              "message": "Hire Date cannot be in the future"
+            }
+          }
+        }
+      },
+      {
+        "type": "select",
+        "name": "division",
+        "label": "Division",
+        "placement": "col-md-2 col-12",
+        "options": "",
+        "optionKind": "apiCall",
+        "optionsConfig": {
+          "reduxObject": "loggedUserEntity",
+          "mapperObject": [
+            {
+              "takingDateform": "legalEntityDivision",
+              "value": "`${currentObject.headQuarter && currentObject.headQuarter.searchLegalEntity  && currentObject.headQuarter.searchLegalEntity.buid || ''}`",
+              "text": "`${currentObject.headQuarter && currentObject.headQuarter.searchLegalEntity  && currentObject.headQuarter.searchLegalEntity.clientFullName || ''}`"
+            }
+          ]
+        }
+      },
+      {
+        "type": "select",
+        "name": "worksiteState",
+        "rearSector": "worksiteState",
+        "label": "Worksite State",
+        "placement": "col-md-4 col-12",
+        "optionsname": "ShortStateConstants",
+        "options": "",
+        "validations": {}
+      }
+    ],
+    [
+      {
+        "type": "select",
+        "name": "employmentStatus",
+        "rearSector": "employmentStatus",
+        "label": "Employment Status",
+        "placement": "col-md-4 col-12",
+        "optionsname": "EmploymentStatusConstants",
+        "options": "",
+        "validations": {
+          "string": {
+            "required": "This field is required"
+          }
+        }
+      },
+      {
+        "type": "select",
+        "name": "workingCategory",
+        "rearSector": "workingCategory",
+        "label": "Working Cateogry",
+        "placement": "col-md-2 col-12",
+        "optionsname": "WorkingCategoryConstants",
+        "options": "",
+        "validations": {
+          "string": {
+            "required": "This field is required"
+          }
+        }
+      },
+      {
+        "type": "number",
+        "name": "workingHours",
+        "rearSector": "workingHours",
+        "label": "Working Hours",
+        "placement": "col-md-2 col-12",
+        "validations": {
+          "string": {
+            "required": "This field is required"
+          }
+        }
+      },
+      {
+        "disabled": "workingHours",
+        "type": "select",
+        "name": "frequency",
+        "rearSector": "workingHoursDefinedForFrequency",
+        "label": "Frequency",
+        "placement": "col-md-4 col-12",
+        "options": "",
+        "optionsname": "FrequencyConstants",
+        "validations": {
+          "string": {
+            "required": "This field is required"
+          }
+        }
+      }
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "Salary Information"
+      }
+    ],
+    [
+      {
+        "name": "baseSalary",
+        "rearSector": "amount",
+        "rearDataSegment": "baseSalaryAmount",
+        "dataConfig": {
+          "configType": "number",
+          "sector":"baseSalary",
+          "currency": "$"
+        },
+        "label": "Base Salary",
+        "type": "currency",
+        "locale": "en-US",
+        "currency": "USD",
+        "decimal": 0,
+        "placement": "col-md-2 col-12",
+        "validations": {
+          "string": {
+            "required": "This field is required"
+          }
+        }
+      },
+      {
+        "disabled": "baseSalary",
+        "type": "select",
+        "name": "baseSalaryFrequency",
+        "rearSector": "baseSalaryFrequency",
+        "defaultValue": "meUndefined",
+        "label": "Frequency",
+        "placement": "col-md-4 col-12",
+        "optionsname": "BaseSalaryFrequencyConstants",
+        "options": "",
+        "validations": {
+          "string": {
+            "required": "This field is required"
+          }
+        }
+      }
+    ],
+    [
+      {
+        "type": "currency",
+        "locale": "en-US",
+        "currency": "USD",
+        "name": "bonus",
+        "rearSector": "amount",
+        "rearDataSegment": "salaryBonusAmount",
+        "dataConfig": {
+          "configType": "number",
+          "sector":"bonus",
+          "currency": "$"
+        },
+        "label": "Bonus",
+        "placement": "col-md-2 col-12",
+        "validations": {},
+        "decimal": 0
+      },
+      {
+        "disabled": "bonus",
+        "type": "select",
+        "name": "bonusFrequency",
+        "rearSector": "salaryBonusFrequency",
+        "defaultValue": "meUndefined",
+        "label": "Frequency",
+        "placement": "col-md-4 col-12",
+        "optionsname": "BonusFrequencyConstants",
+        "options": ""
+      }
+    ],
+    [
+      {
+        "type": "currency",
+        "locale": "en-US",
+        "currency": "USD",
+        "name": "commissions",
+        "rearSector": "amount",
+        "rearDataSegment": "salaryCommissionAmount",
+        "dataConfig": {
+          "configType": "number",
+          "sector":"commissions",
+          "currency": "$"
+        },
+        "label": "Commissions",
+        "placement": "col-md-2 col-12",
+        "validations": {},
+        "decimal": 0
+      },
+      {
+        "disabled": "commissions",
+        "type": "select",
+        "name": "commissionsFrequency",
+        "rearSector": "salaryCommissionFrequency",
+        "defaultValue": "meUndefined",
+        "label": "Frequency",
+        "optionsname": "CommissionsFrequencyConstants",
+        "placement": "col-md-4 col-12",
+        "options": ""
+      }
+    ]
+  ]
+}

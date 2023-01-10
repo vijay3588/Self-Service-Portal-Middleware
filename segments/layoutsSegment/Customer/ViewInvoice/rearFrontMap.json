@@ -1,0 +1,100 @@
+[
+    {
+        "formName": "viewHeader",
+        "cardElements": "cardElements",
+        "frontSegment": "viewHeader",
+        "dataParentSegment": "",
+        "dataSegmentType": "object",
+        "defaultSectorMapping": [
+            {
+                "frontSector": "buid",
+                "rearSector": "buid",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            }
+        ]
+    },
+    {
+        "formName": "blueBox",
+        "cardElements": "cardElements",
+        "frontSegment": "blueBox",
+        "dataParentSegment": "",
+        "dataSegmentType": "object",
+        "defaultSectorMapping": [
+            {
+                "frontSector": "disbursementStatus",
+                "rearSector": "dueDate",
+                "rearDataSegmentPath": "paramEntity",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "amountDue",
+                "rearSector": "amount",
+                "rearDataSegmentPath": "grossAmount",
+                "defaultValue": ""
+            }
+        ]
+    },
+    {
+        "formName": "disbursementCard",
+        "cardElements": "cardElements",
+        "frontSegment": "disbursementCard",
+        "dataParentSegment": "",
+        "dataSegmentType": "object",
+        "defaultSectorMapping": [
+            {
+                "frontSector": "payerName",
+                "rearSector": "payorName",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "invoicingDate",
+                "rearSector": "invoicingDate",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "invoiceNumber",
+                "rearSector": "name",
+                "rearDataSegmentPath": "invoiceId.statementIdentifier",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "currentAmountDue",
+                "rearSector": "amount",
+                "rearDataSegmentPath": "grossAmount",
+                "defaultValue": ""
+            }
+        ]
+    },
+    {
+        "formName": "statementCard",
+        "cardElements": "cardElements",
+        "frontSegment": "statementCard",
+        "dataParentSegment": "",
+        "dataSegmentType": "object",
+        "defaultSectorMapping": [
+            {
+                "frontSector": "disbursementStatement",
+                "rearSector": "buid",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            }
+        ]
+    },
+    {
+        "formName": "tablesCard",
+        "cardElements": "table.tableRowData",
+        "frontSegment": "payments",
+        "dataParentSegment": "payments",
+        "dataSegmentType": "array"
+    },
+    {
+        "formName": "tablesCard",
+        "cardElements": "table.tableRowData",
+        "frontSegment": "bills",
+        "dataParentSegment": "bills",
+        "dataSegmentType": "array"
+    }
+]

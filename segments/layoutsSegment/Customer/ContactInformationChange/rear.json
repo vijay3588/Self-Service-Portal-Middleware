@@ -1,0 +1,15 @@
+{
+    "customerBuid": {
+        "dataType": "string",
+        "defaultValue": ""
+      },
+    "newCorrespondence": {
+        "dataType": "object",
+        "name": "aSPCB_Correspondence"
+    },
+    "atDate": {
+        "dataType": "string",
+        "defaultValue": ""
+      }
+}
+

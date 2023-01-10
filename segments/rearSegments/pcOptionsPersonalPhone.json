@@ -1,0 +1,19 @@
+ {
+   
+  "hideOption": {
+    "dataType": "boolean",
+    "defaultValue": false
+  },
+     
+  "optionKey": {
+    "dataType": "string",
+    "defaultValue": "personal phone"
+  },
+  "optionValue": {
+    "dataType": "string",
+    "defaultValue": "personal phone"
+  }
+
+
+ 
+}

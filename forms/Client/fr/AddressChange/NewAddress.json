@@ -1,0 +1,144 @@
+{
+  "changeConfig": {
+    "leftCard": {
+      "element": ["Adresse actuelle"],
+      "className": "col-12 col-lg-5 mb-4 mb-lg-0 p-4 current-address-left-card",
+      "changeType": "Address",
+      "type": "expression",
+      "mappings": [
+        {
+          "mapElement": "currentAddress",
+          "expression": "`${data.line1 ? `${data.line1}, ` : ''}${data.line2 ? `${data.line2}, ` : ''}${ (data.zipCodeAndCity && data.zipCodeAndCity.city) ? `${data.zipCodeAndCity.city}, ` : '' }${data.district ? `${data.district} ` : ''}${(data.zipCodeAndCity && data.zipCodeAndCity.zipCode ) ? `${data.zipCodeAndCity.zipCode}, ` : ''}${data.country || ''}`"
+        }
+      ]
+    },
+    "rightCard": {
+      "element": ["Nouvelle adresse", "Ligne 1", "Ligne 2", "Ville", "Code postal", "Pays"],
+      "className": " col-12 col-lg-6 offset-lg-1 p-4 current-address-right-card"
+    }
+  },
+  "elements": [
+    [
+			{
+				"name": "effectiveDate",
+				"type": "date",
+				"label": "Date d’effet",
+				"placement": "col-md-4 col-12",
+				"currentDate": true,
+				"image": "calender_icon_medium.png",
+				"config": {
+					"valueType": "date",
+					"format": "MM/DD/YYYY"
+				},
+				"validations": {
+					"string": {
+						"required": "Ce champ est requis"
+					}
+				}
+			}
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "Adresse actuelle"
+      }
+    ],
+    [
+      {
+        "name": "currentAddress",
+        "type": "readOnly",
+        "label": "Adresse actuelle",
+        "value": "",
+        "hideLabel": true
+      }
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "Nouvelle adresse"
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "name": "lineOne",
+        "rearSector": "line1",
+        "label": "Ligne 1",
+        "validations": {
+          "string": {
+            "required": "mandatory field"
+          }
+        },
+        "placement": "col-md-12 col-12"
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "name": "lineTwo",
+        "rearSector": "line2",
+        "label": "Ligne 2",
+        "validations": {},
+        "placement": "col-md-12 col-12"
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "name": "zipCode",
+        "rearSector": "zipCode",
+        "label": "Code postal",
+        "placement": "col-md-6 col-12",
+        "dataMapping":{
+          "mappingComtrol": "city",
+          "sourceControl":"zipCode",
+          "controlObjPath": "NewAddress",
+          "mappingData": [
+            {"zipCode":75001, "city": "Paris Cedex 01"},
+            {"zipCode":78000, "city": "Versailles"},
+            {"zipCode":95300, "city": "Pontoise"},
+            {"zipCode":59000, "city": "Lille"},
+            {"zipCode":17000, "city": "La Rochelle"},
+            {"zipCode":66000, "city": "Perpignan"},
+            {"zipCode":35000, "city": "Rennes"}
+          ]
+        },
+        "validations": {
+          "string": {
+            "required": "Invalid Postal Code"
+          }
+        }
+      },
+      {
+        "type": "text",
+        "name": "city",
+        "rearSector": "city",
+        "label": "Ville",
+        "placement": "col-md-6 col-12",
+        "validations": {
+          "string": {
+            "required": "mandatory field"
+          }
+        }
+      }
+    ],
+    [
+      
+      {
+        "type": "select",
+        "name": "country",
+        "rearSector": "country",
+        "label": "Pays",
+        "value": "FRA",
+        "placement": "col-md-6 col-12",
+        "options": "",
+        "optionsname": "CountryConstants",
+        "validations": {
+          "string": {
+            "required": "mandatory field"
+          }
+        }
+      }
+    ]
+  ]
+}

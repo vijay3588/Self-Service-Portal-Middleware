@@ -1,0 +1,10 @@
+{
+    "contractBuid": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "withPremium": {
+        "dataType": "boolean",
+        "defaultValue": true
+    }
+}

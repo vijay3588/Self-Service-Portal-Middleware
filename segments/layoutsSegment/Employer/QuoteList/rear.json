@@ -1,0 +1,14 @@
+{
+    "criteria": {
+        "dataType": "object",
+        "name": "aSPLI_GetCustomer_In"
+    },
+    "extendedCriteria": {
+        "dataType": "object",
+        "name": "extendedCriteria"
+    },
+    "maxSize": {
+        "dataType": "number",
+        "defaultValue": 100
+    }
+}

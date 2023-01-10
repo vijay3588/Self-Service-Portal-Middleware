@@ -1,0 +1,6 @@
+{
+  "changeBoxBgColor": {
+    "dataType": "string",
+    "defaultValue": ""
+  }
+}

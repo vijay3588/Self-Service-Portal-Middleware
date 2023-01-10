@@ -1,0 +1,8 @@
+{ 
+    "loanBuid": {"dataType": "string", "defaultValue":""}, 
+    "loanType": {"dataType": "string", "defaultValue":"All"},
+    "principalAmount": {"dataType": "array", "defaultValue":""},
+    "lender": {"dataType": "string", "defaultValue":""},
+    "periodicAmount": {"dataType": "string", "defaultValue":""},
+    "loanTerm": {"dataType": "string", "defaultValue":""}
+}

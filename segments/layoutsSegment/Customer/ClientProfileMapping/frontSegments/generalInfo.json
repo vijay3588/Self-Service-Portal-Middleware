@@ -1,0 +1,18 @@
+{
+    "fullName": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "clientId": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "birthDate": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "country": {
+        "dataType": "string",
+        "defaultValue": ""
+    }
+}

@@ -1,0 +1,25 @@
+{
+  "clientId": {
+    "dataType": "number",
+    "defaultValue": 0
+  },
+
+  "dependentMiddleName": {
+    "dataType": "object",
+    "name": "empProfile"
+  },
+  "liveInSameAddress": {
+    "dataType": "object",
+    "name": "empProfile"
+  },
+
+  "dependentAddressLine2": {
+    "dataType": "object",
+    "name": "empProfile"
+  },
+
+  "dependentCountry": {
+    "dataType": "object",
+    "name": "empProfile"
+  }
+}

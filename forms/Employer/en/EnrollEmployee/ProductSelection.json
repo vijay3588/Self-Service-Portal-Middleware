@@ -1,0 +1,25 @@
+{
+  "elements": [
+    [       
+      
+      {
+        "type": "date",
+        "name": "signatureDate",
+        "rearSector": "signatureDate",
+        "label": "Signature Date",
+        "placement": "col-md-3 col-12",
+        "validations": {
+       
+        }
+      },
+      {
+        "type": "CheckboxList",
+        "name": "productSelection",
+        "label": "",
+        "placement": "col-md-12 mt-5 col-12"
+       
+      }
+      
+    ]
+  ]
+}

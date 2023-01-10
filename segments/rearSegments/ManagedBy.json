@@ -1,0 +1,11 @@
+{
+
+    "buid": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "Name": {
+        "dataType": "string",
+        "defaultValue": "Super Manager"
+    }
+}

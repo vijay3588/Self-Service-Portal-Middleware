@@ -1,0 +1,65 @@
+[
+  {
+    "frontDataSegment": "PersonalInfo",
+    "frontDataSegmentPath": "values",
+    "rearDataSegment": "actor",
+    "rearDataSegmentClass": "aSPLI_Person",
+    "rearDataSegmentPath": "data.person.data",
+    "rearDataSegmentType": "object"
+  },
+  {
+    "frontDataSegment": "ContactInfo",
+    "frontDataSegmentPath": "values",
+    "rearDataSegmentClass": "aSPCB_Correspondence",
+    "rearDataSegment": "correspondences",
+    "rearDataSegmentPath": "data.person.data",
+    "rearDataSegmentType": "array"
+  },
+  {
+    "frontDataSegment": "EmploymentInfo",
+    "frontDataSegmentPath": "values",
+    "rearDataSegmentClass": "aSPLI_Employee",
+    "rearDataSegment": "employee",
+    "rearDataSegmentPath": "data",
+    "rearDataSegmentType": "object"
+  },
+  {
+    "frontDataSegment": "BankAccount",
+    "frontDataSegmentPath": "values",
+    "rearDataSegmentClass": "aSPCB_US_BankAccount",
+    "rearDataSegment": "paymentMethods",
+    "rearDataSegmentPath": "data.person.data",
+    "rearDataSegmentType": "array"
+  },
+  {
+    "frontDataSegment": "ContactPerson",
+    "frontDataSegmentPath": "values",
+    "rearDataSegmentClass": "aSPCB_ActorContact",
+    "rearDataSegment": "contacts",
+    "rearDataSegmentPath": "data.person.data",
+    "rearDataSegmentType": "array"
+  },
+  {
+    "frontDataSegment": "PortalAccount",
+    "frontDataSegmentPath": "values",
+    "rearDataSegmentClass": "aSPCB_ApplicationLogin",
+    "rearDataSegment": "loginEntity",
+    "rearDataSegmentPath": "data.person.data.logins.data",
+    "rearDataSegmentType": "object"
+  },
+  {
+    "frontDataSegment": "clientId",
+    "frontDataSegmentPath": "loggedUserEntity._Result",
+    "rearDataSegmentClass": "aSPLI_LegalEntityIdentifier",
+    "rearDataSegment": "identifier",
+    "rearDataSegmentPath": "data.legalEntity",
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "buid",
+        "rearSector": "bUID",
+        "defaultValue": ""
+      }
+    ]
+  }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "frontSegment": "notificationInfo",
+        "dataParentSegment": "",
+        "dataSegmentType": "object",
+        "defaultSectorMapping": [
+            {
+                "frontSector": "notificationCount",
+                "rearSector": "",
+                "rearDataSegmentPath": "",
+                "defaultValue": "0",
+                "dataConfig":{"configType": "dataLength"}
+            },
+            {
+                "frontSector": "notifications",
+                "rearSector": "notifications",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            }
+        ]
+    },
+    {
+        "frontSegment": "notifications",
+        "dataParentSegment": "",
+        "subSegment": true,
+        "dataSegmentType": "array",
+        "defaultSectorMapping": [
+            {
+                "frontSector": "date",
+                "rearSector": "dateOfContact",
+                "rearDataSegmentPath": "",
+                "defaultValue": "",
+                "dataConfig": {
+                    "configType": "additionSector",
+                    "sector": "timeOfContact",
+                    "splitText": " "
+                }
+            },
+            {
+                "frontSector": "name",
+                "rearSector": "name",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            }
+        ]
+    }
+]

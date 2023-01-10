@@ -1,0 +1,54 @@
+{
+  "className": {
+    "dataType": "string",
+    "defaultValue": "aSPLI_PersonData"
+  },
+  "bUID": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "dataHistory": {
+    "dataType": "string",
+    "defaultValue": []
+  },
+  "thirdPartyId": {
+    "dataType": "string",
+    "defaultValue": "DistRoot"
+  },
+  "correspondences": {
+    "dataType": "object",
+    "name": "aSPCB_Correspondence"
+  },
+  "paymentMethods": {
+    "dataType": "object",
+    "name": "aSPCB_US_BankAccount"
+  },
+  "contacts": {
+    "dataType": "object",
+    "name": "aSPCB_ActorContact"
+  },
+  "logins": {
+    "dataType": "array",
+    "name": "logins"
+  },
+  "actorDataExtension": {
+    "dataType": "string",
+    "defaultValue": null
+  },
+  "externalClientId": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "actor": {
+    "dataType": "object",
+    "name": "aSPLI_Person"
+  },
+  "claimDisbursementChannel": {
+    "dataType": "string",
+    "defaultValue": []
+  },
+  "legalRepresentative": {
+    "dataType": "object",
+    "name": "legalRepresentative"
+  }
+}

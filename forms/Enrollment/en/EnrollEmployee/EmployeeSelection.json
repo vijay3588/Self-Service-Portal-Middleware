@@ -1,0 +1,27 @@
+{
+    "elements": [
+      [
+        {
+            "type": "panelSideHeader",
+            "label": "Do you like to select New Employee ?"
+        },
+        {
+          "type": "radioButtonGroup",
+          "name": "options",
+          "rearSector": "options",
+          "label": "",
+          "placement": "col-md-4 pt-2",
+          "skipStepsValue" : "yes",
+          "validations": {
+            "string": {
+              "required": "This field is required"
+            }
+          },
+          "inputs": [
+            { "label": "Yes", "value": "yes" },
+            { "label": "No", "value": "no"}
+          ]
+        }
+      ]
+    ]
+  }

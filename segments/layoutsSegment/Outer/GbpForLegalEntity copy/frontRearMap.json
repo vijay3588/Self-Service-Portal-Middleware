@@ -1,0 +1,13 @@
+[
+  {
+    "frontDataSegment": "loggedUserEntity._Result.clientId",
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "buid",
+        "rearSector": "legalEntityBuid",
+        "defaultValue": ""
+      }
+    ]
+  }
+]

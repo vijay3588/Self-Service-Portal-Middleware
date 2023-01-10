@@ -1,0 +1,12 @@
+{ 
+    "contractNumber": {"dataType": "string", "defaultValue":""}, 
+    "effectiveDate": {"dataType": "date", "defaultValue":""}, 
+    "endDate": {"dataType": "date", "defaultValue":""}, 
+    "status": {"dataType": "string", "defaultValue":""},
+    "loanType": {"dataType": "string", "defaultValue":"All"},
+    "principalAmt": {"dataType": "array", "defaultValue":""},
+    "lender": {"dataType": "string", "defaultValue":""},
+    "periodicPay": {"dataType": "string", "defaultValue":""},
+    "name": {"dataType": "string", "defaultValue":""},
+    "premiumSchedule": {"dataType": "object", "name":"premiumSchedule"}
+}

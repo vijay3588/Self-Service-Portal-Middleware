@@ -1,0 +1,54 @@
+{
+  "middleNameToggle": { "dataType": "boolean", "defaultValue": false },
+
+  "ssnToggle": { "dataType": "boolean", "defaultValue": false },
+  "ssnEyeToggle": { "dataType": "boolean", "defaultValue": false },
+  "personalEmailAddressRequired": {
+    "dataType": "boolean",
+    "defaultValue": false
+  },
+  "personalEmailAddressToggle": {
+    "dataType": "boolean",
+    "defaultValue": false
+  },
+
+  "personalEmailAddressChangedByEmp": {
+    "dataType": "boolean",
+    "defaultValue": false
+  },
+  "personalPhoneRequired": { "dataType": "boolean", "defaultValue": false },
+  "personalPhoneToggle": { "dataType": "boolean", "defaultValue": false },
+
+  "personalPhoneChangedByEmp": { "dataType": "boolean", "defaultValue": false },
+
+  "salaryToggle": { "dataType": "boolean", "defaultValue": false },
+  "salaryEditable": { "dataType": "boolean", "defaultValue": false },
+  "salaryEditableValue": { "dataType": "string", "defaultValue": "" },
+
+  "payFrequencyToggle": { "dataType": "boolean", "defaultValue": false },
+  "payFrequencyEditable": { "dataType": "boolean", "defaultValue": false },
+  "payFrequencyEditableValue": { "dataType": "string", "defaultValue": "" },
+
+  "divisionCodeToggle": { "dataType": "boolean", "defaultValue": false },
+  "divisionCodeEditable": { "dataType": "boolean", "defaultValue": false },
+  "divisionCodeEditableValue": { "dataType": "string", "defaultValue": "" },
+
+  "workLocationToggle": { "dataType": "boolean", "defaultValue": false },
+  "workLocationEditable": { "dataType": "boolean", "defaultValue": false },
+  "workLocationEditableValue": { "dataType": "string", "defaultValue": "" },
+
+  "employmentStatusToggle": { "dataType": "boolean", "defaultValue": false },
+  "employmentStatusEditable": { "dataType": "boolean", "defaultValue": false },
+  "employmentStatusEditableValue": { "dataType": "string", "defaultValue": "" },
+
+  "PCpersonalPhone": { "dataType": "boolean", "defaultValue": false },
+  "PCworkPhone": { "dataType": "boolean", "defaultValue": false },
+  "PCpostalEmail": { "dataType": "boolean", "defaultValue": false },
+  "PCpersonalEmailAddress": { "dataType": "boolean", "defaultValue": false },
+  "PCtextMessage": { "dataType": "boolean", "defaultValue": false },
+  "PCworkEmailAddress": { "dataType": "boolean", "defaultValue": false },
+  "isEmployementVisible": {
+    "dataType": "boolean",
+    "defaultValue": false
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "identifier": 4,
+  "name": "Party Theme",
+  "components": {
+    "app": {
+      "appBgColor": "#fadadd",
+      "appColor": "#E75480"
+    },
+    "header": {
+      "headerBgColor": "#fadadd",
+      "dropDownColor": "#E75480"
+    },
+    "navigationBar": {
+      "navigationBgColor": "#E75480"
+    },
+    "footer": {
+      "footerBgColor": "#E75480",
+      "copyrightBgColor": "#A83D5D"
+    },
+    "link": {
+      "linkColor": "#E75480",
+      "hoverColor": "#A83D5D"
+    }
+  },
+  "molecules": {
+    "panel": {
+      "panelBgColor": "#fadadd"
+    },
+    "modal": {
+      "modalHeaderBgColor": "#E75480",
+      "modalContentBgColor": "#fadadd"
+    },
+    "sectionHeader": {
+      "sectionHeaderBgColor": "#A83D5D"
+    },
+    "changeBox": {
+      "changeBoxBgColor": "#fadadd"
+    },
+    "navigation": {
+        "navigationDropDownItemsColor": "#E75480"
+    }
+  },
+  "cells": {
+    "stepperNavigation": {
+      "bgColor": "#f7c4c8"
+    }
+  },
+  "atoms": {
+    "boxcard": {
+      "boxcardBgColor": "#A83D5D",
+      "linearGradientTopColor": "#883383",
+      "linearGradientBottomColor": "#A83D5D"
+    },
+    "table": {
+      "headerBgColor": "#E75480",
+      "headerHover": "#A83D5D",
+      "headerColor": "#ffffff"
+    },
+    "treeCard": {
+      "treeCardBgColor": "#fadadd"
+    },
+    "button": {
+      "primaryBgColor": "#E75480",
+      "primaryColor": "#ffffff",
+      "primaryBgColorHover": "#A83D5D",
+      "primaryOutlineHoverColor": "#ffffff",
+      "primaryOutlineBgColor": "#E75480",
+      "landingPanelLoginButton": "#A83D5D",
+      "primaryGroupOutlineBgColor": "#ffffff",
+      "primaryGroupOutlineColor": "#E75480",
+      "primaryGroupOutlineHoverBgColor": "#E75480",
+      "primaryGroupOutlineHoverColor": "#ffffff",
+      "radioButtonGroupBgColor": "#E75480",
+      "radioButtonGroupColor": "#ffffff",
+      "closeButtonBgColor": "#ffffff",
+      "closeButtonColor": "#E75480"
+    },
+    "buttonDropdown": {
+      "buttonDropDownItemColor": "#E75480"
+    },
+    "iconDropdown": {
+      "iconDropDownItemColor": "#E75480"
+    }
+  }
+}

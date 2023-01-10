@@ -1,0 +1,12 @@
+{
+  "appBgColor": { "dataType": "string", "defaultValue": "" },
+  "appColor": { "dataType": "string", "defaultValue": "" },
+  "headerBgColor": { "dataType": "string", "defaultValue": "" },
+  "headerFontColor": { "dataType": "string", "defaultValue": "" },
+  "dropDownColor": { "dataType": "string", "defaultValue": "" },
+  "navigationBgColor": { "dataType": "string", "defaultValue": "" },
+  "footerBgColor": { "dataType": "string", "defaultValue": "" },
+  "copyrightBgColor": { "dataType": "string", "defaultValue": "" },
+  "linkColor": { "dataType": "string", "defaultValue": "" },
+  "hoverColor": { "dataType": "string", "defaultValue": "" }
+}

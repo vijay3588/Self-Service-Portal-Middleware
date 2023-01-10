@@ -1,0 +1,293 @@
+[
+  {
+    "value": "cipsNotPaid",
+    "text": "Not Paid",
+    "style": {
+      "fontSize": "11px",
+      "color": "#d51b61",
+      "borderRadius": "4px",
+      "border": "solid 1px #d51b61",
+      "padding": "4.5px 9.9px 4.5px 9.9px",
+      "position": "relative",
+      "bottom": "1px"
+    }
+  },
+  {
+    "value": "cipsPartial",
+    "text": "Partial",
+    "style": {
+      "fontSize": "11px",
+      "color": "#999900",
+      "borderRadius": "4px",
+      "border": "solid 1px #999900",
+      "padding": "4.5px 9.9px 4.5px 9.9px",
+      "position": "relative",
+      "bottom": "1px"
+    }
+  },
+  {
+    "value": "cipsFullyPaid",
+    "text": "Fully Paid",
+    "style": {
+      "fontSize": "11px",
+      "color": "#00a190",
+      "borderRadius": "4px",
+      "border": "solid 1px #00a190",
+      "padding": "4.5px 9.9px 4.5px 9.9px",
+      "position": "relative",
+      "bottom": "1px"
+    }
+  },
+  {
+    "value": "caisReceived",
+    "text": "Received",
+    "style": {
+      "fontSize": "11px",
+      "color": "#00a190",
+      "borderRadius": "4px",
+      "border": "solid 1px #00a190",
+      "padding": "4.5px 9.9px 4.5px 9.9px",
+      "position": "relative",
+      "bottom": "1px"
+    }
+  },
+
+  {
+    "value": "cActive",
+    "text": "Active",
+    "style": {
+      "verticalAlign": "middle",
+      "fontSize": "11px",
+      "color": "#00a190",
+      "borderRadius": "4px",
+      "border": "solid 1px #00a190",
+      "padding": "4.5px 9.9px 4.5px 9.9px",
+      "position": "relative",
+      "bottom": "1px"
+    }
+    
+  },
+  {
+  "value": "cQuote",
+    "text": "Quote",
+    "style": {
+      "verticalAlign": "middle",
+      "fontSize": "11px",
+      "color": "#00a190",
+      "borderRadius": "4px",
+      "border": "solid 1px #00a190",
+      "padding": "4.5px 9.9px 4.5px 9.9px",
+      "position": "relative",
+      "bottom": "1px"
+    }
+    
+  },
+
+  {
+    "value": "cProject",
+    "text": "Project",
+    "style": {
+      "fontSize": "11px",
+      "color": "#00a190",
+      "borderRadius": "4px",
+      "border": "solid 1px #00a190",
+      "padding": "4.5px 9.9px 4.5px 9.9px",
+      "position": "relative",
+      "bottom": "1px"
+    }
+    
+  },
+  {
+    "value": "cCompleted",
+    "text": "Completed",
+    "style": {
+      "fontSize": "11px",
+      "color": "#00a190",
+      "borderRadius": "4px",
+      "border": "solid 1px #00a190",
+      "padding": "4.5px 9.9px 4.5px 9.9px",
+      "position": "relative",
+      "bottom": "1px",
+      "verticalAlign": "middle"    
+    
+    }
+    
+  },
+  {
+    "verticalAlign": "middle",
+    "value": "cSubmitted",
+    "text": "Submitted",
+    "style": {
+      "fontSize": "11px",
+      "color": "#00a190",
+      "borderRadius": "4px",
+      "border": "solid 1px #00a190",
+      "padding": "4.5px 9.9px 4.5px 9.9px",
+      "position": "relative",
+      "bottom": "1px"
+    }
+    
+  },
+
+  
+  {
+    "value": "Processed",
+    "text": "Processed",
+    "style": {
+      "fontSize": "11px",
+      "color": "#00a190",
+      "borderRadius": "4px",
+      "border": "solid 1px #00a190",
+      "padding": "4.5px 9.9px 4.5px 9.9px",
+      "position": "relative",
+      "bottom": "1px"
+    }
+    
+  },
+  {
+    "value": "All",
+    "text": "All",
+    "style": {
+      "fontSize": "11px",
+      "color": "#00a190",
+      "borderRadius": "4px",
+      "border": "solid 1px #00a190",
+      "padding": "4.5px 9.9px 4.5px 9.9px",
+      "position": "relative",
+      "bottom": "1px"
+    }
+    
+  },
+  {
+    "value": "Canceled",
+    "text": "Canceled",
+    "style": {
+      "fontSize": "11px",
+      "color": "#d51b61",
+      "borderRadius": "4px",
+      "border": "solid 1px #00a190",
+      "padding": "4.5px 9.9px 4.5px 9.9px",
+      "position": "relative",
+      "bottom": "1px"
+    }
+    
+  },
+  {
+    "value": "Unsent",
+    "text": "Unsent",
+    "style": {
+      "fontSize": "11px",
+      "color": "#d51b61",
+      "borderRadius": "4px",
+      "border": "solid 1px #00a190",
+      "padding": "4.5px 9.9px 4.5px 9.9px",
+      "position": "relative",
+      "bottom": "1px"
+    }
+    
+  },
+  {
+    "value": "Scheduled",
+    "text": "Scheduled",
+    "style": {
+      "fontSize": "11px",
+      "color": "#d51b61",
+      "borderRadius": "4px",
+      "border": "solid 1px #00a190",
+      "padding": "4.5px 9.9px 4.5px 9.9px",
+      "position": "relative",
+      "bottom": "1px"
+    }
+    
+  },
+
+  {
+    "value": "cpsAssigned",
+    "text": "Assigned",
+    "style": {
+      "fontSize": "11px",
+      "color": "#00a190",
+      "borderRadius": "4px",
+      "border": "solid 1px #00a190",
+      "padding": "4.5px 9.9px 4.5px 9.9px",
+      "position": "relative",
+      "bottom": "1px"
+    }
+  },
+  {
+    "value": "cpsReceived",
+    "text": "Received",
+    "style": {
+      "fontSize": "11px",
+      "color": "#00a190",
+      "borderRadius": "4px",
+      "border": "solid 1px #00a190",
+      "padding": "4.5px 9.9px 4.5px 9.9px",
+      "position": "relative",
+      "bottom": "1px"
+    }
+  },
+  {
+    "value": "cTerminated",
+    "text": "Terminated",
+    "style": {
+      "fontSize": "11px",
+      "color": "#FF0000",
+      "borderRadius": "4px",
+      "border": "solid 1px #FF0000",
+      "padding": "4.5px 9.9px 4.5px 9.9px",
+      "position": "relative",
+      "bottom": "1px"
+    }
+    
+  },
+  {
+    "value": "cPSPassed",
+    "text": "Passed",
+    "style": {
+      "fontSize": "11px",
+      "color": "#FF0000",
+      "borderRadius": "4px",
+      "border": "solid 1px #FF0000",
+      "padding": "4.5px 9.9px 4.5px 9.9px",
+      "position": "relative",
+      "bottom": "1px"
+    }
+    
+  },
+  {
+    "value": "cRSWaiting",
+    "text": "Waiting",
+    "style": {
+      "fontSize": "11px",
+      "color": "#FF0000",
+      "borderRadius": "4px",
+      "border": "solid 1px #FF0000",
+      "padding": "4.5px 9.9px 4.5px 9.9px",
+      "position": "relative",
+      "bottom": "1px"
+    }
+    
+  },
+  {
+    "value": "msOpen",
+    "text": "Open",
+    "style": {
+      "fontSize": "11px",
+      "color": "#FF0000",
+      "borderRadius": "4px",
+      "border": "solid 1px #FF0000",
+      "padding": "4.5px 9.9px 4.5px 9.9px",
+      "position": "relative",
+      "bottom": "1px"
+    }
+    
+  }
+  
+  
+
+
+  
+
+  
+]

@@ -1,0 +1,18 @@
+{
+    "code": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "classId": {
+        "dataType": "string",
+        "defaultValue": 0
+    },
+    "name": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "nsId": {
+        "dataType": "string",
+        "defaultValue": 0
+    }
+}

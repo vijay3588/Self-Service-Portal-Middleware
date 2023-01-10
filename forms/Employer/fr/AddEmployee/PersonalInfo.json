@@ -1,0 +1,156 @@
+{
+  "elements": [
+    [
+      
+      {
+        "type": "select",
+        "name": "personalTitle",
+        "rearSector": "personTitleEnum",
+        "label": "Title",
+        "placement": "col-md-2",
+        "defaultValue": null,
+        "optionsname": "PersonalTitleConstants",
+        "options": "",
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis"  }
+        }
+      },
+      {
+        "type": "text",
+        "name": "firstName",
+        "rearSector": "shortName",
+        "label": "Prénom",
+        "placement": "col-md-3",
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis",
+            "matches": {"regex": "^[a-zA-Z]+$" , "message": "No special characters allowed"}
+          }
+        }
+      },
+      {
+        "type": "text",
+        "name": "middleName",
+        "label": "Middle Name",
+        "placement": "col-md-3",
+        "validations": {
+          "string": {
+            "matches": {"regex": "^[a-zA-Z]+$" , "message": "No special characters allowed"}
+          }
+        }
+      },
+      {
+        "type": "text",
+        "name": "lastName",
+        "rearSector": "name",
+        "label": "Nom de famille",
+        "placement": "col-md-3",
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis",
+            "matches": {"regex": "^[a-zA-Z]+$" , "message": "No special characters allowed"}
+          }
+        }
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "name": "suffix",
+        "rearSector": "nameSuffix",
+        "label": "Suffix",
+        "placement": "col-md-2",
+        "validations": {}
+      },
+      {
+        "type": "radioButtonGroup",
+        "name": "gender",
+        "rearSector": "gender",
+        "label": "Gender",
+        "placement": "col-md-3 pt-2",
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis"
+          }
+        },
+        "inputs": [
+          { "label": "Male", "value": "gMale", "icon": ["fas", "male"] },
+          { "label": "Female", "value": "gFemale", "icon": ["fas", "female"] }
+        ]
+      },
+      {
+        "type": "date",
+        "name": "birthDate",
+        "rearSector": "birthDate",
+        "label": "Date de naissance",
+        "placement": "col-md-3",
+        "validations": {
+          "string": {
+            "min": { "limit": 6, "message": "Min length is 6" }
+          },
+          "date": {
+            "required": "Ce champ est requis",
+            "min": {"limit": -117, "unit": "y", "message": "Veuillez entrer une date de naissance valide" },
+            "max": {"limit": 0, "unit": "y", "message": "La date de naissance ne peut pas être dans le futur" }
+          }
+        }
+      },
+      {
+        "type": "text",
+        "name": "ssn",
+        "rearSector": "sSN",
+        "label": "SSN",
+        "placement": "col-md-3",
+        "validations": {
+          "string": {
+            "min": { "limit": 9, "message": "SSN must have 9 digits" },
+            "max": { "limit": 9, "message": "SSN must have 9 digits" },
+            "matches": {"regex": "^[0-9]*$" , "message": "SSN must have 9 digits"},
+            "required": "Ce champ est requis" 
+          }
+        }
+      }
+    ],
+    [
+      {
+        "type": "select",
+        "name": "maritalStatus",
+        "rearSector": "maritalStatus",
+        "label": "État civil",
+        "placement": "col-md-2",
+        "value": null,
+        "optionsname": "MaritalStatusConstants",
+        "options": "",
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis" 
+          }
+        }
+      },
+      {
+        "type": "select",
+        "name": "nationality",
+        "rearSector": "nationality",
+        "label": "Nationality",
+        "placement": "col-md-3",
+        "defaultValue": null,
+        "options": "",
+        "optionsname": "NationalityConstants",
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis"
+          }
+        }
+      },
+
+      {
+        "type": "text",
+        "name": "profession",
+        "label": "Profession",
+        "placement": "col-md-3",
+        "validations": {}
+      }
+    ]
+  ]
+}

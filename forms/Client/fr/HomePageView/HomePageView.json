@@ -1,0 +1,411 @@
+{
+  "cards": [
+    {
+      "config": {
+        "className": "col-lg-12 mb-3"
+      },
+      "cardMembers": [
+        {
+          "cardElements": [
+            {
+              "type": "label",
+              "name": "name",
+              "label": "Name",
+              "placement": "px-0",
+              "preText": "Bienvenue, ",
+              "postText": " !",
+              "rearSector": "shortName",
+              "rearDataSegmentPath": "personIdentityHistories.personIdentity",
+              "value": "",
+              "config": {
+                "className": "Invoice-Number"
+              }
+            }
+          ]
+        }
+      ],
+      "type": "titleCard",
+      "title": "viewHeader",
+      "name": "viewHeader"
+    },
+    {
+      "cardMembers": [
+        {
+          "cardElements": [
+            {
+              "cardConfig": {
+                "showHeader": true,
+                "showFooter": false,
+                "className": "col-md-12 col-lg-8 mb-3 reset-padding",
+                "alignmentClass": "m-0 ml-lg-n3"
+              },
+              "panelHeader": {
+                "elements": [
+                  {
+                    "type": "readOnly",
+                    "name": "contract",
+                    "label": "",
+                    "placement": "mr-3",
+                    "validations": {},
+                    "responseFrom": "ContractInformation",
+                    "image": "invoicebills.png"
+                  },
+                  {
+                    "type": "label",
+                    "name": "contract",
+                    "label": "Mes Contrats",
+                    "placement": "mr-3",
+                    "value": "Mes Contrats",
+                    "responseFrom": "ContractInformation",
+                    "config": {
+                      "className": "enrollment-number"
+                    }
+                  }
+                ]
+              },
+              "panelBody": {
+                "config": {
+                  "alignment": ""
+                },
+                "elements": [
+                  {
+                    "title": "tablesCard",
+                    "name": "tablesCard",
+                    "type": "tablesCard",
+                    "cardMembers": [
+                      {
+                        "cardConfig": {
+                          "tableTitle": "",
+                          "tableImage": "",
+                          "tableSegment": "contracts"
+                        },
+                        "table": {
+                          "tableHeader": [
+                            {
+                              "value": "Numéro de contrat",
+                              "config": {
+                                "className": ""
+                              }
+                            },
+                            {
+                              "value": "Date d’effet",
+                              "config": {
+                                "className": ""
+                              }
+                            },
+                            {
+                              "value": "Date de fin",
+                              "config": {
+                                "className": ""
+                              }
+                            },
+                            {
+                              "value": "Statut",
+                              "config": {
+                                "className": ""
+                              }
+                            }
+                          ],
+                          "tableRowData": [
+                            {
+                              "value": "data.internalPolicyId",
+                              "rearSector": "",
+                              "rearDataSegmentPath": "",
+                              "type": "expression",
+                              "config": {
+                                "className": ""
+                              }
+                            },
+                            {
+                              "value": "data.effectiveDate",
+                              "rearSector": "",
+                              "rearDataSegmentPath": "",
+                              "type": "expression",
+                              "config": {
+                                "valueType": "date",
+                                "format": "MM/DD/YYYY"
+                              }
+                            },
+                            {
+                              "value": "data.terminationDate",
+                              "rearSector": "",
+                              "rearDataSegmentPath": "",
+                              "type": "expression",
+                              "config": {
+                                "valueType": "date",
+                                "format": "MM/DD/YYYY"
+                              }
+                            },
+                            {
+                              "value": "data.status",
+                              "rearSector": "",
+                              "rearDataSegmentPath": "",
+                              "type": "expression",
+                              "config": {
+                                "optionsname": "StatusConstants",
+                                "valueType": "status",
+                                "value": ""
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "panelFooter": {
+                "elements": []
+              }
+            },
+            {
+              "cardConfig": {
+                "showHeader": true,
+                "showFooter": false,
+                "className": "col-md-12 col-lg-4 mb-3 pr-0",
+                "alignmentClass": "m-0 ml-lg-n3"
+              },
+              "panelHeader": {
+                "elements": [
+                  {
+                    "type": "readOnly",
+                    "name": "claims",
+                    "label": "",
+                    "placement": "mr-3",
+                    "validations": {},
+                    "responseFrom": "ContractInformation",
+                    "image": "invoicebills.png"
+                  },
+                  {
+                    "type": "label",
+                    "name": "claims",
+                    "label": "Claims",
+                    "placement": "mr-3",
+                    "value": "Mes informations",
+                    "responseFrom": "ContractInformation",
+                    "config": {
+                      "className": "enrollment-number"
+                    }
+                  }
+                ]
+              },
+              "panelBody": {
+                "elements": [
+                  {
+                    "cardMembers": [
+                      {
+                        "cardConfig": {
+                          "className": "col-lg-12",
+                          "cardClassName": ""
+                        },
+                        "cardElements": [
+                          {
+                            "type": "label",
+                            "name": "name",
+                            "label": "Name",
+                            "placement": "col-lg-12 col-sm-12 mb-3",
+                            "value": ""
+                          },
+                          {
+                            "type": "label",
+                            "name": "address",
+                            "label": "Address",
+                            "placement": "col-lg-12 col-sm-12 mb-3",
+                            "value": ""
+                          },
+                          {
+                            "type": "label",
+                            "name": "eMail",
+                            "label": "EMail",
+                            "placement": "col-lg-12 col-sm-12 mb-3",
+                            "value": ""
+                          },
+                          {
+                            "type": "label",
+                            "name": "phone",
+                            "label": "Phone",
+                            "placement": "col-lg-12 col-sm-12 mb-3",
+                            "value": ""
+                          },
+                          {
+                            "type": "button",
+                            "name": "editDetailsButton",
+                            "label": "Modifier les details",
+                            "className": "editDetailsButton",
+                            "config": {
+                              "type": "redirect",
+                              "redirectURL": "/client/addressChange"
+                            },
+                            "placement": "col-lg-12 col-sm-12 mb-3"
+                          }
+                        ]
+                      }
+                    ],
+                    "type": "elementsCard",
+                    "title": "viewContact",
+                    "name": "viewContact"
+                  }
+                ]
+              },
+              "panelFooter": {
+                "elements": []
+              }
+            }
+          ]
+        }
+      ],
+      "title": "panelCard",
+      "type": "panelCard",
+      "name": "panelCard",
+      "id": "contracts"
+    },
+    {
+      "cardMembers": [
+        {
+          "cardElements": [
+            {
+              "cardConfig": {
+                "showHeader": true,
+                "showFooter": false,
+                "className": "col-md-12 col-lg-8 mb-3 reset-padding",
+                "alignmentClass": "m-0 ml-lg-n3"
+              },
+              "panelHeader": {
+                "elements": [
+                  {
+                    "type": "readOnly",
+                    "name": "claims",
+                    "label": "",
+                    "placement": "mr-3",
+                    "validations": {},
+                    "responseFrom": "ContractInformation",
+                    "image": "invoicebills.png"
+                  },
+                  {
+                    "type": "label",
+                    "name": "claims",
+                    "label": "Sinistres",
+                    "placement": "mr-3",
+                    "value": "Sinistres",
+                    "responseFrom": "ContractInformation",
+                    "config": {
+                      "className": "enrollment-number"
+                    }
+                  }
+                ]
+              },
+              "panelBody": {
+                "config": {
+                  "alignment": ""
+                },
+                "elements": [
+                  {
+                    "type": "button",
+                    "name": "reportClaimButton",
+                    "label": "Déclarer un sinistre",
+                    "className": "reportClaimButton",
+                    "config": {
+                      "type": "redirect",
+                      "redirectURL": "/client/claimDeclaration"
+                    },
+                    "placement": "align-self-end ml-auto px-0"
+                  },
+                  {
+                    "title": "tablesCard",
+                    "name": "tablesCard",
+                    "type": "tablesCard",
+                    "cardMembers": [
+                      {
+                        "cardConfig": {
+                          "tableTitle": "",
+                          "tableImage": "",
+                          "tableSegment": "claims"
+                        },
+                        "table": {
+                          "tableHeader": [
+                            {
+                              "value": "Référence",
+                              "config": {
+                                "className": ""
+                              }
+                            },
+                            {
+                              "value": "Evènement",
+                              "config": {
+                                "className": ""
+                              }
+                            },
+                            {
+                              "value": "Date de déclaration",
+                              "config": {
+                                "className": ""
+                              }
+                            },
+                            {
+                              "value": "StatuT",
+                              "config": {
+                                "className": ""
+                              }
+                            }
+                          ],
+                          "tableRowData": [
+                            {
+                              "value": "data.name",
+                              "rearSector": "",
+                              "rearDataSegmentPath": "",
+                              "type": "expression",
+                              "config": {
+                                "className": ""
+                              }
+                            },
+                            {
+                              "value": "data.lossType",
+                              "rearSector": "",
+                              "rearDataSegmentPath": "",
+                              "type": "expression",
+                              "config": {
+                                "className": ""
+                              }
+                            },
+                            {
+                              "value": "data.declarationDate",
+                              "rearSector": "",
+                              "rearDataSegmentPath": "",
+                              "type": "expression",
+                              "config": {
+                                "valueType": "date",
+                                "format": "MM/DD/YYYY"
+                              }
+                            },
+                            {
+                              "value": "data.status",
+                              "rearSector": "",
+                              "rearDataSegmentPath": "",
+                              "type": "expression",
+                              "config": {
+                                "optionsname": "StatusConstants",
+                                "valueType": "status",
+                                "value": ""
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "panelFooter": {
+                "elements": []
+              }
+            }
+          ]
+        }
+      ],
+      "title": "panelCard",
+      "type": "panelCard",
+      "name": "panelCard",
+      "id": "claims"
+    }
+  ]
+}

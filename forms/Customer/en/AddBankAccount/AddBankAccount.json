@@ -1,0 +1,112 @@
+{
+  "elements": [
+    [
+
+      {
+        "type": "date",
+        "name": "effectiveDate",
+        "rearSector": "effectiveDate",
+        "label": "Effective Date",
+       "placement": "col-12 col-md-4",
+        "currentDate": true,
+        "image": "calender_icon_medium.png",
+        "config": {
+          "valueType": "date",
+          "format": "MM/DD/YYYY"
+        },
+        "validations": {
+          "string": {
+            "required": "This field is required"
+          }
+        }
+      },
+      {
+        "type": "select",
+        "name": "accountType",
+        "rearSector": "accountType",
+        "label": "Account Type",
+        "placement": "col-12 col-md-4",
+        "defaultValue": null,
+        "optionsname": "AccountTypeConstants",
+        "validations": {
+          "string": {
+            "required": "mandatory field"
+          }
+        },
+        "options": ""
+      }
+
+
+       
+    
+    ],
+    [
+      {
+        "type": "text",
+        "name": "routingNumber",
+        "rearSector": "routingNumber",
+        "label": "Routing Number",
+        "placement": "col-12 col-md-4",
+        "apiCallOnBlur": true,
+        "validations": {
+          "string": {
+            "min": {
+              "limit": 9,
+              "message": "Routing Number must have 9 digits"
+            },
+            "max": {
+              "limit": 9,
+              "message": "Routing Number must have 9 digits"
+            },
+            "matches": {
+              "regex": "^[0-9]*$",
+              "message": "Routing Number must have 9 digits"
+            },
+            "required": "This field is required"
+          }
+        }
+      },
+      {
+        "type": "text",
+        "name": "accountNumber",
+        "rearSector": "accountNumber",
+        "label": "Account Number",
+        "placement": "col-12 col-md-4",
+        "validations": {
+          "string": {
+            "max": {
+              "limit": 15,
+              "message": "Account Number must have less than 16 digits"
+            },
+            "matches": {
+              "regex": "^[0-9]*$",
+              "message": "Account Number must all be digits"
+            },
+            "required": "This field is required"
+          }
+        }
+      }
+    ],
+
+   
+    [
+      
+      {
+        "type": "text",
+        "name": "bankName",
+        "label": "Bank Name",
+        "placement": "col-12 col-md-4",
+        "rearSector": "name",
+        "rearDataSegmentPath": "",
+        "validations": {}
+      },
+      {
+        "type": "text",
+        "name": "address",
+        "label": "Bank Address",
+        "placement": "col-12 col-md-4",
+        "validations": {}
+      }
+    ]
+  ]
+}

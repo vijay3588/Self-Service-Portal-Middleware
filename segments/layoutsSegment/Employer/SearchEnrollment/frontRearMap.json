@@ -1,0 +1,9 @@
+[
+  {
+    "frontDataSegment": "SearchForAnEnrollment",
+    "rearDataSegmentClass": "legalEntityIdentifier",
+    "rearDataSegment":"legalEntityIdentifier",
+    "rearDataSegmentPath": "",
+    "rearDataSegmentType": "object"
+  }
+]

@@ -1,0 +1,145 @@
+[
+  {
+    "frontDataSegment": "body",
+    "rearDataSegment":"Claim",
+    "rearDataSegmentPath": "claimReference.data",
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "",
+        "rearSector": "LossType",
+        "defaultValue": "Arrêt de travail"
+      },
+      {
+        "frontSector": "",
+        "rearSector": "ProductFamily",
+        "defaultValue": "Assurance de pret"
+      },
+      {
+        "frontSector": "eventDate",
+        "rearSector": "EventDate",
+        "frontDataSegmentPath":"values.Event",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "date",
+        "rearSector": "DeclarationDate",
+        "defaultValue": "",
+        "dataConfig": {
+          "configType": "currentDate"
+        }
+      },
+      {
+        "frontSector": "date",
+        "rearSector": "OpenDate",
+        "defaultValue": "",
+        "dataConfig": {
+          "configType": "currentDate"
+        }
+      }
+    ]
+  },
+  {
+    "frontDataSegment": "body",
+    "rearDataSegment":"Claimant",
+    "rearDataSegmentClass": "aSPLI_PersonIdentifier",
+    "rearDataSegmentPath": "claimReference.data",
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "internalClientId",
+        "rearSector": "InternalClientId",
+        "frontDataSegmentPath":"loggedUserEntity.clientId",
+        "defaultValue": ""
+      }
+    ]
+  },
+  {
+    "frontDataSegment": "body",
+    "rearDataSegment":"ManagedBy",
+    "rearDataSegmentClass": "ManagedBy",
+    "rearDataSegmentPath": "claimReference.data",
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "",
+        "rearSector": "Name",
+        "defaultValue": "Super gestionnaire"
+      }
+    ]
+  },
+  {
+    "frontDataSegment": "body",
+    "rearDataSegment":"CoveredPerson",
+    "rearDataSegmentClass": "aSPLI_PersonIdentifier",
+    "rearDataSegmentPath": "claimReference.data.Losses",
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "internalClientId",
+        "rearSector": "InternalClientId",
+        "frontDataSegmentPath":"loggedUserEntity.clientId",
+        "defaultValue": ""
+      }
+    ]
+  },
+  {
+    "frontDataSegment": "body",
+    "rearDataSegment":"DisabilityKindVersions",
+    "rearDataSegmentPath": "claimReference.data.Losses",
+    "rearDataSegmentType": "array",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "disabilityKindVersion",
+        "rearSector": "DisabilityKind",
+        "frontDataSegmentPath":"values.Event",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "eventDate",
+        "rearSector": "Date",
+        "frontDataSegmentPath":"values.Event",
+        "defaultValue": ""
+      }
+    ]
+  },
+  {
+    "frontDataSegment": "body",
+    "rearDataSegment":"Loss",
+    "rearDataSegmentClass": "aSPLIC_STDLoss",
+    "rearDataSegmentPath": "claimReference.data.Losses",
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "",
+        "rearSector": "ClassName",
+        "defaultValue": "aSPLIC_FR_STDLoss"
+      },
+      {
+        "frontSector": "eventDate",
+        "rearSector": "EventDate",
+        "frontDataSegmentPath":"values.Event",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "date",
+        "rearSector": "DeclarationDate",
+        "defaultValue": "",
+        "dataConfig": {
+          "configType": "currentDate"
+        }
+      },
+      {
+        "frontSector": "eventEndDate",
+        "rearSector": "DisabilityEndDate",
+        "frontDataSegmentPath":"values.Event",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "",
+        "rearSector": "LossCode",
+        "defaultValue": "ARR"
+      }
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+[
+    
+   
+    {
+        "formName": "disbursementCard",
+        "cardElements": "cardElements",
+        "frontSegment": "disbursementCard",
+        "dataParentSegment": "",
+        "dataSegmentType": "object",
+        "defaultSectorMapping": [      
+            {
+                "frontSector": "paymentsCredits",
+                "rearSector": "amount",
+                "rearDataSegmentPath": "credit",
+                "defaultValue": ""
+            }
+        ]
+    }
+]

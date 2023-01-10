@@ -1,0 +1,321 @@
+{
+  "cards": [
+    {
+      "cardMembers": [
+        {
+          "cardElements": [
+            {
+              "type": "label",
+              "name": "paymentNumber",
+              "rearSector": "operation",
+              "rearDataSegmentPath":"paramEntity",
+              "label": "Payment Tile",
+              "placement": "select-label-content",
+              "value": "",
+              "config": {
+                "className": "Invoice-Number"
+              }
+            },
+            {
+                
+              "type": "tile",
+              "name": "paymentStatus",
+              "rearSector": "paymentStatus",
+              "rearDataSegmentPath":"paramEntity",
+              "style": {
+                "fontSize": "12px",
+                "color": "#00a190",
+                "borderRadius": "4px",
+                "border": "solid 1px #00a190"
+              },
+              "config": {
+                "displayName": "PaymentStatusConstants"
+              },
+              "placement": "col-lg-3 col-sm-5"
+            }
+          ]
+        }
+      ],
+      "config": {
+        "showBorder": true,
+        "className" : "row mb-4",        
+        "additionalClassName" : "col-sm-12"
+      },
+      "type": "titleCard",
+      "name": "viewHeader"
+    },
+    {
+      "name": "blueBox",
+      "type": "boxCard",
+
+      "cardMembers": [
+        {
+          "cardConfig": {
+            "className": "col-lg-12 mb-3 ",
+            "styleClassName": "boxcard-border-invoice"
+          },
+          "cardElements": [
+            {
+              "type": "readOnly",
+              "name": "amountPaid",
+              "rearSector": "amount",
+              "rearDataSegmentPath":"paramEntity.amount",
+              "label": "Amount Paid (USD)",
+              "placement": "col-lg-3 col-sm-5",
+              "validations": {},
+              "image": "payment-amount-paid.png",
+              "config": {
+                "valueType": "currency",
+                "locale": "en-US",
+                "currency": "USD"
+              }
+            },
+            {
+              "type": "readOnly",
+              "name": "receivedDate",
+              "rearSector": "receivedDate",
+              "rearDataSegmentPath":"paramEntity",
+              "label": "Received Date",
+              "placement": "col-lg-3 col-sm-5",
+              "value": "12/12/2020",
+              "image": "payment-received-date.png",
+              "config": {
+                "valueType": "date",
+                "format": "MM/DD/YYYY"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "paymentsCard",
+      "name":"paymentsCard",
+      "type": "elementsCard",
+      "cardMembers": [
+        {
+          "cardConfig": {
+            "className": "col-lg-12",
+            "cardClassName": "paymentCard px-3"
+          },
+          "cardElements": [
+            {
+              "type": "readOnly",
+              "name": "payer",
+              "rearSector": "actorAsAccountOwner",
+              "rearDataSegmentPath":"",
+              "label": "Payer",
+              "placement": "col-lg-3 col-sm-5 mb-3"
+            },
+            {
+              "type": "readOnly",
+              "name": "paymentChannel",
+              "rearSector": "channel",
+              "rearDataSegmentPath":"",
+              "label": "Payment Channel",
+              "placement": "col-lg-2 col-sm-4 mb-3",
+              "validations": {}
+            },
+            {
+              "type": "readOnly",
+              "name": "paymentId",
+              "rearSector": "name",
+              "rearDataSegmentPath":"moneyMovementId.moneyMovementIdentifier",
+              "label": "Payment ID",
+              "placement": "col-lg-2 col-sm-4 mb-3",
+              "validations": {}
+            },
+            {
+              "type": "readOnly",
+              "name": "issuingCompany",
+              "rearSector": "issuingCompanyName",
+              "rearDataSegmentPath":"paymentChannelId.moneyChannelIdentifier",
+              "label": "Issuing Company",
+              "placement": "col-lg-2 col-sm-4 mb-3",
+              "validations": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+
+      "type": "readOnly",
+      "name": "amountPaidTitle",
+      "label": "Amount Paid Applies to",
+      "labelClassName":"label-content"
+      
+    },
+    {
+      "name": "tablesCard",
+      "title": "tablesCard",
+      "type": "tablesCard",
+      "cardMembers": [
+        {
+          "cardConfig": {
+            "tableTitle": "invoices",
+            "tableImage": "payment-invoice.png"
+          },
+          "table": {
+            "tableHeader": [
+              {
+                "value": "Invoice Number",
+                "config": {
+                  "className": ""
+                }
+              },
+              {
+                "value": "Invoicing Date",
+                "config": {
+                  "className": ""
+                }
+              },
+              {
+                "value": "Due Date",
+                "config": {
+                  "className": ""
+                }
+              },
+              {
+                "value": "Amount Due",
+                "config": {
+                  "className": ""
+                }
+              }
+            ],
+            "tableRowData": [
+              {
+                "value": "data.invoiceNumber",
+                "rearSector": "target", 
+                "rearDataSegmentPath":"",
+                "type": "expression"
+              },
+              {
+                "value": "data.invoicingDate",
+                "rearSector": "target", 
+                "rearDataSegmentPath":"",
+                "type": "expression"
+              },
+              {
+                "value": "data.dueDate",
+                "rearSector": "target", 
+                "rearDataSegmentPath":"",
+                "type": "expression"
+              },
+              {
+                "value": "data.amountDue",
+                "rearSector": "amount", 
+                "rearDataSegmentPath":"amount",
+                "type": "expression",
+                "valuetype": "currency",
+                "locale": "en-US",
+                "currency": "USD"
+              }
+            ]
+          }
+        },
+        {
+          "cardConfig": {
+            "tableTitle": "Invoice Accounts",
+            "tableImage": "payment-invoice-account.png"
+          },
+          "table": {
+            "tableHeader": [
+              {
+                "value": "Account Number",
+                "config": {
+                  "className": ""
+                }
+              },
+              {
+                "value": "Amount Billed",
+                "config": {
+                  "className": ""
+                }
+              },
+              {
+                "value": "Ammount Applied to Account",
+                "config": {
+                  "className": ""
+                }
+              },
+              {
+                "value": "Description",
+                "config": {
+                  "className": ""
+                }
+              }
+            ],
+            "tableRowData": [
+              {
+                "value": "data.accountNumber",
+                "type": "expression"
+              },
+              {
+                "value": "data.amountBilled",
+                "type": "expression"
+              },
+              {
+                "value": "data.amountAppliedToAccount",
+                "type": "expression"
+              },
+              {
+                "value": "data.description",
+                "type": "expression"
+              }
+            ]
+          }
+        },
+        {
+          "cardConfig": {
+            "tableTitle": "Suspense Accounts",
+            "tableImage": "payment-suspense-account.png"
+          },
+          "table": {
+            "tableHeader": [
+              {
+                "value": "Account Number",
+                "config": {
+                  "className": ""
+                }
+              },
+              {
+                "value": "Balance",
+                "config": {
+                  "className": ""
+                }
+              },
+              {
+                "value": "Amount Applied to Account",
+                "config": {
+                  "className": ""
+                }
+              }
+            ],
+            "tableRowData": [
+              {
+                "value": "data.accountNumber",
+                "type": "expression"
+              },
+
+              {
+                "value": "data.balance",
+                "type": "expression",
+                "config": {
+                  "className": ""
+                },
+                "valuetype": "currency",
+                "locale": "en-US",
+                "currency": "USD"
+              },
+              {
+                "value": "data.amountAppliedToAccount",
+                "type": "expression"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

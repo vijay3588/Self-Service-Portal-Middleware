@@ -1,0 +1,93 @@
+[
+  {
+    "value": "cipsNotPaid",
+    "text": "Not Paid"
+  },
+  {
+    "value": "cipsPartial",
+    "text": "Partial"
+  },
+  {
+    "value": "cipsFullyPaid",
+    "text": "Fully Paid"
+  },
+  {
+    "value": "caisReceived",
+    "text": "Received"
+  },
+
+  {
+    "value": "cActive",
+    "text": "Active"
+  },
+  {
+    "value": "cQuote",
+    "text": "Quote"
+  },
+
+  {
+    "value": "cProject",
+    "text": "Project"
+  },
+  {
+    "value": "cCompleted",
+    "text": "Completed"
+  },
+  {
+    "value": "cInProgress",
+    "text": "In Progress"
+  },
+  {
+    "verticalAlign": "middle",
+    "value": "cSubmitted",
+    "text": "Submitted"
+  },
+  {
+    "value": "Processed",
+    "text": "Processed"
+  },
+  {
+    "value": "All",
+    "text": "All"
+  },
+  {
+    "value": "Canceled",
+    "text": "Canceled"
+  },
+  {
+    "value": "Unsent",
+    "text": "Unsent"
+  },
+  {
+    "value": "Scheduled",
+    "text": "Scheduled"
+  },
+  {
+    "value": "cpsAssigned",
+    "text": "Assigned"
+  },
+  {
+    "value": "cpsReceived",
+    "text": "Received"
+  },
+  {
+    "value": "cNeverInForce",
+    "text": "Never In Force"
+  },
+  {
+    "value": "cTerminated",
+    "text": "Terminated"
+  },
+  {
+    "value": "cPSPassed",
+    "text": "Passed"
+  },
+  {
+    "value": "cRSWaiting",
+    "text": "Waiting"
+  },
+  {
+    "value": "msOpen",
+    "text": "Open"
+  }
+]

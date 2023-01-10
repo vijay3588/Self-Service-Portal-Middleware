@@ -1,0 +1,521 @@
+{
+	"cards": [{
+			"title": "panelCard",
+			"type": "panelCard",
+			"name": "panelCard",
+			"cardMembers": [
+				{
+					"cardElements": [
+						{
+							"cardConfig": {
+								"showHeader": true,
+								"showFooter": false,
+								"className": "col-md-12 col-lg-12 pr-0",
+								"alignmentClass": "ml-n3"
+							},
+							"panelHeader": {
+								"config": {
+									"style": {
+										"fontSize": "14px",
+										"backgroundColor": "#f8f8f9",
+										"fontFamily": "Roboto",
+										"fontWeight": "500",
+										"fontStretch": "normal",
+										"color": "#333333",
+										"padding": "0px 240px 0px 25px"
+									}
+								},
+								"elements": [
+									{
+										"type": "selectList",
+										"name": "contractNumber",
+										"label": "contractNumber",
+										"placement": "col-lg-6 col-md-10 px-0",
+										"options": "",
+										"optionKind": "apiCall",
+										"config": {
+											"placementClass": "  col-md-8 selectLabelContent"
+										},
+			
+										"displayConfig": {
+											"show": true,
+											"validation": {
+												"condition": "> 1"
+											},
+											"valuesFrom": "props.selectOptions"
+										},
+										"subElement": {
+											"type": "tile",
+											"name": "paymentStatus",
+											"style": {
+												"fontSize": "12px",
+												"color": "#00a190",
+												"borderRadius": "4px",
+												"border": "solid 1px #00a190"
+											},
+											"config": {
+												"displayName": "InvoiceStatusConstants"
+											},
+											"placement": "col-lg-3 col-sm-5"
+										},
+										"validations": {}
+									}									
+								]
+							},
+							"panelBody": {
+								"config": {
+									"className": "card-scroll"
+								},
+								"elements": [
+									{
+										"title": "treeData1",
+										"type": "TreeCard",
+										"name": "treeData1"
+									}
+								]
+							},
+							"panelFooter": {
+								"elements": []
+							}
+						},
+						{
+							"cardConfig": {
+								"showHeader": false,
+								"showFooter": false,
+								"className": "col-md-12 col-lg-12 pr-0",
+								"alignmentClass": "ml-n3"
+							},
+							"panelHeader": {
+								"elements": []
+							},
+							"panelBody": {
+								"config": {
+									"className": "card-scroll"
+								},
+								"elements": [
+									{
+										"title": "treeData2",
+										"type": "TreeCard",
+										"name": "treeData2"
+									}
+								]
+							},
+							"panelFooter": {
+								"elements": []
+							}
+						}
+					]
+				}
+			]
+	}],
+	"treeData1": {
+		"treeGroup": [
+			{
+				"treeBody": [
+					{
+						"treeLayout": [
+							{
+								"section": [
+									[
+										{
+											"text": "Loss Type",
+											"placement": "col-lg-3 col-sm-3; mt-3 text-14b"
+										},
+										{
+											"text": "Event Date",
+											"placement": "col-lg-3 col-sm-3; mt-3 text-14b"
+										},
+										{
+											"text": "Declaration Date",
+											"placement": "col-lg-3 col-sm-3; mt-3 text-14b"
+										},
+										{
+											"text": "Status",
+											"placement": "col-lg-3 col-sm-3; mt-3 text-14b"
+										}
+									],
+									[
+										{
+											"collapse": true,
+											"value": "",
+											"placement": "col-lg-3 col-sm-3 prod-text-14",
+											"sector": "lossType",
+											"dataSegment": "claim"
+										},
+										{
+											"elementor": true,
+											"content": "",
+											"placement": "col-lg-3 col-sm-3 prod-text-14",
+											"sector": "eventDate",
+											"dataSegment": "claim",
+											"name": " coverage-subscrpitiondate",
+											"value": "",
+											"type": "readOnly",
+											"insideSpan": true,
+											"config": {
+												"valueType": "date",
+												"format": "MM/DD/YYYY"
+											}
+										},
+										{
+											"placement": "col-lg-3 col-sm-3 prod-text-14",
+											"sector": "declarationDate",
+											"dataSegment": "claim"
+										},
+										{
+											"elementor": true,
+											"content": "",
+											"placement": "col-lg-3 col-sm-3 prod-text-14",
+											"sector": "status",
+											"dataSegment": "claim",
+											"name": "status-label",
+											"type": "tile",
+											"config": {
+												"displayName": "StatusConstants"
+											}
+
+										},
+										{
+											"subTreeLayout":{ 
+												"section":[
+													[
+														{
+															"text": "Close Date",
+															"placement": "col-lg-2 col-sm-2 text-14b"
+														},
+														{
+															"text": "Close Reason",
+															"placement": "col-lg-2 col-sm-2 text-14b"
+														},
+														{
+															"text": "Close Comment",
+															"placement": "col-lg-4 col-sm-4 text-14b"
+														},
+														{
+															"text": "Description",
+															"placement": "col-lg-4 col-sm-4 text-14b"
+														}
+													],
+													[
+														{
+															"elementor": true,
+															"content": "",
+															"placement": "col-lg-2 col-sm-2 text-14",
+															"sector": "closeDate",
+															"dataSegment": "claim",
+															"name": "invoiceFrequency-label",
+															"type": "readOnly",
+															"value": "",
+															"insideSpan": true,
+															"config": {
+																"valueType": "date",
+																"format": "MM/DD/YYYY"
+															}
+														},
+														{
+															"placement": "col-lg-2 col-sm-2 text-14",
+															"sector": "closeReason",
+															"dataSegment": "claim"
+														},
+														{
+															"placement": "col-lg-4 col-sm-4 text-14",
+															"sector": "closeComment",
+															"dataSegment": "claim"
+														},
+														{
+															"placement": "col-lg-4 col-sm-4 text-14",
+															"sector": "description",
+															"dataSegment": "claim"
+														},
+														{
+															"subTreeLayout": 								{
+																"section": [
+																	[
+																		{
+																			"collapse": true,
+																			"value": "Loss Data",
+																			"placement": "itemText"
+																		},
+																		{
+																			"subTreeLayout": {
+																				"section": 
+																				[
+																					[
+																						{
+																							"text": "Loss Name",
+																							"placement": "col-lg-3 col-sm-3 text-14"
+																						},
+																						{
+																							"text": "Event Date",
+																							"placement": "col-lg-3 col-sm-3 text-14"
+																						},
+																						{
+																							"text": "Disability End Date",
+																							"placement": "col-lg-3 col-sm-3 text-14"
+																						},
+																						{
+																							"text": "Disability Kind",
+																							"placement": "col-lg-3 col-sm-3 text-14"
+																						}
+																					],
+																					[
+																						{
+																							"placement": "col-lg-3 col-sm-3 text-14",
+																							"sector": "lossName"
+																						},
+																						{
+																							"elementor": true,
+																							"content": "",
+																							"placement": "col-lg-3 col-sm-3 text-14",
+																							"sector": "eventDate",
+																							"value": "",
+																							"type": "readOnly",
+																							"insideSpan": true,
+																							"config": {
+																								"valueType": "date",
+																								"format": "MM/DD/YYYY"
+																							}
+																						},
+																						{
+																							"placement": "col-lg-3 col-sm-3 text-14",
+																							"sector": "disabilityEndDate"
+																						},
+																						{
+																							"elementor": true,
+																							"content": "",
+																							"placement": "col-lg-3 col-sm-3 text-14",
+																							"sector": "disabilityKind",
+																							"name": "status-label",
+																							"type": "tile",
+																							"config": {
+																								"displayName": "DisabilityConstants"
+																							}
+																						}
+																					]
+																				],
+																				"placement": "subheaderPlainContainer",
+																				"dataSegment": "lossData"
+																			}
+																		}
+																	]
+																],
+																"placement": "treeSectionLayout"
+															}
+														},
+														{
+															"subTreeLayout": 								{
+																"section": [
+																	[
+																		{
+																			"collapse": true,
+																			"value": "Indemnifications",
+																			"placement": "itemText"
+																		},
+																		{
+																			"subTreeLayout": {
+																				"section": 
+																				[
+																					[
+																						{
+																							"text": "From Date",
+																							"placement": "col-lg-3 col-sm-3 text-14"
+																						},
+																						{
+																							"text": "To Date",
+																							"placement": "col-lg-3 col-sm-3 text-14"
+																						},
+																						{
+																							"text": "Benefit Amount",
+																							"placement": "col-lg-3 col-sm-3 text-14"
+																						},
+																						{
+																							"text": "Deductible Amount",
+																							"placement": "col-lg-3 col-sm-3 text-14"
+																						}
+																					],
+																					[
+																						{
+																							"elementor": true,
+																							"content": "",
+																							"placement": "col-lg-3 col-sm-3 text-14",
+																							"sector": "fromDate",
+																							"value": "",
+																							"type": "readOnly",
+																							"insideSpan": true,
+																							"config": {
+																								"valueType": "date",
+																								"format": "MM/DD/YYYY"
+																							}
+																						},
+																						{
+																							"elementor": true,
+																							"content": "",
+																							"placement": "col-lg-3 col-sm-3 text-14",
+																							"sector": "toDate",
+																							"value": "",
+																							"type": "readOnly",
+																							"insideSpan": true,
+																							"config": {
+																								"valueType": "date",
+																								"format": "MM/DD/YYYY"
+																							}
+																						},
+																						{
+																							"placement": "col-lg-3 col-sm-3 text-14",
+																							"sector": "benefitAmount"
+																						},
+																						{
+																							"placement": "col-lg-3 col-sm-3 text-14",
+																							"sector": "deductible"
+																						}
+																					]
+																				],
+																				"placement": "subheaderPlainContainer",
+																				"dataSegment":"indemnifications"
+																			}
+																		}
+																	]
+																],
+																"placement": "treeSectionLayout"
+															}
+														},
+														{
+															"subTreeLayout": 								{
+																"section": [
+																	[
+																		{
+																			"collapse": true,
+																			"value": "Beneficiaries",
+																			"placement": "itemText"
+																		},
+																		{
+																			"subTreeLayout": {
+																				"section": 
+																				[
+																					[
+																						{
+																							"text": "Description",
+																							"placement": "col-lg-3 col-sm-3 text-14"
+																						},
+																						{
+																							"text": "Percent",
+																							"placement": "col-lg-3 col-sm-3 text-14"
+																						}
+																					],
+																					[
+																						{
+																							"placement": "col-lg-3 col-sm-3 text-14",
+																							"sector": "description"
+																						},
+																						{
+																							"placement": "col-lg-3 col-sm-3 text-14",
+																							"sector": "percent"
+																						}
+																					]
+																				],
+																				"placement": "subheaderPlainContainer",
+																				"dataSegment":"beneficiaries"
+																			}
+																		}
+																	]
+																],
+																"placement": "treeSectionLayout"
+															}
+														}
+													]
+												],
+												"placement": "treeSubLayout"
+											}
+										}
+									]
+								],
+								"placement": "treeBodyLayout"
+							}							
+						],
+						"placement": ""
+					}
+				]
+			}
+		]
+	},
+	"treeData2": {
+		"treeGroup": [
+			{
+				"treeBody": [
+					{
+						"treeLayout": [
+							{
+								"section": [
+									[
+										{
+											"collapse": true,
+											"value": "Claim Documents",
+											"placement": "itemText"
+										},
+										{
+											"subTreeLayout": {
+												"section": 
+												[
+													
+													[
+														{
+															"placement": "col-lg-3 col-sm-3 text-14",
+															"sector": "name"
+														},
+														{
+															"elementor": true,
+															"placement": "col-lg-3 col-sm-3 text-14",
+															"type": "fileDownloader",
+															"text": "Download",
+															"convertText":"data:application/pdf;base64,",
+															"content": "",
+															"value": "",
+															"sector": "name",
+															"contentSector":"content"
+														}
+													]
+												],
+												"placement": "treeSubLayout",
+												"dataSegment":"documents"
+											}
+										}
+									]
+								],
+								"placement": "treeBodyLayout"
+							}							
+						],
+						"placement": ""
+					}
+				]
+			}
+		]
+	},
+	"placementStyle": [
+
+		{
+			"treeBodyLayout": {
+				"placement": "row col-lg-12 col-sm-12 treeBodyLayout"
+			}
+		},
+		{
+			"treeSubLayout": {
+				"placement": "row col-lg-12 col-sm-12 treeSubLayout list-row"
+			}
+		},
+		{
+			"treeSectionLayout": {
+				"placement": "col-lg-12 col-sm-12 list-row treeSectionLayout"
+			}
+		},
+		{
+			"subheaderPlainContainer": {
+				"placement": "col-lg-11 col-sm-11 text-16 sub-header-plain-container list-border"
+			}
+		},
+		{
+			"itemText": {
+				"placement": "col-lg-3 col-sm-3 text-14"
+			}
+		}
+	]
+}

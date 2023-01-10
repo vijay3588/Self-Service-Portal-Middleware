@@ -1,0 +1,21 @@
+{
+    "name": {
+        "dataType": "string",
+        "defaultValue": "",
+        "dataConfig": [
+            {
+                "configType": "additionSector",
+                "sector": "name",
+                "splitText": " "
+            },
+            {
+                "configType": "preText",
+                "text": "Welcome, "
+            },
+            {
+                "configType": "postText",
+                "text": " !"
+            }
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+{
+  "navigationBgColor": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "navigationMainLinksFontColor": {
+    "dataType": "string",
+    "defaultValue": ""
+  }
+}

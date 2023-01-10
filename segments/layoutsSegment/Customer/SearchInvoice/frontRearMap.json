@@ -1,0 +1,68 @@
+[
+  {
+    "frontDataSegment": "body",
+    "rearDataSegmentClass": "aSPLI_GetFinancialOperations_In",
+    "rearDataSegment": "criteria",
+    "rearDataSegmentPath": "criteria",
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "buid",
+        "rearSector": "actorBuid",
+        "frontDataSegmentPath": "loggedUserEntity._Result.clientId",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "transactionNumber",
+        "rearSector": "financialId",
+        "frontDataSegmentPath": "values.SearchForAnInvoice",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "transactionType",
+        "rearSector": "financialPaymentsSearched",
+        "frontDataSegmentPath": "values.SearchForAnInvoice",
+        "defaultValue": false,
+        "dataConfig": {
+          "configType":"boolean",
+          "hasData": true,
+          "value": "payment"
+        }
+      },
+      {
+        "frontSector": "transactionType",
+        "rearSector": "financialInvoicesSearched",
+        "frontDataSegmentPath": "values.SearchForAnInvoice",
+        "defaultValue": false,
+        "dataConfig": {
+          "configType":"boolean",
+          "hasData": true,
+          "value": "invoice"
+        }
+      },
+      {
+        "frontSector": "transactionType",
+        "rearSector": "financialDisbursementsSearched",
+        "frontDataSegmentPath": "values.SearchForAnInvoice",
+        "defaultValue": false,
+        "dataConfig": {
+          "configType":"boolean",
+          "hasData": true,
+          "value": "disbursement"
+        }
+      },
+      {
+        "frontSector": "fromDate",
+        "rearSector": "fromDate",
+        "frontDataSegmentPath": "values.SearchForAnInvoice",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "toDate",
+        "rearSector": "toDate",
+        "frontDataSegmentPath": "values.SearchForAnInvoice",
+        "defaultValue": ""
+      }
+    ]
+  }
+]

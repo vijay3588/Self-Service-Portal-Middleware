@@ -1,0 +1,114 @@
+{
+  "changeConfig": {
+    "leftCard": {
+      "element": [
+        "Current Legal Name & DBA",
+        "Legal Name",
+        "Doing Business As"
+      ],
+      "className": "col-12 col-lg-5 mb-4 mb-lg-0 p-4 current-name-left-card",
+      "changeType": "Name",
+      "type": "expression",
+      "mappings": [
+        {
+          "mapElement": "legalName",
+          "expression": "`${data.name || ''}`"
+        },
+        {
+          "mapElement": "doingBusinessAs",
+          "expression": "`${data.shortName || ''}`"
+        }
+      ]
+    },
+    "rightCard": {
+      "element": ["New Legal Name & DBA", "Legal Name ", "Doing Business As "],
+      "className": " col-12 col-lg-6 offset-lg-1 p-4 current-name-right-card"
+    }
+  },
+  "elements": [
+    [
+      {
+        "type": "date",
+        "name": "effectiveDate",
+        "rearSector": "effectiveDate",
+        "label": "Effective Date",
+        "placement": "col-md-3",
+        "currentDate": true,
+				"image": "calender_icon_medium.png",
+				"config": {
+					"valueType": "date",
+					"format": "MM/DD/YYYY"
+				},
+        "validations": {
+					"string": {
+						"required": "This field is required"
+					}
+				}
+      }
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "Current Legal Name & DBA"
+      }
+    ],
+    [
+      {
+        "name": "currentName",
+        "type": "readOnly",
+        "label": "Current Legal Name & DBA",
+        "value": "",
+        "hideLabel": true
+      }
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "New Legal Name & DBA"
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "name": "name",
+        "rearSector": "name",
+        "label": "Legal Name ",
+        "validations": {
+          "string": {
+            "required": "mandatory field"
+          }
+        },
+        "placement": "col-md-12 col-12 mb-3"
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "name": "shortName",
+        "rearSector": "shortName",
+        "label": "Doing Business As ",
+        "validations": {
+          "string":{
+            "required": "mandatory field"
+          }
+        },
+        "placement": "col-md-12 col-12 mb-3"
+      }
+    ],
+    [
+      {
+        "label": "Legal Name",
+        "type": "readOnly",
+        "name": "legalName"
+      }
+    ],
+    [
+      {
+        "label": "Doing Business As",
+        "type": "readOnly",
+        "getValuesFromData": "shortName",
+        "name": "doingBusinessAs"
+      }
+    ]
+  ]
+}

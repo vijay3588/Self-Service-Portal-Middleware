@@ -1,0 +1,42 @@
+{
+    "className": {
+        "dataType": "string",
+        "defaultValue": "aSPLIC_ClaimCriteria_In"
+    },
+    "claimFullId": {
+        "dataType": "object",
+        "name": "claimFullId"
+    },
+    "clientIds": {
+        "dataType": "object",
+        "name": "clientIds"
+    },
+    "claimNumber": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "claimantName": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "claimantFirstName": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "fromOpenDate": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "toOpenDate": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "status": {
+        "dataType": "string",
+        "defaultValue": "msOpen"
+    },
+    "lossType": {
+        "dataType": "object",
+        "name": "lossType"
+    }
+}

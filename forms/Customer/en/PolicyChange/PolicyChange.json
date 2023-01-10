@@ -1,0 +1,99 @@
+{
+  "elements": [
+    [
+      {
+        "type": "label",
+        "name": "policyChangesLabel",
+        "label": "Please describe the change",
+        "value": "Please describe the change",
+        "placement": "py-3"
+      },
+      {
+        "type": "select",
+        "name": "policyChanges",
+        "label": "Describe the change",
+        "placement": "col-md-6",
+        "defaultValue": null,
+        "options": "",
+        "optionsname": "PolicyChangeConstants",
+        "validations": {
+          "string": {
+            "required": "This field is required"
+          }
+        }
+      }
+    ],
+    [
+      {
+        "type": "label",
+        "name": "contactLabel",
+        "label": "How should we contact you ?",
+        "value": "How should we contact you ?",
+        "placement": "py-3"
+      },
+      {
+        "type": "select",
+        "name": "contact",
+        "label": "Contact method",
+        "placement": "col-md-6",
+        "defaultValue": null,
+        "options": "",
+        "optionsname": "ContactChoice",
+        "validations": {
+          "string": {
+            "required": "This field is required"
+          }
+        }
+      }
+    ],
+    [
+      {
+        "type": "label",
+        "name": "policyLabel",
+        "label": "Which policy is this about ?",
+        "value": "Which policy is this about ?",
+        "placement": "py-3"
+      },
+      {
+        "type": "select",
+        "name": "policy",
+        "label": "policy",
+        "placement": "col-md-6",
+        "options": "",
+        "optionKind": "apiCall",
+        "optionsConfig": {
+        "reduxObject": "onLoadResponseList",
+        "mapperObject": [
+          {
+            "takingDateform": "contracts",
+            "value": "`${currentObject.internalPolicyId || ''}`",
+            "text": "`${currentObject.internalPolicyId || ''}`"
+          }
+        ],
+        "validations": {
+          "string": {
+            "required": "This field is required"
+          }
+        }
+      }
+      }
+    ],
+    [
+      {
+        "type": "label",
+        "name": "commentsLabel",
+        "label": "Provide any additional information that might help us resolve this issue",
+        "value": "Provide any additional information that might help us resolve this issue",
+        "placement": "py-3"
+      },
+      {
+        "type": "textarea",
+        "name": "comments",
+        "label": "Comments",
+        "placement": "col-md-10 py-2",
+        "rows":"5",
+        "validations": {}
+      }
+    ]
+  ]
+}

@@ -1,0 +1,14 @@
+{
+    "receivedDate": {
+      "dataType": "number",
+      "defaultValue": null
+    },
+    "canceledDate": {
+      "dataType": "string",
+      "defaultValue": null
+    },
+    "canceledReason": {
+        "dataType": "string",
+        "defaultValue": null
+      }
+  }

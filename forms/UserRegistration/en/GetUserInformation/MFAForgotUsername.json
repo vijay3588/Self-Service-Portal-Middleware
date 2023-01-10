@@ -1,0 +1,371 @@
+{
+  "triConfig": {
+    "leftCard": {},
+    "rightCard": {
+      "element": [
+        "Multi-factor Authentication",
+        "Fields marked with * are Mandatory",
+        "Please enter the security code sent to your mobile number ",
+        "Security Code",
+        "You can resend security code in…",
+        "Security Code Info",
+        "Resend security code",
+        "Unable to receive code?",
+        "Try another method",
+        "Timer",
+        "Cancel",
+        "Continue",
+        "Change the method of your choice to receive security code.",
+
+        "The security code will expire in 5 minutes after you receive it. Please call customer care if you are unable to receive the security code.",
+        "securityCodeNote"
+      ],
+      "className": "col-12"
+    }
+  },
+  "elements": [
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "Multi-factor Authentication",
+        "formSideHeader": "Retrieve User ID"
+      }
+    ],
+
+    [
+      {
+        "displayConfig": {
+          "field": "hideOptions",
+          "show": true
+        },
+        "type": "panelSideHeader",
+        "label": "Fields marked with * are Mandatory",
+        "formMandatory": "Fields marked with * are Mandatory"
+      }
+    ],
+
+    [
+      {
+        "displayConfig": {
+          "field": "hideOptions",
+          "show": true
+        },
+        "type": "textReadOnlyLabel",
+        "name": "securityCodeOptionSelected",
+        "label": "Please enter the security code sent to your mobile number ",
+        "hideLabel": true,
+        "optionValues": ["mobile number"],
+        "optionValuess": ["registered email address","phone number"],
+      
+        "validations": {},
+        "disabled": true,
+        "responseFrom": "ContractInformation",
+        "value": "(xxx) xxx xxxx. ",
+        "valueStyle":{
+          "color": "#002C77"
+        },
+        "containerClassName": "col-12 py-0",
+        "contentClassName": "col-12 py-0",
+        "styleClass": "",
+        "placement": "col-md-12"
+      }
+    ],
+
+    [
+      {
+        "displayConfig": {
+          "field": "hideOptions",
+          "show": true
+        },
+        "type": "text",
+        "name": "securityCode",
+        "rearSector": "shortName",
+        "label": "Security Code",
+        "placeholder": "Enter Security Code",
+        "shouldClearOnReset": true,
+        "validations": {
+          "string": {
+            "required": "Security code is required",
+
+            "matches": {
+              "regex": "^[0-9]{6,6}$",
+              "message": "Invalid security code"
+            }
+          }
+        },
+
+        "placement": "col-12 col-md-12 col-lg-6  pt-lg-4 pt-4 pt-md-2 pb-3 px-3 "
+      },
+      {
+        "displayConfig": {
+          "field": "hideOptions",
+          "show": true
+        },
+        "type": "stickyNote",
+        "name": "securityCodeNote",
+        "label": "securityCodeNote",
+        "hideLabel": true,
+        "validations": {},
+        "responseFrom": "ContractInformation",
+        "image": "icon-important.png",
+        "title": "Important Note",
+        "iconClass": "col-2 pt-1 px-1",
+        "headerClass": "col-9 pt-1",
+        "listClass": "col-12",
+        "olClass": "mb-1 px-3",
+        "valueArray": [
+          "The security code will expire in 5 minutes after you receive it.",
+          "Please call customer care if you are unable to receive the security code."
+        ],
+        "valueIn": "seconds",
+
+        "placement": "col-12 col-md-12 col-lg-6 py-1 py-lg-4 py-md-1 py-lg-0  py-sm-1  px-3 mt-3   "
+      }
+    ],
+
+    [
+      {
+        "displayConfig": {
+          "field": "hideOptions",
+          "show": false,
+          "renderElements": {
+            "MFAOptions": true
+          },
+          "valueUpdate": {
+            "hideOptions": false
+          },
+          "validateField": ["MFAOptions"]
+        },
+        "type": "radioButtonGroup",
+        "name": "MFAOptions",
+        "value": "(xxx) xxx xxxx",
+        "hidden": false,
+        "rearSector": "MFAOptions",
+        "label": "Change the method of your choice to receive security code.",
+        "validationss": {
+          "string": {
+            "required": "This field is required"
+          }
+        },
+        "labelClassName": "col-12 py-3",
+        "placement": "col-12  col-lg-12  col-md-12 ",
+        "radioClassWrapper": "pb-0 ",
+        "isRadio": true,
+        "updateValueTo":"securityCodeOptionSelected",
+        "style": {
+          "paddingBottom": "17%"
+        },
+        "inputs": [
+          {
+            "label": "SMS/text to (xxx) xxx xxxx",
+            "value": "(xxx) xxx xxxx"
+          },  
+          { 
+            "label":"Phone call to (xxx) xxx xxxx",
+            "value": " (xxx) xxx xxxx " 
+          }       
+        ]
+      }
+    ],
+    [
+      {
+        "displayConfig": {
+          "field": "hideOptions",
+          "show": true
+        },
+        "type": "readOnly",
+        "name": "SecurityCodeInfo",
+        "label": "Security Code Info",
+        "hideLabel": true,
+        "validations": {},
+        "responseFrom": "ContractInformation",
+        "value": "You can resend security code in…",
+        "styleClass": "",
+        "containerClassName": "col-12 py-1",
+        "contentClassName": "label-content col-12 py-1",
+        "placement": "col-md-12"
+      }
+    ],
+
+    [
+      {
+        "displayConfig": {
+          "field": "hideOptions",
+          "show": true
+        },
+        "type": "timer",
+        "name": "timer",
+        "label": "Timer",
+        "hideLabel": true,
+        "validations": {},
+        "responseFrom": "ContractInformation",
+        "value": "45",
+        "config": {
+          "style": {
+            "color": "#4CAF50",
+            "font-family": "NotoSansBold"
+          }
+        },
+
+        "enableElement": {
+          "elementName": "resendSecurityCode",
+          "elementStyle": {
+            "pointerEvents": "none",
+            "color": "#b3b3b3"
+          }
+        },
+        "valueIn": "seconds",
+        "className": "mt-0 pt-0",
+
+        "placement": "col-md-12 py-1"
+      }
+    ],
+
+    [
+      {
+        "displayConfig": {
+          "field": "hideOptions",
+          "show": true
+        },
+        "type": "readOnly",
+        "name": "unableToReceiveCode",
+        "label": "Unable to receive code?",
+        "hideLabel": true,
+        "validations": {},
+        "responseFrom": "ContractInformation",
+        "value": "Unable to receive code?",
+        "styleClass": "",
+        "contentClassName": "col-12",
+        "containerClassName": "col-12 py-0",
+        "placement": "col-md-12 pt-1"
+      }
+    ],
+    [
+      {
+        "displayConfig": {
+          "field": "hideOptions",
+          "show": true,
+
+          "valueUpdate": {
+            "tryAnotherMethod": true,
+            "hideOptions": true
+          }
+        },
+        "showElement": true,
+        "type": "button",
+        "hidden": false,
+        "name": "tryAnotherMethodButton",
+        "registerOrRetrieve": true,
+        "rearSector": "tryAnotherMethodButton",
+        "label": "Try another method",
+        "link": true,
+        "hideLabel": true,
+        "validations": {},
+        "value": "Try another method",
+        "styleClass": "",
+        "containerClassName": "col-12",
+        "moveNextStep": true,
+
+        "placement": "col-md-12 px-1"
+      },
+      {
+        "type": "checkbox",
+        "visibility": "hidden",
+
+        "hidden": true,
+        "name": "tryAnotherMethod",
+        "label": "Try Another Method Checkbox",
+        "placement": "col-md-3 col-12"
+      }
+    ],
+    [
+      {
+        "displayConfig": {
+          "field": "hideOptions",
+          "show": false,
+
+          "renderElements": {
+            "MFAOptions": false
+          },
+          "valueUpdate": {
+            "hideOptions": false
+          },
+          "validateField": ["MFAOptions"]
+        },
+        "type": "button",
+        "id":"mfaCancelForgotUser",
+        "buttonPurpose": "mfaCancel",
+        "hidden": false,
+        "outline": true,
+        "name": "cancelButton",
+        "registerOrRetrieve": true,
+        "rearSector": "",
+        "showElement": true,
+        "label": "Cancel",
+        "validations": {},
+        "placement1": "col-12 col-md-5 col-lg-4 col-xl-auto  ml-xl-auto pt-5 mt-5  ",
+        "placement": "col-12 col-12 col-12 col-md-auto  ml-auto pt-5 mt-5 pt-md-0 mt-md-0 ",
+        "className": "px-3 py-1 mb-md-3 w-100"
+      },
+      {
+        "type": "checkbox",
+        "visibility": "hidden",
+
+        "hidden": true,
+        "name": "hideOptions",
+        "label": "HideOptions",
+        "placement": "",
+
+        "defaultValue": false,
+        "value": false,
+
+        "valueType": "bool",
+
+        "rearSector": ""
+      },
+      {
+        "displayConfig": {
+          "field": "hideOptions",
+          "show": false,
+
+          "renderElements": {
+            "MFAOptions": false
+          },
+          "valueUpdate": {
+            "hideOptions": false
+          },
+          "validateField": ["MFAOptions"]
+        },
+        "type": "button",
+        "hidden": false,
+        "outline": false,
+        "name": "continueButton",
+        "registerOrRetrieve": true,
+        "id":"mfaContinueForgotUser",
+        "buttonPurpose": "mfaContinue",
+        "label": "Continue",
+        "shouldCallTimer": true,
+        "placement2": " col-12 col-md-5 col-lg-4 col-xl-auto mt-2  mt-md-0  px-0 pr-1 ",
+        "placement": " col-12  col-12  col-12 col-md-5 col-lg-4 col-xl-auto mt-2  mt-md-0  pl-xl-0    ",
+
+        "className": "px-3 py-1 mb-md-3 w-100"
+      },
+      {
+        "type": "checkbox",
+        "visibility": "hidden",
+
+        "hidden": true,
+        "name": "hideOptions",
+        "label": "HideOptions",
+        "placement": "",
+
+        "defaultValue": false,
+        "value": false,
+
+        "valueType": "bool",
+
+        "rearSector": ""
+      }
+    ]
+  ]
+}

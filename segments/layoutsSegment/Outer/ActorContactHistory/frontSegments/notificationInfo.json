@@ -1,0 +1,4 @@
+{
+    "notificationCount": {"dataType": "number", "defaultValue": ""},
+    "notifications":{"dataType": "object", "name": "notifications"}
+}

@@ -1,0 +1,12 @@
+{ 
+    "name": {"dataType": "string", "defaultValue":""}, 
+    "paidToDate": {"dataType": "date", "defaultValue":""},
+    "paidStatus": {"dataType": "string", "defaultValue":""},
+    "effectiveDate": {"dataType": "string", "defaultValue":""},
+    "terminationDate": {"dataType": "string", "defaultValue":""},
+    "additionalDatas": {"dataType": "object", "name":"additionalDatas"},
+    "premium": {"dataType": "number", "defaultValue":""},
+    "frequency": {"dataType": "string", "defaultValue":""},
+    "insured": {"dataType": "object", "name":"insured"},
+    "coverageAmount":{"dataType": "number", "defaultValue":""}
+}

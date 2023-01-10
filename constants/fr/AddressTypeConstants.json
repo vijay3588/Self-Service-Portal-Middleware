@@ -1,0 +1,31 @@
+[
+    {
+        "value": "0",
+        "text": "Main"
+    },
+    {
+        "value": "1",
+        "text": "Other"
+    },
+    {
+        "value": "2",
+        "text": "Secondary"
+    },
+    {
+        "value": "3",
+        "text": "Tax Address"
+    },
+
+    {
+        "value": "cpsAssigned",
+        "text": "Assigned"
+
+      },
+      {
+        "value": "cpsReceived",
+        "text": "Received"
+      
+      }
+      
+    
+]

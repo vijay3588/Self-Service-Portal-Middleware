@@ -1,0 +1,66 @@
+{
+    "className": {
+        "dataType": "string",
+        "defaultValue": "aSPLI_GetEmployee_In"
+    },
+    "GBPBuid": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "lEBuid": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "lEShortName": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "lEName": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "lastName": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "firstName": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "birthDate": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "memberID": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "clientID": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "priorName": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "sSN": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "employmentStatus": {
+        "dataType": "string",
+        "defaultValue": "meUndefined"
+    },
+    "presentedMembers": {
+        "dataType": "string",
+        "defaultValue": "cAllMembers"
+    },
+    "minSalary": {
+        "dataType": "object",
+        "name": "minSalary"
+    },
+    "maxSalary": {
+        "dataType": "object",
+        "name": "maxSalary"
+    }
+}

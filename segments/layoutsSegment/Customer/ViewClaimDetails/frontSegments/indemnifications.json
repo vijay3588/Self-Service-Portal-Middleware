@@ -1,0 +1,6 @@
+{ 
+    "fromDate": {"dataType": "date", "defaultValue":""}, 
+    "toDate": {"dataType": "date", "defaultValue":""}, 
+    "benefitAmount": {"dataType": "number", "defaultValue":""},
+    "deductible": {"dataType": "number", "defaultValue":""}
+}

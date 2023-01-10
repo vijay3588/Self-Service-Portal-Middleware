@@ -1,0 +1,4 @@
+{
+  "disbursementNumber": {"dataType": "string", "defaultValue": "", "dataConfig":{"configType":"preText", "text":"Disbursement Number "}},
+  "disbursementStatus": {"dataType": "string", "defaultValue": ""}
+}

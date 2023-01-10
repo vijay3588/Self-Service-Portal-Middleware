@@ -1,0 +1,86 @@
+[
+  {
+    "value": "cipsNotPaid",
+    "text": "Impayé"
+  },
+  {
+    "value": "cipsPartial",
+    "text": "Partielle"
+  },
+  {
+    "value": "cipsFullyPaid",
+    "text": "Entièrement payé"
+  },
+  {
+    "value": "caisReceived",
+    "text": "Reçue"
+  },
+  {
+    "value": "cActive",
+    "text": "Actif"
+  },
+  {
+    "value": "cQuote",
+    "text": "Citation"
+  },
+  {
+    "value": "cProject",
+    "text": "Projet"
+  },
+  {
+    "value": "cCompleted",
+    "text": "Complété"
+  },
+  {
+    "value": "cSubmitted",
+    "text": "Soumise"
+  },
+  {
+    "value": "Processed",
+    "text": "Traité"
+  },
+  {
+    "value": "All",
+    "text": "Toute"
+  },
+  {
+    "value": "Canceled",
+    "text": "Annulé"
+  },
+  {
+    "value": "Unsent",
+    "text": "Non envoyé"
+  },
+  {
+    "value": "Scheduled",
+    "text": "Programmé"
+  },
+  {
+    "value": "cpsAssigned",
+    "text": "Attribué"
+  },
+  {
+    "value": "cpsReceived",
+    "text": "Reçue"
+  },
+  {
+    "value": "cNeverInForce",
+    "text": "Jamais en Vigueur"
+  },
+  {
+    "value": "cTerminated",
+    "text": "Terminé"
+  },
+  {
+    "value": "cPSPassed",
+    "text": "Passé"
+  },
+  {
+    "value": "cRSWaiting",
+    "text": "En attente"
+  },
+  {
+    "value": "msOpen",
+    "text": "Ouvert"
+  }
+]

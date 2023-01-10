@@ -1,0 +1,27 @@
+{
+
+    "LossType": {
+        "dataType": "string",
+        "defaultValue": "Short Term Disability"
+    },
+    "ProductFamily": {
+        "dataType": "string",
+        "defaultValue": "Life"
+    },
+    "EventDate": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "DeclarationDate": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "OpenDate": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "Status": {
+        "dataType": "string",
+        "defaultValue": "msOpen"
+    }
+}

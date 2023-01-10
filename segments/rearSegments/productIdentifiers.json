@@ -1,0 +1,10 @@
+{
+    "productIdentifier":{
+        "dataType": "object",
+        "name": "productIdentifier"
+    },
+    "buid": {
+        "dataType": "string",
+        "defaultValue": ""
+    }
+}

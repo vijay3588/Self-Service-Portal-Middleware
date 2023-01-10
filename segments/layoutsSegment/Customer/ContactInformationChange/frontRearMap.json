@@ -1,0 +1,93 @@
+[
+  
+  {
+    "frontDataSegment": "body",
+    "rearDataSegmentClass": "aSPCB_Correspondence",
+    "rearDataSegment":"newCorrespondence",
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "effectiveDate",
+        "rearSector": "effectiveDate",
+        "frontDataSegmentPath":"values.NewContactInformation",
+        "rearDataSegmentPath": "newCorrespondence",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "lineOne",
+        "rearSector": "line1",
+        "frontDataSegmentPath":"values.NewContactInformation",
+        "rearDataSegmentPath": "newCorrespondence.address",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "lineTwo",
+        "rearSector": "line2",
+        "frontDataSegmentPath":"values.NewContactInformation",
+        "rearDataSegmentPath": "newCorrespondence.address",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "zipCode",
+        "rearSector": "zipCode",
+        "frontDataSegmentPath":"values.NewContactInformation.zipCodeAndCity",
+        "rearDataSegmentPath": "newCorrespondence.address.zipCode",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "city",
+        "rearSector": "city",
+        "frontDataSegmentPath":"values.NewContactInformation.zipCodeAndCity",
+        "rearDataSegmentPath": "newCorrespondence.address.city",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "state",
+        "rearSector": "state",
+        "frontDataSegmentPath":"values.NewContactInformation",
+        "rearDataSegmentPath": "newCorrespondence.address",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "country",
+        "rearSector": "country",
+        "frontDataSegmentPath":"values.NewContactInformation",
+        "rearDataSegmentPath": "newCorrespondence.address",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "newEmail",
+        "rearSector": "eMail",
+        "frontDataSegmentPath":"values.NewContactInformation",
+        "rearDataSegmentPath": "newCorrespondence",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "newCellPhone",
+        "rearSector": "cellPhone",
+        "frontDataSegmentPath":"values.NewContactInformation",
+        "rearDataSegmentPath": "newCorrespondence",
+        "defaultValue": ""
+      }
+    ]
+  },
+  {
+    "frontDataSegment": "body",
+    "mappingSectorOnly":true,
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "buid",
+        "frontDataSegmentPath":"loggedUserEntity._Result.clientId",
+        "rearSector": "customerBuid",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "effectiveDate",
+        "frontDataSegmentPath":"values.NewContactInformation",
+        "rearSector": "atDate",
+        "defaultValue": ""
+      }
+    ]
+  }
+]

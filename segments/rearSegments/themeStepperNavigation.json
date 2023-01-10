@@ -1,0 +1,11 @@
+{
+  "bgColor": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+
+  "stepperNavigationActiveLinkFontColor": {
+    "dataType": "string",
+    "defaultValue": ""
+  }
+}

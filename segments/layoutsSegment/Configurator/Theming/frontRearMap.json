@@ -1,0 +1,488 @@
+[
+  {
+    "frontDataSegment": "Components",
+    "frontDataSegmentPath": "values",
+    "rearDataSegment": "app",
+    "rearDataSegmentClass": "themeApp",
+    "rearDataSegmentPath": "components",
+    "rearDataSegmentType": "object",
+
+    "defaultSectorMapping": [
+   
+      {
+        "frontSector": "appBgColor",
+        "rearSector": "appBgColor",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "appColor",
+        "rearSector": "appColor",
+        "defaultValue": ""
+      }
+    ]
+  },
+  {
+    "frontDataSegment": "Components",
+
+    "frontDataSegmentPath": "values",
+
+    "rearDataSegment": "header",
+
+    "rearDataSegmentClass": "themeHeader",
+
+    "rearDataSegmentPath": "components",
+
+    "rearDataSegmentType": "object",
+
+    "defaultSectorMapping": [
+      {
+        "frontSector": "headerBgColor",
+
+        "rearSector": "headerBgColor",
+
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "dropDownColor",
+
+        "rearSector": "dropDownColor",
+
+        "defaultValue": ""
+      },
+       {
+         "frontSector": "headerBorderColor",
+
+         "rearSector": "headerBorderColor",
+
+         "defaultValue": ""
+       },
+        {
+          "frontSector": "headerFontColor",
+
+          "rearSector": "headerFontColor",
+
+          "defaultValue": ""
+        }
+    ]
+  },
+  {
+    "frontDataSegment": "Components",
+
+    "frontDataSegmentPath": "values",
+
+    "rearDataSegment": "navigationBar",
+
+    "rearDataSegmentClass": "themeNavigationBar",
+
+    "rearDataSegmentPath": "components",
+
+    "rearDataSegmentType": "object",
+
+    "defaultSectorMapping": [
+      {
+        "frontSector": "navigationBgColor",
+
+        "rearSector": "navigationBgColor",
+
+        "defaultValue": ""
+      },
+       {
+         "frontSector": "navigationMainLinksFontColor",
+
+         "rearSector": "navigationMainLinksFontColor",
+
+         "defaultValue": ""
+       }
+    ]
+  },
+  {
+    "frontDataSegment": "Components",
+
+    "frontDataSegmentPath": "values",
+
+    "rearDataSegment": "footer",
+
+    "rearDataSegmentClass": "themeFooter",
+
+    "rearDataSegmentPath": "components",
+
+    "rearDataSegmentType": "object",
+
+    "defaultSectorMapping": [
+      {
+        "frontSector": "footerBgColor",
+
+        "rearSector": "footerBgColor",
+
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "copyrightBgColor",
+
+        "rearSector": "copyrightBgColor",
+
+        "defaultValue": ""
+      },
+       {
+         "frontSector": "footerCopyrightFontColor",
+
+         "rearSector": "footerCopyrightFontColor",
+
+         "defaultValue": ""
+       },
+        {
+          "frontSector": "footerLinkFontColor",
+
+          "rearSector": "footerLinkFontColor",
+
+          "defaultValue": ""
+        }
+    ]
+  },
+  {
+    "frontDataSegment": "Components",
+
+    "frontDataSegmentPath": "values",
+
+    "rearDataSegment": "link",
+
+    "rearDataSegmentClass": "themeLink",
+
+    "rearDataSegmentPath": "components",
+
+    "rearDataSegmentType": "object",
+
+    "defaultSectorMapping": [
+      {
+        "frontSector": "linkColor",
+
+        "rearSector": "linkColor",
+
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "hoverColor",
+
+        "rearSector": "hoverColor",
+
+        "defaultValue": ""
+      }
+    ]
+  },
+  {
+    "frontDataSegment": "Molecules",
+    "frontDataSegmentPath": "values",
+    "rearDataSegment": "panel",
+    "rearDataSegmentClass": "themePanel",
+    "rearDataSegmentPath": "molecules",
+    "rearDataSegmentType": "object",
+
+    "defaultSectorMapping": [
+      {
+        "frontSector": "panelBgColor",
+        "rearSector": "panelBgColor",
+        "defaultValue": ""
+      }
+    ]
+  },
+  {
+    "frontDataSegment": "Molecules",
+    "frontDataSegmentPath": "values",
+    "rearDataSegment": "modal",
+    "rearDataSegmentClass": "themeModal",
+    "rearDataSegmentPath": "molecules",
+    "rearDataSegmentType": "object",
+
+    "defaultSectorMapping": [
+      {
+        "frontSector": "modalHeaderBgColor",
+        "rearSector": "modalHeaderBgColor",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "modalContentBgColor",
+        "rearSector": "modalContentBgColor",
+        "defaultValue": ""
+      }
+    ]
+  },
+  {
+    "frontDataSegment": "Molecules",
+    "frontDataSegmentPath": "values",
+    "rearDataSegment": "sectionHeader",
+    "rearDataSegmentClass": "themeSectionHeader",
+    "rearDataSegmentPath": "molecules",
+    "rearDataSegmentType": "object",
+
+    "defaultSectorMapping": [
+      {
+        "frontSector": "sectionHeaderBgColor",
+        "rearSector": "sectionHeaderBgColor",
+        "defaultValue": ""
+      },
+       {
+         "frontSector": "sectionHeaderBreadcrumbsFontColor",
+         "rearSector": "sectionHeaderBreadcrumbsFontColor",
+         "defaultValue": ""
+       }
+    ]
+  },
+  {
+    "frontDataSegment": "Molecules",
+    "frontDataSegmentPath": "values",
+    "rearDataSegment": "changeBox",
+    "rearDataSegmentClass": "themeChangeBox",
+    "rearDataSegmentPath": "molecules",
+    "rearDataSegmentType": "object",
+
+    "defaultSectorMapping": [
+      {
+        "frontSector": "changeBoxBgColor",
+        "rearSector": "changeBoxBgColor",
+        "defaultValue": ""
+      }
+    ]
+  },
+  {
+    "frontDataSegment": "Molecules",
+    "frontDataSegmentPath": "values",
+    "rearDataSegment": "navigation",
+    "rearDataSegmentClass": "themeNavigation",
+    "rearDataSegmentPath": "molecules",
+    "rearDataSegmentType": "object",
+
+    "defaultSectorMapping": [
+      {
+        "frontSector": "navigationDropDownItemsColor",
+        "rearSector": "navigationDropDownItemsColor",
+        "defaultValue": ""
+      }
+    ]
+  },
+  {
+    "frontDataSegment": "Cells",
+    "frontDataSegmentPath": "values",
+    "rearDataSegment": "stepperNavigation",
+    "rearDataSegmentClass": "themeStepperNavigation",
+    "rearDataSegmentPath": "cells",
+    "rearDataSegmentType": "object",
+
+    "defaultSectorMapping": [
+      {
+        "frontSector": "bgColor",
+        "rearSector": "bgColor",
+        "defaultValue": ""
+      },
+        {
+          "frontSector": "stepperNavigationActiveLinkFontColor",
+          "rearSector": "stepperNavigationActiveLinkFontColor",
+          "defaultValue": ""
+        }
+    ]
+  },
+  {
+    "frontDataSegment": "Atoms",
+    "frontDataSegmentPath": "values",
+    "rearDataSegment": "boxcard",
+    "rearDataSegmentClass": "themeBoxcard",
+    "rearDataSegmentPath": "atoms",
+    "rearDataSegmentType": "object",
+
+    "defaultSectorMapping": [
+      {
+        "frontSector": "boxcardBgColor",
+        "rearSector": "boxcardBgColor",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "linearGradientTopColor",
+        "rearSector": "linearGradientTopColor",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "linearGradientBottomColor",
+        "rearSector": "linearGradientBottomColor",
+        "defaultValue": ""
+      }
+    ]
+  },
+  {
+    "frontDataSegment": "Atoms",
+    "frontDataSegmentPath": "values",
+    "rearDataSegment": "table",
+    "rearDataSegmentClass": "themeTable",
+    "rearDataSegmentPath": "atoms",
+    "rearDataSegmentType": "object",
+
+    "defaultSectorMapping": [
+      {
+        "frontSector": "headerBgColor",
+        "rearSector": "headerBgColor",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "headerHover",
+        "rearSector": "headerHover",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "headerColor",
+        "rearSector": "headerColor",
+        "defaultValue": ""
+      }
+    ]
+  },
+  {
+    "frontDataSegment": "Atoms",
+    "frontDataSegmentPath": "values",
+    "rearDataSegment": "treeCard",
+    "rearDataSegmentClass": "themeTreeCard",
+    "rearDataSegmentPath": "atoms",
+    "rearDataSegmentType": "object",
+
+    "defaultSectorMapping": [
+      {
+        "frontSector": "treeCardBgColor",
+        "rearSector": "treeCardBgColor",
+        "defaultValue": ""
+      }
+    ]
+  },
+  {
+    "frontDataSegment": "Atoms",
+    "frontDataSegmentPath": "values",
+    "rearDataSegment": "button",
+    "rearDataSegmentClass": "themeButton",
+    "rearDataSegmentPath": "atoms",
+    "rearDataSegmentType": "object",
+
+    "defaultSectorMapping": [
+      {
+        "frontSector": "primaryBgColor",
+        "rearSector": "primaryBgColor",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "primaryColor",
+        "rearSector": "primaryColor",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "primaryBgColorHover",
+        "rearSector": "primaryBgColorHover",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "primaryOutlineHoverColor",
+        "rearSector": "primaryOutlineHoverColor",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "primaryOutlineBgColor",
+        "rearSector": "primaryOutlineBgColor",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "landingPanelLoginButton",
+        "rearSector": "landingPanelLoginButton",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "primaryGroupOutlineBgColor",
+        "rearSector": "primaryGroupOutlineBgColor",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "primaryGroupOutlineColor",
+        "rearSector": "primaryGroupOutlineColor",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "primaryGroupOutlineHoverBgColor",
+        "rearSector": "primaryGroupOutlineHoverBgColor",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "primaryGroupOutlineHoverColor",
+        "rearSector": "primaryGroupOutlineHoverColor",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "radioButtonGroupBgColor",
+        "rearSector": "radioButtonGroupBgColor",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "radioButtonGroupColor",
+        "rearSector": "radioButtonGroupColor",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "closeButtonBgColor",
+        "rearSector": "closeButtonBgColor",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "closeButtonColor",
+        "rearSector": "closeButtonColor",
+        "defaultValue": ""
+      }
+    ]
+  },
+  {
+    "frontDataSegment": "Atoms",
+    "frontDataSegmentPath": "values",
+    "rearDataSegment": "iconDropdown",
+    "rearDataSegmentClass": "themeIconDropdown",
+    "rearDataSegmentPath": "atoms",
+    "rearDataSegmentType": "object",
+
+    "defaultSectorMapping": [
+      {
+        "frontSector": "iconDropDownItemColor",
+        "rearSector": "iconDropDownItemColor",
+        "defaultValue": ""
+      }
+    ]
+  },
+  {
+    "frontDataSegment": "Atoms",
+    "frontDataSegmentPath": "values",
+    "rearDataSegment": "buttonDropdown",
+    "rearDataSegmentClass": "themeButtonDropdown",
+    "rearDataSegmentPath": "atoms",
+    "rearDataSegmentType": "object",
+
+    "defaultSectorMapping": [
+      {
+        "frontSector": "buttonDropDownItemColor",
+        "rearSector": "buttonDropDownItemColor",
+        "defaultValue": ""
+      }
+    ]
+  },
+  {
+    "frontDataSegment": "Name",
+    "frontDataSegmentPath": "values",
+    "mappingSectorOnly": true,
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "themeName",
+        "rearSector": "name",
+        "defaultValue": ""
+      },
+       {
+         "frontSector": "identifier",
+         "rearSector": "identifier",
+         "defaultValue": ""
+       },
+        {
+          "frontSector": "clientId",
+          "rearSector": "clientId",
+          "defaultValue": ""
+        }
+    ]
+  }
+   
+]

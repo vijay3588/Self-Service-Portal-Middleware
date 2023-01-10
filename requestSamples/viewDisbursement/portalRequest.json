@@ -1,0 +1,510 @@
+{
+	"loggedUserEntity": {
+		"className": "aSPLI_CreateOrUpdateLegalEntity_Data",
+		"thirdPartyID": "DistRoot",
+		"thirdPartyName": "Front Office",
+		"updateDate": null,
+		"correspondences": [{
+			"className": "aSPCB_Correspondence",
+			"effectiveDate": "1800-01-01",
+			"addressUsage": "0",
+			"address": {
+				"className": "aSPCB_US_PostalAddress",
+				"line1": "44693 WHITE OAK CT",
+				"line2": "",
+				"zipCodeAndCity": {
+					"zipCode": "66109",
+					"city": "Kansas City"
+				},
+				"country": "UNITED STATES",
+				"district": "",
+				"state": "KS",
+				"county": "",
+				"fIPSCode": 0
+			},
+			"isDefaultCorrespondance": true,
+			"privatePhone": "(301) 253-6425",
+			"privatePhoneExtension": "",
+			"officePhone": "",
+			"officePhoneExtension": "",
+			"cellPhone": "(301) 253-6425",
+			"fax": "(301) 253-6425",
+			"eMail": "ashgrovetruevaluehomecenter@free.com",
+			"mediaType": "Mail",
+			"isInvalid": false,
+			"reasonForInvalidAddress": "",
+			"addressNotDefined": false
+		}],
+		"paymentMethods": [{
+			"className": "aSPCB_US_BankAccount",
+			"name": "Chase Manhattan Bank",
+			"effectiveDate": "2013-05-24",
+			"endDate": null,
+			"holderName": "ASH grove True Value Home Center",
+			"currency": "cUSDollar",
+			"accountType": "catChecking",
+			"branchName": "Branch",
+			"depositType": "dpNA",
+			"bankName": "Chase Manhattan Bank",
+			"address": {
+				"className": "aSPCB_US_PostalAddress",
+				"line1": "516 LEXINGTON AVENUE",
+				"line2": "",
+				"zipCodeAndCity": {
+					"zipCode": "10015",
+					"city": "NEW YORK"
+				},
+				"country": "UNITED STATES",
+				"district": "",
+				"state": "NY",
+				"county": "",
+				"fIPSCode": 0
+			},
+			"accountNumber": "xxx-xx-1252",
+			"routingNumber": "xxx-xx-00",
+			"preNoteCompleted": true,
+			"preNoteProcessCompletionDate": "2014-01-01"
+		}, {
+			"className": "aSPCB_US_BankAccount",
+			"name": "Chase Manhattan Bank",
+			"effectiveDate": "2013-05-24",
+			"endDate": null,
+			"holderName": "ASH grove True Value Home Center",
+			"currency": "cUSDollar",
+			"accountType": "catChecking",
+			"branchName": "Branch",
+			"depositType": "dpNA",
+			"bankName": "Chase Manhattan Bank",
+			"address": {
+				"className": "aSPCB_US_PostalAddress",
+				"line1": "516 LEXINGTON AVENUE",
+				"line2": "",
+				"zipCodeAndCity": {
+					"zipCode": "10015",
+					"city": "NEW YORK"
+				},
+				"country": "UNITED STATES",
+				"district": "",
+				"state": "NY",
+				"county": "",
+				"fIPSCode": 0
+			},
+			"accountNumber": "xxx-xx-1252",
+			"routingNumber": "xxx-xx-x-",
+			"preNoteCompleted": true,
+			"preNoteProcessCompletionDate": "2014-01-01"
+		}, {
+			"className": "aSPCB_US_BankAccount",
+			"name": "Chase Manhattan Bank",
+			"effectiveDate": "2013-05-24",
+			"endDate": null,
+			"holderName": "ASH grove True Value Home Center",
+			"currency": "cUSDollar",
+			"accountType": "catChecking",
+			"branchName": "Branch",
+			"depositType": "dpNA",
+			"bankName": "Chase Manhattan Bank",
+			"address": {
+				"className": "aSPCB_US_PostalAddress",
+				"line1": "516 LEXINGTON AVENUE",
+				"line2": "",
+				"zipCodeAndCity": {
+					"zipCode": "10015",
+					"city": "NEW YORK"
+				},
+				"country": "UNITED STATES",
+				"district": "",
+				"state": "NY",
+				"county": "",
+				"fIPSCode": 0
+			},
+			"accountNumber": "xxx-xx-1252",
+			"routingNumber": "xxx-xx-x-",
+			"preNoteCompleted": true,
+			"preNoteProcessCompletionDate": "2014-01-01"
+		}],
+		"contactInformations": [],
+		"loginInformation": {
+			"className": "aSPCB_CreateOrUpdateLoginForActor_Data",
+			"logins": [{
+				"className": "aSPCB_CreateOrUpdateLogin_Data",
+				"applicationLogin": {
+					"className": "aSPCB_GetApplicationLoginInfo",
+					"buid": "318840259_86",
+					"paramEntity": {
+						"className": "aSPCB_ApplicationLogin",
+						"name": "ash",
+						"password": "",
+						"forbatch": false,
+						"isDisabled": false,
+						"jobLabel": "",
+						"preferedLanguageCode": "",
+						"fullName": "ash grove true value home center@free.com",
+						"email": "ashgrovetruevaluehomecenter@free.com"
+					},
+					"hasExtendedProfile": false
+				},
+				"profiles": [{
+					"className": "aSPF_GetAuthorizationProfileInfo",
+					"buid": "318833048_46",
+					"paramEntity": {
+						"className": "aSPF_AuthorizationProfile",
+						"name": "wPortal Broker",
+						"code": "WB",
+						"isDisabled": false,
+						"isForExternalActor": true
+					}
+				}, {
+					"className": "aSPF_GetAuthorizationProfileInfo",
+					"buid": "318833048_48",
+					"paramEntity": {
+						"className": "aSPF_AuthorizationProfile",
+						"name": "wPortal Group Admin",
+						"code": "WGA",
+						"isDisabled": false,
+						"isForExternalActor": true
+					}
+				}, {
+					"className": "aSPF_GetAuthorizationProfileInfo",
+					"buid": "318833048_49",
+					"paramEntity": {
+						"className": "aSPF_AuthorizationProfile",
+						"name": "wPortal Legal Entity Client",
+						"code": "WLEC",
+						"isDisabled": false,
+						"isForExternalActor": true
+					}
+				}, {
+					"className": "aSPF_GetAuthorizationProfileInfo",
+					"buid": "318833048_45",
+					"paramEntity": {
+						"className": "aSPF_AuthorizationProfile",
+						"name": "wPortal Wynsure",
+						"code": "WA",
+						"isDisabled": false,
+						"isForExternalActor": true
+					}
+				}, {
+					"className": "aSPF_GetAuthorizationProfileInfo",
+					"buid": "318833048_41",
+					"paramEntity": {
+						"className": "aSPF_AuthorizationProfile",
+						"name": "Super manager",
+						"code": "SM",
+						"isDisabled": false,
+						"isForExternalActor": true
+					}
+				}, {
+					"className": "aSPF_GetAuthorizationProfileInfo",
+					"buid": "318833048_47",
+					"paramEntity": {
+						"className": "aSPF_AuthorizationProfile",
+						"name": "wPortal Individual Client",
+						"code": "WC",
+						"isDisabled": false,
+						"isForExternalActor": true
+					}
+				}]
+			}]
+		},
+		"clientId": {
+			"buid": "318843900_1",
+			"internalClientId": "0000000076",
+			"externalClientIdentifier": {
+				"externalClientId": "0000000069WEX",
+				"thirdPartyID": "DistRoot"
+			},
+			"clientFullName": ""
+		},
+		"legalEntityIdentity": {
+			"className": "aSPLI_US_LegalEntity",
+			"shortName": "ASH",
+			"creationDate": "2021-02-17",
+			"preferredLanguageCode": "En",
+			"terminationDate": null,
+			"preferredContactChoice": "pcDefaultCorrespondence",
+			"preferredCurrency": "cUSDollar",
+			"delinquent": false,
+			"underSurveillance": false,
+			"isAnonymous": false,
+			"name": "Ash Grove Tue Value Home Centre 2",
+			"masterLegalEntity": {
+				"buid": "",
+				"internalClientId": "",
+				"externalClientIdentifier": {
+					"externalClientId": "",
+					"thirdPartyID": ""
+				},
+				"clientFullName": ""
+			},
+			"activity": "",
+			"inBankrupcy": false,
+			"country": "UNITED STATES",
+			"state": "NY",
+			"industrialClassification": {
+				"classificationSystem": "SIC US",
+				"code": "0762"
+			},
+			"totalNumberOfEmployees": 100,
+			"additionalDatas": [],
+			"companyType": "",
+			"worksiteStates": ["cMN", "cNY"],
+			"taxId": "6"
+		},
+		"employeeInformations": [],
+		"legalEntityDivision": [{
+			"className": "aSPLI_CreateOrUpdateLegalEntityDivision_In",
+			"headQuarter": {
+				"className": "aSPLI_GetLegalEntity",
+				"searchLegalEntity": {
+					"buid": "318843900_2",
+					"internalClientId": "0000000077",
+					"externalClientIdentifier": {
+						"externalClientId": "0000000064WEX",
+						"thirdPartyID": "DistRoot"
+					},
+					"clientFullName": "As Good as Grass"
+				},
+				"legalEntityName": "As Good as Grass",
+				"createOrUpdateLegalEntity": {
+					"className": "aSPLI_CreateOrUpdateLegalEntity_Data",
+					"thirdPartyID": "",
+					"thirdPartyName": "",
+					"updateDate": null,
+					"correspondences": [{
+						"className": "aSPCB_Correspondence",
+						"effectiveDate": "1800-01-01",
+						"addressUsage": "0",
+						"address": {
+							"className": "aSPCB_US_PostalAddress",
+							"line1": "28381 RANCHO DE LINDA ",
+							"line2": "",
+							"zipCodeAndCity": {
+								"zipCode": "92677",
+								"city": "laguna niguel"
+							},
+							"country": "UNITED STATES",
+							"district": "",
+							"state": "CA",
+							"county": "",
+							"fIPSCode": 0
+						},
+						"isDefaultCorrespondance": true,
+						"privatePhone": "(732) 263-0151",
+						"privatePhoneExtension": "",
+						"officePhone": "",
+						"officePhoneExtension": "",
+						"cellPhone": "(732) 263-0151",
+						"fax": "(732) 263-0151",
+						"eMail": "asgoodasgrass@free.com",
+						"mediaType": "Mail",
+						"isInvalid": false,
+						"reasonForInvalidAddress": "",
+						"addressNotDefined": false
+					}],
+					"paymentMethods": [],
+					"contactInformations": [],
+					"loginInformation": null,
+					"clientId": {
+						"buid": "",
+						"internalClientId": "",
+						"externalClientIdentifier": {
+							"externalClientId": "",
+							"thirdPartyID": ""
+						},
+						"clientFullName": ""
+					},
+					"legalEntityIdentity": null,
+					"employeeInformations": [],
+					"legalEntityDivision": [],
+					"gBPContractDetails": []
+				}
+			},
+			"startDate": "2015-07-01",
+			"endDate": null
+		}],
+		"gBPContractDetails": [{
+			"className": "aSPLI_GetPolicyInfo_Out",
+			"contract": {
+				"buid": "318843713_101",
+				"internalPolicyIdentifier": {
+					"internalPolicyId": "2021/4800000509",
+					"issuingCompanyCode": "WIC"
+				},
+				"externalPolicyIdentifier": {
+					"externalPolicyId": "",
+					"thirdPartyID": "AA"
+				}
+			},
+			"effectiveDate": "2021-02-17",
+			"signatureDate": "2021-02-17",
+			"terminationDate": null,
+			"terminationReason": "",
+			"reinstatementDate": null,
+			"status": "cProject",
+			"complementaryStatus": "In Preparation",
+			"productName": "Master Product Standard",
+			"issuingCompany": "W Insurance Company",
+			"distributionUnit": "Internal Agents",
+			"ownerLastName": "Ash Grove Tue Value Home Centre 2",
+			"ownerFirstName": "ASH",
+			"ownerBuid": ""
+		}, {
+			"className": "aSPLI_GetPolicyInfo_Out",
+			"contract": {
+				"buid": "318843713_102",
+				"internalPolicyIdentifier": {
+					"internalPolicyId": "2021/4800000513",
+					"issuingCompanyCode": "WIC"
+				},
+				"externalPolicyIdentifier": {
+					"externalPolicyId": "",
+					"thirdPartyID": "AA"
+				}
+			},
+			"effectiveDate": "2021-02-17",
+			"signatureDate": "2021-02-17",
+			"terminationDate": null,
+			"terminationReason": "",
+			"reinstatementDate": null,
+			"status": "cActive",
+			"complementaryStatus": "",
+			"productName": "Master Product Standard",
+			"issuingCompany": "W Insurance Company",
+			"distributionUnit": "Internal Agents",
+			"ownerLastName": "Ash Grove Tue Value Home Centre 2",
+			"ownerFirstName": "ASH",
+			"ownerBuid": ""
+		}, {
+			"className": "aSPLI_GetPolicyInfo_Out",
+			"contract": {
+				"buid": "318843713_104",
+				"internalPolicyIdentifier": {
+					"internalPolicyId": "2021/4800000520",
+					"issuingCompanyCode": "WIC"
+				},
+				"externalPolicyIdentifier": {
+					"externalPolicyId": "",
+					"thirdPartyID": "AA"
+				}
+			},
+			"effectiveDate": "2021-03-19",
+			"signatureDate": "2021-03-19",
+			"terminationDate": null,
+			"terminationReason": "",
+			"reinstatementDate": null,
+			"status": "cProject",
+			"complementaryStatus": "In Preparation",
+			"productName": "Master Product Standard",
+			"issuingCompany": "W Insurance Company",
+			"distributionUnit": "Internal Agents",
+			"ownerLastName": "Ash Grove Tue Value Home Centre 2",
+			"ownerFirstName": "ASH",
+			"ownerBuid": ""
+		}, {
+			"className": "aSPLI_GetPolicyInfo_Out",
+			"contract": {
+				"buid": "318843713_202",
+				"internalPolicyIdentifier": {
+					"internalPolicyId": "2021/4800000524",
+					"issuingCompanyCode": "WIC"
+				},
+				"externalPolicyIdentifier": {
+					"externalPolicyId": "",
+					"thirdPartyID": "AA"
+				}
+			},
+			"effectiveDate": "2021-02-18",
+			"signatureDate": "2021-02-18",
+			"terminationDate": null,
+			"terminationReason": "",
+			"reinstatementDate": null,
+			"status": "cProject",
+			"complementaryStatus": "In Preparation",
+			"productName": "Master Product Standard",
+			"issuingCompany": "W Insurance Company",
+			"distributionUnit": "Internal Agents",
+			"ownerLastName": "Ash Grove Tue Value Home Centre 2",
+			"ownerFirstName": "ASH",
+			"ownerBuid": ""
+		}, {
+			"className": "aSPLI_GetPolicyInfo_Out",
+			"contract": {
+				"buid": "318843713_204",
+				"internalPolicyIdentifier": {
+					"internalPolicyId": "2021/4800000528",
+					"issuingCompanyCode": "WIC"
+				},
+				"externalPolicyIdentifier": {
+					"externalPolicyId": "",
+					"thirdPartyID": "AA"
+				}
+			},
+			"effectiveDate": "2021-02-18",
+			"signatureDate": "2021-02-18",
+			"terminationDate": null,
+			"terminationReason": "",
+			"reinstatementDate": null,
+			"status": "cProject",
+			"complementaryStatus": "In Preparation",
+			"productName": "Master Product Standard",
+			"issuingCompany": "W Insurance Company",
+			"distributionUnit": "Internal Agents",
+			"ownerLastName": "Ash Grove Tue Value Home Centre 2",
+			"ownerFirstName": "ASH",
+			"ownerBuid": ""
+		}, {
+			"className": "aSPLI_GetPolicyInfo_Out",
+			"contract": {
+				"buid": "318843713_301",
+				"internalPolicyIdentifier": {
+					"internalPolicyId": "2021/4800000535",
+					"issuingCompanyCode": "WIC"
+				},
+				"externalPolicyIdentifier": {
+					"externalPolicyId": "",
+					"thirdPartyID": "AA"
+				}
+			},
+			"effectiveDate": "2021-02-18",
+			"signatureDate": "2021-02-18",
+			"terminationDate": null,
+			"terminationReason": "",
+			"reinstatementDate": null,
+			"status": "cActive",
+			"complementaryStatus": "",
+			"productName": "Master Product Standard",
+			"issuingCompany": "W Insurance Company",
+			"distributionUnit": "Internal Agents",
+			"ownerLastName": "Ash Grove Tue Value Home Centre 2",
+			"ownerFirstName": "ASH",
+			"ownerBuid": ""
+		}, {
+			"className": "aSPLI_GetPolicyInfo_Out",
+			"contract": {
+				"buid": "318843713_401",
+				"internalPolicyIdentifier": {
+					"internalPolicyId": "2021/4800000539",
+					"issuingCompanyCode": "WIC"
+				},
+				"externalPolicyIdentifier": {
+					"externalPolicyId": "",
+					"thirdPartyID": "AA"
+				}
+			},
+			"effectiveDate": "2021-02-18",
+			"signatureDate": "2021-02-18",
+			"terminationDate": null,
+			"terminationReason": "",
+			"reinstatementDate": null,
+			"status": "cActive",
+			"complementaryStatus": "",
+			"productName": "Group Disability GBP",
+			"issuingCompany": "W Insurance Company",
+			"distributionUnit": "Internal Agents",
+			"ownerLastName": "Ash Grove Tue Value Home Centre 2",
+			"ownerFirstName": "ASH",
+			"ownerBuid": ""
+		}]
+	}
+}

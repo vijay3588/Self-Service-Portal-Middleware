@@ -1,0 +1,44 @@
+{
+  "elements": [
+    [
+      {
+        "type": "select",
+        "update": "updateColor",
+        "name": "selectedTheme",
+        "selectType": "configureTheme",
+        "rearSector": "themeNames",
+        "value": "",
+        "label": "Theme Names",
+        "placement": "col-lg-4 col-sm-4",
+        "validations": {
+          "string": {
+            "required": "This field is required"
+          }
+        }
+      
+      },
+      {
+        "type": "button",
+        "name": "createThemeButton",
+        "label": "Create Theme",
+        "className": "editDetailsButton",
+        "config": {
+          "type": "redirect",
+          "redirectURL": "/configurator/theming"
+        },
+        "placement": "col-lg-4 col-sm-4 mt-5"
+      },
+      {
+        "type": "button",
+        "name": "editThemeButton",
+        "label": "Edit Theme",
+        "className": "editDetailsButton",
+        "config": {
+          "type": "redirect",
+          "redirectURL": "/configurator/updateTheming"
+        },
+        "placement": "col-lg-4 col-sm-4 mt-5"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,11 @@
+[
+    {"value": "meUndefined","text":"Undefined"},
+    {"value": "ckIllness","text":"Illness"}, 
+    {"value": "ckAccident","text":"Accident"}, 
+    {"value": "ckHospitalization","text":"Hospitalization"}, 
+    {"value": "ckMaternity","text":"Maternity"},
+    {"value": "ckPaternity","text":"Paternity"} 
+]
+
+
+

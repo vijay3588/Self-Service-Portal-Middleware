@@ -1,0 +1,53 @@
+[
+  {
+    "frontDataSegment": "values",
+    "rearDataSegment":"input",
+    "rearDataSegmentClass": "claimEndorsementDoc",
+    "rearDataSegmentPath": "",
+    "rearDataSegmentType": "object",
+    "mappingSectorOnly":true,
+    "defaultSectorMapping": [
+      {
+        "frontSector": "effectiveDate",
+        "rearSector": "effectiveDate",
+        "frontDataSegmentPath":"additionalValues.LoanSelection.contractDetails",
+        "defaultValue": ""
+      }
+    ]
+  },
+  {
+    "frontDataSegment": "values",
+    "rearDataSegment":"policyId",
+    "rearDataSegmentPath": "input",
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "internalPolicyId",
+        "rearSector": "internalContractID",
+        "frontDataSegmentPath": "additionalValues.LoanSelection.contractDetails",
+        "defaultValue": ""
+      }
+    ]
+  },
+  {
+    "frontDataSegment": "values",
+    "rearDataSegment":"LoansIdentifier",
+    "rearDataSegmentClass": "LoanIdentifier",
+    "rearDataSegmentPath": "input",
+    "rearDataSegmentType": "array",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "loanBuid",
+        "rearSector": "buid",
+        "frontDataSegmentPath": "additionalValues.LoanSelection.loanDetails",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "loanType",
+        "rearSector": "name",
+        "frontDataSegmentPath": "additionalValues.LoanSelection.loanDetails",
+        "defaultValue": ""
+      }
+    ]
+  }
+]

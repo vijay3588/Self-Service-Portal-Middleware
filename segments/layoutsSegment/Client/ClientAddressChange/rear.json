@@ -1,0 +1,15 @@
+{
+    "customerBuid": {
+        "dataType": "string",
+        "defaultValue": ""
+      },
+    "newAddress": {
+        "dataType": "object",
+        "name": "aSPCB_Fr_AfnorPostalAddress"
+    },
+    "atDate": {
+        "dataType": "string",
+        "defaultValue": "2021-01-01"
+      }
+}
+

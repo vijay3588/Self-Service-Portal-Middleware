@@ -1,0 +1,982 @@
+{
+  "elements": [
+    [
+      {
+        "type": "panelSideHeader",
+        "outerDiv": false,
+        "name": "Employee Personal Information",
+        "label": "Employee Personal Information",
+        "placement": "col-md-6 pt-3",
+        "formSideBigHeader": "Personal Information",
+        "header": true
+      }
+    ],
+
+    [
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "DataField",
+        "rearSector": "shortName",
+        "label": "Data Field",
+        "mapping": true,
+        "labelTitle": "Data Field",
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "Toggle Field On/Off",
+        "rearSector": "shortName",
+        "label": "Toggle Field On/Off",
+        "mapping": true,
+        "labelTitle": "Toggle Field On/Off",
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "SSN Eye Icon On/Off",
+        "rearSector": "shortName",
+        "label": "SSN Eye Icon On/Off",
+        "mapping": true,
+        "labelTitle": "SSN Eye Icon On/Off",
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      }
+    ],
+
+    [
+      {
+        "type": "readOnly",
+        "name": "middleName",
+        "label": "Middle Name",
+        "labelTitle": "Middle Name",
+        "disabled": true,
+        "mapping": true,
+        "header": false,
+
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6",
+        "validations": {
+          "string": {
+            "matches": {
+              "regex": "^[a-zA-Z]+$",
+              "message": "No special characters allowed"
+            }
+          }
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+
+      {
+        "type": "checkbox",
+        "name": "middleNameToggle",
+        "label": "",
+        "update": {
+          "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.middleNameToggle",
+          "formikPath": "PersonalInformation"
+        },
+        "value": false,
+        "placement": "col-md-5 col-lg-2 col-12"
+      }
+    ],
+
+    [
+      {
+        "type": "readOnly",
+        "disabled": true,
+
+        "name": "ssn",
+
+        "rearSector": "ssn",
+        "label": "SSN",
+        "mapping": true,
+        "labelTitle": "SSN",
+
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+
+      {
+        "type": "checkbox",
+        "name": "ssnToggle",
+        "value": true,
+        "update": {
+          "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.ssnToggle",
+          "formikPath": "PersonalInformation"
+        },
+        "label": "",
+        "placement": "col-md-5 col-lg-2 col-12"
+      },
+      {
+        "type": "checkbox",
+        "name": "ssnEyeToggle",
+        "value": true,
+        "update": {
+          "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.ssnEyeToggle",
+          "formikPath": "PersonalInformation"
+        },
+        "label": "",
+        "placement": "col-md-5 col-lg-2 col-12"
+      }
+    ],
+
+    [
+      {
+        "type": "panelSideHeader",
+        "outerDiv": false,
+        "name": "Employee Address Information",
+        "label": "Employee Address Information",
+        "placement": "col-md-6 pt-3",
+        "formSideBigHeader": "Contact Information",
+        "header": true
+      }
+    ],
+
+    [
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "DataField",
+        "rearSector": "shortName",
+        "label": "Data Field",
+        "mapping": true,
+        "labelTitle": "Data Field",
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "Toggle Field On/Off",
+        "rearSector": "shortName",
+        "label": "Toggle Field On/Off",
+        "mapping": true,
+        "labelTitle": "Toggle Field On/Off",
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "Editable Field",
+        "rearSector": "shortName",
+        "label": "Editable Field",
+        "mapping": true,
+        "labelTitle": "Editable Field",
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "Required Field",
+        "rearSector": "shortName",
+        "label": "Required Field",
+        "mapping": true,
+        "labelTitle": "Required Field",
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      }
+    ],
+
+    [
+      {
+        "type": "readOnly",
+        "disabled": true,
+
+        "name": "personalEmail",
+
+        "rearSector": "personalEmail",
+
+        "mapping": true,
+        "labelTitle": "Personal Email",
+
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+
+      {
+        "type": "checkbox",
+        "name": "personalEmailAddressToggle",
+        "label": "",
+        "value": false,
+        "update": {
+          "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.personalEmailAddressToggle",
+          "formikPath": "PersonalInformation"
+        },
+        "placement": "col-md-5 col-lg-2 col-12"
+      },
+
+      {
+        "type": "checkbox",
+        "name": "personalEmailAddressChangedByEmp",
+        "label": "",
+        "value": false,
+        "update": {
+          "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.personalEmailAddressChangedByEmp",
+          "formikPath": "PersonalInformation"
+        },
+        "placement": "col-md-5 col-lg-2 col-12"
+      },
+      {
+        "type": "checkbox",
+        "name": "personalEmailAddressRequired",
+        "label": "",
+        "value": false,
+        "update": {
+          "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.personalEmailAddressRequired",
+          "formikPath": "PersonalInformation"
+        },
+        "placement": "col-md-5 col-lg-2 col-12"
+      }
+    ],
+    [
+      {
+        "type": "readOnly",
+        "disabled": true,
+
+        "name": "personalPhone",
+
+        "rearSector": "personalPhone",
+
+        "mapping": true,
+        "labelTitle": "Personal Phone",
+
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+
+      {
+        "type": "checkbox",
+        "name": "personalPhoneToggle",
+        "label": "",
+        "value": false,
+        "update": {
+          "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.personalPhoneToggle",
+          "formikPath": "PersonalInformation"
+        },
+        "placement": "col-md-5 col-lg-2 col-12"
+      },
+
+      {
+        "type": "checkbox",
+        "name": "personalPhoneChangedByEmp",
+        "label": "",
+        "value": false,
+        "update": {
+          "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.personalPhoneChangedByEmp",
+          "formikPath": "PersonalInformation"
+        },
+        "placement": "col-md-5 col-lg-2 col-12"
+      },
+      {
+        "type": "checkbox",
+        "name": "personalPhoneRequired",
+        "label": "",
+        "value": false,
+        "update": {
+          "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.personalPhoneRequired",
+          "formikPath": "PersonalInformation"
+        },
+        "placement": "col-md-5 col-lg-2 col-12"
+      }
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+        "outerDiv": false,
+        "name": "Employment Information",
+        "label": "Employment Information",
+        "placement": "col-md-6 pt-3",
+        "formSideBigHeader": "Employment Information",
+        "header": true
+      }
+    ],
+    [
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "noGroupStart",
+        "rearSector": "noGroupStart",
+        "label": "Toggle Section On/Off",
+        "mapping": true,
+        "labelTitle": "Toggle Section On/Off",
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "value": "false",
+        "type": "checkbox",
+        "name": "isEmployementVisible",
+        "update": {
+          "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.isEmployementVisible",
+          "formikPath": "PersonalInformation"
+        },
+        "placement": "col-lg-6 col-sm-6"
+      }
+    ],
+    [
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "DataField",
+        "rearSector": "shortName",
+        "label": "Data Field",
+        "mapping": true,
+        "labelTitle": "Data Field",
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "Toggle Field On/Off",
+        "rearSector": "shortName",
+        "label": "Toggle Field On/Off",
+        "mapping": true,
+        "labelTitle": "Toggle Field On/Off",
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "Editable Label",
+        "rearSector": "shortName",
+        "label": "Editable Label",
+        "mapping": true,
+        "labelTitle": "Editable Label",
+
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "Editable Label Value",
+        "rearSector": "shortName",
+        "label": "Editable Label Value",
+        "mapping": true,
+        "labelTitle": "Editable Label Value",
+
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      }
+    ],
+
+    [
+      {
+        "type": "readOnly",
+        "name": "salary",
+        "label": "Salary",
+        "labelTitle": "Salary",
+        "disabled": true,
+        "mapping": true,
+        "header": false,
+
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6",
+        "validations": {
+          "string": {
+            "matches": {
+              "regex": "^[a-zA-Z]+$",
+              "message": "No special characters allowed"
+            }
+          }
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+
+      {
+        "type": "checkbox",
+        "name": "salaryToggle",
+        "label": "",
+        "value": false,
+        "update": {
+          "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.salaryToggle",
+          "formikPath": "PersonalInformation"
+        },
+        "placement": "col-md-5 col-lg-2 col-12"
+      },
+      {
+        "type": "checkbox",
+        "name": "salaryEditable",
+        "disabled": true,
+        "label": "",
+        "value": false,
+        "update": {
+          "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.salaryEditable",
+          "formikPath": "PersonalInformation"
+        },
+        "placement": "col-md-5 col-lg-2  col-12"
+      },
+      {
+        "type": "text",
+        "name": "salaryEditableValue",
+        "label": "",
+        "disabled": true,
+        "value": false,
+        "update": {
+          "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.salaryEditableValue",
+          "formikPath": "PersonalInformation"
+        },
+        "placement": "col-md-5 col-lg-2  col-12"
+      }
+    ],
+    [
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "payFrequency",
+        "rearSector": "payFrequency",
+        "label": "Pay Frequency",
+        "mapping": true,
+        "labelTitle": "Pay Frequency",
+
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+
+      {
+        "type": "checkbox",
+        "name": "payFrequencyToggle",
+        "label": "",
+        "value": false,
+        "update": {
+          "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.payFrequencyToggle",
+          "formikPath": "PersonalInformation"
+        },
+        "placement": "col-md-5 col-lg-2 col-12"
+      },
+      {
+        "type": "checkbox",
+        "name": "payFrequencyEditable",
+
+        "disabled": "disabled",
+        "label": "",
+        "value": false,
+        "update": {
+          "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.payFrequencyEditable",
+          "formikPath": "PersonalInformation"
+        },
+        "placement": "col-md-5 col-lg-2  col-12"
+      },
+      {
+        "type": "text",
+        "name": "payFrequencyEditableValue",
+        "disabled": true,
+        "label": "",
+        "value": false,
+        "update": {
+          "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.payFrequencyEditableValue",
+          "formikPath": "PersonalInformation"
+        },
+        "placement": "col-md-5 col-lg-2  col-12"
+      }
+    ],
+    [
+      {
+        "type": "readOnly",
+        "disabled": true,
+
+        "name": "divisioncode",
+
+        "rearSector": "divisioncode",
+        "label": "Division Code",
+        "mapping": true,
+        "labelTitle": "Division Code",
+
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+
+      {
+        "type": "checkbox",
+        "name": "divisionCodeToggle",
+        "label": "",
+        "value": false,
+        "update": {
+          "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.divisionCodeToggle",
+          "formikPath": "PersonalInformation"
+        },
+        "placement": "col-md-5 col-lg-2 col-12"
+      },
+      {
+        "type": "checkbox",
+        "name": "divisionCodeEditable",
+        "label": "",
+        "value": false,
+        "update": {
+          "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.divisionCodeEditable",
+          "formikPath": "PersonalInformation"
+        },
+        "placement": "col-md-5 col-lg-2  col-12"
+      },
+      {
+        "type": "text",
+        "name": "divisionCodeEditableValue",
+        "label": "",
+        "value": false,
+        "update": {
+          "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.divisionCodeEditableValue",
+          "formikPath": "PersonalInformation"
+        },
+        "placement": "col-md-5 col-lg-2  col-12"
+      }
+    ],
+    [
+      {
+        "type": "readOnly",
+        "disabled": true,
+
+        "name": "workLocation",
+
+        "rearSector": "workLocation",
+        "label": "Work Location",
+        "mapping": true,
+        "labelTitle": "Work Location",
+
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "checkbox",
+        "name": "workLocationToggle",
+        "label": "",
+        "value": false,
+        "update": {
+          "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.workLocationToggle",
+          "formikPath": "PersonalInformation"
+        },
+        "placement": "col-md-5 col-lg-2 col-12"
+      },
+
+      {
+        "type": "checkbox",
+        "name": "workLocationEditable",
+        "label": "",
+        "value": false,
+        "update": {
+          "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.workLocationEditable",
+          "formikPath": "PersonalInformation"
+        },
+        "placement": "col-md-5 col-lg-2  col-12"
+      },
+      {
+        "type": "text",
+        "name": "workLocationEditableValue",
+        "label": "",
+        "value": false,
+        "update": {
+          "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.workLocationEditableValue",
+          "formikPath": "PersonalInformation"
+        },
+        "placement": "col-md-5 col-lg-2  col-12"
+      }
+    ],
+    [
+      {
+        "type": "readOnly",
+        "disabled": true,
+
+        "name": "employmentStatus",
+
+        "rearSector": "employmentStatus",
+        "label": "Employment Status",
+        "mapping": true,
+        "labelTitle": "Employment Status",
+
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+
+      {
+        "type": "checkbox",
+        "name": "employmentStatusToggle",
+        "label": "",
+        "value": false,
+        "update": {
+          "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.employmentStatusToggle",
+          "formikPath": "PersonalInformation"
+        },
+        "placement": "col-md-5 col-lg-2 col-12"
+      },
+      {
+        "type": "checkbox",
+        "name": "employmentStatusEditable",
+        "disabled": true,
+        "label": "",
+        "update": {
+          "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.employmentStatusEditable",
+          "formikPath": "PersonalInformation"
+        },
+        "placement": "col-md-5 col-lg-2  col-12"
+      },
+      {
+        "type": "text",
+        "name": "employmentStatusEditableValue",
+        "label": "",
+        "disabled": true,
+        "value": false,
+        "update": {
+          "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.employmentStatusEditableValue",
+          "formikPath": "PersonalInformation"
+        },
+        "placement": "col-md-5 col-lg-2  col-12"
+      }
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+        "outerDiv": false,
+        "name": "Employment Preferred Communication",
+        "label": "Employment Preferred Communication",
+        "placement": "col-md-6 pt-3",
+        "formSideBigHeader": "Preferred Contact",
+        "header": true
+      }
+    ],
+    [
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "DataField",
+        "rearSector": "shortName",
+        "label": "Data Field",
+        "mapping": true,
+        "labelTitle": "Data Field",
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "Toggle Field On/Off",
+        "rearSector": "shortName",
+        "label": "Toggle Field On/Off",
+        "mapping": true,
+        "labelTitle": "Toggle Field On/Off",
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      }
+    ],
+
+    [
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "PCworkEmailAddressTitle",
+        "rearSector": "PCworkEmailAddress",
+        "label": "Work Email address",
+        "mapping": true,
+        "labelTitle": "Work Email address",
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "value": "false",
+        "type": "checkbox",
+        "name": "PCworkEmailAddress",
+        "update": {
+          "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.PCworkEmailAddress",
+          "formikPath": "PersonalInformation"
+        },
+        "placement": "col-lg-6 col-sm-6"
+      }
+    ],
+
+    [
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "PCpersonalEmailAddressTitle",
+        "rearSector": "PCpersonalEmailAddress",
+        "label": "Personal Email address",
+        "mapping": true,
+        "labelTitle": "Personal Email address",
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+
+      {
+        "value": "false",
+        "type": "checkbox",
+        "name": "PCpersonalEmailAddress",
+        "update": {
+          "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.PCpersonalEmailAddress",
+          "formikPath": "PersonalInformation"
+        },
+        "placement": "col-lg-6 col-sm-6"
+      }
+    ],
+
+    [
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "PCworkPhoneTitle",
+        "rearSector": "PCworkPhone",
+        "label": "Work Phone",
+        "mapping": true,
+        "labelTitle": "Work Phone",
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "value": "false",
+        "type": "checkbox",
+        "name": "PCworkPhone",
+        "update": {
+          "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.PCworkPhone",
+          "formikPath": "PersonalInformation"
+        },
+
+        "placement": "col-lg-6 col-sm-6"
+      }
+    ],
+
+    [
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "PCpostalEmailTitle",
+        "rearSector": "PCpostalEmail",
+        "label": "Postal Mail",
+        "mapping": true,
+        "labelTitle": "Postal Mail",
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "value": "false",
+        "type": "checkbox",
+        "name": "PCpostalEmail",
+        "update": {
+          "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.PCpostalEmail",
+          "formikPath": "PersonalInformation"
+        },
+        "placement": "col-lg-6 col-sm-6"
+      }
+    ],
+
+    [
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "PCpersonalPhoneTitle",
+        "rearSector": "PCpersonalPhone",
+        "label": "Mobile Phone",
+        "mapping": true,
+        "labelTitle": "Mobile Phone",
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "value": "false",
+        "type": "checkbox",
+        "name": "PCpersonalPhone",
+        "update": {
+          "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.PCpersonalPhone",
+          "formikPath": "PersonalInformation"
+        },
+        "placement": "col-lg-6 col-sm-6"
+      }
+    ],
+    [
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "PCtextMessageTitle",
+        "rearSector": "PCtextMessage",
+        "label": "Text ",
+        "mapping": true,
+        "labelTitle": "Text",
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "value": "false",
+        "type": "checkbox",
+        "name": "PCtextMessage",
+        "update": {
+          "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.PCtextMessage",
+          "formikPath": "PersonalInformation"
+        },
+        "placement": "col-lg-6 col-sm-6"
+      }
+    ]
+  ]
+}

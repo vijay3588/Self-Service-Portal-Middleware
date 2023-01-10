@@ -1,0 +1,38 @@
+{
+    "className": {
+        "dataType": "string",
+        "defaultValue": "aSPCB_Fr_AfnorPostalAddress"
+    },
+    "zipCodeAndCity": {
+        "dataType": "object",
+        "name": "zipCodeAndCity"
+    },
+    "country": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "district": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "doorOrLetterbox_Floor_Staircase": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "specialMention_GeographicalCity": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "recipient": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "line1": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "line2": {
+        "dataType": "string",
+        "defaultValue": ""
+    }
+}

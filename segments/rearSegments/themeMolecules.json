@@ -1,0 +1,24 @@
+{
+  "panel": {
+    "dataType": "object",
+    "name": "themePanel"
+  },
+
+  "modal": {
+    "dataType": "object",
+    "name": "themeModal"
+  },
+
+  "sectionHeader": {
+    "dataType": "object",
+    "name": "themeSectionHeader"
+  },
+  "changeBox": {
+    "dataType": "object",
+    "defaultValue": "themeChangeBox"
+  },
+  "navigation": {
+    "dataType": "object",
+    "name": "themeNavigation"
+  }
+}

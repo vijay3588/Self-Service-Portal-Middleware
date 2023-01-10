@@ -1,0 +1,7 @@
+{
+    "internalClientId": { "dataType": "number", "name": "internalClientId" },
+  "selectedTheme": { "dataType": "string", "name": "selectedTheme" }
+
+
+
+}

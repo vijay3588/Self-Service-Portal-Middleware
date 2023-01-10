@@ -1,0 +1,412 @@
+{
+	"cards": [
+		{
+			"title": "panelCard",
+			"type": "panelCard",
+			"name": "panelCard",
+			"cardMembers": [
+				{
+					"cardElements": [
+						{
+							"cardConfig": {
+								"showHeader": true,
+								"showFooter": false,
+								"className": "col-md-12 col-lg-12 pr-0",
+								"alignmentClass": "ml-n3"
+							},
+							"panelHeader": {
+								"config": {
+									"style": {
+										"fontSize": "14px",
+										"backgroundColor": "#f8f8f9",
+										"fontFamily": "Roboto",
+										"fontWeight": "500",
+										"fontStretch": "normal",
+										"color": "#333333",
+										"padding": "0px 240px 0px 25px"
+									}
+								},
+								"elements": [
+									{
+										"type": "selectList",
+										"name": "contractNumber",
+										"label": "contractNumber",
+										"placement": "col-lg-6 col-md-10 px-0",
+										"options": "",
+										"optionKind": "apiCall",
+										"config": {
+											"placementClass": "  col-md-8 select-label-content"
+										},
+			
+										"displayConfig": {
+											"show": true,
+											"validation": {
+												"condition": "> 1"
+											},
+											"valuesFrom": "props.selectOptions"
+										},
+										"subElement": {
+											"type": "tile",
+											"name": "paymentStatus",
+											"style": {
+												"fontSize": "12px",
+												"color": "#00a190",
+												"borderRadius": "4px",
+												"border": "solid 1px #00a190"
+											},
+											"config": {
+												"displayName": "InvoiceStatusConstants"
+											},
+											"placement": "col-lg-3 col-sm-5"
+										},
+										"validations": {}
+									}									
+								]
+							},
+							"panelBody": {
+								"config": {
+									"className": "card-scroll"
+								},
+								"elements": [
+									{
+										"title": "pncData",
+										"type": "TreeCard",
+										"name": "pncData"
+									}
+								]
+							},
+							"panelFooter": {
+								"elements": []
+							}
+						}
+					]
+				}
+			]
+		}
+	],
+	"treedata": {
+		"pncData": {
+			"treeGroup": [
+				{
+					"treeBody": [
+						{
+							"treeLayout": [
+								{
+									"section": [
+										[
+											{
+												"text": "Name",
+												"placement": "col-lg-3 col-sm-3; mt-2 text-14b"
+											},
+											{
+												"text": "Gender",
+												"placement": "col-lg-2 col-sm-2; mt-2 text-14b"
+											},
+											{
+												"text": "Date of Birth",
+												"placement": "col-lg-2 col-sm-2; mt-2 text-14b"
+											},
+											{
+												"text": "Address",
+												"placement": "col-lg-5 col-sm-5; mt-2 text-14b"
+											}
+										],
+										[
+											{
+												"collapse": true,
+												"value": "",
+												"placement": "col-lg-3 col-sm-3 prod-text-14",
+												"sector": "name",
+												"dataSegment": "insuredInformation"
+											},
+											{
+												"placement": "col-lg-2 col-sm-2 prod-text-14",
+												"sector": "gender",
+												"dataSegment": "insuredInformation"
+											},
+											{
+												"elementor": true,
+												"content": "",
+												"placement": "col-lg-2 col-sm-2 prod-text-14",
+												"sector": "dateofbirth",
+												"dataSegment": "insuredInformation",
+												"name": " coverage-subscrpitiondate",
+												"value": "",
+												"type": "readOnly",
+												"insideSpan": true,
+												"config": {
+													"valueType": "date",
+													"format": "MM/DD/YYYY"
+												}
+											},
+											{
+												"placement": "col-lg-5 col-sm-5 prod-text-14",
+												"sector": "address",
+												"dataSegment": "insuredInformation"
+											},
+											{
+												"subTreeLayout":{ 
+													"section":[
+														[
+															{
+																"text": "Policy id",
+																"placement": "listHeaderItem"
+															},
+															{
+																"text": "Reference",
+																"placement": "listHeaderItem"
+															},
+															{
+																"text": "Effective Date",
+																"placement": "listHeaderItem"
+															},
+															{
+																"text": "Premium",
+																"placement": "listHeaderItem"
+															}
+														],
+														[
+															{
+																"collapse": true,
+																"value": "",
+																"placement": "arrowListItem",
+																"sector": "policy_id"
+															},
+															{
+																"placement": "itemText",
+																"sector": "reference"
+															},
+															{
+																"elementor": true,
+																"content": "",
+																"placement": "itemText",
+																"sector": "effectivedate",
+																"name": "invoiceFrequency-label",
+																"type": "readOnly",
+																"value": "",
+																"insideSpan": true,
+																"config": {
+																	"valueType": "date",
+																	"format": "MM/DD/YYYY"
+																}
+															},
+															{
+																"placement": "itemText",
+																"sector": "premium"
+															},
+															{
+																"subTreeLayout": 								{
+																	"section": [
+																		[
+																			{
+																				"text": "Vehicle Id",
+																				"placement": "headerText"
+																			},
+																			{
+																				"text": "Make",
+																				"placement": "headerText"
+																			},
+																			{
+																				"text": "Model",
+																				"placement": "headerText"
+																			},
+																			{
+																				"text": "Year",
+																				"placement": "headerText"
+																			}
+																		],
+																		[
+																			{
+																				"collapse": true,
+																				"value": "",
+																				"placement": "itemText",
+																				"sector": "vehicleId",
+																				"dataSegment": "vehicleInformation"
+																			},
+																			{
+																				"placement": "itemText",
+																				"sector": "make",
+																				"dataSegment": "vehicleInformation"
+																			},
+																			{
+																				"placement": "itemText",
+																				"sector": "model",
+																				"dataSegment": "vehicleInformation"
+																			},
+																			{
+																				"placement": "itemText",
+																				"sector": "year",
+																				"dataSegment": "vehicleInformation"
+																			},
+																			{
+																				"subTreeLayout": {
+																					"section": 
+																					[
+																						[
+																							{
+																								"text": "Coverage Id",
+																								"placement": "subHeaderText"
+																							},
+																							{
+																								"text": "Coverage Name",
+																								"placement": "subHeaderText"
+																							},
+																							{
+																								"text": "Deductible",
+																								"placement": "subHeaderText"
+																							},
+																							{
+																								"text": "Coverage Limit",
+																								"placement": "subHeaderText"
+																							},
+																							{
+																								"text": "Coverage Premium",
+																								"placement": "subHeaderText"
+																							}
+																						],
+																						[
+																							{
+																								"placement": "subItemText",
+																								"sector": "coverage_id"
+																							},
+																							{
+																								"placement": "subItemText",
+																								"sector": "coverage_name"
+																							},
+																							{
+																								"placement": "subItemText",
+																								"sector": "deductible"
+																							},
+																							{
+																								"placement": "subItemText",
+																								"sector": "coverage_limit"
+																							},
+																							{
+																								"placement": "subItemText",
+																								"sector": "coverage_premium"
+																							}
+																						]
+																					],
+																					"placement": "subheaderPlainContainer",
+																					"dataSegment": "coverageList"
+																				}
+																			}
+																		]
+																	],
+																	"placement": "treeSectionLayout",
+																	"dataSegment": "vehiclesCovered",
+																	"key": "policy"
+																}
+															}
+														]
+													],
+													"placement": "treeSubLayout",
+													"dataSegment": "policyInformation"
+												}
+											}
+										]
+									],
+									"placement": "treeBodyLayout"
+								}							
+							],
+							"placement": ""
+						}
+					]
+				}
+			]
+		}
+	},
+	"placementStyle": [
+
+		{
+			"billingCardHeader": {
+				"placement": "row col-lg-12 col-sm-12 text-16 header-single-container"
+			}
+		},
+		{
+			"treeBodyLayout": {
+				"placement": "row col-lg-12 col-sm-12 treeBodyLayout"
+			}
+		},
+		{
+			"treeSubLayout": {
+				"placement": "row col-lg-12 col-sm-12 treeSubLayout list-row"
+			}
+		},
+		{
+			"plainSection": {
+				"placement": "col-lg-12 col-sm-12"
+			}
+		},
+		{
+			"listPlainContainer": {
+				"placement": "col-lg-12 col-sm-12 list-row"
+			}
+		},
+		{
+			"treeSectionLayout": {
+				"placement": "col-lg-12 col-sm-12 list-row treeSectionLayout"
+			}
+		},
+		{
+			"headerSingleContainer": {
+				"placement": "col-lg-12 col-sm-12 text-16 header-single-container"
+			}
+		},
+		{
+			"treeSubLayout": {
+				"placement": "row col-lg-12 col-sm-12 treeSubLayout list-row"
+			}
+		},
+		{
+			"treeSectionLayout": {
+				"placement": "col-lg-12 col-sm-12 list-row treeSectionLayout"
+			}
+		},
+		{
+			"subheaderPlainContainer": {
+				"placement": "col-lg-11 col-sm-11 text-16 sub-header-plain-container list-border"
+			}
+		},
+		{
+			"headerText": {
+				"placement": "col-lg-3 col-sm-3 text-14b"
+			}
+		},
+		{
+			"subHeaderText": {
+				"placement": "col-lg-2 col-sm-2 text-14"
+			}
+		},
+		{
+			"itemText": {
+				"placement": "col-lg-3 col-sm-3 text-14"
+			}
+		},
+		{
+			"arrowListItem": {
+				"placement": "col-lg-3 col-sm-3 text-14b"
+			}
+		},
+		{
+			"listItem": {
+				"placement": "col-lg-2 col-sm-2 text-14 list-item"
+			}
+		},
+		{
+			"arrowHeaderText": {
+				"placement": "col-lg-3 col-sm-3 text-14b arrow-header-text"
+			}
+		},
+		{
+			"listHeaderItem": {
+				"placement": "col-lg-3 col-sm-3 text-14b"
+			}
+		},
+		{
+			"subItemText": {
+				"placement": "col-lg-2 col-sm-2 text-14"
+			}
+		}
+	]
+}

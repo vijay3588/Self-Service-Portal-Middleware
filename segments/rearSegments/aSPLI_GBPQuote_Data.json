@@ -1,0 +1,66 @@
+{
+    "$ref": {
+        "dataType": "string",
+        "defaultValue": "#"
+    },
+    "className": {
+        "dataType": "string",
+        "defaultValue": "aSPLI_GBPQuote_Data"
+    },
+    "quoteId": {
+        "dataType": "object",
+        "name": "quoteId"
+    },
+    "quote": {
+        "dataType": "string",
+        "defaultValue": null
+    },
+    "useState": {
+        "dataType": "string",
+        "defaultValue": false
+    },
+    "stateCode": {
+        "dataType": "object",
+        "name": "stateCode"
+    },
+    "stateCandidates": {
+        "dataType": "array",
+        "defaultValue": []
+    },
+    "limitsAndDeductibles": {
+        "dataType": "string",
+        "defaultValue": null
+    },
+    "entityIllustrations": {
+        "dataType": "array",
+        "defaultValue": []
+    },
+    "preferredPolicyContacts": {
+        "dataType": "array",
+        "defaultValue": []
+    },
+    "choices": {
+        "dataType": "array",
+        "defaultValue": []
+    },
+    "coverages": {
+        "dataType": "array",
+        "defaultValue": []
+    },
+    "profiles": {
+        "dataType": "array",
+        "defaultValue": []
+    },
+    "underwritingIsNeeded": {
+        "dataType": "boolean",
+        "defaultValue": false
+    },
+    "additionalData": {
+        "dataType": "array",
+        "defaultValue": []
+    },
+    "memberClasses": {
+        "dataType": "array",
+        "defaultValue": []
+    }
+}

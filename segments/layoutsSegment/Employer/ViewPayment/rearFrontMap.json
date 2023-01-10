@@ -1,0 +1,30 @@
+[
+    {
+        "formName":"viewHeader",
+        "cardElements":"cardElements",
+        "frontSegment": "viewHeader",
+        "dataParentSegment": "",
+        "dataSegmentType": "object"
+    },
+    {
+        "formName":"blueBox",
+        "cardElements":"cardElements",
+        "frontSegment": "blueBox",
+        "dataParentSegment": "",
+        "dataSegmentType": "object"
+    },
+    {
+        "formName":"paymentsCard",
+        "cardElements":"cardElements",
+        "frontSegment": "paymentsCard",
+        "dataParentSegment":"",
+        "dataSegmentType": "object"
+    },
+    {
+        "formName":"tablesCard",
+        "cardElements":"table.tableRowData",
+        "frontSegment": "invoices",
+        "dataParentSegment":"targets",
+        "dataSegmentType": "array"
+    }
+  ]

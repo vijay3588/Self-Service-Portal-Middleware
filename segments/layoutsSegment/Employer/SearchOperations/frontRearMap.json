@@ -1,0 +1,11 @@
+[
+  {
+    "frontDataSegment": "body.loggedUserEntity._Result.clientId",
+    "rearDataSegment": "aSPLI_GetOperations_In",
+    "rearDataSegmentPath": "paramIn",
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping": [
+      { "frontSector": "buid", "rearSector": "actorBuid", "defaultValue": "" }
+    ]
+  }
+]

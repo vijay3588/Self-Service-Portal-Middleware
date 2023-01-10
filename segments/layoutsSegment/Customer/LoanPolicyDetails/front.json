@@ -1,0 +1,4 @@
+{
+    "loanDetails": {"dataType": "object", "name": "loanDetails" },
+    "loanInfo": {"dataType": "object", "name": "loanInfo" }
+}

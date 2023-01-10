@@ -1,0 +1,96 @@
+{
+	"_Result": {
+		"className": "aSPCB_CreateDisbursement",
+		"disbursementId": {
+			"buid": "",
+			"disbursementFunctionalIdentifier": "1"
+		},
+		"accountOwnerName": "Ann Barret",
+		"bankAccount": null,
+		"disbursementChannel": {
+			"buid": "318838760_8",
+			"moneyChannelIdentifier": {
+				"issuingCompanyCode": "WIC",
+				"issuingCompanyName": "W Insurance Company",
+				"channelCode": "C",
+				"channelName": "Check"
+			}
+		},
+		"disbursementInfo": {
+			"className": "aSPCB_Disbursement",
+			"operation": "1234",
+			"amount": {
+				"amount": 1000,
+				"currency": "cUSDollar"
+			},
+			"netAmount": {
+				"amount": 0,
+				"currency": "cUSDollar"
+			},
+			"canceledDate": null,
+			"sentDate": "2021-03-19",
+			"statementEffectiveDate": null,
+			"cashedDate": null
+		},
+		"disbursementParts": [{
+			"className": "aSPCB_CreateDisbursementPart",
+			"amount": {
+				"amount": 1000,
+				"currency": "cUSDollar"
+			},
+			"accountId": {
+				"buid": "318850143_107",
+				"accountId": "C107",
+				"clientId": {
+					"buid": "318843863_8",
+					"internalClientId": "0000000008",
+					"externalClientIdentifier": {
+						"externalClientId": "0000000008WEX",
+						"thirdPartyID": "DistRoot"
+					},
+					"clientFullName": "Ann Barret"
+				}
+			},
+			"disbursementPartInfo": {
+				"className": "aSPCB_DisbursementPart",
+				"dueDate": "2021-03-19",
+				"effectiveDate": "2021-03-19",
+				"invoicingDate": "2021-03-19",
+				"canceledDate": null,
+				"canceled": false,
+				"amount": {
+					"amount": 1000,
+					"currency": "cUSDollar"
+				},
+				"amountHT": {
+					"amount": 1000,
+					"currency": "cUSDollar"
+				},
+				"disbursementReason": "",
+				"reversedAtDate": null,
+				"accountLines": [{
+					"className": "aSPCB_AccountLine",
+					"creationDate": null,
+					"amount": {
+						"amount": 1000,
+						"currency": "cUSDollar"
+					},
+					"reversedAtDate": null,
+					"isReversed": false,
+					"businessAccountID": {
+						"accountId": "C107",
+						"accountKind": "Claim Account"
+					}
+				}]
+			}
+		}],
+		"disbursementStatement": {
+			"buid": "318838771_1",
+			"disbursementStatementIdentifier": "0000000002"
+		},
+		"disbursementStatus": "Scheduled"
+	},
+	"self": {
+		"className": "aSLI_Manage_Accounting"
+	}
+}

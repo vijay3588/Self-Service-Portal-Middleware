@@ -1,0 +1,11 @@
+{
+    "criteria": {
+        "dataType": "string",
+        "defaultValue": "actorContact"
+    },
+    "maxSize": {
+        "dataType": "number",
+        "defaultValue": 2
+    }
+}
+

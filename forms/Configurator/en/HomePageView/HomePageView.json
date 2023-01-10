@@ -1,0 +1,1116 @@
+{
+  "multipleColoumsCard": true,
+  "cards": [
+    {
+      "coloumConfig": { "className": "col-12 col-lg-8" },
+      "elements": [
+        {
+          "cardMembers": [
+            {
+              "cardElements": [
+                {
+                  "type": "label",
+                  "name": "paymentNumber",
+                  "label": "Payment Number",
+                  "placement": "select-label-content-home",
+                  "value": "",
+                  "displayConfig": {
+                    "show": true,
+                    "validation": {
+                      "condition": " == 1"
+                    },
+                    "valuesFrom": "props.selectOptions"
+                  },
+                  "responseFrom": "Payments",
+                  "config": {
+                    "placementClass": "select-label-content-home"
+                  }
+                },
+                {
+                  "type": "tile",
+                  "name": "paymentStatus",
+                  "style": {
+                    "fontSize": "12px",
+                    "color": "#00a190",
+                    "borderRadius": "4px",
+                    "border": "solid 1px #00a190"
+                  },
+                  "config": {
+                    "displayName": "InvoiceStatusConstants"
+                  },
+                  "displayConfig": {
+                    "show": true,
+                    "validation": {
+                      "condition": " == 1"
+                    },
+                    "valuesFrom": "props.selectOptions"
+                  },
+                  "placement": "col-lg-3 col-sm-5"
+                }
+              ]
+            }
+          ],
+
+          "type": "titleCard",
+          "name": "viewHeader",
+          "config": {
+            "showBorder": true,
+            "className": "row mb-0",
+            "subClassName": "row",
+            "additionalClassName": "col-sm-12"
+          }
+        },
+        {
+          "cardMembers": [
+            {
+              "cardElements": [
+                {
+                  "type": "label",
+                  "name": "memberClassCount",
+                  "label": "",
+                  "placement": "col-12 col-lg-5 col-sm-6",
+                  "value": "",
+                  "appendValue": " Welcome, ",
+                  "valueConfig": {
+                    "reduxObject": "loggedUserEntity",
+                    "mapperObject": {
+                      "value": "`${ currentObject.loginInformation && currentObject.loginInformation.logins && currentObject.loginInformation.logins.length > 0 && currentObject.loginInformation.logins[0] && currentObject.loginInformation.logins && currentObject.loginInformation.logins[0].applicationLogin && currentObject.loginInformation.logins && currentObject.loginInformation.logins[0].applicationLogin.paramEntity && currentObject.loginInformation.logins[0].applicationLogin.paramEntity.name || ''}`"
+                    }
+                  },
+                  "config": {
+                    "className": "enrollment-number",
+                    "style": {
+                      "fontFamily": "Roboto",
+                      "fontSize": "19px",
+                      "fontWeight": "450",
+                      "fontStretch": "normal",
+                      "color": "#333333",
+                      "letterSpacing": "-0.96px"
+                    }
+                  }
+                },
+
+                {
+                  "type": "selectList",
+                  "name": "contractNumber",
+                  "label": "contractNumber",
+                  "placement": "col-12 offset-lg-1 col-lg-6 col-sm-6",
+                  "options": "",
+                  "optionKind": "apiCall",
+                  "config": {
+                    "placementClass": " col-12 select-label-content-home text-wrap",
+                    "listClassName": "select-list-content",
+                    "parentClass": "selectlist_dummy"
+                  },
+                  "displayConfig": {
+                    "show": true,
+                    "validation": {
+                      "condition": "> 1"
+                    },
+                    "valuesFrom": "props.selectOptions"
+                  },
+                  "subElement": {
+                    "type": "tile",
+                    "name": "paymentStatus",
+                    "style": {
+                      "fontSize": "12px",
+                      "color": "#00a190",
+                      "borderRadius": "4px",
+                      "border": "solid 1px #00a190"
+                    },
+                    "config": {
+                      "displayName": "InvoiceStatusConstants"
+                    },
+                    "placement": "col-lg-4 col-sm-5"
+                  },
+                  "validations": {}
+                }
+              ]
+            }
+          ],
+
+          "type": "titleCard",
+          "name": "viewHeader",
+          "config": {
+            "showBorder": true,
+            "className": "row mb-4",
+            "additionalClassName": "col-sm-12",
+            "subClassName": "row"
+          }
+        },
+        {
+          "cardMembers": [
+            {
+              "cardElements": [
+                {
+                  "cardConfig": {
+                    "showHeader": true,
+                    "showFooter": false,
+                    "className": "col-12 col-sm-12 col-lg-12",
+                    "alignmentClass": " mb-4"
+                  },
+                  "panelHeader": {
+                    "elements": [
+                      {
+                        "type": "readOnly",
+                        "name": "currentBalance",
+                        "label": "",
+                        "placement": "mr-3",
+                        "validations": {},
+                        "image": ""
+                      },
+                      {
+                        "type": "label",
+                        "name": "currentBalance",
+                        "label": "Current Balance",
+                        "placement": "",
+                        "value": "Current Balance",
+                        "config": {
+                          "className": "enrollment-number"
+                        }
+                      }
+                    ]
+                  },
+                  "panelBody": {
+                    "config": {
+                      "alignment": ""
+                    },
+                    "elements": [
+                      {
+                        "name": "blueBox",
+                        "type": "boxCard",
+
+                        "cardMembers": [
+                          {
+                            "cardConfig": {
+                              "className": "col-lg-12 col-md-12 ",
+                              "styleClassName": "boxcard-border-flex",
+                              "style": {}
+                            },
+                            "cardElements": [
+                              {
+                                "type": "readOnly",
+                                "name": "amountDue",
+                                "label": "Amount Due",
+                                "placement": "col-lg-4 col-md-4 col-sm-4",
+                                "validations": {},
+                                "value": "0",
+                                "responseFrom": "Payments",
+                                "image": "amount-due.png",
+                                "config": {
+                                  "valueType": "currency",
+                                  "locale": "en-US",
+                                  "currency": "USD"
+                                }
+                              },
+                              {
+                                "type": "readOnly",
+                                "name": "dueDate",
+                                "label": "Due Date",
+                                "placement": "col-lg-4 col-md-4 col-sm-4",
+                                "value": "12/12/2020",
+                                "image": "open-enrollment-duedate.png",
+                                "responseFrom": "Payments",
+                                "config": {
+                                  "valueType": "date",
+                                  "format": "MM/DD/YYYY"
+                                }
+                              },
+                              {
+                                "type": "tile",
+                                "name": "disbursementStatus",
+
+                                "responseFrom": "Payments",
+                                "config": {
+                                  "displayName": "InvoiceStatusConstants",
+                                  "style": {
+                                    "fontSize": "14px",
+                                    "borderRadius": "4px",
+                                    "backgroundColor": "#ef5a88",
+                                    "fontFamily": "Roboto",
+                                    "fontWeight": "500",
+                                    "fontStretch": "normal",
+                                    "color": "#ffffff",
+                                    "padding": "5px 19px 6px"
+                                  }
+                                },
+                                "placement": "col-lg-4 col-md-4 col-sm-4"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "disbursementCard",
+                        "title": "disbursementCard",
+                        "type": "elementsCard",
+                        "cardMembers": [
+                          {
+                            "cardConfig": {
+                              "className": "col-md-6 col-lg-3 mb-3"
+                            },
+                            "cardElements": [
+                              {
+                                "type": "readOnly",
+                                "name": "pastDueAmount",
+                                "label": "Past Due Amount",
+                                "placement": "col-lg-12 col-sm-12 mb-3",
+                                "responseFrom": "Payments",
+                                "value": "0",
+                                "validations": {},
+                                "config": {
+                                  "valueType": "currency",
+                                  "locale": "en-US",
+                                  "currency": "USD"
+                                }
+                              },
+                              {
+                                "type": "readOnly",
+                                "name": "paymentsCredits",
+                                "label": "Payments & Credits",
+                                "placement": "col-lg-12 col-sm-12 mb-3",
+                                "responseFrom": "Payments",
+                                "validations": {},
+                                "value": "0",
+                                "config": {
+                                  "valueType": "currency",
+                                  "locale": "en-US",
+                                  "currency": "USD"
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "cardConfig": {
+                              "className": "col-md-6 col-lg-3 mb-3",
+                              "cardClassName": "element-card-background "
+                            },
+                            "cardElements": [
+                              {
+                                "type": "readOnly",
+                                "name": "invoiceNumber",
+                                "label": "Invoice Number",
+                                "responseFrom": "Payments",
+                                "placement": "col-lg-12 col-sm-12 mb-3",
+                                "validations": {}
+                              },
+                              {
+                                "type": "readOnly",
+                                "name": "invoiceDate",
+                                "label": "Invoice",
+                                "placement": "col-lg-12 col-sm-12 mb-3",
+                                "responseFrom": "Payments",
+                                "validations": {},
+                                "config": {
+                                  "valueType": "date",
+                                  "format": "MM/DD/YYYY"
+                                }
+                              },
+                              {
+                                "type": "readOnly",
+                                "name": "invoicingFrequency",
+                                "label": "Invoicing Frequency",
+                                "placement": "col-lg-12 col-sm-12 mb-3",
+                                "responseFrom": "Payments",
+                                "validations": {},
+                                "config": {
+                                  "optionsname": "FrequencyConstants"
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "cardConfig": {
+                              "className": "col-md-6 col-lg-3 mb-3",
+                              "cardClassName": "element-card-background "
+                            },
+                            "cardElements": [
+                              {
+                                "type": "readOnly",
+                                "name": "paymentChannel",
+                                "label": "Payment Channel",
+                                "responseFrom": "Payments",
+                                "placement": "col-lg-12 col-sm-12 mb-3",
+                                "validations": {}
+                              }
+                            ]
+                          },
+                          {
+                            "cardConfig": {
+                              "className": "col-md-6 col-lg-3 mb-3",
+                              "cardClassName": "element-card-border",
+                              "alignment": ""
+                            },
+                            "cardElements": [
+                              {
+                                "name": "viewInvoice",
+                                "type": "link",
+                                "liClassName": "landingPageLinks col-sm-6 col-md-1 mr-2 text-center d-none d-lg-flex",
+                                "renderType": "landingPage",
+                                "className": "",
+                                "placement": "col-12 p-0",
+                                "value": "View Invoice Details",
+                                "to": "/employer/viewInvoice"
+                              },
+                              {
+                                "name": "viewInvoice",
+                                "type": "link",
+                                "placement": "col-12 p-0",
+                                "liClassName": "landingPageLinks col-sm-6 col-md-1 mr-2 text-center d-none d-lg-flex",
+                                "renderType": "landingPage",
+
+                                "value": "View Invoices & Payment History",
+                                "to": "/employer/invoicesAndPaymentsHistory"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "panelFooter": {
+                    "elements": []
+                  }
+                }
+              ]
+            }
+          ],
+
+          "title": "panelCard",
+          "type": "panelCard",
+          "name": "panelCard"
+        },
+
+        {
+          "cardMembers": [
+            {
+              "cardElements": [
+                {
+                  "cardConfig": {
+                    "showHeader": true,
+                    "showFooter": false,
+                    "className": "col-12 col-sm-12 col-lg-12 ",
+                    "alignmentClass": "mb-4"
+                  },
+                  "panelHeader": {
+                    "elements": [
+                      {
+                        "type": "readOnly",
+                        "name": "contractSummary",
+                        "label": "",
+                        "placement": "mr-3",
+                        "validations": {},
+                        "responseFrom": "ContractInformation",
+                        "image": ""
+                      },
+                      {
+                        "type": "label",
+                        "name": "ContractSummary",
+                        "label": "Contract Summary",
+                        "placement": "mr-3",
+                        "value": "Contract Summary",
+                        "responseFrom": "ContractInformation",
+                        "config": {
+                          "className": "enrollment-number"
+                        }
+                      }
+                    ]
+                  },
+                  "panelBody": {
+                    "config": {
+                      "alignment": ""
+                    },
+                    "elements": [
+                      {
+                        "name": "disbursementCard",
+                        "title": "disbursementCard",
+                        "type": "elementsCard",
+                        "cardMembers": [
+                          {
+                            "cardConfig": {
+                              "className": "col-md-6 col-lg-3 mb-3"
+                            },
+                            "cardElements": [
+                              {
+                                "type": "readOnly",
+                                "name": "effectiveDate",
+                                "label": "Effective Date",
+                                "placement": "col-lg-12 col-sm-12 mb-3",
+                                "responseFrom": "ContractInformation",
+
+                                "config": {
+                                  "valueType": "date",
+                                  "format": "MM/DD/YYYY"
+                                },
+                                "value": ""
+                              },
+                              {
+                                "type": "readOnly",
+                                "name": "termOrRenewalDate",
+                                "label": "Renewal Date",
+                                "placement": "col-lg-12 col-sm-12 mb-3",
+                                "responseFrom": "ContractInformation",
+                                "validations": {},
+
+                                "config": {
+                                  "valueType": "date",
+                                  "format": "MM/DD/YYYY"
+                                },
+                                "value": ""
+                              }
+                            ]
+                          },
+                          {
+                            "cardConfig": {
+                              "className": "col-md-6 col-lg-5 mb-3",
+                              "cardClassName": ""
+                            },
+                            "cardElements": [
+                              {
+                                "type": "readOnly",
+                                "name": "products",
+                                "label": "Products",
+                                "isNotMultiple": true,
+                                "responseFrom": "ContractInformation",
+                                "placement": "col-lg-12 col-sm-12 mb-3",
+                                "validations": {},
+                                "config": {
+                                  "displayType": "list",
+                                  "optionsname": "EnrollmentStatusConstants"
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "cardConfig": {
+                              "className": "col-md-6 col-lg-4 mb-3",
+                              "cardClassName": "element-card-border",
+                              "alignment": ""
+                            },
+                            "cardElements": [
+                              {
+                                "name": "viewContractInformation",
+                                "type": "link",
+                                "liClassName": "landingPageLinks col-sm-6 col-md-1 mr-2 text-center d-none d-lg-flex",
+                                "renderType": "landingPage",
+                                "className": "",
+                                "placement": "col-12 p-0",
+                                "value": "View Contract Information",
+                                "to": "/employer/contractDetails"
+                              },
+                              {
+                                "name": "enrollEmployee",
+                                "type": "link",
+                                "liClassName": "landingPageLinks col-sm-6 col-md-1 mr-2 text-center d-none d-lg-flex",
+                                "renderType": "landingPage",
+                                "placement": "col-12 p-0",
+                                "value": "Enroll an Employee",
+                                "to": "/employer/enrollEmployee"
+                              },
+                              {
+                                "name": "openAnEnrollmentPeriod",
+                                "type": "link",
+                                "liClassName": "landingPageLinks col-sm-6 col-md-1 mr-2 text-center d-none d-lg-flex",
+                                "renderType": "landingPage",
+                                "placement": "col-12 p-0",
+                                "value": "Open an Enrollment Period",
+                                "to": "/employer/home"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+
+                      {
+                        "title": "panelCard",
+                        "type": "panelCard",
+                        "name": "panelCard",
+                        "cardMembers": [
+                          {
+                            "cardElements": [
+                              {
+                                "cardConfig": {
+                                  "showHeader": true,
+                                  "showFooter": false,
+                                  "className": "col-md-12 col-lg-12 mb-3",
+                                  "isNotMultiple": true
+                                },
+                                "panelHeader": {
+                                  "config": {
+                                    "className": "px-3",
+                                    "style": {
+                                      "backgroundColor": "#f8f8f9"
+                                    }
+                                  },
+                                  "elements": [
+                                    {
+                                      "type": "label",
+                                      "name": "ProductsandCoverages",
+                                      "label": "Participations",
+                                      "placement": "mr-1",
+                                      "value": "Participations",
+                                      "config": {
+                                        "style": {
+                                          "fontFamily": "Roboto",
+                                          "fontSize": "18px",
+                                          "fontWeight": "500",
+                                          "color": "#333333",
+                                          "letterSpacing": "normal",
+                                          "fontStretch": "normal",
+                                          "fontStyle": "normal",
+                                          "lineHeight": 0.92
+                                        }
+                                      }
+                                    }
+                                  ]
+                                },
+                                "panelBody": {
+                                  "config": {
+                                    "alignment": "row"
+                                  },
+                                  "elements": [
+                                    {
+                                      "type": "charter",
+                                      "name": "participationChart",
+                                      "placement": "col-lg-6 col-sm-6",
+                                      "chartType": "Doughnut",
+                                      "title": "By Participation",
+                                      "responseFrom": "ContractInformation",
+                                      "symbol": "%",
+                                      "chartData": {
+                                        "labels": [
+                                          "Required Participation",
+                                          "Actual Participation",
+                                          "Current Participation"
+                                        ],
+                                        "datasets": [
+                                          {
+                                            "backgroundColor": [
+                                              "#58c2d5",
+                                              "#9c799b",
+                                              "#67a28a"
+                                            ],
+                                            "data": [10, 1, 1]
+                                          }
+                                        ]
+                                      },
+
+                                      "displayChartLegend": true
+                                    }
+                                  ]
+                                },
+                                "panelFooter": {
+                                  "elements": []
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "panelFooter": {
+                    "elements": []
+                  }
+                }
+              ]
+            }
+          ],
+
+          "title": "panelCard",
+          "type": "panelCard",
+          "name": "panelCard"
+        },
+
+        {
+          "title": "panelCard",
+          "type": "panelCard",
+          "name": "panelCard",
+          "cardMembers": [
+            {
+              "cardElements": [
+                {
+                  "cardConfig": {
+                    "showHeader": true,
+                    "showFooter": false,
+                    "className": "col-12 col-sm-12 col-lg-12",
+                    "alignmentClass": ""
+                  },
+                  "panelHeader": {
+                    "config": {
+                      "className": "px-3 py-1"
+                    },
+                    "elements": [
+                      {
+                        "type": "label",
+                        "name": "ProductsandCoverages",
+                        "label": "Quotes",
+                        "placement": "mr-1",
+                        "value": "Quotes",
+                        "config": {
+                          "className": "enrollment-number"
+                        }
+                      }
+                    ]
+                  },
+                  "panelBody": {
+                    "config": {
+                      "className": "card-scroll"
+                    },
+                    "elements": [
+                      {
+                        "title": "Quotes",
+                        "type": "panelCard",
+                        "name": "Quotes",
+                        "cardMembers": [
+                          {
+                            "cardElements": [
+                              {
+                                "cardConfig": {
+                                  "showHeader": true,
+                                  "showFooter": false,
+                                  "className": "col-md-12 col-lg-12 mb-3",
+                                  "isNotMultiple": true
+                                },
+                                "panelHeader": {
+                                  "config": {
+                                    "className": "px-3",
+                                    "style": {
+                                      "backgroundColor": "#f8f8f9"
+                                    }
+                                  },
+                                  "elements": [
+                                    {
+                                      "type": "label",
+                                      "name": "quoteNumber",
+                                      "label": "",
+                                      "placement": "",
+                                      "value": "",
+                                      "responseFrom": "Quotes",
+                                      "config": {
+                                        "style": {
+                                          "fontFamily": "Roboto",
+                                          "fontSize": "18px",
+                                          "fontWeight": "500",
+                                          "fontStretch": "normal",
+                                          "color": "#040404"
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "type": "tile",
+                                      "name": "quoteStatus",
+
+                                      "responseFrom": "Payments",
+                                      "config": {
+                                        "displayName": "InvoiceStatusConstants",
+                                        "style": {
+                                          "fontSize": "14px",
+                                          "borderRadius": "4px",
+                                          "backgroundColor": "#ef5a88",
+                                          "fontFamily": "Roboto",
+                                          "fontWeight": "500",
+                                          "fontStretch": "normal",
+                                          "color": "#ffffff",
+                                          "padding": "5px 19px 6px"
+                                        }
+                                      },
+                                      "placement": "col-lg-4 col-sm-4"
+                                    }
+                                  ]
+                                },
+                                "panelBody": {
+                                  "config": {
+                                    "alignment": "row"
+                                  },
+                                  "elements": [
+                                    {
+                                      "name": "Quotes",
+                                      "title": "Quotes",
+                                      "type": "elementsCard",
+                                      "isNotMultiple": "true",
+                                      "cardMembers": [
+                                        {
+                                          "cardConfig": {
+                                            "className": "col-md-8 col-lg-8 mb-3",
+                                            "cardClassName": "element-card-background "
+                                          },
+                                          "cardElements": [
+                                            {
+                                              "type": "readOnly",
+                                              "name": "submissionDate",
+                                              "label": "Submission Date",
+                                              "placement": " col-12 col-md-6 col-lg-6 mb-2",
+                                              "value": "",
+                                              "image": "number.png",
+                                              "config": {
+                                                "valueType": "date",
+                                                "format": "MM/DD/YYYY"
+                                              }
+                                            },
+                                            {
+                                              "type": "readOnly",
+                                              "name": "validityEndDate",
+                                              "label": "Vality End Date",
+                                              "placement": " col-12 col-md-6 col-lg-6 mb-2",
+                                              "validations": {},
+                                              "image": "calendar.png",
+                                              "config": {
+                                                "valueType": "date",
+                                                "format": "MM/DD/YYYY"
+                                              }
+                                            },
+                                            {
+                                              "type": "tile",
+                                              "name": "quoteRemainingDate",
+
+                                              "responseFrom": "Payments",
+                                              "config": {
+                                                "displayName": "InvoiceStatusConstants",
+                                                "style": {
+                                                  "fontSize": "10px",
+                                                  "borderRadius": "4px",
+                                                  "backgroundColor": "#ef5a88",
+                                                  "fontFamily": "Roboto",
+                                                  "fontWeight": "500",
+                                                  "fontStretch": "normal",
+                                                  "color": "#ffffff",
+                                                  "padding": "5px 19px 6px"
+                                                }
+                                              },
+                                              "placement": " col-12 mb-2"
+                                            },
+
+                                            {
+                                              "type": "button",
+                                              "name": "makeHomeButton",
+                                              "conditionalRender": {
+                                                "valueFrom": "Quotes[].quoteStatus",
+                                                "hide": "cCompleted"
+                                              },
+                                              "callback": {
+                                                "valueFrom": "Quotes[].quoteId"
+                                              },
+                                              "label": "Accept Quote",
+                                              "className": "makeHomeButton",
+                                              "placement": " col-12 col-md-6 col-lg-6 mb-2",
+                                              "config": {}
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "cardConfig": {
+                                            "className": "col-md-6 col-lg-3 mb-3",
+                                            "cardClassName": "element-card-border",
+                                            "alignment": ""
+                                          },
+                                          "cardElements": [
+                                            {
+                                              "name": "viewInvoice",
+                                              "type": "link",
+                                              "liClassName": "landingPageLinks col-sm-6 col-md-1 mr-2 text-center d-none d-lg-flex",
+                                              "renderType": "landingPage",
+                                              "className": "",
+                                              "value": "View Quote Details",
+                                              "placement": "col-12 p-0",
+                                              "to": "/employer/viewQuote"
+                                            },
+                                            {
+                                              "name": "viewInvoice",
+                                              "type": "link",
+                                              "liClassName": "landingPageLinks col-sm-6 col-md-1 mr-2 text-center d-none d-lg-flex",
+                                              "renderType": "landingPage",
+                                              "placement": "col-12 p-0",
+                                              "value": "View Quote History",
+                                              "to": "/employer/viewQuote"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "panelFooter": {
+                                  "elements": []
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "coloumConfig": { "className": "col-12 col-lg-4" },
+      "elements": [
+        {
+          "cardMembers": [
+            {
+              "cardElements": [
+                {
+                  "cardConfig": {
+                    "showHeader": true,
+                    "showFooter": false,
+                    "className": "col-12 col-sm-12 col-lg-12",
+                    "alignmentClass": " mb-4",
+                    "isNotMultiple": true
+                  },
+                  "panelHeader": {
+                    "elements": [
+                      {
+                        "type": "notification",
+                        "name": "notificationCount",
+                        "label": "",
+                        "placement": "",
+                        "responseFrom": "searchActorContactHistory",
+                        "value": "",
+                        "config": {}
+                      },
+                      {
+                        "type": "readOnly",
+                        "name": "currentBalance",
+                        "label": "",
+                        "placement": "ml-2",
+                        "validations": {},
+                        "image": "",
+                        "value": "Notifications"
+                      }
+                    ]
+                  },
+                  "panelBody": {
+                    "config": {
+                      "alignment": ""
+                    },
+                    "elements": [
+                      {
+                        "name": "notifications",
+                        "title": "notifications",
+                        "type": "elementsCard",
+                        "cardMembers": [
+                          {
+                            "cardConfig": {
+                              "className": "col-md-12 col-lg-12 mt-n4",
+                              "alignment": "p-1"
+                            },
+                            "cardElements": [
+                              {
+                                "type": "readOnly",
+                                "name": "date",
+                                "label": "",
+                                "placement": "col-lg-12 col-sm-12",
+                                "contentClassName": "notification_label",
+                                "labelClassName": "notification_label",
+                                "config": {
+                                  "valueType": "date",
+                                  "format": "DD-MM-YYYY HH:mm:ss"
+                                },
+                                "value": ""
+                              },
+                              {
+                                "type": "readOnly",
+                                "name": "name",
+                                "label": "",
+                                "placement": "col-lg-12 col-sm-12",
+                                "contentClassName": "notification_content",
+                                "labelClassName": "notification_content",
+                                "validations": {},
+                                "image": ""
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "panelFooter": {
+                    "elements": []
+                  }
+                }
+              ]
+            }
+          ],
+
+          "title": "panelCard",
+          "type": "panelCard",
+          "name": "panelCard"
+        },
+        {
+          "cardMembers": [
+            {
+              "cardElements": [
+                {
+                  "cardConfig": {
+                    "showHeader": true,
+                    "showFooter": false,
+                    "className": "col-12 col-sm-12 col-lg-12",
+                    "alignmentClass": " mb-4",
+                    "isNotMultiple": true
+                  },
+                  "panelHeader": {
+                    "elements": [
+                      {
+                        "type": "readOnly",
+                        "name": "currentBalance",
+                        "label": "",
+                        "placement": "mr-3",
+                        "validations": {},
+                        "image": "",
+                        "value": "Quick Links"
+                      }
+                    ]
+                  },
+                  "panelBody": {
+                    "config": {
+                      "alignment": ""
+                    },
+                    "elements": [
+                      {
+                        "name": "quickLinks",
+                        "title": "quickLinks",
+                        "type": "elementsCard",
+                        "cardMembers": [
+                          {
+                            "cardConfig": {
+                              "className": "col-md-12 col-lg-12",
+                              "cardClassName": "element-card-border",
+                              "alignment": "mt-n2"
+                            },
+
+                            "cardElements": [
+                              {
+                                "name": "viewInvoice",
+                                "type": "link",
+                                "liClassName": "landingPageLinks col-sm-6 col-md-1 mr-2 text-center d-none d-lg-flex",
+                                "renderType": "landingPage",
+                                "className": "",
+                                "placement": "col-12 p-1",
+                                "value": "Search for an Employee",
+                                "to": "/employer/searchForAnEmployee"
+                              },
+                              {
+                                "name": "viewInvoice",
+                                "type": "link",
+                                "placement": "col-12 p-1",
+                                "liClassName": "landingPageLinks col-sm-6 col-md-1 mr-2 text-center d-none d-lg-flex",
+                                "renderType": "landingPage",
+                                "value": "Search for an Enrollment",
+                                "to": "/employer/searchForAnEnrollment"
+                              },
+                              {
+                                "name": "viewInvoice",
+                                "type": "link",
+                                "placement": "col-12 p-1 ",
+                                "liClassName": "landingPageLinks col-sm-6 col-md-1 mr-2 text-center d-none d-lg-flex",
+                                "renderType": "landingPage",
+                                "value": "Request a Quote",
+                                "to": "/employer/home"
+                              },
+                              {
+                                "name": "viewInvoice",
+                                "type": "link",
+                                "placement": "col-12 p-1",
+                                "liClassName": "landingPageLinks col-sm-6 col-md-1 mr-2 text-center d-none d-lg-flex",
+                                "renderType": "landingPage",
+                                "value": "Request a Contract Amendment",
+                                "to": "/employer/home"
+                              },
+                              {
+                                "name": "viewInvoice",
+                                "type": "link",
+                                "placement": "col-12 p-1",
+                                "liClassName": "landingPageLinks col-sm-6 col-md-1 mr-2 text-center d-none d-lg-flex",
+                                "renderType": "landingPage",
+                                "value": "View Accounts",
+                                "to": "/employer/home"
+                              },
+                              {
+                                "name": "viewInvoice",
+                                "type": "link",
+                                "placement": "col-12 p-1",
+                                "liClassName": "landingPageLinks col-sm-6 col-md-1 mr-2 text-center d-none d-lg-flex",
+                                "renderType": "landingPage",
+                                "value": "View Reports",
+                                "to": "/employer/home"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "panelFooter": {
+                    "elements": []
+                  }
+                }
+              ]
+            }
+          ],
+
+          "title": "panelCard",
+          "type": "panelCard",
+          "name": "panelCard"
+        },
+        {
+          "cardMembers": [
+            {
+              "cardElements": [
+                {
+                  "cardConfig": {
+                    "showHeader": true,
+                    "showFooter": false,
+                    "className": "col-12 col-sm-12 col-lg-12",
+                    "alignmentClass": " mb-4",
+                    "isNotMultiple": true
+                  },
+                  "panelHeader": {
+                    "elements": [
+                      {
+                        "type": "readOnly",
+                        "name": "currentBalance",
+                        "label": "",
+                        "placement": "mr-3",
+                        "validations": {},
+                        "image": "",
+                        "value": "Recent Activities"
+                      }
+                    ]
+                  },
+                  "panelBody": {
+                    "config": {
+                      "alignment": ""
+                    },
+                    "elements": [
+                      {
+                        "type": "dotProgressBar",
+                        "name": "searchOperations",
+                        "dataObject": "searchOperations",
+                        "label": "DotProgressBar",
+                        "placement": "col-lg-12 col-sm-12 mb-3",
+                        "validations": {},
+                        "isNotMultiple": true
+                      }
+                    ]
+                  },
+                  "panelFooter": {
+                    "elements": []
+                  }
+                }
+              ]
+            }
+          ],
+
+          "title": "panelCard",
+          "type": "panelCard",
+          "name": "panelCard"
+        }
+      ]
+    }
+  ]
+}

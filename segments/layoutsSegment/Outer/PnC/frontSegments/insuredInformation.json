@@ -1,0 +1,27 @@
+{
+    "name": {
+        "dataType": "string",
+        "defaultValue": "",
+        "dataConfig": {
+                "configType": "additionSector",
+                "sector": "lastname",
+                "splitText": " "
+            }
+    },
+    "gender": {
+        "dataType": "string",
+        "defaultValue": "All"
+    },
+    "dateofbirth": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "address": {
+        "dataType": "string",
+        "defaultValue": "",
+        "dataConfig": {
+            "configType": "addressFormat",
+            "format": "line1 ? 'line1, ' : ''; city ? 'city, ' : '';  state ? 'state ' : '';  zipcode ? 'zipcode ' : ''; "
+        }
+    }
+}

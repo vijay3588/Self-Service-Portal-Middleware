@@ -1,0 +1,10 @@
+{
+    "paramIn": {
+        "dataType": "object",
+        "name": "aSPLI_GetOperations_In"
+    },
+    "maxSize": {
+        "dataType": "number",
+        "defaultValue": 4
+    }
+}

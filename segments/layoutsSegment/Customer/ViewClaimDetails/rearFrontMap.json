@@ -1,0 +1,144 @@
+[
+    {
+        "frontSegment": "claim",
+        "dataParentSegment": "",
+        "dataSegmentType": "object",
+        "defaultSectorMapping": [
+            {
+                "frontSector": "name",
+                "rearSector": "name",
+                "rearDataSegmentPath": "claim",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "lossType",
+                "rearSector": "lossType",
+                "rearDataSegmentPath": "claim",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "eventDate",
+                "rearSector": "eventDate",
+                "rearDataSegmentPath": "claim",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "declarationDate",
+                "rearSector": "declarationDate",
+                "rearDataSegmentPath": "claim",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "status",
+                "rearSector": "status",
+                "rearDataSegmentPath": "claim",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "closeDate",
+                "rearSector": "closeDate",
+                "rearDataSegmentPath": "claim",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "closeReason",
+                "rearSector": "closeReason",
+                "rearDataSegmentPath": "claim",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "closeComment",
+                "rearSector": "closeComment",
+                "rearDataSegmentPath": "claim",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "description",
+                "rearSector": "description",
+                "rearDataSegmentPath": "claimant",
+                "defaultValue": ""
+            }
+        ]
+    },
+    {
+        "frontSegment": "lossData",
+        "dataParentSegment": "losses",
+        "dataSegmentType": "array",
+        "defaultSectorMapping":[
+            {
+                "frontSector": "lossName",
+                "rearSector": "lossName",
+                "rearDataSegmentPath": "loss",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "eventDate",
+                "rearSector": "eventDate",
+                "rearDataSegmentPath": "loss",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "disabilityEndDate",
+                "rearSector": "disabilityEndDate",
+                "rearDataSegmentPath": "loss",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "disabilityKind",
+                "rearSector": "disabilityKind",
+                "rearDataSegmentPath": "disabilityKindVersions",
+                "defaultValue": ""
+            }
+        ]
+    },
+    {
+        "frontSegment": "indemnifications",
+        "dataParentSegment": "deliveredServices.indemnifications",
+        "dataSegmentType": "array",
+        "defaultSectorMapping":[
+            {
+                "frontSector": "fromDate",
+                "rearSector": "fromDate",
+                "rearDataSegmentPath": "indemnifcation",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "toDate",
+                "rearSector": "toDate",
+                "rearDataSegmentPath": "indemnifcation",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "benefitAmount",
+                "rearSector": "amount",
+                "rearDataSegmentPath": "indemnifcation.benefitAmount",
+                "defaultValue": "0"
+            },
+            {
+                "frontSector": "deductible",
+                "rearSector": "amount",
+                "rearDataSegmentPath": "indemnifcation.deductible",
+                "defaultValue": "0"
+            }
+        ]
+    },
+    {
+        "frontSegment": "beneficiaries",
+        "dataParentSegment": "deliveredServices.beneficiaries",
+        "dataSegmentType": "array",
+        "defaultSectorMapping":[
+            {
+                "frontSector": "description",
+                "rearSector": "description",
+                "rearDataSegmentPath": "beneficiary.identifier",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "percent",
+                "rearSector": "percent",
+                "rearDataSegmentPath": "simpleClaimBeneficiary",
+                "defaultValue": ""
+            }
+        ]
+    }
+  ]

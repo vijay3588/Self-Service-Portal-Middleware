@@ -1,0 +1,40 @@
+{
+    "className": {
+      "dataType": "string",
+      "defaultValue": "aSPCB_Payment"
+    },
+    "receivedDate": {
+      "dataType": "string",
+      "defaultValue": ""
+    },
+    "bankInformation" : {
+        "dataType" : "object",
+        "name" : "bankInformation"
+    },
+    "paymentStatus": {
+        "dataType": "string",
+        "defaultValue": "cpsAssigned"
+      },
+      
+      "operation": {
+        "dataType": "string",
+        "defaultValue": ""
+      },
+          
+      "amount": {
+        "dataType": "object",
+        "name": "amount"
+      },
+
+      "netAmount" :{
+        "dataType": "object",
+        "name": "salaryBonusAmount"
+      },
+
+      "canceledDate" :{
+          "dataType": "string",
+        "defaultValue": null
+      }
+
+  }
+  

@@ -1,0 +1,10 @@
+{
+  "zipCode": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "city": {
+    "dataType": "string",
+    "defaultValue": ""
+  }
+}

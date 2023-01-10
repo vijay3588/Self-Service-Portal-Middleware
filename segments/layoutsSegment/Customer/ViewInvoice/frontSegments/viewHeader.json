@@ -1,0 +1,5 @@
+{
+  "disbursementNumber": {"dataType": "string", "defaultValue": "", "dataConfig":{"configType":"preText", "text":"Invoice Number "}},
+  "disbursementStatus": {"dataType": "string", "defaultValue": ""},
+  "buid": {"dataType": "string", "defaultValue": ""}
+}

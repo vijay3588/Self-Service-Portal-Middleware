@@ -1,0 +1,14 @@
+{
+  "headerBgColor": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "headerHover": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "headerColor": {
+    "dataType": "string",
+    "defaultValue": ""
+  }
+}

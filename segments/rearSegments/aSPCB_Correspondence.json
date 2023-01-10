@@ -1,0 +1,75 @@
+{
+  "className": {
+    "dataType": "string",
+    "defaultValue": "aSPCB_Correspondence"
+  },
+  "effectiveDate": {
+    "dataType": "date",
+    "defaultValue": "2021-01-01"
+  },
+  "addressUsage": {
+    "dataType": "number",
+    "defaultValue": "0"
+  },
+  "address": {
+    "dataType": "object",
+    "name": "aSPCB_US_PostalAddress"
+  },
+  "addressNotDefined": {
+    "dataType": "boolean",
+    "defaultValue": true,
+    "dataConfig": {
+      "configType": "boolean",
+      "hasData": true
+    }
+  },
+  "isDefaultCorrespondance": {
+    "dataType": "boolean",
+    "defaultValue": true
+  },
+  "privatePhone": {
+    "dataType": "number",
+    "defaultValue": ""
+  },
+  "privatePhoneExtension": {
+    "dataType": "number",
+    "defaultValue": ""
+  },
+  "officePhone": {
+    "dataType": "number",
+    "defaultValue": ""
+  },
+  "officePhoneExtension": {
+    "dataType": "number",
+    "defaultValue": ""
+  },
+  "cellPhone": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "fax": {
+    "dataType": "number",
+    "defaultValue": ""
+  },
+  "eMail": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "mediaType": {
+    "dataType": "string",
+    "defaultValue": "",
+    "dataConfig": {
+      "configType": "emptyString",
+      "hasData": true,
+      "validateUISector": "noMailingAddress"
+    }
+  },
+  "isInvalid": {
+    "dataType": "boolean",
+    "defaultValue": false
+  },
+  "reasonForInvalidAddress": {
+    "dataType": "string",
+    "defaultValue": ""
+  }
+}

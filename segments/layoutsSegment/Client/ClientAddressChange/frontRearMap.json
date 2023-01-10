@@ -1,0 +1,64 @@
+[
+  {
+    "frontDataSegment": "body",
+    "rearDataSegmentClass": "aSPCB_Fr_AfnorPostalAddress",
+    "rearDataSegment":"newAddress",
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "lineOne",
+        "rearSector": "line1",
+        "frontDataSegmentPath":"values.NewAddress",
+        "rearDataSegmentPath": "newAddress",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "lineTwo",
+        "rearSector": "line2",
+        "frontDataSegmentPath":"values.NewAddress",
+        "rearDataSegmentPath": "newAddress",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "zipCode",
+        "rearSector": "zipCode",
+        "frontDataSegmentPath":"values.NewAddress.zipCodeAndCity",
+        "rearDataSegmentPath": "newAddress.zipCode",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "city",
+        "rearSector": "city",
+        "frontDataSegmentPath":"values.NewAddress.zipCodeAndCity",
+        "rearDataSegmentPath": "newAddress.city",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "country",
+        "rearSector": "country",
+        "frontDataSegmentPath":"values.NewAddress",
+        "rearDataSegmentPath": "newAddress",
+        "defaultValue": ""
+      }
+    ]
+  },
+  {
+    "frontDataSegment": "body",
+    "mappingSectorOnly":true,
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "buid",
+        "frontDataSegmentPath":"loggedUserEntity._Result.clientId",
+        "rearSector": "customerBuid",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "effectiveDate",
+        "frontDataSegmentPath":"values.NewAddress",
+        "rearSector": "atDate",
+        "defaultValue": ""
+      }
+    ]
+  }
+]

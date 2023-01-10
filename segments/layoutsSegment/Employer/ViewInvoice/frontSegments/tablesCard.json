@@ -1,0 +1,4 @@
+{
+    "payments":{"dataType": "object", "name": "payments" },
+    "bills":{"dataType": "object", "name": "bills" }
+}

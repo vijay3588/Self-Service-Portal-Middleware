@@ -1,0 +1,52 @@
+[
+    {
+        "frontSegment": "quoteList",
+        "dataParentSegment": "",
+        "dataSegmentType": "array",
+        "defaultSectorMapping": [
+            {
+                "frontSector": "quoteNumber",
+                "rearSector": "internalPolicyId",
+                "rearDataSegmentPath" :"quote.internalPolicyIdentifier",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "quoteId",
+                "rearSector": "buid",
+                "rearDataSegmentPath" :"quote",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "quoteStatus",
+                "rearSector": "quoteStatus",
+                "rearDataSegmentPath" :"",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "submissionDate",
+                "rearSector": "submissionDate",
+                "rearDataSegmentPath" :"",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "validityEndDate",
+                "rearSector": "toDate",
+                "rearDataSegmentPath" :"",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "quoteRemainingDate",
+                "rearSector": "toDate",
+                "rearDataSegmentPath" :"",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "plainQuoteNumber",
+                "rearSector": "internalPolicyId",
+                "rearDataSegmentPath" :"quote.internalPolicyIdentifier",
+                "defaultValue": ""
+            }
+
+        ]
+    }
+]

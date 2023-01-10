@@ -1,0 +1,41 @@
+[
+    {
+        "layoutName":"HomePageView",
+        "formName": "viewHeader",
+        "cardElements":"cardElements",
+        "frontSegment": "viewHeader",
+        "dataParentSegment": "",
+        "dataSegmentType": "object"
+    },
+    {
+        "frontSegment": "contact",
+        "dataParentSegment": "",
+        "dataSegmentType": "object",
+        "defaultSectorMapping": [
+            {
+                "frontSector": "name",
+                "rearSector": "shortName",
+                "rearDataSegmentPath": "personIdentityHistories.personIdentity",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "address",
+                "rearSector": "address",
+                "rearDataSegmentPath": "correspondences",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "eMail",
+                "rearSector": "eMail",
+                "rearDataSegmentPath": "correspondences",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "phone",
+                "rearSector": "cellPhone",
+                "rearDataSegmentPath": "correspondences",
+                "defaultValue": ""
+            }
+        ]
+    }
+]

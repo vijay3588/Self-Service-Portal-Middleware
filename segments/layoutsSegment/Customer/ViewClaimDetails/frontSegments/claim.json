@@ -1,0 +1,11 @@
+{ 
+    "name": {"dataType": "string", "defaultValue":""}, 
+    "lossType": {"dataType": "string", "defaultValue":""}, 
+    "eventDate": {"dataType": "date", "defaultValue":""}, 
+    "declarationDate": {"dataType": "date", "defaultValue":""},
+    "status": {"dataType": "string", "defaultValue":""},
+    "closeDate": {"dataType": "date", "defaultValue":""},
+    "closeReason": {"dataType": "string", "defaultValue":""},
+    "closeComment": {"dataType": "string", "defaultValue":""},
+    "description": {"dataType": "string", "defaultValue":""}
+}

@@ -1,0 +1,6 @@
+{
+    "legalEntityIdentifier": {
+        "dataType": "object",
+        "name": "legalEntityIdentifier"
+    }
+}

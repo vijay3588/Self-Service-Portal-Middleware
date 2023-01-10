@@ -1,0 +1,5 @@
+{ 
+    "date": {"dataType": "string", "defaultValue":""}, 
+    "principalBalance": {"dataType": "string", "defaultValue":""},
+    "coverage": {"dataType": "string", "defaultValue":""}
+}

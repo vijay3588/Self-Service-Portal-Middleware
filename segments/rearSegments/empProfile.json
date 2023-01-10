@@ -1,0 +1,30 @@
+{
+  "requiredField": {
+    "dataType": "boolean",
+    "defaultValue": false
+  },
+  "hideableField": {
+    "dataType": "boolean",
+    "defaultValue": false
+  },
+  "editableLabelField": {
+    "dataType": "boolean",
+    "defaultValue": false
+  },
+  "editableLabelFieldValue": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "nonEditableField": {
+    "dataType": "boolean",
+    "defaultValue": false
+  },
+  "requiredSection": {
+    "dataType": "boolean",
+    "defaultValue": false
+  },
+  "hideableEyeIcon": {
+    "dataType": "boolean",
+    "defaultValue": false
+  }
+}

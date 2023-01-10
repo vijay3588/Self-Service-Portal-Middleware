@@ -1,0 +1,16 @@
+
+{
+    "buid": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "accountId": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "clientId": {
+        "dataType": "object",
+        "name":"clientIds"
+       
+    }
+}

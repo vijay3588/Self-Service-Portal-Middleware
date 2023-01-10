@@ -1,0 +1,111 @@
+[
+  {
+    "frontDataSegment": "body",
+    "rearDataSegment":"Claim",
+    "rearDataSegmentPath": "claimReference.data",
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "eventDate",
+        "rearSector": "EventDate",
+        "frontDataSegmentPath":"values.Event",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "date",
+        "rearSector": "DeclarationDate",
+        "defaultValue": "",
+        "dataConfig": {
+          "configType": "currentDate"
+        }
+      },
+      {
+        "frontSector": "date",
+        "rearSector": "OpenDate",
+        "defaultValue": "",
+        "dataConfig": {
+          "configType": "currentDate"
+        }
+      }
+    ]
+  },
+  {
+    "frontDataSegment": "body",
+    "rearDataSegment":"Claimant",
+    "rearDataSegmentClass": "aSPLI_PersonIdentifier",
+    "rearDataSegmentPath": "claimReference.data",
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "buid",
+        "rearSector": "buid",
+        "frontDataSegmentPath":"loggedUserEntity._Result.clientId",
+        "defaultValue": ""
+      }
+    ]
+  },
+  {
+    "frontDataSegment": "body",
+    "rearDataSegment":"CoveredPerson",
+    "rearDataSegmentClass": "aSPLI_PersonIdentifier",
+    "rearDataSegmentPath": "claimReference.data.Losses",
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "buid",
+        "rearSector": "buid",
+        "frontDataSegmentPath":"loggedUserEntity._Result.clientId",
+        "defaultValue": ""
+      }
+    ]
+  },
+  {
+    "frontDataSegment": "body",
+    "rearDataSegment":"DisabilityKindVersions",
+    "rearDataSegmentPath": "claimReference.data.Losses",
+    "rearDataSegmentType": "array",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "disabilityKindVersion",
+        "rearSector": "DisabilityKind",
+        "frontDataSegmentPath":"values.Event",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "eventDate",
+        "rearSector": "Date",
+        "frontDataSegmentPath":"values.Event",
+        "defaultValue": ""
+      }
+    ]
+  },
+  {
+    "frontDataSegment": "body",
+    "rearDataSegment":"Loss",
+    "rearDataSegmentClass": "aSPLIC_STDLoss",
+    "rearDataSegmentPath": "claimReference.data.Losses",
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "eventDate",
+        "rearSector": "EventDate",
+        "frontDataSegmentPath":"values.Event",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "date",
+        "rearSector": "DeclarationDate",
+        "defaultValue": "",
+        "dataConfig": {
+          "configType": "currentDate"
+        }
+      },
+      {
+        "frontSector": "eventEndDate",
+        "rearSector": "DisabilityEndDate",
+        "frontDataSegmentPath":"values.Event",
+        "defaultValue": ""
+      }
+    ]
+  }
+]

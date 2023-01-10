@@ -1,0 +1,13 @@
+[
+    {
+      "frontDataSegment": "viewDetail",
+      "rearDataSegmentType": "object",
+      "defaultSectorMapping": [
+        {
+          "frontSector": "id",
+          "rearSector": "contractBuid",
+          "defaultValue": ""
+        }
+      ]
+    }
+  ]

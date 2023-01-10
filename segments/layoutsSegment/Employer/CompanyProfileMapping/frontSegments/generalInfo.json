@@ -1,0 +1,13 @@
+{
+  "doingBusinessAs": { "dataType": "string", "defaultValue": "" },
+  "clientId": { "dataType": "string", "defaultValue": "" },
+  "taxId": { "dataType": "string", "defaultValue": "" },
+  "numberOfEmployees": { "dataType": "number", "defaultValue": "" },
+  "country": { "dataType": "string", "defaultValue": "" },
+  "situsState": { "dataType": "string", "defaultValue": "" },
+  "workingStates": { "dataType": "array", "defaultValue": "" },
+  "preferedCurrency": { "dataType": "string", "defaultValue": "" },
+  "distributionUnit": { "dataType": "string", "defaultValue": "" },
+  "industryClassification": { "dataType": "string", "defaultValue": "" },
+  "legalEntityName": { "dataType": "string", "defaultValue": "" }
+}

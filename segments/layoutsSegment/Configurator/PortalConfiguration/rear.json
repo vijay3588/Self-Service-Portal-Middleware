@@ -1,0 +1,12 @@
+{
+
+    "internalClientId": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "selectedTheme": {
+    "dataType": "string",
+    "defaultValue": ""
+  }
+
+}

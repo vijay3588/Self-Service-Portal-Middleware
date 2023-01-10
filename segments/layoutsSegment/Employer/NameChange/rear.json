@@ -1,0 +1,12 @@
+{
+    "input": {
+        "dataType": "object",
+        "name": "_Result",
+        "reduxDataSegmentPath": "loggedUserEntity",
+        "reduxObject":true
+    },
+    "self": {
+        "dataType": "object",
+        "name": "selfManageActors"
+    }
+}

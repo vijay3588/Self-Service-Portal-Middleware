@@ -1,0 +1,38 @@
+{
+    "className": {
+        "dataType": "string",
+        "defaultValue": "aSPLI_CreateContact_In"
+    },
+    "name": {
+        "dataType": "string",
+        "defaultValue": "Request Termination"
+    },
+    "clientBuid": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "media": {
+        "dataType": "string",
+        "defaultValue": "mWeb"
+    },
+    "dateOfContact": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "timeOfContact": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "contactKind": {
+        "dataType": "string",
+        "defaultValue": "ckIncomingContact"
+    },
+    "contactText": {
+        "dataType": "string",
+        "defaultValue": "Terminate policy as of today"
+    },
+    "businessDomain": {
+        "dataType": "string",
+        "defaultValue": "hlbdContract"
+    }
+}

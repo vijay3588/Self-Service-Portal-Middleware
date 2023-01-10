@@ -1,0 +1,6 @@
+{
+    "contactDescription": {
+        "dataType": "object",
+        "name": "aSPLI_CreateContact_In"
+    }
+}

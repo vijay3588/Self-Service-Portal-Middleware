@@ -1,0 +1,21 @@
+[{"value": "cProject","text":"Project"},
+    {"value": "cActive","text":"Active"},
+    {"value": "cHold","text":"Hold"},
+    {"value": "cHoldAfterRenewal","text":"Hold After Renewal"},
+    {"value": "cTerminated","text":"Terminated"},
+    {"value": "cNeverInForce","text":"Never In Force"},
+    {"value": "cQuote","text":"Quote"},
+    {"value": "cDeclined","text":"Declined"},
+    {"value": "cInitialEnrollment","text":"InitialEnrollment"},
+    {"value": "cOpenEnrollment","text":"OpenEnrollment"},
+    {"value": "cInitialEnrollment","text":"InitialEnrollment"},
+    {"value": "cAnnualEnrollment","text":"AnnualEnrollment"},
+    {"value": "cOngoingEnrollment","text":"OngoingEnrollment"}
+]
+    
+    
+
+
+    
+
+

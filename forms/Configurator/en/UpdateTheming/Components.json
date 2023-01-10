@@ -1,0 +1,236 @@
+{
+  "elements": [
+    [
+      {
+        "type": "color",
+        "name": "appBgColor",
+        "value": "",
+        "label": "App Bg Color",
+        "update": {
+          "reduxPath": "components.app.appBgColor",
+          "formikPath": "Components"
+        },
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "This field is required"
+          }
+        }
+      },
+
+      {
+        "type": "color",
+        "name": "appColor",
+        "label": "App Font Color",
+        "update": {
+          "reduxPath": "components.app.appColor",
+          "formikPath": "Components"
+        },
+        "placement": "themingElement",
+        "value": "",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "color",
+        "name": "headerBgColor",
+        "label": "Header Bg Color",
+        "update": {
+          "reduxPath": "components.header.headerBgColor",
+          "formikPath": "Components"
+        },
+        "placement": "themingElement",
+        "value": "",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+
+      {
+        "type": "color",
+        "name": "headerBorderColor",
+        "label": "Header Border Color",
+        "update": {
+          "reduxPath": "components.header.headerBorderColor",
+          "formikPath": "Components"
+        },
+        "placement": "themingElement",
+        "value": "",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "color",
+        "name": "headerFontColor",
+        "label": "Header Font Color",
+        "update": {
+          "reduxPath": "components.header.headerFontColor",
+          "formikPath": "Components"
+        },
+        "placement": "themingElement",
+        "value": "",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "color",
+        "name": "dropDownColor",
+        "label": "Header Dropdown Font Color",
+        "update": {
+          "reduxPath": "components.header.dropDownColor",
+          "formikPath": "Components"
+        },
+        "value": "",
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "color",
+        "name": "navigationBgColor",
+        "label": "NavigationBar Bg Color",
+        "value": "",
+        "update": {
+          "reduxPath": "components.navigationBar.navigationBgColor",
+          "formikPath": "Components"
+        },
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+
+      {
+        "type": "color",
+        "name": "navigationMainLinksFontColor",
+        "label": "NavigationBar Link Color",
+        "value": "",
+        "update": {
+          "reduxPath": "components.navigationBar.navigationMainLinksFontColor",
+          "formikPath": "Components"
+        },
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+
+      {
+        "type": "color",
+        "name": "footerBgColor",
+        "label": "Footer Bg Color",
+        "value": "",
+        "update": {
+          "reduxPath": "components.footer.footerBgColor",
+          "formikPath": "Components"
+        },
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+
+      {
+        "type": "color",
+        "name": "footerLinkFontColor",
+        "label": "Footer Link Font Color",
+        "value": "",
+        "update": {
+          "reduxPath": "components.footer.footerLinkFontColor",
+          "formikPath": "Components"
+        },
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "color",
+        "name": "copyrightBgColor",
+        "label": "Footer Copyright Bg Color",
+        "update": {
+          "reduxPath": "components.footer.copyrightBgColor",
+          "formikPath": "Components"
+        },
+        "value": "",
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "color",
+        "name": "footerCopyrightFontColor",
+        "label": "Footer Copyright Font Color",
+        "update": {
+          "reduxPath": "components.footer.footerCopyrightFontColor",
+          "formikPath": "Components"
+        },
+        "value": "",
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+
+      {
+        "type": "color",
+        "name": "linkColor",
+        "label": "Link Font Color",
+        "value": "",
+        "update": {
+          "reduxPath": "components.link.linkColor",
+          "formikPath": "Components"
+        },
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "color",
+        "name": "hoverColor",
+        "label": "Link Hover Font Color",
+        "value": "",
+        "update": {
+          "reduxPath": "components.link.hoverColor",
+          "formikPath": "Components"
+        },
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      }
+    ]
+  ]
+}

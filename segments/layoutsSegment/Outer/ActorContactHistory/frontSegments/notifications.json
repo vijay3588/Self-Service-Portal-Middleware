@@ -1,0 +1,5 @@
+{
+    "date": {"dataType": "date", "defaultValue": ""},
+    "name": {"dataType": "string", "defaultValue": ""},
+    "notificationCount": {"dataType": "number", "defaultValue": ""}
+}

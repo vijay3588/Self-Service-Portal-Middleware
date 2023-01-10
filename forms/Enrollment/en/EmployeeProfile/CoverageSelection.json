@@ -1,0 +1,1768 @@
+{
+  "modals": [
+    {
+      "modalName": "addBeneficiary",
+      "title": "Add a Beneficiary",
+      "modalDisplayBeneficiaryElement": "addBeneficiaryValidations",
+
+      "modalElements": [
+        [
+          [
+            {
+              "type": "radioButtonGroup",
+              "name": "beneficiaryOptions",
+              "rearSector": "options",
+              "radioClassWrapper": " custom-control-inline",
+              "label": "",
+              "labelClassName": "col-12 py-3",
+              "placement": "col-12 col-lg-8 col-md-4 col-sm-6",
+              "isRadio": true,
+              "value": "individual",
+              "checked":"individual",
+              "validations": {
+                "string": {
+                  "validationRequiredOnTrue": {
+                    "value": "addBeneficiaryValidations",
+                    "message": "Please choose the option"
+                  }
+                }
+              },
+              "inputs": [
+                { "label": "New Individual", "value": "individual" },
+                { "label": "New Trust/Group/Estate", "value": "trust" }
+              ]
+            }
+          ],
+          [
+            {
+              "type": "line",
+              "name": "optionsLieBreak",
+              "modal": true,
+
+              "label": "",
+
+              "value": "",
+              "hideLabel": true,
+              "outerDiv": true,
+
+              "placement": "col-md-12"
+            }
+          ],
+
+          [
+            {
+              "displayConfig": {
+                "field": "addBeneficiaryValidations",
+                "show": false
+              },
+              "modal": true,
+              "type": "panelSideHeader",
+              "label": "Fields marked with * are Mandatory",
+              "formMandatory": "Fields marked with * are Mandatory"
+            }
+          ],
+
+          [
+            {
+              "type": "panelSideHeader",
+              "outerDiv": false,
+              "name": "Personal Information",
+              "label": "Personal Information",
+              "placement": "col-md-6",
+              "formSideBigHeader": "Personal Information"
+            }
+          ],
+          [
+            {
+              "type": "panelSideHeader",
+              "outerDiv": false,
+              "name": "General Information",
+              "label": "General Information",
+              "placement": "col-md-6",
+              "formSideBigHeader": "General Information"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "name": "legalName",
+              "rearSector": "beneficiaryLegalName",
+              "label": "Legal Name",
+              "mapping": true,
+              "modal": true,
+              "editable": true,
+              "placeholder": "Enter Legal Name",
+              "header": false,
+              "value": "",
+              "classNameWrapper": "",
+              "placement": "col-md-4 py-0 py-md-3",
+              "displayConfig": {
+                "field": "addBeneficiaryValidations",
+                "show": false,
+                "renderElements": {
+                  "legalName": true
+                },
+
+                "valueUpdate": {
+                  "addBeneficiaryValidations": false
+                },
+                "validateField": ["legalName"]
+              },
+              "validations": {
+                "string": {
+                  "matches": {
+                    "regex": "^[a-zA-Z]+$",
+                    "message": "No special characters allowed"
+                  },
+                  "validationRequiredOnTrue": {
+                    "value": "addBeneficiaryValidations",
+                    "message": "Please enter your Legal Name"
+                  },
+                  "validationMatchOnTrue": {
+                    "value": "addBeneficiaryValidations",
+                    "message": "Legal Name is invalid",
+                    "regex": "^[a-zA-Z]+$"
+                  }
+                }
+              }
+            },
+            {
+              "type": "select",
+              "label": "Relationship",
+              "name": "legalRelationship",
+              "rearSector": "legalRelationship",
+              "value": "spouse",
+              "header": true,
+              "displayConfig": {
+                "field": "addBeneficiaryValidations",
+
+                "valueUpdate": {
+                  "addDependentValidations": false
+                },
+                "validateField": ["legalRelationship"]
+              },
+
+              "update": {
+                "reduxPath": "personalInformation.personalInformation.mediaType",
+                "formikPath": "EmployeeProfile"
+              },
+              "placement": "col-12 col-lg-4 col-md-4 col-sm-6 ",
+              "validations": {
+                "string": {
+                  "validationRequiredOnTrue": {
+                    "value": "addBeneficiaryValidations",
+                    "message": "Please choose the option"
+                  }
+                }
+              },
+              "options": [
+                { "value": "CH", "text": "Child" },
+                { "value": "SP", "text": "Spouse" },
+                { "value": "DP", "text": "Domestic Partner" },
+                { "value": "OT", "text": "Other" }
+              ]
+            }
+          ],
+
+          [
+            {
+              "type": "text",
+              "name": "beneficiaryFirstName",
+              "rearSector": "beneficiaryFirstName",
+              "label": "First Name",
+              "mapping": true,
+              "modal": true,
+              "editable": true,
+              "placeholder": "Enter First Name",
+              "header": false,
+              "value": "",
+              "classNameWrapper": "",
+              "placement": "col-md-4 py-0 py-md-3",
+              "displayConfig": {
+                "field": "addBeneficiaryValidations",
+
+                "valueUpdate": {
+                  "addBeneficiaryValidations": false
+                },
+                "validateField": ["beneficiaryFirstName"]
+              },
+              "validations": {
+                "string": {
+                  "matches": {
+                    "regex": "^[a-zA-Z]+$",
+                    "message": "No special characters allowed"
+                  },
+                  "validationRequiredOnTrue": {
+                    "value": "addBeneficiaryValidations",
+                    "message": "Please enter your First Name"
+                  },
+                  "validationMatchOnTrue": {
+                    "value": "addBeneficiaryValidations",
+                    "message": "First Name is invalid",
+                    "regex": "^[a-zA-Z]+$"
+                  }
+                }
+              }
+            },
+            {
+              "type": "text",
+              "name": "beneficiaryMiddleName",
+              "rearSector": "beneficiaryMiddleName",
+              "label": "Middle Name",
+              "header": false,
+              "modal": true,
+              "mapping": true,
+              "editable": true,
+              "placeholder": "Enter Middle Name",
+              "value": "",
+              "classNameWrapper": "",
+              "placement": "col-md-4 py-0 py-md-3",
+
+              "validations": {
+                "string": {
+                  "matches": {
+                    "regex": "^[a-zA-Z]+$",
+                    "message": "No special characters allowed"
+                  }
+                }
+              }
+            },
+            {
+              "type": "text",
+              "name": "beneficiaryLastName",
+              "rearSector": "beneficiaryLastName",
+              "label": "Last Name",
+              "mapping": true,
+              "modal": true,
+              "editable": true,
+              "placeholder": "Enter Last Name",
+              "header": false,
+              "value": "",
+              "classNameWrapper": "",
+              "placement": "col-md-4 py-0 py-md-3",
+              "displayConfig": {
+                "field": "addBeneficiaryValidations",
+
+                "valueUpdate": {
+                  "addBeneficiaryValidations": false
+                },
+                "validateField": ["beneficiaryLastName"]
+              },
+              "validations": {
+                "string": {
+                  "matches": {
+                    "regex": "^[a-zA-Z]+$",
+                    "message": "No special characters allowed"
+                  },
+                  "validationRequiredOnTrue": {
+                    "value": "addBeneficiaryValidations",
+                    "message": "Please enter your Last Name"
+                  },
+                  "validationMatchOnTrue": {
+                    "value": "addBeneficiaryValidations",
+                    "message": "Last Name is invalid",
+                    "regex": "^[a-zA-Z]+$"
+                  }
+                }
+              }
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "name": "SSN",
+              "rearSector": "xxx",
+              "label": "SSN",
+              "labelTitle": "SSN",
+              "placeholder": "Enter SSN",
+              "mapping": true,
+              "editable": true,
+              "modal": true,
+              "placement": "col-12 col-lg-4  col-md-4 col-sm-6",
+              "classNameWrapper": "",
+              "header": false,
+              "displayConfig": {
+                "field": "addBeneficiaryValidations",
+
+                "valueUpdate": {
+                  "addBeneficiaryValidations": false
+                },
+                "validateField": ["SSN"]
+              },
+              "validations": {
+                "string": {
+                  "validationRequiredOnTrue": {
+                    "value": "addBeneficiaryValidations",
+                    "message": "Please enter your SSN"
+                  },
+                  "min": { "limit": 9, "message": "SSN must have 9 digits" },
+                  "max": { "limit": 9, "message": "SSN must have 9 digits" },
+                  "matches": {
+                    "regex": "^[0-9]*$",
+                    "message": "SSN must have 9 digits"
+                  }
+                }
+              },
+              "containerClassName": "col-12",
+              "contentClassName": "col-12 pr-0"
+            },
+            {
+              "type": "select",
+              "label": "Relationship",
+              "name": "beneficiaryRelationship",
+              "rearSector": "beneficiaryRelationship",
+              "value": "spouse",
+              "header": true,
+              "displayConfig": {
+                "field": "addBeneficiaryValidations",
+
+                "valueUpdate": {
+                  "addBeneficiaryValidations": false
+                },
+                "validateField": ["beneficiaryRelationship"]
+              },
+
+              "update": {
+                "reduxPath": "personalInformation.personalInformation.mediaType",
+                "formikPath": "EmployeeProfile"
+              },
+              "placement": "col-12 col-lg-4 col-md-4 col-sm-6",
+              "validations": {
+                "string": {
+                  "validationRequiredOnTrue": {
+                    "value": "addBeneficiaryValidations",
+                    "message": "Please choose the option"
+                  }
+                }
+              },
+              "options": [
+                { "value": "CH", "text": "Child" },
+                { "value": "SP", "text": "Spouse" }
+              ]
+            },
+            {
+              "type": "radioButtonGroup",
+              "name": "beneficiaryGender",
+              "rearSector": "options",
+              "radioClassWrapper": " custom-control-inline",
+              "label": "Gender",
+              "labelClassName": "col-12 ",
+              "placement": "col-12 col-lg-4 col-md-4 col-sm-6",
+              "isRadio": true,
+
+              "displayConfig": {
+                "field": "addBeneficiaryValidations",
+                "show": false,
+
+                "valueUpdate": {
+                  "addBeneficiaryValidations": false
+                },
+                "validateField": ["beneficiaryGender"]
+              },
+
+              "validations": {
+                "string": {
+                  "validationRequiredOnTrue": {
+                    "value": "addBeneficiaryValidations",
+                    "message": "Please choose the option"
+                  }
+                }
+              },
+              "inputs": [
+                { "label": "Male", "value": "gMale" },
+                { "label": "Female", "value": "gFemale" },
+                { "label": "Undisclosed", "value": "undisclosed" }
+              ]
+            }
+          ],
+          [
+            {
+              "type": "date",
+              "name": "beneficiaryBirthDate",
+              "rearSector": "birthDate",
+              "label": "Date of Birth",
+              "classNameWrapper": " py-3",
+              "labelClassName": " py-3",
+              "placeholder": "Enter Date of Birth",
+              "placement": "col-12 col-lg-4 col-md-4 col-sm-3",
+              "displayConfig": {
+                "field": "addBeneficiaryValidations",
+
+                "valueUpdate": {
+                  "addBeneficiaryValidations": false
+                },
+                "validateField": ["beneficiaryBirthDate"]
+              },
+              "validations": {
+                "string": {
+                  "validationRequiredOnTrue": {
+                    "value": "alternateAddressValidations",
+                    "message": "Please enter your DOB"
+                  },
+                  "min": {
+                    "limit": 6,
+                    "message": "minlengeth is 6"
+                  }
+                }
+              }
+            }
+          ],
+          [
+            {
+              "type": "line",
+              "name": "personalInformationLineBreak",
+              "modal": true,
+
+              "label": "",
+
+              "value": "",
+              "hideLabel": true,
+              "outerDiv": true,
+
+              "placement": "col-md-12"
+            }
+          ],
+          [
+            {
+              "type": "panelSideHeader",
+              "outerDiv": false,
+              "name": "beneficiary's Address",
+              "label": "Address",
+              "placement": "col-md-6",
+              "formSideBigHeader": "Address",
+              "header": true
+            }
+          ],
+
+          [
+            {
+              "type": "radioButtonGroup",
+              "name": "mailingAddressOptions",
+              "rearSector": "options",
+              "radioClassWrapper": " custom-control-inline",
+              "label": "Do you wish to add a mailing address?",
+              "labelClassName": "col-12 py-3",
+              "placement": "col-12 col-lg-4 col-md-4 col-sm-6",
+              "isRadio": true,
+
+              "displayConfig": {
+                "field": "addBeneficiaryValidations",
+                "show": false,
+
+                "valueUpdate": {
+                  "addBeneficiaryValidations": false
+                },
+                "validateField": ["mailingAddressOptions"]
+              },
+
+              "validations": {
+                "string": {
+                  "validationRequiredOnTrue": {
+                    "value": "addBeneficiaryValidations",
+                    "message": "Please choose the option"
+                  }
+                }
+              },
+              "inputs": [
+                { "label": "Yes", "value": "yes" },
+                { "label": "No", "value": "no" }
+              ]
+            }
+          ],
+
+          [
+            {
+              "type": "line",
+              "name": "addressLineBreak",
+              "modal": true,
+
+              "label": "",
+
+              "value": "",
+              "hideLabel": true,
+              "outerDiv": true,
+
+              "placement": "col-md-12"
+            }
+          ],
+          [
+            {
+              "type": "checkbox",
+              "name": "liveInSameAddress",
+              "defaultValue": false,
+              "value": false,
+      
+              "valueType": "bool",
+              "populateValue": {
+                "formName": "EmployeeProfile",
+                "from": [
+                  "line1",
+                  "line2",
+                  "city",
+                  "state",
+                  "zipCode",
+                  "country"
+                ],
+                "to": [
+                  "CoverageSelection.beneficiaryAddressLine1",
+                  "CoverageSelection.beneficiaryAddressLine2",
+                  "CoverageSelection.beneficiaryCity",
+                  "CoverageSelection.beneficiaryState",
+                  "CoverageSelection.beneficiaryZipCode",
+                  "CoverageSelection.beneficiaryCountry"
+                ]
+              },
+
+              "label": "Live at same address as yours",
+
+              "placement": ""
+            }
+          ],
+          [ {
+
+            "displayConfig": {
+              "field": "liveInSameAddress",
+              "show": false,
+    
+              "renderElements": {
+                "primaryAddress": true
+              },
+              "valueUpdate": {
+                "liveInSameAddress": false
+              },
+              "validateField": ["primaryAddress"]
+            },
+            "name": "primaryAddress",
+            "type": "readOnly",
+            "header": false,
+            "hidden": false,
+            "dusabled": true,
+            "outerDiv": true,
+            "update": {
+              "reduxPath": [
+                "employeeInformation.PersonalInformation.personalInformation.line1",
+                "employeeInformation.PersonalInformation.personalInformation.line2",
+                "employeeInformation.PersonalInformation.personalInformation.city",
+                "employeeInformation.PersonalInformation.personalInformation.state",
+                "employeeInformation.PersonalInformation.personalInformation.zipCode",
+                "employeeInformation.PersonalInformation.personalInformation.country"
+              ],
+              "pascalCaseSkip": ["state", "country"],
+              "formikPath": "CoverageSelection.primaryAddress"
+            },
+            "mapping": true,
+            "label": "Primary Address",
+            "value": "1001, Timberlane Road, Denver, Colorado 80014",
+            "hideLabel": true,
+            "placement": "col-lg-12 col-md-12",
+            "containerClassName": "col-12 px-3",
+            "contentClassName": "col-9 col-md-12"
+            
+          
+          }],
+          [
+            {
+              "displayConfig": {
+                "field": "liveInSameAddress",
+                "show": true,
+      
+                "renderElements": {
+                  "MFAOptions": false
+                },
+                "valueUpdate": {
+                  "liveInSameAddress": false
+                },
+                "validateField": ["MFAOptions"]
+              },
+              "type": "text",
+              "name": "beneficiaryAddressLine1",
+              "rearSector": "addressLine1",
+              "label": "Address Line 1",
+              "placeholder": "Enter Address Line 1",
+              "mapping": true,
+              "modal": true,
+              "editable": true,
+              "update": {
+                "reduxPath": "personalInformation.personalInformation.alternateAddressLine1",
+                "formikPath": "EmployeeProfile"
+              },
+
+              "header": false,
+              "value": "",
+              "classNameWrapper": "",
+              "placement": "col-md-6 py-3",
+
+              "validations": {
+                "string": {
+                  "validationRequiredOnTrue": {
+                    "value": "addBeneficiaryValidations",
+                    "message": "Please enter your address"
+                  },
+                  "validationMatchOnTrue": {
+                    "value": "addBeneficiaryValidations",
+                    "message": "Address Line 1 is invalid",
+                    "regex": "^[a-zA-Z]+$"
+                  }
+                }
+              }
+            },
+            {
+              "displayConfig": {
+                "field": "liveInSameAddress",
+                "show": true,
+      
+                "renderElements": {
+                  "MFAOptions": false
+                },
+                "valueUpdate": {
+                  "liveInSameAddress": false
+                },
+                "validateField": ["MFAOptions"]
+              },
+              "type": "text",
+              "name": "beneficiaryAddressLine2",
+              "rearSector": "addressLine2",
+              "label": "Address Line 2",
+              "header": false,
+              "modal": true,
+              "placeholder": "Enter Address Line 2",
+              "mapping": true,
+              "editable": true,
+              "update": {
+                "reduxPath": "personalInformation.personalInformation.alternateAddressLine2",
+                "formikPath": "EmployeeProfile"
+              },
+              "value": "",
+              "classNameWrapper": "",
+              "placement": "col-md-6 py-3",
+
+              "validations": {
+                "string": {}
+              }
+            }
+          ],
+          [
+            {
+              "displayConfig": {
+                "field": "liveInSameAddress",
+                "show": true,
+      
+                "renderElements": {
+                  "MFAOptions": false
+                },
+                "valueUpdate": {
+                  "liveInSameAddress": false
+                },
+                "validateField": ["MFAOptions"]
+              },
+              "type": "text",
+              "name": "beneficiaryCity",
+              "rearSector": "city",
+              "label": "City",
+              "header": false,
+              "placeholder": "Enter City",
+              "value": "",
+              "placement": "col-12  col-12 col-lg-3 col-md-4 col-sm-4",
+              "modal": true,
+              "mapping": true,
+              "editable": true,
+              "update": {
+                "reduxPath": "personalInformation.personalInformation.alternateAddressCity",
+                "formikPath": "EmployeeProfile"
+              },
+              "validations": {
+                "string": {
+                  "matches": {
+                    "regex": "^[a-zA-Z]+$",
+                    "message": "Please enter your city"
+                  },
+                  "validationRequiredOnTrue": {
+                    "value": "addBeneficiaryValidations",
+                    "message": "Please enter your city"
+                  },
+                  "validationMatchOnTrue": {
+                    "value": "addBeneficiaryValidations",
+                    "message": "City is required",
+                    "regex": "^[a-zA-Z]+$"
+                  }
+                }
+              }
+            },
+            {
+              "displayConfig": {
+                "field": "liveInSameAddress",
+                "show": true,
+      
+                "renderElements": {
+                  "MFAOptions": false
+                },
+                "valueUpdate": {
+                  "liveInSameAddress": false
+                },
+                "validateField": ["MFAOptions"]
+              },
+              "type": "select",
+              "name": "beneficiaryState",
+              "rearSector": "state",
+              "placeholder": "Enter State",
+              "options": "",
+              "optionsname": "StateConstants",
+              "label": "State",
+              "modal": true,
+              "mapping": true,
+              "header": false,
+              "editable": true,
+              "value": " ",
+              "update": {
+                "reduxPath": "personalInformation.personalInformation.alternateAddressState",
+                "formikPath": "EmployeeProfile"
+              },
+              "placement": "col-12  col-12 col-lg-3 col-md-4 col-sm-4 ",
+              "validations": {
+                "string": {
+                  "validationRequiredOnTrue": {
+                    "value": "addBeneficiaryValidations",
+                    "message": "Please enter your State"
+                  },
+                  "validationMatchOnTrue": {
+                    "value": "addBeneficiaryValidations",
+                    "message": "State is required",
+                    "regex": "^[a-zA-Z]+$"
+                  }
+                }
+              }
+            },
+            {
+              "displayConfig": {
+                "field": "liveInSameAddress",
+                "show": true,
+      
+                "renderElements": {
+                  "MFAOptions": false
+                },
+                "valueUpdate": {
+                  "liveInSameAddress": false
+                },
+                "validateField": ["MFAOptions"]
+              },
+              "type": "text",
+              "name": "beneficiaryZipCode",
+              "rearSector": "zipcode",
+              "label": "Zip Code",
+              "placeholder": "Enter Zip Code",
+              "header": false,
+              "value": "",
+              "modal": true,
+              "mapping": true,
+              "editable": true,
+              "update": {
+                "reduxPath": "personalInformation.personalInformation.alternateAddressZipCode",
+                "formikPath": "EmployeeProfile"
+              },
+              "placement": "col-12  col-12 col-lg-3 col-md-4 col-sm-4",
+              "validations": {
+                "string": {
+                  "matches": {
+                    "regex": "^[0-9]*$",
+                    "message": "Zip Code must all be digits"
+                  },
+                  "validationRequiredOnTrue": {
+                    "value": "addBeneficiaryValidations",
+                    "message": "Please enter your Zip Code"
+                  },
+                  "validationMatchOnTrue": {
+                    "value": "addBeneficiaryValidations",
+                    "message": "Please enter a valid Zip Code",
+                    "regex": "^[0-9]*$"
+                  }
+                }
+              }
+            },
+            {
+              "displayConfig": {
+                "field": "liveInSameAddress",
+                "show": true,
+      
+                "renderElements": {
+                  "MFAOptions": false
+                },
+                "valueUpdate": {
+                  "liveInSameAddress": false
+                },
+                "validateField": ["MFAOptions"]
+              },
+              "type": "select",
+              "name": "beneficiaryCountry",
+              "rearSector": "country",
+              "label": "Country",
+              "placeholder": "Enter Country",
+              "header": false,
+              "modal": true,
+              "value": "USA",
+              "editable": true,
+              "mapping": true,
+              "update": {
+                "reduxPath": "personalInformation.personalInformation.alternateAddressCountry",
+                "formikPath": "EmployeeProfile"
+              },
+              "placement": "col-12  col-12 col-lg-3 col-md-4 col-sm-4",
+              "options": "",
+              "optionsname": "CountryConstants",
+              "validations": {
+                "string": {
+                  "validationRequiredOnTrue": {
+                    "value": "addBeneficiaryValidations",
+                    "message": "Please choose the option"
+                  },
+                  "validationMatchOnTrue": {
+                    "value": "addBeneficiaryValidations",
+                    "message": "Please choose the option",
+                    "regex": "^[a-zA-Z]+$"
+                  }
+                }
+              }
+            }
+          ],
+          [
+            {
+              "type": "line",
+              "name": "buttonLineBreak",
+              "modal": true,
+
+              "label": "",
+
+              "value": "",
+              "hideLabel": true,
+              "outerDiv": true,
+
+              "placement": "col-md-12"
+            }
+          ],
+
+          [
+            {
+              "type": "button",
+              "name": "cancel",
+              "rearSector": "cancel",
+              "modalPopUp": false,
+              "modalName": "addBeneficiary",
+              "label": "Cancel",
+              "placement": "d-flex justify-content-end col-md-2 offset-md-4 py-2",
+              "className": "w-100",
+
+              "header": false,
+              "outerDiv": true,
+              "validations": {}
+            },
+            {
+              "type": "button",
+              "name": "save",
+              "buttonType": "submit",
+              "hidden": false,
+
+              "modalName": "addBeneficiary",
+              "apiCallURL": ["/createOrUpdateInsured"],
+              "apiCallArray": true,
+              "rearSector": "save",
+              "modalPopUp": true,
+              "label": "Save",
+
+              "placement": " col-md-2 py-2",
+              "className": "w-100",
+
+              "header": false,
+              "outerDiv": true,
+              "validations": {}
+            },
+            {
+              "type": "checkbox",
+              "visibility": "hidden",
+
+              "hidden": true,
+              "name": "showButton",
+
+              "label": "show button",
+              "placement": "col-md-3 col-12"
+            }
+          ]
+        ]
+      ]
+    },
+    {
+      "modalName": "editBeneficiary",
+      "title": "Edit Beneficiary",
+
+      "modalDisplaybeneficiaryElement": "editBeneficiaryValidations",
+
+      "modalElements": [
+        [
+          [
+            {
+              "type": "radioButtonGroup",
+              "name": "editBeneficiaryOptions",
+              "rearSector": "options",
+              "radioClassWrapper": " custom-control-inline",
+              "label": "",
+              "labelClassName": "col-12 py-3",
+              "placement": "col-12 col-lg-8 col-md-4 col-sm-6",
+              "isRadio": true,
+
+              "displayConfig": {
+                "field": "editBeneficiaryValidations",
+                "show": false,
+
+                "valueUpdate": {
+                  "addBeneficiaryValidations": false
+                },
+                "validateField": ["editBeneficiaryOptions"]
+              },
+
+              "validations": {
+                "string": {
+                  "validationRequiredOnTrue": {
+                    "value": "editBeneficiaryValidations",
+                    "message": "Please choose the option"
+                  }
+                }
+              },
+              "inputs": [
+                { "label": "New Individual", "value": "individual" },
+                { "label": "New Trust/Group/Estate", "value": "trust" }
+              ]
+            }
+          ],
+          [
+            {
+              "displayConfig": {
+                "field": "editBeneficiaryValidations",
+                "show": false
+              },
+              "modal": true,
+              "type": "panelSideHeader",
+              "label": "Fields marked with * are Mandatory",
+              "formMandatory": "Fields marked with * are Mandatory"
+            }
+          ],
+          [
+            {
+              "type": "line",
+              "name": "editOptionsLieBreak",
+              "modal": true,
+
+              "label": "",
+
+              "value": "",
+              "hideLabel": true,
+              "outerDiv": true,
+
+              "placement": "col-md-12"
+            }
+          ],
+          [
+            {
+              "type": "panelSideHeader",
+              "outerDiv": false,
+              "name": "Personal Information",
+              "label": "Personal Information",
+              "placement": "col-md-6",
+              "formSideBigHeader": "Personal Information",
+              "header": true
+            }
+          ],
+
+          [
+            {
+              "type": "text",
+              "name": "editLegalName",
+              "rearSector": "beneficiaryLegalName",
+              "label": "Legal Name",
+              "mapping": true,
+              "modal": true,
+              "editable": true,
+              "placeholder": "Enter Legal Name",
+              "header": false,
+              "value": "",
+              "classNameWrapper": "",
+              "placement": "col-md-4 py-0 py-md-3",
+              "displayConfig": {
+                "field": "editBeneficiaryValidations",
+                "show": false,
+                "renderElements": {
+                  "legalName": true
+                },
+
+                "valueUpdate": {
+                  "addBeneficiaryValidations": false
+                },
+                "validateField": ["editLegalName"]
+              },
+              "validations": {
+                "string": {
+                  "matches": {
+                    "regex": "^[a-zA-Z]+$",
+                    "message": "No special characters allowed"
+                  },
+                  "validationRequiredOnTrue": {
+                    "value": "addBeneficiaryValidations",
+                    "message": "Please enter your Legal Name"
+                  },
+                  "validationMatchOnTrue": {
+                    "value": "addBeneficiaryValidations",
+                    "message": "Legal Name is invalid",
+                    "regex": "^[a-zA-Z]+$"
+                  }
+                }
+              }
+            },
+            {
+              "type": "select",
+              "label": "Relationship",
+              "name": "editLegalRelationship",
+              "rearSector": "legalRelationship",
+              "value": "spouse",
+              "header": true,
+              "displayConfig": {
+                "field": "editBeneficiaryValidations",
+
+                "valueUpdate": {
+                  "addDependentValidations": false
+                },
+                "validateField": ["editLegalRelationship"]
+              },
+
+              "update": {
+                "reduxPath": "personalInformation.personalInformation.mediaType",
+                "formikPath": "EmployeeProfile"
+              },
+              "placement": "col-12 col-lg-4 col-md-4 col-sm-6 ",
+              "validations": {
+                "string": {
+                  "validationRequiredOnTrue": {
+                    "value": "addBeneficiaryValidations",
+                    "message": "Please choose the option"
+                  }
+                }
+              },
+              "options": [
+                { "value": "CH", "text": "Child" },
+                { "value": "SP", "text": "Spouse" },
+                { "value": "DP", "text": "Domestic Partner" },
+                { "value": "OT", "text": "Other" }
+              ]
+            }
+          ],
+
+          [
+            {
+              "type": "text",
+              "name": "editbeneficiaryFirstName",
+              "rearSector": "editbeneficiaryFirstName",
+              "label": "First Name",
+              "mapping": true,
+              "modal": true,
+              "editable": true,
+              "placeholder": "Enter First Name",
+              "header": false,
+              "value": "",
+              "classNameWrapper": "",
+              "placement": "col-md-4 py-0 py-md-3",
+              "displayConfig": {
+                "field": "editBeneficiaryValidations",
+                "valueUpdate": {
+                  "editBeneficiaryValidations": false
+                },
+                "validateField": ["editbeneficiaryFirstName"]
+              },
+              "validations": {
+                "string": {
+                  "matches": {
+                    "regex": "^[a-zA-Z]+$",
+                    "message": "No special characters allowed"
+                  },
+                  "validationRequiredOnTrue": {
+                    "value": "editBeneficiaryValidations",
+                    "message": "Please enter your First Name"
+                  },
+                  "validationMatchOnTrue": {
+                    "value": "editBeneficiaryValidations",
+                    "message": "First Name is invalid",
+                    "regex": "^[a-zA-Z]+$"
+                  }
+                }
+              }
+            },
+            {
+              "type": "text",
+              "name": "EditbeneficiaryMiddleName",
+              "rearSector": "EditbeneficiaryMiddleName",
+              "label": "Middle Name",
+              "header": false,
+              "modal": true,
+              "mapping": true,
+              "editable": true,
+              "placeholder": "Enter Middle Name",
+              "value": "",
+              "classNameWrapper": "",
+              "placement": "col-md-4 py-0 py-md-3",
+
+              "validations": {
+                "string": {
+                  "matches": {
+                    "regex": "^[a-zA-Z]+$",
+                    "message": "No special characters allowed"
+                  }
+                }
+              }
+            },
+            {
+              "type": "text",
+              "name": "editbeneficiaryLastName",
+              "rearSector": "editbeneficiaryLastName",
+              "label": "Last Name",
+              "mapping": true,
+              "modal": true,
+              "editable": true,
+              "placeholder": "Enter Last Name",
+              "header": false,
+              "value": "",
+              "classNameWrapper": "",
+              "placement": "col-md-4 py-0 py-md-3",
+              "displayConfig": {
+                "field": "editBeneficiaryValidations",
+                "valueUpdate": {
+                  "editBeneficiaryValidations": false
+                },
+                "validateField": ["editbeneficiaryLastName"]
+              },
+              "validations": {
+                "string": {
+                  "matches": {
+                    "regex": "^[a-zA-Z]+$",
+                    "message": "No special characters allowed"
+                  },
+                  "validationRequiredOnTrue": {
+                    "value": "editBeneficiaryValidations",
+                    "message": "Please enter your Last Name"
+                  },
+                  "validationMatchOnTrue": {
+                    "value": "editBeneficiaryValidations",
+                    "message": "Last Name is invalid",
+                    "regex": "^[a-zA-Z]+$"
+                  }
+                }
+              }
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "name": "editSSN",
+              "rearSector": "xxx",
+              "label": "SSN",
+              "labelTitle": "SSN",
+              "placeholder": "Enter SSN",
+              "mapping": true,
+              "modal": true,
+              "editable": true,
+
+              "placement": "col-12 col-lg-4  col-md-4 col-sm-6",
+              "classNameWrapper": "",
+              "header": false,
+              "displayConfig": {
+                "field": "editBeneficiaryValidations",
+                "valueUpdate": {
+                  "editBeneficiaryValidations": false
+                },
+                "validateField": ["editSSN"]
+              },
+              "validations": {
+                "string": {
+                  "validationRequiredOnTrue": {
+                    "value": "editBeneficiaryValidations",
+                    "message": "Please enter your SSN"
+                  },
+                  "min": { "limit": 9, "message": "SSN must have 9 digits" },
+                  "max": { "limit": 9, "message": "SSN must have 9 digits" },
+                  "matches": {
+                    "regex": "^[0-9]*$",
+                    "message": "SSN must have 9 digits"
+                  }
+                }
+              },
+              "containerClassName": "col-12",
+              "contentClassName": "col-12 pr-0"
+            },
+            {
+              "type": "select",
+              "label": "Relationship with the beneficiary",
+              "name": "editbeneficiaryRelationship",
+              "rearSector": "editbeneficiaryRelationship",
+              "value": "spouse",
+              "header": true,
+              "update": {
+                "reduxPath": "personalInformation.personalInformation.mediaType",
+                "formikPath": "EmployeeProfile"
+              },
+              "placement": "col-12 col-lg-4 col-md-4 col-sm-6 ",
+              "displayConfig": {
+                "field": "editBeneficiaryValidations",
+                "valueUpdate": {
+                  "editBeneficiaryValidations": false
+                },
+                "validateField": ["editbeneficiaryRelationship"]
+              },
+              "validations": {
+                "string": {
+                  "validationRequiredOnTrue": {
+                    "value": "alternateAddressValidations",
+                    "message": "Please choose the option"
+                  }
+                }
+              },
+              "options": [
+                { "value": "CH", "text": "Child" },
+                { "value": "SP", "text": "Spouse" }
+              ]
+            },
+            {
+              "type": "radioButtonGroup",
+              "name": "editbeneficiaryGender",
+              "rearSector": "options",
+              "radioClassWrapper": " custom-control-inline",
+              "label": "Gender",
+              "labelClassName": "col-12 ",
+              "placement": "col-12 col-lg-4 col-md-4 col-sm-6",
+              "isRadio": true,
+              "displayConfig": {
+                "field": "editBeneficiaryValidations",
+                "valueUpdate": {
+                  "editBeneficiaryValidations": false
+                },
+                "validateField": ["editbeneficiaryGender"]
+              },
+
+              "validations": {
+                "string": {
+                  "validationRequiredOnTrue": {
+                    "value": "editBeneficiaryValidations",
+                    "message": "Please choose the option"
+                  }
+                }
+              },
+              "inputs": [
+                { "label": "Male", "value": "gMale" },
+                { "label": "Female", "value": "gFemale" },
+                { "label": "Undisclosed", "value": "undisclosed" }
+              ]
+            }
+          ],
+          [
+            {
+              "type": "date",
+              "name": "editBeneficiaryBirthDate",
+              "rearSector": "birthDate",
+              "label": "Date of Birth",
+              "classNameWrapper": " py-3",
+              "placeholder": "Enter DOB",
+              "placement": "col-12 col-lg-4 col-md-4 col-sm-3",
+              "displayConfig": {
+                "field": "editBeneficiaryValidations",
+                "valueUpdate": {
+                  "editBeneficiaryValidations": false
+                },
+                "validateField": ["editBeneficiaryBirthDate"]
+              },
+              "validations": {
+                "string": {
+                  "validationRequiredOnTrue": {
+                    "value": "alternateAddressValidations",
+                    "message": "Please enter your DOB"
+                  },
+                  "min": {
+                    "limit": 6,
+                    "message": "minlengeth is 6"
+                  }
+                }
+              }
+            }
+          ],
+          [
+            {
+              "type": "line",
+              "name": "editPersonalInformationLineBreak",
+              "modal": true,
+
+              "label": "",
+
+              "value": "",
+              "hideLabel": true,
+              "outerDiv": true,
+
+              "placement": "col-md-12"
+            }
+          ],
+          [
+            {
+              "type": "readOnly",
+              "name": "edithorizontalBar",
+
+              "horizontalBar": true,
+              "hidden": true,
+              "value": "",
+              "hideLabel": true,
+              "outerDiv": true,
+
+              "placement": "col-md-12"
+            }
+          ],
+          [
+            {
+              "type": "panelSideHeader",
+              "outerDiv": false,
+              "name": "editbeneficiary's Address",
+              "label": "Beneficiary's Address",
+              "placement": "col-md-6 py-3",
+              "formSideBigHeader": "Beneficiary's Address",
+              "header": true
+            }
+          ],
+          [
+            {
+              "type": "radioButtonGroup",
+              "name": "editMailingAddressOptions",
+              "rearSector": "options",
+              "radioClassWrapper": " custom-control-inline",
+              "label": "Do you wish to add a mailing address?",
+              "labelClassName": "col-12",
+              "placement": "col-12 col-lg-4 col-md-4 col-sm-6",
+              "isRadio": true,
+
+              "displayConfig": {
+                "field": "editBeneficiaryValidations",
+                "show": false,
+
+                "valueUpdate": {
+                  "addBeneficiaryValidations": false
+                },
+                "validateField": ["editMailingAddressOptions"]
+              },
+
+              "validations": {
+                "string": {
+                  "validationRequiredOnTrue": {
+                    "value": "editBeneficiaryValidations",
+                    "message": "Please choose the option"
+                  }
+                }
+              },
+              "inputs": [
+                { "label": "Yes", "value": "yes" },
+                { "label": "No", "value": "no" }
+              ]
+            }
+          ],
+
+          [
+            {
+              "type": "line",
+              "name": "editAddressLineBreak",
+              "modal": true,
+
+              "label": "",
+
+              "value": "",
+              "hideLabel": true,
+              "outerDiv": true,
+
+              "placement": "col-md-12"
+            }
+          ],
+          [
+            {
+              "type": "checkbox",
+              "name": "editLiveInSameAddress",
+
+              "populateValue": {
+                "formName": "EmployeeProfile",
+                "from": [
+                  "line1",
+                  "line2",
+                  "city",
+                  "state",
+                  "zipCode",
+                  "country"
+                ],
+                "to": [
+                  "CoverageSelection.editBeneficiaryAddressLine1",
+                  "CoverageSelection.editBeneficiaryAddressLine2",
+                  "CoverageSelection.editBeneficiaryCity",
+                  "CoverageSelection.editBeneficiaryState",
+                  "CoverageSelection.editBeneficiaryZipCode",
+                  "CoverageSelection.editBeneficiaryCountry"
+                ]
+              },
+
+              "label": "Live at same address as yours",
+
+              "placement": ""
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "name": "editBeneficiaryAddressLine1",
+              "rearSector": "addressLine1",
+              "label": "Address Line 1",
+              "placeholder": "Enter Address Line 1",
+              "mapping": true,
+              "modal": true,
+              "editable": true,
+              "update": {
+                "reduxPath": "personalInformation.personalInformation.alternateAddressLine1",
+                "formikPath": "EmployeeProfile"
+              },
+
+              "header": false,
+              "value": "",
+              "classNameWrapper": "",
+              "placement": "col-md-6 py-3",
+
+              "validations": {
+                "string": {
+                  "validationRequiredOnTrue": {
+                    "value": "editBeneficiaryValidations",
+                    "message": "Please enter your address"
+                  },
+                  "validationMatchOnTrue": {
+                    "value": "editBeneficiaryValidations",
+                    "message": "Address Line 1 is invalid",
+                    "regex": "^[a-zA-Z]+$"
+                  }
+                }
+              }
+            },
+            {
+              "type": "text",
+              "name": "editBeneficiaryAddressLine2",
+              "rearSector": "addressLine2",
+              "label": "Address Line 2",
+              "header": false,
+              "modal": true,
+              "placeholder": "Enter Address Line 2",
+              "mapping": true,
+              "editable": true,
+              "update": {
+                "reduxPath": "personalInformation.personalInformation.alternateAddressLine2",
+                "formikPath": "EmployeeProfile"
+              },
+              "value": "",
+              "classNameWrapper": "",
+              "placement": "col-md-6 py-3",
+
+              "validations": {
+                "string": {}
+              }
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "name": "editBeneficiaryCity",
+              "rearSector": "city",
+              "label": "City",
+              "header": false,
+              "placeholder": "Enter City",
+              "value": "",
+              "placement": "col-12  col-12 col-lg-3 col-md-4 col-sm-4",
+              "modal": true,
+              "mapping": true,
+              "editable": true,
+              "update": {
+                "reduxPath": "personalInformation.personalInformation.alternateAddressCity",
+                "formikPath": "EmployeeProfile"
+              },
+              "validations": {
+                "string": {
+                  "matches": {
+                    "regex": "^[a-zA-Z]+$",
+                    "message": "No special characters allowed"
+                  },
+                  "validationRequiredOnTrue": {
+                    "value": "editBeneficiaryValidations",
+                    "message": "Please enter your city"
+                  },
+                  "validationMatchOnTrue": {
+                    "value": "editBeneficiaryValidations",
+                    "message": "City is required",
+                    "regex": "^[a-zA-Z]+$"
+                  }
+                }
+              }
+            },
+            {
+              "type": "select",
+              "name": "editBeneficiaryState",
+              "rearSector": "state",
+              "placeholder": "Enter State",
+              "options": "",
+              "optionsname": "StateConstants",
+              "label": "State",
+              "modal": true,
+              "mapping": true,
+              "header": false,
+              "editable": true,
+              "value": " ",
+              "update": {
+                "reduxPath": "personalInformation.personalInformation.alternateAddressState",
+                "formikPath": "EmployeeProfile"
+              },
+              "placement": "col-12  col-12 col-lg-3 col-md-4 col-sm-4 ",
+              "validations": {
+                "string": {
+                  "validationRequiredOnTrue": {
+                    "value": "editBeneficiaryValidations",
+                    "message": "Please enter your State"
+                  },
+                  "validationMatchOnTrue": {
+                    "value": "editBeneficiaryValidations",
+                    "message": "State is required",
+                    "regex": "^[a-zA-Z]+$"
+                  }
+                }
+              }
+            },
+            {
+              "type": "text",
+              "name": "editBeneficiaryZipCode",
+              "rearSector": "zipcode",
+              "label": "Zip Code",
+              "placeholder": "Enter Zip Code",
+              "header": false,
+              "value": "",
+              "modal": true,
+              "mapping": true,
+              "editable": true,
+              "update": {
+                "reduxPath": "personalInformation.personalInformation.alternateAddressZipCode",
+                "formikPath": "EmployeeProfile"
+              },
+              "placement": "col-12  col-12 col-lg-3 col-md-4 col-sm-4 ",
+              "validations": {
+                "string": {
+                  "matches": {
+                    "regex": "^[0-9]*$",
+                    "message": "Zip Code must all be digits"
+                  },
+                  "validationRequiredOnTrue": {
+                    "value": "editBeneficiaryValidations",
+                    "message": "Please enter your Zip Code"
+                  },
+                  "validationMatchOnTrue": {
+                    "value": "editBeneficiaryValidations",
+                    "message": "Please enter a valid Zip Code",
+                    "regex": "^[0-9]*$"
+                  }
+                }
+              }
+            },
+            {
+              "type": "select",
+              "name": "editBeneficiaryCountry",
+              "rearSector": "country",
+              "label": "Country",
+              "placeholder": "Enter Country",
+              "header": false,
+              "modal": true,
+              "value": "USA",
+              "editable": true,
+              "mapping": true,
+              "update": {
+                "reduxPath": "personalInformation.personalInformation.alternateAddressCountry",
+                "formikPath": "EmployeeProfile"
+              },
+              "placement": "col-12  col-12 col-lg-3 col-md-4 col-sm-4",
+              "options": "",
+              "optionsname": "CountryConstants",
+              "validations": {
+                "string": {
+                  "validationRequiredOnTrue": {
+                    "value": "editBeneficiaryValidations",
+                    "message": "Please choose the option"
+                  },
+                  "validationMatchOnTrue": {
+                    "value": "editBeneficiaryValidations",
+                    "message": "Country is required",
+                    "regex": "^[a-zA-Z]+$"
+                  }
+                }
+              }
+            }
+          ],
+          [
+            {
+              "type": "line",
+              "name": "editButtonLineBreak",
+              "modal": true,
+
+              "label": "",
+
+              "value": "",
+              "hideLabel": true,
+              "outerDiv": true,
+
+              "placement": "col-md-12"
+            }
+          ],
+
+          [
+            {
+              "type": "button",
+              "name": "editCancel",
+              "rearSector": "cancel",
+              "modalPopUp": false,
+              "modalName": "editBeneficiary",
+              "label": "Cancel",
+              "placement": "d-flex justify-content-end col-md-2 offset-md-4 py-2",
+              "className": "w-100",
+              "header": false,
+              "outerDiv": true,
+              "validations": {}
+            },
+            {
+              "type": "button",
+              "name": "editSave",
+              "buttonType": "submit",
+              "hidden": false,
+
+              "modalName": "editBeneficiary",
+              "apiCallURL": ["/createOrUpdateInsured"],
+              "apiCallArray": true,
+              "rearSector": "save",
+              "modalPopUp": true,
+              "label": "Save",
+
+              "placement": " col-md-2 py-2",
+              "className": "w-100",
+
+              "header": false,
+              "outerDiv": true,
+              "validations": {}
+            },
+            {
+              "type": "checkbox",
+              "visibility": "hidden",
+
+              "hidden": true,
+              "name": "showEditButton",
+
+              "label": "show button",
+              "placement": "col-md-3 col-12"
+            }
+          ]
+        ]
+      ]
+    }
+  ],
+  "sectionPanels": {
+    "panel": [0, 1],
+    "sections": [
+      {
+        "noGroupStart": 0,
+        "noGroupEnd": 1
+      }
+    ]
+  },
+  "elements": [
+    [
+      {
+        "type": "button",
+        "rounded": "rounded",
+        "outline": "outline",
+        "icon": ["fas", "plus"],
+        "name": "addBeneficiary",
+        "rearSector": "addBeneficiary",
+
+        "label": "Add Beneficiary",
+        "modalPopUp": true,
+        "modalName": "addBeneficiary",
+
+        "showElement": true,
+        "placement": "col-lg-12 py-3",
+        "header": false,
+        "outerDiv": true,
+
+        "displayConfig": {
+          "field": "addBeneficiaryValidations",
+
+          "valueUpdate": {
+            "addBeneficiaryValidations": true
+          }
+        }
+      },
+      {
+        "type": "checkbox",
+        "name": "addBeneficiaryValidations",
+
+        "rearSector": "",
+        "label": "Verify Add Beneficiary",
+        "hidden": true,
+        "placement": ""
+      },
+      {
+        "type": "checkbox",
+        "name": "editBeneficiaryValidations",
+
+        "rearSector": "",
+        "label": "Verify edit Beneficiary",
+        "hidden": true,
+        "placement": ""
+      }
+    ],
+
+    [
+      {
+        "type": "button",
+        "rounded": "rounded",
+        "outline": "outline",
+        "icon": ["fas", "plus"],
+        "name": "editBeneficiary",
+        "rearSector": "editBeneficiary",
+
+        "label": "Edit Beneficiary",
+        "modalPopUp": true,
+        "modalName": "editBeneficiary",
+
+        "showElement": true,
+        "placement": "col-lg-12 py-3",
+        "header": false,
+        "outerDiv": true,
+
+        "displayConfig": {
+          "field": "editBeneficiaryValidations",
+
+          "valueUpdate": {
+            "addBeneficiaryValidations": true
+          }
+        }
+      },
+      {
+        "type": "checkbox",
+        "name": "editBeneficiaryValidations",
+
+        "rearSector": "",
+        "label": "Verify Add Beneficiary",
+        "hidden": true,
+        "placement": ""
+      },
+      {
+        "type": "checkbox",
+        "name": "editBeneficiaryValidations",
+
+        "rearSector": "",
+        "label": "Verify edit Beneficiary",
+        "hidden": true,
+        "placement": ""
+      }
+    ]
+  ]
+}

@@ -1,0 +1,336 @@
+{
+  "elements": [
+    [
+      {
+        "type": "panelSideHeader",
+        "outerDiv": false,
+        "name": "Employment Information",
+        "label": "Employment Information",
+        "placement": "col-md-6 pt-3",
+        "formSideBigHeader": "Employment Information",
+        "header": true
+      }
+    ],
+
+    [
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "DataField",
+        "rearSector": "shortName",
+        "label": "Data Field",
+        "mapping": true,
+        "labelTitle": "Data Field",
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "Required Field",
+        "rearSector": "shortName",
+        "label": "Required Field",
+        "mapping": true,
+        "labelTitle": "Required Field",
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "Toggle Field On/Off",
+        "rearSector": "shortName",
+        "label": "Toggle Field On/Off",
+        "mapping": true,
+        "labelTitle": "Toggle Field On/Off",
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "Editable Label",
+        "rearSector": "shortName",
+        "label": "Editable Label",
+        "mapping": true,
+        "labelTitle": "Editable Label",
+
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "Editable Field",
+        "rearSector": "shortName",
+        "label": "Editable Field",
+        "mapping": true,
+        "labelTitle": "Editable Field",
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      }
+    ],
+
+    [
+      {
+        "type": "readOnly",
+        "name": "salary",
+        "label": "Salary",
+        "labelTitle": "Salary",
+        "disabled": true,
+        "mapping": true,
+        "header": false,
+
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6",
+        "validations": {
+          "string": {
+            "matches": {
+              "regex": "^[a-zA-Z]+$",
+              "message": "No special characters allowed"
+            }
+          }
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "checkbox",
+        "name": "salaryRequired",
+        "label": "",
+        "placement": "col-md-5 col-lg-2 col-12"
+      },
+      {
+        "type": "checkbox",
+        "name": "salaryToggle",
+        "label": "",
+        "placement": "col-md-5 col-lg-2 col-12"
+      },
+      {
+        "type": "checkbox",
+        "name": "salaryEditable",
+        "label": "",
+        "placement": "col-md-5 col-lg-2  col-12"
+      },
+      {
+        "type": "checkbox",
+        "name": "salaryChangedByEmp",
+        "label": "",
+        "placement": "col-md-5 col-lg-2 col-12"
+      }
+    ],
+    [
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "payFrequency",
+        "rearSector": "payFrequency",
+        "label": "Pay Frequency",
+        "mapping": true,
+        "labelTitle": "Pay Frequency",
+
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "checkbox",
+        "name": "payFrequencyRequired",
+        "label": "",
+        "placement": "col-md-5 col-lg-2 col-12"
+      },
+      {
+        "type": "checkbox",
+        "name": "payFrequencyToggle",
+        "label": "",
+        "placement": "col-md-5 col-lg-2 col-12"
+      },
+      {
+        "type": "checkbox",
+        "name": "payFrequencyEditable",
+        "label": "",
+        "placement": "col-md-5 col-lg-2  col-12"
+      },
+      {
+        "type": "checkbox",
+        "name": "payFrequencyChangedByEmp",
+        "label": "",
+        "placement": "col-md-5 col-lg-2 col-12"
+      }
+    ],
+    [
+      {
+        "type": "readOnly",
+        "disabled": true,
+
+        "name": "divisioncode",
+
+        "rearSector": "divisioncode",
+        "label": "Division Code",
+        "mapping": true,
+        "labelTitle": "Division Code",
+
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "checkbox",
+        "name": "divisionCodeRequired",
+        "label": "",
+        "placement": "col-md-5 col-lg-2 col-12"
+      },
+      {
+        "type": "checkbox",
+        "name": "divisionCodeToggle",
+        "label": "",
+        "placement": "col-md-5 col-lg-2 col-12"
+      },
+      {
+        "type": "checkbox",
+        "name": "divisionCodeEditable",
+        "label": "",
+        "placement": "col-md-5 col-lg-2  col-12"
+      },
+      {
+        "type": "checkbox",
+        "name": "divisionCodeChangedByEmp",
+        "label": "",
+        "placement": "col-md-5 col-lg-2 col-12"
+      }
+    ],
+    [
+      {
+        "type": "readOnly",
+        "disabled": true,
+
+        "name": "workLocation",
+
+        "rearSector": "workLocation",
+        "label": "Work Location",
+        "mapping": true,
+        "labelTitle": "Work Location",
+
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "checkbox",
+        "name": "workLocationRequired",
+        "label": "",
+        "placement": "col-md-5 col-lg-2 col-12"
+      },
+
+      {
+        "type": "checkbox",
+        "name": "workLocationToggle",
+        "label": "",
+        "placement": "col-md-5 col-lg-2 col-12"
+      },
+      {
+        "type": "checkbox",
+        "name": "workLocationEditable",
+        "label": "",
+        "placement": "col-md-5 col-lg-2  col-12"
+      },
+      {
+        "type": "checkbox",
+        "name": "workLocationChangedByEmp",
+        "label": "",
+        "placement": "col-md-5 col-lg-2 col-12"
+      }
+    ],
+    [
+      {
+        "type": "readOnly",
+        "disabled": true,
+
+        "name": "employmentStatus",
+
+        "rearSector": "employmentStatus",
+        "label": "Employment Status",
+        "mapping": true,
+        "labelTitle": "Employment Status",
+
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "checkbox",
+        "name": "employmentStatusRequired",
+        "label": "",
+        "placement": "col-md-5 col-lg-2 col-12"
+      },
+      {
+        "type": "checkbox",
+        "name": "employmentStatusToggle",
+        "label": "",
+        "placement": "col-md-5 col-lg-2 col-12"
+      },
+      {
+        "type": "checkbox",
+        "name": "employmentStatusEditable",
+        "label": "",
+        "placement": "col-md-5 col-lg-2  col-12"
+      },
+      {
+        "type": "checkbox",
+        "name": "employmentStatusChangedByEmp",
+        "label": "",
+        "placement": "col-md-5 col-lg-2 col-12"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,38 @@
+{
+    "className": {
+        "dataType": "string",
+        "defaultValue": "aSPLI_GetBills_In"
+    },
+    "clientIds": {
+        "dataType": "object",
+        "name": "clientIds"
+    },
+    "billBuid": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "contractNumber": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "billNumber": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "billingDateFrom": {
+        "dataType": "string",
+        "defaultValue": null
+    },
+    "billingDateTo": {
+        "dataType": "string",
+        "defaultValue": null
+    },
+    "dueDateFrom": {
+        "dataType": "string",
+        "defaultValue": null
+    },
+    "dueDateTo": {
+        "dataType": "string",
+        "defaultValue": null
+    }
+}

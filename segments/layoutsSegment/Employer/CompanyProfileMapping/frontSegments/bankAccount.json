@@ -1,0 +1,14 @@
+{
+    "bankName": { "dataType": "string", "defaultValue": ""},
+    "accountType": { "dataType": "string", "defaultValue": ""},
+    "accountNumber": { "dataType": "string", "defaultValue": ""},
+    "effectiveDate": { "dataType": "string", "defaultValue": ""},
+    "expirationDate": { "dataType": "string", "defaultValue": ""},
+    "routingNumber": { "dataType": "string", "defaultValue": ""},
+    "lineOne": { "dataType": "string", "defaultValue": ""},
+    "lineTwo": { "dataType": "string", "defaultValue": ""},
+    "city": { "dataType": "string", "defaultValue": ""},
+    "state": { "dataType": "string", "defaultValue": ""},
+    "zipCode": { "dataType": "string", "defaultValue": ""},
+    "country": { "dataType": "string", "defaultValue": ""}
+}

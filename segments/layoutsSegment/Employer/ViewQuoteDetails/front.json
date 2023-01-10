@@ -1,0 +1,4 @@
+{
+    "prodAndCoverage": {"dataType": "object", "name": "prodAndCoverage" },
+    "billDescInformation": {"dataType": "object", "name": "billDescInformation" }
+  }

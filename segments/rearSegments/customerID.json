@@ -1,0 +1,18 @@
+{
+    "buid": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "internalClientId": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "externalClientIdentifier": {
+        "dataType": "object",
+        "name": "externalClientIdentifier"
+    },
+    "clientFullName": {
+        "dataType": "string",
+        "defaultValue": ""
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "self": {
+        "dataType": "object",
+        "name": "getClaimSelf"
+    },
+    "claimIdentifier": {
+        "dataType": "object",
+        "name": "aSPLIC_ClaimIdentifier"
+    }
+}

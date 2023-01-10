@@ -1,0 +1,10 @@
+{
+  "self": {
+      "dataType": "object",
+      "name": "aSLI_Subscribe_GBPContract"
+  },
+  "input": {
+      "dataType": "object",
+      "name": "inputQuote"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "paymentChannel": {"dataType": "string", "defaultValue": ""},
+  "invoiceDate": {"dataType": "string", "defaultValue": ""},
+  "payer": {"dataType": "string", "defaultValue": ""},
+  "payerName": {"dataType": "string", "defaultValue": ""},
+  "accountOwner": {"dataType": "string", "defaultValue": ""},
+  "billingAddress": {"dataType": "string", "defaultValue": ""},
+  "invoicingFrequency": {"dataType": "string", "defaultValue": ""},
+  "invoicingDate": {"dataType": "string", "defaultValue": ""},
+  "invoicedAmount": {"dataType": "number", "defaultValue": 0, 
+    "dataConfig":{"configType":"arrayAddition", "dataParentSegment":"bills"}},
+  "pastDueAmount": {"dataType": "number", "defaultValue": 0, 
+    "dataConfig":{"configType":"arrayAddition", "dataParentSegment":"pastDueBills"}},
+  "currentAmountDue": {"dataType": "number", "defaultValue": 0, 
+    "dataConfig":{"configType":"arrayAddition", "dataParentSegment":"payments"}},
+  "invoiceNumber": {"dataType": "string", "defaultValue": ""}
+}

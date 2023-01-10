@@ -1,0 +1,188 @@
+[
+    {
+        "frontSegment": "lifeContract",
+        "dataParentSegment": "",
+        "dataSegmentType": "object",
+        "defaultSectorMapping": [
+            {
+                "frontSector": "internalPolicyId",
+                "rearSector": "internalPolicyId",
+                "rearDataSegmentPath": "contract.internalPolicyIdentifier",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "effectiveDate",
+                "rearSector": "effectiveDate",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "signatureDate",
+                "rearSector": "signatureDate",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "terminationDate",
+                "rearSector": "terminationDate",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "status",
+                "rearSector": "status",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "ownerLastName",
+                "rearSector": "ownerLastName",
+                "rearDataSegmentPath": "loans.loanInformation.initialPeriodicPaymentAmount",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "ownerFirstName",
+                "rearSector": "ownerFirstName",
+                "rearDataSegmentPath": "loans.searchLender.name",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "billingFrequency",
+                "rearSector": "billingFrequency",
+                "rearDataSegmentPath": "loans.loanInformation.initialPeriodicPaymentAmount",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "billPayer",
+                "rearSector": "billPayer",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "paymentMethodName",
+                "rearSector": "paymentMethodName",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "className",
+                "rearSector": "className",
+                "rearDataSegmentPath": "paymentMethod",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "name",
+                "rearSector": "name",
+                "rearDataSegmentPath": "paymentMethod",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "accountType",
+                "rearSector": "accountType",
+                "rearDataSegmentPath": "paymentMethod",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "branchName",
+                "rearSector": "branchName",
+                "rearDataSegmentPath": "paymentMethod",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "bankName",
+                "rearSector": "bankName",
+                "rearDataSegmentPath": "paymentMethod",
+                "defaultValue": ""
+            }
+        ]
+    },
+    {
+        "frontSegment": "coverages",
+        "dataParentSegment": "coverages",
+        "subSegment": true,
+        "dataSegmentType": "array",
+        "defaultSectorMapping": [
+            {
+                "frontSector": "name",
+                "rearSector": "name",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "paidToDate",
+                "rearSector": "paidToDate",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "paidStatus",
+                "rearSector": "paidStatus",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "effectiveDate",
+                "rearSector": "effectiveDate",
+                "rearDataSegmentPath": "paramEntity",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "terminationDate",
+                "rearSector": "terminationDate",
+                "rearDataSegmentPath": "paramEntity",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "premium",
+                "rearSector": "amount",
+                "rearDataSegmentPath": "premium",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "frequency",
+                "rearSector": "frequency",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "coverageAmount",
+                "rearSector": "amount",
+                "rearDataSegmentPath": "coverageAmount",
+                "defaultValue": ""
+            }
+        ]
+    },
+    {
+        "frontSegment": "additionalDatas",
+        "dataParentSegment": "additionalDatas",
+        "subSegment": true,
+        "dataSegmentType": "array",
+        "defaultSectorMapping": [
+            {
+                "frontSector": "fieldName",
+                "rearSector": "fieldName",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "fieldValue",
+                "rearSector": "fieldValue",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            }
+        ]
+    },
+    {
+        "frontSegment": "insured",
+        "dataParentSegment": "insured",
+        "subSegment": true,
+        "dataSegmentType": "array",
+        "defaultSectorMapping": [
+            {
+                "frontSector": "clientFullName",
+                "rearSector": "clientFullName",
+                "rearDataSegmentPath": "insured.clientId",
+                "defaultValue": ""
+            }
+        ]
+    }
+  ]

@@ -1,0 +1,15 @@
+[
+  {
+    "frontDataSegment": "body",
+    "rearDataSegment":"clientIdentifiers",
+    "rearDataSegmentType": "object",
+    "rearDataSegmentPath": "criteria",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "buid",
+        "rearSector": "buid",
+        "defaultValue": ""
+      }
+    ]
+  }
+]

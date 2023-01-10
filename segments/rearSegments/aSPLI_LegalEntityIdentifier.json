@@ -1,0 +1,22 @@
+{
+  "className": {
+    "dataType": "string",
+    "defaultValue": "aSPLI_LegalEntityIdentifier"
+  },
+  "bUID": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "description": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "internalClientId": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "externalClientId": {
+    "dataType": "object",
+    "name": "externalClientId"
+  }
+}

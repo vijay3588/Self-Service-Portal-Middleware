@@ -1,0 +1,772 @@
+{
+  "triConfig": {
+    "leftCard": {},
+    "rightCard": {
+      "element": [
+        "User Registration",
+        "Register Image",
+        "Fields marked with * are mandatory",
+        "Employee Validation",
+        "First Name",
+        "Mobile Phone",
+        "",
+        "Registered Email ID",
+        "EmailBar",
+        "Last Name",
+        "Employee ID",
+        "Doing Business As ",
+        "icon",
+        "Email",
+        "MFA Email",
+        "Secure your account with multi factor authentication",
+        "verifyNumberPref",
+        "We must validate your ownership of this mobile number by sending a code.",
+        "How do you like to receive the code?",
+        "Member",
+        "Your preference(s) to receive the security code",
+        "MFA Info",
+        "Verify Number",
+        "Data Rates",
+        "Send Code",
+        "Change",
+        "Change method",
+        "How do you like to receive the MFA security code?",
+        "How do you like to receive the MFA security?",
+        "Registered Email ID: ",
+        "accessCodeLabel",
+        "Enter Code",
+        "Cancel",
+        "Submit Code",
+        "Security Code Preference",
+        "securityCodePref",
+        "Unable to receive code?"
+      ],
+      "className": "col-12",
+      "formType": "registeration"
+    }
+  },
+  "elements": [
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "User Registration",
+        "formSideHeader": "User Registration"
+      }
+    ],
+
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "Fields marked with * are mandatory",
+        "formMandatory": "Fields marked with * are mandatory"
+      }
+    ],
+
+    [
+      {
+        "type": "panelSideHeader",
+        "hideDefaultClass": true,
+        "label": "Secure your account with multi factor authentication",
+        "filename": "Icon Security.png",
+        "formSideHeaderWithImage": "Secure your account with multi factor authentication",
+        "forRegisteration": true
+      }
+    ],
+
+    [
+      {
+        "type": "readOnly",
+        "name": "MFA Info",
+        "label": "MFA Info",
+        "hideLabel": true,
+        "validations": {},
+        "responseFrom": "",
+        "value": "To enable multi factor authentication you must add a mobile phone number to receive the security code. We have considered your registered email ID as email contact method.",
+        "regularFont": true,
+        "paddingTop": " pt-md-0 ",
+        "placement": "col-md-12 ",
+        "containerClassName": "  col-12 pt-2 pt-xl-0 px-4 px-xl-3 ",
+        "display": "inline-block",
+        "fontClass": "label-content-regular "
+      }
+    ],
+
+    [
+      {
+        "type": "readOnly",
+        "name": "emailId",
+        "insideSpan": true,
+        "label": "Registered Email ID",
+        "content": "Email ID",
+        "hideLabel": false,
+        "labelClassName": " pt-3 pb-0 mb-0 ",
+        "responseFrom": "ContractInformation",
+        "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+        "containerClassName": " col-12  ",
+        "shouldNotBeCol12": true,
+        "validations": {
+          "string": {
+            "required": "Email ID is Required"
+          }
+        }
+      },
+      {
+        "type": "readOnly",
+        "name": "emailId",
+        "insideSpan": true,
+        "label": "Registered Email ID",
+        "hideLabel": true,
+        "labelClassName": " pt-3 pb-0 mb-0 ",
+        "responseFrom": "ContractInformation",
+        "content": "xxxx@companyname.com",
+        "value": "",
+        "placement": "col-md-12 px-4 px-xl-3 ",
+        "containerClassName": " col-12  ",
+        "shouldNotBeCol12": true
+      },
+      {
+        "type": "readOnly",
+        "name": "EmailBar",
+        "label": "EmailBar",
+        "hideLabel": true,
+        "validations": {},
+        "responseFrom": "ContractInformation",
+        "value": "",
+        "borderBottomColorr": "#DADADA",
+        "borderBottomColor": "blue",
+        "borderBottomWidth": 1,
+        "marginLeft": 5,
+        "marginRight": 5,
+        "placement": "col-md-12 ",
+        "content": "",
+        "flex": 1,
+        "borderBottom": "1px solid #000",
+        "containerClassName": " col-11  col-xl-11 border-top mt-3 mx-xl-3 "
+      },
+      {
+        "type": "text",
+        "name": "mobileNumber",
+        "config": "border",
+        "format": "phoneNumber",
+        "shouldBeReadOnly": true,
+        "rearSector": "shortName",
+        "label": "Mobile Phone",
+        "placeholder": "(xxx) xxx-xxxx",
+        "validations": {
+          "string": {
+            "required": "Mobile Phone is Required",
+            "min": {
+              "withCountryCodelimit": 16,
+              "limit": 14,
+              "message": "Invalid Mobile Phone Number",
+              "color": "red"
+            },
+             "matches": {
+              "regexwithCountryCode": "^(?=.*?[0-9\b]+$)(?=.*?[()-]).{16,}$",
+              "regex": "^(?=.*?[0-9])(?=.*?[()-]).{14,14}$",
+              "message": "Invalid Mobile Phone Number"
+            }
+          }
+        },
+        "placement": "col-auto col-lg-4 col-md-auto col-xl-auto px-4 px-xl-3 ",
+        "classNameWrapper": "py-3 ",
+        "shouldNotBeCol12": true
+      },
+      
+      {
+        "type": "image",
+        "name": "verifyPhone",
+        "filename": "iconVerified.svg",
+        "placement": "col-auto align-self-center mt-4 pl-3 pr-1 ",
+        "imageForEmail" : true,
+        "displayConfig": {
+          "field": "shouldShowVerifyBlock",
+          "show": false,
+          "renderElements": {
+            "verifyPhone": true
+          },
+          "valueUpdate": {
+            "verified": true,
+            "shouldShowVerifyBlock": false
+          },
+          "validateField": ["verifyPhone"]
+        }
+      },
+      {
+        "displayConfig": {
+          "field": "mobileCodeSubmitBlock",
+          "showw": false,
+          "renderElements": {
+            "mobileNumber": true,
+            "verifyNumberPref": false,
+            "editPhone": false
+          },
+          "valueUpdate": {
+            "mobileCodeBlock": false,
+            "mobileCodeSubmitBlock": false,
+            "shouldShowVerifyBlock": false,
+            "shouldShowEdBlock": false,
+            "edBlock": false
+
+          },
+          "validateField": ["mobileNumber", "verifyNumberPref"]
+        },
+        "type": "button",
+        "hideLabel": true,
+        "iconButton":true,
+        "styleClass": "",
+        "hidden": false,
+        "name": "editPhone",
+        "registerOrRetrieve": true,
+        "hideElement": true,
+        "shouldHideOnEdit": true,
+        "shouldDisableContinue": true,
+        "showElement": true,
+        "showElementSubmit": true,
+        "imageForPhone": true,
+        "buttonForPhone" : true,
+        "rearSector": "",
+        "label": "",
+        "placeholder": "",
+        "placement": "col-auto align-self-center px-0 ",
+        "className": "  col-auto align-self-center mt-4 pl-xl-0 pr-xl-2  ",
+        "shouldCallTimerr": true,
+        "shouldHideImageOnClick": true,
+        "images" :{
+          "type": "image",
+          "name": "verifyEmail",
+          "filename": "IconEdit.png",
+          "placement": " col-auto align-self-center mt-4 pr-xl-2 pl-xl-0  ",
+          "imageForEmail" : true,
+          "alt": "img"
+        }
+      },
+      {
+        "type": "checkbox",
+        "visibility": "hidden",
+        "defaultValue": false,
+        "value": false,
+        "hidden": true,
+        "valueType": "bool",
+        "name": "shouldShowEdBlock",
+        "rearSector": "addressNotDefined",
+        "label": "Verify Code Dummy",
+        "placement": "col-md-3 col-12"
+      },
+      {
+        "type": "checkbox",
+        "visibility": "hidden",
+        "defaultValue": false,
+        "value": false,
+        "hidden": true,
+        "valueType": "bool",
+        "name": "mobileCodeSubmitBlock",
+        "rearSector": "addressNotDefined",
+        "label": "Verify Code Dummy",
+        "placement": "col-md-3 col-12"
+      },
+      {
+        "type": "checkbox",
+        "defaultValue": false,
+        "value": false,
+        "hidden": true,
+        "valueType": "bool",
+        "name": "mobileBlock",
+        "rearSector": "",
+        "label": "Verify Submit Dummy",
+        "placement": "col-md-3 col-12"
+      },
+      {
+        "type": "checkbox",
+        "defaultValue": false,
+        "value": false,
+        "hidden": true,
+        "valueType": "bool",
+        "name": "editOrVerifyBlock",
+        "rearSector": "",
+        "label": "Verify Submit Dummy",
+        "placement": "col-md-3 col-12"
+      },
+      {
+        "type": "checkbox",
+        "defaultValue": false,
+        "value": false,
+        "hidden": true,
+        "valueType": "bool",
+        "name": "edBlock",
+        "rearSector": "",
+        "label": "Verify Submit Dummy",
+        "placement": "col-md-3 col-12"
+      }
+    ],
+    [
+      {
+        "type": "readOnly",
+        "name": "MFA Info",
+        "label": "MFA Info",
+        "hideLabel": true,
+        "validations": {},
+        "responseFrom": "",
+        "value": "We must validate your ownership of this mobile number by sending a code.",
+        "paddingTop": " pt-0 ",
+
+        "placement": "col-md-12 ",
+        "containerClassName": "  col-12 pt-2 pt-0 px-4 px-xl-3 ",
+        "display": "inline-block",
+        "displayConfig": {
+          "field": "mobileCodeBlock",
+          "show": true,
+          "renderElements": {
+            "mobileNumber": true,
+            "verifyNumberPref": true
+          },
+          "valueUpdate": {
+            "mobileCodeBlock": true,
+            "mobileCodeSubmitBlock": true
+          },
+          "validateField": ["mobileNumber", "verifyNumberPref"]
+        }
+      }
+    ],
+    [
+      {
+        "type": "readOnly",
+        "name": "emailId",
+        "label": "How do you like to receive the code?",
+        "hideLabel": true,
+        "validations": {},
+        "responseFrom": "ContractInformation",
+        "value": "How do you like to receive the code?",
+        "placement": "col-md-12 ",
+        "containerClassName": " col-12 mb-2 px-3 mx-1 mx-xl-0 px-xl-3  ",
+        "displayConfig": {
+          "field": "mobileCodeBlock",
+          "show": true,
+          "renderElements": {
+            "mobileNumber": true,
+            "verifyNumberPref": true
+          },
+          "valueUpdate": {
+            "mobileCodeBlock": true,
+            "mobileCodeSubmitBlock": true
+          },
+          "validateField": ["mobileNumber", "verifyNumberPref"]
+        }
+      },
+      {
+        "type": "radioButtonGroup",
+        "name": "verifyNumberPref",
+        "rearSector": "verifyNumberPref",
+        "label": " ",
+        "hideLabel": true,
+        "placement": "col-md-12 mb-2  ",
+        "validations1": {},
+        "isRadio": true,
+        "value": "gText",
+        "inputs": [
+          { "label": "Call", "value": "gCall" },
+          { "label": "Text", "value": "gText" }
+        ],
+        "containerClassName": "  col-12 pt-2 pt-xl-0 ",
+        "radioClassWrapper": "px-2 px-xl-0 custom-control-inline",
+        "radioAdditionalClasses1": " col-auto ",
+        "display": "inline-block",
+        "displayConfig": {
+          "field": "mobileCodeBlock",
+          "show": true,
+          "renderElements": {
+            "mobileNumber": true,
+            "verifyNumberPref": true
+          },
+          "valueUpdate": {
+            "mobileCodeBlock": true,
+            "mobileCodeSubmitBlock": true
+          },
+          "validateField": ["mobileNumber", "verifyNumberPref"]
+        }
+      }
+    ],
+    [
+      {
+        "displayConfig": {
+          "field": "mobileCodeBlock",
+          "show": true,
+          "renderElements": {
+            "mobileNumber": true,
+            "verifyNumberPref": true
+          },
+          "valueUpdate": {
+            "mobileCodeBlock": true,
+            "mobileCodeSubmitBlock": true
+          },
+          "validateField": ["mobileNumber", "verifyNumberPref"]
+        },
+        "type": "readOnly",
+        "label": "Data Rates",
+        "hideLabel": true,
+        "value": "* Data rates may apply",
+        "containerClassName": " col-12",
+        "display": "inline-block",
+        "contentClassName": "ro-label-content col-12 ml-4 ml-xl-3 "
+      }
+    ],
+    [
+      {
+        "displayConfig": {
+          "field": "mobileCodeSubmitBlock",
+          "show": false,
+          "validateField": ["code"],
+          "renderElements": {
+            "code": true
+          },
+          "valueUpdate": {
+            "mobileCodeSubmitBlock": false
+          }
+        },
+        "mobileCodeSubmit": true,
+        "hidden": false,
+        "type": "readOnly",
+        "label": "accessCodeLabel",
+        "hideLabel": true,
+        "placement": "col-md-12 ",
+        "containerClassName": " col-12 ",
+        "display": "inline-block",
+        "value": "Please enter the code we sent to the above mobile number."
+      }
+    ],
+    [
+      {
+        "displayConfig": {
+          "field": "mobileCodeSubmitBlock",
+          "show": false,
+          "validateField": ["code"],
+          "renderElements": {
+            "code": true
+          },
+          "valueUpdate": {
+            "mobileCodeSubmitBlock": false
+          }
+        },
+        "type": "text",
+        "hidden": false,
+        "name": "securityCode",
+        "shouldClearOnReset": true,
+        "rearSector": "code",
+        "label": "Enter Code",
+        "placeholder": "Enter Code",
+        "validations": {
+          "string": {
+            "validationRequiredOnTrue": {
+              "value": "mobileCodeSubmitBlock",
+              "message": "Security Code is required"
+            },
+            "matches": {
+              "regex": "^[0-9]{6,6}$",
+              "message": "Invalid code"
+            }
+          }
+        },
+        "placement": "col-lg-6",
+        "classNameWrapper": "py-3"
+      }
+    ],
+    [
+      {
+        "displayConfig": {
+          "field": "mobileCodeBlock",
+          "show": true,
+          "renderElements": {
+            "mobileNumber": true,
+            "verifyNumberPref": true
+          },
+          "valueUpdate": {
+            "mobileCodeBlock": true,
+            "mobileCodeSubmitBlock": true,
+            "mobileCodeSubmitBlockk": true
+
+          },
+          "validateField": ["mobileNumber", "verifyNumberPref"]
+        },
+        "type": "button",
+        "name": "sendCodeBtn",
+        "registerOrRetrieve": true,
+        "shouldCallTimer": true,
+        "rearSector": "userName",
+        "label": "Send Code",
+        "placeholder": "Enter email",
+        "mobileCodeSubmit": true,
+        "outline": true,
+        "placement": "col-md-5 mx-2 mx-xl-0 ",
+        "className": "mt-3 px-3 py-1 mb-md-3  "
+      },
+      {
+        "type": "checkbox",
+        "visibility": "hidden",
+        "hidden": true,
+        "name": "mobileCodeBlock",
+        "rearSector": "addressNotDefined",
+        "label": "Verify Code Dummy",
+        "placement": "col-md-3 col-12"
+      }
+    ],
+    [
+      {
+        "displayConfig": {
+          "field": "mobileCodeSubmitBlock",
+          "show": false,
+          "validateField": ["code"],
+          "renderElements": {
+            "code": true
+          },
+          "valueUpdate": {
+            "mobileCodeSubmitBlock": false
+          }
+        },
+        "type": "button",
+        "hidden": true,
+        "name": "userName",
+        "rearSector": "shortName",
+        "label": "Cancel",
+        "placeholder": "Enter email",
+        "outline": true,
+        "placement": "col-4 col-md-4 col-lg-3 col-xl-2",
+        "className": "mt-3 px-3 py-1"
+      },
+      {
+        "displayConfig": {
+          "field": "mobileCodeSubmitBlock",
+          "show": false,
+          "validateField": ["code"],
+          "renderElements": {
+            "code": true,
+            "verifyEmail": false
+          },
+          "valueUpdate": {
+            "mobileCodeSubmitBlock": false,
+            "mobileBlock": true  ,
+            "editOrVerifyBlock": true,
+            "editBlock": true,
+            "verifyBlock": true,
+            "verifyPhoneBlock": true,
+            "shouldShowVerifyBlock": true,
+            "shouldShowEditBlock": true,
+            "shouldShowEdBlock": true,
+            "mobileCodeBlock": true,
+            "submitCodeBlock": false,
+            "edBlock": true
+
+
+           
+          }
+        },
+        "type": "button",
+        "name": "submitButton",
+        "registerOrRetrieve": true,
+        "rearSector": "shortName",
+        "label": "Submit",
+        "shouldEnableContinue": true,
+        "placeholder": "Enter email",
+        "mobileCodeHide": true,
+        "outline": true,
+        "placement": "col-3 col-md-4 col-lg-2",
+        "className": "mt-3 px-3 py-1"
+      },
+
+      {
+        "type": "checkbox",
+        "visibility": "hidden",
+        "defaultValue": false,
+        "value": false,
+        "hidden": true,
+        "valueType": "bool",
+        "name": "mobileCodeSubmitBlock",
+        "rearSector": "addressNotDefined",
+        "label": "Verify Code Dummy",
+        "placement": "col-md-3 col-12"
+      },
+      {
+        "type": "checkbox",
+        "defaultValue": false,
+        "value": false,
+        "hidden": true,
+        "valueType": "bool",
+        "name": "mobileBlock",
+        "rearSector": "",
+        "label": "Verify Submit Dummy",
+        "placement": "col-md-3 col-12"
+      },
+      {
+        "type": "checkbox",
+        "defaultValue": false,
+        "value": false,
+        "hidden": true,
+        "valueType": "bool",
+        "name": "shouldShowVerifyBlock",
+        "rearSector": "",
+        "label": "Verify Submit Dummy",
+        "placement": "col-md-3 col-12"
+      },
+      {
+        "type": "checkbox",
+        "defaultValue": false,
+        "value": false,
+        "hidden": true,
+        "valueType": "bool",
+        "name": "shouldShowEditBlock",
+        "rearSector": "",
+        "label": "Verify Submit Dummy",
+        "placement": "col-md-3 col-12"
+      },
+      {
+        "displayConfig": {
+          "field": "mobileCodeSubmitBlock",
+          "show": false,
+          "renderElements": {
+            "code": true
+          },
+          "valueUpdate": {
+            "verified": true,
+            "mobileCodeSubmitBlock": false
+          },
+          "validateField": ["code"]
+        },
+        "type": "timer",
+        "name": "timer",
+        "label": "Timer",
+        "hideLabel": true,
+        "validations": {},
+        "responseFrom": "ContractInformation",
+        "value": "45",
+        "config": {
+           "style": {
+              "color": "#4CAF50",
+              "font-family": "NotoSansBold"
+           }
+        },
+        "enableElement": {
+            "elementName": "resendSecurityCode",
+            "elementStyle": {
+              "pointerEvents": "none",
+              "color": "#b3b3b3"
+            }
+        },
+        "valueIn": "seconds",
+        "className": "py-1",
+        "placement": "col-md-12 py-2"
+      },
+      {
+        "displayConfig": {
+          "field": "mobileCodeSubmitBlock",
+          "show": false,
+          "validateField": ["code"],
+          "renderElements": {
+            "code": true
+          },
+          "valueUpdate": {
+            "mobileCodeSubmitBlock": false
+          }
+        },
+        "mobileCodeSubmit": true,
+        "hidden": false,
+        "type": "readOnly",
+        "label": "Unable to receive code?",
+        "hideLabel": true,
+        "placement": "col-md-12",
+        "containerClassName": " col-12 px-3 ",
+        "display": "inline-block",
+        "value": "Unable to receive code?"
+      },
+      {
+        "type": "checkbox",
+        "visibility": "hidden",
+        "hidden": true,
+        "name": "mobileCodeBlock",
+        "rearSector": "addressNotDefined",
+        "label": "Verify Code Dummy",
+        "placement": "col-md-3 col-12"
+      },
+      {
+        "displayConfig": {
+          "field": "mobileCodeSubmitBlock",
+          "show": false,
+          "renderElements": {
+            "mobileNumber": true,
+            "verifyNumberPref": false
+          },
+          "valueUpdate": {
+            "mobileCodeBlock": false,
+            "mobileCodeSubmitBlock": false
+          },
+          "validateField": ["mobileNumber", "verifyNumberPref"]
+        },
+        "showElement": true,
+        "type": "button",
+        "hidden": false,
+        "name": "tryAnotherMethodBtn",
+        "registerOrRetrieve": true,
+        "rearSector": "tryAnotherMethodBtn",
+        "label": "Try another method",
+        "link": true,
+        "hideLabel": true,
+        "validations": {},
+        "value": "Try another method",
+        "styleClass": "",
+        "containerClassName": "col-12",
+        "moveNextStep": true,
+        "placement": "col-md-12 px-1"
+      },
+      {
+        "type": "checkbox",
+        "visibility": "hidden",
+        "hidden": true,
+        "name": "tryAnotherMethod",
+        "label": "Try Another Method Checkbox",
+        "placement": "col-md-3 col-12"
+      }
+    
+    ],
+    [
+      {
+        "type": "readOnly",
+        "name": "EmailBar",
+        "label": "EmailBar",
+        "hideLabel": true,
+        "validations": {},
+        "responseFrom": "ContractInformation",
+        "value": "",
+        "borderBottomColorr": "#DADADA",
+        "borderBottomColor": "blue",
+        "borderBottomWidth": 1,
+        "marginLeft": 5,
+        "marginRight": 5,
+        "placement": "col-md-12 ",
+        "content": "",
+        "flex": 1,
+        "borderBottom": "1px solid #000",
+        "containerClassName": " col-11 col-xl-11 border-top mt-3 mx-xl-3 "
+      },
+      {
+        "type": "radioButtonGroup",
+        "name": "securityCodePrefSec",
+        "forRegisteration": true,
+        "rearSector": "a",
+        "label": "How do you like to receive the MFA security code ?",
+        "labelClassName": " px-4 px-xl-3 pb-2 ",
+        "placement": "col-md-12 pt-3",
+        "validations": {
+          "string": {
+            "required": "This field is required"
+          }
+        },
+        "isRadio": true,
+        "radioClassWrapper1": "px-0 px-md-1",
+        "radioClassWrapper": "pl-2 px-xl-0 mr-0 custom-control-inline",
+        "inputs": [
+          { "label": "Email", "value": "gEmail" },
+          { "label": "Text", "value": "gText" },
+          { "label": "Call", "value": "gCall" }
+        ]
+      }
+    ]
+  ]
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "frontDataSegment": "loggedUserEntity._Result.clientId",
+    "rearDataSegment":"clientIds",
+    "rearDataSegmentPath": "clientId",
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping" : [
+      {"frontSector": "buid", "rearSector": "buid", "defaultValue": ""}
+    ]
+  }
+]
+

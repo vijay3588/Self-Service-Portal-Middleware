@@ -1,0 +1,26 @@
+{
+  "identifier": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "name": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "components": {
+    "dataType": "object",
+    "name": "themeUpdateComponents"
+  },
+  "molecules": {
+    "dataType": "object",
+    "name": "themeUpdateMolecules"
+  },
+  "cells": {
+    "dataType": "object",
+    "name": "themeUpdateCells"
+  },
+  "atoms": {
+    "dataType": "object",
+    "name": "themeUpdateAtoms"
+  }
+}

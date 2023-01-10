@@ -1,0 +1,6 @@
+{
+    "transactionNumber": {"dataType": "string", "defaultValue": ""},
+    "accountType": {"dataType": "string", "defaultValue": ""},
+    "amountDisbursed": {"dataType": "string", "defaultValue": ""},
+    "canceled": {"dataType": "string", "defaultValue": "No"}
+}

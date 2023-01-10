@@ -1,0 +1,22 @@
+{
+    "actorBUID": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "clientID": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "fromDate": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "toDate": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "contactKind": {
+        "dataType": "string",
+        "defaultValue": "ckOutgoing"
+    }
+}

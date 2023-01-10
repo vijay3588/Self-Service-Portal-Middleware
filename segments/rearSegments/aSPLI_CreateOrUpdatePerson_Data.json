@@ -1,0 +1,46 @@
+{
+    "className": {
+        "dataType": "string",
+        "defaultValue": "aSPLI_CreateOrUpdatePerson_Data"
+    },
+    "personIdentity": {
+        "dataType": "object",
+        "name": "aSPLI_Person"
+    },
+    "legalRepresentative": {
+        "dataType": "string",
+        "defaultValue": null
+    },
+    "claimDisbursementChannel": {
+        "dataType": "string",
+        "defaultValue": []
+    },
+    "clientId": {
+        "dataType": "object",
+        "name": "clientIds"
+    },
+    "thirdPartyID": {
+        "dataType": "string",
+        "defaultValue": "DistRoot"
+    },
+    "updateDate": {
+        "dataType": "date",
+        "defaultValue": ""
+    },
+    "correspondences": {
+        "dataType": "object",
+        "name": "aSPCB_Correspondence"
+    },
+    "paymentMethods": {
+        "dataType": "object",
+        "name": "aSPCB_US_BankAccount"
+    },
+    "contactInformations": {
+        "dataType": "object",
+        "name": "aSPCB_ActorContact"
+    },
+    "loginInformation": {
+        "dataType": "string",
+        "defaultValue": null
+    }
+}

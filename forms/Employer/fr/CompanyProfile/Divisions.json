@@ -1,0 +1,193 @@
+{
+  "isMultiple": true,
+  "multiConfig": {
+    "maxAdds": 100,
+    "tableHeader": [
+      {
+        "value": "Entité légale",
+        "config": {
+          "className": ""
+        }
+      },
+      {
+        "value": "Adresse postale",
+        "config": {
+          "className": "d-none d-sm-table-cell"
+        }
+      },
+      {
+        "value": "Phone Number",
+        "config": {
+          "className": "d-none d-sm-table-cell"
+        }
+      },
+      {
+        "value": "Date effective",
+        "config": {
+          "className": "d-none d-sm-table-cell"
+        }
+      },
+      {
+        "value": "Expiration Date",
+        "config": {
+          "className": "d-none d-sm-table-cell"
+        }
+      }
+    ],
+    "tableRow": [
+      {
+        "value": "data.legalEntity",
+        "type": "expression",
+        "config": {
+          "className": ""
+        }
+      },
+      {
+        "value": "`${data.lineOne}, ${data.city} ${data.state} ${data.zipCode}`",
+        "type": "expression",
+        "config": {
+          "className": "d-none d-sm-table-cell"
+        }
+      },
+      {
+        "value": "data.phoneNumberPrimary",
+        "type": "expression",
+        "config": {
+          "className": "d-none d-sm-table-cell"
+        }
+      },
+      {
+        "value": "data.effectiveDate",
+        "type": "expression",
+        "config": {
+          "valueType": "date",
+          "format" : "MM/DD/YYYY",
+          "className": "d-none d-sm-table-cell"
+        }
+      },
+      {
+        "value": "data.expirationDate",
+        "type": "expression",
+        "config": {
+          "valueType": "date",
+          "format" : "MM/DD/YYYY",
+          "className": "d-none d-sm-table-cell"
+        }
+      }
+    ],
+    "addButtonLabel": " New Division",
+    "editButtonLabel": " Edit Division"
+  },
+  "elements": [
+    [
+      {
+        "type": "text",
+        "name": "legalEntity",
+        "label": "Entité légale",
+        "placement": "col-md-6 col-12",
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis"
+          }
+        }
+      }
+    ],
+    [
+      {
+        "type": "date",
+        "name": "effectiveDate",
+        "label": "Date effective",
+        "placement": "col-md-3"
+      },
+      {
+        "type": "date",
+        "name": "expirationDate",
+        "label": "Expiration Date",
+        "placement": "col-md-3"
+      }
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "Division Address"
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "name": "lineOne",
+        "label": "Line 1",
+        "placement": "col-md-6 col-12",
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis"
+          }
+        }
+      },
+      {
+        "type": "text",
+        "name": "lineTwo",
+        "label": "Line 2",
+        "placement": "col-md-6 col-12",
+        "validations": {}
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "name": "city",
+        "label": "Ville",
+        "placement": "col-md-4 col-12",
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis"
+          }
+        }
+      },
+      {
+        "type": "select",
+        "name": "state",
+        "label": "État",
+        "placement": "col-md-2 col-12",
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis"
+          }
+        },
+        "options": [
+          { "value": "ca", "text": "California" },
+          { "value": "mn", "text": "Minnesota" },
+          { "value": "nj", "text": "New Jersey" }
+        ]
+      },
+      {
+        "type": "text",
+        "name": "zipCode",
+        "label": "Code postal",
+        "placement": "col-md-2 col-12",
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis"
+          }
+        }
+      },
+      {
+        "type": "select",
+        "name": "country",
+        "label": "Pays",
+        "value": "USA",
+        "placement": "col-md-4 col-12",
+        "options": [
+          { "value": "us", "text": "United States" },
+          { "value": "ca", "text": "Canada" },
+          { "value": "mx", "text": "Mexico" }
+        ],
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis"
+          }
+        }
+      }
+    ]
+  ]
+}

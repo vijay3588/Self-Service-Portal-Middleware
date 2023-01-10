@@ -1,0 +1,22 @@
+{
+    "policy_id": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "reference": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "effectivedate": {
+        "dataType": "date",
+        "defaultValue": ""
+    },
+    "premium": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "vehiclesCovered": {
+        "dataType": "array",
+        "defaultValue": []
+    }
+}

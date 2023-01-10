@@ -1,0 +1,130 @@
+{
+  "changeConfig": {
+    "leftCard": {
+      "element": ["Current Address"],
+      "className": "col-12 col-lg-5 mb-4 mb-lg-0 p-4 current-address-left-card",
+      "changeType": "Address",
+      "type": "expression",
+      "mappings": [
+        {
+          "mapElement": "currentAddress",
+          "expression": "`${data.line1 ? `${data.line1}, ` : ''}${data.line2 ? `${data.line2}, ` : ''}${ (data.zipCodeAndCity && data.zipCodeAndCity.city) ? `${data.zipCodeAndCity.city}, ` : '' }${data.district ? `${data.district} ` : ''}${(data.zipCodeAndCity && data.zipCodeAndCity.zipCode ) ? `${data.zipCodeAndCity.zipCode}, ` : ''}${data.country || ''}`"
+        }
+      ]
+    },
+    "rightCard": {
+      "element": ["New Address", "Line 1", "Line 2", "City", "Postal Code"],
+      "className": " col-12 col-lg-6 offset-lg-1 p-4 current-address-right-card"
+    }
+  },
+  "elements": [
+    [
+      {
+        "type": "date",
+        "name": "effectiveDate",
+        "rearSector": "effectiveDate",
+        "label": "Effective Date",
+        "placement": "col-md-3",
+        "currentDate": true
+      }
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "Current Address"
+      }
+    ],
+    [
+      {
+        "name": "currentAddress",
+        "type": "readOnly",
+        "label": "Current Address",
+        "value": "",
+        "hideLabel": true
+      }
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "New Address"
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "name": "lineOne",
+        "rearSector": "line1",
+        "label": "Line 1",
+        "validations": {
+          "string": {
+            "required": "mandatory field"
+          }
+        },
+        "placement": "col-md-12 col-12"
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "name": "lineTwo",
+        "rearSector": "line2",
+        "label": "Line 2",
+        "validations": {},
+        "placement": "col-md-12 col-12"
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "name": "city",
+        "rearSector": "city",
+        "label": "City",
+        "placement": "col-md-6 col-12",
+        "validations": {
+          "string": {
+            "required": "mandatory field"
+          }
+        }
+      },
+        {
+        "type": "text",
+        "name": "district",
+        "rearSector": "district",
+        "label": "District",
+        "placement": "col-md-6 col-12",
+        "validations": {
+         
+        }
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "name": "zipCode",
+        "rearSector": "zipCode",
+        "label": "Postal Code",
+        "placement": "col-md-6 col-12",
+        "validations": {
+          "string": {
+            "required": "mandatory field"
+          }
+        }
+      },
+      {
+        "type": "select",
+        "name": "country",
+        "rearSector": "country",
+        "label": "Country",
+        "value": "FRA",
+        "placement": "col-md-6 col-12",
+        "options": "",
+        "optionsname": "CountryConstants",
+        "validations": {
+          "string": {
+            "required": "mandatory field"
+          }
+        }
+      }
+    ]
+  ]
+}

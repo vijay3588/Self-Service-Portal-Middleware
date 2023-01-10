@@ -1,0 +1,79 @@
+[
+  {
+    "frontDataSegment": "_Result",
+    "frontDataSegmentPath": "loggedUserEntity",
+    "mappingSectorOnly": true,
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "internalClientId",
+        "frontDataSegmentPath": "loggedUserEntity.clientId",
+        "rearSector": "internalClientId",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "shortName",
+        "frontDataSegmentPath": "loggedUserEntity._Result.legalEntityIdentity",
+        "rearSector": "clientName",
+        "defaultValue": ""
+      }
+    ]
+  },
+
+  {
+    "frontDataSegment": "_Result",
+    "frontDataSegmentPath": "loggedUserEntity",
+    "rearDataSegment": "clientId",
+    "rearDataSegmentType": "object",
+
+    "rearDataSegmentClass": "themeClientData",
+    "rearDataSegmentPath": "clientId",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "buid",
+        "frontDataSegmentPath": "loggedUserEntity._Result.clientId",
+        "rearSector": "buid",
+        "defaultValue": ""
+      },
+
+      {
+        "frontSector": "clientFullName",
+        "frontDataSegmentPath": "loggedUserEntity._Result.clientId",
+        "rearSector": "clientFullName",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "internalClientId",
+        "frontDataSegmentPath": "loggedUserEntity._Result.clientId",
+        "rearSector": "internalClientId",
+        "defaultValue": ""
+      }
+    ]
+  },
+
+
+   {
+     "frontDataSegment": "_Result",
+     "frontDataSegmentPath": "loggedUserEntity",
+     "rearDataSegment": "externalClientIdentifier",
+     "mappingSectorOnly": true,
+     "rearDataSegmentType": "object",
+     "rearDataSegmentClass": "themeExternalClientIdentifier",
+     "rearDataSegmentPath": "clientId",
+     "defaultSectorMapping": [
+       {
+         "frontSector": "externalClientId",
+         "frontDataSegmentPath": "loggedUserEntity._Result.clientId.externalClientIdentifier",
+         "rearSector": "externalClientId",
+         "defaultValue": ""
+       },
+
+       {
+         "frontSector": "thirdPartyID",
+         "frontDataSegmentPath": "loggedUserEntity._Result.clientId.externalClientIdentifier",
+         "rearSector": "thirdPartyID",
+         "defaultValue": ""
+       }
+     ]
+   }
+]

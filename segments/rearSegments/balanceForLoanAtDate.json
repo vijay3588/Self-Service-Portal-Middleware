@@ -1,0 +1,14 @@
+{
+    "policyId": {
+        "dataType": "object",
+        "name": "policyId"
+    },
+    "AtDate": {
+      "dataType": "string",
+      "defaultValue": null
+    },
+    "LoanIdentifier": {
+        "dataType": "object",
+        "name": "loanIdentifier"
+      }
+  }

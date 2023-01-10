@@ -1,0 +1,22 @@
+{
+  "elements": [
+    [
+      {
+        "type": "select",
+        "update": "updateColor",
+        "name": "themeName",
+        "selectType": "updateTheme",
+        "rearSector": "themeNames",
+        "value": "",
+        "label": "Theme Names",
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "This field is required"
+          }
+        }
+      }
+      
+    ]
+]
+}

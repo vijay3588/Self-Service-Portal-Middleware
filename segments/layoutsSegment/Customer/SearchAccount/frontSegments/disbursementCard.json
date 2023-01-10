@@ -1,0 +1,3 @@
+{ 
+    "paymentsCredits": {"dataType": "string", "defaultValue":""}
+}

@@ -1,0 +1,7 @@
+{
+  "GeneralInfo": {"dataType": "object", "name": "generalInfo"},
+  "ContactInfo": {"dataType": "object", "name": "contactInfo" },
+  "BankAccount": {"dataType": "object", "name": "bankAccount" },
+  "Divisions": {"dataType": "object", "name": "divisions" },
+  "ContactPerson": {"dataType": "object", "name": "contactPerson" }
+}

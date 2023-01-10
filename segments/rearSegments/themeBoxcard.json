@@ -1,0 +1,19 @@
+{
+  "boxcardBgColor": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+
+
+  "linearGradientTopColor": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+   "linearGradientBottomColor": {
+    "dataType": "string",
+    "defaultValue": ""
+  }
+}
+
+
+

@@ -1,0 +1,5 @@
+{ 
+    "name": {"dataType": "string", "defaultValue":""}, 
+    "subscribed": {"dataType": "string", "defaultValue":""}, 
+    "subscribedAttributes": {"dataType": "object", "name":"subscribedAttributes"}
+}

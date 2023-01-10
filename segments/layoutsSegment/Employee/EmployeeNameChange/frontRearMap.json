@@ -1,0 +1,26 @@
+[
+  {
+    "frontDataSegment": "values",
+    "rearDataSegment": "personIdentity",
+    "rearDataSegmentPath": "input",
+    "rearDataSegmentType": "object",
+    "reduxObject":true,
+    "frontSegmentForm": "NewEmployeeName"
+  },
+  {
+    "frontDataSegment": "",
+    "rearDataSegment": "loginInformation",
+    "rearDataSegmentPath": "input",
+    "rearDataSegmentType": "data",
+    "rearSegmentData": null,
+    "reduxObject":true
+  },
+  {
+    "frontDataSegment": "",
+    "rearDataSegment": "legalRepresentative",
+    "rearDataSegmentPath": "input",
+    "rearDataSegmentType": "data",
+    "rearSegmentData": null,
+    "reduxObject":true
+  }
+]

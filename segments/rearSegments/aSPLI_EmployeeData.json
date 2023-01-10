@@ -1,0 +1,26 @@
+{
+  "className": {
+    "dataType": "string",
+    "defaultValue": "aSPLI_EmployeeData"
+  },
+  "bUID": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "dataHistory": {
+    "dataType": "string",
+    "defaultValue": []
+  },
+  "employee": {
+    "dataType": "object",
+    "name": "aSPLI_Employee"
+  },
+  "person": {
+    "dataType": "object",
+    "name": "person"
+  },
+  "legalEntity": {
+    "dataType": "object",
+    "name": "legalEntity"
+  }
+}

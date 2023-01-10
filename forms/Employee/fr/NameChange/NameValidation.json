@@ -1,0 +1,110 @@
+{
+  "changeConfig": {
+    "leftCard": {
+      "element": [
+        "Nom légal actuel et DBA",
+        "Nom légal",
+        "Faire des affaires comme"
+      ],
+      "className": " col-12 col-lg-5 mb-4 mb-lg-0 p-4 current-name-left-card",
+      "changeType": "Name",
+      "type": "expression",
+      "mappings": [
+        {
+          "mapElement": "legalName",
+          "expression": "`${data.name || ''}`"
+        },
+        {
+          "mapElement": "doingBusinessAs",
+          "expression": "`${data.shortName || ''}`"
+        }
+      ]
+    },
+    "rightCard": {
+      "element": ["Nouveau nom légal et DBA", "Nom légal ", "Faire des affaires comme "],
+      "className": " col-12 col-lg-6 offset-lg-1 p-4 current-name-right-card",
+      "mapElement": "newName",
+      "changeType": "Name",
+      "type": "expression",
+      "value": ""
+    }
+  },
+  "elements": [
+    [
+      {
+        "name": "effectiveDate",
+        "label": "Date effective",
+        "placement": "col-lg-3",
+        "type": "readOnly",
+        "getValuesFrom": "NewName",
+        "image": "calender_icon_medium.png",
+        "config": {
+          "valueType": "date",
+          "format" : "MM/DD/YYYY"
+        }
+      }
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "Nom légal actuel et DBA"
+      }
+    ],
+    [
+      {
+        "name": "currentName",
+        "type": "readOnly",
+        "label": "Nom légal actuel et DBA",
+        "value": "",
+        "hideLabel": true
+      }
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "Nouveau nom légal et DBA"
+      }
+    ],
+    [
+      {
+        "name": "newName",
+        "type": "readOnly",
+        "label": "Nouveau nom légal et DBA",
+        "value": "",
+        "hideLabel": true
+      }
+    ],
+    [
+      {
+        "name": "name",
+        "label": "Nom légal ",
+        "type": "readOnly",
+        "getValuesFrom": "NewName"
+      }
+    ],
+    [
+      {
+        "name": "shortName",
+        "label": "Faire des affaires comme ",
+        "type": "readOnly",
+        "getValuesFrom": "NewName"
+      }
+    ],
+    [
+      {
+        "label": "Nom légal",
+        "name":"legalName",
+        "type": "readOnly",
+        "getValuesFromData": "name"
+      }
+    ],
+    [
+      {
+        "label": "Faire des affaires comme",
+        "type": "readOnly",
+        "name":"doingBusinessAs",
+        "getValuesFromData": "shortName"
+      }
+    ]
+  ]
+}

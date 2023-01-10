@@ -1,0 +1,52 @@
+[
+  {
+    "frontDataSegment": "PolicyChange",
+    "rearDataSegment":"contactDescription",
+    "rearDataSegmentClass": "aSPLI_CreateContact_In",
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping" : [
+      {
+        "frontSector": "policyChanges",
+        "rearSector": "name",
+        "frontDataSegmentPath":"values.PolicyChange",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "buid",
+        "rearSector": "clientBuid",
+        "frontDataSegmentPath":"loggedUserEntity._Result.clientId",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "date",
+        "rearSector": "dateOfContact",
+        "defaultValue": "2021-05-07",
+        "dataConfig": {
+          "configType": "currentDate"
+        }
+      },
+      {
+        "frontSector": "time",
+        "rearSector": "timeOfContact",
+        "defaultValue": "0:00:00Z",
+        "dataConfig": {
+          "configType": "currentTime"
+        }
+      },
+      {
+        "frontSector": "comments",
+        "rearSector": "contactText",
+        "frontDataSegmentPath":"values.PolicyChange",
+        "defaultValue": "",
+        "dataConfig": {
+          "lookUpSector":"frontSector",
+          "splitChar": "-",
+          "configType": "sectorConcatenation",
+          "sectors": ["contact","contract"]
+        }
+      }
+
+
+    ]
+  }
+]

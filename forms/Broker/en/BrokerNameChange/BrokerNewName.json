@@ -1,0 +1,77 @@
+{
+  "changeConfig": {
+    "leftCard": {
+      "element": [
+        "Current Broker Name",
+        "Broker Name"
+      ],
+      "className": "col-12 col-lg-5 mb-4 mb-lg-0 p-4 current-name-left-card",
+      "changeType": "Name",
+      "type": "expression",
+      "mappings": [
+        {
+          "mapElement": "brokerName",
+          "expression": "`${data.name || ''}`"
+        }
+      ]
+    },
+    "rightCard": {
+      "element": ["New Broker Name", "Broker Name "],
+      "className": " col-12 col-lg-6 offset-lg-1 p-4 current-name-right-card"
+    }
+  },
+  "elements": [
+    [
+      {
+        "type": "date",
+        "name": "effectiveDate",
+        "label": "Effective Date",
+        "placement": "col-md-3",
+        "currentDate": true
+      }
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "Current Broker Name"
+      }
+    ],
+    [
+      {
+        "name": "currentName",
+        "type": "readOnly",
+        "label": "Current Broker Name",
+        "value": "",
+        "hideLabel": true
+      }
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "New Broker Name"
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "name": "name",
+        "rearSector": "name",
+        "label": "Broker Name ",
+        "validations": {
+          "string": {
+            "required": "mandatory field"
+          }
+        },
+        "placement": "col-md-12 col-12 mb-3"
+      }
+    ],
+  
+    [
+      {
+        "label": "Broker Name",
+        "type": "readOnly",
+        "name": "brokerName"
+      }
+    ]
+  ]
+}

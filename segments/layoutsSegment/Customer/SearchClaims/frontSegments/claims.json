@@ -1,0 +1,7 @@
+{
+    "name": {"dataType": "string", "defaultValue": ""},
+    "claimFullId": {"dataType": "string", "defaultValue": ""},
+    "lossType": {"dataType": "string", "defaultValue": ""},
+    "declarationDate": {"dataType": "date", "defaultValue": ""},
+    "status": {"dataType": "string", "defaultValue": ""}
+}

@@ -1,0 +1,15 @@
+{
+  "hideOption": {
+    "dataType": "boolean",
+    "defaultValue": false
+  },
+
+  "optionKey": {
+    "dataType": "string",
+    "defaultValue": "personal email"
+  },
+  "optionValue": {
+    "dataType": "string",
+    "defaultValue": "personal email"
+  }
+}

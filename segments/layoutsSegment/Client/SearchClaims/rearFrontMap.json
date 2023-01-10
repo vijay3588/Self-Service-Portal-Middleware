@@ -1,0 +1,35 @@
+[
+    {
+        "formName": "claims",
+        "cardElements": "table.tableRowData",
+        "frontSegment": "claims",
+        "dataParentSegment": "",
+        "dataSegmentType": "array",
+        "defaultSectorMapping": [
+            {
+                "frontSector": "name",
+                "rearSector": "name",
+                "rearDataSegmentPath": "paramEntity",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "lossType",
+                "rearSector": "lossType",
+                "rearDataSegmentPath": "paramEntity",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "declarationDate",
+                "rearSector": "declarationDate",
+                "rearDataSegmentPath": "paramEntity",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "status",
+                "rearSector": "status",
+                "rearDataSegmentPath": "paramEntity",
+                "defaultValue": ""
+            }
+        ]
+    }
+]

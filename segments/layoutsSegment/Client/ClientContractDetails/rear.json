@@ -1,0 +1,14 @@
+{
+    "contractID": {
+        "dataType": "object",
+        "name": "inputQuote"
+    },
+    "atDate": {
+        "dataType": "date",
+        "defaultValue": "2021-01-01"
+    },
+    "withPremium": {
+        "dataType": "boolean",
+        "defaultValue": true
+    }
+}

@@ -1,0 +1,30 @@
+{
+  "identifier": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "name": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "clientId": {
+    "dataType": "number",
+    "defaultValue": ""
+  },
+  "components": {
+    "dataType": "object",
+    "name": "themeComponents"
+  },
+  "molecules": {
+    "dataType": "object",
+    "name": "themeMolecules"
+  },
+  "cells": {
+    "dataType": "object",
+    "name": "themeCells"
+  },
+  "atoms": {
+    "dataType": "object",
+    "name": "themeAtoms"
+  }
+}

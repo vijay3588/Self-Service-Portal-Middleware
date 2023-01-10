@@ -1,0 +1,18 @@
+{
+    "ClassName": {
+        "dataType": "string",
+        "defaultValue": "aSPLIC_STDLossData"
+    },
+    "Loss": {
+        "dataType": "object",
+        "name": "aSPLIC_STDLoss"
+    },
+    "DisabilityKindVersions": {
+        "dataType": "object",
+        "name": "DisabilityKindVersions"
+    },
+    "CoveredPerson": {
+        "dataType": "object",
+        "name": "aSPLI_PersonIdentifier"
+    }
+}

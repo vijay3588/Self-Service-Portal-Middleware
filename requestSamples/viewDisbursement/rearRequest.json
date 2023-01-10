@@ -1,0 +1,13 @@
+{
+	"criteria": {
+		"className": "aSPLI_GetFinancialOperations_In",
+		"financialId": "",
+		"financialPaymentsSearched": false,
+		"financialDisbursementsSearched": true,
+		"financialInvoicesSearched": false,
+		"fromDate": null,
+		"toDate": null,
+		"actorBuid": "318843900_1"
+	},
+	"maxSize": 100
+}

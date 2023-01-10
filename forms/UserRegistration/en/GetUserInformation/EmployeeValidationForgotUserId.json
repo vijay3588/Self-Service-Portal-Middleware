@@ -1,0 +1,171 @@
+{
+  "triConfig": {
+    "leftCard": {
+  
+    },
+    "rightCard": {
+      "element": [
+        "Retrieve User ID",
+        "Register Image",
+        "Fields marked with * are mandatory",
+        "Please enter the following information and continue.",
+        "First Name",
+        "Last Name",
+        "Employee ID",
+        "Doing Business As ",
+        "icon"
+      ],
+      "className": "col-12"
+    }
+  },
+  "elements": [
+    [
+      {
+        "name": "currentName",
+        "type": "readOnly",
+        "label": "Current Legal Name & DBA",
+        "value": "",
+        "hideLabel": true
+      }
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "Retrieve User ID",
+        "formSideHeader": "Retrieve User ID"
+      }
+    ],
+
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "Fields marked with * are mandatory",
+        "formMandatory": "Fields marked with * are mandatory"
+      }
+    ],
+    [
+      {
+        "type": "readOnly",
+        "label": "Please enter the following information and continue.",
+        "valuee": "Please enter the following information and continue.",
+        "placementt": " col-12  ",
+        "classNameWrapper":"py-3",
+        "containerClassName": "py-0 px-3 " ,
+        "fontColor": "#202020",
+        "insideSpan": true,
+        "content": "Please enter the following information and continue."
+
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "name": "firstName",
+        "config": "border",
+        "rearSector": "firstName",
+        "label": "First Name",
+        "placeholder": "Enter First Name",
+
+        "validations": {
+          "string": {
+            "required": "First Name is required",
+            "errormessage": "red",
+            "max": {
+              "limit": 16,
+              "message": "Maximum 16 characters",
+              "color": "red"
+            },
+            "matches": {
+              "regex": "^[a-zA-Z ]+$",
+              "message": "First Name not matching with our record."
+            }
+          }
+        },
+
+        "placement": " col-12  col-lg-12 col-xl-6 col-md-12 mx-1 pl-3 pr-2 pr-xl-0 px-xl-3 mx-xl-0  ",
+        "classNameWrapper":"py-3"
+      },
+
+      {
+        "type": "text",
+        "name": "lastName",
+        "rearSector": "name",
+        "label": "Last Name",
+        "placeholder": "Enter Last Name",
+
+        "validations": {
+          "string": {
+            "required": "Last Name is required",
+            "max": {
+              "limit": 20,
+              "message": "Maximum 20 characters",
+              "color": "red"
+            },
+            "matches": {
+              "regex": "^[a-zA-Z ]+$",
+              "message": "Last Name not matching with our record."
+            }
+          }
+        },
+        "placement": "col-12  col-lg-12 col-xl-6 col-md-12 mx-1 pl-3 pr-2 pr-xl-0 px-xl-3 mx-xl-0  ",
+        "classNameWrapper":"py-3"
+      }
+    ],
+
+    [
+      {
+        "type": "text",
+        "name": "employeeId",
+        "rearSector": "employeeId",
+        "label": "Employee ID",
+        "placeholder": "Enter Employee ID",
+
+        "validations": {
+          "string": {
+            "required": "Employee ID is required",
+            "max": {
+              "limit": 16,
+              "message": "Maximum 16 digits",
+              "color": "red"
+            },
+            "matches": {
+              "regex": "^[0-9]*$",
+              "message": "Please enter a valid Employee ID"
+            }
+          }
+        },
+        "placement": "col-12  col-lg-12 col-xl-6 col-md-12 mx-1 pl-3 pr-2 pr-xl-0 px-xl-3 mx-xl-0  ",
+        "classNameWrapper":"py-3"
+      },
+      {
+        "type": "date",
+        "name": "birthDate",
+        "rearSector": "birthDate",
+        "label": "Date of Birth",
+        "placeholder": "Date of birth",
+
+        "validations": {
+          "string": {
+            "required": "Employee ID is required",
+            "min": { "limit": 6, "message": "Min length is 6" }
+          },
+          "date": {
+            "required": "Date of Birth is required",
+            "min": {
+              "limit": -117,
+              "unit": "y",
+              "message": "Please enter a valid Birth Date"
+            },
+            "max": {
+              "limit": 0,
+              "unit": "y",
+              "message": "Birth Date cannot be in the future"
+            }
+          }
+        },
+        "placement": "col-12  col-lg-12 col-xl-6 col-md-12 mx-1 pl-3 pr-2 pr-xl-0 px-xl-3 mx-xl-0  ",
+        "classNameWrapper":"py-3"
+      }
+    ]
+  ]
+}

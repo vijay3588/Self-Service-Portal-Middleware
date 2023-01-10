@@ -1,0 +1,34 @@
+{
+    "className": {
+        "dataType": "string",
+        "defaultValue": "aSPLI_GetOperations_In"
+    },
+    "actionTitle": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "onObjectBuid": { 
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "businessDomains": {
+        "dataType": "string",
+        "defaultValue": []
+    },
+    "notAllowedBusinessDomains": { 
+        "dataType": "string",
+        "defaultValue": []
+    },
+    "fromDate": {
+        "dataType": "string",
+        "defaultValue": null
+    },
+    "toDate": { 
+        "dataType": "string",
+        "defaultValue": null
+    },
+    "actorBuid": { 
+        "dataType": "string",
+        "defaultValue": ""
+    }
+}

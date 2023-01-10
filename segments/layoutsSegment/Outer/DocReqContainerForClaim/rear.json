@@ -1,0 +1,6 @@
+{
+    "ClaimId": {
+        "dataType": "object",
+        "name": "docReqContainerForClaim"
+    }
+}

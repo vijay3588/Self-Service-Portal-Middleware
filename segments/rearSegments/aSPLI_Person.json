@@ -1,0 +1,33 @@
+{
+  "className": {
+    "dataType": "string",
+    "defaultValue": "aSPLI_Person"
+  },
+  "name": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "shortName": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+
+  "birthDate": {
+    "dataType": "date",
+    "defaultValue": ""
+  },
+
+  "buid": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+
+  "gender": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "sSN": {
+    "dataType": "string",
+    "defaultValue": ""
+  }
+}

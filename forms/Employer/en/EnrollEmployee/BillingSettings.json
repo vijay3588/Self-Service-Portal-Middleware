@@ -1,0 +1,212 @@
+
+
+{
+  "elements": [
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "Billing Information"
+      }
+    ],
+    [
+      {
+        
+        "type": "select",
+        "name": "billingMode",
+        "rearSector": "billingMode",
+        "label": "Billing Mode",
+        "placement": "col-12 col-lg-4 col-md-6 ",
+        "validations": {
+        
+        },
+        "optionsname": "AddressTypeConstants",
+        "defaultValue": null,
+        "options": ""
+      }
+    ],
+    [
+      {
+        
+        "type": "panelSideHeader",
+        "label": "Invoicing Information"
+      }
+    ],
+    [
+      {
+        
+        "type": "select",
+        "name": "invoicingFrequency",
+        "rearSector": "invoicingFrequency",
+        "label": "Invoicing Frequency",
+        "placement": "col-12 col-lg-4 col-md-6 ",
+        "validations": {        
+        },
+        "optionsname": "AddressTypeConstants",
+        "defaultValue": null,
+        "options": ""
+      },
+      {
+        
+        "type": "text",
+        "name": "InvoicingLeadTime",
+        "rearSector": "InvoicingLeadTime",
+        "label": "Inviocing Lead Time (In Days)",
+        "placement": "col-12 col-lg-4 col-md-6 ",
+        "validations": {
+        }
+      },
+      {
+        "type": "date",
+        "name": "invoicingLeadTimeCalculation",
+        "rearSector": "invoicingLeadTimeCalculation",
+        "label": "Invoicing LeadTime Calculation",
+        "placement": "col-12 col-lg-4 col-md-6 ",
+        "validations": {
+          "string": {
+            "min": { "limit": 6, "message": "Min length is 6" }
+          },
+          "date": {
+            "required": "This field is required",
+            "min": {"limit": -117, "unit": "y", "message": "Please enter a valid Birth Date" },
+            "max": {"limit": 0, "unit": "y", "message": "Birth Date cannot be in the future" }
+          }
+        }
+      },
+      {
+        "type": "date",
+        "name": "invoicingstartDate",
+        "rearSector": "invoicingstartDate",
+        "label": "Invoicing Synchronization Date",
+        "placement": "col-12 col-lg-4 col-md-6 ",
+        "validations": {
+          "string": {
+            "min": { "limit": 6, "message": "Min length is 6" }
+          },
+          "date": {
+            "required": "This field is required",
+            "min": {"limit": -117, "unit": "y", "message": "Please enter a valid Birth Date" },
+            "max": {"limit": 0, "unit": "y", "message": "Birth Date cannot be in the future" }
+          }
+        }
+      }
+    ],
+    [
+      {
+        
+        "type": "panelSideHeader",
+        "label": "Payer Information"
+      }
+    ],
+    [
+      {
+        
+        "type": "select",
+        "name": "payer",
+        "rearSector": "payer",
+        "label": "Payer",
+        "placement": "col-12 col-lg-4 col-md-6 ",
+        "validations": {        
+        },
+        "optionsname": "AddressTypeConstants",
+        "defaultValue": null,
+        "options": ""
+      },
+      {
+        
+        "type": "text",
+        "name": "sendBillTo",
+        "rearSector": "sendBillTo",
+        "label": "Send Bill To",
+        "placement": "col-12 col-lg-4 col-md-6 ",
+        "validations": {
+        }
+      },
+      {
+        
+        "type": "text",
+        "name": "billingAddress",
+        "rearSector": "billingAddress",
+        "label": "Billing Address",
+        "placement": "col-12 col-lg-4 col-md-6 ",
+        "validations": {
+        }
+      }
+    ],
+    [
+      {
+        
+        "type": "panelSideHeader",
+        "label": "Payment Information"
+      }
+    ],
+    [
+      {
+        
+        "type": "select",
+        "name": "paymentChannel",
+        "rearSector": "paymentChannel",
+        "label": "Payment Channel",
+        "placement": "col-12 col-lg-4 col-md-6 ",
+        "validations": {        
+        },
+        "optionsname": "AddressTypeConstants",
+        "defaultValue": null,
+        "options": ""
+      },
+      {
+        
+        "type": "text",
+        "name": "paymentMethod",
+        "rearSector": "paymentMethod",
+        "label": "Payment Method",
+        "placement": "col-12 col-lg-4 col-md-6 ",
+        "validations": {
+        }
+      },
+      {
+        
+        "type": "text",
+        "name": "dayInMonthOfPayment",
+        "rearSector": "dayInMonthOfPayment",
+        "label": "Day In Month Of Payment",
+        "placement": "col-12 col-lg-4 col-md-6 ",
+        "validations": {
+        }
+      }
+    ],
+    [
+      {
+        
+        "type": "panelSideHeader",
+        "label": "Distribution Information"
+      }
+    ],
+    [
+      {
+        
+        "type": "select",
+        "name": "distributionChannel",
+        "rearSector": "distributionChannel",
+        "label": "Distribution Channel",
+        "placement": "col-12 col-lg-4 col-md-6",
+        "validations": {        
+        },
+        "optionsname": "AddressTypeConstants",
+        "defaultValue": null,
+        "options": ""
+      },
+      {
+        
+        "type": "text",
+        "name": "distributionMethod",
+        "rearSector": "distributionMethod",
+        "label": "Distribution Method",
+        "placement": "col-12 col-lg-4 col-md-6 ",
+        "validations": {
+        }
+      }
+    ]
+  
+  ]
+}
+

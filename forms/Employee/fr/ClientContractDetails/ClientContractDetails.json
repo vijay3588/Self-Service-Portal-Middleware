@@ -1,0 +1,815 @@
+{
+	"cards": [
+		{
+			"title": "panelCard",
+			"type": "panelCard",
+			"name": "panelCard",
+			"cardMembers": [
+				{
+					"cardElements": [
+						{
+							"cardConfig": {
+								"showHeader": true,
+								"showFooter": false,
+								"className": "col-md-12 col-lg-12 pr-0",
+								"alignmentClass": "ml-n3"
+							},
+							"panelHeader": {
+								"config": {
+									"style": {
+										"fontSize": "14px",
+										"backgroundColor": "#f8f8f9",
+										"fontFamily": "Roboto",
+										"fontWeight": "500",
+										"fontStretch": "normal",
+										"color": "#333333",
+										"padding": "0px 240px 0px 25px"
+									}
+								},
+								"elements": [
+									{
+										"type": "label",
+										"name": "ProductsandCoverages",
+										"label": "Numéro de contrat",
+										"placement": "col-lg-4 col-sm-4; mt-2 text-14",
+										"value": "Numéro de contrat"
+									},
+									{
+										"type": "label",
+										"name": "ProductsandCoverages",
+										"label": "Date d’effet",
+										"placement": "col-lg-2 col-sm-2; mt-2 text-14",
+										"value": "Date d’effet"
+									},
+									{
+										"type": "label",
+										"name": "ProductsandCoverages",
+										"label": "Date de fin",
+										"placement": "col-lg-2 col-sm-2; mt-2 text-14",
+										"value": "Date de fin"
+									},
+									{
+										"type": "label",
+										"name": "ProductsandCoverages",
+										"label": "Statut",
+										"placement": "col-lg-2 col-sm-2; mt-2 text-14",
+										"value": "Statut"
+									}
+								]
+							},
+							"panelBody": {
+								"config": {
+									"className": "card-scroll"
+								},
+								"elements": [
+									{
+										"title": "contractAndLoan",
+										"type": "ViewListCard",
+										"name": "contractAndLoan"
+									}
+								]
+							},
+							"panelFooter": {
+								"elements": []
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "panelCard",
+			"type": "panelCard",
+			"name": "panelCard",
+			"cardMembers": [
+				{
+					"cardElements": [
+						{
+							"cardConfig": {
+								"showHeader": true,
+								"showFooter": false,
+								"className": "col-md-12 col-lg-12 mb-3 pr-0 pl-0"
+							},
+							"panelHeader": {
+								"elements": [
+									{
+										"type": "readOnly",
+										"name": "currentAmountDue",
+										"label": "",
+										"placement": "mr-3",
+										"validations": {},
+										"image": "invoice.png"
+									},
+									{
+										"type": "label",
+										"name": "BillingAndInvoicing",
+										"label": "Avenants au contrat",
+										"placement": "col-lg-8 col-md-6",
+										"value": "Avenants au contrat",
+										"config": {
+											"className": "enrollment-number"
+										}
+									}
+								]
+							},
+							"panelBody": {
+								"config": {
+									"className": "card-scroll"
+								},
+								"elements": [
+									{
+										"title": "contractAmendments",
+										"type": "ViewListCard",
+										"name": "contractAmendments",
+										"highlightTitle": true,
+										"cardElements": [
+											{
+												"list": {
+													"listTitle": {
+														"listName": "List Bill"
+													},
+													"listHeader": [
+														{
+															"value": "Billing Frequency",
+															"config": {
+																"className": ""
+															}
+														},
+														{
+															"value": "Invoicing Frequency",
+															"config": {
+																"className": "second-col-align"
+															}
+														},
+														{
+															"value": "Divisions",
+															"config": {
+																"className": "col"
+															}
+														},
+														{
+															"value": "Member Classes ",
+															"config": {
+																"className": "col"
+															}
+														},
+														{
+															"value": "Coverages ",
+															"config": {
+																"className": "col"
+															}
+														},
+														{
+															"value": "Status ",
+															"config": {
+																"className": "col"
+															}
+														}
+													],
+													"listRowData": [
+														{
+															"name": "billingFrequency",
+															"type": "readOnly",
+															"label": "",
+															"value": "Test",
+															"hideLabel": true,
+															"config": {
+																"childClassName": "first-col-align",
+																"childClassNameWithChild": "first-col-align-child",
+																"grandChildClassName": "first-col-align-grand-child"
+															}
+														},
+														{
+															"name": "invoicingFrequency",
+															"type": "readOnly",
+															"label": "",
+															"value": "Test",
+															"hideLabel": true,
+															"config": {}
+														},
+														{
+															"name": "divisions",
+															"type": "readOnly",
+															"label": "",
+															"value": "Test",
+															"hideLabel": true,
+															"config": {}
+														},
+														{
+															"name": "memberClasses",
+															"type": "readOnly",
+															"label": "",
+															"value": "Test",
+															"hideLabel": true,
+															"config": {}
+														},
+														{
+															"name": "coverages",
+															"type": "readOnly",
+															"label": "",
+															"value": "Test",
+															"hideLabel": true,
+															"config": {}
+														},
+														{
+															"name": "status",
+															"type": "readOnly",
+															"label": "",
+															"value": "Test",
+															"hideLabel": true,
+															"config": {
+																"optionsname": "InvoiceStatusConstants"
+															}
+														}
+													]
+												}
+											}
+										],
+										"cardConfig": {
+											"showHeader": false
+										}
+									},
+									{
+										"title": "ConsolidatedBill",
+										"type": "ViewListCard",
+										"highlightTitle": true,
+										"cardElements": [
+											{
+												"list": {
+													"listTitle": {
+														"listName": "Consolidated Bill"
+													},
+													"listHeader": [
+														{
+															"value": "Billing Frequency",
+															"config": {
+																"className": ""
+															}
+														},
+														{
+															"value": "Invoicing Frequency",
+															"config": {
+																"className": "second-col-align"
+															}
+														},
+														{
+															"value": "Divisions",
+															"config": {
+																"className": "col"
+															}
+														},
+														{
+															"value": "Member Classes ",
+															"config": {
+																"className": "col"
+															}
+														},
+														{
+															"value": "Coverages ",
+															"config": {
+																"className": "col"
+															}
+														},
+														{
+															"value": "Status ",
+															"config": {
+																"className": "col"
+															}
+														}
+													],
+													"listRowData": [
+														{
+															"name": "billingFrequency",
+															"type": "readOnly",
+															"label": "",
+															"value": "Test",
+															"hideLabel": true,
+															"config": {
+																"childClassName": "first-col-align",
+																"childClassNameWithChild": "first-col-align-child",
+																"grandChildClassName": "first-col-align-grand-child"
+															}
+														},
+														{
+															"name": "invoicingFrequency",
+															"type": "readOnly",
+															"label": "",
+															"value": "Test",
+															"hideLabel": true,
+															"config": {}
+														},
+														{
+															"name": "divisions",
+															"type": "readOnly",
+															"label": "",
+															"value": "Test",
+															"hideLabel": true,
+															"config": {}
+														},
+														{
+															"name": "memberClasses",
+															"type": "readOnly",
+															"label": "",
+															"value": "Test",
+															"hideLabel": true,
+															"config": {}
+														},
+														{
+															"name": "coverages",
+															"type": "readOnly",
+															"label": "",
+															"value": "Test",
+															"hideLabel": true,
+															"config": {}
+														},
+														{
+															"name": "status",
+															"type": "readOnly",
+															"label": "",
+															"value": "Test",
+															"hideLabel": true,
+															"config": {}
+														}
+													]
+												}
+											}
+										],
+										"cardConfig": {
+											"showHeader": false
+										}
+									}
+								]
+							},
+							"panelFooter": {
+								"elements": []
+							}
+						}
+					]
+				}
+			]
+		}
+	],
+	"metadata":{
+		"contractAndLoan": {
+			"header": [{
+				"header": [{
+					"content": [				
+					{
+						"content": [
+							[
+								{
+									"content": "",
+									"placement": "prodArrowItem1",
+									"dataObject": "",
+									"sector": "contractNumber",
+									"dataSegment": ""
+								},
+								{
+									"content": "",
+									"placement": "row col-lg-2 col-sm-2 prod-text-14",
+									"dataObject": "",
+									"sector": "effectiveDate",
+									"dataSegment": "",
+									"name": "coverage-effectivedate",
+									"label": "Effective Date",
+									"elementor": true,
+									"value": "",
+									"hideLabel": true,
+									"type": "readOnly",
+									"insideSpan": true,
+									"config": {
+										"valueType": "date",
+										"format": "MM/DD/YYYY"
+									}
+								},
+								{
+									"content": "--/--/----",
+									"placement": "row col-lg-2 col-sm-2 prod-text-14",
+									"dataObject": "",
+									"sector": "terminationDate",
+									"dataSegment": "",
+									"name": " coverage-subscrpitiondate",
+									"label": "Effective Date",
+									"elementor": true,
+									"value": "--/--/----",
+									"hideLabel": true,
+									"type": "readOnly",
+									"insideSpan": true,
+									"config": {
+										"valueType": "date",
+										"format": "MM/DD/YYYY"
+									}
+								},
+								{
+									"elementor": true,
+									"content": "",
+									"placement": "row col-lg-2 col-sm-2 prod-text-14",
+									"sector": "status",
+									"dataSegment": "",
+									"name": "status-label",
+									"type": "tile",
+									"label": "",
+									"value": "",
+									"hideLabel": true,
+									"config": {
+										"displayName": "StatusConstants"
+									}
+
+								} 
+								
+							]
+						],
+						"placement": ""
+					},
+					{
+						"content": [
+							[{
+								"content": "Information du prêt",
+								"placement": "loanHeaderSingleContainer",
+								"dataObject": "",
+								"sector": "",
+								"dataSegment": ""
+							}]
+						],
+						"placement": ""
+					}]
+				}],
+				"list": [{
+					"content": [
+						{
+							"content": [
+								[{
+										"content": "Type de prêt",
+										"placement": "arrowProdHeaderText"
+									},
+									{
+										"content": "Montant Principal",
+										"placement": "prodHeaderText"
+									},
+									{
+										"content": "Prêteur",
+										"placement": "prodHeaderText"
+									},
+									{
+										"content": "Paiement Périodique",
+										"placement": "prodHeaderText"
+									}
+								]
+							],
+							"placement": "prodHeaderContainer"
+						},
+						{
+							"content": [
+								[
+									{
+										"content": "Prêt amortissable à taux Fixe - PATF001",
+										"placement": "prodArrowItem",
+										"sector": "loanType",
+										"dataSegment": ""
+									},
+									{
+										"elementor": true,
+										"content": "",
+										"type": "readOnly",
+										"name": "principalAmt",
+										"hideLabel": true,
+										"placement": "col-lg-2 col-sm-2 text-14",
+										"contentClassName" : "dummyClass",
+										"sector": "principalAmt",
+										"dataSegment": "",
+										"config": {
+											"valueType": "currency",
+											"locale": "fr-FR",
+											"currency": "EUR"
+										}
+									},
+									{
+										"content": "",
+										"placement": "headerText",
+										"sector": "lender",
+										"dataSegment": ""
+									},
+									{
+										"elementor": true,
+										"content": "",
+										"type": "readOnly",
+										"name": "periodicPay",
+										"hideLabel": true,
+										"placement": "col-lg-2 col-sm-2 text-14",
+										"contentClassName" : "dummyClass",
+										"sector": "periodicPay",
+										"dataSegment": "",
+										"config": {
+											"valueType": "currency",
+											"locale": "fr-FR",
+											"currency": "EUR"
+										}
+									}
+								],
+								[{
+									"subList": {
+										"content": [
+											[{
+													"content": "",
+													"placement": "headerSingleContainer",
+													"sector": "name",
+													"dataSegment": ""
+												},
+												{
+													"content": "Echéanciers de primes",
+													"placement": "subheaderSingleContainer",
+													"sector": "",
+													"dataSegment": ""
+												},
+												{
+													"subChildList": {
+														"content": [
+															[{
+																	"content": "Date",
+																	"placement": "tablePlainHeader"
+																},
+																{
+																	"content": "Solde principal",
+																	"placement": "tablePlainHeader"
+																},
+																{
+																	"content": "",
+																	"placement": "tablePlainHeader",
+																	"sector": "code1",
+																	"dataSegment": "premiumSchedule"
+																},
+																{
+																	"content": "",
+																	"placement": "tablePlainHeader",
+																	"sector": "code2",
+																	"dataSegment": "premiumSchedule"
+																},
+																{
+																	"content": "",
+																	"placement": "tablePlainHeader",
+																	"sector": "code3",
+																	"dataSegment": "premiumSchedule"
+																},
+																{
+																	"content": "",
+																	"placement": "tablePlainHeader",
+																	"sector": "code4",
+																	"dataSegment": "premiumSchedule"
+																}
+															],
+															[
+																{
+																	"content": "",
+																	"placement": "tablePlainItem",
+																	"sector": "date",
+																	"dataSegment": "premiumSchedule"
+																},
+																{
+																	"elementor": true,
+																	"content": "",
+																	"type": "readOnly",
+																	"name": "coverage1",
+																	"hideLabel": true,
+																	"placement": "col-lg-2 col-sm-2 prod-text-14 table-plain-item",
+																	"contentClassName" : "dummyClass",
+																	"sector": "principalBalance",
+																	"dataSegment": "premiumSchedule",
+																	"config": {
+																		"valueType": "currency",
+																		"locale": "fr-FR",
+																		"currency": "EUR"
+																	}
+																},
+																{
+																	"elementor": true,
+																	"content": "",
+																	"type": "readOnly",
+																	"name": "coverage1",
+																	"hideLabel": true,
+																	"placement": "col-lg-2 col-sm-2 prod-text-14 table-plain-item",
+																	"contentClassName" : "dummyClass",
+																	"sector": "coverage1",
+																	"dataSegment": "premiumSchedule",
+																	"config": {
+																		"valueType": "currency",
+																		"locale": "fr-FR",
+																		"currency": "EUR"
+																	}
+																},
+																{
+																	"elementor": true,
+																	"content": "",
+																	"type": "readOnly",
+																	"name": "coverage2",
+																	"hideLabel": true,
+																	"placement": "col-lg-2 col-sm-2 prod-text-14 table-plain-item",
+																	"contentClassName" : "dummyClass",
+																	"sector": "coverage2",
+																	"dataSegment": "premiumSchedule",
+																	"config": {
+																		"valueType": "currency",
+																		"locale": "fr-FR",
+																		"currency": "EUR"
+																	}
+																},
+																{
+																	"elementor": true,
+																	"content": "",
+																	"type": "readOnly",
+																	"name": "coverage3",
+																	"hideLabel": true,
+																	"placement": "col-lg-2 col-sm-2 prod-text-14 table-plain-item",
+																	"contentClassName" : "dummyClass",
+																	"sector": "coverage3",
+																	"dataSegment": "premiumSchedule",
+																	"config": {
+																		"valueType": "currency",
+																		"locale": "fr-FR",
+																		"currency": "EUR"
+																	}
+																},
+																{
+																	"elementor": true,
+																	"content": "",
+																	"type": "readOnly",
+																	"name": "coverage4",
+																	"hideLabel": true,
+																	"placement": "col-lg-2 col-sm-2 prod-text-14 table-plain-item",
+																	"contentClassName" : "dummyClass",
+																	"sector": "coverage4",
+																	"dataSegment": "premiumSchedule",
+																	"config": {
+																		"valueType": "currency",
+																		"locale": "fr-FR",
+																		"currency": "EUR"
+																	}
+																}
+															],
+															[
+																{
+																	"content": "",
+																	"placement": "tablePlainHeader"
+																},
+																{
+																	"content": "Prime totale",
+																	"placement": "tablePlainHeader"
+																},
+																{
+																	"elementor": true,
+																	"content": "",
+																	"type": "readOnly",
+																	"name": "total1",
+																	"hideLabel": true,
+																	"placement": "col-lg-2 col-sm-2 prod-text-14 table-plain-header",
+																	"contentClassName" : "dummyClass",
+																	"sector": "total1",
+																	"dataSegment": "premiumSchedule",
+																	"config": {
+																		"valueType": "currency",
+																		"locale": "fr-FR",
+																		"currency": "EUR"
+																	}
+																},
+																{
+																	"elementor": true,
+																	"content": "",
+																	"type": "readOnly",
+																	"name": "total2",
+																	"hideLabel": true,
+																	"placement": "col-lg-2 col-sm-2 prod-text-14 table-plain-header",
+																	"contentClassName" : "dummyClass",
+																	"sector": "total2",
+																	"dataSegment": "premiumSchedule",
+																	"config": {
+																		"valueType": "currency",
+																		"locale": "fr-FR",
+																		"currency": "EUR"
+																	}
+																},
+																{
+																	"elementor": true,
+																	"content": "",
+																	"type": "readOnly",
+																	"name": "total3",
+																	"hideLabel": true,
+																	"placement": "col-lg-2 col-sm-2 prod-text-14 table-plain-header",
+																	"contentClassName" : "dummyClass",
+																	"sector": "total3",
+																	"dataSegment": "premiumSchedule",
+																	"config": {
+																		"valueType": "currency",
+																		"locale": "fr-FR",
+																		"currency": "EUR"
+																	}
+																},
+																{
+																	"elementor": true,
+																	"content": "",
+																	"type": "readOnly",
+																	"name": "total4",
+																	"hideLabel": true,
+																	"placement": "col-lg-2 col-sm-2 prod-text-14 table-plain-header",
+																	"contentClassName" : "dummyClass",
+																	"sector": "total4",
+																	"dataSegment": "premiumSchedule",
+																	"config": {
+																		"valueType": "currency",
+																		"locale": "fr-FR",
+																		"currency": "EUR"
+																	}
+																}
+															]
+														],
+														"placement": "subTablePlainContainer",
+														"dataSegment": "premiumSchedule"
+													}
+												}
+											]
+										],
+										"placement": "subListPlainContainer"
+									}
+								}]
+							],
+							"placement": "listPlainContainer1"
+						}
+					],
+					"placement": "prodCardItem"
+				}],
+				"footer":[{
+						"content": [				
+						{
+							"content": [
+								[
+									{
+										"content": "<hr >",
+										"placement": "",
+										"html":true
+									}
+								]
+							],
+							"placement": "footerLine"
+						}],
+					"placement": ""
+				}]
+			}]
+		},
+		"contractAmendments": {
+			"header": [{
+				"header": [{
+					"content": [{
+						"content": [
+							[]
+						],
+						"placement": ""
+					}]
+				}],
+				"list": [{
+					"content": [{
+							"content": [
+								[{
+										"content": "Avenant numéro",
+										"placement": "arrowHeaderText"
+									},
+									{
+										"content": "Type d’avenant",
+										"placement": "listHeaderItem4"
+									},
+									{
+										"content": "Date d’effet",
+										"placement": "listHeaderItem"
+									}
+								]
+							],
+							"placement": "listHeaderContainer"
+						},
+						{
+							"content": [
+								[{
+										"content": "",
+										"placement": "arrowListItem",
+										"sector": "endorsementNumber",
+										"dataSegment": ""
+									},
+									{
+										"content": "",
+										"placement": "itemText4",
+										"sector": "endorsmentType",
+										"dataSegment": ""
+									},
+									{
+										"content": "--/--/----",
+										"placement": "itemText",
+										"sector": "dateOfChange",
+										"dataSegment": ""
+									}
+								]
+							],
+							"placement": "listPlainContainer"
+						}
+					],
+					"placement": "billingCardItem"
+				}]
+			}]
+		}
+	}
+}

@@ -1,0 +1,265 @@
+[
+    {
+        "formName": "billDescInformation",
+        "cardElements": "",
+        "frontSegment": "billDescInformation",
+        "dataParentSegment": "billingServiceHistories.billlingServiceInformation",
+        "dataSegmentType": "array",
+        "defaultSectorMapping": [
+            {
+                "frontSector": "billDetail",
+                "rearSector": "billDetail",
+                "rearDataSegmentPath": "billingServiceInformation.billingSettings.billDescInformation.paramGBPBillDescDetail",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "status",
+                "rearSector": "status",
+                "rearDataSegmentPath": "billingServiceInformation.billingSettings.billDescInformation.paramGBPBillDescDetail",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "divisions",
+                "rearSector": "divisions",
+                "rearDataSegmentPath": "billingServiceInformation.billingSettings.billDescInformation.paramGBPBillDescDetail",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "memberClasses",
+                "rearSector": "memberClasses",
+                "rearDataSegmentPath": "billingServiceInformation.billingSettings.billDescInformation.paramGBPBillDescDetail",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "coverages",
+                "rearSector": "coverages",
+                "rearDataSegmentPath": "billingServiceInformation.billingSettings.billDescInformation.paramGBPBillDescDetail",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "nextDueDate",
+                "rearSector": "nextDueDate",
+                "rearDataSegmentPath": "billingServiceInformation.billingSettings.billDescInformation.paramGBPBillDescDetail",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "amount",
+                "rearSector": "amount",
+                "rearDataSegmentPath": "billingServiceInformation.billingSettings.billDescInformation.paramGBPBillDescDetail.dueAmount",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "payMentStatus",
+                "rearSector": "payMentStatus",
+                "rearDataSegmentPath": "billingServiceInformation.billingSettings.billDescInformation.paramGBPBillDescDetail",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "latPayMentDate",
+                "rearSector": "latPayMentDate",
+                "rearDataSegmentPath": "billingServiceInformation.billingSettings.billDescInformation.paramGBPBillDescDetail",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "payer",
+                "rearSector": "payer",
+                "rearDataSegmentPath": "billingServiceInformation.billingSettings.billDescInformation.paramGBPBillDescDetail",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "paidThroughDate",
+                "rearSector": "paidThroughDate",
+                "rearDataSegmentPath": "billingServiceInformation.billingSettings.billDescInformation.paramGBPBillDescDetail",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "billandInvoiceSettingEffectiveDateOn",
+                "rearSector": "billandInvoiceSettingEffectiveDateOn",
+                "rearDataSegmentPath": "billingServiceInformation.billingSettings.billDescInformation.paramGBPBillDescDetail",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "billedEntity",
+                "rearSector": "billedEntity",
+                "rearDataSegmentPath": "billingServiceInformation.billingSettings.billDescInformation.paramGBPBillDescDetail",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "billingInformation",
+                "rearSector": "billingInformation",
+                "rearDataSegmentPath": "billingServiceInformation.billingSettings.billDescInformation.paramGBPBillDescDetail",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "billingLeadTime",
+                "rearSector": "billingLeadTime",
+                "rearDataSegmentPath": "billingServiceInformation.billingSettings.billDescInformation.paramGBPBillDescDetail",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "billingLeadTimeCalculation",
+                "rearSector": "billingLeadTimeCalculation",
+                "rearDataSegmentPath": "billingServiceInformation.billingSettings.billDescInformation.paramGBPBillDescDetail",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "billingStartDate",
+                "rearSector": "billingStartDate",
+                "rearDataSegmentPath": "billingServiceInformation.billingSettings.billDescInformation.paramGBPBillDescDetail",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "billingSyncDate",
+                "rearSector": "billingSyncDate",
+                "rearDataSegmentPath": "billingServiceInformation.billingSettings.billDescInformation.paramGBPBillDescDetail",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "invoiceInformation",
+                "rearSector": "invoiceInformation",
+                "rearDataSegmentPath": "billingServiceInformation.billingSettings.billDescInformation.paramGBPBillDescDetail",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "invoiceFrequency",
+                "rearSector": "invoiceFrequency",
+                "rearDataSegmentPath": "billingServiceInformation.billingSettings.billDescInformation.paramGBPBillDescDetail",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "invoicingLeadTime",
+                "rearSector": "invoicingLeadTime",
+                "rearDataSegmentPath": "billingServiceInformation.billingSettings.billDescInformation.paramGBPBillDescDetail",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "invoicingLeadTimeCalculation",
+                "rearSector": "invoicingLeadTimeCalculation",
+                "rearDataSegmentPath": "billingServiceInformation.billingSettings.billDescInformation.paramGBPBillDescDetail",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "invoicingStartDate",
+                "rearSector": "invoicingStartDate",
+                "rearDataSegmentPath": "billingServiceInformation.billingSettings.billDescInformation.paramGBPBillDescDetail",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "invoicingSyncDate",
+                "rearSector": "invoicingSyncDate",
+                "rearDataSegmentPath": "billingServiceInformation.billingSettings.billDescInformation.paramGBPBillDescDetail",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "sendBillTo",
+                "rearSector": "sendBillTo",
+                "rearDataSegmentPath": "billingServiceInformation.billingSettings.billDescInformation.paramGBPBillDescDetail",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "billingAddress",
+                "rearSector": "billingAddress",
+                "rearDataSegmentPath": "billingServiceInformation.billingSettings.billDescInformation.paramGBPBillDescDetail",
+                "defaultValue": ""
+            }
+        ]
+    },
+    {
+        "formName": "prodAndCoverage",
+        "cardElements": "",
+        "frontSegment": "prodAndCoverage",
+        "dataParentSegment": "subscribedEntitiesHistories.coverages",
+        "dataSegmentType": "array",
+        "defaultSectorMapping": [
+            {
+                "frontSector": "optionName",
+                "rearSector": "optionName",
+                "rearDataSegmentPath": "coverageGeneralInformation.coverageGeneralInformation",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "effectiveDate",
+                "rearSector": "effectiveDate",
+                "rearDataSegmentPath": "coverageGeneralInformation.coverageGeneralInformation",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "subscriptionDate",
+                "rearSector": "subscriptionDate",
+                "rearDataSegmentPath": "coverageGeneralInformation.coverageGeneralInformation",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "status",
+                "rearSector": "status",
+                "rearDataSegmentPath": "coverageGeneralInformation.coverageGeneralInformation",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "additionalDatas",
+                "rearSector": "additionalDatas",
+                "rearDataSegmentPath": "coverageGeneralInformation.coverageGeneralInformation",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "name",
+                "rearSector": "name",
+                "rearDataSegmentPath": "planDesigns",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "identifier",
+                "rearSector": "identifier",
+                "rearDataSegmentPath": "planDesigns",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "effectiveDatePD",
+                "rearSector": "effectiveDate",
+                "rearDataSegmentPath": "planDesigns",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "attributesPD",
+                "rearSector": "planDesignAttributes",
+                "rearDataSegmentPath": "planDesigns.attribute",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "subscribedBenefits",
+                "rearSector": "subscribedBenefits",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "eligibleEmployees",
+                "rearSector": "eligibleEmployees",
+                "rearDataSegmentPath": "coverageGeneralInformation.coverageGeneralInformation",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "participationStatus",
+                "rearSector": "participationStatus",
+                "rearDataSegmentPath": "participationData.participationDataInformation",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "requiredParticipation",
+                "rearSector": "requiredParticipation",
+                "rearDataSegmentPath": "participationData.participationDataInformation",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "actualParticipationNumber",
+                "rearSector": "actualParticipationNumber",
+                "rearDataSegmentPath": "participationData.participationDataInformation",
+                "defaultValue": ""
+            }, {
+                "frontSector": "currentParticipationNumber",
+                "rearSector": "currentParticipationNumber",
+                "rearDataSegmentPath": "participationData.participationDataInformation",
+                "defaultValue": ""
+            }
+        ]
+    }
+  ]

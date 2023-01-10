@@ -1,0 +1,69 @@
+[
+    {
+        "frontSegment": "contractAndLoan",
+        "dataParentSegment": "",
+        "dataSegmentType": "object",
+        "defaultSectorMapping": [
+            {
+                "frontSector": "contractNumber",
+                "rearSector": "internalPolicyId",
+                "rearDataSegmentPath": "contract.internalPolicyIdentifier",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "effectiveDate",
+                "rearSector": "effectiveDate",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "endDate",
+                "rearSector": "terminationDate",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "status",
+                "rearSector": "status",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "loanType",
+                "rearSector": "name",
+                "rearDataSegmentPath": "loans.loanIdentifier",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "principalAmt",
+                "rearSector": "amount",
+                "rearDataSegmentPath": "loans.loanInformation.initialPeriodicPaymentAmount",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "lender",
+                "rearSector": "name",
+                "rearDataSegmentPath": "loans.searchLender.name",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "periodicPay",
+                "rearSector": "amount",
+                "rearDataSegmentPath": "loans.loanInformation.initialPeriodicPaymentAmount",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "name",
+                "rearSector": "ownerLastName",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "premiumSchedule",
+                "rearSector": "premiumSchedule",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            }
+        ]
+    }
+  ]

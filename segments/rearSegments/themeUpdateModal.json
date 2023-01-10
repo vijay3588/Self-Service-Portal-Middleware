@@ -1,0 +1,10 @@
+{
+  "modalHeaderBgColor": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "modalContentBgColor": {
+    "dataType": "string",
+    "defaultValue": ""
+  }
+}

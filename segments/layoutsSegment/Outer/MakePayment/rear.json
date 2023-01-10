@@ -1,0 +1,10 @@
+{
+   "self": {
+       "dataType": "object",
+       "name": "aSLI_Manage_Payment"
+   },
+   "input": {
+      "dataType": "object",
+      "name": "aSPCB_CreatePayment"
+  }
+}

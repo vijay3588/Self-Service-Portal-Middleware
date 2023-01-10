@@ -1,0 +1,83 @@
+[
+  {
+    "frontDataSegment": "loggedUserEntity._Result.clientId",
+    "rearDataSegment": "payor",
+    "rearDataSegmentPath": "input",
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping": [
+      { "frontSector": "buid", "rearSector": "buid", "defaultValue": "" }
+    ]
+  },
+  {
+    "frontDataSegment": "loggedUserEntity._Result.clientId",
+    "rearDataSegment": "clientId",
+    "rearDataSegmentClass": "clientIds",
+    "rearDataSegmentPath": "input.paymentTargets",
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping": [
+      { "frontSector": "buid", "rearSector": "buid", "defaultValue": "" }
+    ]
+  },
+  {
+    "frontDataSegment": "values.MakePayment",
+    "rearDataSegment": "amount",
+    "rearDataSegmentPath": "input.paymentTargets",
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "amountPaid",
+        "rearSector": "amount",
+        "defaultValue": ""
+      }
+    ]
+  },
+  {
+    "frontDataSegment": "values.MakePayment",
+    "rearDataSegment": "paymentInfo",
+    "rearDataSegmentClass": "aSPCB_Payment",
+    "rearDataSegmentPath": "input",
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "dateOfPayment",
+        "rearSector": "receivedDate",
+        "rearDataSegment": "paymentInfo",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "amountPaid",
+        "rearSector": "amount",
+        "rearDataSegment": "amount",
+        "defaultValue": ""
+      }
+    ]
+  },
+
+  {
+    "frontDataSegment": "values.MakePayment",
+    "rearDataSegment": "moneyChannelIdentifier",
+    "rearDataSegmentPath": "input.paymentChannel",
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "paymentChannel",
+        "rearSector": "channelCode",
+        "defaultValue": ""
+      }
+    ]
+  },
+
+  {
+    "frontDataSegment": "values.MakePayment",
+    "rearDataSegment": "paymentId",
+    "rearDataSegmentPath": "input",
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "paymentId",
+        "rearSector": "paymentFunctionalIdentifier",
+        "defaultValue": ""
+      }
+    ]
+  }
+]

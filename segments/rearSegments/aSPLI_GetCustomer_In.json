@@ -1,0 +1,42 @@
+{
+    "$ref": {
+        "dataType": "string",
+        "defaultValue": "#"
+    },
+    "className": {
+        "dataType": "string",
+        "defaultValue": "aSPLI_GetCustomer_In"
+    },
+    "kind": {
+        "dataType": "string",
+        "defaultValue": "tplib_All"
+    },
+    "name": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "shortName": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "birthDate": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "policyNumber": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "customerID": {
+        "dataType": "object",
+        "name": "customerID"
+    },
+    "brokerBUID": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "sSN": {
+        "dataType": "string",
+        "defaultValue": ""
+    }
+}

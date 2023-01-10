@@ -1,0 +1,130 @@
+{
+  "elements": [
+    [
+      {
+        "type": "text",
+        "name": "doingBusinessAs",
+        "label": "Doing Business As",
+        "value": "",
+        "placement": "companyProfileElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "text",
+        "name": "clientId",
+        "label": "Client ID",
+        "placement": "companyProfileElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "number",
+        "name": "taxId",
+        "label": "Tax ID",
+        "placement": "companyProfileElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "number",
+        "name": "numberOfEmployees",
+        "label": "Number Of Employees",
+        "placement": "companyProfileElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "select",
+        "name": "country",
+        "label": "Country",
+        "value": "USA",
+        "placement": "companyProfileElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        },
+        "defaultValue": null,
+        "options": "",
+        "config": {
+          "optionsname": "CountryConstants"
+        }
+      },
+      {
+        "type": "select",
+        "name": "situsState",
+        "label": "Situs State",
+        "placement": "companyProfileElement",
+        "options": "",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        },
+        "config": {
+          "optionsname": "StateConstants"
+        }
+      },
+      {
+        "type": "select",
+        "name": "preferedCurrency",
+        "label": "Prefered Currency",
+        "placement": "companyProfileElement",
+        "options": "",
+        "config": {
+          "optionsname": "CurrencyConstants"
+        }
+      },
+      {
+        "type": "select",
+        "name": "workingStates",
+        "label": "Working States",
+        "placement": "companyProfileElement",
+        "options": "",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        },
+        "config": {
+          "optionsname": "ShortStateConstants"
+        }
+      },
+      {
+        "type": "text",
+        "name": "distributionUnit",
+        "label": "Distribution Unit",
+        "placement": "companyProfileElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "text",
+        "name": "industryClassification",
+        "label": "Industry Classification",
+        "placement": "companyProfileElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      }
+    ]
+  ]
+}

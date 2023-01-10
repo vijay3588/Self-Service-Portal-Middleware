@@ -1,0 +1,49 @@
+{
+    "invoiceNumber": {
+        "dataType": "number",
+        "defaultValue": 0,
+        "dataConfig": {
+            "configType": "splitData",
+            "split": {
+                "splitChar": "   ",
+                "splitIndex": 0,
+                "charStartPos": 11,
+                "chartEndPos": 0
+            }
+        }
+    },
+    "invoicingDate": {
+        "dataType": "date",
+        "defaultValue": "",
+        "dataConfig": {
+            "configType": "splitData",
+            "split": {
+                "splitChar": "   ",
+                "splitIndex": 2,
+                "charStartPos": 16,
+                "chartEndPos": 0
+            }
+        }
+    },
+    "dueDate": {
+        "dataType": "date",
+        "defaultValue": "",
+        "dataConfig": {
+            "configType": "splitData",
+            "split": {
+                "splitChar": "   ",
+                "splitIndex": 3,
+                "charStartPos": 11,
+                "chartEndPos": 21
+            }
+        }
+    },
+    "amountDue": {
+        "dataType": "number",
+        "defaultValue": 0
+    },
+    "reconciliation": {
+        "dataType": "string",
+        "defaultValue": ""
+    }
+}

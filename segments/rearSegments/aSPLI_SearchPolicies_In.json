@@ -1,0 +1,31 @@
+{
+    "className":{
+        "dataType": "string",
+        "defaultValue": "aSPLI_SearchPolicies_In"
+      },
+    "policyName":{
+        "dataType": "string",
+        "defaultValue": ""
+      },
+    "clientIdentifiers":
+    {
+        "dataType": "object",
+        "name": "clientIdentifiers"
+    },
+    "ownerLastName":{
+        "dataType": "string",
+        "defaultValue": ""
+      },
+    "ownerFirstName":{
+        "dataType": "string",
+        "defaultValue": ""
+      },
+    "status":{
+        "dataType": "string",
+        "defaultValue": ""
+      },
+    "resultMaxSize": {
+        "dataType": "string",
+        "defaultValue": ""
+      }
+}

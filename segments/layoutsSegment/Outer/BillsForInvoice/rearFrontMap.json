@@ -1,0 +1,63 @@
+[
+    {
+        "frontSegment": "bills",
+        "dataParentSegment": "",
+        "dataSegmentType": "array",
+        "defaultSectorMapping": [
+            {
+                "frontSector": "billNumber",
+                "rearSector": "billNumber",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "amount",
+                "rearSector": "amount",
+                "rearDataSegmentPath": "amount",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "fromDate",
+                "rearSector": "fromDate",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "toDate",
+                "rearSector": "toDate",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "contractNumber",
+                "rearSector": "contractNumber",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "dueDate",
+                "rearSector": "dueDate",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "dueAmount",
+                "rearSector": "amount",
+                "rearDataSegmentPath": "amount",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "paidAmount",
+                "rearSector": "paidAmount",
+                "rearDataSegmentPath": "amount",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "status",
+                "rearSector": "status",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            }
+        ]
+    }
+]

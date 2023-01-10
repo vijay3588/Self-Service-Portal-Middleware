@@ -1,0 +1,121 @@
+{
+    "triConfig": {
+      "leftCard": {
+    
+      },
+      "rightCard": {
+        "element": [
+          "stickyNote",
+          "We understand that you have a life event to record for 2021-22 enrollment period.",
+          "Please select your life event and enter the life event date.",
+          "LifeEvent Validation",
+          "Life Event"
+        ],
+        "className": "col-12",
+        "formType": "LifeEvent"
+      }
+    },
+    "elements": [
+        [
+            {
+                "type": "stickyNote",
+                "name": "securityCodeNote",
+                "label": "stickyNote",
+                "notNumbered": true,
+                "imageForEmail": true,
+                "hideLabel": true,
+                "validations": {},
+                "iconClass": "col-auto pt-1 pr-0 pl-1 ",
+                "listClass":"col-md-auto col-10 px-1",
+                "headerClass": "col-9 pt-1",
+                "olClass": "mb-1 px-1 ",
+                "responseFrom": "ContractInformation",
+                "image": "icon-important.png",
+                "title": "You have ",
+                "secondTitle": "30 days ",
+                "thirdTitle": "from the life event date to make changes to your benefit elections.",
+                "multipleTitles": true,
+                "MultipleTitleStyles":true,
+                "valueArray": [
+                    "You have 30 days from the life event date to make changes to your benefit elections."
+                ],
+                "valueIn": "seconds",
+                "placement": "col-md-12 col-12 col-lg-12 col-xl-7 pb-4 mt-4  px-0 px-md-3  "
+            },
+            {
+                "type": "panelSideHeader",
+                "label": "We understand that you have a life event to record for 2021-22 enrollment period.",
+                "config":{
+                    "color": "#001F52",
+                    "fontSize": "1.65rem",
+                    "fontFamily": "NotoSansLight"
+                },
+                "placement": "pb-4 px-1 px-md-3 "
+            },
+            {
+                "type": "readOnly",
+                "label": "Please select your life event and enter the life event date.",
+                "valuee": "Please select your life event and enter the life event date.",
+                "placement": "col-12 pb-4 px-1 px-md-3 ",
+                "classNameWrapper": "py-3",
+                "containerClassName": "py-0 px-3",
+                "insideSpan": true,
+                "content": "Please select your life event and enter the life event date."
+            },
+            {
+                "type": "select",
+                "name": "disabilityKindVersion",
+                "label": "Life Event",
+                "rearSector": "disabilityKindVersion",
+                "placement": "col-lg-4 col-md-5 col-12 px-1 px-md-3 ",
+                "validations": {
+                    "string": {
+                        "required": "This field is required"
+                    }
+                },
+                "options": [
+                    {
+                        "value": "cBirth",
+                        "text": "Birth, Adoption, Legal Guardianship"
+                    },
+                    {
+                        "value": "cMarriage",
+                        "text": "Marriage or New domestice partner"
+                    },
+                    {
+                        "value": "cDependent",
+                        "text": "Dependent status change"
+                    },
+                    {
+                        "value": "cDivorce",
+                        "text": "Divorce, Legal Separation,Annulment"
+                    }
+                ]
+            },
+            {
+                "name": "effectiveDate",
+                "type": "date",
+                "label": "Life Event Date",
+                "placement": "col-lg-4 col-md-5 col-12 px-1 px-md-3 pt-md-0 pt-3 ",
+                "image": "calender_icon_medium.png",
+                "specialIconLayout":true,
+                "config": {
+                    "valueType": "date",
+                    "format": "MM/DD/YYYY"
+                },
+                "validations": {
+                    "string": {
+                        "required": "This field is required"
+                    },
+                    "date": {
+                        "required": "This field is required",
+                        "min": {"limit": -30, "unit": "d", "message": "The enrollment window for this life event has expired." },
+                        "max": {"limit": 0, "unit": "d", "message": "The enrollment window for this life event has expired." }
+                      }
+
+                }
+            }
+        ]
+    ]
+  }
+  

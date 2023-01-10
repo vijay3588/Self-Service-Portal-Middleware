@@ -1,0 +1,14 @@
+{
+    "buid": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "internalPolicyIdentifier": {
+        "dataType": "object",
+        "name": "internalPolicyIdentifier"
+    },
+    "externalPolicyIdentifier": {
+        "dataType": "object",
+        "name": "externalPolicyIdentifier"
+    }
+}

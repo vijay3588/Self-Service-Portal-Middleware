@@ -1,0 +1,942 @@
+{
+  "sectionPanels": {
+    "panel": [0, 1, 3, 11, 13, 14, 15],
+    "sections": [
+      {
+        "noGroupStart": 0,
+        "noGroupEnd": 3
+      },
+      {
+        "groupName": "contact",
+        "groupStart": 4,
+        "groupEnd": 10,
+        "dualColumnGroup": [4, 5, 6],
+        "noRender": [5, 6],
+        "dualColumn": {
+          "group_1": [
+            [
+              {
+                "groupInd": 4,
+                "elementInd": 0
+              },
+              {
+                "groupInd": 5,
+                "elementInd": 1
+              },
+              {
+                "groupInd": 5,
+                "elementInd": 2
+              },
+              {
+                "groupInd": 5,
+                "elementInd": 3
+              },
+              {
+                "groupInd": 6,
+                "elementInd": 0
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "noGroupStart": 11,
+        "noGroupEnd": 15
+      }
+    ],
+
+    "sectionStyle": {
+      "style": {
+        "background-color": "#FCFCFC",
+        "border-radius": "0.3rem",
+        "padding": "1rem 1rem 1rem 1rem",
+        "border": "0.063 rem solid #E1E1E1"
+      }
+    }
+  },
+  "elements": [
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "Fields marked with * are mandatory",
+        "formMandatory": "Fields marked with * are mandatory"
+      }
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+        "outerDiv": false,
+        "name": "Personal Information",
+        "label": "Personal Information",
+        "placement": "col-md-6 pt-3",
+        "formSideBigHeader": "Personal Information",
+        "header": true
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "disabled": true,
+
+        "name": "firstName",
+        "value": "abc",
+        "update": {
+          "reduxPath": "employeeInformation.PersonalInformation.personalInformation.firstName",
+          "formikPath": "EmployeeProfile"
+        },
+        "rearSector": "shortName",
+        "label": "First Name",
+        "mapping": true,
+        "labelTitle": "First Name",
+
+        "placement": "col-md-2 col-sm-6 col-xs-6 col-6 pb-3",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "text",
+        "name": "middleName",
+        "label": "Middle Name",
+        "labelTitle": "Middle Name",
+        "disabled": true,
+        "mapping": true,
+        "header": false,
+        "update": {
+          "reduxPath": "employeeInformation.PersonalInformation.personalInformation.middleName",
+          "formikPath": "EmployeeProfile"
+        },
+        "placement": "col-md-2 col-sm-6 col-xs-6 col-6 pb-3",
+        "validations": {
+          "string": {
+            "matches": {
+              "regex": "^[a-zA-Z]+$",
+              "message": "No special characters allowed"
+            }
+          }
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "text",
+        "name": "lastName",
+        "rearSector": "name",
+        "label": "Last Name",
+        "labelTitle": "Last Name",
+        "disabled": true,
+        "mapping": true,
+        "header": false,
+        "placement": "col-md-2 col-sm-6 col-xs-6 col-6 pb-3",
+        "update": {
+          "reduxPath": "employeeInformation.PersonalInformation.personalInformation.lastName",
+          "formikPath": "EmployeeProfile"
+        },
+        "validations": {
+          "string": {
+            "matches": {
+              "regex": "^[a-zA-Z]+$",
+              "message": "No special characters allowed"
+            }
+          }
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "select",
+        "name": "gender",
+        "label": "Gender",
+        "labelTitle": "Gender",
+        "rearSector": "gender",
+        "disabled": true,
+        "value": "female",
+        "mapping": true,
+        "header": true,
+        "placement": "col-md-2 col-sm-6 col-xs-6 col-6 pb-3",
+        "update": {
+          "reduxPath": "employeeInformation.PersonalInformation.personalInformation.gender",
+          "formikPath": "EmployeeProfile",
+          "pascalCaseSkip": ["gender"]
+        },
+
+        "config": {
+          "optionsname": "GenderConstants"
+        },
+        "validations": {
+          "string": {}
+        },
+        "options": [
+          { "value": "gMale", "text": "Male" },
+          { "value": "gFemale", "text": "Female" },
+          { "value": "gundisclosed", "text": "Undisclosed" }
+        ],
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "text",
+        "name": "ssn",
+        "rearSector": "sSN",
+        "label": "SSN",
+        "labelTitle": "SSN",
+        "disabled": true,
+        "mapping": true,
+        "formatType": "SSN",
+        "imageToggle": "icon-eye.png",
+        "placement": "col-md-2 col-sm-6 col-xs-6 col-6 pb-3",
+        "update": {
+          "reduxPath": "employeeInformation.PersonalInformation.personalInformation.ssn",
+          "formikPath": "EmployeeProfile"
+        },
+        "header": false,
+        "validations": {
+          "string": {
+            "min": { "limit": 9, "message": "SSN must have 9 digits" },
+            "max": { "limit": 9, "message": "SSN must have 9 digits" },
+            "matches": {
+              "regex": "^[0-9]*$",
+              "message": "SSN must have 9 digits"
+            }
+          }
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12 pr-0",
+        "styleClass": ""
+      },
+      {
+        "type": "date",
+        "name": "dateOfBirth",
+        "rearSector": "birthDate",
+
+        "mapping": true,
+        "label": "Date of Birth",
+        "labelTitle": "Date of Birth",
+        "config": {
+          "valueType": "date",
+          "format": "MM/DD/YYYY",
+          "className": "d-none d-sm-table-cell"
+        },
+        "placement": "col-md-2 col-sm-6 col-xs-6 col-6 pb-3",
+        "value": "03/24/1978",
+        "header": false,
+        "update": {
+          "reduxPath": "employeeInformation.PersonalInformation.personalInformation.dateOfBirth",
+          "formikPath": "EmployeeProfile"
+        },
+        "validations": {
+          "string": {
+            "min": { "limit": 6, "message": "Min length is 6" }
+          },
+          "date": {
+            "min": {
+              "limit": -117,
+              "unit": "y",
+              "message": "Please enter a valid Birth Date"
+            },
+            "max": {
+              "limit": 0,
+              "unit": "y",
+              "message": "Birth Date cannot be in the future"
+            }
+          }
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+
+      {
+        "type": "text",
+        "name": "line1",
+        "rearSector": "line1",
+        "label": "Line 1",
+        "labelTitle": "Line 1",
+        "hidden": true,
+        "disabled": true,
+
+        "header": false,
+        "placement": "col-md-2 col-sm-6 col-xs-6 col-6 pb-3",
+
+        "update": {
+          "reduxPath": "employeeInformation.PersonalInformation.personalInformation.line1",
+          "formikPath": "EmployeeProfile"
+        },
+
+        "containerClassName": "col-12",
+        "contentClassName": "col-12"
+      },
+      {
+        "type": "text",
+        "name": "line2",
+        "rearSector": "line2",
+        "label": "Line 2",
+        "labelTitle": "Line 2",
+        "hidden": true,
+        "disabled": true,
+
+        "header": false,
+        "placement": "col-md-2 col-sm-6 col-xs-6 col-6 pb-3",
+
+        "update": {
+          "reduxPath": "employeeInformation.PersonalInformation.personalInformation.line2",
+          "formikPath": "EmployeeProfile"
+        },
+
+        "containerClassName": "col-12",
+        "contentClassName": "col-12"
+      },
+      {
+        "type": "text",
+        "name": "line2",
+        "rearSector": "line2",
+        "label": "Line 2",
+        "labelTitle": "Line 2",
+        "hidden": true,
+        "disabled": true,
+
+        "header": false,
+        "placement": "col-md-2 col-sm-6 col-xs-6 col-6 pb-3",
+
+        "update": {
+          "reduxPath": "employeeInformation.PersonalInformation.personalInformation.line2",
+          "formikPath": "EmployeeProfile"
+        },
+
+        "containerClassName": "col-12",
+        "contentClassName": "col-12"
+      },
+      {
+        "type": "text",
+        "name": "zipCode",
+        "rearSector": "zipCode",
+        "label": "Zip Code",
+        "labelTitle": "Zip Code",
+        "hidden": true,
+        "disabled": true,
+
+        "header": false,
+        "placement": "col-md-2 col-sm-6 col-xs-6 col-6 pb-3",
+
+        "update": {
+          "reduxPath": "employeeInformation.PersonalInformation.personalInformation.zipCode",
+          "formikPath": "EmployeeProfile"
+        },
+
+        "containerClassName": "col-12",
+        "contentClassName": "col-12"
+      },
+      {
+        "type": "text",
+        "name": "city",
+        "rearSector": "city",
+        "label": "City",
+        "labelTitle": "City",
+        "hidden": true,
+        "disabled": true,
+
+        "header": false,
+        "placement": "col-md-2 col-sm-6 col-xs-6 col-6 pb-3",
+
+        "update": {
+          "reduxPath": "employeeInformation.PersonalInformation.personalInformation.city",
+          "formikPath": "EmployeeProfile"
+        },
+
+        "containerClassName": "col-12",
+        "contentClassName": "col-12"
+      },
+      {
+        "type": "text",
+        "name": "state",
+        "rearSector": "state",
+        "label": "State",
+        "labelTitle": "State",
+        "hidden": true,
+        "disabled": true,
+
+        "header": false,
+        "placement": "col-md-2 col-sm-6 col-xs-6 col-6 pb-3",
+
+        "update": {
+          "reduxPath": "employeeInformation.PersonalInformation.personalInformation.state",
+          "formikPath": "EmployeeProfile",
+          "pascalCaseSkip": ["state"]
+        },
+
+        "containerClassName": "col-12",
+        "contentClassName": "col-12"
+      },
+      {
+        "type": "text",
+        "name": "country",
+        "rearSector": "country",
+        "label": "Country",
+        "labelTitle": "Country",
+        "hidden": true,
+        "disabled": true,
+
+        "header": false,
+        "placement": "col-md-2 col-sm-6 col-xs-6 col-6 pb-3",
+
+        "update": {
+          "reduxPath": "employeeInformation.PersonalInformation.personalInformation.country",
+          "formikPath": "EmployeeProfile",
+          "pascalCaseSkip": ["country"]
+        },
+
+        "containerClassName": "col-12",
+        "contentClassName": "col-12"
+      }
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+        "outerDiv": true,
+        "label": "Contact Information",
+        "name": "Contact Information",
+        "formSideBigHeader": "Contact Information",
+        "placement": "col-md-6 pt-3",
+        "header": true
+      }
+    ],
+
+    [
+      {
+        "type": "panelSideHeader",
+        "header": false,
+        "outerDiv": true,
+        "label": "Primary Address",
+        "name": "primaryAddressTitle",
+        "placement": "col-lg-12"
+      }
+    ],
+    [
+      {
+        "name": "primaryAddress",
+        "type": "readOnly",
+        "header": false,
+        "hidden": true,
+        "dusabled": true,
+        "outerDiv": true,
+        "update": {
+          "reduxPath": [
+            "employeeInformation.PersonalInformation.personalInformation.line1",
+            "employeeInformation.PersonalInformation.personalInformation.line2",
+            "employeeInformation.PersonalInformation.personalInformation.city",
+            "employeeInformation.PersonalInformation.personalInformation.state",
+            "employeeInformation.PersonalInformation.personalInformation.zipCode",
+            "employeeInformation.PersonalInformation.personalInformation.country"
+          ],
+          "pascalCaseSkip": ["state", "country"],
+          "formikPath": "EmployeeProfile.primaryAddress"
+        },
+        "mapping": true,
+        "label": "Primary Address",
+        "value": "1001, Timberlane Road, Denver, Colorado 80014",
+        "hideLabel": true,
+        "placement": "col-lg-12 col-md-12",
+        "containerClassName": "col-12",
+        "contentClassName": "col-9 col-md-6",
+        "imageClassName": "col-1",
+        "imageAfter": [
+          {
+            "image": "icon_circle_info_password.png",
+            "forAddress": true,
+            "toolTip": "To change the primary address, contact your employer.",
+            "placement": "col-1"
+          }
+        ]
+      },
+      {
+        "name": "primaryAddressLine1Display",
+        "type": "readOnly",
+        "header": false,
+        "outerDiv": true,
+        "label": "Alternate Address",
+        "value": "",
+        "mapping": true,
+        "containerClassName": "col-12",
+        "styleClass": "",
+        "contentClassName": "col-9 col-md-6",
+        "imageClassNamee": "col-3 col-md-4 py-3",
+        "imageAdditionalClass": "col-1",
+        "expression": "`${formik.values.EmployeeProfile.line1 ? `${formik.values.EmployeeProfile.line1} ` : ''}`",
+        "update": {
+          "reduxPath": [
+            "employeeInformation.PersonalInformation.personalInformation.line1"
+          ],
+          "formikPath": "EmployeeProfile.primaryAddressLine1Display"
+        },
+
+        "formikEntryPath": "EmployeeProfile",
+        "formikPath": ["formik.values.EmployeeProfile.line1"],
+
+        "hideLabel": true,
+        "editable": true,
+        "placement": "col-lg-12 col-md-12",
+        "imageClassName": "col-1",
+        "imageAfter": [
+          {
+            "image": "icon_circle_info_password.png",
+            "forAddress": true,
+            "toolTip": "To change the primary address, contact your employer.",
+            "placement": "col-1"
+          }
+        ]
+      },
+
+      {
+        "name": "primaryAddressLine2Display",
+        "type": "readOnly",
+        "header": false,
+        "outerDiv": true,
+        "label": "Alternate Address",
+        "value": "",
+        "mapping": true,
+        "containerClassName": "col-12",
+        "contentClassName": "col-9 col-md-6",
+        "styleClass": "",
+        "imageClassName": "col-3 col-md-4 py-3",
+        "imageAdditionalClass": "col-1",
+        "expression": "`${formik.values.EmployeeProfile.line2 ? `${formik.values.EmployeeProfile.line2} ` : ''}`",
+        "update": {
+          "reduxPath": [
+            "employeeInformation.PersonalInformation.personalInformation.line2"
+          ],
+          "formikPath": "EmployeeProfile.primaryAddressLine2Display"
+        },
+
+        "formikEntryPath": "EmployeeProfile",
+        "formikPath": ["formik.values.EmployeeProfile.line2"],
+
+        "hideLabel": true,
+        "editable": true,
+        "placement": "col-lg-12 col-md-12"
+      },
+
+      {
+        "name": "primaryAddressLine3Display",
+        "type": "readOnly",
+        "header": false,
+        "outerDiv": true,
+        "label": "Alternate Address",
+        "value": "",
+        "mapping": true,
+        "containerClassName": "col-12",
+        "styleClass": "",
+        "contentClassName": "col-9 col-md-6",
+        "imageClassName": "col-3 col-md-4 py-3",
+        "imageAdditionalClass": "col-1",
+        "expression": " `${formik.values.EmployeeProfile.city ? `${formik.values.EmployeeProfile.city} ` : ''}${formik.values.EmployeeProfile.state ? `${formik.values.EmployeeProfile.state} ` : ''}${(formik.values.EmployeeProfile.zipCode ) ? `${formik.values.EmployeeProfile.zipCode} ` : ''}${formik.values.EmployeeProfile.country || ''}`",
+        "update": {
+          "reduxPath": [
+            "employeeInformation.PersonalInformation.personalInformation.city",
+            "employeeInformation.PersonalInformation.personalInformation.state",
+            "employeeInformation.PersonalInformation.personalInformation.zipCode",
+            "employeeInformation.PersonalInformation.personalInformation.country"
+          ],
+          "pascalCaseSkip": ["state", "country"],
+          "formikPath": "EmployeeProfile.primaryAddressLine3Display"
+        },
+
+        "formikEntryPath": "EmployeeProfile",
+        "formikPath": [
+          "formik.values.EmployeeProfile.city",
+          "formik.values.EmployeeProfile.state",
+          "formik.values.EmployeeProfile.zipCode",
+          "formik.values.EmployeeProfile.country"
+        ],
+
+        "hideLabel": true,
+
+        "editable": true,
+        "placement": "col-lg-12 col-md-12"
+      }
+    ],
+    [
+      {
+        "typee": "readOnly",
+        "name": "contactInformationNotify",
+        "rearSector": "contactInformationNotify",
+
+        "valuee": "To change the primary address, contact your employer",
+        "hideLabel": true,
+        "outerDiv": true,
+        "validations": {},
+        "responseFrom": "ContractInformation",
+        "image": "Icon Information.png",
+        "imageContent": true,
+        "contentClassName": "col-12 py-3",
+        "placement": "col-lg-8 px-3 px-lg-4 px-md-3 py-3",
+        "header": false,
+        "readOnlyClassWrapper": "readonly_label_medium_content",
+        "containerClassName": " col-10",
+        "imageClassWrapper": "col-2 py-3"
+      }
+    ],
+
+    [
+      {
+        "type": "readOnly",
+        "name": "horizontalBar",
+
+        "horizontalBar": true,
+        "hidden": true,
+        "value": "",
+        "hideLabel": true,
+        "outerDiv": true,
+
+        "placement": "col-md-12"
+      }
+    ],
+
+    [
+      {
+        "type": "panelSideHeader",
+        "name": "phoneAndEmailInformation",
+        "rearSector": "phoneAndEmailInformation",
+        "label": "Phone and Email Information",
+        "value": "Phone and Email Information",
+        "outerDiv": true,
+        "placement": "col-md-6",
+        "header": false
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "name": "officePhone",
+        "label": "Work Phone",
+        "value": "",
+        "rearSector": "officePhone",
+        "labelTitle": "Work Phone",
+        "mapping": true,
+        "placement": "col-md-3 col-sm-6 col-xs-6 col-6 pt-1",
+        "update": {
+          "reduxPath": "employeeInformation.PersonalInformation.personalInformation.officePhone",
+          "formikPath": "EmployeeProfile"
+        },
+        "outerDiv": true,
+        "header": false,
+
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "text",
+        "name": "personalPhone",
+        "label": "Personal Phone",
+        "format": "phoneNumber",
+        "labelTitle": "Personal Phone",
+        "rearSector": "privatePhone",
+        "mapping": true,
+        "edit": true,
+        "value": "",
+        "placeholder": "Enter Personal Phone",
+        "outerDiv": true,
+        "placement": "col-md-3 col-sm-6 col-xs-6 col-6",
+        "update": {
+          "reduxPath": "employeeInformation.PersonalInformation.personalInformation.personalPhone",
+          "formikPath": "EmployeeProfile"
+        },
+        "header": false,
+        "validations": {
+        
+        },
+
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "name": "workEmail",
+        "label": "Work Email",
+        "labelTitle": "Work Email",
+
+        "value": "",
+        "mapping": true,
+
+        "update": {
+          "reduxPath": "employeeInformation.PersonalInformation.personalInformation.workEmail",
+          "formikPath": "EmployeeProfile",
+          "pascalCaseSkip": ["workEmail"]
+        },
+        "outerDiv": true,
+        "placement": "col-md-3 col-sm-6 col-xs-6 col-6 pt-1",
+        "header": false,
+        "validations": {
+          "string": {
+            "required": "Personal email is required",
+            "email": "Please enter valid email address"
+          }
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+
+      {
+        "type": "text",
+        "name": "personalEmail",
+        "label": "Personal Email",
+        "labelTitle": "Personal Email",
+        "rearSector": "eMail",
+        "mapping": true,
+        "edit": true,
+        "value": "",
+        "placeholder": "Enter Personal Email",
+        "outerDiv": true,
+        "update": {
+          "reduxPath": "employeeInformation.PersonalInformation.personalInformation.personalEmail",
+          "formikPath": "EmployeeProfile",
+          "pascalCaseSkip": ["personalEmail"]
+        },
+        "placement": "col-md-3 col-sm-6 col-xs-6 col-6",
+        "header": false,
+        "validations": {
+          "string": {
+            "email": "Please enter valid email address"
+          }
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      }
+    ],
+
+    [
+      {
+        "type": "panelSideHeader",
+
+        "label": "Employment Information",
+        "name": "Employment Information",
+        "formSideBigHeader": "Employment Information",
+        "placement": "col-md-6 pt-3",
+        "header": true
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "name": "employerName",
+        "rearSector": "employerName",
+        "disabled": true,
+        "label": "Employer Name",
+        "labelTitle": "Employer Name",
+        "header": false,
+        "mapping": true,
+        "value": "Company name",
+        "placement": "col-md-4 col-lg-2 pb-3 col-sm-6 col-xs-6 col-6",
+        "update": {
+          "reduxPath": "employeeInformation.EmploymentInformation.employmentInformation.employerName",
+          "formikPath": "EmployeeProfile"
+        },
+
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "text",
+        "name": "divisioncode",
+        "label": "Division code",
+
+        "disabled": true,
+
+        "value": "ABCUV",
+        "labelTitle": "Division code",
+        "mapping": true,
+        "header": false,
+        "update": {
+          "reduxPath": "employeeInformation.EmploymentInformation.employmentInformation.divisionCode",
+          "formikPath": "EmployeeProfile"
+        },
+        "placement": "col-md-4 col-lg-2 pb-3 col-sm-6 col-xs-6 col-6",
+        "validations": {
+          "string": {
+            "matches": {
+              "regex": "^[a-zA-Z]+$",
+              "message": "No special characters allowed"
+            }
+          }
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "text",
+        "name": "workLocation",
+        "rearSector": "workLocation",
+        "disabled": true,
+        "value": "New York",
+        "mapping": true,
+        "label": "Work Location",
+        "labelTitle": "Work Location",
+        "update": {
+          "reduxPath": "employeeInformation.EmploymentInformation.employmentInformation.workLocation",
+          "formikPath": "EmployeeProfile"
+        },
+        "header": false,
+        "placement": "col-md-4 col-lg-2 pb-3 col-sm-6 col-xs-6 col-6",
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "text",
+        "name": "salary",
+        "rearSector": "salary",
+        "label": "Salary",
+        "labelTitle": "Salary",
+        "disabled": true,
+        "header": false,
+        "mapping": true,
+        "value": "70000",
+        "config": {
+          "valueType": "currency",
+          "locale": "en-US",
+          "currency": "USD"
+        },
+        "update": {
+          "reduxPath": "employeeInformation.EmploymentInformation.employmentInformation.salary",
+          "formikPath": "EmployeeProfile"
+        },
+        "placement": "col-md-4 col-lg-2 pb-3 col-sm-6 col-xs-6 col-6",
+        "validations": {
+          "string": {
+            "matches": {
+              "regex": "^[0-9]*$",
+              "message": "Please enter valid salary"
+            }
+          }
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "readOnly",
+        "name": "payFrequency",
+        "rearSector": "payFrequency",
+        "label": "Pay Frequency",
+        "labelTitle": "Pay Frequency",
+        "disabled": true,
+        "mapping": true,
+
+        "header": false,
+
+        "config": {
+          "optionsname": "FrequencyConstants"
+        },
+
+        "update": {
+          "reduxPath": "employeeInformation.EmploymentInformation.employmentInformation.payFrequency",
+          "formikPath": "EmployeeProfile",
+          "pascalCaseSkip": ["payFrequency"]
+        },
+        "placement": "col-md-4 col-lg-2 pb-3 col-sm-6 col-xs-6 col-6",
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "select",
+        "name": "employmentStatus",
+        "rearSector": "employmentStatus",
+        "label": "Employment Status",
+        "labelTitle": "Employment Status",
+
+        "mapping": true,
+        "config": {
+          "optionsname": "EmploymentStatusConstants"
+        },
+        "header": false,
+        "value": "esRetired",
+
+        "update": {
+          "reduxPath": "employeeInformation.EmploymentInformation.employmentInformation.employmentStatus",
+          "formikPath": "EmployeeProfile",
+          "pascalCaseSkip": ["employmentStatus"]
+        },
+        "placement": "col-md-4 col-lg-2 pb-3 col-sm-6 col-xs-6 col-6",
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      }
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+
+        "label": "Preferred Contact",
+        "name": "Preferred Contact",
+        "formSideBigHeader": "Preferred Contact",
+        "mandatory": true,
+        "placement": "col-md-12 col-12 py-2 pt-3",
+        "header": true
+      }
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+
+        "label": "",
+        "name": "Your Preferred Contact Method Info",
+        "value": "",
+        "placement": "col-md-12 ",
+        "contentClassName": "readonly_label_big_content",
+        "formSideHeaderContact": "By providing your mobile number to receive Text Message Alerts, you consent to receive automated calls and texts from Mercer, including but not limited to your policy, benefits, relationship with Mercer and products or service offered through Mercer or your employer. Consent is not a condition of any purchase. You acknowledge, electronic consent constitutes your electronic signature.",
+        "header": true
+      }
+    ],
+    [
+      {
+        "type": "select",
+
+        "name": "preferredContact",
+        "rearSector": "preferredContact",
+        "value": "mail",
+        "header": true,
+        "update": {
+          "reduxPath": "personalInformation.personalInformation.mediaType",
+          "formikPath": "EmployeeProfile"
+        },
+        "placement": "col-lg-3 col-md-3 col-sm-4 mb-3",
+        "validations": {
+          "string": {}
+        },
+        "options": [
+          { "value": "eMail", "text": "Email" },
+          { "value": "mail", "text": "Mail" },
+          { "value": "sms", "text": "SMS (Text)" },
+          { "value": "phone", "text": "Phone" }
+        ]
+      }
+    ]
+  ]
+}

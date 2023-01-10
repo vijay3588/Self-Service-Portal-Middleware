@@ -1,0 +1,153 @@
+{
+  "searchConfig": {
+    "tableHeader": [
+      { "value": "CITE UN NOMBRE", "config": { "className": "" } },
+      { "value": "STATUT", "config": { "className": "" } },
+      { "value": "TYPE", "config": { "className": "" } },
+      { "value": "Date effective", "config": { "className": "" } },
+      { "value": "DATE DE FIN DE VALIDITÉ", "config": { "className": "" } },
+      { "value": "COURTIER", "config": { "className": "" } }
+    ],
+    "tableRow": [
+      {
+        "value": "pickerData.quote.internalPolicyIdentifier.internalPolicyId",
+        "type": "expression"
+      },
+      {
+        "value": "pickerData.quoteStatus",
+        "type": "expression",
+        "config": {
+          "displayName": "QuoteStatusConstants"
+        }
+      },
+      {
+        "value": "pickerData.quoteKind",
+        "type": "expression",
+        "config": {
+          "displayName": "QuoteTypeConstants"
+        }
+      },
+      {
+        "value": "pickerData.validFromDate",
+        "type": "expression",
+        "config": {
+          "valueType": "date",
+          "format": "MM/DD/YYYY"
+        }
+      },
+      {
+        "value": "pickerData.toDate",
+        "type": "expression",
+        "config": {
+          "valueType": "date",
+          "format": "MM/DD/YYYY"
+        }
+      },
+      {
+        "value": "pickerData.broker",
+        "type": "expression"
+      }
+    ],
+
+    "pagination": {
+      "name": "ItemDesc",
+      "leftTextAddOn": "Display",
+      "defaultValue": "10",
+      "options": [
+        { "value": "10", "text": "10 records per page" },
+        { "value": "25", "text": "25 records per page" },
+        { "value": "50", "text": "50 records per page" },
+        { "value": "100", "text": "100 records per page" }
+      ]
+    }
+  },
+  "elements": [
+    [
+      {
+        "type": "text",
+        "name": "quoteNumber",
+        "label": "Cite un nombre",
+        "placement": "col-md-3",
+        "validations": {}
+      },
+      {
+        "type": "select",
+        "name": "quoteStatus",
+        "label": "Statut",
+        "placement": "col-md-3",
+        "validations": {},
+        "defaultValue": "",
+        "options": [
+          { "value": "csAllQuoteStatuses", "text": "All Quote Statuses" },
+          { "value": "cInProgress", "text": "In Progress" },
+          { "value": "cCompleted", "text": "Completed" },
+          { "value": "cAbandoned", "text": "Abandoned" },
+          { "value": "cSubmitted", "text": "Submitted" },
+          { "value": "cExpired", "text": "Expired" }
+        ]
+      },
+      {
+        "type": "select",
+        "name": "quoteType",
+        "label": "Taper",
+        "placement": "col-md-3",
+        "validations": {},
+        "defaultValue": "",
+        "options": [
+          { "value": "Endorsement", "text": "Endorsement" },
+          { "value": "New Business", "text": "New Business" }
+        ]
+      },
+      {
+        "type": "text",
+        "name": "broker",
+        "label": "Courtier",
+        "placement": "col-md-3",
+        "validations": {}
+      }
+    ],
+    [
+      {
+        "type": "select",
+        "name": "dateType",
+        "label": "Date Range Using",
+        "placement": "col-md-3",
+        "validations": {},
+        "defaultValue": "",
+        "options": [
+          { "value": "cNoChoice", "text": "No Choice" },
+          {
+            "value": "cQuoteValidityStartDate",
+            "text": "Quote Validity Start Date"
+          },
+          {
+            "value": "cQuoteValidityEndDate",
+            "text": "Quote Validity End Date"
+          }
+        ]
+      },
+      {
+        "type": "date",
+        "name": "fromDate",
+        "label": "Partir de la date",
+        "placement": "col-md-3",
+        "validations": {
+          "string": {
+            "min": { "limit": 6, "message": "minlengeth is 6" }
+          }
+        }
+      },
+      {
+        "type": "date",
+        "name": "toDate",
+        "label": "À ce jour",
+        "placement": "col-md-3",
+        "validations": {
+          "string": {
+            "min": { "limit": 6, "message": "minlengeth is 6" }
+          }
+        }
+      }
+    ]
+  ]
+}

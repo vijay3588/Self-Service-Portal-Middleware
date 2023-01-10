@@ -1,0 +1,11 @@
+[
+  {
+    "frontDataSegment": "body",
+    "rearDataSegment":"docReqContainerForClaim",
+    "rearDataSegmentPath": "ClaimId",
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping" : [
+      {"frontSector": "InternalClaimId", "rearSector": "InternalClaimId", "defaultValue": ""}
+    ]
+  }
+]

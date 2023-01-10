@@ -1,0 +1,4 @@
+{
+    "name": {"dataType": "string", "defaultValue": ""},
+    "content": {"dataType": "string", "defaultValue": ""}
+}

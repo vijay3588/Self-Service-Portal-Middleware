@@ -1,0 +1,14 @@
+{
+  "clientName": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "internalClientId": {
+    "dataType": "number",
+    "defaultValue": ""
+  },
+  "clientId": {
+    "dataType": "object",
+    "name": "themeClientData"
+  }
+}

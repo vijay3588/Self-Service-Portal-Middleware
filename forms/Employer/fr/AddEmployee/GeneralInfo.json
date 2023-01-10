@@ -1,0 +1,126 @@
+{
+  "elements": [
+    [
+      {
+        "type": "text",
+        "name": "doingBusinessAs",
+        "label": "Faire des affaires comme",
+        "value": "",
+        "placement": "col-md-3 col-12",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "text",
+        "name": "clientId",
+        "label": "identité du client",
+        "placement": "col-md-3 col-12",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "number",
+        "name": "taxId",
+        "label": "Tax ID",
+        "placement": "col-md-3 col-12",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "number",
+        "name": "numberOfEmployees",
+        "label": "Number Of Employees",
+        "placement": "col-md-3 col-12",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      }
+    ],
+    [
+      {
+        "type": "select",
+        "name": "country",
+        "label": "Pays",
+        "value": "USA",
+        "placement": "col-md-3 col-12",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        },
+        "defaultValue": null,
+        "options": "",
+        "optionsname": "CountryConstants"
+      },
+      {
+        "type": "select",
+        "name": "situsState",
+        "label": "État du site",
+        "placement": "col-md-3 col-12",
+        "options": "",
+        "optionsname": "StateConstants",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "select",
+        "name": "workingStates",
+        "label": "Working States",
+        "placement": "col-md-3 col-12",
+        "options": "",
+        "optionsname": "StateConstants",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "select",
+        "name": "preferedCurrency",
+        "label": "Prefered Currency",
+        "optionsname": "CurrencyConstants",
+        "placement": "col-md-3 col-12",
+        "options": ""
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "name": "distributionUnit",
+        "label": "Distribution Unit",
+        "placement": "col-md-3 col-12",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "text",
+        "name": "industryClassification",
+        "label": "Industry Classification",
+        "placement": "col-md-3 col-12",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      }
+    ]
+  ]
+}

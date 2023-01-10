@@ -1,0 +1,18 @@
+{
+  "headerBgColor": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "dropDownColor": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "headerBorderColor": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+   "headerFontColor": {
+    "dataType": "string",
+    "defaultValue": ""
+  }
+}

@@ -1,0 +1,47 @@
+[
+    {
+        "formName": "contracts",
+        "cardElements": "table.tableRowData",
+        "frontSegment": "contracts",
+        "dataParentSegment": "",
+        "dataSegmentType": "array",
+        "defaultSectorMapping": [
+            {
+                "frontSector": "internalPolicyId",
+                "rearSector": "internalPolicyId",
+                "rearDataSegmentPath": "contract.internalPolicyIdentifier",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "effectiveDate",
+                "rearSector": "effectiveDate",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "terminationDate",
+                "rearSector": "terminationDate",
+                "rearDataSegmentPath": "paramEntity",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "status",
+                "rearSector": "status",
+                "rearDataSegmentPath": "paramEntity",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "buid",
+                "rearSector": "buid",
+                "rearDataSegmentPath": "contract",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "issuingCompanyCode",
+                "rearSector": "issuingCompanyCode",
+                "rearDataSegmentPath": "contract.internalPolicyIdentifier",
+                "defaultValue": ""
+            }
+        ]
+    }
+]

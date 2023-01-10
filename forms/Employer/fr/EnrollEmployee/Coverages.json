@@ -1,0 +1,281 @@
+{
+	"elements": [
+		[
+			{
+				"value": "groupCriticalIllness",
+				"type": "checkbox",
+				"name": "groupCriticalIllness",
+				"label": "Group Critical Illness",
+				"placement": "row col-lg-6 col-sm-6 prod-text-14"
+			},
+			{
+				"value": "baseCoverage",
+				"type": "checkbox",
+				"name": "baseCoverage",
+				"label": "Base Coverage",
+				"placement": "row col-lg-6 col-sm-6 prod-text-14"
+			},
+			{
+				"type": "select",
+				"name": "planSelected",
+				"label": "Plan Selected",
+				"placement": "col-lg-4 col-sm-4 text-14b",
+				"options":[
+				  {"value": "planA","text":"Plan A"}, 
+				  {"value": "planB","text":"Plan B"}, 
+				  {"value": "planC","text":"Plan C"}
+				  ],
+				  "validations": { }
+			},
+			{
+				"type": "select",
+				"name": "reqCoverageAmt",
+				"label": "Requested Coverage Amount",
+				"placement": "col-lg-4 col-sm-4 text-14b",
+				"options":[
+				  {"value": "item1","text":"$150,000.00"}, 
+				  {"value": "item2","text":"$200,000.00"}
+				  ],
+				  "validations": { }
+			}
+		]
+	],
+	"cards": {
+		"title": "panelCard",
+		"type": "panelCard",
+		"name": "panelCard",
+		"cardMembers": [
+			{
+				"cardElements": [
+					{
+						"cardConfig": {
+							"showHeader": false,
+							"showFooter": false,
+							"showBorder": false,
+							"className": "col-md-12 col-lg-12 pr-0",
+							"alignmentClass": "ml-n3"
+						},
+						"panelHeader": {
+							"elements": []
+						},
+						"panelBody": {
+							"config": {
+								"className": "card-scroll"
+							},
+							"elements": [
+								{
+									"title": "treeData",
+									"type": "TreeCard",
+									"name": "treeData"
+								}
+							]
+						},
+						"panelFooter": {
+							"elements": []
+						}
+					}
+				]
+			}
+		]
+	},
+	"treedata": {
+		"treeGroup": [
+			{
+				"treeBody": [
+					{
+						"treeLayout": [
+							{
+								"section": [
+									[
+										{
+											"collapse": true,
+											"elementor": true,
+											"value": "groupCriticalIllness",
+											"type": "checkbox",
+											"name": "groupCriticalIllness",
+											"label": "Group Critical Illness",
+											"placement": "row col-lg-6 col-sm-6 prod-text-14"
+										},
+										{
+											"subTreeLayout": {
+												"section": [
+													[
+														{
+															"collapse": true,
+															"elementor": true,
+															"value": "baseCoverage",
+															"type": "checkbox",
+															"name": "baseCoverage",
+															"label": "Base Coverage",
+															"placement": "row col-lg-6 col-sm-6 prod-text-14"
+														},
+														{
+															"subTreeLayout": {
+																"section": [
+																	[
+																		{
+																			"elementor": true,
+																			"type": "select",
+																			"name": "planSelected",
+																			"label": "Plan Selected",
+																			"placement": "col-lg-4 col-sm-4 text-14b",
+																			"options":[
+																				{"value": "planA","text":"Plan A"}, 
+																				{"value": "planB","text":"Plan B"}, 
+																				{"value": "planC","text":"Plan C"}
+																			],
+																			"validations": { }
+																		}
+																	],
+																	[
+																		{
+																			"text": "Coverage Amount",
+																			"placement": "headerText"
+																		}
+																	],
+																	[
+																		{
+
+																			"elementor": true,
+																			"type": "select",
+																			"name": "reqCoverageAmt",
+																			"label": "Requested Coverage Amount",
+																			"placement": "col-lg-4 col-sm-4 text-14b",
+																			"options":[
+																				{"value": "item1","text":"$150,000.00"}, 
+																				{"value": "item2","text":"$200,000.00"}
+																			],
+																			"validations": { }
+																		},
+																		{
+																			"subTreeLayout": {
+																				"section": [
+																					[
+																						{
+																							"text": "Guarantee Issue Amount ",
+																							"placement": "col-lg-4 col-sm-4 text-14"
+																						},
+																						{
+																							"text": "$50,000.00",
+																							"placement": "col-lg-4 col-sm-4 text-14"
+																						}
+																					],
+																					[
+																						{
+																							"text": "Amount Requiring Underwriting",
+																							"placement": "col-lg-4 col-sm-4 text-14"
+																						},
+																						{
+																							"text": "$100,000.00",
+																							"placement": "col-lg-4 col-sm-4 text-14"
+																						}
+																					],
+																					[
+																						{
+																							"text": "Approved Coverage Amount",
+																							"placement": "col-lg-4 col-sm-4 text-14"
+																						},
+																						{
+																							"text": "$50,000.00",
+																							"placement": "col-lg-4 col-sm-4 text-14"
+																						}
+																					]																					
+																				],
+																				"placement": "subheaderPlainContainer",
+																				"dataSegment": "coverageList"
+																			}
+																		}
+																	],
+																	[
+																		{
+																			"text": "Premium",
+																			"placement": "headerText"
+																		}																	
+																	],
+																	[
+																		{
+																			"subTreeLayout": {
+																				"section": [
+																					[
+																						{
+																							"text": "Gross Amount ",
+																							"placement": "col-lg-4 col-sm-4 text-14"
+																						},
+																						{
+																							"text": "$650.00",
+																							"placement": "col-lg-4 col-sm-4 text-14"
+																						}
+																					],
+																					[
+																						{
+																							"text": "Taxes",
+																							"placement": "col-lg-4 col-sm-4 text-14"
+																						},
+																						{
+																							"text": "$10.00",
+																							"placement": "col-lg-4 col-sm-4 text-14"
+																						}
+																					],
+																					[
+																						{
+																							"text": "Total",
+																							"placement": "col-lg-4 col-sm-4 text-14"
+																						},
+																						{
+																							"text": "$760.00",
+																							"placement": "col-lg-4 col-sm-4 text-14"
+																						}
+																					]																						
+																				],
+																				"placement": "subheaderPlainContainer",
+																				"dataSegment": "coverageList"
+																			}
+																		}																			
+																	]
+																],
+																"placement": "",
+																"dataSegment": "vehiclesCovered",
+																"key": "policy"
+															}
+														}
+													]
+												],
+												"placement": "col-lg-12 col-sm-12 treeSubLayout list-row",
+												"dataSegment": "policyInformation"
+											}
+										}
+									]
+								],
+								"placement": "treeBodyLayout"
+							}
+						],
+						"placement": ""
+					}
+				]
+			}
+		]
+	},
+	"placementStyle": [
+
+		{
+			"treeBodyLayout": {
+				"placement": "row col-lg-12 col-sm-12 treeBodyLayout"
+			}
+		},
+		{
+			"treeSubLayout": {
+				"placement": "row col-lg-12 col-sm-12 treeSubLayout list-row"
+			}
+		},
+		{
+			"subheaderPlainContainer": {
+				"placement": "col-lg-11 col-sm-11 text-16 sub-header-plain-container list-border"
+			}
+		},
+		{
+			"headerText": {
+				"placement": "col-lg-3 col-sm-3 text-14b"
+			}
+		}
+	]
+}

@@ -1,0 +1,23 @@
+
+{
+    "bUID": {
+        "dataType": "string",
+        "defaultValue": ""
+      },
+      "description": {
+        "dataType": "string",
+        "defaultValue": ""
+      },
+      "internalContractID": {
+        "dataType": "string",
+        "defaultValue": ""
+      },
+      "externalContractID": {
+        "dataType": "string",
+        "defaultValue": ""
+      },
+      "thirdPartyID": {
+        "dataType": "string",
+        "defaultValue": ""
+      }
+}

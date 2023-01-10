@@ -1,0 +1,53 @@
+{
+  "elements": [
+    [
+      {
+        "type": "color",
+        "name": "bgColor",
+        "rearSector": "shortName",
+        "label": "Stepper Navigation Bg Color",
+        "value": "#f9f9f9",
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "This field is required"
+          }
+        }
+      },
+      {
+        "name": "bgColorValue",
+
+        "type": "readOnly",
+        "label": "Selected hex value",
+        "displayStyle": "list",
+        "placement": "labelElement",
+        "getValuesFrom": "bgColor",
+        "formikPath": "Cells"
+      },
+
+       {
+        "type": "color",
+        "name": "stepperNavigationActiveLinkFontColor",
+        "rearSector": "shortName",
+        "label": "Stepper Navigation Active Link Color",
+        "value": "#f9f9f9",
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "This field is required"
+          }
+        }
+      },
+      {
+        "name": "stepperNavigationActiveLinkFontColorValue",
+
+        "type": "readOnly",
+        "label": "Selected hex value",
+        "displayStyle": "list",
+        "placement": "labelElement",
+        "getValuesFrom": "stepperNavigationActiveLinkFontColor",
+        "formikPath": "Cells"
+      }
+    ]
+  ]
+}

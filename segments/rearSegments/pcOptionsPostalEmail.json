@@ -1,0 +1,15 @@
+{
+  "hideOption": {
+    "dataType": "boolean",
+    "defaultValue": false
+  },
+
+  "optionKey": {
+    "dataType": "string",
+    "defaultValue": "postal mail"
+  },
+  "optionValue": {
+    "dataType": "string",
+    "defaultValue": "postal mail"
+  }
+}

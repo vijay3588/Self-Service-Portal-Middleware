@@ -1,0 +1,22 @@
+{
+    "policyId": {
+        "dataType": "object",
+        "name": "policyId"
+    },
+    "effectiveDate": {
+        "dataType": "string",
+        "defaultValue": null
+    },
+    "endorsementReason": {
+        "dataType": "string",
+        "defaultValue": "DEC"
+    },
+    "LoansIdentifier": {
+        "dataType": "object",
+        "name": "loanIdentifier"
+    },
+    "autoValidate": {
+        "dataType": "boolean",
+        "defaultValue": false
+    }
+}

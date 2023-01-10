@@ -1,0 +1,197 @@
+{
+  "cards": [
+    {
+      "cardMembers": [
+        {
+          "cardElements": [
+            {
+              "type": "label",
+              "name": "disbursementNumber",
+              "rearSector": "operation",
+              "rearDataSegmentPath":"paramEntity",
+              "label": "Numéro de décaissement",
+              "placement": "select-label-content",
+              "value": "",
+              "config": {
+                "className": "Invoice-Number"
+              }
+            },
+            {
+              "type": "tile",
+              "name": "disbursementStatus",
+              "rearSector": "disbursementStatus",
+              "rearDataSegmentPath":"",
+              "style": {
+                "fontSize": "12px",
+                "color": "#00a190",
+                "borderRadius": "4px",
+                "border": "solid 1px #00a190"
+              },
+              "config": {
+                "displayName": "InvoiceStatusConstants"
+              },
+              "placement": "col-lg-3 col-sm-5"
+            }
+          ]
+        }
+      ],
+      "type": "titleCard",
+      "name": "viewHeader",
+      "config": {
+        "showBorder": true,
+        "className": "row mb-4",
+        "additionalClassName": "col-sm-12"
+      }
+    },
+    {
+      "name": "blueBox",
+      "type": "boxCard",
+
+      "cardMembers": [
+        {
+          "cardConfig": {
+            "className": "col-lg-12 mb-3 ",
+            "styleClassName": "boxcard-border-invoice"
+          },
+          "cardElements": [
+            {
+              "type": "readOnly",
+              "name": "amountDisbursed",
+              "rearSector": "amount",
+              "rearDataSegmentPath":"paramEntity.amount",
+              "label": "Montant décaissé (USD)",
+              "placement": "col-lg-3 col-sm-5",
+              "validations": {},
+              "image": "viewdisbursement.png"
+            },
+            {
+              "type": "readOnly",
+              "name": "sentDate",
+              "rearSector": "sentDate",
+              "rearDataSegmentPath":"paramEntity",
+              "label": "Date envoyée",
+              "placement": "col-lg-3 col-sm-5",
+              "value": "12/12/2020",
+              "image": "viewdisbursement-calender.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "disbursementCard",
+      "title": "disbursementCard",
+      "type": "elementsCard",
+      "cardMembers": [
+        {
+          "cardConfig": {
+            "className": "col-lg-12"
+          },
+          "cardElements": [
+            {
+              "type": "readOnly",
+              "name": "payer",
+              "label": "Payeur",
+              "placement": "col-lg-4 col-sm-5 mb-3",
+              "rearSector": "actorAsAccountOwner", 
+              "rearDataSegmentPath":"",
+              "validations": {}
+            
+            },
+           
+            {
+              "type": "readOnly",
+              "name": "disbursementChannel",
+              "rearSector": "channel", 
+              "rearDataSegmentPath":"",
+              "label": "Canal de décaissement",
+              "placement": "col-lg-2 col-sm-4 mb-3",
+              "validations": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tablesCard",
+      "title": "tablesCard",
+      "type": "tablesCard",
+      "cardMembers": [
+        {
+          "cardConfig": {
+            "tableTitle": "disbursementLines",
+            "tableImage": "disbursementlines.png"
+          },
+          "table": {
+            "tableHeader": [
+              {
+                "value": "Numéro de transaction",
+                "config": {
+                  "className": ""
+                }
+              },
+              {
+                "value": "Type de compte",
+                "config": {
+                  "className": ""
+                }
+              },
+              {
+                "value": "Montant décaissé",
+                "config": {
+                  "className": ""
+                }
+              },
+              {
+                "value": "Annulé",
+                "config": {
+                  "className": "col"
+                }
+              }
+            ],
+            "tableRowData": [
+              {
+                "value": "data.transactionNumber",
+                "rearSector": "accountId", 
+                "rearDataSegmentPath":"disbursementPartInfo.accountLines.businessAccountID",
+                "type": "expression",
+                "config": {
+                  "optionsname": "AddressTypeConstants",
+                  "className": ""
+                }
+              },
+
+              {
+                "value": "data.accountType",
+                "rearSector": "accountKind", 
+                "rearDataSegmentPath":"disbursementPartInfo.accountLines.businessAccountID",
+                "type": "expression",
+                "config": {
+                  "className": ""
+                }
+              },
+              {
+                "value": "data.amountDisbursed",
+                "rearSector": "amount", 
+                "rearDataSegmentPath":"disbursementPartInfo.accountLines.amount",
+                "type": "expression",
+                "config": {
+                  "className": ""
+                }
+              },
+              {
+                "value": "data.canceled",
+                "rearSector": "isReversed", 
+                "rearDataSegmentPath":"disbursementPartInfo.accountLines",
+                "type": "expression",
+                "config": {
+                  "className": "col"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

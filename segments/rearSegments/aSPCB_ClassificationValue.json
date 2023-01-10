@@ -1,0 +1,30 @@
+{
+  "className": {
+    "dataType": "string",
+    "defaultValue": "aSPCB_ClassificationValue"
+  },
+  "fieldCode": {
+    "dataType": "string",
+    "defaultValue": "1"
+  },
+  "fieldName": {
+    "dataType": "string",
+    "defaultValue": "Not Internal Employee"
+  },
+  "codeForPopulationClass": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "valueCode": {
+    "dataType": "string",
+    "defaultValue": "NIE"
+  },
+  "fieldValue": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "nameDescription": {
+    "dataType": "string",
+    "defaultValue": ""
+  }
+}

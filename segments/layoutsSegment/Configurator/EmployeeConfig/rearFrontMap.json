@@ -1,0 +1,203 @@
+[
+  {
+    "frontSegment": "employmentConfigInformation",
+    "dataParentSegment": "",
+    "dataSegmentType": "object",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "middleNameToggle",
+        "rearSector": "hideableField",
+        "rearDataSegmentPath": "data.personalInfo.middleName",
+        "defaultValue": false
+      },
+
+      {
+        "frontSector": "ssnToggle",
+        "rearSector": "hideableField",
+        "rearDataSegmentPath": "data.personalInfo.ssn",
+        "defaultValue": false
+      },
+      {
+        "frontSector": "ssnEyeToggle",
+        "rearSector": "hideableEyeIcon",
+        "rearDataSegmentPath": "data.personalInfo.ssn",
+        "defaultValue": false
+      },
+      {
+        "frontSector": "personalEmailAddressRequired",
+        "rearSector": "requiredField",
+        "rearDataSegmentPath": "data.contactInfo.personalEmail",
+        "defaultValue": false
+      },
+      {
+        "frontSector": "personalEmailAddressToggle",
+        "rearSector": "hideableField",
+        "rearDataSegmentPath": "data.contactInfo.personalEmail",
+        "defaultValue": false
+      },
+
+      {
+        "frontSector": "personalEmailAddressChangedByEmp",
+        "rearSector": "nonEditableField",
+        "rearDataSegmentPath": "data.contactInfo.personalEmail",
+        "defaultValue": false
+      },
+      {
+        "frontSector": "personalPhoneRequired",
+        "rearSector": "requiredField",
+        "rearDataSegmentPath": "data.contactInfo.personalPhone",
+        "defaultValue": false
+      },
+      {
+        "frontSector": "personalPhoneToggle",
+        "rearSector": "hideableField",
+        "rearDataSegmentPath": "data.contactInfo.personalPhone",
+        "defaultValue": false
+      },
+
+      {
+        "frontSector": "personalPhoneChangedByEmp",
+        "rearSector": "nonEditableField",
+        "rearDataSegmentPath": "data.contactInfo.personalPhone",
+        "defaultValue": false
+      },
+
+      {
+        "frontSector": "salaryToggle",
+        "rearSector": "hideableField",
+        "rearDataSegmentPath": "data.employmentInfo.salary",
+        "defaultValue": false
+      },
+      {
+        "frontSector": "salaryEditable",
+        "rearSector": "editableLabelField",
+        "rearDataSegmentPath": "data.employmentInfo.salary",
+        "defaultValue": false
+      },
+      {
+        "frontSector": "salaryEditableValue",
+        "rearSector": "editableLabelFieldValue",
+        "rearDataSegmentPath": "data.employmentInfo.salary",
+        "defaultValue": false
+      },
+
+      {
+        "frontSector": "payFrequencyToggle",
+        "rearSector": "hideableField",
+        "rearDataSegmentPath": "data.employmentInfo.payFrequency",
+        "defaultValue": false
+      },
+      {
+        "frontSector": "payFrequencyEditable",
+        "rearSector": "editableLabelField",
+        "rearDataSegmentPath": "data.employmentInfo.payFrequency",
+        "defaultValue": false
+      },
+      {
+        "frontSector": "payFrequencyEditableValue",
+        "rearSector": "editableLabelFieldValue",
+        "rearDataSegmentPath": "data.employmentInfo.payFrequency",
+        "defaultValue": false
+      },
+
+      {
+        "frontSector": "divisionCodeToggle",
+        "rearSector": "hideableField",
+        "rearDataSegmentPath": "data.employmentInfo.divisioncode",
+        "defaultValue": false
+      },
+      {
+        "frontSector": "divisionCodeEditable",
+        "rearSector": "editableLabelField",
+        "rearDataSegmentPath": "data.employmentInfo.divisioncode",
+        "defaultValue": false
+      },
+      {
+        "frontSector": "divisionCodeEditableValue",
+        "rearSector": "editableLabelFieldValue",
+        "rearDataSegmentPath": "data.employmentInfo.divisioncode",
+        "defaultValue": false
+      },
+
+      {
+        "frontSector": "workLocationToggle",
+        "rearSector": "hideableField",
+        "rearDataSegmentPath": "data.employmentInfo.workLocation",
+        "defaultValue": false
+      },
+      {
+        "frontSector": "workLocationEditable",
+        "rearSector": "editableLabelField",
+        "rearDataSegmentPath": "data.employmentInfo.workLocation",
+        "defaultValue": false
+      },
+      {
+        "frontSector": "workLocationEditableValue",
+        "rearSector": "editableLabelFieldValue",
+        "rearDataSegmentPath": "data.employmentInfo.workLocation",
+        "defaultValue": false
+      },
+
+      {
+        "frontSector": "employmentStatusToggle",
+        "rearSector": "hideableField",
+        "rearDataSegmentPath": "data.employmentInfo.employmentStatus",
+        "defaultValue": false
+      },
+      {
+        "frontSector": "employmentStatusEditable",
+        "rearSector": "editableLabelField",
+        "rearDataSegmentPath": "data.employmentInfo.employmentStatus",
+        "defaultValue": false
+      },
+      {
+        "frontSector": "employmentStatusEditableValue",
+        "rearSector": "editableLabelFieldValue",
+        "rearDataSegmentPath": "data.employmentInfo.employmentStatus",
+        "defaultValue": false
+      },
+      {
+        "frontSector": "PCpersonalPhone",
+        "rearSector": "hideOption",
+        "rearDataSegmentPath": "data.communicationInfo.preferredContact.optionsField.personalPhonePC",
+        "defaultValue": false
+      },
+      {
+        "frontSector": "PCpersonalEmailAddress",
+        "rearSector": "hideOption",
+        "rearDataSegmentPath": "data.communicationInfo.preferredContact.optionsField.personalEmailAddressPC",
+        "defaultValue": false
+      },
+      {
+        "frontSector": "PCpostalEmail",
+        "rearSector": "hideOption",
+        "rearDataSegmentPath": "data.communicationInfo.preferredContact.optionsField.postalMailPC",
+        "defaultValue": false
+      },
+      {
+        "frontSector": "PCworkPhone",
+        "rearSector": "hideOption",
+        "rearDataSegmentPath": "data.communicationInfo.preferredContact.optionsField.workPhonePC",
+        "defaultValue": false
+      },
+      {
+        "frontSector": "PCtextMessage",
+        "rearSector": "hideOption",
+        "rearDataSegmentPath": "data.communicationInfo.preferredContact.optionsField.textMessagePC",
+        "defaultValue": false
+      },
+      {
+        "frontSector": "PCworkEmailAddress",
+        "rearSector": "hideOption",
+        "rearDataSegmentPath": "data.communicationInfo.preferredContact.optionsField.workEmailAddressPC",
+        "defaultValue": false
+      },
+      {
+        "frontSector": "isEmployementVisible",
+        "rearSector": "requiredSection",
+        "rearDataSegmentPath": "data.employmentInfo.noGroupStart",
+        "defaultValue": false
+      }
+    ]
+  }
+]

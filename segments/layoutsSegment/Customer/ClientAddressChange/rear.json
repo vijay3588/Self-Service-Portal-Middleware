@@ -1,0 +1,15 @@
+{
+    "customerBuid": {
+        "dataType": "string",
+        "defaultValue": ""
+      },
+    "newAddress": {
+        "dataType": "object",
+        "name": "aSPCB_US_PostalAddress"
+    },
+    "atDate": {
+        "dataType": "string",
+        "defaultValue": ""
+      }
+}
+

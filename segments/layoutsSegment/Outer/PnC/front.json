@@ -1,0 +1,4 @@
+{
+    "insuredInformation": {"dataType": "object", "name": "insuredInformation" },
+    "policyInformation": {"dataType": "object", "name": "policyInformation" }
+}

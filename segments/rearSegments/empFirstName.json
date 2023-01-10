@@ -1,0 +1,22 @@
+{
+  "fieldName": {
+    "dataType": "boolean",
+    "defaultValue": false
+  },
+  "requiredField": {
+    "dataType": "boolean",
+    "defaultValue": false
+  },
+  "hideableField": {
+    "dataType": "boolean",
+    "defaultValue": false
+  },
+  "editableLabelField": {
+    "dataType": "string",
+    "defaultValue": false
+  },
+  "nonEditableField": {
+    "dataType": "string",
+    "defaultValue": false
+  }
+}

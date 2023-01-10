@@ -1,0 +1,25 @@
+{
+  "app": {
+    "dataType": "object",
+    "name": "themeUpdateApp"
+  },
+  
+  "header": {
+    "dataType": "object",
+    "name": "themeUpdateHeader"
+  },
+  
+  "navigationBar": {
+    "dataType": "object",
+    "name": "themeUpdateNavigationBar"
+  },
+  "footer": {
+    "dataType": "object",
+    "defaultValue": "themeUpdateFooter"
+  },
+  "link": {
+    "dataType": "object",
+    "name": "themeUpdateLink"
+  }
+ 
+}

@@ -1,0 +1,9 @@
+{
+  "employerName": { "dataType": "string", "defaultValue": "" },
+  "divisionCode": { "dataType": "string", "defaultValue": "" },
+  "workLocation": { "dataType": "string", "defaultValue": "" },
+  "salary": { "dataType": "number", "defaultValue": "" },
+  "payFrequency": { "dataType": "string", "defaultValue": "" },
+  "employmentStatus": { "dataType": "string", "defaultValue": "" }
+ 
+}

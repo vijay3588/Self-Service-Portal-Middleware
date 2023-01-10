@@ -1,0 +1,6 @@
+{
+    "claim": {"dataType": "object", "name": "claim"},
+    "lossData": {"dataType": "object", "name": "lossData" },
+    "indemnifications": {"dataType": "object", "name": "indemnifications" },
+    "beneficiaries": {"dataType": "object", "name": "beneficiaries" }
+}

@@ -1,0 +1,30 @@
+{
+    "ClassName": {
+        "dataType": "string",
+        "defaultValue": "aSPLIC_STDLoss"
+    },
+    "EventDate": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "DeclarationDate": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "LossCode": {
+        "dataType": "string",
+        "defaultValue": "STD"
+    },
+    "DisabilityEndDate": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "LossName": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "LossType": {
+        "dataType": "string",
+        "defaultValue": []
+    }
+}

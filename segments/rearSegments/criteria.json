@@ -1,0 +1,19 @@
+
+{
+    "fromDate": {
+        "dataType": "string",
+        "defaultValue": null
+    },
+    "toDate": {
+        "dataType": "string",
+        "defaultValue": null
+    },
+    "operationKind": {
+        "dataType": "string",
+        "defaultValue": "cATKPayment"       
+    },
+    "showSecondaryOperations": {
+        "dataType": "boolean",
+        "defaultValue": false
+    }
+}

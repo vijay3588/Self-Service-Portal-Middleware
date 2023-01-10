@@ -1,0 +1,6 @@
+{
+  "stepperNavigation": {
+    "dataType": "object",
+    "name": "themeUpdateStepperNavigation"
+  }
+}

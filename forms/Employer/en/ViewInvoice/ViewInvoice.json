@@ -1,0 +1,408 @@
+{
+  "cards": [
+    {
+      "cardMembers": [
+        {
+          "cardElements": [
+            {
+              "type": "label",
+              "name": "disbursementNumber",
+              "rearSector": "name", 
+              "rearDataSegmentPath":"invoiceId.statementIdentifier",
+              "label": "Disbursement Number",
+              "placement": "px-0",
+              "value": "",
+              "config": {
+                "className": "Invoice-Number"
+              }
+            },
+            {
+              "type": "tile",
+              "name": "disbursementStatus",
+              "rearSector": "status", 
+              "rearDataSegmentPath":"paramEntity",
+              "placement": "col-sm-2 pl-3",
+              "config": {
+                "displayName": "InvoiceStatusConstants"
+              }
+            },
+            {
+              "type": "button",
+              "name": "makePaymentButton",
+              "label": "Make A Payment",
+              "className": "makePaymentButton",
+              "config": {
+                "type": "redirect",
+                "redirectURL": ""
+              },
+              "placement": "align-self-end ml-auto px-0"
+            }
+          ]
+        }
+      ],
+      "type": "titleCard",
+      "name": "viewHeader"
+    },
+    {
+      "name": "blueBox",
+      "type": "boxCard",
+
+      "cardMembers": [
+        {
+          "cardConfig": {
+            "className": "col-lg-12 mb-3 boxcard-border-invoice"
+          },
+          "cardElements": [
+            {
+              "type": "readOnly",
+              "name": "currentAmountDue",
+              "rearSector": "amount", 
+              "rearDataSegmentPath":"grossAmount",
+              "label": "Current Amount Due (USD)",
+              "placement": "col-lg-3 col-sm-5",
+              "validations": {},
+              "image": "invoice-current-amount-due.png",
+              "config": {
+                "valueType": "currency",
+                "locale": "en-US",
+                "currency": "USD"
+              }
+            },
+            {
+              "type": "readOnly",
+              "name": "dueDate",
+              "rearSector": "dueDate", 
+              "rearDataSegmentPath":"paramEntity",
+              "label": "Due Date",
+              "placement": "col-lg-3 col-sm-5",
+              "value": "12/12/2020",
+              "image": "invoice-due-date.png",
+              "config": {
+                "valueType": "date",
+                "format": "MM/DD/YYYY"
+              }
+            },
+            {
+              "type": "tile",
+              "name": "remainingDays",
+              "config": {
+                "style": {
+                  "fontSize": "12px",
+                  "color": "#00a190",
+                  "borderRadius": "4px",
+                  "border": "solid 1px #00a190"
+                }
+              },
+              "placement": "col-lg-3 col-sm-5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "disbursementCard",
+      "name": "disbursementCard",
+      "type": "elementsCard",
+      "cardMembers": [
+        {
+          "cardConfig": {
+            "className": "col-md-6 col-lg-3 mb-3"
+          },
+          "cardElements": [
+
+            {
+              "type": "readOnly",
+              "name": "paymentsCredits",
+              "rearSector": "amount", 
+              "rearDataSegmentPath":"grossAmount",
+              "label": "Payments & Credits (USD)",
+              "placement": "col-lg-12 col-sm-12 mb-3",
+              "validations": {},
+              "config": {
+                "valueType": "currency",
+                "locale": "en-US",
+                "currency": "USD"
+              }
+            },
+            {
+              "type": "readOnly",
+              "name": "pastDueAmount",
+              "rearSector": "amount", 
+              "rearDataSegmentPath":"amount",
+              "label": "Payment Due Amount (USD)",
+              "placement": "col-lg-12 col-sm-12 mb-3",
+              "validations": {},
+              "config": {
+                "valueType": "currency",
+                "locale": "en-US",
+                "currency": "USD"
+              }
+            }
+          ]
+        },
+        {
+          "cardConfig": {
+            "className": "col-md-6 col-lg-3 mb-3"
+          },
+          "cardElements": [
+            {
+              "type": "readOnly",
+              "name": "invoiceDate",
+              "rearSector": "effectiveDate", 
+              "rearDataSegmentPath":"paramEntity",
+              "label": "Invoice Date",
+              "placement": "col-lg-12 col-sm-12 mb-3",
+              "validations": {},
+              "config": {
+                "valueType": "date",
+                "format": "MM/DD/YYYY"
+              }
+            },
+            {
+              "type": "readOnly",
+              "name": "invoicingFrequency",
+              "rearSector": "invoicingFrequency", 
+              "rearDataSegmentPath":"",
+              "label": "Invoicing Frequency",
+              "placement": "col-lg-12 col-sm-12 mb-3",
+              "validations": {},
+              "config": {
+                "optionsname": "FrequencyConstants"
+              }
+            },
+            {
+              "type": "readOnly",
+              "name": "accountOwner",
+              "rearSector": "payorName", 
+              "rearDataSegmentPath":"",
+              "label": "Account Owner",
+              "placement": "col-lg-12 col-sm-12 mb-3",
+              "validations": {}
+            }
+          ]
+        },
+        {
+          "cardConfig": {
+            "className": "col-lg-6 mb-3"
+          },
+          "cardElements": [
+            {
+              "type": "readOnly",
+              "name": "payer",
+              "rearSector": "payorName", 
+              "rearDataSegmentPath":"",
+              "label": "Payer",
+              "placement": "col-lg-12 col-sm-12 mb-3",
+              "validations": {}
+            },
+            {
+              "type": "readOnly",
+              "name": "paymentChannel",
+              "rearSector": "channel", 
+              "rearDataSegmentPath":"",
+              "label": "Payment Channel",
+              "placement": "col-lg-12 col-sm-12 mb-3",
+              "validations": {}
+            },
+            {
+              "type": "readOnly",
+              "name": "billingAddress",
+              "rearSector": "billingAddress", 
+              "rearDataSegmentPath":"",
+              "label": "Billing Address",
+              "placement": "col-lg-12 col-sm-12 mb-3",
+              "validations": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "tablesCard",
+      "name": "tablesCard",
+      "type": "tablesCard",
+      "cardMembers": [
+        {
+          "cardConfig": {
+            "tableTitle": "bills",
+            "tableImage": "invoicebills.png"
+          },
+          "table": {
+            "tableHeader": [
+              {
+                "value": "Bill Number",
+                "config": {
+                  "className": ""
+                }
+              },
+              {
+                "value": "",
+                "config": {
+                  "className": ""
+                }
+              },
+              {
+                "value": "Period From",
+                "config": {
+                  "className": ""
+                }
+              },
+              {
+                "value": "Period To",
+                "config": {
+                  "className": ""
+                }
+              },
+              {
+                "value": "Amount Billed",
+                "config": {
+                  "className": ""
+                }
+              },
+              {
+                "value": "Contract Number",
+                "config": {
+                  "className": "col"
+                }
+              }
+            ],
+            "tableRowData": [
+              {
+                "value": "data.billNumber",
+                "rearSector": "billNumber", 
+                "rearDataSegmentPath":"",
+                "type": "expression",
+                "config": {
+                  "optionsname": "AddressTypeConstants",
+                  "className": ""
+                }
+              },
+              {
+                "value": "data.pastBill",
+                "type": "expression",
+                "config": {
+                  "valueType": "status",
+                  "value": "PAST DUE",
+                  "tileImage": "clock.png",
+                  "style": {
+                    "fontSize": "11px",
+                    "color": "#d51b61",
+                    "borderRadius": "4px",
+                    "border": "solid 1px #d51b61",
+                    "padding": "4.5px 9.9px 4.5px 9.9px",
+                    "position": "relative",
+                    "bottom": "2px"
+                  }
+                }
+              },
+              {
+                "value": "data.fromDate",
+                "rearSector": "fromDate", 
+                "rearDataSegmentPath":"",
+                "type": "expression",
+                "config": {
+                  "valueType": "date",
+                  "format": "MM/DD/YYYY"
+                }
+              },
+              {
+                "value": "data.toDate",
+                "rearSector": "toDate", 
+                "rearDataSegmentPath":"",
+                "type": "expression",
+                "config": {
+                  "valueType": "date",
+                  "format": "MM/DD/YYYY"
+                }
+              },
+              {
+                "value": "data.amount",
+                "rearSector": "amount", 
+                "rearDataSegmentPath":"amount",
+                "type": "expression",
+                "config": {
+                  "className": ""
+                },
+                "valuetype": "currency",
+                "locale": "en-US",
+                "currency": "USD"
+              },
+              {
+                "value": "data.contractNumber",
+                "rearSector": "contractNumber", 
+                "rearDataSegmentPath":"",
+                "type": "expression",
+                "config": {
+                  "className": ""
+                }
+              }
+            ]
+          }
+        },
+        {
+          "cardConfig": {
+            "tableTitle": "payments",
+            "tableImage": "invoicepayment.png"
+          },
+          "table": {
+            "tableHeader": [
+              {
+                "value": "Payment Number",
+                "config": {
+                  "className": ""
+                }
+              },
+              {
+                "value": "Amount Paid",
+                "config": {
+                  "className": ""
+                }
+              },
+              {
+                "value": "Received Date",
+                "config": {
+                  "className": "col"
+                }
+              }
+            ],
+            "tableRowData": [
+              {
+                "value": "data.paymentNumber",
+                "rearSector": "operation", 
+                "rearDataSegmentPath":"",
+                "type": "expression",
+                "config": {
+                  "optionsname": "AddressTypeConstants",
+                  "className": ""
+                }
+              },
+
+              {
+                "value": "data.amountPaid",
+                "rearSector": "amount", 
+                "rearDataSegmentPath":"grossAmount",
+                "type": "expression",
+                "config": {
+                  "className": ""
+                },
+                "valuetype": "currency",
+                "locale": "en-US",
+                "currency": "USD"
+              },
+              {
+                "value": "data.receivedDate",
+                "rearSector": "receivedDate", 
+                "rearDataSegmentPath":"",
+                "type": "expression",
+                "config": {
+                  "valueType": "date",
+                  "format": "MM/DD/YYYY"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

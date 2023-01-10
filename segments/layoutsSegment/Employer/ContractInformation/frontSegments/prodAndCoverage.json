@@ -1,0 +1,19 @@
+{ 
+    "optionName": {"dataType": "string", "defaultValue":""}, 
+    "effectiveDate": {"dataType": "date", "defaultValue":""}, 
+    "subscriptionDate": {"dataType": "date", "defaultValue":""}, 
+    "status": {"dataType": "string", "defaultValue":"All"},
+    "additionalDatas": {"dataType": "array", "defaultValue":""},
+    "name": {"dataType": "string", "defaultValue":""},
+    "identifier": {"dataType": "string", "defaultValue":""},
+    "effectiveDatePD": {"dataType": "date", "defaultValue":""},
+    "attributesPD": {"dataType": "array", "defaultValue":""},
+    "eligibleMemberClasses": {"dataType": "array", "defaultValue":""},
+    "subscribedBenefits": {"dataType": "object", "name":"subscribedBenefits"},
+    "eligibleEmployees": {"dataType": "string", "defaultValue":""},
+    "participationStatus": {"dataType": "string", "defaultValue":""},
+    "requiredParticipation": {"dataType": "string", "defaultValue":""},
+    "actualParticipationNumber": {"dataType": "string", "defaultValue":""},
+    "currentParticipationNumber": {"dataType": "string", "defaultValue":""}
+  
+}

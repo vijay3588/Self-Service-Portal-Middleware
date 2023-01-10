@@ -1,0 +1,7 @@
+{
+  "payer": {"dataType": "string", "defaultValue": ""},
+  "accountOwner": {"dataType": "string", "defaultValue": ""},
+  "disbursementReason": {"dataType": "string", "defaultValue": ""},
+  "disbursementChannel": {"dataType": "string", "defaultValue": ""},
+  "issuingCompanyName": {"dataType": "string", "defaultValue": ""}
+}

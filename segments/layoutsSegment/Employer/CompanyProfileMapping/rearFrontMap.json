@@ -1,0 +1,444 @@
+[
+    {
+        "frontSegment": "generalInfo",
+        "dataParentSegment": "",
+        "dataSegmentType": "object",
+        "defaultSectorMapping": [
+            {
+                "frontSector": "doingBusinessAs",
+                "rearSector": "shortName",
+                "rearDataSegmentPath": "legalEntityIdentity",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "clientId",
+                "rearSector": "internalClientId",
+                "rearDataSegmentPath": "clientId",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "taxId",
+                "rearSector": "taxId",
+                "rearDataSegmentPath": "legalEntityIdentity",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "numberOfEmployees",
+                "rearSector": "totalNumberOfEmployees",
+                "rearDataSegmentPath": "legalEntityIdentity",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "country",
+                "rearSector": "country",
+                "rearDataSegmentPath": "legalEntityIdentity",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "situsState",
+                "rearSector": "state",
+                "rearDataSegmentPath": "legalEntityIdentity",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "workingStates",
+                "rearSector": "worksiteStates",
+                "rearDataSegmentPath": "legalEntityIdentity",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "preferedCurrency",
+                "rearSector": "preferredCurrency",
+                "rearDataSegmentPath": "legalEntityIdentity",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "distributionUnit",
+                "rearSector": "thirdPartyName",
+                "rearDataSegmentPath": "loggedUserEntity._Result",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "industryClassification",
+                "rearSector": "classificationSystem",
+                "rearDataSegmentPath": "legalEntityIdentity.industrialClassification",
+                "defaultValue": "",
+                "dataConfig": {
+                    "configType": "additionSector",
+                    "sector": "code",
+                    "splitText": " - "
+                }
+            },
+            {
+                "frontSector": "legalEntityName",
+                "rearSector": "name",
+                "rearDataSegmentPath": "legalEntityIdentity",
+                "defaultValue": ""
+            }
+        ]
+    },
+    {
+        "frontSegment": "contactInfo",
+        "dataParentSegment": "correspondences",
+        "dataSegmentType": "array",
+        "defaultSectorMapping": [
+            {
+                "frontSector": "typeOfAddress",
+                "rearSector": "addressUsage",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "isDefault",
+                "rearSector": "isDefaultCorrespondance",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "noMailingAddress",
+                "rearSector": "",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "lineOne",
+                "rearSector": "line1",
+                "rearDataSegmentPath": "address",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "lineTwo",
+                "rearSector": "line2",
+                "rearDataSegmentPath": "address",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "city",
+                "rearSector": "city",
+                "rearDataSegmentPath": "address.zipCodeAndCity",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "state",
+                "rearSector": "state",
+                "rearDataSegmentPath": "address",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "zipCode",
+                "rearSector": "zipCode",
+                "rearDataSegmentPath": "address.zipCodeAndCity",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "country",
+                "rearSector": "country",
+                "rearDataSegmentPath": "address",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "phoneNumberPrimary",
+                "rearSector": "privatePhone",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "extPrimary",
+                "rearSector": "privatePhoneExtension",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "phoneNumberSecondary",
+                "rearSector": "officePhone",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "extSecondary",
+                "rearSector": "officePhoneExtension",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "faxNumber",
+                "rearSector": "fax",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "email",
+                "rearSector": "eMail",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "preferredContactMethod",
+                "rearSector": "mediaType",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "contactName",
+                "rearSector": "contactName",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            }
+        ]
+    },
+    {
+        "frontSegment": "bankAccount",
+        "dataParentSegment": "paymentMethods",
+        "dataSegmentType": "array",
+        "defaultSectorMapping": [
+            {
+                "frontSector": "bankName",
+                "rearSector": "name",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "accountType",
+                "rearSector": "accountType",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "accountNumber",
+                "rearSector": "accountNumber",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "effectiveDate",
+                "rearSector": "effectiveDate",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "expirationDate",
+                "rearSector": "endDate",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "routingNumber",
+                "rearSector": "routingNumber",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "lineOne",
+                "rearSector": "line1",
+                "rearDataSegmentPath": "address",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "lineTwo",
+                "rearSector": "line2",
+                "rearDataSegmentPath": "address",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "city",
+                "rearSector": "city",
+                "rearDataSegmentPath": "address.zipCodeAndCity",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "state",
+                "rearSector": "state",
+                "rearDataSegmentPath": "address",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "zipCode",
+                "rearSector": "zipCode",
+                "rearDataSegmentPath": "address.zipCodeAndCity",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "country",
+                "rearSector": "country",
+                "rearDataSegmentPath": "address",
+                "defaultValue": ""
+            }
+        ]
+    },
+    {
+        "frontSegment": "contactPerson",
+        "dataParentSegment": "contactInformations",
+        "dataSegmentType": "array",
+        "defaultSectorMapping": [
+            {
+                "frontSector": "typeOfAddress",
+                "rearSector": "addressUsage",
+                "rearDataSegmentPath": "",
+                "defaultValue": "0"
+            },
+            {
+                "frontSector": "isDefault",
+                "rearSector": "isDefaultCorrespondance",
+                "rearDataSegmentPath": "correspondence",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "noMailingAddress",
+                "rearSector": "",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "lineOne",
+                "rearSector": "line1",
+                "rearDataSegmentPath": "correspondence.address",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "lineTwo",
+                "rearSector": "line2",
+                "rearDataSegmentPath": "correspondence.address",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "city",
+                "rearSector": "city",
+                "rearDataSegmentPath": "correspondence.address.zipCodeAndCity",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "state",
+                "rearSector": "state",
+                "rearDataSegmentPath": "correspondence.address",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "zipCode",
+                "rearSector": "zipCode",
+                "rearDataSegmentPath": "correspondence.address.zipCodeAndCity",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "country",
+                "rearSector": "country",
+                "rearDataSegmentPath": "correspondence.address",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "phoneNumberPrimary",
+                "rearSector": "privatePhone",
+                "rearDataSegmentPath": "correspondence",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "extPrimary",
+                "rearSector": "privatePhoneExtension",
+                "rearDataSegmentPath": "correspondence",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "phoneNumberSecondary",
+                "rearSector": "officePhone",
+                "rearDataSegmentPath": "correspondence",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "extSecondary",
+                "rearSector": "officePhoneExtension",
+                "rearDataSegmentPath": "correspondence",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "faxNumber",
+                "rearSector": "fax",
+                "rearDataSegmentPath": "correspondence",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "email",
+                "rearSector": "eMail",
+                "rearDataSegmentPath": "correspondence",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "preferredContactMethod",
+                "rearSector": "mediaType",
+                "rearDataSegmentPath": "correspondence",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "contactName",
+                "rearSector": "contactName",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            }
+        ]
+    },
+    {
+        "frontSegment": "divisions",
+        "dataParentSegment": "legalEntityDivision",
+        "dataSegmentType": "array",
+        "defaultSectorMapping": [
+            {
+                "frontSector": "legalEntity",
+                "rearSector": "legalEntityName",
+                "rearDataSegmentPath": "headQuarter",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "effectiveDate",
+                "rearSector": "startDate",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "expirationDate",
+                "rearSector": "endDate",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "phoneNumberPrimary",
+                "rearSector": "privatePhone",
+                "rearDataSegmentPath": "headQuarter.createOrUpdateLegalEntity.correspondences",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "lineOne",
+                "rearSector": "line1",
+                "rearDataSegmentPath": "headQuarter.createOrUpdateLegalEntity.correspondences.address",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "lineTwo",
+                "rearSector": "line2",
+                "rearDataSegmentPath": "headQuarter.createOrUpdateLegalEntity.correspondences.address",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "city",
+                "rearSector": "city",
+                "rearDataSegmentPath": "headQuarter.createOrUpdateLegalEntity.correspondences.address.zipCodeAndCity",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "state",
+                "rearSector": "state",
+                "rearDataSegmentPath": "headQuarter.createOrUpdateLegalEntity.correspondences.address",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "zipCode",
+                "rearSector": "zipCode",
+                "rearDataSegmentPath": "headQuarter.createOrUpdateLegalEntity.correspondences.address.zipCodeAndCity",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "country",
+                "rearSector": "country",
+                "rearDataSegmentPath": "headQuarter.createOrUpdateLegalEntity.correspondences.address",
+                "defaultValue": ""
+            }
+        ]
+    }
+]

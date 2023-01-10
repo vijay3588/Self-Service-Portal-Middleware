@@ -1,0 +1,66 @@
+{
+  "className": {
+    "dataType": "string",
+    "defaultValue": "aSPCB_US_BankAccount"
+  },
+  "name": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "effectiveDate": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "endDate": {
+    "dataType": "string",
+    "defaultValue": null
+  },
+  "holderName": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "currency": {
+    "dataType": "string",
+    "defaultValue": "cUSDollar"
+  },
+  "accountType": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "branchName": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "depositType": {
+    "dataType": "string",
+    "defaultValue": "dpNA"
+  },
+  "bankName": {
+    "dataType": "string",
+    "defaultValue": "",
+    "dataConfig": {
+      "configType": "mappedData",
+      "mappedSector": "name"
+    }
+  },
+  "address": {
+    "dataType": "object",
+    "name": "aSPCB_US_PostalAddress"
+  },
+  "accountNumber": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "routingNumber": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "preNoteCompleted": {
+    "dataType": "string",
+    "defaultValue": false
+  },
+  "preNoteProcessCompletionDate": {
+    "dataType": "string",
+    "defaultValue": ""
+  }
+}

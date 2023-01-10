@@ -1,0 +1,828 @@
+{
+  "multipleColoumsCard": true,
+  "cards": [
+    {
+      "coloumConfig": {
+        "className": "col-12 col-lg-8"
+      },
+      "elements": [
+        {
+          "cardMembers": [
+            {
+              "cardElements": [
+                {
+                  "type": "label",
+                  "name": "paymentNumber",
+                  "label": "Payment Number",
+                  "placement": "select-label-content-home",
+                  "value": "",
+                  "displayConfig": {
+                    "show": true,
+                    "validation": {
+                      "condition": " == 1"
+                    },
+                    "valuesFrom": "props.selectOptions"
+                  },
+                  "responseFrom": "Payments",
+                  "config": {
+                    "placementClass": "select-label-content-home"
+                  }
+                },
+                {
+                  "type": "tile",
+                  "name": "paymentStatus",
+                  "style": {
+                    "fontSize": "12px",
+                    "color": "#00a190",
+                    "borderRadius": "4px",
+                    "border": "solid 1px #00a190"
+                  },
+                  "config": {
+                    "displayName": "InvoiceStatusConstants"
+                  },
+                  "displayConfig": {
+                    "show": true,
+                    "validation": {
+                      "condition": " == 1"
+                    },
+                    "valuesFrom": "props.selectOptions"
+                  },
+                  "placement": "col-lg-3 col-sm-5"
+                }
+              ]
+            }
+          ],
+          "type": "titleCard",
+          "name": "viewHeader",
+          "config": {
+            "showBorder": true,
+            "className": "row mb-0",
+            "subClassName": "row",
+            "additionalClassName": "col-sm-12"
+          }
+        },
+        {
+          "cardMembers": [
+            {
+              "cardElements": [
+                {
+                  "cardConfig": {
+                    "showHeader": true,
+                    "showFooter": false,
+                    "className": "col-12 col-sm-12 col-lg-8",
+                    "alignmentClass": " mb-4"
+                  },
+                  "panelHeader": {
+                    "config": {
+                      "alignment": "",
+                      "style": {}
+                    },
+                    "elements": [
+                      {
+                        "type": "readOnly",
+                        "name": "currentBalance",
+                        "label": "",
+                        "placement": "mr-3",
+                        "validations": {},
+                        "image": ""
+                      },
+                      {
+                        "type": "label",
+                        "name": "currentBalance",
+                        "label": "Current Balance",
+                        "placement": "",
+                        "value": "Direct Written Premium - DWP ($145.30)",
+                        "config": {
+                          "className": "enrollment-number"
+                        }
+                      }
+                    ]
+                  },
+                  "panelBody": {
+                    "config": {
+                      "alignment": ""
+                    },
+                    "elements": [
+                      {
+                        "type": "charter",
+                        "name": "participationChart",
+                        "placement": "col-12 col-sm-12",
+                        "chartType": "Doughnut",
+                        "title": "",
+                        "responseFrom": "ContractInformation",
+                        "symbol": "%",
+                        "chartData": {
+                          "datasets": [
+                            {
+                              "backgroundColor": [
+                                "#58c2d5",
+                                "#9c799b",
+                                "#67a28a"
+                              ],
+                              "data": [
+                                10,
+                                80,
+                                10
+                              ]
+                            }
+                          ],
+                          "labels": [
+                            "1-100 $9.3M",
+                            "100-10,000 $126M",
+                            "10,000+ $10M "
+                          ]
+                        },
+                        "displayChartLegend": true,
+                        "config": {
+                          "chartPlacement": "col-12 col-md-6",
+                          "legendsPlacement": "col-12 col-md-6",
+                          "legendsAlignment": "mt-4"
+                        }
+                      }
+                    ]
+                  },
+                  "panelFooter": {
+                    "elements": []
+                  }
+                },
+                {
+                  "cardConfig": {
+                    "showHeader": true,
+                    "showFooter": false,
+                    "className": "col-12 col-sm-12 col-lg-4 p-0 m-0",
+                    "alignmentClass": " mb-4"
+                  },
+                  "panelHeader": {
+                    "elements": [
+                      {
+                        "type": "label",
+                        "name": "currentBalance",
+                        "label": "Current Balance",
+                        "placement": "",
+                        "value": "Book of Business (71)",
+                        "config": {
+                          "className": "enrollment-number"
+                        }
+                      }
+                    ]
+                  },
+                  "panelBody": {
+                    "config": {
+                      "className": "pb-3",
+                      "alignment": "row"
+                    },
+                    "elements": [
+                      {
+                        "placement": "col-9 col-sm-9 mb-2",
+                        "content": "",
+                        "elementor": true,
+                        "type": "progressBar",
+                        "name": "progressBar",
+                        "bgColor": "green",
+                        "value": "3",
+                        "limit": "1 - 100",
+                        "sector": "currentParticipationNumber",
+                        "dataSegment": "coverageGeneralInformation",
+                        "barStyle": "progress_bar_rectangle "
+                      },
+                      {
+                        "type": "readOnly",
+                        "name": "contractSummary",
+                        "label": "",
+                        "placement": "mr-3",
+                        "validations": {},
+                        "responseFrom": "ContractInformation",
+                        "value": "12",
+                        "contentClassName": "readonly_label_big_content"
+                      },
+                      {
+                        "placement": "col-9 col-sm-9 mb-2",
+                        "content": "",
+                        "elementor": true,
+                        "type": "progressBar",
+                        "name": "progressBar",
+                        "bgColor": "vilot",
+                        "value": "3",
+                        "limit": "100 - 10,000",
+                        "sector": "currentParticipationNumber",
+                        "dataSegment": "coverageGeneralInformation",
+                        "barStyle": "progress_bar_rectangle "
+                      },
+                      {
+                        "type": "readOnly",
+                        "name": "contractSummary",
+                        "label": "",
+                        "placement": "mr-3",
+                        "validations": {},
+                        "value": "15",
+                        "contentClassName": "readonly_label_big_content"
+                      },
+                      {
+                        "placement": "col-9 col-sm-9 mb-2",
+                        "content": "",
+                        "elementor": true,
+                        "type": "progressBar",
+                        "name": "progressBar",
+                        "bgColor": "blue",
+                        "value": "3",
+                        "limit": "10,0000+",
+                        "sector": "currentParticipationNumber",
+                        "dataSegment": "coverageGeneralInformation",
+                        "barStyle": "progress_bar_rectangle"
+                      },
+                      {
+                        "type": "readOnly",
+                        "name": "contractSummary",
+                        "label": "",
+                        "placement": "mr-3",
+                        "validations": {},
+                        "value": "45",
+                        "contentClassName": "readonly_label_big_content"
+                      }
+                    ]
+                  },
+                  "panelFooter": {
+                    "elements": []
+                  }
+                }
+              ]
+            }
+          ],
+          "title": "panelCard",
+          "type": "panelCard",
+          "name": "panelCard"
+        },
+        {
+          "cardMembers": [
+            {
+              "cardElements": [
+                {
+                  "cardConfig": {
+                    "showHeader": true,
+                    "showFooter": false,
+                    "className": "col-12 col-sm-12 col-lg-12 ",
+                    "alignmentClass": "mb-4"
+                  },
+                  "panelHeader": {
+                    "elements": [
+                      {
+                        "type": "readOnly",
+                        "name": "contractSummary",
+                        "label": "",
+                        "placement": "mr-3",
+                        "validations": {},
+                        "responseFrom": "ContractInformation",
+                        "image": ""
+                      },
+                      {
+                        "type": "label",
+                        "name": "ContractSummary",
+                        "label": "Contract Summary",
+                        "placement": "mr-3",
+                        "value": "Commissions ($K)",
+                        "responseFrom": "ContractInformation",
+                        "config": {
+                          "className": "enrollment-number"
+                        }
+                      }
+                    ]
+                  },
+                  "panelBody": {
+                    "config": {
+                      "alignment": ""
+                    },
+                    "elements": [
+                      {
+                        "name": "disbursementCard",
+                        "title": "disbursementCard",
+                        "type": "elementsCard",
+                        "cardMembers": [
+                          {
+                            "cardConfig": {
+                              "className": "col-12 col-sm-4",
+                              "alignment": "mt-sm-5"
+                            },
+                            "cardElements": [
+                              {
+                                "type": "readOnly",
+                                "name": "effectiveDate",
+                                "label": "",
+                                "placement": "col-12 col-sm-12",
+                                "responseFrom": "ContractInformation",
+                                "contentClassName": "readonly_label_bigger_content",
+                                "value": "34.2"
+                              },
+                              {
+                                "type": "readOnly",
+                                "name": "termOrRenewalDate",
+                                "label": "",
+                                "placement": "col-12 col-sm-12",
+                                "responseFrom": "ContractInformation",
+                                "validations": {},
+                                "value": "+12.7 (37.13%)"
+                              }
+                            ]
+                          },
+                          {
+                            "cardConfig": {
+                              "className": "col-12 col-sm-8"
+                            },
+                            "cardElements": [
+                              {
+                                "type": "charter",
+                                "name": "participationChart",
+                                "placement": "col-12 col-sm-12",
+                                "chartType": "Line",
+                                "title": "",
+                                "responseFrom": "ContractInformation",
+                                "symbol": "%",
+                                "chartData": {
+                                  "datasets": [
+                                    {
+                                      "fill": false,
+                                      "data": [
+                                        10.9,
+                                        180.9,
+                                        50,
+                                        90,
+                                        60,
+                                        85,
+                                        100
+                                      ],
+                                      "backgroundColor": "rgb(255, 99, 132)",
+                                      "borderColor": "rgba(255, 99, 132, 0.2)"
+                                    }
+                                  ],
+                                  "labels": [
+                                    "Jan",
+                                    "Feb",
+                                    "Mar",
+                                    "Apr",
+                                    "May",
+                                    "Jun",
+                                    "Jul"
+                                  ]
+                                },
+                                "displayChartLegend": false,
+                                "config": {
+                                  "chartPlacement": "col-12 col-md-12",
+                                  "legendsPlacement": "col-0",
+                                  "legendsAlignment": "mt-4"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "panelFooter": {
+                    "elements": []
+                  }
+                }
+              ]
+            }
+          ],
+          "title": "panelCard",
+          "type": "panelCard",
+          "name": "panelCard"
+        },
+        {
+          "cardMembers": [
+            {
+              "cardElements": [
+                {
+                  "cardConfig": {
+                    "showHeader": true,
+                    "showFooter": false,
+                    "className": "col-12 col-sm-12 col-lg-6",
+                    "alignmentClass": " mb-4"
+                  },
+                  "panelHeader": {
+                    "elements": [
+                      {
+                        "type": "readOnly",
+                        "name": "currentBalance",
+                        "label": "",
+                        "placement": "mr-3",
+                        "validations": {},
+                        "image": ""
+                      },
+                      {
+                        "type": "label",
+                        "name": "currentBalance",
+                        "label": "Current Balance",
+                        "placement": "",
+                        "value": "Quotes",
+                        "config": {
+                          "className": "enrollment-number"
+                        }
+                      }
+                    ]
+                  },
+                  "panelBody": {
+                    "config": {
+                      "alignment": ""
+                    },
+                    "elements": [
+                      {
+                        "name": "renewals",
+                        "title": "renewals",
+                        "type": "elementsCard",
+                        "cardMembers": [
+                          {
+                            "cardConfig": {
+                              "className": "col-md-12 col-lg-12",
+                              "alignment": "row m-2"
+                            },
+                            "cardElements": [
+                              {
+                                "type": "displayCount",
+                                "name": "pastDueAmount",
+                                "label": "Started",
+                                "placement": "col-12  col-sm-4 mb-3",
+                                "responseFrom": "Payments",
+                                "image": "calendar.png",
+                                "value": "6",
+                                "validations": {}
+                              },
+                              {
+                                "type": "displayCount",
+                                "name": "pastDueAmount",
+                                "label": "Submitted",
+                                "placement": "col-12  col-sm-4 mb-3",
+                                "responseFrom": "Payments",
+                                "value": "6",
+                                "validations": {},
+                                "image": "calendar.png"
+                              },
+                              {
+                                "type": "displayCount",
+                                "name": "Closed",
+                                "label": "Closed",
+                                "placement": "col-12  col-sm-4 mb-3",
+                                "responseFrom": "Payments",
+                                "value": "9",
+                                "validations": {},
+                                "image": "calendar.png"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "panelFooter": {
+                    "elements": []
+                  }
+                },
+                {
+                  "cardConfig": {
+                    "showHeader": true,
+                    "showFooter": false,
+                    "className": "col-12 col-sm-12 col-lg-6",
+                    "alignmentClass": " mb-4"
+                  },
+                  "panelHeader": {
+                    "elements": [
+                      {
+                        "type": "label",
+                        "name": "currentBalance",
+                        "label": "Current Balance",
+                        "placement": "row ml-4",
+                        "value": "Renewals",
+                        "config": {
+                          "className": "enrollment-number"
+                        }
+                      }
+                    ]
+                  },
+                  "panelBody": {
+                    "config": {
+                      "alignment": ""
+                    },
+                    "elements": [
+                      {
+                        "name": "renewals",
+                        "title": "renewals",
+                        "type": "elementsCard",
+                        "cardMembers": [
+                          {
+                            "cardConfig": {
+                              "className": "col-md-12 col-lg-12",
+                              "alignment": "row m-2"
+                            },
+                            "cardElements": [
+                              {
+                                "type": "displayCount",
+                                "name": "pastDueAmount",
+                                "label": "10 Days",
+                                "placement": " col-12  col-sm-4 mb-3",
+                                "responseFrom": "Payments",
+                                "value": "6",
+                                "validations": {},
+                                "image": "calendar.png"
+                              },
+                              {
+                                "type": "displayCount",
+                                "name": "pastDueAmount",
+                                "label": "33 Days",
+                                "placement": " col-12  col-sm-4 mb-3",
+                                "responseFrom": "Payments",
+                                "value": "6",
+                                "validations": {},
+                                "image": "calendar.png"
+                              },
+                              {
+                                "type": "displayCount",
+                                "name": "Started",
+                                "label": "9 Days",
+                                "placement": " col-12  col-sm-4 mb-3",
+                                "responseFrom": "Payments",
+                                "value": "6",
+                                "image": "calendar.png",
+                                "validations": {}
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "panelFooter": {
+                    "elements": []
+                  }
+                }
+              ]
+            }
+          ],
+          "title": "panelCard",
+          "type": "panelCard",
+          "name": "panelCard"
+        }
+      ]
+    },
+    {
+      "coloumConfig": {
+        "className": "col-12 col-lg-4"
+      },
+      "elements": [
+        {
+          "cardMembers": [
+            {
+              "cardElements": [
+                {
+                  "cardConfig": {
+                    "showHeader": true,
+                    "showFooter": false,
+                    "className": "col-12 col-sm-12 col-lg-12",
+                    "alignmentClass": " mb-4",
+                    "isNotMultiple": true
+                  },
+                  "panelHeader": {
+                    "elements": [
+                      {
+                        "type": "notification",
+                        "name": "notificationCount",
+                        "label": "",
+                        "placement": "",
+                        "responseFrom": "searchActorContactHistory",
+                        "value": "",
+                        "config": {}
+                      },
+                      {
+                        "type": "readOnly",
+                        "name": "currentBalance",
+                        "label": "",
+                        "placement": "ml-2",
+                        "validations": {},
+                        "image": "",
+                        "value": "Notifications"
+                      }
+                    ]
+                  },
+                  "panelBody": {
+                    "config": {
+                      "alignment": ""
+                    },
+                    "elements": [
+                      {
+                        "name": "notifications",
+                        "title": "notifications",
+                        "type": "elementsCard",
+                        "cardMembers": [
+                          {
+                            "cardConfig": {
+                              "className": "col-md-12 col-lg-12 mt-n4",
+                              "alignment": "p-1"
+                            },
+                            "cardElements": [
+                              {
+                                "type": "readOnly",
+                                "name": "date",
+                                "label": "",
+                                "placement": "col-lg-12 col-sm-12",
+                                "contentClassName": "notification_label",
+                                "labelClassName": "notification_label",
+                                "config": {
+                                  "valueType": "date",
+                                  "format": "DD-MM-YYYY HH:mm:ss"
+                                },
+                                "value": ""
+                              },
+                              {
+                                "type": "readOnly",
+                                "name": "name",
+                                "label": "",
+                                "placement": "col-lg-12 col-sm-12",
+                                "contentClassName": "notification_content",
+                                "labelClassName": "notification_content",
+                                "validations": {},
+                                "image": ""
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "panelFooter": {
+                    "elements": []
+                  }
+                }
+              ]
+            }
+          ],
+          "title": "panelCard",
+          "type": "panelCard",
+          "name": "panelCard"
+        },
+        {
+          "cardMembers": [
+            {
+              "cardElements": [
+                {
+                  "cardConfig": {
+                    "showHeader": true,
+                    "showFooter": false,
+                    "className": "col-12 col-sm-12 col-lg-12",
+                    "alignmentClass": " mb-4",
+                    "isNotMultiple": true
+                  },
+                  "panelHeader": {
+                    "elements": [
+                      {
+                        "type": "readOnly",
+                        "name": "currentBalance",
+                        "label": "",
+                        "placement": "mr-3",
+                        "validations": {},
+                        "image": "",
+                        "value": "Quick Links"
+                      }
+                    ]
+                  },
+                  "panelBody": {
+                    "config": {
+                      "alignment": ""
+                    },
+                    "elements": [
+                      {
+                        "name": "quickLinks",
+                        "title": "quickLinks",
+                        "type": "elementsCard",
+                        "cardMembers": [
+                          {
+                            "cardConfig": {
+                              "className": "col-md-12 col-lg-12",
+                              "cardClassName": "element-card-border",
+                              "alignment": "mt-n2"
+                            },
+                            "cardElements": [
+                              {
+                                "name": "viewInvoice",
+                                "type": "link",
+                                "liClassName": "landingPageLinks col-sm-6 col-md-1 mr-2 text-center d-none d-lg-flex",
+                                "renderType": "landingPage",
+                                "className": "",
+                                "placement": "col-12 p-1",
+                                "value": "Search for an Employee",
+                                "to": "/employer/searchForAnEmployee"
+                              },
+                              {
+                                "name": "viewInvoice",
+                                "type": "link",
+                                "placement": "col-12 p-1",
+                                "liClassName": "landingPageLinks col-sm-6 col-md-1 mr-2 text-center d-none d-lg-flex",
+                                "renderType": "landingPage",
+                                "value": "Search for an Enrollment",
+                                "to": "/employer/searchForAnEnrollment"
+                              },
+                              {
+                                "name": "viewInvoice",
+                                "type": "link",
+                                "placement": "col-12 p-1 ",
+                                "liClassName": "landingPageLinks col-sm-6 col-md-1 mr-2 text-center d-none d-lg-flex",
+                                "renderType": "landingPage",
+                                "value": "Request a Quote",
+                                "to": "/employer/home"
+                              },
+                              {
+                                "name": "viewInvoice",
+                                "type": "link",
+                                "placement": "col-12 p-1",
+                                "liClassName": "landingPageLinks col-sm-6 col-md-1 mr-2 text-center d-none d-lg-flex",
+                                "renderType": "landingPage",
+                                "value": "Request a Contract Amendment",
+                                "to": "/employer/home"
+                              },
+                              {
+                                "name": "viewInvoice",
+                                "type": "link",
+                                "placement": "col-12 p-1",
+                                "liClassName": "landingPageLinks col-sm-6 col-md-1 mr-2 text-center d-none d-lg-flex",
+                                "renderType": "landingPage",
+                                "value": "View Accounts",
+                                "to": "/employer/home"
+                              },
+                              {
+                                "name": "viewInvoice",
+                                "type": "link",
+                                "placement": "col-12 p-1",
+                                "liClassName": "landingPageLinks col-sm-6 col-md-1 mr-2 text-center d-none d-lg-flex",
+                                "renderType": "landingPage",
+                                "value": "View Reports",
+                                "to": "/employer/home"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "panelFooter": {
+                    "elements": []
+                  }
+                }
+              ]
+            }
+          ],
+          "title": "panelCard",
+          "type": "panelCard",
+          "name": "panelCard"
+        },
+        {
+          "cardMembers": [
+            {
+              "cardElements": [
+                {
+                  "cardConfig": {
+                    "showHeader": true,
+                    "showFooter": false,
+                    "className": "col-12 col-sm-12 col-lg-12",
+                    "alignmentClass": " mb-4",
+                    "isNotMultiple": true
+                  },
+                  "panelHeader": {
+                    "elements": [
+                      {
+                        "type": "readOnly",
+                        "name": "currentBalance",
+                        "label": "",
+                        "placement": "mr-3",
+                        "validations": {},
+                        "image": "",
+                        "value": "Recent Activities"
+                      }
+                    ]
+                  },
+                  "panelBody": {
+                    "config": {
+                      "alignment": ""
+                    },
+                    "elements": [
+                      {
+                        "type": "dotProgressBar",
+                        "name": "searchOperations",
+                        "label": "DotProgressBar",
+                        "placement": "col-lg-12 col-sm-12 mb-3",
+                        "validations": {},
+                        "isNotMultiple": true
+                      }
+                    ]
+                  },
+                  "panelFooter": {
+                    "elements": []
+                  }
+                }
+              ]
+            }
+          ],
+          "title": "panelCard",
+          "type": "panelCard",
+          "name": "panelCard"
+        }
+      ]
+    }
+  ]
+}

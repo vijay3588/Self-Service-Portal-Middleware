@@ -1,0 +1,19 @@
+{
+    "typeOfAddress": { "dataType": "string", "defaultValue": ""},
+    "isDefault": { "dataType": "string", "defaultValue": ""},
+    "noMailingAddress": { "dataType": "string", "defaultValue": ""},
+    "lineOne": { "dataType": "string", "defaultValue": ""},
+    "lineTwo": { "dataType": "string", "defaultValue": ""},
+    "city": { "dataType": "string", "defaultValue": ""},
+    "state": { "dataType": "string", "defaultValue": ""},
+    "zipCode": { "dataType": "string", "defaultValue": ""},
+    "country": { "dataType": "string", "defaultValue": ""},
+    "phoneNumberPrimary": { "dataType": "string", "defaultValue": ""},
+    "extPrimary": { "dataType": "string", "defaultValue": ""},
+    "phoneNumberSecondary": { "dataType": "string", "defaultValue": ""},
+    "extSecondary": { "dataType": "string", "defaultValue": ""},
+    "faxNumber": { "dataType": "string", "defaultValue": ""},
+    "email": { "dataType": "string", "defaultValue": ""},
+    "preferredContactMethod": { "dataType": "string", "defaultValue": ""},
+    "contactName": { "dataType": "string", "defaultValue": ""}
+}

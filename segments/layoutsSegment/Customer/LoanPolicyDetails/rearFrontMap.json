@@ -1,0 +1,58 @@
+[
+    {
+        "frontSegment": "loanDetails",
+        "dataParentSegment": "loans",
+        "dataSegmentType": "array",
+        "defaultSectorMapping": [
+            {
+                "frontSector": "loanBuid",
+                "rearSector": "buid",
+                "rearDataSegmentPath": "loanIdentifier",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "loanType",
+                "rearSector": "name",
+                "rearDataSegmentPath": "loanIdentifier",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "principalAmount",
+                "rearSector": "amount",
+                "rearDataSegmentPath": "loanInformation.loanAmount",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "lender",
+                "rearSector": "name",
+                "rearDataSegmentPath": "lender.searchLender",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "periodicAmount",
+                "rearSector": "amount",
+                "rearDataSegmentPath": "loanInformation.initialPeriodicPaymentAmount",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "loanTerm",
+                "rearSector": "numberOfPayments",
+                "rearDataSegmentPath": "loanInformation",
+                "defaultValue": ""
+            }
+        ]
+    },
+    {
+        "frontSegment": "loanInfo",
+        "dataParentSegment": "",
+        "dataSegmentType": "object",
+        "defaultSectorMapping": [
+            {
+                "frontSector": "endDate",
+                "rearSector": "terminationDate",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            }
+        ]
+    }
+  ]

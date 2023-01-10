@@ -1,0 +1,21 @@
+[
+  {
+    "frontDataSegment": "contract",
+    "rearDataSegmentClass": "inputQuote",
+    "rearDataSegment":"contractID",
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "buid",
+        "rearSector": "buid",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "issuingCompanyCode",
+        "rearSector": "issuingCompanyCode",
+        "rearDataSegmentPath": "internalPolicyIdentifier",
+        "defaultValue": ""
+      }
+    ]
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "frontDataSegment": "Name",
+    "frontDataSegmentPath": "values",
+    "mappingSectorOnly": true,
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "clientId",
+        "rearSector": "internalClientId",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "selectedTheme",
+        "rearSector": "selectedTheme",
+        "defaultValue": ""
+      }
+    ]
+  }
+]

@@ -1,0 +1,60 @@
+[
+  {
+    "frontSegment": "dependentConfigInformation",
+    "dataParentSegment": "",
+    "dataSegmentType": "object",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "dependentMiddleNameRequired",
+        "rearSector": "requiredField",
+        "rearDataSegmentPath": "data.dependentPersonalInfo.dependentMiddleName",
+        "defaultValue": false
+      },
+      {
+        "frontSector": "dependentMiddleNameToggle",
+        "rearSector": "hideableField",
+        "rearDataSegmentPath": "data.dependentPersonalInfo.dependentMiddleName",
+        "defaultValue": false
+      },
+
+      {
+        "frontSector": "dependentAddressSameAsEmployeeRequired",
+        "rearSector": "requiredField",
+        "rearDataSegmentPath": "data.dependentAddressInfo.liveInSameAddress",
+        "defaultValue": false
+      },
+      {
+        "frontSector": "dependentAddressSameAsEmployeeToggle",
+        "rearSector": "hideableField",
+        "rearDataSegmentPath": "data.dependentAddressInfo.liveInSameAddress",
+        "defaultValue": false
+      },
+
+      {
+        "frontSector": "dependentStreetAddress2Required",
+        "rearSector": "requiredField",
+        "rearDataSegmentPath": "data.dependentAddressInfo.dependentAddressLine2",
+        "defaultValue": false
+      },
+      {
+        "frontSector": "dependentStreetAddress2Toggle",
+        "rearSector": "hideableField",
+        "rearDataSegmentPath": "data.dependentAddressInfo.dependentAddressLine2",
+        "defaultValue": false
+      },
+
+      {
+        "frontSector": "dependentCountryRequired",
+        "rearSector": "requiredField",
+        "rearDataSegmentPath": "data.dependentAddressInfo.dependentCountry",
+        "defaultValue": false
+      },
+      {
+        "frontSector": "dependentCountryToggle",
+        "rearSector": "hideableField",
+        "rearDataSegmentPath": "data.dependentAddressInfo.dependentCountry",
+        "defaultValue": false
+      }
+    ]
+  }
+]

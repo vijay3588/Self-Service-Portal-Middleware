@@ -1,0 +1,842 @@
+{
+  "tables": [
+    {
+      "tableId": "dependentTable",
+      "isMultiple": true,
+      "hasActions": true,
+      "dataKey": "dependentsInfo",
+      "actionsHeader": "Actions",
+      "mobileActionsHeader": "",
+      "editKey": "editDependentValidations",
+      "editModal": "addDependent",
+      "tableData": "dependentsTable",
+      "actionsStyle": {
+        "backgroundColor": "#0065AC",
+        "color": "#FFFFFF"
+      },
+      "multiConfig": {
+        "maxAdds": 3,
+        "tableHeaderStyle": {
+          "backgroundColor": "#0065AC"
+        },
+        "tableHeader": [
+          {
+            "value": "Name",
+            "id": "dependentFullName",
+            "config": {
+              "className": "col-4",
+              "style": {
+                "backgroundColor": "#0065AC",
+                "color": "#FFFFFF"
+              }
+            }
+          },
+          {
+            "value": "Relationship",
+            "id": "dependentRelationShip",
+            "config": {
+              "className": "col-4",
+              "style": {
+                "backgroundColor": "#0065AC",
+                "color": "#FFFFFF"
+              }
+            }
+          },
+          {
+            "value": "Gender",
+            "id": "dependentGender",
+            "config": {
+              "className": "col-4",
+              "style": {
+                "backgroundColor": "#0065AC",
+                "color": "#FFFFFF"
+              }
+            }
+          },
+          {
+            "value": "Date of Birth",
+            "id": "dependentDateOfBirth",
+            "config": {
+              "className": "col-4",
+              "style": {
+                "backgroundColor": "#0065AC",
+                "color": "#FFFFFF"
+              }
+            }
+          }
+        ],
+        "tableRow": [
+          {
+            "value": "`${data.dependentFirstName ? `${data.dependentFirstName} ` : ''} ${data.dependentMiddleName ? `${data.dependentMiddleName} ` : ''} ${ (data.dependentLastName) ? `${data.dependentLastName} ` : '' }`",
+            "type": "expression",
+            "id": "dependentFullName"
+          },
+          {
+            "value": "`${data.dependentRelationShip ? `${data.dependentRelationShip}` : ''}`",
+            "type": "expression",
+            "id": "dependentRelationShip"
+          },
+          {
+            "value": "`${data.dependentGender ? `${data.dependentGender}` : ''}`",
+            "type": "expression",
+            "id": "dependentGender"
+          },
+          {
+            "value": "`${data.dependentDateOfBirth ? `${data.dependentDateOfBirth}` : ''}`",
+            "type": "expression",
+            "id": "dependentDateOfBirth"
+          }
+        ]
+      }
+    }
+  ],
+  "modals": [
+    {
+      "modalName": "addDependent",
+      "title": "Add Dependent",
+      "disclaimer": "Fields marked with * are Mandatory",
+      "modalDisplayDependentElement": "addDependentValidations",
+
+      "modalElements": [
+        [
+          [
+            {
+              "type": "panelSideHeader",
+              "outerDiv": false,
+              "name": "Personal Information",
+              "label": "Personal Information",
+              "placement": "col-md-6",
+              "formSideBigHeader": "Personal Information",
+              "header": true
+            }
+          ],
+
+          [
+            {
+              "type": "text",
+              "name": "dependentFirstName",
+              "rearSector": "dependentFirstName",
+              "label": "First Name",
+              "mapping": true,
+              "modal": true,
+              "editable": true,
+              "placeholder": "Enter First Name",
+              "header": false,
+              "value": "",
+              "classNameWrapper": "py-3",
+              "placement": "col-md-4 py-0 py-md-3",
+              "displayConfig": {
+                "field": "addDependentValidations",
+
+                "valueUpdate": {
+                  "addDependentValidations": false
+                },
+                "validateField": ["dependentFirstName"]
+              },
+              "validations": {
+                "string": {
+                  "matches": {
+                    "regex": "^[a-zA-Z]+$",
+                    "message": "No special characters allowed"
+                  },
+                  "validationRequiredOnTrue": {
+                    "value": "addDependentValidations",
+                    "message": "Please enter your First Name"
+                  },
+                  "validationMatchOnTrue": {
+                    "value": "addDependentValidations",
+                    "message": "First Name is invalid",
+                    "regex": "^[a-zA-Z]+$"
+                  }
+                }
+              }
+            },
+            {
+              "type": "text",
+              "name": "dependentMiddleName",
+              "rearSector": "dependentMiddleName",
+              "label": "Middle Name",
+              "header": false,
+              "modal": true,
+              "mapping": true,
+              "editable": true,
+              "placeholder": "Enter Middle Name",
+              "value": "",
+              "classNameWrapper": "py-3",
+              "placement": "col-md-4 py-0 py-md-3",
+
+              "validations": {
+                "string": {
+                  "matches": {
+                    "regex": "^[a-zA-Z]+$",
+                    "message": "No special characters allowed"
+                  }
+                }
+              }
+            },
+            {
+              "type": "text",
+              "name": "dependentLastName",
+              "rearSector": "dependentLastName",
+              "label": "Last Name",
+              "mapping": true,
+              "modal": true,
+              "editable": true,
+              "placeholder": "Enter Last Name",
+              "header": false,
+              "value": "",
+              "classNameWrapper": "py-3",
+              "placement": "col-md-4 py-0 py-md-3",
+              "displayConfig": {
+                "field": "addDependentValidations",
+
+                "valueUpdate": {
+                  "addDependentValidations": false
+                },
+                "validateField": ["dependentLastName"]
+              },
+              "validations": {
+                "string": {
+                  "matches": {
+                    "regex": "^[a-zA-Z]+$",
+                    "message": "No special characters allowed"
+                  },
+                  "validationRequiredOnTrue": {
+                    "value": "addDependentValidations",
+                    "message": "Please enter your Last Name"
+                  },
+                  "validationMatchOnTrue": {
+                    "value": "addDependentValidations",
+                    "message": "Last Name is invalid",
+                    "regex": "^[a-zA-Z]+$"
+                  }
+                }
+              }
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "name": "SSN",
+              "rearSector": "xxx",
+              "label": "SSN",
+              "labelTitle": "SSN",
+              "placeholder": "Enter SSN",
+              "mapping": true,
+              "editable": true,
+              "modal": true,
+              "placement": "col-12 col-lg-4  col-md-4 col-sm-6",
+              "classNameWrapper": "py-3",
+              "header": false,
+              "displayConfig": {
+                "field": "addDependentValidations",
+
+                "valueUpdate": {
+                  "addDependentValidations": false
+                },
+                "validateField": ["SSN"]
+              },
+              "validations": {
+                "string": {
+                  "validationRequiredOnTrue": {
+                    "value": "addDependentValidations",
+                    "message": "Please enter your SSN"
+                  },
+                  "min": { "limit": 9, "message": "SSN must have 9 digits" },
+                  "max": { "limit": 9, "message": "SSN must have 9 digits" },
+                  "matches": {
+                    "regex": "^[0-9]*$",
+                    "message": "SSN must have 9 digits"
+                  }
+                }
+              },
+              "containerClassName": "col-12",
+              "contentClassName": "col-12 pr-0"
+            },
+            {
+              "type": "select",
+              "label": "Relationship with the Dependent",
+              "name": "dependentRelationship",
+              "rearSector": "dependentRelationship",
+              "value": "SP",
+              "header": true,
+              "displayConfig": {
+                "field": "addDependentValidations",
+
+                "valueUpdate": {
+                  "addDependentValidations": false
+                },
+                "validateField": ["dependentRelationship"]
+              },
+
+              "update": {
+                "reduxPath": "personalInformation.personalInformation.mediaType",
+                "formikPath": "EmployeeProfile"
+              },
+              "placement": "col-12 col-lg-4 col-md-4 col-sm-6 py-3",
+              "validations": {
+                "string": {
+                  "validationRequiredOnTrue": {
+                    "value": "addDependentValidations",
+                    "message": "Please choose the option"
+                  }
+                }
+              },
+              "options": [
+                { "value": "CH", "text": "Child" },
+                { "value": "SP", "text": "Spouse" }
+              ]
+            },
+            {
+              "type": "radioButtonGroup",
+              "name": "dependentGender",
+              "rearSector": "options",
+              "radioClassWrapper": "pb-0 custom-control-inline",
+              "label": "Dependent's Gender",
+              "labelClassName": "col-12 py-3",
+              "placement": "col-12 col-lg-4 col-md-4 col-sm-6",
+              "isRadio": true,
+              "style": {
+                "marginRight": "0.5rem"
+              },
+              "displayConfig": {
+                "field": "addDependentValidations",
+                "show": false,
+
+                "valueUpdate": {
+                  "addDependentValidations": false
+                },
+                "validateField": ["dependentGender"]
+              },
+
+              "validations": {
+                "string": {
+                  "validationRequiredOnTrue": {
+                    "value": "addDependentValidations",
+                    "message": "Please choose the option"
+                  }
+                }
+              },
+              "inputs": [
+                { "label": "Male", "value": "gMale" },
+                { "label": "Female", "value": "gFemale" },
+                { "label": "Undisclosed", "value": "undisclosed" }
+              ]
+            }
+          ],
+          [
+            {
+              "type": "date",
+              "name": "dependentBirthDate",
+              "rearSector": "birthDate",
+              "label": "Dependent's Date of Birth",
+              "classNameWrapper": "py-3",
+              "placeholder": "Enter DOB",
+              "placement": "col-12 col-lg-4 col-md-4 col-sm-3",
+              "displayConfig": {
+                "field": "addDependentValidations",
+
+                "valueUpdate": {
+                  "addDependentValidations": false
+                },
+                "validateField": ["dependentBirthDate"]
+              },
+              "validations": {
+                "string": {
+                  "validationRequiredOnTrue": {
+                    "value": "alternateAddressValidations",
+                    "message": "Please enter your DOB"
+                  },
+                  "min": {
+                    "limit": 6,
+                    "message": "minlengeth is 6"
+                  }
+                }
+              }
+            },
+            {
+              "type": "radioButtonGroup",
+              "name": "dependentFullTimeStudent",
+              "rearSector": "options",
+              "label": "Is this Dependent full time student?",
+              "labelClassName": "col-12 py-3",
+              "placement": "col-12  col-lg-4 col-md-4 col-sm-4 pt-2",
+              "radioClassWrapper": "pb-0 custom-control-inline",
+              "isRadio": true,
+              "displayConfig": {
+                "field": "addDependentValidations",
+
+                "valueUpdate": {
+                  "addDependentValidations": false
+                },
+                "validateField": ["dependentFullTimeStudent"]
+              },
+              "validations": {
+                "string": {
+                  "validationRequiredOnTrue": {
+                    "value": "addDependentValidations",
+                    "message": "Please choose the option"
+                  }
+                }
+              },
+              "inputs": [
+                { "label": "Yes", "value": "yes" },
+                { "label": "No", "value": "no" }
+              ]
+            },
+            {
+              "type": "radioButtonGroup",
+              "name": "dependentDisabled",
+              "rearSector": "options",
+              "label": "Is this Dependent disabled?",
+              "labelClassName": "col-12 py-3",
+              "placement": "col-12 col-lg-4 col-md-4 col-sm-4 pt-2",
+              "radioClassWrapper": "pb-0 custom-control-inline",
+              "isRadio": true,
+              "displayConfig": {
+                "field": "addDependentValidations",
+
+                "valueUpdate": {
+                  "addDependentValidations": false
+                },
+                "validateField": ["dependentDisabled"]
+              },
+              "validations": {
+                "string": {
+                  "validationRequiredOnTrue": {
+                    "value": "addDependentValidations",
+                    "message": "Please choose the option"
+                  }
+                }
+              },
+              "inputs": [
+                { "label": "Yes", "value": "yes" },
+                { "label": "No", "value": "no" }
+              ]
+            }
+          ],
+          [
+            {
+              "type": "readOnly",
+              "name": "horizontalBar",
+
+              "horizontalBar": true,
+              "hidden": true,
+              "value": "",
+              "hideLabel": true,
+              "outerDiv": true,
+
+              "placement": "col-md-12"
+            }
+          ],
+          [
+            {
+              "type": "panelSideHeader",
+              "outerDiv": false,
+              "name": "Dependent's Address",
+              "label": "Dependent's Address",
+              "placement": "col-md-6 py-3",
+              "formSideBigHeader": "Dependent's Address",
+              "header": true
+            }
+          ],
+          [
+            {
+              "type": "checkbox",
+              "name": "liveInSameAddress",
+
+              "populateValue": {
+                "formName": "EmployeeProfile",
+                "from": [
+                  "line1",
+                  "line2",
+                  "city",
+                  "state",
+                  "zipCode",
+                  "country"
+                ],
+                "to": [
+                  "DependentInformation.dependentAddressLine1",
+                  "DependentInformation.dependentAddressLine2",
+                  "DependentInformation.dependentCity",
+                  "DependentInformation.dependentState",
+                  "DependentInformation.dependentZipCode",
+                  "DependentInformation.dependentCountry"
+                ]
+              },
+
+              "label": "Live at same address as yours",
+
+              "placement": ""
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "name": "dependentAddressLine1",
+              "rearSector": "addressLine1",
+              "label": "Address Line 1",
+              "placeholder": "Enter Address Line 1",
+              "mapping": true,
+              "modal": true,
+              "editable": true,
+              "update": {
+                "reduxPath": "personalInformation.personalInformation.alternateAddressLine1",
+                "formikPath": "EmployeeProfile"
+              },
+
+              "header": false,
+              "value": "",
+              "classNameWrapper": "py-3",
+              "placement": "col-md-6 py-3",
+
+              "validations": {
+                "string": {
+                  "validationRequiredOnTrue": {
+                    "value": "addDependentValidations",
+                    "message": "Please enter your address"
+                  },
+                  "validationMatchOnTrue": {
+                    "value": "addDependentValidations",
+                    "message": "Address Line 1 is invalid",
+                    "regex": "^[a-zA-Z]+$"
+                  }
+                }
+              }
+            },
+            {
+              "type": "text",
+              "name": "dependentAddressLine2",
+              "rearSector": "addressLine2",
+              "label": "Address Line 2",
+              "header": false,
+              "modal": true,
+              "placeholder": "Enter Address Line 2",
+              "mapping": true,
+              "editable": true,
+              "update": {
+                "reduxPath": "personalInformation.personalInformation.alternateAddressLine2",
+                "formikPath": "EmployeeProfile"
+              },
+              "value": "",
+              "classNameWrapper": "py-3",
+              "placement": "col-md-6 py-3",
+
+              "validations": {
+                "string": {}
+              }
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "name": "dependentCity",
+              "rearSector": "city",
+              "label": "City",
+              "header": false,
+              "placeholder": "Enter City",
+              "value": "",
+              "placement": "col-12  col-12 col-lg-3 col-md-4 col-sm-4 py-3",
+              "modal": true,
+              "mapping": true,
+              "editable": true,
+              "update": {
+                "reduxPath": "personalInformation.personalInformation.alternateAddressCity",
+                "formikPath": "EmployeeProfile"
+              },
+              "validations": {
+                "string": {
+                  "matches": {
+                    "regex": "^[a-zA-Z]+$",
+                    "message": "Please enter your city"
+                  },
+                  "validationRequiredOnTrue": {
+                    "value": "addDependentValidations",
+                    "message": "Please enter your city"
+                  },
+                  "validationMatchOnTrue": {
+                    "value": "addDependentValidations",
+                    "message": "City is required",
+                    "regex": "^[a-zA-Z]+$"
+                  }
+                }
+              }
+            },
+            {
+              "type": "select",
+              "name": "dependentState",
+              "rearSector": "state",
+              "placeholder": "Enter State",
+              "options": "",
+              "optionsname": "StateConstants",
+              "label": "State",
+              "modal": true,
+              "mapping": true,
+              "header": false,
+              "editable": true,
+              "value": " ",
+              "update": {
+                "reduxPath": "personalInformation.personalInformation.alternateAddressState",
+                "formikPath": "EmployeeProfile"
+              },
+              "placement": "col-12  col-12 col-lg-3 col-md-4 col-sm-4 py-3",
+              "validations": {
+                "string": {
+                  "validationRequiredOnTrue": {
+                    "value": "addDependentValidations",
+                    "message": "Please enter your State"
+                  },
+                  "validationMatchOnTrue": {
+                    "value": "addDependentValidations",
+                    "message": "State is required",
+                    "regex": "^[a-zA-Z]+$"
+                  }
+                }
+              }
+            },
+            {
+              "type": "text",
+              "name": "dependentZipCode",
+              "rearSector": "zipcode",
+              "label": "Zip Code",
+              "placeholder": "Enter Zip Code",
+              "header": false,
+              "value": "",
+              "modal": true,
+              "mapping": true,
+              "editable": true,
+              "update": {
+                "reduxPath": "personalInformation.personalInformation.alternateAddressZipCode",
+                "formikPath": "EmployeeProfile"
+              },
+              "placement": "col-12  col-12 col-lg-3 col-md-4 col-sm-4 py-3",
+              "validations": {
+                "string": {
+                  "matches": {
+                    "regex": "^[0-9]*$",
+                    "message": "Zip Code must all be digits"
+                  },
+                  "validationRequiredOnTrue": {
+                    "value": "addDependentValidations",
+                    "message": "Please enter your Zip Code"
+                  },
+                  "validationMatchOnTrue": {
+                    "value": "addDependentValidations",
+                    "message": "Please enter a valid Zip Code",
+                    "regex": "^[0-9]*$"
+                  }
+                }
+              }
+            },
+            {
+              "type": "select",
+              "name": "dependentCountry",
+              "rearSector": "country",
+              "label": "Country",
+              "placeholder": "Enter Country",
+              "header": false,
+              "modal": true,
+              "value": "USA",
+              "editable": true,
+              "mapping": true,
+              "update": {
+                "reduxPath": "personalInformation.personalInformation.alternateAddressCountry",
+                "formikPath": "EmployeeProfile"
+              },
+              "placement": "col-12  col-12 col-lg-3 col-md-4 col-sm-4 py-3",
+              "options": "",
+              "optionsname": "CountryConstants",
+              "validations": {
+                "string": {
+                  "validationRequiredOnTrue": {
+                    "value": "addDependentValidations",
+                    "message": "Please choose the option"
+                  },
+                  "validationMatchOnTrue": {
+                    "value": "addDependentValidations",
+                    "message": "Please choose the option",
+                    "regex": "^[a-zA-Z]+$"
+                  }
+                }
+              }
+            }
+          ],
+          [
+            {
+              "type": "readOnly",
+              "name": "horizontalBar",
+
+              "horizontalBar": true,
+              "hidden": true,
+              "value": "",
+              "hideLabel": true,
+              "outerDiv": true,
+
+              "placement": "col-md-12"
+            }
+          ],
+
+          [
+            {
+              "type": "button",
+              "name": "cancel",
+              "rearSector": "cancel",
+              "modalPopUp": false,
+              "modalName": "addDependent",
+              "label": "Cancel",
+              "placement": "d-flex justify-content-end col-md-2 offset-md-4 py-2",
+              "className": "w-100",
+
+              "header": false,
+              "outerDiv": true,
+              "validations": {}
+            },
+            {
+              "type": "button",
+              "name": "save",
+              "buttonType": "submit",
+              "hidden": false,
+
+              "modalName": "addDependent",
+              "apiCallURL": ["/createOrUpdateInsured"],
+              "apiCallArray": true,
+              "reduxCall": "UPDATE_DEPENDENT_LIST",
+              "reduxData": "data._Result.contract.insureds",
+              "storePayload": true,
+              "rearSector": "save",
+              "modalPopUp": true,
+              "label": "Save",
+
+              "placement": " col-md-2 py-2",
+              "className": "w-100",
+
+              "header": false,
+              "outerDiv": true,
+              "validations": {}
+            },
+            {
+              "type": "checkbox",
+              "visibility": "hidden",
+
+              "hidden": true,
+              "name": "showButton",
+
+              "label": "show button",
+              "placement": "col-md-3 col-12"
+            }
+          ]
+        ]
+      ]
+    }
+   
+
+  ],
+  "sectionPanels": {
+    "panel": [0, 1, 2, 3],
+    "sections": [
+      {
+        "noGroupStart": 0,
+        "noGroupEnd": 3
+      }
+    ]
+  },
+  "elements": [
+    [
+      {
+        "type": "readOnly",
+        "name": "Information",
+        "label": "Information",
+        "hideLabel": true,
+        "validations": {},
+        "value": "You have successfully added a dependent. You can add more dependents by continuing the same process. Once you have added all your eligible dependents, click ‘Continue’ to proceed to the next screen.",
+        "placement": "col-md-12",
+        "containerClassName": " col-12",
+        "display": "inline-block"
+      }
+    ],
+    [
+      {
+        "type": "table",
+        "tableId": "dependentTable",
+        "tableData": "dependentsTable",
+        "placement": "col-md-12",
+        "className": "col-md-12 d-none d-md-block d-lg-block d-xl-block",
+        "mobileClassName": "col-md-12 d-sm-block d-xs-block d-md-none d-lg-none d-xl-none px-0",
+        "columns": [
+          "dependentFullName",
+          "dependentRelationShip",
+          "dependentGender",
+          "dependentDateOfBirth"
+        ],
+        "mobileColumns": ["dependentFullName", "dependentRelationShip"],
+        "mobilePanel": ["dependentGender", "dependentDateOfBirth"],
+        "tableDataKeys": ["firstName", "middleName", "lastName", ""]
+      }
+    ],
+    [
+      {
+        "type": "button",
+        "rounded": "rounded",
+        "outline": "outline",
+        "icon": ["fas", "plus"],
+        "name": "addDependent",
+        "rearSector": "addDependent",
+
+        "label": "Add Dependent",
+        "modalPopUp": true,
+        "modalName": "addDependent",
+
+        "showElement": true,
+        "placement": "col-lg-3 py-3",
+        "header": false,
+        "outerDiv": true,
+
+        "displayConfig": {
+          "field": "addDependentValidations",
+
+          "valueUpdate": {
+            "addDependentValidations": true
+          }
+        }
+      },
+      {
+        "type": "checkbox",
+        "name": "addDependentValidations",
+
+        "rearSector": "",
+        "label": "Verify Add Dependent",
+        "hidden": true,
+        "placement": ""
+      },
+      {
+        "type": "checkbox",
+        "name": "editDependentValidations",
+
+        "rearSector": "",
+        "label": "Verify edit Dependent",
+        "hidden": true,
+        "placement": ""
+      }
+    ],
+    [
+      {
+        "id": "enrollmentSummaryBtn",
+        "type": "button",
+        "name": "Enrollment Summary",
+        "className": "my-3 d-flex my-lg-4 my-md-4 current-benefits-button",
+        "hidden": false,
+        "config": {
+          "type": "redirect",
+          "redirectURL": "/enrollment/enrollmentSummary"
+        },
+        "label": "Enrollment Summary",
+        "apiCall": true,
+        "placement": "",
+        "header": false,
+        "outerDiv": true,
+        "validations": {}
+      }
+    ]
+   
+  ]
+}

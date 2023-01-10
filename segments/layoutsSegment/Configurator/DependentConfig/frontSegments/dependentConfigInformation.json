@@ -1,0 +1,28 @@
+{
+  "dependentMiddleNameRequired": {
+    "dataType": "boolean",
+    "defaultValue": false
+  },
+  "dependentMiddleNameToggle": { "dataType": "boolean", "defaultValue": false },
+
+  "dependentAddressSameAsEmployeeRequired": {
+    "dataType": "boolean",
+    "defaultValue": false
+  },
+  "dependentAddressSameAsEmployeeToggle": {
+    "dataType": "boolean",
+    "defaultValue": false
+  },
+
+  "dependentStreetAddress2Required": {
+    "dataType": "boolean",
+    "defaultValue": false
+  },
+  "dependentStreetAddress2Toggle": {
+    "dataType": "boolean",
+    "defaultValue": false
+  },
+
+  "dependentCountryRequired": { "dataType": "boolean", "defaultValue": false },
+  "dependentCountryToggle": { "dataType": "boolean", "defaultValue": false }
+}

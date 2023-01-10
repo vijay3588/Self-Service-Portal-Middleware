@@ -1,0 +1,4 @@
+{ 
+    "fieldName": {"dataType": "string", "defaultValue":""}, 
+    "fieldValue": {"dataType": "number", "defaultValue":""}
+}

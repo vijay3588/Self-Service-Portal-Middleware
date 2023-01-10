@@ -1,0 +1,34 @@
+{
+	"elements": [
+		[
+			{
+				"type": "select",
+				"name": "residenceState",
+				"label": "État de résidence",
+				"placement": "col-md-2 col-12",
+				"optionsname": "StateConstants",
+				"options": "",
+				"validations": {}
+			},
+			{
+				"type": "select",
+				"name": "memberClass",
+				"label": "Member Class",
+				"placement": "col-md-2 col-12",
+				"optionsname": "StateConstants",
+				"options": "",
+				"validations": {}
+			},
+			{
+				
+				"type": "accordinCard",
+				"name": "accordinCard",
+				"config": {
+					"showBorder": true,
+					"className": "row mb-0",
+					"subClassName": "row"
+				}
+			}
+		]
+	]
+}

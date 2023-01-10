@@ -1,0 +1,547 @@
+{
+  "elements": [
+    [
+      {
+        "type": "color",
+        "name": "boxcardBgColor",
+        "label": "Box card Bg Color",
+        "value": "#20305f",
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "This field is required"
+          }
+        }
+      },
+      {
+        "name": "boxcardBgColorValue",
+
+        "type": "readOnly",
+        "label": "Selected hex value",
+        "displayStyle": "list",
+        "placement": "labelElement",
+        "getValuesFrom": "boxcardBgColor",
+        "formikPath": "Atoms"
+      },
+
+      {
+        "type": "color",
+        "name": "linearGradientTopColor",
+        "label": "Boxcard Linear Gradient Top Color",
+        "value": "#883383",
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "name": "linearGradientTopColorValue",
+
+        "type": "readOnly",
+        "label": "Selected hex value",
+        "displayStyle": "list",
+        "placement": "labelElement",
+        "getValuesFrom": "linearGradientTopColor",
+        "formikPath": "Atoms"
+      },
+
+      {
+        "type": "color",
+        "name": "linearGradientBottomColor",
+        "label": "Boxcard Linear Gradient Bottom Color",
+        "value": "#25336d",
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "name": "linearGradientBottomColorValue",
+
+        "type": "readOnly",
+        "label": "Selected hex value",
+        "displayStyle": "list",
+        "placement": "labelElement",
+        "getValuesFrom": "linearGradientBottomColor",
+        "formikPath": "Atoms"
+      },
+
+      {
+        "type": "color",
+        "name": "headerBgColor",
+        "label": "Table Header Bg Color",
+        "value": "#f3f3f3",
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "name": "headerBgColorValue",
+
+        "type": "readOnly",
+        "label": "Selected hex value",
+        "displayStyle": "list",
+        "placement": "labelElement",
+        "getValuesFrom": "headerBgColor",
+        "formikPath": "Atoms"
+      },
+
+      {
+        "type": "color",
+        "name": "headerHover",
+        "label": "Table Header Hover Bg Color",
+        "value": "#c9c9c9",
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        },
+        "defaultValue": null,
+        "options": "",
+        "config": {
+          "optionsname": "CountryConstants"
+        }
+      },
+
+      {
+        "name": "headerHoverValue",
+
+        "type": "readOnly",
+        "label": "Selected hex value",
+        "displayStyle": "list",
+        "placement": "labelElement",
+        "getValuesFrom": "headerHover",
+        "formikPath": "Atoms"
+      },
+
+      {
+        "type": "color",
+        "name": "headerColor",
+        "label": "Table Header Font Color",
+        "value": "#333333",
+        "placement": "themingElement",
+        "options": "",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        },
+        "config": {
+          "optionsname": "StateConstants"
+        }
+      },
+
+      {
+        "name": "headerColorValue",
+
+        "type": "readOnly",
+        "label": "Selected hex value",
+        "displayStyle": "list",
+        "placement": "labelElement",
+        "getValuesFrom": "headerColor",
+        "formikPath": "Atoms"
+      },
+
+      {
+        "type": "color",
+        "name": "treeCardBgColor",
+        "label": "Tree Card Bg Color",
+        "value": "#ededed",
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+
+      {
+        "name": "treeCardBgColorValue",
+
+        "type": "readOnly",
+        "label": "Selected hex value",
+        "displayStyle": "list",
+        "placement": "labelElement",
+        "getValuesFrom": "treeCardBgColor",
+        "formikPath": "Atoms"
+      },
+
+      {
+        "type": "color",
+        "name": "primaryBgColor",
+        "label": "Primary Button Bg Color",
+        "value": "#1a88e2",
+        "placement": "themingElement",
+
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "name": "primaryBgColorValue",
+
+        "type": "readOnly",
+        "label": "Selected hex value",
+        "displayStyle": "list",
+        "placement": "labelElement",
+        "getValuesFrom": "primaryBgColor",
+        "formikPath": "Atoms"
+      },
+
+      {
+        "type": "color",
+        "name": "primaryColor",
+        "label": "Primary Button Font Color",
+        "value": "#ffffff",
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "name": "primaryColorValue",
+
+        "type": "readOnly",
+        "label": "Selected hex value",
+        "displayStyle": "list",
+        "placement": "labelElement",
+        "getValuesFrom": "primaryColor",
+        "formikPath": "Atoms"
+      },
+
+      {
+        "type": "color",
+        "name": "primaryBgColorHover",
+        "label": "Primary Button Bg Color Hover",
+        "value": "#0069d9",
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "name": "primaryBgColorHoverValue",
+
+        "type": "readOnly",
+        "label": "Selected hex value",
+        "displayStyle": "list",
+        "placement": "labelElement",
+        "getValuesFrom": "primaryBgColorHover",
+        "formikPath": "Atoms"
+      },
+
+      {
+        "type": "color",
+        "name": "primaryOutlineHoverColor",
+        "label": "Primary Outline Bg Hover",
+        "value": "#ffffff",
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "name": "primaryOutlineHoverColorValue",
+
+        "type": "readOnly",
+        "label": "Selected hex value",
+        "displayStyle": "list",
+        "placement": "labelElement",
+        "getValuesFrom": "primaryOutlineHoverColor",
+        "formikPath": "Atoms"
+      },
+
+      {
+        "type": "color",
+        "name": "primaryOutlineBgColor",
+        "label": "Primary Outline Bg Color",
+        "value": "#1a88e2",
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "name": "primaryOutlineBgColorValue",
+
+        "type": "readOnly",
+        "label": "Selected hex value",
+        "displayStyle": "list",
+        "placement": "labelElement",
+        "getValuesFrom": "primaryOutlineBgColor",
+        "formikPath": "Atoms"
+      },
+
+      {
+        "type": "color",
+        "name": "landingPanelLoginButton",
+        "label": "Landing Panel Login Button Bg Color",
+        "value": "#006ec4",
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "name": "landingPanelLoginButtonValue",
+
+        "type": "readOnly",
+        "label": "Selected hex value",
+        "displayStyle": "list",
+        "placement": "labelElement",
+        "getValuesFrom": "landingPanelLoginButton",
+        "formikPath": "Atoms"
+      },
+
+      {
+        "type": "color",
+        "name": "primaryGroupOutlineBgColor",
+        "label": "Primary Group Outline Bg Color",
+        "value": "#ffffff",
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "name": "primaryGroupOutlineBgColorValue",
+
+        "type": "readOnly",
+        "label": "Selected hex value",
+        "displayStyle": "list",
+        "placement": "labelElement",
+        "getValuesFrom": "primaryGroupOutlineBgColor",
+        "formikPath": "Atoms"
+      },
+
+      {
+        "type": "color",
+        "name": "primaryGroupOutlineColor",
+        "label": "Primary Group Outine Font Color",
+        "value": "#1a88e2",
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "name": "primaryGroupOutlineColorValue",
+
+        "type": "readOnly",
+        "label": "Selected hex value",
+        "displayStyle": "list",
+        "placement": "labelElement",
+        "getValuesFrom": "primaryGroupOutlineColor",
+        "formikPath": "Atoms"
+      },
+
+      {
+        "type": "color",
+        "name": "primaryGroupOutlineHoverBgColor",
+        "label": "Primary Group Outline Hover Bg Color ",
+        "placement": "themingElement",
+        "value": "#1a88e2",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "name": "primaryGroupOutlineHoverBgColorValue",
+
+        "type": "readOnly",
+        "label": "Selected hex value",
+        "displayStyle": "list",
+        "placement": "labelElement",
+        "getValuesFrom": "primaryGroupOutlineHoverBgColor",
+        "formikPath": "Atoms"
+      },
+
+      {
+        "type": "color",
+        "name": "primaryGroupOutlineHoverColor",
+        "label": "Primary Group Outline Hover Font Color",
+        "value": "#ffffff",
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "name": "primaryGroupOutlineHoverColorValue",
+
+        "type": "readOnly",
+        "label": "Selected hex value",
+        "displayStyle": "list",
+        "placement": "labelElement",
+        "getValuesFrom": "primaryGroupOutlineHoverColor",
+        "formikPath": "Atoms"
+      },
+
+      {
+        "type": "color",
+        "name": "radioButtonGroupBgColor",
+        "label": "Radio Button Group Bg Color",
+        "placement": "themingElement",
+        "value": "#1a88e2",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "name": "radioButtonGroupBgColorValue",
+
+        "type": "readOnly",
+        "label": "Selected hex value",
+        "displayStyle": "list",
+        "placement": "labelElement",
+        "getValuesFrom": "radioButtonGroupBgColor",
+        "formikPath": "Atoms"
+      },
+
+      {
+        "type": "color",
+        "name": "radioButtonGroupColor",
+        "value": "#ffffff",
+        "label": "Radio Button Group Font Color",
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "name": "radioButtonGroupColorValue",
+
+        "type": "readOnly",
+        "label": "Selected hex value",
+        "displayStyle": "list",
+        "placement": "labelElement",
+        "getValuesFrom": "radioButtonGroupColor",
+        "formikPath": "Atoms"
+      },
+
+      {
+        "type": "color",
+        "name": "closeButtonBgColor",
+        "label": "Close Button Bg Color",
+        "value": "#ffffff",
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "name": "closeButtonBgColorValue",
+
+        "type": "readOnly",
+        "label": "Selected hex value",
+        "displayStyle": "list",
+        "placement": "labelElement",
+        "getValuesFrom": "closeButtonBgColor",
+        "formikPath": "Atoms"
+      },
+
+      {
+        "type": "color",
+        "name": "closeButtonColor",
+        "label": "Close Button Font Color",
+        "value": "#007bff",
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "name": "closeButtonColorValue",
+
+        "type": "readOnly",
+        "label": "Selected hex value",
+        "displayStyle": "list",
+        "placement": "labelElement",
+        "getValuesFrom": "closeButtonColor",
+        "formikPath": "Atoms"
+      },
+
+      {
+        "type": "color",
+        "name": "buttonDropDownItemColor",
+        "label": "Button Dropdown Item Font Color",
+        "value": "#1a88e2",
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "name": "buttonDropDownItemColorValue",
+
+        "type": "readOnly",
+        "label": "Selected hex value",
+        "displayStyle": "list",
+        "placement": "labelElement",
+        "getValuesFrom": "buttonDropDownItemColor",
+        "formikPath": "Atoms"
+      },
+
+      {
+        "type": "color",
+        "name": "iconDropDownItemColor",
+        "label": "Icon Dropdown Item Font Color",
+        "value": "#1a88e2",
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "name": "iconDropDownItemColorValue",
+
+        "type": "readOnly",
+        "label": "Selected hex value",
+        "displayStyle": "list",
+        "placement": "labelElement",
+        "getValuesFrom": "iconDropDownItemColor",
+        "formikPath": "Atoms"
+      }
+    ]
+  ]
+}

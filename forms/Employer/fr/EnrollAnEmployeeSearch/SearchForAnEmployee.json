@@ -1,0 +1,313 @@
+{
+  "searchConfig": {
+    "tableHeader": [
+      {
+        "value": " ",
+        "config": {
+          "className": ""
+        }
+      },
+      {
+        "value": "DIVISION",
+        "config": {
+          "className": ""
+        }
+      },
+      {
+        "value": "CLIENT ID",
+        "config": {
+          "className": ""
+        }
+      },
+      {
+        "value": "FIRST NAME",
+        "config": {
+          "className": ""
+        }
+      },
+      {
+        "value": "LAST NAME",
+        "config": {
+          "className": ""
+        }
+      },
+      {
+        "value": "MAIDEN NAME",
+        "config": {
+          "className": ""
+        }
+      },
+      {
+        "value": "BIRTH DATE",
+        "config": {
+          "className": ""
+        }
+      },
+      {
+        "value": "SSN",
+        "config": {
+          "className": ""
+        }
+      },
+      {
+        "value": "HIRE DATE",
+        "config": {
+          "className": ""
+        }
+      },
+      {
+        "value": "SALARY",
+        "config": {
+          "className": ""
+        }
+      },
+      {
+        "value": "FREQUENCY",
+        "config": {
+          "className": ""
+        }
+      },
+      {
+        "value": "EMPLOYMENT STATUS",
+        "config": {
+          "className": ""
+        }
+      }
+    ],
+    "tableRow": [
+      {
+        "value": "pickerData.buid",
+        "type": "radio",
+        "name": "personBuid",
+        "label": ""
+
+      },
+      {
+        "value": "pickerData.employeeId.legalEntityName",
+        "type": "expression"
+      },
+      {
+        "value": "pickerData.clientID",
+        "type": "expression"
+      },
+      {
+        "value": "pickerData.paramEntity.shortName",
+        "type": "expression"
+      },
+      {
+        "value": "pickerData.paramEntity.name",
+        "type": "expression"
+      },
+      {
+        "value": "pickerData.paramEntity.priorName",
+        "type": "expression"
+      },
+      {
+        "value": "pickerData.paramEntity.birthDate",
+        "type": "expression",
+        "config": {
+          "valueType": "date",
+          "format": "MM/DD/YYYY"
+        }
+      },
+      {
+        "value": "pickerData.paramEntity.sSN",
+        "type": "expression"
+      },
+      {
+        "value": "pickerData.employeeData.hireDate",
+        "type": "expression",
+        "config": {
+          "valueType": "date",
+          "format": "MM/DD/YYYY"
+        }
+      },
+      {
+        "value": "pickerData.employeeData.baseSalaryAmount.amount",
+        "type": "expression",
+        "valuetype": "currency",
+        "locale": "en-US",
+        "currency": "USD"
+      },
+      {
+        "value": "pickerData.employeeData.baseSalaryFrequency",
+        "type": "expression",
+        "config": {
+          "displayName": "BaseSalaryFrequencyConstants",
+          "className": "d-none d-lg-table-cell"
+        }
+      },
+      {
+        "value": "pickerData.employeeData.employmentStatus",
+        "type": "expression",
+        "config": {
+          "displayName": "EmploymentStatusConstants",
+          "className": "d-none d-lg-table-cell"
+        }
+      }
+    ],
+    "pagination": {
+      "name": "ItemDesc",
+      "leftTextAddOn": "Display",
+      "defaultValue": "10",
+      "options": [
+        {
+          "value": "10",
+          "text": "10 records per page"
+        },
+        {
+          "value": "20",
+          "text": "20 records per page"
+        },
+        {
+          "value": "50",
+          "text": "50 records per page"
+        },
+        {
+          "value": "100",
+          "text": "100 records per page"
+        }
+      ]
+    }
+  },
+  "elements": [
+    [
+      {
+        "type": "select",
+        "name": "division",
+        "label": "Division",
+        "rearSector": "lEBuid",
+        "placement": "col-md-3",
+        "validations": {},
+        "defaultValue": null,
+        "options": "",
+        "optionKind": "apiCall",
+        "optionsConfig": {
+          "reduxObject": "loggedUserEntity",
+          "mapperObject": [
+            {
+              "takingDateform": "legalEntityDivision",
+              "value": "`${currentObject.headQuarter && currentObject.headQuarter.searchLegalEntity  && currentObject.headQuarter.searchLegalEntity.buid || ''}`",
+              "text": "`${currentObject.headQuarter && currentObject.headQuarter.legalEntityName || ''}`"
+            },
+            {
+              "takingDateform": "",
+              "value": "`${currentObject.clientId && currentObject.clientId.buid || ''}`",
+              "text": "`${currentObject.legalEntityIdentity && currentObject.legalEntityIdentity.name || ''}`"
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "name": "clientID",
+        "rearSector": "clientID",
+        "label": "identité du client",
+        "placement": "col-md-3",
+        "validations": {}
+      },
+      {
+        "type": "text",
+        "name": "sSN",
+        "rearSector": "sSN",
+        "label": "SSN",
+        "placement": "col-md-3",
+        "validations": {}
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "name": "firstName",
+        "rearSector": "firstName",
+        "label": "Prénom",
+        "placement": "col-md-3",
+        "validations": {}
+      },
+      {
+        "type": "text",
+        "name": "lastName",
+        "rearSector": "lastName",
+        "label": "Nom de famille",
+        "placement": "col-md-3",
+        "validations": {}
+      },
+      {
+        "type": "text",
+        "name": "maidenName",
+        "rearSector": "priorName",
+        "label": "Nom de jeune fille",
+        "placement": "col-md-3",
+        "validations": {}
+      }
+    ],
+    [
+      {
+        "type": "date",
+        "name": "birthDate",
+        "rearSector": "birthDate",
+        "label": "Date de naissance",
+        "placement": "col-md-3",
+        "validations": {
+          "string": {
+            "min": {
+              "limit": 6,
+              "message": "minlengeth is 6"
+            }
+          }
+        }
+      },
+      {
+        "type": "select",
+        "name": "employmentStatus",
+        "rearSector": "employmentStatus",
+        "label": "Statut d'emploi",
+        "placement": "col-md-3",
+        "validations": {},
+        "defaultValue": "",
+        "options": [
+          {
+            "value": "meUndefined",
+            "text": "Undefined"
+          },
+          {
+            "value": "esActive",
+            "text": "Active"
+          },
+          {
+            "value": "esLeaveOfAbsence",
+            "text": "Leave of absence"
+          },
+          {
+            "value": "esRetired",
+            "text": "Retired"
+          },
+          {
+            "value": "esEmploymentTerminated",
+            "text": "Employment terminated"
+          }
+        ]
+      },
+      {
+        "type": "radioButtonGroup",
+        "name": "member",
+        "rearSector": "presentedMembers",
+        "label": "Member",
+        "placement": "col-md-3 pt-2",
+        "validations": {},
+        "isRadio": true,
+        "defaultValue": "cAllMembers",
+        "inputs": [
+          {
+            "label": "Tous les membres",
+            "value": "cAllMembers"
+          },
+          {
+            "label": "Membres inscrits",
+            "value": "cOnlyEnrolled"
+          }
+        ]
+      }
+    ]
+  ]
+}

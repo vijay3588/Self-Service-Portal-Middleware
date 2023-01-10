@@ -1,0 +1,19 @@
+[
+    {
+        "frontSegment": "documents",
+        "dataParentSegment": "",
+        "dataSegmentType": "array",
+        "defaultSectorMapping": [
+            {
+                "frontSector": "name",
+                "rearSector": "name",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "content",
+                "rearSector": "content",
+                "defaultValue": ""
+            }
+        ]
+    }
+]

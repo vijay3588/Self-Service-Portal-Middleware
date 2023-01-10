@@ -1,0 +1,10 @@
+{
+    "legalEntityIdentifier": {
+        "dataType": "object",
+        "name": "legalEntityIdentifier"
+    },
+    "maxSize": {
+        "dataType": "number",
+        "defaultValue": 10
+    }
+}

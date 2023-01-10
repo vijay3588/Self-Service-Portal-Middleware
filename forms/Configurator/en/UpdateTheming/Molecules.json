@@ -1,0 +1,119 @@
+{
+  "elements": [
+    [
+      {
+        "type": "color",
+        "name": "panelBgColor",
+        "rearSector": "shortName",
+        "label": "Panel Bg Color",
+        "value": "",
+        "update": {
+          "reduxPath": "molecules.panel.panelBgColor",
+          "formikPath": "Molecules"
+        },
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "This field is required"
+          }
+        }
+      },
+      {
+        "type": "color",
+        "name": "modalHeaderBgColor",
+        "label": "Modal Header Bg Color",
+        "value": "",
+        "update": {
+          "reduxPath": "molecules.modal.modalHeaderBgColor",
+          "formikPath": "Molecules"
+        },
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "color",
+        "name": "modalContentBgColor",
+        "label": "Modal Content Bg Color",
+        "value": "",
+        "update": {
+          "reduxPath": "molecules.modal.modalContentBgColor",
+          "formikPath": "Molecules"
+        },
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "color",
+        "name": "sectionHeaderBgColor",
+        "label": "Section Header Bg Color",
+        "value": "",
+        "update": {
+          "reduxPath": "molecules.sectionHeader.sectionHeaderBgColor",
+          "formikPath": "Molecules"
+        },
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "color",
+        "name": "sectionHeaderBreadcrumbsFontColor",
+        "label": "Section Header Breadcrumbs Font Color",
+        "value": "",
+        "update": {
+          "reduxPath": "molecules.sectionHeader.sectionHeaderBreadcrumbsFontColor",
+          "formikPath": "Molecules"
+        },
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "color",
+        "name": "changeBoxBgColor",
+        "label": "Change Box Bg Color",
+        "value": "",
+        "update": {
+          "reduxPath": "molecules.changeBox.changeBoxBgColor",
+          "formikPath": "Molecules"
+        },
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "color",
+        "name": "navigationDropDownItemsColor",
+        "label": "Navigation Dropdown Font Color",
+        "value": "",
+        "placement": "themingElement",
+        "update": {
+          "reduxPath": "molecules.navigation.navigationDropDownItemsColor",
+          "formikPath": "Molecules"
+        },
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      }
+    ]
+  ]
+}

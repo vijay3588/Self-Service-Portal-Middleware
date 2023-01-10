@@ -1,0 +1,18 @@
+ {
+   "footerBgColor": {
+     "dataType": "string",
+     "defaultValue": ""
+   },
+   "copyrightBgColor": {
+     "dataType": "string",
+     "defaultValue": ""
+   },
+   "footerLinkFontColor": {
+     "dataType": "string",
+     "defaultValue": ""
+   },
+   "footerCopyrightFontColor": {
+     "dataType": "string",
+     "defaultValue": ""
+   }
+ }

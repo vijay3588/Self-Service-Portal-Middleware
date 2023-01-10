@@ -1,0 +1,15 @@
+[
+  {
+    "frontDataSegment": "body",
+    "rearDataSegment":"internalPolicyIdentifier",
+    "rearDataSegmentPath":"input.internalPolicyIdentifier",
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "buid",
+        "rearSector": "internalPolicyId",
+        "defaultValue": ""
+      }
+    ]
+  }
+]

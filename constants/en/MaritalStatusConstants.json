@@ -1,0 +1,26 @@
+[
+    {
+        "text": "Single",
+        "value": "cSingle"
+    },
+    {
+        "text": "Married",
+        "value": "cMarried"
+    },
+    {
+        "text": "Widowed",
+        "value": "cWidowed"
+    },
+    {
+        "text": "Divorced",
+        "value": "cDivorced"
+    },
+    {
+        "text": "DomesticPartner",
+        "value": "cDomesticPartner"
+    },
+    {
+        "text": "Other",
+        "value": "cOtherMaritalStatus"
+    }
+]

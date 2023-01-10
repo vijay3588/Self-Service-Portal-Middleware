@@ -1,0 +1,46 @@
+[
+    {
+        "value": "fAnnually",
+        "text": "Annually"
+    },
+    {
+        "value": "fBiAnnually",
+        "text": "Bi Annually"
+    },
+    {
+        "value": "fQuarterly",
+        "text": "Quarterly"
+    },
+    {
+        "value": "fMonthly",
+        "text": "Monthly"
+    },
+    {
+        "value": "f13thly",
+        "text": "13thly"
+    },
+    {
+        "value": "fSemiMonthly",
+        "text": "Semi Monthly"
+    },
+    {
+        "value": "fBiWeekly",
+        "text": "Bi Weekly"
+    },
+    {
+        "value": "fWeekly",
+        "text": "Weekly"
+    },
+    {
+        "value": "fDaily",
+        "text": "Daily"
+    },
+    {
+        "value": "Undefined",
+        "text": ""
+    },
+    {
+        "value": "meUndefined",
+        "text": ""
+    }
+]

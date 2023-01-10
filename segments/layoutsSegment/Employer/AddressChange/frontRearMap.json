@@ -1,0 +1,38 @@
+[
+  {
+    "frontDataSegment": "values.NewAddress",
+    "rearDataSegment": "correspondences",
+    "rearDataSegmentPath": "input.loggedUserEntity",
+    "rearDataSegmentType": "array",
+    "reduxObject": true,
+    "reduxDataSegmentPath": "loggedUserEntity._Result",
+    "frontSegmentForm": "NewAddress",
+    "defaultSectorMapping": [
+      { "frontSector": "", "rearSector": "fIPSCode", "defaultValue": 0 }
+    ]
+  },
+  {
+    "frontDataSegment": "",
+    "rearDataSegment": "loginInformation",
+    "rearDataSegmentPath": "input",
+    "rearDataSegmentType": "data",
+    "rearSegmentData": null,
+    "reduxObject": true
+  },
+  {
+    "frontDataSegment": "",
+    "rearDataSegment": "legalEntityDivision",
+    "rearDataSegmentPath": "input",
+    "rearDataSegmentType": "data",
+    "rearSegmentData": [],
+    "reduxObject": true
+  },
+  {
+    "frontDataSegment": "",
+    "rearDataSegment": "paymentMethods",
+    "rearDataSegmentPath": "input",
+    "rearDataSegmentType": "data",
+    "rearSegmentData": [],
+    "reduxObject": true
+  }
+]

@@ -1,0 +1,6 @@
+{
+    "claimID": {
+        "dataType": "object",
+        "name": "aSPLIC_ClaimIdentifier"
+    }
+}

@@ -1,0 +1,51 @@
+{
+  "elements": [
+    [ 
+      {
+        "type": "date",
+        "name": "eventDate",
+        "rearSector": "eventDate",
+        "label": "Event Date",
+        "placement": "col-md-4 col-12",
+        "validations": {
+          "date": {
+            "required": "This field is required"
+          }
+        }
+      },
+      {
+        "type": "date",
+        "name": "eventEndDate",
+        "rearSector": "eventEndDate",
+        "label": "Event End Date(Optional)",
+        "placement": "col-md-4 col-12",
+        "validations": {     
+        }
+      }
+     
+    ],
+    [
+      {
+        "type": "select",
+        "name": "disabilityKindVersion",
+        "label": "Type of Event",
+        "rearSector": "disabilityKindVersion",
+        "placement": "col-md-4 col-12",
+        "validations": {
+          "string": {
+            "required": "mandatory field"
+          }
+        },
+        "options":[
+          {"value": "meUndefined","text":"Undefined"},
+          {"value": "ckIllness","text":"Illness"}, 
+          {"value": "ckAccident","text":"Accident"}, 
+          {"value": "ckHospitalization","text":"Hospitalization"}, 
+          {"value": "ckMaternity","text":"Maternity"},
+          {"value": "ckPaternity","text":"Paternity"} 
+      ]
+      }
+    ]
+
+  ]
+}

@@ -1,0 +1,20 @@
+{
+   "datePanel": [
+    {
+      "type": "readOnly",
+      "name": "amountDisbursed",
+      "label": "Montant décaissé (USD)",
+      "placement": "col-md-3",
+      "value": "$50.00",
+      "image": "viewdisbursement.png"
+    },
+    {
+      "type": "readOnly",
+      "name": "sentDate",
+      "label": "Date envoyée",
+      "placement": "col-md-3",
+      "validations": {},
+      "image": "viewdisbursement-calender.png"
+    }
+  ]
+}

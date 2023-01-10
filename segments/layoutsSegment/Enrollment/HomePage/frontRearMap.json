@@ -1,0 +1,12 @@
+[
+  {
+    "frontDataSegment": "EmployeeProfile",
+    "frontDataSegmentPath": "values",
+    "rearDataSegment": "actor",
+    "rearDataSegmentClass": "aSPLI_Person",
+    "rearDataSegmentPath": "data.person.data",
+    "rearDataSegmentType": "object"
+  }
+
+   
+]

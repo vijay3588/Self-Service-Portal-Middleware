@@ -1,0 +1,117 @@
+{
+  "elements": [
+    [
+      {
+        "type": "readOnly",
+        "outerDiv": false,
+        "name": "Welcome to Enrollment",
+        "label": "Welcome to Enrollment",
+        "value": "Welcome to Enrollment",
+        "placement": "col-md-6",
+        "formSideBigHeader": "Welcome to Enrollment",
+        "header": true
+      }
+    ],
+
+    [
+      {
+        "type": "button",
+        "name": "Start Enrollment",
+        "hidden": false,
+        "config": {
+          "type": "redirect",
+          "redirectURL": "/enrollment/employeeProfile"
+        },
+
+        "apiCallURL": [
+          {
+            "url": "/initNewEnrollmentProcess",
+            "method": "POST",
+            "payload": [
+              {
+                "payloadType": "evalString",
+                "payloadKey": "data",
+                "payloadValue": "formik.values"
+              },
+              {
+                "payloadType": "evalObject",
+                "payloadKey": "currentReduxState",
+                "payloadValue": [
+                  {
+                    "reduxKey": "employeeBuid",
+                    "reduxValue": "currentReduxState.auth?.loggedUserEntity?.data?.personDetails?._Result[0]?.bUID"
+                  },
+                  {
+                    "reduxKey": "contractBuid",
+                    "reduxValue": "currentReduxState.entities?.response?.onLoadResponseList?.SearchGBPForLegalEntity?._Result[0]?.contract?.buid"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "url": "/getListOfEligibleProducts",
+            "method": "POST",
+            "payload": [
+              {
+                "payloadType": "evalString",
+                "payloadKey": "processBuid",
+                "payloadValue": "respArray[0]?._Result?.processEntity?.buid"
+              }
+            ]
+          },
+          {
+            "url": "/subscribeThisListOfProducts",
+            "method": "POST",
+            "payload": [
+              {
+                "payloadType": "evalString",
+                "payloadKey": "processBuid",
+                "payloadValue": "respArray[0]?._Result?.processEntity?.buid"
+              },
+              {
+                "payloadType": "evalString",
+                "payloadKey": "data",
+                "payloadValue": "respArray[1]?._Result"
+              }
+            ]
+          },
+          {
+            "url": "/getCoveredPersonTypeConfiguration",
+            "method": "POST",
+            "payload": [
+              {
+                "payloadType": "evalString",
+                "payloadKey": "processBuid",
+                "payloadValue": "respArray[0]?._Result?.processEntity?.buid"
+              }
+            ]
+          }
+        ],
+        "label": "Start Enrollment",
+        "apiCall": true,
+        "placement": "col-md-6",
+        "header": false,
+        "outerDiv": true,
+        "validations": {}
+      }
+    ],
+    [
+      {
+        "type": "button",
+        "name": "Home Page Temp",
+        "hidden": false,
+        "config": {
+          "type": "redirect",
+          "redirectURL": "/enrollment/homePageTemp"
+        },
+
+        "label": "Home Page Temp",
+        "placement": "col-md-6",
+        "header": false,
+        "outerDiv": true,
+        "validations": {}
+      }
+    ]
+  ]
+}

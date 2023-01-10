@@ -1,0 +1,4 @@
+{ 
+    "amountDisbursed": {"dataType": "number", "defaultValue": 0}, 
+    "sentDate": {"dataType": "date", "defaultValue": ""} 
+}

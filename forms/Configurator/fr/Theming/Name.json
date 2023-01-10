@@ -1,0 +1,29 @@
+{
+  "elements": [
+    [
+      {
+        "type": "text",
+        "name": "themeName",
+        "rearSector": "themeName",
+        "value": "",
+        "label": "Theme Name",
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "This field is required"
+          
+          }
+        }
+      },
+      {
+        "type": "uid",
+        "name": "identifier",
+        "id": "identifier",
+        "hidden":true,
+        "rearSector": "identifier",
+        "label": "Identifier",
+        "placement": "themingElement"
+      }
+    ]
+]
+}

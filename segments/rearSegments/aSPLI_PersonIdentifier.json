@@ -1,0 +1,15 @@
+{
+
+    "ClassName": {
+        "dataType": "string",
+        "defaultValue": "aSPLI_PersonIdentifier"
+    },
+    "buid": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "InternalClientId": {
+        "dataType": "string",
+        "defaultValue": ""
+    }
+}

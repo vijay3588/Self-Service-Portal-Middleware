@@ -1,0 +1,10 @@
+{
+    "internalPolicyId": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "issuingCompanyCode": {
+        "dataType": "string",
+        "defaultValue": ""
+    }
+}

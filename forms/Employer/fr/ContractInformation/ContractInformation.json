@@ -1,0 +1,3457 @@
+{
+	"manageFiles": [
+		{
+			"type": "fileUploader",
+			"name": "excel-file-uploader",
+			"label": "",
+			"placement": "col-lg-12 col-sm-12",
+			"validations": {},
+			"config": {
+			  "uploadErrorMessage" : "Please add file(s) with extensions- xls/xlsx and size less than 300kb",
+			  "browserButton": {
+				"dropperText": "Drag and drop file here to upload",
+				"label": "Browse and Upload",
+				"acceptFileLists": [".xls", ".xlsx"],
+				"maxSizeHeigth" : "300",
+				"maxSizeWidth" : "1024"
+			  },
+			  "processButton": {
+				"label": "Process"
+			  },
+			  "deleteButton": {
+				"label": "Browse and Upload"
+			  }
+			}
+		  },
+		{
+			"type": "generateFile",
+			"name": "excel-generate",
+			"label": "Generate Employees Template",
+			"placement": "col-lg-4 col-sm-4 pl-3",
+			"validations": {},
+			"config": {
+				"generalInfo": {
+					"Title": "XLS Try",
+					"Subject": "Test",
+					"Author": "SSP Wyde",
+					"CreatedDate": ""
+				},
+				"fileGenerateInfo":{
+					"fileName":"EmployeesTemplate",
+					"sheetName":"employeesDetails",
+					"extensionType":"xlsx"
+
+				},
+				"headerConfig": []
+			},
+			"values":[
+				{
+				  "Identifier": "351860679",
+				  "Person_Name": "Crason",
+				  "Person_FirstName": "Kate",
+				  "Person_SSN": "572646774",
+				  "Person_BirthDate": "08/20/1965",
+				  "Person_MaritalStatus": "Single",
+				  "Person_Classifications": "Non smoker,",
+				  "Person_Address_Line1": "5613 Lexington Avenue",
+				  "Person_Address_Line2": "",
+				  "Person_Address_ZipCode": "10015",
+				  "Person_Address_City": "NEW YORK",
+				  "Person_Address_Country": "USA",
+				  "Person_Address_State": "NY",
+				  "Person_BirthRank": "1",
+				  "Person_AttachedToAnOtherSSN": "False",
+				  "Person_Gender": "Female",
+				  "BankAccount_Name": "Chase Manhattan Bank",
+				  "BankAccount_EffectiveDate": "--/--/----",
+				  "BankAccount_EndDate": "--/--/----",
+				  "BankAccount_AccountType": "Checking",
+				  "BankAccount_Address_Line1": "9422 Lexington Avenue",
+				  "BankAccount_Address_Line2": "",
+				  "BankAccount_Address_ZipCode": "10015",
+				  "BankAccount_Address_City": "NEW YORK",
+				  "BankAccount_Address_Country": "USA",
+				  "BankAccount_Address_State": "NY",
+				  "BankAccount_AccountHolderName": "Crason",
+				  "BankAccount_DepositType": "NA",
+				  "BankAccount_Currency": "USD",
+				  "BankAccount_AccountNumber": "000140867136737",
+				  "BankAccount_RoutingNumber": "091000019",
+				  "BankAccount_PrenoteCompleted": "",
+				  "BankAccount_Validated": "",
+				  "LegalEntityId": "000000000C",
+				  "HireDate": "09/03/2007",
+				  "TerminationDate": "",
+				  "TerminationReason": "",
+				  "EmployeeInformationEffectiveDate": "09/03/2007",
+				  "EmploymentStatus": "Active",
+				  "BaseSalaryAmount": "48573",
+				  "BaseSalaryFrequency": "Annually",
+				  "WorkingHours": "40",
+				  "WorkingHoursDefinedForFrequency": "Weekly",
+				  "WorkingCategory": "Full time",
+				  "SalaryCommissionAmount": "0",
+				  "SalaryCommissionFrequency": "",
+				  "SalaryBonusAmount": "0",
+				  "SalaryBonusFrequency": "",
+				  "WorksiteState": "",
+				  "Dummy": "0",
+				  "Dummy2": "0"
+				},
+				{
+				  "Identifier": "351860688",
+				  "Person_Name": "Irwmaran",
+				  "Person_FirstName": "William",
+				  "Person_SSN": "285456314",
+				  "Person_BirthDate": "11/02/1962",
+				  "Person_MaritalStatus": "Single",
+				  "Person_Classifications": "Smoker,Non smoker,",
+				  "Person_Address_Line1": "4821 Lexington Avenue",
+				  "Person_Address_Line2": "",
+				  "Person_Address_ZipCode": "10015",
+				  "Person_Address_City": "NEW YORK",
+				  "Person_Address_Country": "USA",
+				  "Person_Address_State": "NY",
+				  "Person_BirthRank": "1",
+				  "Person_AttachedToAnOtherSSN": "False",
+				  "Person_Gender": "Male",
+				  "BankAccount_Name": "Chase Manhattan Bank",
+				  "BankAccount_EffectiveDate": "--/--/----",
+				  "BankAccount_EndDate": "--/--/----",
+				  "BankAccount_AccountType": "Checking",
+				  "BankAccount_Address_Line1": "9148 Lexington Avenue",
+				  "BankAccount_Address_Line2": "",
+				  "BankAccount_Address_ZipCode": "10015",
+				  "BankAccount_Address_City": "NEW YORK",
+				  "BankAccount_Address_Country": "USA",
+				  "BankAccount_Address_State": "NY",
+				  "BankAccount_AccountHolderName": "Irwmaran",
+				  "BankAccount_DepositType": "NA",
+				  "BankAccount_Currency": "USD",
+				  "BankAccount_AccountNumber": "000140867191207",
+				  "BankAccount_RoutingNumber": "091000019",
+				  "BankAccount_PrenoteCompleted": "",
+				  "BankAccount_Validated": "",
+				  "LegalEntityId": "000000000C",
+				  "HireDate": "04/14/2007",
+				  "TerminationDate": "",
+				  "TerminationReason": "",
+				  "EmployeeInformationEffectiveDate": "04/14/2007",
+				  "EmploymentStatus": "Active",
+				  "BaseSalaryAmount": "32325",
+				  "BaseSalaryFrequency": "Annually",
+				  "WorkingHours": "40",
+				  "WorkingHoursDefinedForFrequency": "Weekly",
+				  "WorkingCategory": "Full time",
+				  "SalaryCommissionAmount": "0",
+				  "SalaryCommissionFrequency": "",
+				  "SalaryBonusAmount": "0",
+				  "SalaryBonusFrequency": "",
+				  "WorksiteState": "",
+				  "Dummy": "0",
+				  "Dummy2": "0"
+				},
+				{
+				  "Identifier": "351860696",
+				  "Person_Name": "Essura",
+				  "Person_FirstName": "Julia",
+				  "Person_SSN": "777258462",
+				  "Person_BirthDate": "11/04/1962",
+				  "Person_MaritalStatus": "Single",
+				  "Person_Classifications": "Non smoker,Smoker,Non smoker,",
+				  "Person_Address_Line1": "3968 Lexington Avenue",
+				  "Person_Address_Line2": "",
+				  "Person_Address_ZipCode": "10015",
+				  "Person_Address_City": "NEW YORK",
+				  "Person_Address_Country": "USA",
+				  "Person_Address_State": "NY",
+				  "Person_BirthRank": "1",
+				  "Person_AttachedToAnOtherSSN": "False",
+				  "Person_Gender": "Female",
+				  "BankAccount_Name": "Chase Manhattan Bank",
+				  "BankAccount_EffectiveDate": "--/--/----",
+				  "BankAccount_EndDate": "--/--/----",
+				  "BankAccount_AccountType": "Checking",
+				  "BankAccount_Address_Line1": "7295 Lexington Avenue",
+				  "BankAccount_Address_Line2": "",
+				  "BankAccount_Address_ZipCode": "10015",
+				  "BankAccount_Address_City": "NEW YORK",
+				  "BankAccount_Address_Country": "USA",
+				  "BankAccount_Address_State": "NY",
+				  "BankAccount_AccountHolderName": "Essura",
+				  "BankAccount_DepositType": "NA",
+				  "BankAccount_Currency": "USD",
+				  "BankAccount_AccountNumber": "000140867150646",
+				  "BankAccount_RoutingNumber": "091000019",
+				  "BankAccount_PrenoteCompleted": "",
+				  "BankAccount_Validated": "",
+				  "LegalEntityId": "000000000C",
+				  "HireDate": "12/11/2007",
+				  "TerminationDate": "",
+				  "TerminationReason": "",
+				  "EmployeeInformationEffectiveDate": "12/11/2007",
+				  "EmploymentStatus": "Active",
+				  "BaseSalaryAmount": "45730",
+				  "BaseSalaryFrequency": "Annually",
+				  "WorkingHours": "40",
+				  "WorkingHoursDefinedForFrequency": "Weekly",
+				  "WorkingCategory": "Full time",
+				  "SalaryCommissionAmount": "0",
+				  "SalaryCommissionFrequency": "",
+				  "SalaryBonusAmount": "0",
+				  "SalaryBonusFrequency": "",
+				  "WorksiteState": "",
+				  "Dummy": "0",
+				  "Dummy2": "0"
+				},
+				{
+				  "Identifier": "351860703",
+				  "Person_Name": "Cramanran",
+				  "Person_FirstName": "William",
+				  "Person_SSN": "371623541",
+				  "Person_BirthDate": "05/20/1908",
+				  "Person_MaritalStatus": "Single",
+				  "Person_Classifications": "Smoker,Non smoker,Smoker,Non smoker,",
+				  "Person_Address_Line1": "3722 Lexington Avenue",
+				  "Person_Address_Line2": "",
+				  "Person_Address_ZipCode": "10015",
+				  "Person_Address_City": "NEW YORK",
+				  "Person_Address_Country": "USA",
+				  "Person_Address_State": "NY",
+				  "Person_BirthRank": "1",
+				  "Person_AttachedToAnOtherSSN": "False",
+				  "Person_Gender": "Male",
+				  "BankAccount_Name": "Chase Manhattan Bank",
+				  "BankAccount_EffectiveDate": "--/--/----",
+				  "BankAccount_EndDate": "--/--/----",
+				  "BankAccount_AccountType": "Checking",
+				  "BankAccount_Address_Line1": "3885 Lexington Avenue",
+				  "BankAccount_Address_Line2": "",
+				  "BankAccount_Address_ZipCode": "10015",
+				  "BankAccount_Address_City": "NEW YORK",
+				  "BankAccount_Address_Country": "USA",
+				  "BankAccount_Address_State": "NY",
+				  "BankAccount_AccountHolderName": "Cramanran",
+				  "BankAccount_DepositType": "NA",
+				  "BankAccount_Currency": "USD",
+				  "BankAccount_AccountNumber": "000140867104113",
+				  "BankAccount_RoutingNumber": "091000019",
+				  "BankAccount_PrenoteCompleted": "",
+				  "BankAccount_Validated": "",
+				  "LegalEntityId": "000000000C",
+				  "HireDate": "03/30/2007",
+				  "TerminationDate": "",
+				  "TerminationReason": "",
+				  "EmployeeInformationEffectiveDate": "03/30/2007",
+				  "EmploymentStatus": "Active",
+				  "BaseSalaryAmount": "45501",
+				  "BaseSalaryFrequency": "Annually",
+				  "WorkingHours": "40",
+				  "WorkingHoursDefinedForFrequency": "Weekly",
+				  "WorkingCategory": "Full time",
+				  "SalaryCommissionAmount": "0",
+				  "SalaryCommissionFrequency": "",
+				  "SalaryBonusAmount": "0",
+				  "SalaryBonusFrequency": "",
+				  "WorksiteState": "",
+				  "Dummy": "0",
+				  "Dummy2": "0"
+				},
+				{
+				  "Identifier": "351860711",
+				  "Person_Name": "Ewinsurame",
+				  "Person_FirstName": "Pedro",
+				  "Person_SSN": "886277217",
+				  "Person_BirthDate": "01/19/1962",
+				  "Person_MaritalStatus": "Single",
+				  "Person_Classifications": "Smoker,Smoker,Non smoker,Smoker,Non smoker,",
+				  "Person_Address_Line1": "8741 Lexington Avenue",
+				  "Person_Address_Line2": "",
+				  "Person_Address_ZipCode": "10015",
+				  "Person_Address_City": "NEW YORK",
+				  "Person_Address_Country": "USA",
+				  "Person_Address_State": "NY",
+				  "Person_BirthRank": "1",
+				  "Person_AttachedToAnOtherSSN": "False",
+				  "Person_Gender": "Male",
+				  "BankAccount_Name": "Chase Manhattan Bank",
+				  "BankAccount_EffectiveDate": "--/--/----",
+				  "BankAccount_EndDate": "--/--/----",
+				  "BankAccount_AccountType": "Checking",
+				  "BankAccount_Address_Line1": "5563 Lexington Avenue",
+				  "BankAccount_Address_Line2": "",
+				  "BankAccount_Address_ZipCode": "10015",
+				  "BankAccount_Address_City": "NEW YORK",
+				  "BankAccount_Address_Country": "USA",
+				  "BankAccount_Address_State": "NY",
+				  "BankAccount_AccountHolderName": "Ewinsurame",
+				  "BankAccount_DepositType": "NA",
+				  "BankAccount_Currency": "USD",
+				  "BankAccount_AccountNumber": "000140867166143",
+				  "BankAccount_RoutingNumber": "091000019",
+				  "BankAccount_PrenoteCompleted": "",
+				  "BankAccount_Validated": "",
+				  "LegalEntityId": "000000000C",
+				  "HireDate": "09/25/2007",
+				  "TerminationDate": "",
+				  "TerminationReason": "",
+				  "EmployeeInformationEffectiveDate": "09/25/2007",
+				  "EmploymentStatus": "Active",
+				  "BaseSalaryAmount": "42732",
+				  "BaseSalaryFrequency": "Annually",
+				  "WorkingHours": "40",
+				  "WorkingHoursDefinedForFrequency": "Weekly",
+				  "WorkingCategory": "Full time",
+				  "SalaryCommissionAmount": "0",
+				  "SalaryCommissionFrequency": "",
+				  "SalaryBonusAmount": "0",
+				  "SalaryBonusFrequency": "",
+				  "WorksiteState": "",
+				  "Dummy": "0",
+				  "Dummy2": "0"
+				},
+				{
+				  "Identifier": "351860719",
+				  "Person_Name": "Craranme",
+				  "Person_FirstName": "Pedro",
+				  "Person_SSN": "717368316",
+				  "Person_BirthDate": "01/16/1968",
+				  "Person_MaritalStatus": "Single",
+				  "Person_Classifications": "Non smoker,Smoker,Smoker,Non smoker,Smoker,Non smoker,",
+				  "Person_Address_Line1": "7131 Lexington Avenue",
+				  "Person_Address_Line2": "",
+				  "Person_Address_ZipCode": "10015",
+				  "Person_Address_City": "NEW YORK",
+				  "Person_Address_Country": "USA",
+				  "Person_Address_State": "NY",
+				  "Person_BirthRank": "1",
+				  "Person_AttachedToAnOtherSSN": "False",
+				  "Person_Gender": "Male",
+				  "BankAccount_Name": "Chase Manhattan Bank",
+				  "BankAccount_EffectiveDate": "--/--/----",
+				  "BankAccount_EndDate": "--/--/----",
+				  "BankAccount_AccountType": "Checking",
+				  "BankAccount_Address_Line1": "2352 Lexington Avenue",
+				  "BankAccount_Address_Line2": "",
+				  "BankAccount_Address_ZipCode": "10015",
+				  "BankAccount_Address_City": "NEW YORK",
+				  "BankAccount_Address_Country": "USA",
+				  "BankAccount_Address_State": "NY",
+				  "BankAccount_AccountHolderName": "Craranme",
+				  "BankAccount_DepositType": "NA",
+				  "BankAccount_Currency": "USD",
+				  "BankAccount_AccountNumber": "000140867180657",
+				  "BankAccount_RoutingNumber": "091000019",
+				  "BankAccount_PrenoteCompleted": "",
+				  "BankAccount_Validated": "",
+				  "LegalEntityId": "000000000C",
+				  "HireDate": "06/20/2007",
+				  "TerminationDate": "",
+				  "TerminationReason": "",
+				  "EmployeeInformationEffectiveDate": "06/20/2007",
+				  "EmploymentStatus": "Active",
+				  "BaseSalaryAmount": "41605",
+				  "BaseSalaryFrequency": "Annually",
+				  "WorkingHours": "40",
+				  "WorkingHoursDefinedForFrequency": "Weekly",
+				  "WorkingCategory": "Full time",
+				  "SalaryCommissionAmount": "0",
+				  "SalaryCommissionFrequency": "",
+				  "SalaryBonusAmount": "0",
+				  "SalaryBonusFrequency": "",
+				  "WorksiteState": "",
+				  "Dummy": "0",
+				  "Dummy2": "0"
+				},
+				{
+				  "Identifier": "351860726",
+				  "Person_Name": "Alstneuvenran",
+				  "Person_FirstName": "Kate",
+				  "Person_SSN": "864361581",
+				  "Person_BirthDate": "02/13/1968",
+				  "Person_MaritalStatus": "Single",
+				  "Person_Classifications": "Non smoker,Non smoker,Smoker,Smoker,Non smoker,Smoker,Non smoker,",
+				  "Person_Address_Line1": "293 Lexington Avenue",
+				  "Person_Address_Line2": "",
+				  "Person_Address_ZipCode": "10015",
+				  "Person_Address_City": "NEW YORK",
+				  "Person_Address_Country": "USA",
+				  "Person_Address_State": "NY",
+				  "Person_BirthRank": "1",
+				  "Person_AttachedToAnOtherSSN": "False",
+				  "Person_Gender": "Female",
+				  "BankAccount_Name": "Chase Manhattan Bank",
+				  "BankAccount_EffectiveDate": "--/--/----",
+				  "BankAccount_EndDate": "--/--/----",
+				  "BankAccount_AccountType": "Checking",
+				  "BankAccount_Address_Line1": "4687 Lexington Avenue",
+				  "BankAccount_Address_Line2": "",
+				  "BankAccount_Address_ZipCode": "10015",
+				  "BankAccount_Address_City": "NEW YORK",
+				  "BankAccount_Address_Country": "USA",
+				  "BankAccount_Address_State": "NY",
+				  "BankAccount_AccountHolderName": "Alstneuvenran",
+				  "BankAccount_DepositType": "NA",
+				  "BankAccount_Currency": "USD",
+				  "BankAccount_AccountNumber": "000140867127577",
+				  "BankAccount_RoutingNumber": "091000019",
+				  "BankAccount_PrenoteCompleted": "",
+				  "BankAccount_Validated": "",
+				  "LegalEntityId": "000000000C",
+				  "HireDate": "10/05/2007",
+				  "TerminationDate": "",
+				  "TerminationReason": "",
+				  "EmployeeInformationEffectiveDate": "10/05/2007",
+				  "EmploymentStatus": "Active",
+				  "BaseSalaryAmount": "31072",
+				  "BaseSalaryFrequency": "Annually",
+				  "WorkingHours": "40",
+				  "WorkingHoursDefinedForFrequency": "Weekly",
+				  "WorkingCategory": "Full time",
+				  "SalaryCommissionAmount": "0",
+				  "SalaryCommissionFrequency": "",
+				  "SalaryBonusAmount": "0",
+				  "SalaryBonusFrequency": "",
+				  "WorksiteState": "",
+				  "Dummy": "0",
+				  "Dummy2": "0"
+				},
+				{
+				  "Identifier": "351860733",
+				  "Person_Name": "Lomesura",
+				  "Person_FirstName": "Tom",
+				  "Person_SSN": "752478183",
+				  "Person_BirthDate": "01/22/1963",
+				  "Person_MaritalStatus": "Single",
+				  "Person_Classifications": "Smoker,Non smoker,Non smoker,Smoker,Smoker,Non smoker,Smoker,Non smoker,",
+				  "Person_Address_Line1": "2608 Lexington Avenue",
+				  "Person_Address_Line2": "",
+				  "Person_Address_ZipCode": "10015",
+				  "Person_Address_City": "NEW YORK",
+				  "Person_Address_Country": "USA",
+				  "Person_Address_State": "NY",
+				  "Person_BirthRank": "1",
+				  "Person_AttachedToAnOtherSSN": "False",
+				  "Person_Gender": "Male",
+				  "BankAccount_Name": "Chase Manhattan Bank",
+				  "BankAccount_EffectiveDate": "--/--/----",
+				  "BankAccount_EndDate": "--/--/----",
+				  "BankAccount_AccountType": "Checking",
+				  "BankAccount_Address_Line1": "7713 Lexington Avenue",
+				  "BankAccount_Address_Line2": "",
+				  "BankAccount_Address_ZipCode": "10015",
+				  "BankAccount_Address_City": "NEW YORK",
+				  "BankAccount_Address_Country": "USA",
+				  "BankAccount_Address_State": "NY",
+				  "BankAccount_AccountHolderName": "Lomesura",
+				  "BankAccount_DepositType": "NA",
+				  "BankAccount_Currency": "USD",
+				  "BankAccount_AccountNumber": "000140867108953",
+				  "BankAccount_RoutingNumber": "091000019",
+				  "BankAccount_PrenoteCompleted": "",
+				  "BankAccount_Validated": "",
+				  "LegalEntityId": "000000000C",
+				  "HireDate": "12/13/2007",
+				  "TerminationDate": "",
+				  "TerminationReason": "",
+				  "EmployeeInformationEffectiveDate": "12/13/2007",
+				  "EmploymentStatus": "Active",
+				  "BaseSalaryAmount": "40679",
+				  "BaseSalaryFrequency": "Annually",
+				  "WorkingHours": "40",
+				  "WorkingHoursDefinedForFrequency": "Weekly",
+				  "WorkingCategory": "Full time",
+				  "SalaryCommissionAmount": "0",
+				  "SalaryCommissionFrequency": "",
+				  "SalaryBonusAmount": "0",
+				  "SalaryBonusFrequency": "",
+				  "WorksiteState": "",
+				  "Dummy": "0",
+				  "Dummy2": "0"
+				},
+				{
+				  "Identifier": "351860741",
+				  "Person_Name": "Irwsuralilo",
+				  "Person_FirstName": "Tom",
+				  "Person_SSN": "621276382",
+				  "Person_BirthDate": "05/09/1975",
+				  "Person_MaritalStatus": "Single",
+				  "Person_Classifications": "Smoker,Smoker,Non smoker,Non smoker,Smoker,Smoker,Non smoker,Smoker,Non smoker,",
+				  "Person_Address_Line1": "7411 Lexington Avenue",
+				  "Person_Address_Line2": "",
+				  "Person_Address_ZipCode": "10015",
+				  "Person_Address_City": "NEW YORK",
+				  "Person_Address_Country": "USA",
+				  "Person_Address_State": "NY",
+				  "Person_BirthRank": "1",
+				  "Person_AttachedToAnOtherSSN": "False",
+				  "Person_Gender": "Male",
+				  "BankAccount_Name": "Chase Manhattan Bank",
+				  "BankAccount_EffectiveDate": "--/--/----",
+				  "BankAccount_EndDate": "--/--/----",
+				  "BankAccount_AccountType": "Checking",
+				  "BankAccount_Address_Line1": "1424 Lexington Avenue",
+				  "BankAccount_Address_Line2": "",
+				  "BankAccount_Address_ZipCode": "10015",
+				  "BankAccount_Address_City": "NEW YORK",
+				  "BankAccount_Address_Country": "USA",
+				  "BankAccount_Address_State": "NY",
+				  "BankAccount_AccountHolderName": "Irwsuralilo",
+				  "BankAccount_DepositType": "NA",
+				  "BankAccount_Currency": "USD",
+				  "BankAccount_AccountNumber": "000140867137087",
+				  "BankAccount_RoutingNumber": "091000019",
+				  "BankAccount_PrenoteCompleted": "",
+				  "BankAccount_Validated": "",
+				  "LegalEntityId": "000000000C",
+				  "HireDate": "12/25/2006",
+				  "TerminationDate": "",
+				  "TerminationReason": "",
+				  "EmployeeInformationEffectiveDate": "12/25/2006",
+				  "EmploymentStatus": "Active",
+				  "BaseSalaryAmount": "46333",
+				  "BaseSalaryFrequency": "Annually",
+				  "WorkingHours": "40",
+				  "WorkingHoursDefinedForFrequency": "Weekly",
+				  "WorkingCategory": "Full time",
+				  "SalaryCommissionAmount": "0",
+				  "SalaryCommissionFrequency": "",
+				  "SalaryBonusAmount": "0",
+				  "SalaryBonusFrequency": "",
+				  "WorksiteState": "",
+				  "Dummy": "0",
+				  "Dummy2": "0"
+				},
+				{
+				  "Identifier": "351860749",
+				  "Person_Name": "Ewinranneuven",
+				  "Person_FirstName": "Pedro",
+				  "Person_SSN": "121332183",
+				  "Person_BirthDate": "02/24/1968",
+				  "Person_MaritalStatus": "Single",
+				  "Person_Classifications": "Non smoker,Smoker,Smoker,Non smoker,Non smoker,Smoker,Smoker,Non smoker,Smoker,Non smoker,",
+				  "Person_Address_Line1": "5534 Lexington Avenue",
+				  "Person_Address_Line2": "",
+				  "Person_Address_ZipCode": "10015",
+				  "Person_Address_City": "NEW YORK",
+				  "Person_Address_Country": "USA",
+				  "Person_Address_State": "NY",
+				  "Person_BirthRank": "1",
+				  "Person_AttachedToAnOtherSSN": "False",
+				  "Person_Gender": "Male",
+				  "BankAccount_Name": "Chase Manhattan Bank",
+				  "BankAccount_EffectiveDate": "--/--/----",
+				  "BankAccount_EndDate": "--/--/----",
+				  "BankAccount_AccountType": "Checking",
+				  "BankAccount_Address_Line1": "7109 Lexington Avenue",
+				  "BankAccount_Address_Line2": "",
+				  "BankAccount_Address_ZipCode": "10015",
+				  "BankAccount_Address_City": "NEW YORK",
+				  "BankAccount_Address_Country": "USA",
+				  "BankAccount_Address_State": "NY",
+				  "BankAccount_AccountHolderName": "Ewinranneuven",
+				  "BankAccount_DepositType": "NA",
+				  "BankAccount_Currency": "USD",
+				  "BankAccount_AccountNumber": "000140867185793",
+				  "BankAccount_RoutingNumber": "091000019",
+				  "BankAccount_PrenoteCompleted": "",
+				  "BankAccount_Validated": "",
+				  "LegalEntityId": "000000000C",
+				  "HireDate": "08/01/2007",
+				  "TerminationDate": "",
+				  "TerminationReason": "",
+				  "EmployeeInformationEffectiveDate": "08/01/2007",
+				  "EmploymentStatus": "Active",
+				  "BaseSalaryAmount": "32907",
+				  "BaseSalaryFrequency": "Annually",
+				  "WorkingHours": "40",
+				  "WorkingHoursDefinedForFrequency": "Weekly",
+				  "WorkingCategory": "Full time",
+				  "SalaryCommissionAmount": "0",
+				  "SalaryCommissionFrequency": "",
+				  "SalaryBonusAmount": "0",
+				  "SalaryBonusFrequency": "",
+				  "WorksiteState": "",
+				  "Dummy": "0",
+				  "Dummy2": "0"
+				},
+				{
+				  "Identifier": "351860757",
+				  "Person_Name": "Alstma",
+				  "Person_FirstName": "Susan",
+				  "Person_SSN": "655176683",
+				  "Person_BirthDate": "09/05/1979",
+				  "Person_MaritalStatus": "Single",
+				  "Person_Classifications": "Non smoker,Non smoker,Smoker,Smoker,Non smoker,Non smoker,Smoker,Smoker,Non smoker,Smoker,Non smoker,",
+				  "Person_Address_Line1": "1991 Lexington Avenue",
+				  "Person_Address_Line2": "",
+				  "Person_Address_ZipCode": "10015",
+				  "Person_Address_City": "NEW YORK",
+				  "Person_Address_Country": "USA",
+				  "Person_Address_State": "NY",
+				  "Person_BirthRank": "1",
+				  "Person_AttachedToAnOtherSSN": "False",
+				  "Person_Gender": "Female",
+				  "BankAccount_Name": "Chase Manhattan Bank",
+				  "BankAccount_EffectiveDate": "--/--/----",
+				  "BankAccount_EndDate": "--/--/----",
+				  "BankAccount_AccountType": "Checking",
+				  "BankAccount_Address_Line1": "2003 Lexington Avenue",
+				  "BankAccount_Address_Line2": "",
+				  "BankAccount_Address_ZipCode": "10015",
+				  "BankAccount_Address_City": "NEW YORK",
+				  "BankAccount_Address_Country": "USA",
+				  "BankAccount_Address_State": "NY",
+				  "BankAccount_AccountHolderName": "Alstma",
+				  "BankAccount_DepositType": "NA",
+				  "BankAccount_Currency": "USD",
+				  "BankAccount_AccountNumber": "000140867198393",
+				  "BankAccount_RoutingNumber": "091000019",
+				  "BankAccount_PrenoteCompleted": "",
+				  "BankAccount_Validated": "",
+				  "LegalEntityId": "000000000C",
+				  "HireDate": "11/16/2007",
+				  "TerminationDate": "",
+				  "TerminationReason": "",
+				  "EmployeeInformationEffectiveDate": "11/16/2007",
+				  "EmploymentStatus": "Active",
+				  "BaseSalaryAmount": "31970",
+				  "BaseSalaryFrequency": "Annually",
+				  "WorkingHours": "40",
+				  "WorkingHoursDefinedForFrequency": "Weekly",
+				  "WorkingCategory": "Full time",
+				  "SalaryCommissionAmount": "0",
+				  "SalaryCommissionFrequency": "",
+				  "SalaryBonusAmount": "0",
+				  "SalaryBonusFrequency": "",
+				  "WorksiteState": "",
+				  "Dummy": "0",
+				  "Dummy2": "0"
+				},
+				{
+				  "Identifier": "351860765",
+				  "Person_Name": "Irwlilo",
+				  "Person_FirstName": "Pedro",
+				  "Person_SSN": "627487338",
+				  "Person_BirthDate": "06/26/1973",
+				  "Person_MaritalStatus": "Single",
+				  "Person_Classifications": "Smoker,Non smoker,Non smoker,Smoker,Smoker,Non smoker,Non smoker,Smoker,Smoker,Non smoker,Smoker,Non smoker,",
+				  "Person_Address_Line1": "4691 Lexington Avenue",
+				  "Person_Address_Line2": "",
+				  "Person_Address_ZipCode": "10015",
+				  "Person_Address_City": "NEW YORK",
+				  "Person_Address_Country": "USA",
+				  "Person_Address_State": "NY",
+				  "Person_BirthRank": "1",
+				  "Person_AttachedToAnOtherSSN": "False",
+				  "Person_Gender": "Male",
+				  "BankAccount_Name": "Chase Manhattan Bank",
+				  "BankAccount_EffectiveDate": "--/--/----",
+				  "BankAccount_EndDate": "--/--/----",
+				  "BankAccount_AccountType": "Checking",
+				  "BankAccount_Address_Line1": "5261 Lexington Avenue",
+				  "BankAccount_Address_Line2": "",
+				  "BankAccount_Address_ZipCode": "10015",
+				  "BankAccount_Address_City": "NEW YORK",
+				  "BankAccount_Address_Country": "USA",
+				  "BankAccount_Address_State": "NY",
+				  "BankAccount_AccountHolderName": "Irwlilo",
+				  "BankAccount_DepositType": "NA",
+				  "BankAccount_Currency": "USD",
+				  "BankAccount_AccountNumber": "000140867119880",
+				  "BankAccount_RoutingNumber": "091000019",
+				  "BankAccount_PrenoteCompleted": "",
+				  "BankAccount_Validated": "",
+				  "LegalEntityId": "000000000C",
+				  "HireDate": "11/22/2007",
+				  "TerminationDate": "",
+				  "TerminationReason": "",
+				  "EmployeeInformationEffectiveDate": "11/22/2007",
+				  "EmploymentStatus": "Active",
+				  "BaseSalaryAmount": "32723",
+				  "BaseSalaryFrequency": "Annually",
+				  "WorkingHours": "40",
+				  "WorkingHoursDefinedForFrequency": "Weekly",
+				  "WorkingCategory": "Full time",
+				  "SalaryCommissionAmount": "0",
+				  "SalaryCommissionFrequency": "",
+				  "SalaryBonusAmount": "0",
+				  "SalaryBonusFrequency": "",
+				  "WorksiteState": "",
+				  "Dummy": "0",
+				  "Dummy2": "0"
+				},
+				{
+				  "Identifier": "351860772",
+				  "Person_Name": "Essuraberto",
+				  "Person_FirstName": "Susan",
+				  "Person_SSN": "254135218",
+				  "Person_BirthDate": "03/01/1968",
+				  "Person_MaritalStatus": "Single",
+				  "Person_Classifications": "Non smoker,Smoker,Non smoker,Non smoker,Smoker,Smoker,Non smoker,Non smoker,Smoker,Smoker,Non smoker,Smoker,Non smoker,",
+				  "Person_Address_Line1": "8238 Lexington Avenue",
+				  "Person_Address_Line2": "",
+				  "Person_Address_ZipCode": "10015",
+				  "Person_Address_City": "NEW YORK",
+				  "Person_Address_Country": "USA",
+				  "Person_Address_State": "NY",
+				  "Person_BirthRank": "1",
+				  "Person_AttachedToAnOtherSSN": "False",
+				  "Person_Gender": "Female",
+				  "BankAccount_Name": "Chase Manhattan Bank",
+				  "BankAccount_EffectiveDate": "--/--/----",
+				  "BankAccount_EndDate": "--/--/----",
+				  "BankAccount_AccountType": "Checking",
+				  "BankAccount_Address_Line1": "6808 Lexington Avenue",
+				  "BankAccount_Address_Line2": "",
+				  "BankAccount_Address_ZipCode": "10015",
+				  "BankAccount_Address_City": "NEW YORK",
+				  "BankAccount_Address_Country": "USA",
+				  "BankAccount_Address_State": "NY",
+				  "BankAccount_AccountHolderName": "Essuraberto",
+				  "BankAccount_DepositType": "NA",
+				  "BankAccount_Currency": "USD",
+				  "BankAccount_AccountNumber": "000140867125173",
+				  "BankAccount_RoutingNumber": "091000019",
+				  "BankAccount_PrenoteCompleted": "",
+				  "BankAccount_Validated": "",
+				  "LegalEntityId": "000000000C",
+				  "HireDate": "03/16/2007",
+				  "TerminationDate": "",
+				  "TerminationReason": "",
+				  "EmployeeInformationEffectiveDate": "03/16/2007",
+				  "EmploymentStatus": "Active",
+				  "BaseSalaryAmount": "33012",
+				  "BaseSalaryFrequency": "Annually",
+				  "WorkingHours": "40",
+				  "WorkingHoursDefinedForFrequency": "Weekly",
+				  "WorkingCategory": "Full time",
+				  "SalaryCommissionAmount": "0",
+				  "SalaryCommissionFrequency": "",
+				  "SalaryBonusAmount": "0",
+				  "SalaryBonusFrequency": "",
+				  "WorksiteState": "",
+				  "Dummy": "0",
+				  "Dummy2": "0"
+				},
+				{
+				  "Identifier": "351860780",
+				  "Person_Name": "Loberto",
+				  "Person_FirstName": "Laurence",
+				  "Person_SSN": "424574522",
+				  "Person_BirthDate": "03/11/1961",
+				  "Person_MaritalStatus": "Single",
+				  "Person_Classifications": "Smoker,Non smoker,Smoker,Non smoker,Non smoker,Smoker,Smoker,Non smoker,Non smoker,Smoker,Smoker,Non smoker,Smoker,Non smoker,",
+				  "Person_Address_Line1": "2251 Lexington Avenue",
+				  "Person_Address_Line2": "",
+				  "Person_Address_ZipCode": "10015",
+				  "Person_Address_City": "NEW YORK",
+				  "Person_Address_Country": "USA",
+				  "Person_Address_State": "NY",
+				  "Person_BirthRank": "1",
+				  "Person_AttachedToAnOtherSSN": "False",
+				  "Person_Gender": "Female",
+				  "BankAccount_Name": "Chase Manhattan Bank",
+				  "BankAccount_EffectiveDate": "--/--/----",
+				  "BankAccount_EndDate": "--/--/----",
+				  "BankAccount_AccountType": "Checking",
+				  "BankAccount_Address_Line1": "4930 Lexington Avenue",
+				  "BankAccount_Address_Line2": "",
+				  "BankAccount_Address_ZipCode": "10015",
+				  "BankAccount_Address_City": "NEW YORK",
+				  "BankAccount_Address_Country": "USA",
+				  "BankAccount_Address_State": "NY",
+				  "BankAccount_AccountHolderName": "Loberto",
+				  "BankAccount_DepositType": "NA",
+				  "BankAccount_Currency": "USD",
+				  "BankAccount_AccountNumber": "000140867131927",
+				  "BankAccount_RoutingNumber": "091000019",
+				  "BankAccount_PrenoteCompleted": "",
+				  "BankAccount_Validated": "",
+				  "LegalEntityId": "000000000C",
+				  "HireDate": "06/14/2007",
+				  "TerminationDate": "",
+				  "TerminationReason": "",
+				  "EmployeeInformationEffectiveDate": "06/14/2007",
+				  "EmploymentStatus": "Active",
+				  "BaseSalaryAmount": "47136",
+				  "BaseSalaryFrequency": "Annually",
+				  "WorkingHours": "40",
+				  "WorkingHoursDefinedForFrequency": "Weekly",
+				  "WorkingCategory": "Full time",
+				  "SalaryCommissionAmount": "0",
+				  "SalaryCommissionFrequency": "",
+				  "SalaryBonusAmount": "0",
+				  "SalaryBonusFrequency": "",
+				  "WorksiteState": "",
+				  "Dummy": "0",
+				  "Dummy2": "0"
+				},
+				{
+				  "Identifier": "351860788",
+				  "Person_Name": "Alststel",
+				  "Person_FirstName": "Tom",
+				  "Person_SSN": "144423273",
+				  "Person_BirthDate": "04/01/1977",
+				  "Person_MaritalStatus": "Single",
+				  "Person_Classifications": "Smoker,Smoker,Non smoker,Smoker,Non smoker,Non smoker,Smoker,Smoker,Non smoker,Non smoker,Smoker,Smoker,Non smoker,Smoker,Non smoker,",
+				  "Person_Address_Line1": "9675 Lexington Avenue",
+				  "Person_Address_Line2": "",
+				  "Person_Address_ZipCode": "10015",
+				  "Person_Address_City": "NEW YORK",
+				  "Person_Address_Country": "USA",
+				  "Person_Address_State": "NY",
+				  "Person_BirthRank": "1",
+				  "Person_AttachedToAnOtherSSN": "False",
+				  "Person_Gender": "Male",
+				  "BankAccount_Name": "Chase Manhattan Bank",
+				  "BankAccount_EffectiveDate": "--/--/----",
+				  "BankAccount_EndDate": "--/--/----",
+				  "BankAccount_AccountType": "Checking",
+				  "BankAccount_Address_Line1": "3348 Lexington Avenue",
+				  "BankAccount_Address_Line2": "",
+				  "BankAccount_Address_ZipCode": "10015",
+				  "BankAccount_Address_City": "NEW YORK",
+				  "BankAccount_Address_Country": "USA",
+				  "BankAccount_Address_State": "NY",
+				  "BankAccount_AccountHolderName": "Alststel",
+				  "BankAccount_DepositType": "NA",
+				  "BankAccount_Currency": "USD",
+				  "BankAccount_AccountNumber": "000140867105654",
+				  "BankAccount_RoutingNumber": "091000019",
+				  "BankAccount_PrenoteCompleted": "",
+				  "BankAccount_Validated": "",
+				  "LegalEntityId": "000000000C",
+				  "HireDate": "12/06/2007",
+				  "TerminationDate": "",
+				  "TerminationReason": "",
+				  "EmployeeInformationEffectiveDate": "12/06/2007",
+				  "EmploymentStatus": "Active",
+				  "BaseSalaryAmount": "30005",
+				  "BaseSalaryFrequency": "Annually",
+				  "WorkingHours": "40",
+				  "WorkingHoursDefinedForFrequency": "Weekly",
+				  "WorkingCategory": "Full time",
+				  "SalaryCommissionAmount": "0",
+				  "SalaryCommissionFrequency": "",
+				  "SalaryBonusAmount": "0",
+				  "SalaryBonusFrequency": "",
+				  "WorksiteState": "",
+				  "Dummy": "0",
+				  "Dummy2": "0"
+				},
+				{
+				  "Identifier": "351860796",
+				  "Person_Name": "Essonran",
+				  "Person_FirstName": "Susan",
+				  "Person_SSN": "233614136",
+				  "Person_BirthDate": "09/12/1974",
+				  "Person_MaritalStatus": "Single",
+				  "Person_Classifications": "Smoker,Smoker,Smoker,Non smoker,Smoker,Non smoker,Non smoker,Smoker,Smoker,Non smoker,Non smoker,Smoker,Smoker,Non smoker,Smoker,Non smoker,",
+				  "Person_Address_Line1": "1733 Lexington Avenue",
+				  "Person_Address_Line2": "",
+				  "Person_Address_ZipCode": "10015",
+				  "Person_Address_City": "NEW YORK",
+				  "Person_Address_Country": "USA",
+				  "Person_Address_State": "NY",
+				  "Person_BirthRank": "1",
+				  "Person_AttachedToAnOtherSSN": "False",
+				  "Person_Gender": "Female",
+				  "BankAccount_Name": "Chase Manhattan Bank",
+				  "BankAccount_EffectiveDate": "--/--/----",
+				  "BankAccount_EndDate": "--/--/----",
+				  "BankAccount_AccountType": "Checking",
+				  "BankAccount_Address_Line1": "6693 Lexington Avenue",
+				  "BankAccount_Address_Line2": "",
+				  "BankAccount_Address_ZipCode": "10015",
+				  "BankAccount_Address_City": "NEW YORK",
+				  "BankAccount_Address_Country": "USA",
+				  "BankAccount_Address_State": "NY",
+				  "BankAccount_AccountHolderName": "Essonran",
+				  "BankAccount_DepositType": "NA",
+				  "BankAccount_Currency": "USD",
+				  "BankAccount_AccountNumber": "000140867188385",
+				  "BankAccount_RoutingNumber": "091000019",
+				  "BankAccount_PrenoteCompleted": "",
+				  "BankAccount_Validated": "",
+				  "LegalEntityId": "000000000C",
+				  "HireDate": "02/03/2007",
+				  "TerminationDate": "",
+				  "TerminationReason": "",
+				  "EmployeeInformationEffectiveDate": "02/03/2007",
+				  "EmploymentStatus": "Active",
+				  "BaseSalaryAmount": "44776",
+				  "BaseSalaryFrequency": "Annually",
+				  "WorkingHours": "40",
+				  "WorkingHoursDefinedForFrequency": "Weekly",
+				  "WorkingCategory": "Full time",
+				  "SalaryCommissionAmount": "0",
+				  "SalaryCommissionFrequency": "",
+				  "SalaryBonusAmount": "0",
+				  "SalaryBonusFrequency": "",
+				  "WorksiteState": "",
+				  "Dummy": "0",
+				  "Dummy2": "0"
+				},
+				{
+				  "Identifier": "351860804",
+				  "Person_Name": "Crama",
+				  "Person_FirstName": "William",
+				  "Person_SSN": "121455567",
+				  "Person_BirthDate": "09/08/1979",
+				  "Person_MaritalStatus": "Single",
+				  "Person_Classifications": "Smoker,Smoker,Smoker,Smoker,Non smoker,Smoker,Non smoker,Non smoker,Smoker,Smoker,Non smoker,Non smoker,Smoker,Smoker,Non smoker,Smoker,Non smoker,",
+				  "Person_Address_Line1": "1054 Lexington Avenue",
+				  "Person_Address_Line2": "",
+				  "Person_Address_ZipCode": "10015",
+				  "Person_Address_City": "NEW YORK",
+				  "Person_Address_Country": "USA",
+				  "Person_Address_State": "NY",
+				  "Person_BirthRank": "1",
+				  "Person_AttachedToAnOtherSSN": "False",
+				  "Person_Gender": "Male",
+				  "BankAccount_Name": "Chase Manhattan Bank",
+				  "BankAccount_EffectiveDate": "--/--/----",
+				  "BankAccount_EndDate": "--/--/----",
+				  "BankAccount_AccountType": "Checking",
+				  "BankAccount_Address_Line1": "5325 Lexington Avenue",
+				  "BankAccount_Address_Line2": "",
+				  "BankAccount_Address_ZipCode": "10015",
+				  "BankAccount_Address_City": "NEW YORK",
+				  "BankAccount_Address_Country": "USA",
+				  "BankAccount_Address_State": "NY",
+				  "BankAccount_AccountHolderName": "Crama",
+				  "BankAccount_DepositType": "NA",
+				  "BankAccount_Currency": "USD",
+				  "BankAccount_AccountNumber": "000140867157637",
+				  "BankAccount_RoutingNumber": "091000019",
+				  "BankAccount_PrenoteCompleted": "",
+				  "BankAccount_Validated": "",
+				  "LegalEntityId": "000000000C",
+				  "HireDate": "07/03/2007",
+				  "TerminationDate": "",
+				  "TerminationReason": "",
+				  "EmployeeInformationEffectiveDate": "07/03/2007",
+				  "EmploymentStatus": "Active",
+				  "BaseSalaryAmount": "48253",
+				  "BaseSalaryFrequency": "Annually",
+				  "WorkingHours": "40",
+				  "WorkingHoursDefinedForFrequency": "Weekly",
+				  "WorkingCategory": "Full time",
+				  "SalaryCommissionAmount": "0",
+				  "SalaryCommissionFrequency": "",
+				  "SalaryBonusAmount": "0",
+				  "SalaryBonusFrequency": "",
+				  "WorksiteState": "",
+				  "Dummy": "0",
+				  "Dummy2": "0"
+				},
+				{
+				  "Identifier": "351860812",
+				  "Person_Name": "Alstsuraneuven",
+				  "Person_FirstName": "Peter",
+				  "Person_SSN": "441216534",
+				  "Person_BirthDate": "03/29/1964",
+				  "Person_MaritalStatus": "Single",
+				  "Person_Classifications": "Smoker,Smoker,Smoker,Smoker,Smoker,Non smoker,Smoker,Non smoker,Non smoker,Smoker,Smoker,Non smoker,Non smoker,Smoker,Smoker,Non smoker,Smoker,Non smoker,",
+				  "Person_Address_Line1": "5425 Lexington Avenue",
+				  "Person_Address_Line2": "",
+				  "Person_Address_ZipCode": "10015",
+				  "Person_Address_City": "NEW YORK",
+				  "Person_Address_Country": "USA",
+				  "Person_Address_State": "NY",
+				  "Person_BirthRank": "1",
+				  "Person_AttachedToAnOtherSSN": "False",
+				  "Person_Gender": "Male",
+				  "BankAccount_Name": "Chase Manhattan Bank",
+				  "BankAccount_EffectiveDate": "--/--/----",
+				  "BankAccount_EndDate": "--/--/----",
+				  "BankAccount_AccountType": "Checking",
+				  "BankAccount_Address_Line1": "6743 Lexington Avenue",
+				  "BankAccount_Address_Line2": "",
+				  "BankAccount_Address_ZipCode": "10015",
+				  "BankAccount_Address_City": "NEW YORK",
+				  "BankAccount_Address_Country": "USA",
+				  "BankAccount_Address_State": "NY",
+				  "BankAccount_AccountHolderName": "Alstsuraneuven",
+				  "BankAccount_DepositType": "NA",
+				  "BankAccount_Currency": "USD",
+				  "BankAccount_AccountNumber": "000140867146490",
+				  "BankAccount_RoutingNumber": "091000019",
+				  "BankAccount_PrenoteCompleted": "",
+				  "BankAccount_Validated": "",
+				  "LegalEntityId": "000000000C",
+				  "HireDate": "11/24/2007",
+				  "TerminationDate": "",
+				  "TerminationReason": "",
+				  "EmployeeInformationEffectiveDate": "11/24/2007",
+				  "EmploymentStatus": "Active",
+				  "BaseSalaryAmount": "32786",
+				  "BaseSalaryFrequency": "Annually",
+				  "WorkingHours": "40",
+				  "WorkingHoursDefinedForFrequency": "Weekly",
+				  "WorkingCategory": "Full time",
+				  "SalaryCommissionAmount": "0",
+				  "SalaryCommissionFrequency": "",
+				  "SalaryBonusAmount": "0",
+				  "SalaryBonusFrequency": "",
+				  "WorksiteState": "",
+				  "Dummy": "0",
+				  "Dummy2": "0"
+				},
+				{
+				  "Identifier": "351860819",
+				  "Person_Name": "Ewinranran",
+				  "Person_FirstName": "Eduard",
+				  "Person_SSN": "271385317",
+				  "Person_BirthDate": "03/22/1967",
+				  "Person_MaritalStatus": "Single",
+				  "Person_Classifications": "Non smoker,Smoker,Smoker,Smoker,Smoker,Smoker,Non smoker,Smoker,Non smoker,Non smoker,Smoker,Smoker,Non smoker,Non smoker,Smoker,Smoker,Non smoker,Smoker,Non smoker,",
+				  "Person_Address_Line1": "3907 Lexington Avenue",
+				  "Person_Address_Line2": "",
+				  "Person_Address_ZipCode": "10015",
+				  "Person_Address_City": "NEW YORK",
+				  "Person_Address_Country": "USA",
+				  "Person_Address_State": "NY",
+				  "Person_BirthRank": "1",
+				  "Person_AttachedToAnOtherSSN": "False",
+				  "Person_Gender": "Male",
+				  "BankAccount_Name": "Chase Manhattan Bank",
+				  "BankAccount_EffectiveDate": "--/--/----",
+				  "BankAccount_EndDate": "--/--/----",
+				  "BankAccount_AccountType": "Checking",
+				  "BankAccount_Address_Line1": "2245 Lexington Avenue",
+				  "BankAccount_Address_Line2": "",
+				  "BankAccount_Address_ZipCode": "10015",
+				  "BankAccount_Address_City": "NEW YORK",
+				  "BankAccount_Address_Country": "USA",
+				  "BankAccount_Address_State": "NY",
+				  "BankAccount_AccountHolderName": "Ewinranran",
+				  "BankAccount_DepositType": "NA",
+				  "BankAccount_Currency": "USD",
+				  "BankAccount_AccountNumber": "000140867121957",
+				  "BankAccount_RoutingNumber": "091000019",
+				  "BankAccount_PrenoteCompleted": "",
+				  "BankAccount_Validated": "",
+				  "LegalEntityId": "000000000C",
+				  "HireDate": "05/19/2007",
+				  "TerminationDate": "",
+				  "TerminationReason": "",
+				  "EmployeeInformationEffectiveDate": "05/19/2007",
+				  "EmploymentStatus": "Active",
+				  "BaseSalaryAmount": "40798",
+				  "BaseSalaryFrequency": "Annually",
+				  "WorkingHours": "40",
+				  "WorkingHoursDefinedForFrequency": "Weekly",
+				  "WorkingCategory": "Full time",
+				  "SalaryCommissionAmount": "0",
+				  "SalaryCommissionFrequency": "",
+				  "SalaryBonusAmount": "0",
+				  "SalaryBonusFrequency": "",
+				  "WorksiteState": "",
+				  "Dummy": "0",
+				  "Dummy2": "0"
+				},
+				{
+				  "Identifier": "351860827",
+				  "Person_Name": "Esstel",
+				  "Person_FirstName": "Peter",
+				  "Person_SSN": "385271734",
+				  "Person_BirthDate": "03/07/1978",
+				  "Person_MaritalStatus": "Single",
+				  "Person_Classifications": "Smoker,Non smoker,Smoker,Smoker,Smoker,Smoker,Smoker,Non smoker,Smoker,Non smoker,Non smoker,Smoker,Smoker,Non smoker,Non smoker,Smoker,Smoker,Non smoker,Smoker,Non smoker,",
+				  "Person_Address_Line1": "1905 Lexington Avenue",
+				  "Person_Address_Line2": "",
+				  "Person_Address_ZipCode": "10015",
+				  "Person_Address_City": "NEW YORK",
+				  "Person_Address_Country": "USA",
+				  "Person_Address_State": "NY",
+				  "Person_BirthRank": "1",
+				  "Person_AttachedToAnOtherSSN": "False",
+				  "Person_Gender": "Male",
+				  "BankAccount_Name": "Chase Manhattan Bank",
+				  "BankAccount_EffectiveDate": "--/--/----",
+				  "BankAccount_EndDate": "--/--/----",
+				  "BankAccount_AccountType": "Checking",
+				  "BankAccount_Address_Line1": "8245 Lexington Avenue",
+				  "BankAccount_Address_Line2": "",
+				  "BankAccount_Address_ZipCode": "10015",
+				  "BankAccount_Address_City": "NEW YORK",
+				  "BankAccount_Address_Country": "USA",
+				  "BankAccount_Address_State": "NY",
+				  "BankAccount_AccountHolderName": "Esstel",
+				  "BankAccount_DepositType": "NA",
+				  "BankAccount_Currency": "USD",
+				  "BankAccount_AccountNumber": "000140867123045",
+				  "BankAccount_RoutingNumber": "091000019",
+				  "BankAccount_PrenoteCompleted": "",
+				  "BankAccount_Validated": "",
+				  "LegalEntityId": "000000000C",
+				  "HireDate": "06/20/2007",
+				  "TerminationDate": "",
+				  "TerminationReason": "",
+				  "EmployeeInformationEffectiveDate": "06/20/2007",
+				  "EmploymentStatus": "Active",
+				  "BaseSalaryAmount": "38496",
+				  "BaseSalaryFrequency": "Annually",
+				  "WorkingHours": "40",
+				  "WorkingHoursDefinedForFrequency": "Weekly",
+				  "WorkingCategory": "Full time",
+				  "SalaryCommissionAmount": "0",
+				  "SalaryCommissionFrequency": "",
+				  "SalaryBonusAmount": "0",
+				  "SalaryBonusFrequency": "",
+				  "WorksiteState": "",
+				  "Dummy": "0",
+				  "Dummy2": "0"
+				}
+			  ]
+		}
+		
+	],
+	"cards": [
+		{
+			"cardMembers": [
+				{
+					"cardElements": [
+						{
+							"type": "selectList",
+							"name": "contractNumber",
+							"label": "contractNumber",
+							"placement": "col-lg-6 col-md-10 px-0",
+							"options": "",
+							"optionKind": "apiCall",
+							"config": {
+								"placementClass": "  col-md-8 select-label-content"
+							},
+
+							"displayConfig": {
+								"show": true,
+								"validation": {
+									"condition": "> 1"
+								},
+								"valuesFrom": "props.selectOptions"
+							},
+							"subElement": {
+								"type": "tile",
+								"name": "paymentStatus",
+								"style": {
+									"fontSize": "12px",
+									"color": "#00a190",
+									"borderRadius": "4px",
+									"border": "solid 1px #00a190"
+								},
+								"config": {
+									"displayName": "InvoiceStatusConstants"
+								},
+								"placement": "col-lg-3 col-sm-5"
+							},
+							"validations": {}
+						}
+					]
+				}
+			],
+
+			"type": "titleCard",
+			"name": "viewHeader",
+			"config": {
+				"showBorder": true,
+				"className": "row mb-4"
+			}
+		},
+		{
+			"name": "blueBox",
+			"type": "boxCard",
+
+			"cardMembers": [
+				{
+					"cardConfig": {
+						"className": "col-lg-6 col-md-6 pl-0 remove-pr-mobile",
+						"styleClassName": "boxcard-border-flex",
+						"style": {}
+					},
+					"cardElements": [
+						{
+							"type": "readOnly",
+							"name": "effectiveDate",
+							"label": "Date effective",
+							"placement": "col-lg-4 col-sm-4",
+							"validations": {},
+							"image": "amount-due.png",
+							"config": {
+								"valueType": "date",
+								"format": "MM/DD/YYYY"
+							}
+						},
+						{
+							"type": "readOnly",
+							"name": "signatureDate",
+							"label": "Signature Date",
+							"placement": "col-lg-4 col-sm-4",
+							"value": "12/12/2020",
+							"image": "open-enrollment-duedate.png",
+							"config": {
+								"valueType": "date",
+								"format": "MM/DD/YYYY"
+							}
+						},
+						{
+							"type": "readOnly",
+							"name": "renewalDate",
+							"label": "Renewal Date",
+							"placement": "col-lg-4 col-sm-4",
+							"value": "12/12/2020",
+							"image": "openenrollment-renewal.png",
+							"config": {
+								"valueType": "date",
+								"format": "MM/DD/YYYY"
+							}
+						}
+					]
+				},
+				{
+					"cardConfig": {
+						"className": "col-lg-6 col-md-6 pl-0 pr-0  ",
+						"styleClassName": "boxcard-border-flex-radiant",
+						"style": {}
+					},
+					"cardElements": [
+						{
+							"type": "readOnly",
+							"name": "enrollmentPeriodKind",
+							"label": "Current Enrollment Period",
+							"placement": "col-lg-7 col-sm-9",
+							"validations": {},
+							"image": "openenrollment-renewal.png",
+							"config": {
+								"optionsname": "EnrollmentStatusConstants"
+							}
+						},
+						{
+							"type": "readOnly",
+							"name": "endDate",
+							"label": "End Date",
+							"placement": "col-lg-5 col-sm-3",
+							"value": "12/12/2020",
+							"image": "viewdisbursement-calender.png",
+							"config": {
+								"valueType": "date",
+								"format": "MM/DD/YYYY"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "panelCard",
+			"type": "panelCard",
+			"name": "panelCard",
+			"cardMembers": [
+				{
+					"cardElements": [
+						{
+							"cardConfig": {
+								"showHeader": true,
+								"showFooter": false,
+								"className": "col-md-12 col-lg-12 pr-0",
+								"alignmentClass": "ml-n3"
+							},
+							"panelHeader": {
+								"elements": [
+									{
+										"type": "readOnly",
+										"name": "currentAmountDue",
+										"label": "",
+										"placement": "mr-3",
+										"validations": {},
+										"image": "life-insurance.png"
+									},
+									{
+										"type": "label",
+										"name": "ProductsandCoverages",
+										"label": "Produits et couvertures",
+										"placement": "mr-3",
+										"value": "Produits et couvertures",
+										"config": {
+											"className": "enrollment-number"
+										}
+									}
+								]
+							},
+							"panelBody": {
+								"config": {
+									"className": "card-scroll"
+								},
+								"elements": [
+									{
+										"title": "prodAndCoverage",
+										"type": "ViewListCard",
+										"name": "prodAndCoverage",
+
+										"treeConfiguration": {
+											"branchHead": [
+												{
+													"leaflets": [
+														{
+															"field": "COVERAGES",
+															"contentType": "arrowProdHeaderText"
+														},
+														{
+															"field": "Date effective",
+															"contentType": "prodHeaderText"
+														},
+														{
+															"field": "PAID THROUGH DATE",
+
+															"contentType": "prodHeaderText"
+														},
+														{
+															"field": "STATUS",
+															"contentType": "prodHeaderText"
+														}
+													],
+													"apiObject": "",
+													"contentType": "prodHeaderContainer"
+												}
+											],
+											"branch1": [
+												{
+													"leaflets": [
+														{
+															"dataObject": "",
+															"field": "optionName",
+															"contentType": "prodArrowItem"
+														},
+														{
+															"dataObject": "",
+															"field": "effectiveDate",
+															"contentType": "prodItem"
+														},
+														{
+															"dataObject": "",
+															"field": "paidToDate",
+															"contentType": "prodItem"
+														},
+														{
+															"dataObject": "",
+															"field": "status",
+															"contentType": "prodItem"
+														}
+													],
+													"apiObject": "coverageGeneralInformation",
+													"contentType": "listPlainContainer1"
+												}
+											],
+
+											"branch2": [
+												{
+													"leaflets": [
+														{
+															"contentType": "Elementor",
+															"placement": "col-lg-1 col-sm-1 text-14 table-header text-center-align",
+															"Content": "",
+															"type": "image",
+															"name": "date",
+															"label": "Date",
+															"filename": "amount-due.png",
+															"hideDefaultClass": true
+														},
+														{
+															"placement": "col-lg-3 col-sm-3; mt-2 text-14",
+															"Content": "Date d'abonnement",
+															"contentType": "Elementor",
+															"type": "readOnly",
+															"name": "effectiveDate",
+															"label": "Date d'abonnement",
+															"value": "",
+															"field": "effectiveDate"
+														},
+														{
+															"placement": "col-lg-4 col-sm-4; mt-2 text-14",
+															"Content": "Date effective",
+															"contentType": "Elementor",
+															"type": "readOnly",
+															"name": "effectiveDate",
+															"label": "Date effective",
+															"value": "",
+															"field": "effectiveDate"
+														}
+													],
+													"apiObject": "coverageGeneralInformation",
+													"contentType": "subListPlainContainer"
+												}
+											],
+											"branch3": [
+												{
+													"leaflets": [
+														{
+															"Content": "Date effective: 01/01/2019",
+															"contentType": "subheaderSingleContainer1"
+														}
+													]
+												}
+											],
+											"branch4": [
+												{
+													"leaflets": [
+														{
+															"Content": "Plan Designs",
+															"contentType": "headerSingleContainer1"
+														}
+													]
+												}
+											],
+											"branch5": [
+												{
+													"leaflets": [
+														{
+															"Content": "Plan Name",
+															"contentType": "tableHeader"
+														}
+													]
+												}
+											],
+											"branch6": [
+												{
+													"leaflets": [
+														{
+															"Content": "",
+															"contentType": "tableItem"
+														}
+													]
+												}
+											]
+										}
+									}
+								]
+							},
+							"panelFooter": {
+								"elements": []
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "panelCard",
+			"type": "panelCard",
+			"name": "panelCard",
+			"cardMembers": [
+				{
+					"cardElements": [
+						{
+							"cardConfig": {
+								"showHeader": true,
+								"showFooter": false,
+								"className": "col-md-12 col-lg-6 mb-3 reset-padding",
+								"alignmentClass": "ml-n3"
+							},
+							"panelHeader": {
+								"config": {
+									"className": "px-3 py-1"
+								},
+								"elements": [
+									{
+										"type": "readOnly",
+										"name": "currentAmountDue",
+										"label": "",
+										"placement": "mr-3",
+										"validations": {},
+										"image": "employee.png"
+									},
+									{
+										"type": "label",
+										"name": "ProductsandCoverages",
+										"label": "Catégories de membres",
+										"placement": "mr-1",
+										"value": "Catégories de membres",
+										"config": {
+											"className": "enrollment-number"
+										}
+									},
+									{
+										"type": "label",
+										"name": "memberClassCount",
+										"label": "",
+										"placement": "",
+										"value": "",
+										"config": {
+											"className": "enrollment-number",
+											"style": {
+												"fontFamily": "Roboto",
+												"fontSize": "18px",
+												"fontWeight": "500",
+												"fontStretch": "normal",
+												"color": "#040404"
+											}
+										}
+									}
+								]
+							},
+							"panelBody": {
+								"config": {
+									"className": "card-scroll"
+								},
+								"elements": [
+									{
+										"title": "memberClass",
+										"type": "panelCard",
+										"name": "memberClass",
+										"cardMembers": [
+											{
+												"cardElements": [
+													{
+														"cardConfig": {
+															"showHeader": true,
+															"showFooter": false,
+															"className": "col-md-12 col-lg-12 mb-3",
+															"displayType": "multiple"
+														},
+														"panelHeader": {
+															"config": {
+																"className": "px-3",
+																"style": {
+																	"backgroundColor": "#f8f8f9"
+																}
+															},
+															"elements": [
+																{
+																	"type": "label",
+																	"name": "className",
+																	"label": "Numéro de paiement",
+																	"placement": "",
+																	"value": "",
+																	"config": {
+																		"style": {
+																			"fontFamily": "Roboto",
+																			"fontSize": "18px",
+																			"fontWeight": "500",
+																			"fontStretch": "normal",
+																			"color": "#040404"
+																		}
+																	}
+																},
+																{
+																	"type": "tile",
+																	"name": "paymentStatus",
+																	"style": {
+																		"fontSize": "12px",
+																		"color": "#00a190",
+																		"borderRadius": "4px",
+																		"border": "solid 1px #00a190"
+																	},
+																	"config": {
+																		"displayName": "InvoiceStatusConstants"
+																	},
+																	"valueConfig": {
+																		"source": ["effectiveDate", "endDate"],
+																		"conditions": [
+																			{
+																				"rule": "<",
+																				"value": "cActive"
+																			},
+																			{
+																				"rule": ">",
+																				"value": "cTerminated"
+																			}
+																		]
+																	},
+																	"placement": "col-lg-3 col-sm-5"
+																}
+															]
+														},
+														"panelBody": {
+															"config": {
+																"alignment": "row"
+															},
+															"elements": [
+																{
+																	"type": "readOnly",
+																	"name": "code",
+																	"label": "Code",
+																	"placement": "col-lg-4 col-sm-4",
+																	"value": "12/12/2020",
+																	"image": "number.png"
+																},
+																{
+																	"type": "readOnly",
+																	"name": "effectiveDate",
+																	"label": "Date effective",
+																	"placement": "col-lg-4 col-sm-4",
+																	"validations": {},
+																	"image": "calendar.png",
+																	"config": {
+																		"valueType": "date",
+																		"format": "MM/DD/YYYY"
+																	}
+																}
+															]
+														},
+														"panelFooter": {
+															"elements": []
+														}
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						},
+						{
+							"cardConfig": {
+								"showHeader": true,
+								"showFooter": false,
+								"className": "col-md-12 col-lg-6 mb-3 pr-0 reset-padding",
+								"alignmentClass": "ml-n3"
+							},
+							"panelHeader": {
+								"elements": [
+									{
+										"type": "readOnly",
+										"name": "currentAmountDue",
+										"label": "",
+										"placement": "mr-3",
+										"validations": {},
+										"image": "division.png"
+									},
+									{
+										"type": "label",
+										"name": "ProductsandCoverages",
+										"label": "Divisions",
+										"placement": "mr-1",
+										"value": "Divisions",
+										"config": {
+											"className": "enrollment-number"
+										}
+									},
+									{
+										"type": "label",
+										"name": "divisionsCount",
+										"label": "",
+										"placement": "",
+										"value": "",
+										"config": {
+											"className": "enrollment-number",
+											"style": {
+												"fontFamily": "Roboto",
+												"fontSize": "18px",
+												"fontWeight": "500",
+												"fontStretch": "normal",
+												"color": "#040404"
+											}
+										}
+									}
+								]
+							},
+							"panelBody": {
+								"config": {
+									"className": "card-scroll"
+								},
+								"elements": [
+									{
+										"title": "divisions",
+										"type": "panelCard",
+										"name": "divisions",
+										"cardMembers": [
+											{
+												"cardElements": [
+													{
+														"cardConfig": {
+															"showHeader": true,
+															"showFooter": false,
+															"className": "col-md-12 col-lg-12 mb-3",
+															"displayType": "multiple"
+														},
+														"panelHeader": {
+															"config": {
+																"className": "px-3",
+																"style": {
+																	"backgroundColor": "#f8f8f9"
+																}
+															},
+															"elements": [
+																{
+																	"type": "label",
+																	"name": "name",
+																	"label": "Numéro de paiement",
+																	"placement": "",
+																	"value": "",
+																	"config": {
+																		"style": {
+																			"fontFamily": "Roboto",
+																			"fontSize": "18px",
+																			"fontWeight": "500",
+																			"fontStretch": "normal",
+																			"color": "#040404"
+																		}
+																	}
+																},
+																{
+																	"type": "tile",
+																	"name": "paymentStatus",
+																	"style": {
+																		"fontSize": "12px",
+																		"color": "#00a190",
+																		"borderRadius": "4px",
+																		"border": "solid 1px #00a190"
+																	},
+																	"config": {
+																		"displayName": "InvoiceStatusConstants"
+																	},
+																	"placement": "col-lg-3 col-sm-5",
+																	"valueConfig": {
+																		"source": ["effectiveDate", "endDate"],
+																		"conditions": [
+																			{
+																				"rule": "<",
+																				"value": "cActive"
+																			},
+																			{
+																				"rule": ">",
+																				"value": "cTerminated"
+																			}
+																		]
+																	}
+																}
+															]
+														},
+														"panelBody": {
+															"config": {
+																"alignment": "row"
+															},
+															"elements": [
+																{
+																	"type": "readOnly",
+																	"name": "address",
+																	"label": "Address",
+																	"placement": "col-lg-4 col-sm-4",
+																	"value": "12/12/2020",
+																	"image": "location.png"
+																},
+																{
+																	"type": "readOnly",
+																	"name": "effectiveDate",
+																	"label": "Date effective",
+																	"placement": "col-lg-4 col-sm-4",
+																	"validations": {},
+																	"image": "calendar_right.png",
+																	"config": {
+																		"valueType": "date",
+																		"format": "MM/DD/YYYY"
+																	}
+																}
+															]
+														},
+														"panelFooter": {
+															"elements": []
+														}
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "panelCard",
+			"type": "panelCard",
+			"name": "panelCard",
+			"cardMembers": [
+				{
+					"cardElements": [
+						{
+							"cardConfig": {
+								"showHeader": true,
+								"showFooter": false,
+								"className": "col-md-12 col-lg-12 mb-3 pr-0 pl-0"
+							},
+							"panelHeader": {
+								"elements": [
+									{
+										"type": "readOnly",
+										"name": "currentAmountDue",
+										"label": "",
+										"placement": "mr-3",
+										"validations": {},
+										"image": "invoice.png"
+									},
+									{
+										"type": "label",
+										"name": "BillingAndInvoicing",
+										"label": "Billing and Invoicing",
+										"placement": "col-lg-8 col-md-6",
+										"value": "Billing and Invoicing",
+										"config": {
+											"className": "enrollment-number"
+										}
+									},
+									{
+										"type": "buttonGroup",
+										"name": "Active",
+										"label": "Active",
+										"placement": "col-lg-3 col-md-5 text-lg-right pl-2 mt-1 pr-0",
+										"className": "",
+										"config": {
+											"type": "redirect",
+											"redirectURL": ""
+										},
+										"buttonList": [
+											{
+												"name": "Active",
+												"content": "Active"
+											},
+											{
+												"name": "Terminated",
+												"content": "Terminated"
+											},
+											{
+												"name": "All",
+												"content": "All"
+											}
+										]
+									}
+								]
+							},
+							"panelBody": {
+								"config": {
+									"className": "card-scroll"
+								},
+								"elements": [
+									{
+										"title": "billDescInformation",
+										"type": "ViewListCard",
+										"name": "billDescInformation",
+										"highlightTitle": true,
+										"cardElements": [
+											{
+												"list": {
+													"listTitle": {
+														"listName": "List Bill"
+													},
+													"listHeader": [
+														{
+															"value": "Billing Frequency",
+															"config": {
+																"className": ""
+															}
+														},
+														{
+															"value": "Fréquence de facturation",
+															"config": {
+																"className": "second-col-align"
+															}
+														},
+														{
+															"value": "Divisions",
+															"config": {
+																"className": "col"
+															}
+														},
+														{
+															"value": "Catégories de membres ",
+															"config": {
+																"className": "col"
+															}
+														},
+														{
+															"value": "Coverages ",
+															"config": {
+																"className": "col"
+															}
+														},
+														{
+															"value": "Status ",
+															"config": {
+																"className": "col"
+															}
+														}
+													],
+													"listRowData": [
+														{
+															"name": "billingFrequency",
+															"type": "readOnly",
+															"label": "",
+															"value": "Test",
+															"hideLabel": true,
+															"config": {
+																"childClassName": "first-col-align",
+																"childClassNameWithChild": "first-col-align-child",
+																"grandChildClassName": "first-col-align-grand-child"
+															}
+														},
+														{
+															"name": "invoicingFrequency",
+															"type": "readOnly",
+															"label": "",
+															"value": "Test",
+															"hideLabel": true,
+															"config": {}
+														},
+														{
+															"name": "divisions",
+															"type": "readOnly",
+															"label": "",
+															"value": "Test",
+															"hideLabel": true,
+															"config": {}
+														},
+														{
+															"name": "memberClasses",
+															"type": "readOnly",
+															"label": "",
+															"value": "Test",
+															"hideLabel": true,
+															"config": {}
+														},
+														{
+															"name": "coverages",
+															"type": "readOnly",
+															"label": "",
+															"value": "Test",
+															"hideLabel": true,
+															"config": {}
+														},
+														{
+															"name": "status",
+															"type": "readOnly",
+															"label": "",
+															"value": "Test",
+															"hideLabel": true,
+															"config": {
+																"optionsname": "InvoiceStatusConstants"
+															}
+														}
+													]
+												}
+											}
+										],
+										"cardConfig": {
+											"showHeader": false
+										}
+									},
+									{
+										"title": "ConsolidatedBill",
+										"type": "ViewListCard",
+										"highlightTitle": true,
+										"cardElements": [
+											{
+												"list": {
+													"listTitle": {
+														"listName": "Consolidated Bill"
+													},
+													"listHeader": [
+														{
+															"value": "Billing Frequency",
+															"config": {
+																"className": ""
+															}
+														},
+														{
+															"value": "Fréquence de facturation",
+															"config": {
+																"className": "second-col-align"
+															}
+														},
+														{
+															"value": "Divisions",
+															"config": {
+																"className": "col"
+															}
+														},
+														{
+															"value": "Catégories de membres ",
+															"config": {
+																"className": "col"
+															}
+														},
+														{
+															"value": "Coverages ",
+															"config": {
+																"className": "col"
+															}
+														},
+														{
+															"value": "Status ",
+															"config": {
+																"className": "col"
+															}
+														}
+													],
+													"listRowData": [
+														{
+															"name": "billingFrequency",
+															"type": "readOnly",
+															"label": "",
+															"value": "Test",
+															"hideLabel": true,
+															"config": {
+																"childClassName": "first-col-align",
+																"childClassNameWithChild": "first-col-align-child",
+																"grandChildClassName": "first-col-align-grand-child"
+															}
+														},
+														{
+															"name": "invoicingFrequency",
+															"type": "readOnly",
+															"label": "",
+															"value": "Test",
+															"hideLabel": true,
+															"config": {}
+														},
+														{
+															"name": "divisions",
+															"type": "readOnly",
+															"label": "",
+															"value": "Test",
+															"hideLabel": true,
+															"config": {}
+														},
+														{
+															"name": "memberClasses",
+															"type": "readOnly",
+															"label": "",
+															"value": "Test",
+															"hideLabel": true,
+															"config": {}
+														},
+														{
+															"name": "coverages",
+															"type": "readOnly",
+															"label": "",
+															"value": "Test",
+															"hideLabel": true,
+															"config": {}
+														},
+														{
+															"name": "status",
+															"type": "readOnly",
+															"label": "",
+															"value": "Test",
+															"hideLabel": true,
+															"config": {}
+														}
+													]
+												}
+											}
+										],
+										"cardConfig": {
+											"showHeader": false
+										}
+									}
+								]
+							},
+							"panelFooter": {
+								"elements": []
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "panelCard",
+			"type": "panelCard",
+			"name": "panelCard",
+			"cardMembers": [
+				{
+					"cardElements": [
+						{
+							"cardConfig": {
+								"showHeader": true,
+								"showFooter": false,
+								"className": "col-md-12 col-lg-6 mb-3 reset-padding",
+								"alignmentClass": "ml-n3"
+							},
+							"panelHeader": {
+								"config": {
+									"className": "px-3"
+								},
+								"elements": [
+									{
+										"type": "readOnly",
+										"name": "currentAmountDue",
+										"label": "",
+										"placement": "mr-3",
+										"validations": {},
+										"image": "contract.png"
+									},
+									{
+										"type": "label",
+										"name": "ProductsandCoverages",
+										"label": "Informations sur le contrat",
+										"placement": "mr-1",
+										"value": "Informations sur le contrat",
+										"config": {
+											"className": "enrollment-number"
+										}
+									}
+								]
+							},
+							"panelBody": {
+								"config": {
+									"className": "card-scroll",
+									"alignment": "row"
+								},
+								"elements": [
+									{
+										"type": "readOnly",
+										"name": "situsState",
+										"label": "État du site",
+										"placement": "col-lg-6 col-sm-6",
+										"validations": {},
+										"image": "location.png",
+										"isNotMultiple": true
+									},
+									{
+										"type": "readOnly",
+										"name": "groupSize",
+										"label": "Taille de groupe",
+										"placement": "col-lg-6 col-sm-6",
+										"validations": {},
+										"image": "group.png"
+									}
+								]
+							},
+							"panelFooter": {
+								"elements": []
+							}
+						}
+					]
+				},
+				{
+					"cardElements": [
+						{
+							"cardConfig": {
+								"showHeader": true,
+								"showFooter": false,
+								"className": "col-md-12 col-lg-6 mb-3 pr-0",
+								"alignmentClass": "ml-n3"
+							},
+							"panelHeader": {
+								"config": {
+									"className": "px-3"
+								},
+								"elements": [
+									{
+										"type": "readOnly",
+										"name": "currentAmountDue",
+										"label": "",
+										"placement": "mr-3",
+										"validations": {},
+										"image": "enrollment.png"
+									},
+									{
+										"type": "label",
+										"name": "enrollmentPeriodLable",
+										"label": "Enrollment Periods",
+										"placement": "mr-1",
+										"value": "Enrollment Periods",
+										"config": {
+											"className": "enrollment-number"
+										}
+									}
+								]
+							},
+							"panelBody": {
+								"config": {
+									"className": "card-scroll"
+								},
+								"elements": [
+									{
+										"title": "enrollmentPeriods",
+										"type": "panelCard",
+										"name": "enrollmentPeriods",
+										"cardElements": [
+											{
+												"cardConfig": {
+													"showHeader": true,
+													"showFooter": false,
+													"className": "col-md-12 col-lg-12 mb-3",
+													"displayType": "multiple"
+												},
+												"panelHeader": {
+													"config": {
+														"className": "px-3",
+														"style": {
+															"backgroundColor": "#f8f8f9"
+														}
+													},
+													"elements": [
+														{
+															"type": "readOnly",
+															"name": "enrollmentPeriodKind",
+															"label": "",
+															"placement": "",
+															"value": "",
+															"config": {
+																"style": {
+																	"fontFamily": "Roboto",
+																	"fontSize": "18px",
+																	"fontWeight": "500",
+																	"fontStretch": "normal",
+																	"color": "#040404"
+																},
+																"optionsname": "EnrollmentStatusConstants"
+															}
+														}
+													]
+												},
+												"panelBody": {
+													"config": {
+														"alignment": "row"
+													},
+													"elements": [
+														{
+															"type": "readOnly",
+															"name": "effectiveDate",
+															"label": "Start Date",
+															"placement": "col-lg-4 col-sm-4",
+															"validations": {},
+															"image": "calendar.png"
+														},
+														{
+															"type": "readOnly",
+															"name": "endDate",
+															"label": "End Date",
+															"placement": "col-lg-4 col-sm-4",
+															"value": "",
+															"image": "calendar_right.png"
+														}
+													]
+												},
+												"panelFooter": {
+													"elements": []
+												}
+											}
+										]
+									},
+									{
+										"title": "enrollmentPeriods",
+										"type": "panelCard",
+										"name": "enrollmentPeriods",
+										"cardElements": [
+											{
+												"cardConfig": {
+													"showHeader": true,
+													"showFooter": false,
+													"className": "col-md-12 col-lg-12 mb-3",
+													"displayType": "multiple"
+												},
+												"panelHeader": {
+													"config": {
+														"className": "px-3",
+														"style": {
+															"backgroundColor": "#f8f8f9"
+														}
+													},
+													"elements": [
+														{
+															"type": "readOnly",
+															"name": "enrollmentPeriodKind",
+															"label": "",
+															"placement": "",
+															"value": "",
+															"config": {
+																"optionsname": "EnrollmentStatusConstants",
+																"style": {
+																	"fontFamily": "Roboto",
+																	"fontSize": "18px",
+																	"fontWeight": "500",
+																	"fontStretch": "normal",
+																	"color": "#040404"
+																}
+															}
+														}
+													]
+												},
+												"panelBody": {
+													"config": {
+														"alignment": "row"
+													},
+													"elements": [
+														{
+															"type": "readOnly",
+															"name": "effectiveDate",
+															"label": "Start Date",
+															"placement": "col-lg-4 col-sm-4",
+															"validations": {},
+															"image": "calendar.png"
+														},
+														{
+															"type": "readOnly",
+															"name": "endDate",
+															"label": "End Date",
+															"placement": "col-lg-4 col-sm-4",
+															"value": "",
+															"image": "calendar_right.png"
+														}
+													]
+												},
+												"panelFooter": {
+													"elements": []
+												}
+											}
+										]
+									},
+									{
+										"type": "readOnly",
+										"isNotMultiple": true,
+										"name": "applicationEnrollmentPeriods",
+										"label": "Application Enrollment Periods",
+										"placement": "col-lg-12 col-sm-132",
+										"validations": {},
+										"config": {
+											"displayType": "list",
+											"optionsname": "EnrollmentStatusConstants"
+										}
+									}
+								]
+							},
+							"panelFooter": {
+								"elements": []
+							}
+						}
+					]
+				}
+			]
+		}
+	],
+	"metadata":{
+		"prodAndCoverage": {
+			"header": [{
+				"header": [{
+					"content": [{
+						"content": [
+							[{
+								"content": "Term Life Insurance",
+								"placement": "",
+								"sector": "optionName",
+								"dataSegment": "coverageGeneralInformation"
+							}]
+						],
+						"placement": "prodCardHeader"
+					}]
+				}],
+				"list": [{
+					"content": [{
+							"content": [
+								[{
+										"content": "COVERAGES",
+										"placement": "arrowProdHeaderText"
+									},
+									{
+										"content": "Date effective",
+										"placement": "prodHeaderText"
+									},
+									{
+										"content": "PAID THROUGH DATE",
+										"placement": "prodHeaderText"
+									},
+									{
+										"content": "STATUS",
+										"placement": "prodHeaderText"
+									}
+								]
+							],
+							"placement": "prodHeaderContainer"
+						},
+						{
+							"content": [
+								[{
+										"content": "",
+										"placement": "prodArrowItem",
+										"dataObject": "",
+										"sector": "optionName",
+										"dataSegment": "coverageGeneralInformation"
+									},
+									{
+										"content": "",
+										"placement": "row col-lg-2 col-sm-2 prod-text-14",
+										"dataObject": "",
+										"sector": "effectiveDate",
+										"dataSegment": "coverageGeneralInformation",
+										"name": "coverage-effectivedate",
+										"label": "Date effective",
+										"elementor": true,
+										"value": "",
+										"hideLabel": true,
+										"type": "readOnly",
+										"insideSpan": true,
+										"config": {
+											"valueType": "date",
+											"format": "MM/DD/YYYY"
+										}
+									},
+									{
+										"content": "",
+										"placement": "row col-lg-2 col-sm-2 prod-text-14",
+										"dataObject": "",
+										"sector": "subscriptionDate",
+										"dataSegment": "coverageGeneralInformation",
+										"name": " coverage-subscrpitiondate",
+										"label": "Date effective",
+										"elementor": true,
+										"value": "",
+										"hideLabel": true,
+										"type": "readOnly",
+										"insideSpan": true,
+										"config": {
+											"valueType": "date",
+											"format": "MM/DD/YYYY"
+										}
+									},
+	
+									{
+										"elementor": true,
+										"content": "",
+										"placement": "row col-lg-2 col-sm-2 prod-text-14",
+										"dataObject": "",
+										"sector": "status",
+										"dataSegment": "coverageGeneralInformation",
+										"name": "status-label",
+										"type": "tile",
+										"label": "",
+										"value": "",
+										"hideLabel": true,
+										"config": {
+											"displayName": "InvoiceStatusConstants",
+											"style": {
+												"fontSize": "14px",
+												"borderRadius": "4px",
+												"backgroundColor": "#ef5a88",
+												"fontFamily": "Roboto",
+												"fontWeight": "500",
+												"fontStretch": "normal",
+												"color": "#ffffff",
+												"padding": "0px 19px 0px"
+											}
+										}
+									}
+								],
+								[{
+									"subList": {
+										"content": [
+											[{
+													"content": "",
+													"elementor": true,
+													"placement": "col-lg-1 col-sm-1 text-14 table-header text-center-align",
+													"type": "image",
+													"name": "date",
+													"label": "Date",
+													"filename": "amount-due.png",
+													"hideDefaultClass": true,
+													"value": ""
+												},
+												{
+													"content": "Date d'abonnement",
+													"elementor": true,
+													"placement": "col-lg-3 col-sm-3; mt-2 text-14",
+													"type": "readOnly",
+													"name": "effectiveDate",
+													"label": "Date d'abonnement",
+													"value": "",
+													"sector": "subscriptionDate",
+													"dataSegment": "coverageGeneralInformation",
+													"config": {
+														"valueType": "date",
+														"format": "MM/DD/YYYY"
+													}
+												},
+												{
+													"content": "Date effective",
+													"elementor": true,
+													"placement": "col-lg-4 col-sm-4; mt-2 text-14",
+													"type": "readOnly",
+													"name": "effectiveDate",
+													"label": "Date effective",
+													"value": "",
+													"sector": "effectiveDate",
+													"dataSegment": "coverageGeneralInformation",
+													"config": {
+														"valueType": "date",
+														"format": "MM/DD/YYYY"
+													}
+												}
+											]
+										],
+										"placement": "subListPlainContainer"
+									}
+								}],
+								[{
+									"subList": {
+										"content": [
+											[{
+													"content": "Coverage Attributes",
+													"placement": "headerSingleContainer1"
+												},
+												{
+													"content": "Attributes List",
+													"placement": "subheaderSingleContainer1"
+												},
+												{
+													"subChildList": {
+														"content": [
+															[{
+																"arrayList": true,
+																"content": {
+																	"header": "fieldName",
+																	"item": "fieldValue",
+																	"sector": "amount"
+																},
+																"placement": {
+																	"header": "tableHeader",
+																	"item": "tableItem"
+																},
+																"sector": "additionalDatas",
+																"dataSegment": "coverageGeneralInformation"
+															}]
+														],
+														"placement": "subTableContainer"
+													}
+												}
+											]
+										],
+										"placement": "subListPlainContainer"
+									}
+								}],
+								[{
+									"subList": {
+										"content": [
+											[{
+													"content": "Plan Designs",
+													"placement": "headerSingleContainer1"
+												},
+												{
+													"content": "Date effective: ",
+													"elementor": true,
+													"appendText": true,
+													"placement": "col-lg-11 col-sm-11 child-caret-prod prod-text-14 prod-sub-header-single-container",
+													"sector": "effectiveDatePD",
+													"dataSegment": "planDesigns",
+													"type": "readOnly",
+													"name": "plandesign-effectivedate",
+													"label": "Date effective",
+													"value": "",
+													"hideLabel": true,
+													"insideSpan": true,
+													"config": {
+														"valueType": "date",
+														"format": "MM/DD/YYYY"
+													}
+												},
+												{
+													"subChildList": {
+														"content": [
+															[{
+																	"content": "Plan Name",
+																	"placement": "tableHeader"
+																},
+																{
+																	"content": "",
+																	"placement": "tableItem",
+																	"sector": "name",
+																	"dataSegment": "planDesigns"
+																}
+															],
+															[{
+																	"content": "Plan Code",
+																	"placement": "tableHeader"
+																},
+																{
+																	"content": "",
+																	"placement": "tableItem",
+																	"sector": "identifier",
+																	"dataSegment": "planDesigns"
+																}
+															],
+															[{
+																	"content": "Date d'entrée en vigueur du plan",
+																	"placement": "tableHeader"
+																},
+																{
+																	"content": "",
+																	"placement": "tableItem",
+																	"sector": "effectiveDatePD",
+																	"dataSegment": "planDesigns"
+																}
+															],
+															[{
+																"arrayList": true,
+																"content": {
+																	"header": "attributeName",
+																	"item": "attributeValue"
+																},
+																"placement": {
+																	"header": "tableHeader",
+																	"item": "tableItem"
+																},
+																"sector": "attributesPD",
+																"dataSegment": "planDesigns"
+															}],
+															[{
+																"arrayList": true,
+																"content": {
+																	"header": "name",
+																	"item": "member",
+																	"subItem": "attributes",
+																	"subContent": {
+																		"header": "fieldName",
+																		"item": "fieldValue"
+																	}
+																},
+																"placement": {
+																	"header": "tableHeaderLine",
+																	"item": "tableItemLine",
+																	"subPlacement": {
+																		"header": "tableHeaderLine",
+																		"item": "tableItemLineAtt"
+																	}
+																},
+																"sector": "eligibleMemberClasses",
+																"dataSegment": ""
+															}],
+															[{
+																"content": "Benefits",
+																"placement": "tableSingleItem"
+															}],
+															[{
+																"arrayList": true,
+																"content": {
+																	"header": "name",
+																	"item": "subscribed",
+																	"subItem": "subscribedAttributes",
+																	"subContent": {
+																		"header": "fieldName",
+																		"item": "fieldValue"
+																	}
+																},
+																"placement": {
+																	"header": "tableHeader",
+																	"item": "tableItem",
+																	"subPlacement": {
+																		"header": "tableHeaderAtt",
+																		"item": "tableItem"
+																	}
+																},
+																"sector": "subscribedBenefits",
+																"dataSegment": "subscribedBenefits"
+															}]
+														],
+														"placement": "subTableContainer"
+													}
+												}
+											]
+										],
+										"placement": "subListPlainContainer"
+									}
+								}],
+								[{
+									"subList": {
+										"content": [
+											[{
+													"content": "Participation",
+													"placement": "headerSingleContainer1"
+												},
+												{
+													"subChildList": {
+														"content": [
+															[{
+																"placement": "col-lg-3 col-sm-3; mt-2 itemText",
+																"content": "Date d'abonnement",
+																"elementor": true,
+																"type": "readOnly",
+																"name": "effectiveDate",
+																"label": "Total Eligible Employees",
+																"value": "",
+																"sector": "eligibleEmployees",
+																"dataSegment": "coverageGeneralInformation"
+															}],
+															[{
+																	"placement": "col-lg-2 col-sm-2; mt-2 itemText",
+																	"content": "Date d'abonnement",
+																	"elementor": true,
+																	"type": "readOnly",
+																	"name": "effectiveDate",
+																	"label": "Participation requise",
+																	"value": ""
+																},
+																{
+																	"placement": "col-lg-3 col-sm-3;  itemText ",
+																	"content": "",
+																	"elementor": true,
+																	"type": "progressBar",
+																	"name": "progressBar",
+																	"bgColor": "blue",
+																	"value": "",
+																	"sector": "requiredParticipation",
+																	"dataSegment": "coverageGeneralInformation"
+																}
+															],
+															[{
+																	"placement": "col-lg-2 col-sm-2; itemText",
+																	"content": "Date d'abonnement",
+																	"elementor": true,
+																	"type": "readOnly",
+																	"name": "effectiveDate",
+																	"label": "Participation actuelle",
+																	"value": ""
+																},
+																{
+																	"placement": "col-lg-3 col-sm-3;  itemText",
+																	"content": "",
+																	"elementor": true,
+																	"type": "progressBar",
+																	"name": "progressBar",
+																	"bgColor": "green",
+																	"value": "",
+																	"sector": "currentParticipationNumber",
+																	"dataSegment": "coverageGeneralInformation"
+																}
+															],
+															[{
+																	"placement": "col-lg-2 col-sm-2; mt-2 itemText",
+																	"content": "Date d'abonnement",
+																	"elementor": true,
+																	"type": "readOnly",
+																	"name": "effectiveDate",
+																	"label": "Participation initiale",
+																	"value": ""
+																},
+																{
+																	"placement": "col-lg-3 col-sm-3; mb-2 itemText",
+																	"content": "",
+																	"elementor": true,
+																	"type": "progressBar",
+																	"name": "progressBar",
+																	"value": "",
+																	"sector": "actualParticipationNumber",
+																	"dataSegment": "coverageGeneralInformation",
+																	"bgColor": "vilot"
+																}
+															]
+														],
+														"placement": "subBoxPlainContainer"
+													}
+												}
+											]
+										],
+										"placement": "subListPlainContainer"
+									}
+								}]
+							],
+							"placement": "listPlainContainer1"
+						}
+					],
+					"placement": "prodCardItem"
+				}]
+			}]
+		},
+		"billDescInformation": {
+			"header": [{
+				"header": [{
+					"content": [{
+						"content": [
+							[{
+								"content": "Consolidated Bill",
+								"placement": "",
+								"sector": "billDetail",
+								"dataSegment": "billDescInformation"
+							}]
+						],
+						"placement": "billingCardHeader"
+					}]
+				}],
+				"list": [{
+					"content": [{
+							"content": [
+								[{
+										"content": "Billing Frequency",
+										"placement": "arrowHeaderText"
+									},
+									{
+										"content": "Fréquence de facturation",
+										"placement": "listHeaderItem"
+									},
+									{
+										"content": "Divisions",
+										"placement": "listHeaderItem"
+									},
+									{
+										"content": "Catégories de membres",
+										"placement": "listHeaderItem"
+									},
+									{
+										"content": "Coverages",
+										"placement": "listHeaderItem"
+									},
+									{
+										"content": "Status",
+										"placement": "listHeaderItem"
+									}
+								]
+							],
+							"placement": "listHeaderContainer"
+						},
+						{
+							"content": [
+								[{
+										"content": "Monthly",
+										"placement": "arrowListItem",
+										"sector": "",
+										"dataSegment": "billDescInformation"
+									},
+									{
+										"elementor": true,
+										"content": "",
+										"placement": "col-lg-2 col-sm-2 text-16",
+										"dataObject": "",
+										"sector": "invoiceFrequency",
+										"dataSegment": "billDescInformation",
+										"name": "invoiceFrequency-label",
+										"type": "tile",
+										"label": "",
+										"value": "",
+										"hideLabel": true,
+										"config": {
+											"displayName": "FrequencyConstants"
+										}
+									},
+									{
+										"content": "",
+										"placement": "itemText",
+										"element": 0,
+										"sector": "divisions",
+										"dataSegment": "billDescInformation"
+									},
+									{
+										"content": "",
+										"placement": "itemText",
+										"element": 0,
+										"sector": "memberClasses",
+										"dataSegment": "billDescInformation"
+									},
+									{
+										"content": "",
+										"placement": "itemText",
+										"element": 0,
+										"sector": "coverages",
+										"dataSegment": "billDescInformation"
+									},
+									{
+										"content": "",
+										"placement": "itemText",
+										"sector": "status",
+										"dataSegment": "billDescInformation"
+									}
+								]
+							],
+							"placement": "listPlainContainer"
+						},
+						{
+							"content": [
+								[{
+										"content": "prochaine date d'échéance",
+										"placement": "headerText"
+									},
+									{
+										"content": "Amount Due",
+										"placement": "headerText"
+									},
+									{
+										"content": "Payment Status",
+										"placement": "headerText"
+									},
+									{
+										"content": "Last Payment Date",
+										"placement": "headerText"
+									},
+									{
+										"content": "Payeur",
+										"placement": "headerText"
+									},
+									{
+										"content": "Paid Through Date",
+										"placement": "headerText"
+									}
+								],
+								[{
+										"sector": "nextDueDate",
+										"dataSegment": "billDescInformation",
+										"content": "",
+										"placement": "col-lg-2 col-sm-2 text-16",
+										"dataObject": "",
+										"name": "nextDueDate-effectivedate",
+										"label": "Date effective",
+										"elementor": true,
+										"value": "",
+										"hideLabel": true,
+										"type": "readOnly",
+										"insideSpan": true,
+										"config": {
+											"valueType": "date",
+											"format": "MM/DD/YYYY"
+										}
+									},
+									{
+										"content": "0",
+										"placement": "itemText",
+										"sector": "amount",
+										"dataSegment": "billDescInformation.dueAmount"
+									},
+									{
+										"content": "",
+										"placement": "itemText",
+										"sector": "payMentStatus",
+										"dataSegment": "billDescInformation"
+									},
+	
+									{
+										"content": "",
+										"sector": "latPayMentDate",
+										"dataSegment": "billDescInformation",
+										"placement": "col-lg-2 col-sm-2 text-16",
+										"dataObject": "",
+										"name": "nextDueDate-effectivedate",
+										"label": "Date effective",
+										"elementor": true,
+										"value": "",
+										"hideLabel": true,
+										"type": "readOnly",
+										"insideSpan": true,
+										"config": {
+											"valueType": "date",
+											"format": "MM/DD/YYYY"
+										}
+									},
+									{
+										"content": "",
+										"placement": "itemText",
+										"sector": "payer",
+										"dataSegment": "billDescInformation"
+									},
+	
+									{
+										"content": "",
+										"sector": "paidThroughDate",
+										"dataSegment": "billDescInformation",
+										"placement": "col-lg-2 col-sm-2 text-16",
+										"dataObject": "",
+										"name": "nextDueDate-effectivedate",
+										"label": "Date effective",
+										"elementor": true,
+										"value": "",
+										"hideLabel": true,
+										"type": "readOnly",
+										"insideSpan": true,
+										"config": {
+											"valueType": "date",
+											"format": "MM/DD/YYYY"
+										}
+									}
+								]
+							],
+							"placement": "headerContainer"
+						},
+						{
+							"content": [
+								[{
+										"content": "Billing & Invoicing Settings",
+										"placement": "headerSingleContainer",
+										"sector": "",
+										"dataSegment": "billDescInformation"
+									},
+									{
+										"content": "Billed Entity",
+										"placement": "subheaderSingleContainer"
+									},
+									{
+										"subList": {
+											"content": [
+												[{
+														"content": "Divisions",
+														"placement": "subHeaderText"
+													},
+													{
+														"content": "Catégories de membres",
+														"placement": "subHeaderText"
+													},
+													{
+														"content": "Coverages",
+														"placement": "subHeaderText"
+													}
+												],
+												[{
+														"content": "",
+														"placement": "subItemText",
+														"element": 0,
+														"sector": "divisions",
+														"dataSegment": "billDescInformation"
+													},
+													{
+														"content": "",
+														"placement": "subItemText",
+														"element": 0,
+														"sector": "memberClasses",
+														"dataSegment": "billDescInformation"
+													},
+													{
+														"content": "",
+														"placement": "subItemText",
+														"element": 0,
+														"sector": "coverages",
+														"dataSegment": "billDescInformation"
+													}
+												]
+											],
+											"placement": "subheaderPlainContainer"
+										}
+									},
+									{
+										"content": "Billing Information",
+										"placement": "subheaderSingleContainer",
+										"sector": "",
+										"dataSegment": "billDescInformation"
+									},
+									{
+										"subList": {
+											"content": [
+												[{
+														"content": "Billing Mode",
+														"placement": "headerText"
+													},
+													{
+														"content": "Billing Frequency",
+														"placement": "headerText"
+													},
+													{
+														"content": "Billing Lead Time (In Days)",
+														"placement": "headerText"
+													},
+													{
+														"content": "Billing Lead Time Calculation",
+														"placement": "headerText"
+													},
+													{
+														"content": "Billing Start Date",
+														"placement": "headerText"
+													},
+													{
+														"content": "Billing Synchronizatio",
+														"placement": "headerText"
+													}
+												],
+												[{
+														"content": "",
+														"placement": "itemText",
+														"sector": "billDetail",
+														"dataSegment": "billDescInformation"
+													},
+													{
+														"content": "",
+														"placement": "itemText",
+														"sector": "",
+														"dataSegment": "billDescInformation"
+													},
+													{
+														"content": "",
+														"placement": "itemText",
+														"sector": "billingLeadTime",
+														"dataSegment": "billDescInformation"
+													},
+	
+													{
+														"content": "",
+														"placement": "col-lg-2 col-sm-2 text-16",
+														"sector": "billingLeadTimeCalculation",
+														"dataSegment": "billDescInformation",
+														"elementor": true,
+														"dataObject": "",
+														"name": "invoiceFrequency-label",
+														"type": "tile",
+														"label": "",
+														"value": "",
+														"hideLabel": true,
+														"config": {
+															"displayName": "PaymentStatusConstants"
+														}
+													},
+													{
+														"content": "",
+														"placement": "itemText",
+														"sector": "billingStartDate",
+														"dataSegment": "billDescInformation"
+													},
+													{
+														"content": "",
+														"placement": "itemText",
+														"sector": "",
+														"billingSyncDate": "billDescInformation"
+													}
+												]
+											],
+											"placement": "subheaderPlainContainer"
+										}
+									},
+									{
+										"content": "Invoice Information",
+										"placement": "subheaderSingleContainer",
+										"sector": "",
+										"dataSegment": "billDescInformation"
+									},
+									{
+										"subList": {
+											"content": [
+												[{
+														"content": "Fréquence de facturation",
+														"placement": "headerText"
+													},
+													{
+														"content": "Invoicing Lead Time (In Days)",
+														"placement": "headerText"
+													},
+													{
+														"content": "Invoicing Lead Time Calculation",
+														"placement": "headerText"
+													},
+													{
+														"content": "Invoicing Start Date",
+														"placement": "headerText"
+													},
+													{
+														"content": "Invoicing Synchronization Date",
+														"placement": "headerText"
+													}
+												],
+												[
+	
+													{
+														"elementor": true,
+														"content": "",
+														"placement": "col-lg-2 col-sm-2 text-16",
+														"dataObject": "",
+														"sector": "invoiceFrequency",
+														"dataSegment": "billDescInformation",
+														"name": "invoiceFrequency-label",
+														"type": "tile",
+														"label": "",
+														"value": "",
+														"hideLabel": true,
+														"config": {
+															"displayName": "FrequencyConstants"
+														}
+													},
+													{
+														"content": "",
+														"placement": "itemText",
+														"sector": "invoicingLeadTime",
+														"dataSegment": "billDescInformation"
+													},
+													{
+														"content": "",
+														"sector": "invoicingLeadTimeCalculation",
+														"dataSegment": "billDescInformation",
+														"elementor": true,
+														"placement": "col-lg-2 col-sm-2 text-16",
+														"dataObject": "",
+														"name": "invoiceFrequency-label",
+														"type": "tile",
+														"label": "",
+														"value": "",
+														"hideLabel": true,
+														"config": {
+															"displayName": "PaymentStatusConstants"
+														}
+													},
+													{
+														"content": "",
+														"sector": "invoicingStartDate",
+														"dataSegment": "billDescInformation",
+														"placement": "row col-lg-2 col-sm-2 prod-text-14",
+														"dataObject": "",
+														"name": "coverage-effectivedate",
+														"label": "Date effective",
+														"elementor": true,
+														"value": "",
+														"hideLabel": true,
+														"type": "readOnly",
+														"insideSpan": true,
+														"config": {
+															"valueType": "date",
+															"format": "MM/DD/YYYY"
+														}
+													},
+													{
+														"content": "",
+														"placement": "itemText",
+														"sector": "invoicingSyncDate",
+														"dataSegment": "billDescInformation"
+													}
+												]
+											],
+											"placement": "subheaderPlainContainer"
+										}
+									},
+									{
+										"content": "Informations sur le payeur",
+										"placement": "subheaderSingleContainer"
+									},
+									{
+										"subList": {
+											"content": [
+												[{
+														"content": "Payeur",
+														"placement": "subHeaderText"
+													},
+													{
+														"content": "Send Bill To",
+														"placement": "subHeaderText"
+													},
+													{
+														"content": "adresse de facturation",
+														"placement": "subHeaderText"
+													}
+												],
+												[{
+														"content": "",
+														"placement": "subItemText",
+														"sector": "payer",
+														"dataSegment": "billDescInformation"
+													},
+													{
+														"content": "",
+														"placement": "subItemText",
+														"sector": "sendBillTo",
+														"dataSegment": "billDescInformation"
+													},
+													{
+														"content": "",
+														"placement": "subItemText",
+														"sector": "billingAddress",
+														"dataSegment": "billDescInformation"
+													}
+												]
+											],
+											"placement": "subheaderPlainContainer"
+										}
+									}
+								]
+							],
+							"placement": "headerPlainContainer"
+						}
+					],
+					"placement": "billingCardItem"
+				}]
+			}]
+		}
+	},
+	"placementStyle":[
+		{
+		  "billingCardHeader": {
+			"placement": "row col-lg-12 col-sm-12 text-16 header-single-container"
+		  }
+		},
+		{
+		  "billingCardItem": {
+			"placement": "row col-lg-12 col-sm-12 billing-card-item"
+		  }
+		},
+		{
+		  "listHeaderContainer": {
+			"placement": "col-lg-12 col-sm-12"
+		  }
+		},
+		{
+		  "listPlainContainer": {
+			"placement": "col-lg-12 col-sm-12 list-row"
+		  }
+		},
+		{
+		  "headerContainer": {
+			"placement": "col-lg-12 col-sm-12 nested header-container"
+		  }
+		},
+		{
+		  "headerSingleContainer": {
+			"placement": "col-lg-12 col-sm-12 child-caret text-16 header-single-container"
+		  }
+		},
+		{
+		  "headerPlainContainer": {
+			"placement": "col-lg-12 col-sm-12 nested header-plain-container"
+		  }
+		},
+		{
+		  "subheaderSingleContainer": {
+			"placement": "col-lg-11 col-sm-11 nested text-16 sub-header-single-container"
+		  }
+		},
+		{
+		  "subheaderPlainContainer": {
+			"placement": "col-lg-11 col-sm-11 nested text-16 sub-header-plain-container list-border"
+		  }
+		},
+		{
+		  "headerText": {
+			"placement": "col-lg-2 col-sm-2 text-14"
+		  }
+		},
+		{
+		  "subHeaderText": {
+			"placement": "col-lg-3 col-sm-3 text-14"
+		  }
+		},
+		{
+		  "itemText": {
+			"placement": "col-lg-2 col-sm-2 text-16"
+		  }
+		},
+		{
+		  "arrowListItem": {
+			"placement": "col-lg-2 col-sm-2 caret text-16 arrow-list-item"
+		  }
+		},
+		{
+		  "listItem": {
+			"placement": "col-lg-2 col-sm-2 text-14 list-item"
+		  }
+		},
+		{
+		  "arrowHeaderText": {
+			"placement": "col-lg-2 col-sm-2 text-14 arrow-header-text"
+		  }
+		},
+		{
+		  "listHeaderItem": {
+			"placement": "col-lg-2 col-sm-2 text-14"
+		  }
+		},
+		{
+		  "subItemText": {
+			"placement": "col-lg-3 col-sm-3 text-16"
+		  }
+		},
+		{
+		  "prodCardHeader": {
+			"placement": "row col-lg-12 col-sm-12 prod-card-header"
+		  }
+		},
+		{
+		  "prodCardItem": {
+			"placement": "row col-lg-12 col-sm-12 prod-card-item"
+		  }
+		},
+		{
+		  "prodHeaderContainer": {
+			"placement": "col-lg-12 col-sm-12 tprod-header-container"
+		  }
+		},
+		{
+		  "arrowProdHeaderText": {
+			"placement": "row col-lg-4 col-sm-4 prod-text-14 font-bold"
+		  }
+		},
+		{
+		  "prodHeaderText": {
+			"placement": "row col-lg-2 col-sm-2 prod-text-14 font-bold"
+		  }
+		},
+		{
+		  "prodArrowItem": {
+			"placement": "row col-lg-4 col-sm-4 caret-prod prod-text-14 font-bold font-block"
+		  }
+		},
+		{
+		  "prodChildArrowItem": {
+			"placement": "row col-lg-4 col-sm-4 caret-prod prod-text-14 padding-right-40"
+		  }
+		},
+		{
+		  "prodDisabledArrowItem": {
+			"placement": "row col-lg-4 col-sm-4 caret-prod prod-text-14 padding-right-40 font-block"
+		  }
+		},
+		{
+		  "prodItem": {
+			"placement": "row col-lg-2 col-sm-2 prod-text-14"
+		  }
+		},
+		{
+		  "prodDisabledItem": {
+			"placement": "row col-lg-2 col-sm-2 prod-text-14 font-gray"
+		  }
+		},
+		{
+		  "listPlainContainer1": {
+			"placement": "col-lg-12 col-sm-12 list-border padding-left"
+		  }
+		},
+		{
+		  "subListPlainContainer": {
+			"placement": "col-lg-12 col-sm-12 nested list-border padding-zero margin-top-bottom"
+		  }
+		},
+		{
+		  "subTableContainer": {
+			"placement": "col-lg-11 col-sm-11 nested table-border"
+		  }
+		},
+		{
+		  "subBoxPlainContainer": {
+			"placement": "sub-box-container"
+		  }
+		},
+		{
+		  "headerSingleContainer1": {
+			"placement": "col-lg-12 col-sm-12 prod-header-single-container"
+		  }
+		},
+		{
+		  "subheaderSingleContainer1": {
+			"placement": "col-lg-11 col-sm-11 child-caret-prod prod-text-14 prod-sub-header-single-container"
+		  }
+		},
+		{
+		  "tableHeader": {
+			"placement": "col-lg-13 col-sm-3 prod-text-14 table-header"
+		  }
+		},
+		{
+		  "tableHeaderLine": {
+			"placement": "col-lg-13 col-sm-3 lst-text-14 table-header-line"
+		  }
+		},
+		{
+		  "tableHeaderAtt": {
+			"placement": "col-lg-13 col-sm-3 text-th table-header"
+		  }
+		},
+		{
+		  "tableItem": {
+			"placement": "col-lg-3 col-sm-3 prod-text-14 table-item"
+		  }
+		},
+		{
+		  "tableItemLine": {
+			"placement": "col-lg-3 col-sm-3 lst-text-14 table-item-line"
+		  }
+		},
+		{
+		  "tableItemLineAtt": {
+			"placement": "col-lg-3 col-sm-3 prod-text-att table-item-line"
+		  }
+		},
+		{
+		  "tableSingleItem": {
+			"placement": "col-lg-12 col-sm-12 prod-text-14 table-item-bold"
+		  }
+		}
+	]
+}

@@ -1,0 +1,35 @@
+ {
+   
+  
+  
+
+ 
+
+    "workEmailAddress":{
+      "dataType": "object",
+      "name": "pcOptions"
+    },
+    "personalEmailAddress":{
+      "dataType": "object",
+      "name": "pcOptions"
+    },
+    "postalMail":{
+      "dataType": "object",
+      "name": "pcOptions"
+    },
+    "workPhone":{
+      "dataType": "object",
+      "name": "pcOptions"
+    },
+    "personalPhone":{
+      "dataType": "object",
+      "name": "pcOptions"
+    },
+    "textMessage":{
+      "dataType": "object",
+      "name": "pcOptions"
+    }
+  
+  
+ 
+}

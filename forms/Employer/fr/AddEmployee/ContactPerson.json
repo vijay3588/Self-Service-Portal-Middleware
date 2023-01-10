@@ -1,0 +1,396 @@
+{
+  "isMultiple": true,
+  "multiConfig": {
+    "maxAdds": 3,
+    "tableHeader": [
+      {
+        "value": "contact Name",
+        "config": {
+          "className": ""
+        }
+      },
+      {
+        "value": "Adresse postale",
+        "config": {
+          "className": ""
+        }
+      },
+      {
+        "value": "Phone Number",
+        "config": {
+          "className": ""
+        }
+      },
+      {
+        "value": "Email",
+        "config": {
+          "className": ""
+        }
+      }
+    ],
+    "tableRow": [
+      {
+        "value": "data.contactName",
+        "type": "expression"
+      },
+      {
+        "value": "`${data.lineOne ? `${data.lineOne}, ` : ''}${data.lineTwo ? `${data.lineTwo}, ` : ''}${ (data.city) ? `${data.city}, ` : '' }${data.state ? `${data.state} ` : ''}${(data.zipCode ) ? `${data.zipCode}, ` : ''}${data.country || ''}`",
+        "type": "expression"
+      },
+      {
+        "value": "data.phoneNumberPrimary",
+        "type": "expression"
+      },
+      {
+        "value": "eamil",
+        "type": "email"
+      }
+    ],
+    "addButtonLabel": "New Contact Person"
+  },
+  "elements": [
+    [
+      {
+        "type": "text",
+        "name": "contactName",
+        "rearSector": "contactName",
+        "label": "Contact Name",
+        "placement": "col-md-5 col-12",
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis"
+          }
+        }
+      },
+      {
+        "type": "text",
+        "name": "relationToEmployee",
+        "label": "Relation to Employee",
+        "placement": "col-md-5 col-12",
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis"
+          }
+        }
+      }
+    ],
+    [
+      {
+        "type": "select",
+        "name": "existingAddress",
+        "label": "Select an Existing Address",
+        "placement": "col-md-5 col-12",
+        "populateDataConfig":{
+          "dataField" : "existingAddress",
+          "dataSource" : "ContactInfo",
+          "dataFormat": "`${data.lineOne ? `${data.lineOne}, ` : ''}${data.lineTwo ? `${data.lineTwo}, ` : ''}${ (data.city) ? `${data.city}, ` : '' }${data.state ? `${data.state} ` : ''}${(data.zipCode ) ? `${data.zipCode}, ` : ''}${data.country || ''}`"
+        },
+        "validations": {}
+      },
+      {
+        "type": "checkbox",
+        "name": "createNewAddress",
+        "label": "Create New Address",
+        "resetMappingDataConfig": {
+          "dataSource" : "ContactInfo",
+          "dataField" : "existingAddress"
+        },
+        "placement": "col-md-5 col-12"
+      }
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "Adresse postale",
+        "displayConfig": {
+          "field":"createNewAddress", 
+          "show":true
+        }
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "name": "lineOne",
+        "rearSector": "line1",
+        "label": "Line 1",
+        "placement": "col-md-6 col-12",
+        "displayConfig": {
+          "field":"createNewAddress", 
+          "show":true,
+          "formDataMapOnHide": true
+        },
+        "mappingDataConfig":{
+          "dataSource" : "ContactInfo",
+          "dataField" : "existingAddress"
+        },
+        "validations": {
+          "string": {
+            "validationRequiredOnTrue": {"value": "createNewAddress", "message": "Ce champ est requis"}
+          }
+        }
+      },
+      {
+        "type": "text",
+        "name": "lineTwo",
+        "rearSector": "line2",
+        "label": "Line 2",
+        "placement": "col-md-6 col-12",
+        "displayConfig": {
+          "field":"createNewAddress", 
+          "show":true,
+          "formDataMapOnHide": true
+        },
+        "mappingDataConfig":{
+          "dataSource" : "ContactInfo",
+          "dataField" : "existingAddress"
+        }
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "name": "city",
+        "rearSector": "city",
+        "label": "Ville",
+        "placement": "col-md-4 col-12",
+        "displayConfig": {
+          "field":"createNewAddress", 
+          "show":true,
+          "formDataMapOnHide": true
+        },
+        "mappingDataConfig":{
+          "dataSource" : "ContactInfo",
+          "dataField" : "existingAddress"
+        },
+        "validations": {
+          "string": {
+            "validationRequiredOnTrue": {"value": "createNewAddress", "message": "Ce champ est requis"}
+          }
+        }
+      },
+      {
+        "type": "select",
+        "name": "state",
+        "rearSector": "state",
+        "label": "État",
+        "placement": "col-md-2 col-12",
+        "optionsname": "StateConstants",
+        "options": "",
+        "displayConfig": {
+          "field":"createNewAddress", 
+          "show":true,
+          "formDataMapOnHide": true
+        },
+        "mappingDataConfig":{
+          "dataSource" : "ContactInfo",
+          "dataField" : "existingAddress"
+        },
+        "validations": {
+          "string": {
+            "validationRequiredOnTrue": {"value": "createNewAddress", "message": "Ce champ est requis"}
+          }
+        }
+      },
+      {
+        "type": "text",
+        "name": "zipCode",
+        "rearSector": "zipCode",
+        "label": "Code postal",
+        "placement": "col-md-2 col-12",
+        "displayConfig": {
+          "field":"createNewAddress", 
+          "show":true,
+          "formDataMapOnHide": true
+        },
+        "mappingDataConfig":{
+          "dataSource" : "ContactInfo",
+          "dataField" : "existingAddress"
+        },
+        "validations": {
+          "string": {
+            
+            "validationRequiredOnTrue": {"value": "createNewAddress", "message": "Ce champ est requis"}
+          }
+        }
+      },
+      {
+        "type": "select",
+        "name": "country",
+        "rearSector": "country",
+        "label": "Pays",
+        "value": "USA",
+        "placement": "col-md-4 col-12",
+        "options": "",
+        "optionsname": "CountryConstants",
+        "displayConfig": {
+          "field":"createNewAddress", 
+          "show":true,
+          "formDataMapOnHide": true
+        },
+        "mappingDataConfig":{
+          "dataSource" : "ContactInfo",
+          "dataField" : "existingAddress"
+        },
+        "validations": {
+          "string": {
+            "validationRequiredOnTrue": {"value": "createNewAddress", "message": "Ce champ est requis"}
+          }
+        }
+      }
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "Phone and Email Information",
+        "displayConfig": {
+          "field":"createNewAddress", 
+          "show":true
+        }
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "name": "phoneNumberPrimary",
+        "label": "Phone Number (Primary)",
+        "placement": "col-md-4 col-12",
+        "displayConfig": {
+          "field":"createNewAddress", 
+          "show":true
+        },
+        "mappingDataConfig":{
+          "dataSource" : "ContactInfo",
+          "dataField" : "existingAddress"
+        },
+        "validations": {
+          "string": {
+            "validationRequiredOnTrue": {"value": "createNewAddress", "message": "Ce champ est requis"},
+            
+            "matches": {"regex": "^\\((\\d{3})\\)(\\d{3})[- ](\\d{4})$" ,
+              "message": "Phone Number must be in (***)***-**** format"}
+          }
+        }
+      },
+      {
+        "type": "text",
+        "name": "extPrimary",
+        "label": "Ext",
+        "placement": "col-md-2 col-12",
+        "displayConfig": {
+          "field":"createNewAddress", 
+          "show":true,
+          "formDataMapOnHide": true
+        },
+        "mappingDataConfig":{
+          "dataSource" : "ContactInfo",
+          "dataField" : "existingAddress"
+        }
+      },
+      {
+        "type": "text",
+        "name": "phoneNumberSecondary",
+        "label": "Phone Number (Secondary)",
+        "placement": "col-md-4 col-12",
+        "displayConfig": {
+          "field":"createNewAddress", 
+          "show":true,
+          "formDataMapOnHide": true
+        },
+        "mappingDataConfig":{
+          "dataSource" : "ContactInfo",
+          "dataField" : "existingAddress"
+        },
+        "validations": {
+          "string": {
+            "validationRequiredOnTrue": {"value": "createNewAddress", "message": "Ce champ est requis"},
+           
+            "matches": {"regex": "^\\((\\d{3})\\)(\\d{3})[- ](\\d{4})$" ,
+              "message": "Phone Number must be in (***)***-**** format"}
+          }
+        }
+      },
+      {
+        "type": "text",
+        "name": "extSecondary",
+        "label": "Ext",
+        "placement": "col-md-2 col-12",
+        "displayConfig": {
+          "field":"createNewAddress", 
+          "show":true,
+          "formDataMapOnHide": true
+        },
+        "mappingDataConfig":{
+          "dataSource" : "ContactInfo",
+          "dataField" : "existingAddress"
+        }
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "name": "faxNumber",
+        "rearSector": "fax",
+        "label": "Fax Number",
+        "placement": "col-md-4 col-12",
+        "displayConfig": {
+          "field":"createNewAddress", 
+          "show":true,
+          "formDataMapOnHide": true
+        },
+        "mappingDataConfig":{
+          "dataSource" : "ContactInfo",
+          "dataField" : "existingAddress"
+        },
+        "validations": {
+          "string": {
+            "validationRequiredOnTrue": {"value": "createNewAddress", "message": "Ce champ est requis"},
+          
+            "matches": {"regex": "^\\((\\d{3})\\)(\\d{3})[- ](\\d{4})$" ,
+              "message": "Fax Number must be in (***)***-**** format"}
+          }
+        }
+      },
+      {
+        "type": "email",
+        "name": "email",
+        "rearSector": "eMail",
+        "label": "Email",
+        "placement": "col-md-4 col-12",
+        "displayConfig": {
+          "field":"createNewAddress", 
+          "show":true,
+          "formDataMapOnHide": true
+        },
+        "mappingDataConfig":{
+          "dataSource" : "ContactInfo",
+          "dataField" : "existingAddress"
+        },
+        "validations": {
+          "string": {
+            "validationRequiredOnTrue": {"value": "createNewAddress", "message": "Ce champ est requis"},
+            "email": "Invalid email address"
+          }
+        }
+      },
+      {
+        "type": "select",
+        "name": "preferredContactMethod",
+        "rearSector": "mediaType",
+        "label": "Preferred Contact Method",
+        "optionsname": "PreferredContactConstants",
+        "placement": "col-md-4 col-12",
+        "options": "",
+        "displayConfig": {
+          "field":"createNewAddress", 
+          "show":true,
+          "formDataMapOnHide": true
+        },
+        "mappingDataConfig":{
+          "dataSource" : "ContactInfo",
+          "dataField" : "existingAddress"
+        }
+      }
+    ]
+  ]
+}

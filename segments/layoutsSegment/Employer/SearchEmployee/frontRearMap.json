@@ -1,0 +1,17 @@
+[
+  {
+    "frontDataSegment": "SearchForAnEmployee",
+    "rearDataSegmentClass": "aSPLI_GetEmployee_In",
+    "rearDataSegment": "paramIn",
+    "rearDataSegmentPath": "",
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping": [
+      {
+        "frontDataSegmentPath": "loggedUserEntity._Result.clientId",
+        "frontSector": "buid",
+        "rearSector": "lEBuid",
+        "defaultValue": ""
+      }
+    ]
+  }
+]

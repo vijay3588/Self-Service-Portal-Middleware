@@ -1,0 +1,4 @@
+{
+    "viewHeader": {"dataType": "object", "name": "viewHeader"},
+    "contractAndLoan": {"dataType": "object", "name": "contractAndLoan" }
+}

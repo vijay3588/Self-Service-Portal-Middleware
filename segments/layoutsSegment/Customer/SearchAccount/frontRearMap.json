@@ -1,0 +1,13 @@
+[
+ 
+  {
+    "frontDataSegment": "values",
+    "rearDataSegment":"clientAccountID",
+    "rearDataSegmentPath": "",
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping" : [
+      {"frontSector": "buid", "rearSector": "buid", "defaultValue": ""}
+    ]
+  }
+  
+]

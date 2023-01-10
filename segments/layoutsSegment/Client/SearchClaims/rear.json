@@ -1,0 +1,14 @@
+{
+    "criteria": {
+        "dataType": "object",
+        "name": "aSPLIC_ClaimCriteria_In"
+    },
+    "self": {
+        "dataType": "object",
+        "name": "aSLIC_Consult_Claim"
+    },
+    "maxSize": {
+        "dataType": "number",
+        "defaultValue": 4
+    }
+}

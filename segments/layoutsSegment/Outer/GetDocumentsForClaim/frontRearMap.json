@@ -1,0 +1,15 @@
+[
+  {
+    "frontDataSegment": "viewDetail",
+    "rearDataSegment":"claimID",
+    "rearDataSegmentClass": "aSPLIC_ClaimIdentifier",
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "id",
+        "rearSector": "bUID",
+        "defaultValue": ""
+      }
+    ]
+  }
+]

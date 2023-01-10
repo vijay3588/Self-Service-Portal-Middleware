@@ -1,0 +1,9 @@
+{
+    "billNumber": {"dataType": "number", "defaultValue": ""},
+    "amount": {"dataType": "number", "defaultValue": ""},
+    "fromDate": {"dataType": "date", "defaultValue": ""},
+    "toDate": {"dataType": "date", "defaultValue": ""},
+    "contractNumber": {"dataType": "number", "defaultValue": ""},
+    "dueDate": {"dataType": "number", "defaultValue": ""},
+    "paidAmount": {"dataType": "date", "defaultValue": ""}
+}

@@ -1,0 +1,11 @@
+{
+    "input": {
+        "dataType": "object",
+        "name": "legalEntity",
+        "reduxObject":true
+    },
+    "self": {
+        "dataType": "string",
+        "defaultValue": "aSLI_Manage_Actors"
+    }
+}

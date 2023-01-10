@@ -1,0 +1,7 @@
+{
+    "input": {
+        "dataType": "object",
+        "name": "loggedUserEntity",
+        "reduxObject":true
+    }
+}

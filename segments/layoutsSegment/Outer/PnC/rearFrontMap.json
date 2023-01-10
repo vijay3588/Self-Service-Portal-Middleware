@@ -1,0 +1,61 @@
+[
+    {
+        "frontSegment": "insuredInformation",
+        "dataParentSegment": "data.insuredInformation",
+        "dataSegmentType": "object",
+        "defaultSectorMapping": [
+            {
+                "frontSector": "name",
+                "rearSector": "firstname",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "gender",
+                "rearSector": "gender",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "dateofbirth",
+                "rearSector": "dateofbirth",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "address",
+                "rearSector": "address",
+                "defaultValue": ""
+            }
+        ]
+    },
+    {
+        "frontSegment": "policyInformation",
+        "dataParentSegment": "data.policyInformation",
+        "dataSegmentType": "array",
+        "defaultSectorMapping": [
+            {
+                "frontSector": "policy_id",
+                "rearSector": "policy_id",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "reference",
+                "rearSector": "reference",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "effectivedate",
+                "rearSector": "effectivedate",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "premium",
+                "rearSector": "premium",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "vehiclesCovered",
+                "rearSector": "vehiclesCovered",
+                "defaultValue": ""
+            }
+        ]
+    }
+  ]

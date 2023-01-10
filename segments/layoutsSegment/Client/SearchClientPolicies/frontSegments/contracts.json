@@ -1,0 +1,8 @@
+{
+    "internalPolicyId": {"dataType": "string", "defaultValue": ""},
+    "effectiveDate": {"dataType": "date", "defaultValue": ""},
+    "terminationDate": {"dataType": "date", "defaultValue": ""},
+    "status": {"dataType": "string", "defaultValue": ""},
+    "buid": {"dataType": "string", "defaultValue": ""},
+    "issuingCompanyCode": {"dataType": "string", "defaultValue": ""}
+}

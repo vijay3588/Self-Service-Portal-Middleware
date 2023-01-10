@@ -1,0 +1,106 @@
+[
+  {
+    "frontDataSegment": "data",
+    "frontDataSegmentPath": "loggedUserEntity",
+
+    "mappingSectorOnly": true,
+    "rearDataSegmentType": "object",
+
+    "defaultSectorMapping": [
+      {
+        "frontSector": "internalClientId",
+        "frontDataSegmentPath": "_Result.clientId",
+        "rearSector": "clientId",
+        "defaultValue": 0
+      }
+    ]
+  },
+
+  {
+    "frontDataSegment": "PersonalInformation",
+    "frontDataSegmentPath": "values",
+    "rearDataSegment": "dependentMiddleName",
+    "rearDataSegmentClass": "empProfile",
+    "rearDataSegmentPath": "dependentMiddleName",
+    "rearDataSegmentType": "object",
+
+    "defaultSectorMapping": [
+      {
+        "frontSector": "dependentMiddleNameRequired",
+        "rearSector": "requiredField",
+        "defaultValue": false
+      },
+      {
+        "frontSector": "dependentMiddleNameToggle",
+        "rearSector": "hideableField",
+        "defaultValue": false
+      }
+    ]
+  },
+
+  {
+    "frontDataSegment": "PersonalInformation",
+    "frontDataSegmentPath": "values",
+    "rearDataSegment": "liveInSameAddress",
+    "rearDataSegmentClass": "empProfile",
+    "rearDataSegmentPath": "liveInSameAddress",
+    "rearDataSegmentType": "object",
+
+    "defaultSectorMapping": [
+      {
+        "frontSector": "dependentAddressSameAsEmployeeRequired",
+        "rearSector": "requiredField",
+        "defaultValue": false
+      },
+      {
+        "frontSector": "dependentAddressSameAsEmployeeToggle",
+        "rearSector": "hideableField",
+        "defaultValue": false
+      }
+    ]
+  },
+
+  {
+    "frontDataSegment": "PersonalInformation",
+    "frontDataSegmentPath": "values",
+    "rearDataSegment": "dependentAddressLine2",
+    "rearDataSegmentClass": "empProfile",
+    "rearDataSegmentPath": "dependentAddressLine2",
+    "rearDataSegmentType": "object",
+
+    "defaultSectorMapping": [
+      {
+        "frontSector": "dependentStreetAddress2Required",
+        "rearSector": "requiredField",
+        "defaultValue": false
+      },
+      {
+        "frontSector": "dependentStreetAddress2Toggle",
+        "rearSector": "hideableField",
+        "defaultValue": false
+      }
+    ]
+  },
+
+  {
+    "frontDataSegment": "PersonalInformation",
+    "frontDataSegmentPath": "values",
+    "rearDataSegment": "dependentCountry",
+    "rearDataSegmentClass": "empProfile",
+    "rearDataSegmentPath": "dependentCountry",
+    "rearDataSegmentType": "object",
+
+    "defaultSectorMapping": [
+      {
+        "frontSector": "dependentCountryRequired",
+        "rearSector": "requiredField",
+        "defaultValue": false
+      },
+      {
+        "frontSector": "dependentCountryToggle",
+        "rearSector": "hideableField",
+        "defaultValue": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,143 @@
+{
+  "searchConfig": {
+    "tableHeader": [
+      { "value": "CERTIFICATE NUMBER", "config": { "className": "" } },
+ 
+      { "value": "EMPLOYEE NAME", "config": { "className": "" } },
+
+      { "value": "STATUS", "config": { "className": "" } },
+      { "value": "EFFECTIVE DATE", "config": { "className": "" } },
+      { "value": "TERMINATION DATE", "config": { "className": "" } },
+      { "value": "TERMINATION REASON", "config": { "className": "" } }
+    ],
+    "tableRow": [
+      {
+        "value": "pickerData?.contract?.internalPolicyIdentifier?.internalPolicyId",
+        "type": "expression"
+      },
+   
+      {
+       
+        "value": "pickerData?.subscribers?.[0]",
+        "type": "expression"
+      },
+  
+      {
+        "value": "pickerData.status",
+        "type": "expression",
+        "config": {
+          "displayName": "EnrollmentStatusConstants"
+        }
+      },
+      {
+        "value": "pickerData.effectiveDate",
+        "type": "expression",
+        "config": {
+          "valueType": "date",
+          "format": "MM/DD/YYYY"
+        }
+      },
+      {
+        "value": "pickerData.terminationDate",
+        "type": "expression",
+        "config": {
+          "valueType": "date",
+          "format": "MM/DD/YYYY"
+        }
+      },
+      {
+        "value": "pickerData.terminationReason",
+        "type": "expression"
+      }
+    ],
+    "pagination": {
+      "name": "ItemDesc",
+      "leftTextAddOn": "Display",
+      "defaultValue": "10",
+      "options": [
+        { "value": "10", "text": "10 records per page" },
+        { "value": "20", "text": "20 records per page" },
+        { "value": "50", "text": "50 records per page" },
+        { "value": "100", "text": "100 records per page" }
+      ]
+    }
+  },
+  "elements": [
+    [
+      {
+        "type": "select",
+        "name": "division",
+        "rearSector": "buid",
+        "label": "Division",
+        "placement": "col-md-3",
+        "validations": {},
+        "defaultValue": null,
+        "options": "",
+        "optionKind": "apiCall",
+        "optionsConfig": {
+          "reduxObject": "loggedUserEntity",
+          "mapperObject": [
+            {
+              "takingDateform": "legalEntityDivision",
+              "value": "`${currentObject.headQuarter && currentObject.headQuarter.searchLegalEntity  && currentObject.headQuarter.searchLegalEntity.buid || ''}`",
+              "text": "`${currentObject.headQuarter && currentObject.headQuarter.searchLegalEntity  && currentObject.headQuarter.searchLegalEntity.clientFullName || ''}`"
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "name": "certificateNumber",
+        "rearSector": "policyName",
+        "label": "Certificate Number",
+        "placement": "col-md-3",
+        "validations": {}
+      },
+      {
+        "type": "text",
+        "name": "clientID",
+        "rearSector": "internalClientId",
+        "label": "Client ID",
+        "placement": "col-md-3",
+        "validations": {}
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "name": "firstName",
+        "rearSector": "ownerFirstName",
+        "label": "First Name",
+        "placement": "col-md-3",
+        "validations": {}
+      },
+      {
+        "type": "text",
+        "name": "lastName",
+        "rearSector": "ownerLastName",
+        "label": "Last Name",
+        "placement": "col-md-3",
+        "validations": {}
+      },
+      {
+        "type": "select",
+        "name": "enrollmentStatus",
+        "rearSector": "status",
+        "label": "Status",
+        "placement": "col-md-3",
+        "validations": {},
+        "defaultValue": "",
+        "options": [
+          { "value": "cProject", "text": "Project" },
+          { "value": "cActive", "text": "Active" },
+          { "value": "cHold", "text": "Hold" },
+          { "value": "cHoldAfterRenewal", "text": "Hold After Renewal" },
+          { "value": "cTerminated", "text": "Terminated" },
+          { "value": "cNeverInForce", "text": "Never In Force" },
+          { "value": "cQuote", "text": "Quote" },
+          { "value": "cDeclined", "text": "Declined" }
+        ]
+      }
+    ]
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "primaryBgColor": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+
+  "primaryColor": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+
+  "primaryBgColorHover": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+
+  "primaryOutlineHoverColor": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+
+  "primaryOutlineBgColor": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+
+  "landingPanelLoginButton": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+
+  "primaryGroupOutlineBgColor": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "primaryGroupOutlineColor": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "primaryGroupOutlineHoverBgColor": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "primaryGroupOutlineHoverColor": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "radioButtonGroupBgColor": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "radioButtonGroupColor": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+    "closeButtonBgColor": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+    "closeButtonColor": {
+    "dataType": "string",
+    "defaultValue": ""
+  }
+}

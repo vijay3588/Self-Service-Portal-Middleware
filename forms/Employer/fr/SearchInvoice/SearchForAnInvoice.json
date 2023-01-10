@@ -1,0 +1,121 @@
+{
+  "searchConfig": {
+    "tableHeader": [
+      { "value": "TRANSACTION DATE", "config": { "className": "" } },
+      { "value": "TRANSACTION TYPE", "config": { "className": "" } },
+      { "value": "Numéro de transaction", "config": { "className": "" } },
+      { "value": "MONTANTE", "config": { "className": "" } },
+      { "value": "CANALISER", "config": { "className": "" } },
+      { "value": "Statut", "config": { "className": "" } }
+    ],
+    "tableRow": [
+      {
+        "value": "pickerData.transactionDate",
+        "type": "expression",
+        "config": {
+          "valueType": "date",
+          "format" : "MM/DD/YYYY"
+        }
+      },
+      {
+        "value": "pickerData.transactionType",
+        "type": "expression",
+        "config": {
+          "displayName": "InvoiceTransactionTypeConstants"
+        }
+      },
+      {
+        "value": "pickerData.transactionName",
+        "type": "expression"
+      },
+      {
+        "value": "pickerData.amount.amount",
+        "type": "expression",
+        "valuetype": "currency",
+        "locale": "en-US",
+        "currency": "USD"
+      },
+      {
+        "value": "pickerData.channel",
+        "type": "expression"
+      },
+      {
+        "value": "pickerData.status",
+        "type": "expression",
+        "config": {
+          "displayName": "InvoiceStatusConstants"
+        }
+      }
+    ],
+
+    "pagination": {
+      "name": "ItemDesc",
+      "leftTextAddOn": "Display",
+      "defaultValue": "10",
+      "options": [
+        { "value": "10", "text": "10 records per page" },
+        { "value": "25", "text": "25 records per page" },
+        { "value": "50", "text": "50 records per page" },
+        { "value": "100", "text": "100 records per page" }
+      ]
+    }
+  },
+  "elements": [
+    [
+      {
+        "type": "select",
+        "name": "transactionType",
+        "label": "Type de transaction",
+        "placement": "col-md-3",
+        "validations": {},
+        "defaultValue": "",
+        "options": [
+          { "value": "all", "text": "All" },
+          { "value": "invoice", "text": "Invoice" },
+          { "value": "disbursement", "text": "Disbursement Statement" },
+          { "value": "payment", "text": "Payment" }
+        ]
+      },
+      {
+        "type": "text",
+        "name": "transactionNumber",
+        "label": "Numéro de transaction",
+        "placement": "col-md-3",
+        "validations": {}
+      },
+      {
+        "type": "date",
+        "name": "fromDate",
+        "label": "Partir de la date",
+        "placement": "col-md-3",
+        "validations": {
+          "string": {
+            "min": { "limit": 6, "message": "minlengeth is 6" }
+          }
+        }
+      },
+      {
+        "type": "date",
+        "name": "toDate",
+        "label": "À ce jour",
+        "placement": "col-md-3",
+        "validations": {
+          "string": {
+            "min": { "limit": 6, "message": "minlengeth is 6" }
+          }
+        }
+      }
+    ],
+    [
+      {
+        "display":"displayCanceledTransactions",
+        "type": "checkbox",
+        "name": "displayCanceledTranslations",
+        "label": "Afficher les transactions annulées",
+        "placement": "col-md-3 col-12",
+        "defaultCheck":false,
+        "filterResponse" : {"sourceItem" : "status" , "action" : "hide" , "actionValue" : "caisReceived"}        
+      }
+    ]
+  ]
+}

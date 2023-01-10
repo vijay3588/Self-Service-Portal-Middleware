@@ -1,0 +1,8 @@
+{
+  "Name": { "dataType": "string", "name": "name" },
+  "Identifier": { "dataType": "string", "name": "identifier" },
+  "Components": { "dataType": "object", "name": "components" },
+  "Molecules": { "dataType": "object", "name": "molecules" },
+  "Cells": { "dataType": "object", "name": "cells" },
+  "Atoms": { "dataType": "object", "name": "atoms" }
+}

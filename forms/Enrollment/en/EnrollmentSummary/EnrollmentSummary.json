@@ -1,0 +1,104 @@
+{
+    "sectionPanels": {
+        "panel": [ 0, 1, 2, 3, 4, 5, 6, 7],
+        "sections": [
+            {
+                "noGroupStart": 0,
+                "noGroupEnd": 7
+            }
+        ],
+        "sectionStyle": {
+            "style": {
+                "background-color": "#FCFCFC",
+                "border-radius": "0.3rem",
+                "padding": "1rem 1rem 1rem 1rem",
+                "border": "1rem solid bold #E1E1E1"
+            }
+        }
+    },
+    "elements": [
+        [
+            {
+                "type": "panelSideHeader",
+                "outerDiv": false,
+                "name": "Beneficiary Information",
+                "label": "Beneficiary Information",
+                "placement": "col-md-12 pt-3",
+                "formSideBigHeader": "Beneficiary Information",
+                "header": true
+            }
+        ],
+        [
+            {
+                "type": "CollapseList",
+                "placement": "col-md-12 pt-3"
+            }
+        ],
+        [
+            {
+                "type": "tableHeader",
+                "outerDiv": false,
+                "value": "Critical Illness Insurance",
+                "placement": "col-md-12 pt-3"
+            }
+        ],
+        [
+            {
+                "type": "tableRow",
+                "disabled": true,
+                "name": "primaryBenificiary",
+                "value": "abc",
+                "rearSector": "shortName",
+                "label": "Primary Benificiary",
+                "labelTitle": "Primary Benificiary",
+                "placement": "col-md-6 col-sm-6 col-xs-6 col-6 pt3",
+                "header": true,
+                "containerClassName": "col-12",
+                "contentClassName": "col-12",
+                "styleClass": ""
+            },
+            {
+                "type": "tableRow",
+                "name": "percentageOfAllocation",
+                "rearSector": "name",
+                "label": "Percentage Of Allocation",
+                "labelTitle": "Percentage Of Allocation",
+                "disabled": true,
+                "header": true,
+                "placement": "col-md-6 col-sm-6 col-xs-6 col-6 pb-3",
+                "containerClassName": "col-12",
+                "contentClassName": "col-12",
+                "styleClass": ""
+            }
+        ],
+        [
+            {
+                "type": "tableRow",
+                "disabled": true,
+                "name": "primaryBenificiary",
+                "value": "abc",
+                "rearSector": "shortName",
+                "label": "Contingent Benificiary",
+                "labelTitle": "Contingent Benificiary",
+                "placement": "col-md-6 col-sm-6 col-xs-6 col-6 pt3",
+                "header": true,
+                "containerClassName": "col-12",
+                "contentClassName": "col-12",
+                "styleClass": ""
+            },
+            {
+                "type": "tableRow",
+                "name": "percentageOfAllocation",
+                "rearSector": "name",
+                "label": "Percentage Of Allocation",
+                "labelTitle": "Percentage Of Allocation",
+                "disabled": true,
+                "header": true,
+                "placement": "col-md-6 col-sm-6 col-xs-6 col-6 pb-3",
+                "containerClassName": "col-12",
+                "contentClassName": "col-12",
+                "styleClass": ""
+            }
+        ]
+    ]
+}

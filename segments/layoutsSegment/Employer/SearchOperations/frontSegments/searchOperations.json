@@ -1,0 +1,5 @@
+{
+    "actionDescription": {"dataType": "string", "defaultValue": ""},
+    "actionTitle": {"dataType": "string", "defaultValue": ""},
+    "date": {"dataType": "date", "defaultValue": ""}
+}

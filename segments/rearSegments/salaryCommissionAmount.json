@@ -1,0 +1,14 @@
+{
+  "amount": {
+    "dataType": "string",
+    "defaultValue": 0,
+    "dataConfig": {
+      "configType": "number",
+      "currency": "$"
+    }
+  },
+  "currency": {
+    "dataType": "string",
+    "defaultValue": "cUSDollar"
+  }
+}

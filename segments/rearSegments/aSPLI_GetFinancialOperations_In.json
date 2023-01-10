@@ -1,0 +1,34 @@
+{
+    "className": {
+        "dataType": "string",
+        "defaultValue": "aSPLI_GetFinancialOperations_In"
+    },
+    "financialId": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "financialPaymentsSearched": {
+        "dataType": "boolean",
+        "defaultValue": false
+    },
+    "financialDisbursementsSearched": {
+        "dataType": "boolean",
+        "defaultValue": true 
+    },
+    "financialInvoicesSearched": {
+        "dataType": "boolean",
+        "defaultValue": false
+    },
+    "fromDate": {
+        "dataType": "date",
+        "defaultValue": null
+    },
+    "toDate": {
+        "dataType": "date",
+        "defaultValue": null
+    },
+    "actorBuid": {
+        "dataType": "string",
+        "defaultValue": ""
+    }
+}

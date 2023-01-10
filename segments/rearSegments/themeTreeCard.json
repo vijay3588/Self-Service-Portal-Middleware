@@ -1,0 +1,6 @@
+{
+  "treeCardBgColor": {
+    "dataType": "string",
+    "defaultValue": ""
+  }
+}

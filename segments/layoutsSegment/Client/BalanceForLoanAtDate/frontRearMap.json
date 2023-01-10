@@ -1,0 +1,52 @@
+[
+  {
+    "frontDataSegment": "values",
+    "rearDataSegment":"input",
+    "rearDataSegmentClass": "balanceForLoanAtDate",
+    "rearDataSegmentPath": "",
+    "rearDataSegmentType": "object",
+    "mappingSectorOnly":true,
+    "defaultSectorMapping": [
+      {
+        "frontSector": "effectiveDate",
+        "rearSector": "AtDate",
+        "frontDataSegmentPath":"BuyBack",
+        "defaultValue": ""
+      }
+    ]
+  },
+  {
+    "frontDataSegment": "values",
+    "rearDataSegment":"policyId",
+    "rearDataSegmentPath": "input",
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "internalPolicyId",
+        "rearSector": "internalContractID",
+        "frontDataSegmentPath": "additionalValues.LoanSelection.contractDetails",
+        "defaultValue": ""
+      }
+    ]
+  },
+  {
+    "frontDataSegment": "values",
+    "rearDataSegment":"LoanIdentifier",
+    "rearDataSegmentPath": "input",
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "loanBuid",
+        "rearSector": "buid",
+        "frontDataSegmentPath": "additionalValues.LoanSelection.loanDetails",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "loanType",
+        "rearSector": "name",
+        "frontDataSegmentPath": "additionalValues.LoanSelection.loanDetails",
+        "defaultValue": ""
+      }
+    ]
+  }
+]

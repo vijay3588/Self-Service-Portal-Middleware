@@ -1,0 +1,26 @@
+{
+  "boxcard": {
+    "dataType": "object",
+    "name": "themeBoxcard"
+  },
+  "table": {
+    "dataType": "object",
+    "name": "themeTable"
+  },
+  "treeCard": {
+    "dataType": "object",
+    "name": "themeTreeCard"
+  },
+  "button": {
+    "dataType": "object",
+    "name": "themeButton"
+  },
+  "buttonDropdown": {
+    "dataType": "object",
+    "name": "themeButtonDropdown"
+  },
+  "iconDropdown": {
+    "dataType": "object",
+    "name": "themeIconDropdown"
+  }
+}

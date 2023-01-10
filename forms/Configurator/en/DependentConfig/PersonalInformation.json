@@ -1,0 +1,315 @@
+{
+  "elements": [
+    [
+      {
+        "type": "panelSideHeader",
+        "outerDiv": false,
+        "name": "Dependent Personal Information",
+        "label": "Dependent Personal Information",
+        "placement": "col-md-6 pt-3",
+        "formSideBigHeader": "Personal Information",
+        "header": true
+      }
+    ],
+
+    [
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "DataField",
+        "rearSector": "shortName",
+        "label": "Data Field",
+        "mapping": true,
+        "labelTitle": "Data Field",
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "Toggle Field On/Off",
+        "rearSector": "shortName",
+        "label": "Toggle Field On/Off",
+        "mapping": true,
+        "labelTitle": "Toggle Field On/Off",
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "Required Field",
+        "rearSector": "shortName",
+        "label": "Required Field",
+        "mapping": true,
+        "labelTitle": "Required Field",
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      }
+    ],
+
+    [
+      {
+        "type": "readOnly",
+        "name": "dependentMiddleName",
+        "label": "Middle Name",
+        "labelTitle": "Middle Name",
+        "disabled": true,
+        "mapping": true,
+        "header": false,
+
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6",
+        "validations": {
+          "string": {
+            "matches": {
+              "regex": "^[a-zA-Z]+$",
+              "message": "No special characters allowed"
+            }
+          }
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+
+      {
+        "type": "checkbox",
+        "name": "dependentMiddleNameToggle",
+        "label": "",
+        "update": {
+          "reduxPath": "employeeInformation.empConfigInfo.dependentConfigInformation.dependentMiddleNameToggle",
+          "formikPath": "PersonalInformation"
+        },
+        "placement": "col-md-5 col-lg-2 col-12"
+      },
+      {
+        "type": "checkbox",
+        "name": "dependentMiddleNameRequired",
+        "disabled": true,
+        "label": "",
+        "update": {
+          "reduxPath": "employeeInformation.empConfigInfo.dependentConfigInformation.dependentMiddleNameRequired",
+          "formikPath": "PersonalInformation"
+        },
+        "placement": "col-md-5 col-lg-2 col-12"
+      }
+    ],
+
+    [
+      {
+        "type": "panelSideHeader",
+        "outerDiv": false,
+        "name": "Dependent Address Information",
+        "label": "Dependent Address Information",
+        "placement": "col-md-6 pt-3",
+        "formSideBigHeader": "Dependent's Address",
+        "header": true
+      }
+    ],
+
+    [
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "DataField",
+        "rearSector": "shortName",
+        "label": "Data Field",
+        "mapping": true,
+        "labelTitle": "Data Field",
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "Toggle Field On/Off",
+        "rearSector": "shortName",
+        "label": "Toggle Field On/Off",
+        "mapping": true,
+        "labelTitle": "Toggle Field On/Off",
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "Required Field",
+        "rearSector": "shortName",
+        "label": "Required Field",
+        "mapping": true,
+        "labelTitle": "Required Field",
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      }
+    ],
+
+    [
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "dependentAddressSameAsEmployee",
+        "rearSector": "dependentAddressSameAsEmployee",
+        "label": " Live at same address as yours",
+        "mapping": true,
+        "labelTitle": "Live at same address as yours",
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+
+      {
+        "type": "checkbox",
+        "name": "dependentAddressSameAsEmployeeToggle",
+        "label": "",
+        "update": {
+          "reduxPath": "employeeInformation.empConfigInfo.dependentConfigInformation.dependentAddressSameAsEmployeeToggle",
+          "formikPath": "PersonalInformation"
+        },
+        "placement": "col-md-5 col-lg-2 col-12"
+      },
+      {
+        "type": "checkbox",
+        "name": "dependentAddressSameAsEmployeeRequired",
+        "label": "",
+        "update": {
+          "reduxPath": "employeeInformation.empConfigInfo.dependentConfigInformation.dependentAddressSameAsEmployeeRequired",
+          "formikPath": "PersonalInformation"
+        },
+        "placement": "col-md-5 col-lg-2 col-12"
+      }
+    ],
+
+    [
+      {
+        "type": "readOnly",
+        "name": "dependentAddressLine2",
+        "label": "AddressLine 2",
+        "labelTitle": "AddressLine 2",
+        "disabled": true,
+        "mapping": true,
+        "header": false,
+
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6",
+        "validations": {
+          "string": {
+            "matches": {
+              "regex": "^[a-zA-Z]+$",
+              "message": "No special characters allowed"
+            }
+          }
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+
+      {
+        "type": "checkbox",
+        "name": "dependentStreetAddress2Toggle",
+        "label": "",
+        "update": {
+          "reduxPath": "employeeInformation.empConfigInfo.dependentConfigInformation.dependentStreetAddress2Toggle",
+          "formikPath": "PersonalInformation"
+        },
+        "placement": "col-md-5 col-lg-2 col-12"
+      },
+      {
+        "type": "checkbox",
+        "name": "dependentStreetAddress2Required",
+        "disabled": true,
+        "label": "",
+        "update": {
+          "reduxPath": "employeeInformation.empConfigInfo.dependentConfigInformation.dependentStreetAddress2Required",
+          "formikPath": "PersonalInformation"
+        },
+        "placement": "col-md-5 col-lg-2 col-12"
+      }
+    ],
+
+    [
+      {
+        "type": "readOnly",
+        "disabled": true,
+
+        "name": "dependentCountry",
+
+        "rearSector": "dependentCountry",
+        "label": "Country",
+        "mapping": true,
+        "labelTitle": "Country",
+
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+
+      {
+        "type": "checkbox",
+        "name": "dependentCountryToggle",
+        "label": "",
+        "update": {
+          "reduxPath": "employeeInformation.empConfigInfo.dependentConfigInformation.dependentCountryToggle",
+          "formikPath": "PersonalInformation"
+        },
+        "placement": "col-md-5 col-lg-2 col-12"
+      },
+      {
+        "type": "checkbox",
+        "name": "dependentCountryRequired",
+        "label": "",
+        "update": {
+          "reduxPath": "employeeInformation.empConfigInfo.dependentConfigInformation.dependentCountryRequired",
+          "formikPath": "PersonalInformation"
+        },
+        "placement": "col-md-5 col-lg-2 col-12"
+      }
+    ]
+  ]
+}

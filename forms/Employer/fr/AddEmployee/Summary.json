@@ -1,0 +1,168 @@
+{
+  "elements": [
+    [
+      {
+        "type": "select",
+        "name": "personalTitle",
+        "label": "Title",
+        "value": "mrs",
+        "placement": "col-md-2",
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis",
+            "min": { "limit": 6, "message": "minlengeth is 6" }
+          }
+        },
+        "defaultValue": null,
+        "options": [
+          { "value": "mr", "text": "Mr." },
+          { "value": "ms", "text": "Ms." },
+          { "value": "mrs", "text": "Mrs." },
+          { "value": "dr", "text": "Dr." }
+        ]
+      },
+      {
+        "type": "text",
+        "value": "hi",
+        "name": "firstName",
+        "label": "Prénom",
+        "placement": "col-md-3",
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis",
+            "min": { "limit": 6, "message": "minlengeth is 6" }
+          }
+        }
+      },
+      {
+        "type": "text",
+        "name": "middleName",
+        "label": "Middle Name",
+        "placement": "col-md-3",
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis",
+            "min": { "limit": 6, "message": "minlengeth is 6" }
+          }
+        }
+      },
+      {
+        "type": "text",
+        "name": "lastName",
+        "label": "Nom de famille",
+        "placement": "col-md-3",
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis",
+            "min": { "limit": 6, "message": "minlengeth is 6" }
+          }
+        }
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "name": "suffix",
+        "label": "Suffix",
+        "placement": "col-md-2",
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis",
+            "min": { "limit": 6, "message": "minlengeth is 6" }
+          }
+        }
+      },
+      {
+        "type": "radioButtonGroup",
+        "name": "gender",
+        "label": "Gender",
+        "placement": "col-md-3 pt-2",
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis"
+          }
+        },
+        "inputs": [
+          { "label": "Male", "value": "male", "icon": ["fas", "male"] },
+          { "label": "Female", "value": "female", "icon": ["fas", "female"] }
+        ]
+      },
+      {
+        "type": "date",
+        "name": "birthDate",
+        "label": "Date de naissance",
+        "placement": "col-md-3",
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis",
+            "min": { "limit": 6, "message": "minlengeth is 6" }
+          }
+        }
+      },
+      {
+        "type": "text",
+        "name": "ssn",
+        "label": "SSN",
+        "placement": "col-md-3",
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis",
+            "min": { "limit": 6, "message": "minlengeth is 6" }
+          }
+        }
+      }
+    ],
+    [
+      {
+        "type": "select",
+        "name": "maritalStatus",
+        "label": "État civil",
+        "placement": "col-md-2",
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis"
+          }
+        },
+        "value": null,
+        "options": [
+          { "value": "single", "text": "Single" },
+          { "value": "married", "text": "Married" },
+          { "value": "divorced", "text": "Divorced" },
+          { "value": "civilUnion", "text": "Civil Union" }
+        ]
+      },
+      {
+        "type": "select",
+        "name": "nationality",
+        "label": "Nationality",
+        "placement": "col-md-3",
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis"
+          }
+        },
+        "defaultValue": null,
+        "options": [
+          { "value": "usa", "text": "USA" },
+          { "value": "can", "text": "Canada" },
+          { "value": "mx", "text": "Mexico" },
+          { "value": "cn", "text": "China" },
+          { "value": "uk", "text": "United Kingdom" }
+        ]
+      },
+
+      {
+        "type": "text",
+        "name": "profession",
+        "label": "Profession",
+        "placement": "col-md-3",
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis",
+            "min": { "limit": 6, "message": "minlengeth is 6" }
+          }
+        }
+      }
+    ]
+  ]
+}

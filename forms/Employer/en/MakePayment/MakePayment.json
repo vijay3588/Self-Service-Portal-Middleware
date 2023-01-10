@@ -1,0 +1,101 @@
+{
+  "elements": [
+    [
+      
+
+      {
+        "type": "readOnly",
+        "name": "payer",
+        "label": "Payer",
+        "placement": "col-md-6",
+        "valueConfig": {
+          "reduxObject": "loggedUserEntity",
+          "mapperObject": {
+            "value": "`${ currentObject.legalEntityIdentity && currentObject.legalEntityIdentity.name || ''}`"
+          }
+        }
+      }
+    ],
+    [
+      
+
+      {
+        "type": "select",
+        "name": "paymentChannel",
+        "label": "Payment Channel",
+        "placement": "col-md-3",
+        "rearSector": "channelCode",
+        "rearDataSegmentPath":"input.paymentChannel.moneyChannelIdentifier.thirdPartyID",
+        "options": [
+          { "value": "EFT", "text": "Electroic Funds Transfer" },
+          { "value": "ACH", "text": "Automated Clearing House" }
+        ],
+        "validations": {
+          "string": {
+            "required": "This field is required"
+          }
+        }
+      },
+      {
+        "type": "date",
+        "name": "dateOfPayment",
+        "rearSector": "receivedDate",
+        "rearDataSegmentPath":"input.paymentInfo.bankInformation.receivedDate",
+       
+        
+        "label": "Date of Payment",
+        "placement": "col-md-3",
+        "validations": {
+          "string": {
+            "min": {
+              "limit": 6,
+              "message": "Min length is 6"
+            }
+          },
+          "date": {
+            "required": "This field is required",
+            "min": {
+              "limit": -117,
+              "unit": "y",
+              "message": "Please enter a valid Date of Payment"
+            },
+            "max": {
+              "limit": 0,
+              "unit": "y",
+              "message": "Date of Payment cannot be in the future"
+            }
+          }
+        }
+      },
+      {
+        "type": "currency",
+        "locale": "en-US",
+        "currency": "USD",
+        "name": "amountPaid",       
+        "label": "Amount Paid",
+        "rearSector": "amount",
+        "rearDataSegmentPath":"input.paymentInfo.amount",       
+        "placement": "col-md-3",
+        "validations": {
+          "string": {
+            "required": "This field is required"
+          }
+        },
+        "decimal": 0
+      },
+      {
+        "type": "text",
+        "name": "paymentId",
+        "label": "Payment ID",
+        "placement": "col-md-3",
+        "rearSector": "paymentFunctionalIdentifier",
+        "rearDataSegmentPath":"input.paymentId",
+        "validations": {
+          "string": {
+            "required": "This field is required"
+          }
+        }
+      }
+    ]
+  ]
+}

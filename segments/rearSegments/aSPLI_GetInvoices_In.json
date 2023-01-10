@@ -1,0 +1,50 @@
+{
+    "className": {
+        "dataType": "string",
+        "defaultValue": "aSPLI_GetInvoices_In"
+    },
+    "clientIds": {
+        "dataType": "object",
+        "name": "externalClientId"
+    },
+    "invoiceId": { 
+        "dataType": "object",
+        "name": "invoiceId"
+    },
+    "onlyDueStatements": {
+        "dataType": "boolean",
+        "defaultValue": false
+    },
+    "fromAmount": {
+        "dataType": "number",
+        "defaultValue": 0
+    },
+    "toAmount": {
+        "dataType": "number",
+        "defaultValue": 0
+    },
+    "fromDate": {
+        "dataType": "date",
+        "defaultValue": null
+    },
+    "todate":{
+        "dataType": "date",
+        "defaultValue": null
+    },
+    "fRomDueDate": {
+        "dataType": "date",
+        "defaultValue": null
+    },
+    "toDueDate": {
+        "dataType": "date",
+        "defaultValue": null
+    },
+    "payorNSiD": {
+        "dataType": "number",
+        "defaultValue": 0
+    },
+    "payorId": {
+        "dataType": "number",
+        "defaultValue": 0
+    }
+}

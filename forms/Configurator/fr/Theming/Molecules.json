@@ -1,0 +1,154 @@
+{
+  "elements": [
+    [
+      {
+        "type": "color",
+        "name": "panelBgColor",
+        "rearSector": "shortName",
+        "label": "Panel Bg Color",
+        "value": "#ffffff",
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "This field is required"
+          }
+        }
+      },
+      {
+        "name": "panelBgColorValue",
+
+        "type": "readOnly",
+        "label": "Selected hex value",
+        "displayStyle": "list",
+        "placement": "labelElement",
+        "getValuesFrom": "panelBgColor",
+        "formikPath": "Molecules"
+      },
+
+      {
+        "type": "color",
+        "name": "modalHeaderBgColor",
+        "label": "Modal Header Bg Color",
+        "value": "#182a5d",
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "name": "modalHeaderBgColorValue",
+
+        "type": "readOnly",
+        "label": "Selected hex value",
+        "displayStyle": "list",
+        "placement": "labelElement",
+        "getValuesFrom": "modalHeaderBgColor",
+        "formikPath": "Molecules"
+      },
+
+      {
+        "type": "color",
+        "name": "modalContentBgColor",
+        "label": "Modal Content Bg Color",
+        "value": "#ffffff",
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "name": "modalContentBgColorValue",
+
+        "type": "readOnly",
+        "label": "Selected hex value",
+        "displayStyle": "list",
+        "placement": "labelElement",
+        "getValuesFrom": "modalContentBgColor",
+        "formikPath": "Molecules"
+      },
+
+      {
+        "type": "color",
+        "name": "sectionHeaderBgColor",
+        "label": "Section Header Bg Color",
+        "value": "#20305f",
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "name": "sectionHeaderBgColorValue",
+
+        "type": "readOnly",
+        "label": "Selected hex value",
+        "displayStyle": "list",
+        "placement": "labelElement",
+        "getValuesFrom": "sectionHeaderBgColor",
+        "formikPath": "Molecules"
+      },
+
+      {
+        "type": "color",
+        "name": "changeBoxBgColor",
+        "label": "Change Box Bg Color",
+        "value": "#ededed",
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        },
+        "defaultValue": null,
+        "options": "",
+        "config": {
+          "optionsname": "CountryConstants"
+        }
+      },
+
+      {
+        "name": "changeBoxBgColorValue",
+
+        "type": "readOnly",
+        "label": "Selected hex value",
+        "displayStyle": "list",
+        "placement": "labelElement",
+        "getValuesFrom": "changeBoxBgColor",
+        "formikPath": "Molecules"
+      },
+
+      {
+        "type": "color",
+        "name": "navigationDropDownItemsColor",
+        "label": "Navigation Dropdown Font Color",
+        "value": "#1b74bc",
+        "placement": "themingElement",
+        "options": "",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        },
+        "config": {
+          "optionsname": "StateConstants"
+        }
+      },
+      {
+        "name": "navigationDropDownItemsColorValue",
+
+        "type": "readOnly",
+        "label": "Selected hex value",
+        "displayStyle": "list",
+        "placement": "labelElement",
+        "getValuesFrom": "navigationDropDownItemsColor",
+        "formikPath": "Molecules"
+      }
+    ]
+  ]
+}

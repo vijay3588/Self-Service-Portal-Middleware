@@ -1,0 +1,161 @@
+{
+  "triConfig": {
+    "leftCard": {
+  
+    },
+    "rightCard": {
+      "element": [
+        "Retrieve User ID",
+        "Register Image",
+        "Fields marked with * are mandatory",
+        "Employee Validation",
+        "First Name",
+        "Last Name",
+        "Employee ID",
+        "Doing Business As ",
+        "icon"
+      ],
+      "className": "col-12"
+    }
+  },
+  "elements": [
+ 
+
+    [
+      {
+        "name": "currentName",
+        "type": "readOnly",
+        "label": "Current Legal Name & DBA",
+        "value": "",
+        "hideLabel": true
+      }
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "Retrieve User ID",
+        "formSideHeader": "Retrieve User ID"
+      }
+    ],
+
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "Fields marked with * are mandatory",
+        "formMandatory": "Fields marked with * are mandatory"
+      }
+    ],
+
+    [
+   
+
+      {
+      
+        "type": "panelSideHeader",
+      "hideDefaultClass": true,
+        "label": "Employee Validation",
+        "filename": "icon_employee_validation.png",
+        "formSideHeaderWithImage": "Employee Validation"
+        
+      }
+    ],
+
+    
+
+    [
+      {
+        "type": "text",
+        "name": "firstName",
+        "config": "border",
+        "rearSector": "firstName",
+        "label": "First Name",
+        "placeholder": "Enter First Name",
+
+        "validations": {
+          "string": {
+            "required": "First Name is required",
+            "errormessage": "red",
+            "matches": {
+              "regex": "^[a-zA-Z]+$",
+              "message": "No special characters allowed"
+            }
+          }
+        },
+
+        "placement": " col-lg-6",
+        "classNameWrapper":"py-3"
+      },
+
+      {
+        "type": "text",
+        "name": "lastName",
+        "rearSector": "name",
+        "label": "Last Name",
+        "placeholder": "Enter Last Name",
+
+        "validations": {
+          "string": {
+            "required": "Last Name is required",
+            "matches": {
+              "regex": "^[a-zA-Z]+$",
+              "message": "No special characters allowed"
+            }
+          }
+        },
+        "placement": "col-lg-6",
+        "classNameWrapper":"py-3"
+      }
+    ],
+
+    [
+      {
+        "type": "text",
+        "name": "employeeId",
+        "rearSector": "employeeId",
+        "label": "Employee ID",
+        "placeholder": "Enter Employee ID",
+
+        "validations": {
+          "string": {
+            "required": "Employee ID is required",
+            "matches": {
+              "regex": "^[0-9]*$",
+              "message": "Please enter a valid Employee ID"
+            }
+          }
+        },
+        "placement": "col-lg-6",
+        "classNameWrapper":"py-3"
+      },
+      {
+        "type": "date",
+        "name": "birthDate",
+        "rearSector": "birthDate",
+        "label": "Date of Birth",
+        "placeholder": "Date of birth",
+
+        "validations": {
+          "string": {
+            "required": "Employee ID is required",
+            "min": { "limit": 6, "message": "Min length is 6" }
+          },
+          "date": {
+            "required": "Date of Birth is required",
+            "min": {
+              "limit": -117,
+              "unit": "y",
+              "message": "Please enter a valid Birth Date"
+            },
+            "max": {
+              "limit": 0,
+              "unit": "y",
+              "message": "Birth Date cannot be in the future"
+            }
+          }
+        },
+        "placement": "col-lg-6",
+        "classNameWrapper":"py-3"
+      }
+    ]
+  ]
+}

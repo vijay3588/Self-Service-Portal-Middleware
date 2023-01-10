@@ -1,0 +1,10 @@
+{
+    "statementIdentifier": {
+        "dataType": "object",
+        "name": "statementIdentifier"
+    },
+    "buid": {
+        "dataType": "string",
+        "defaultValue": ""
+    }
+}

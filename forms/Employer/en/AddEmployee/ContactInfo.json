@@ -1,0 +1,319 @@
+{
+  "isMultiple": true,
+  "multiConfig": {
+    "maxAdds": 3,
+    "tableHeader": [
+      {
+        "value": "Address Type",
+        "config": {
+          "className": ""
+        }
+      },
+      {
+        "value": "Mailing Address",
+        "config": {
+          "className": ""
+        }
+      },
+      {
+        "value": "Phone Number",
+        "config": {
+          "className": ""
+        }
+      },
+      {
+        "value": "Email",
+        "config": {
+          "className": ""
+        }
+      }
+    ],
+    "tableRow": [
+      {
+        "value": "data.typeOfAddress",
+        "config": {
+          "optionsname": "AddressTypeConstants"
+        },
+        "type": "expression"
+      },
+      {
+        "value": "`${data.lineOne ? `${data.lineOne}, ` : ''}${data.lineTwo ? `${data.lineTwo}, ` : ''}${ (data.city) ? `${data.city}, ` : '' }${data.state ? `${data.state} ` : ''}${(data.zipCode ) ? `${data.zipCode}, ` : ''}${data.country || ''}`",
+
+        "type": "expression"
+      },
+      {
+        "value": "data.phoneNumberPrimary",
+        "type": "expression"
+      },
+      {
+        "value": "email",
+        "type": "email"
+      }
+    ],
+    "addButtonLabel": " New Contact Information"
+  },
+  "elements": [
+    [
+      {
+        "displayConfig": {
+          "field": "noMailingAddress",
+          "show": false
+        },
+        "type": "select",
+        "name": "typeOfAddress",
+        "rearSector": "addressUsage",
+        "label": "Type of Address",
+        "placement": "col-md-6 col-12",
+        "validations": {
+          "string": {
+            "validationRequired": {
+              "value": "noMailingAddress",
+              "message": "This field is required"
+            }
+          }
+        },
+        "optionsname": "AddressTypeConstants",
+        "defaultValue": null,
+        "options": ""
+      },
+      {
+        "displayConfig": {
+          "field": "noMailingAddress",
+          "show": false
+        },
+        "type": "checkbox",
+        "name": "isDefault",
+        "rearSector": "isDefaultCorrespondance",
+        "label": "Is Default",
+        "placement": "col-md-3 col-12",
+        "defaultCheck": true
+      },
+      {
+        "type": "checkbox",
+        "name": "noMailingAddress",
+        "rearSector": "addressNotDefined",
+        "label": "No Mailing Address",
+        "placement": "col-md-3 col-12"
+      }
+    ],
+    [
+      {
+        "displayConfig": {
+          "field": "noMailingAddress",
+          "show": false
+        },
+        "type": "panelSideHeader",
+        "label": "Mailing Address"
+      }
+    ],
+    [
+      {
+        "displayConfig": {
+          "field": "noMailingAddress",
+          "show": false
+        },
+        "type": "text",
+        "name": "lineOne",
+        "rearSector": "line1",
+        "label": "Line 1",
+        "validations": {
+          "string": {
+            "validationRequired": {
+              "value": "noMailingAddress",
+              "message": "This field is required"
+            }
+          }
+        },
+        "placement": "col-md-6 col-12"
+      },
+      {
+        "displayConfig": {
+          "field": "noMailingAddress",
+          "show": false
+        },
+        "type": "text",
+        "name": "lineTwo",
+        "rearSector": "line2",
+        "label": "Line 2",
+        "validations": {},
+        "placement": "col-md-6 col-12"
+      }
+    ],
+    [
+      {
+        "displayConfig": {
+          "field": "noMailingAddress",
+          "show": false
+        },
+        "type": "text",
+        "name": "city",
+        "rearSector": "city",
+        "label": "City",
+        "placement": "col-md-4 col-12",
+        "validations": {
+          "string": {
+            "validationRequired": {
+              "value": "noMailingAddress",
+              "message": "This field is required"
+            }
+          }
+        }
+      },
+      {
+        "displayConfig": {
+          "field": "noMailingAddress",
+          "show": false
+        },
+        "type": "select",
+        "name": "state",
+        "rearSector": "state",
+        "label": "State",
+        "placement": "col-md-2 col-12",
+        "optionsname": "StateConstants",
+        "options": "",
+        "validations": {
+          "string": {
+            "validationRequired": {
+              "value": "noMailingAddress",
+              "message": "This field is required"
+            }
+          }
+        }
+      },
+      {
+        "displayConfig": {
+          "field": "noMailingAddress",
+          "show": false
+        },
+        "type": "text",
+        "name": "zipCode",
+        "rearSector": "zipCode",
+        "label": "Zip Code",
+        "placement": "col-md-2 col-12",
+        "validations": {
+          "string": {
+            "validationRequired": {
+              "value": "noMailingAddress",
+              "message": "This field is required"
+            },
+            "matches": {
+              "regex": "^[0-9]*$",
+              "message": "Zip Code must all be digits"
+            }
+          }
+        }
+      },
+      {
+        "displayConfig": {
+          "field": "noMailingAddress",
+          "show": false
+        },
+        "type": "select",
+        "name": "country",
+        "rearSector": "country",
+        "label": "Country",
+        "value": "USA",
+        "placement": "col-md-4 col-12",
+        "optionsname": "CountryConstants",
+        "options": "",
+        "validations": {
+          "string": {
+            "validationRequired": {
+              "value": "noMailingAddress",
+              "message": "This field is required"
+            }
+          }
+        }
+      }
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "Phone and Email Information"
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "name": "phoneNumberPrimary",
+        "rearSector": "privatePhone",
+        "label": "Phone Number (Primary)",
+        "placement": "col-md-4 col-12",
+        "validations": {
+          "string": {
+            "max": {
+              "limit": 10,
+              "message": "Phone Number must have 10 digits"
+            }
+          }
+        }
+      },
+      {
+        "type": "text",
+        "name": "extPrimary",
+        "label": "Ext",
+        "placement": "col-md-2 col-12"
+      },
+      {
+        "type": "text",
+        "name": "phoneNumberSecondary",
+        "rearSector": "officePhone",
+        "label": "Phone Number (Secondary)",
+        "placement": "col-md-4 col-12",
+        "validations": {
+          "string": {
+            "max": {
+              "limit": 10,
+              "message": "Phone Number must have 10 digits"
+            }
+          }
+        }
+      },
+      {
+        "type": "text",
+        "name": "extSecondary",
+        "rearSector": "officePhoneExtension",
+        "label": "Ext",
+        "placement": "col-md-2 col-12"
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "name": "faxNumber",
+        "rearSector": "fax",
+        "label": "Fax Number",
+        "placement": "col-md-4 col-12",
+        "validations": {
+          "string": {
+            "matches": {
+              "regex": "^\\((\\d{3})\\)(\\d{3})[- ](\\d{4})$",
+              "message": "Fax Number must be in (***)***-**** format"
+            }
+          }
+        }
+      },
+      {
+        "type": "email",
+        "name": "email",
+        "rearSector": "eMail",
+        "label": "Email",
+        "placement": "col-md-4 col-12",
+        "validations": {
+          "string": {
+            "email": "Invalid email address"
+          }
+        }
+      },
+      {
+        "type": "select",
+        "name": "preferredContactMethod",
+        "rearSector": "mediaType",
+        "label": "Preferred Contact Method",
+        "optionsname": "PreferredContactConstants",
+        "placement": "col-md-4 col-12",
+        "options": ""
+      }
+    ]
+  ]
+}

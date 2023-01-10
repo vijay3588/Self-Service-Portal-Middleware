@@ -1,0 +1,6 @@
+{
+    "paramIn": {
+        "dataType": "object",
+        "name": "aSPLI_GetEmployee_In"
+    }
+}

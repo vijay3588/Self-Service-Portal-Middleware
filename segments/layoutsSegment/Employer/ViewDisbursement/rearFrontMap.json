@@ -1,0 +1,37 @@
+[
+    {
+        "formName":"viewHeader",
+        "cardElements":"cardElements",
+        "frontSegment": "viewHeader",
+        "dataParentSegment": "",
+        "dataSegmentType": "object"
+    },
+    {
+        "formName":"blueBox",
+        "cardElements":"cardElements",
+        "frontSegment": "blueBox",
+        "dataParentSegment": "",
+        "dataSegmentType": "object"
+    },
+    {
+        "formName":"disbursementCard",
+        "cardElements":"cardElements",
+        "frontSegment": "disbursementCard",
+        "dataParentSegment":"",
+        "dataSegmentType": "object"
+    },
+    {
+        "formName":"statementCard",
+        "cardElements":"cardElements",
+        "frontSegment": "statementCard",
+        "dataParentSegment":"",
+        "dataSegmentType": "object"
+    },
+    {
+        "formName":"tablesCard",
+        "cardElements":"table.tableRowData",
+        "frontSegment": "disbursementLines",
+        "dataParentSegment":"disbursementParts",
+        "dataSegmentType": "array"
+    }
+  ]

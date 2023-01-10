@@ -1,0 +1,14 @@
+[
+    {
+        "frontSegment": "principalBalanceForLoan",
+        "dataParentSegment": "",
+        "dataSegmentType": "object",
+        "defaultSectorMapping": [
+            {
+                "frontSector": "amount",
+                "rearSector": "amount",
+                "defaultValue": ""
+            }
+        ]
+    }
+]

@@ -1,0 +1,22 @@
+{
+    "Claim": {
+        "dataType": "object",
+        "name": "Claim"
+    },
+    "Claimant": {
+        "dataType": "object",
+        "name": "aSPLI_PersonIdentifier"
+    },
+    "ManagedBy": {
+        "dataType": "object",
+        "name": "ManagedBy"
+    },
+    "Losses": {
+        "dataType": "array",
+        "name": "aSPLIC_STDLossData"
+    },
+    "DeliveredServices": {
+        "dataType": "array",
+        "defaultValue": []
+    }
+}

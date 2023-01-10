@@ -1,0 +1,8 @@
+{
+  "productName": { "dataType": "string", "defaultValue": "" },
+  "productDescription": { "dataType": "string", "defaultValue": "" },
+  "coveredDependents":{ "dataType": "array", "defaultValue": [] },
+  "productBUID":{ "dataType": "array", "defaultValue": "" }
+ 
+ 
+}

@@ -1,0 +1,54 @@
+{
+    "kind": {
+        "dataType": "string",
+        "defaultValue": "tplib_All"
+    },
+    "policyName": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "clientIdentifiers":{
+        "dataType": "object",
+        "name": "clientIdentifiers"
+    },
+    "productIdentifiers":{
+        "dataType": "object",
+        "name": "productIdentifiers"
+    },
+    "brokerIdentifiers":{
+        "dataType": "object",
+        "name": "brokerIdentifiers"
+    },
+    "ownerLastName": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "ownerFirstName": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "withQuote": {
+        "dataType": "boolean",
+        "defaultValue": false
+    },
+    "fromDate": {
+        "dataType": "date",
+        "defaultValue": null
+    },
+    "toDate": {
+        "dataType": "date",
+        "defaultValue": null
+    },
+    "fromTerminationDate": {
+        "dataType": "string",
+        "defaultValue": null
+    },
+    "toTerminationDate": {
+        "dataType": "string",
+        "defaultValue": null
+    },
+    "resultMaxSize": {
+        "dataType": "number",
+        "defaultValue": 10
+    }    
+}

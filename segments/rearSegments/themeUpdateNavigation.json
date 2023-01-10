@@ -1,0 +1,6 @@
+{
+  "navigationDropDownItemsColor": {
+    "dataType": "string",
+    "defaultValue": ""
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "linkColor": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "hoverColor": {
+    "dataType": "string",
+    "defaultValue": ""
+  }
+}

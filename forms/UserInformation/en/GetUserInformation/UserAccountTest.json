@@ -1,0 +1,383 @@
+{
+  "triConfig": {
+    "leftCard": {},
+    "rightCard": {
+      "element": [
+        "Retrieve User ID",
+        "Let's create your user account",
+        "Email for Registration",
+        "Enter Password",
+        "Re-enter Password",
+        "Re-enter Password Hidden*",
+        "User Name Guidelines",
+        "Password Rules",
+        "Doing Business As ",
+        "Fields marked with * are mandatory",
+        "Employee Validation",
+        "Enter Code",
+        "Cancel",
+        "Submit",
+        "icon",
+        "Verify Email",
+        "Email Check",
+        "Verify Email Dummy",
+        "Verify Submit Dummy",
+        "verifiedTesting"
+   
+      ],
+      "className": "col-12"
+    }
+  },
+  "elements": [
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "Retrieve User ID",
+        "formSideHeader": "Retrieve User ID"
+      }
+    ],
+
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "Fields marked with * are mandatory",
+        "formMandatory": "Fields marked with * are mandatory"
+      }
+    ],
+
+    [
+      {
+        "type": "panelSideHeader",
+        "hideDefaultClass": true,
+        "label": "Let's create your user account",
+        "filename": "Icon Key.png",
+        "formSideHeaderWithImage": "Let's create your user account"
+      }
+    ],
+    [
+      {
+        "type": "email",
+        "name": "email",
+        "rearSector": "email",
+        "label": "Email for Registration",
+        "placeholder": "Enter email",
+        "tile": true,
+        "validations": {
+          "string": {
+            "validationRequiredOnTrue": {
+              "value": "createNewAddress",
+              "message": "Email is required"
+            },
+            "email": "Please enter valid email address",
+
+            "required": "Email is required"
+          }
+        },
+
+        "placement": "col-lg-6",
+        "classNameWrapper": "py-3",
+        "tileInfo": {
+          "displayConfig": {
+            "field": "verified",
+            "show": false,
+            "validateField": ["code"],
+            "renderElements": {
+              "code": true
+            },
+            "valueUpdate": {
+              "submitCodeBlock": false,
+              "verified": true
+            }
+          },
+
+          "name": "emailVerfified",
+          "hidden": false,
+          "value": "Verified",
+      
+          "config": {
+            "displayName": "InvoiceStatusConstants",
+            "style": {
+              "fontSize": "12px",
+              "backgroundColor": "#4CAF50",
+              "color": "#fff",
+              "borderRadius": "3px",
+              "border": "solid 1px #4CAF50",
+
+              "padding": "0.325rem"
+            }
+          },
+
+          "placement": "col-md-1"
+        }
+      },
+
+      {
+        "type": "readOnly",
+        "name": "contractSummary",
+        "label": "User Name Guidelines",
+        "hideLabel": true,
+        "validations": {},
+        "responseFrom": "ContractInformation",
+        "image": "Icon Information.png",
+        "imageContent": true,
+        "value": "Your registered Email ID will be the User ID during login",
+        "contentClassName": "readonly_label_medium_content",
+        "placement": " col-lg-6 pt-4 p-1 p-md-1 p-lg-4 pr-1 pr-md-2 pr-lg-4",
+        "readOnlyClassWrapper": "readonly_label_medium_content py-3",
+        "containerClassName": " col-10 ml-2",
+        "imageClassWrapper": "col-1 px-1 pt-3 pt-md-3 pt-lg-0 pr-3"
+      }
+    ],
+
+    [
+      {
+        "displayConfig": {
+          "field": "showCode",
+          "show": true
+        },
+        "type": "readOnly",
+        "hidden": false,
+        "name": "contractSummary",
+        "label": "Email Check",
+        "hideLabel": true,
+        "validations": {},
+        "value": "We must validate the above email id before accepting as a registered email.",
+        "placement": "col-md-12",
+        "containerClassName": " col-12 pb-4",
+        "display": "inline-block"
+      }
+    ],
+    [
+      {
+        "displayConfig": {
+          "field": "showCode",
+          "show": true,
+          "renderElements": {
+            "email": true
+          },
+          "validateField": ["email"],
+
+          "valueUpdate": {
+            "showCode": true,
+            "submitCodeBlock": true
+          }
+        },
+        "showElement": true,
+        "type": "button",
+        "hidden": false,
+        "outline": true,
+        "name": "verifyEmail",
+        "rearSector": "verifyEmail",
+        "label": "Verify Email",
+        "placeholder": "Enter email",
+
+        "placement": "col-md-6 col-lg-4 col-xl-4",
+        "className": "px-3 py-1 mb-md-3"
+      },
+      {
+        "type": "checkbox",
+        "visibility": "hidden",
+
+        "hidden": true,
+        "name": "showCode",
+        "rearSector": "addressNotDefined",
+        "label": "Verify Email Dummy",
+        "placement": "col-md-3 col-12"
+      }
+    ],
+
+    [
+      {
+        "displayConfig": {
+          "field": "submitCodeBlock",
+          "show": false,
+
+          "renderElements": {
+            "code": true
+          },
+          "valueUpdate": {
+            "verified": true,
+            "submitCodeBlock": false
+          },
+          "validateField": ["code"]
+        },
+        "hidden": false,
+        "type": "readOnly",
+        "name": "UserNameGuidelines",
+        "label": "User Name Guidelines",
+        "hideLabel": true,
+        "validations": {},
+        "value": "We have sent an access code to the above email id. Please enter the code in the below field to complete the verification.",
+        "placement": "col-md-12",
+        "containerClassName": " col-12",
+        "display": "inline-block"
+      }
+    ],
+
+    [
+      {
+        "displayConfig": {
+          "field": "submitCodeBlock",
+          "show": false,
+
+          "renderElements": {
+            "code": true
+          },
+          "valueUpdate": {
+            "verified": true,
+            "submitCodeBlock": false
+          },
+          "validateField": ["code"]
+        },
+
+        "type": "text",
+        "name": "code",
+        "hidden": false,
+        "rearSector": "code",
+        "label": "Enter Code",
+        "placeholder": "Enter Code",
+        "validations": {
+          "string": {
+            "validationRequiredOnTrue": {
+              "value": "showCode",
+              "message": "Code is required"
+            },
+            "matches": {
+              "regex": "^[0-9]*$",
+              "message": "Invalid code"
+            }
+          }
+        },
+
+        "placement": "col-lg-6",
+        "classNameWrapper": "pb -3"
+      }
+    ],
+
+    [
+      {
+        "displayConfig": {
+          "field": "submitCodeBlock",
+          "show": false,
+
+          "renderElements": {
+            "code": true
+          },
+          "valueUpdate": {
+            "verified": true,
+            "submitCodeBlock": false
+          },
+          "validateField": ["code"]
+        },
+        "type": "button",
+        "hidden": false,
+        "name": "userName",
+        "showElementSubmit": true,
+        "outline": true,
+        "rearSector": "",
+        "label": "Submit",
+        "placeholder": "",
+        "placement": "col-md-3 ",
+        "className": "mt-3 px-3 py-1 mb-md-3"
+      },
+
+      {
+        "type": "checkbox",
+        "defaultValue": false,
+        "value": false,
+        "hidden": true,
+        "valueType": "bool",
+        "name": "submitCodeBlock",
+        "rearSector": "",
+        "label": "Verify Submit Dummy",
+        "placement": "col-md-3 col-12"
+      },
+      {
+        "type": "checkbox",
+        "defaultValue": false,
+        "value": false,
+        "hidden": true,
+        "valueType": "bool",
+        "name": "verified",
+        "rearSector": "",
+        "label": "Verified Dummy",
+        "placement": "col-md-3 col-12"
+      }
+    ],
+
+    [
+      {
+        "type": "password",
+        "name": "password",
+        "rearSector": "password",
+        "placeholder": "Enter password",
+        "label": "Enter Password",
+        "passwordStrengthBar": true,
+
+        "validations": {
+          "string": {
+            "required": "Password is required",
+            "min": {
+              "limit": 8,
+              "message": "Minimum 10 characters"
+            },
+            "max": {
+              "limit": 32,
+              "message": "Maximum 32 characters"
+            },
+            "matches": {
+              "regex": "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*[@\\.\\-_'])(?!.*([0-9]|[aA-zZ]|[@\\.\\-_'])\\1\\1)(?!.*?(abc|bcd|cde|def|efg|fgh|ghi|hij|ijk|jkl|klm|lmn|mno|nop|opq|pqr|qrs|rst|stu|tuv|uvw|vwx|wxy|xyz|zyx|yxw|xwv|wvu|vut|uts|tsr|srq|rqp|pqo|pon|onm|nml|mlk|lkj|kji|jih|ihg|hgf|gfe|fed|edc|dcb|cba|ABC|BCD|CDE|DEF|EFG|FGH|GHI|HIJ|IJK|JKL|KLM|LMN|MNO|NOP|OPQ|PQR|QRS|RST|STU|TUV|UVW|VWX|WXY|XYZ|ZYX|YXW|XWV|WVU|VUT|UTS|TSR|SRQ|RQP|QPO|PON|ONM|NML|MLK|LKJ|KJI|JIH|IHG|HGF|GHE|FED|EDC|DCB|CBA|012|123|234|345|456|567|678|789|987|876|765|654|543|432|321|210)+).{10,32}$",
+              "message": "Password doesn't satisfy all password rules"
+            }
+          }
+        },
+        "placement": "col-11 col-md-10 col-lg-5",
+        "classNameWrapper": "py-3"
+      },
+
+      {
+        "type": "toolTip",
+        "hideDefaultClass": true,
+        "toolTip": [
+          "At least one uppercase letter",
+	        "At least one lowercase letter",
+          "At least one number",
+          "Minimum of 8 characters",
+	        "Maximum of 32 characters",
+          "Your username and password cannot match",
+          "Cannot contain more than three sequencial characters (ABC, BCA, 123)",
+          "Cannot contain more than three repeating characters (AAA,111)",
+          "May include only these special characters: @.-_'",
+	        "Your password must not be the same as your last 10 previous passwords",
+          "Password cannot be in email format"
+        ],
+        "label": "",
+        "hideLabel": true,
+        "filename": "icon_circle_info_password.png",
+        "placement": "col-1  pt-0  p-1 "
+      },
+
+      {
+        "type": "password",
+        "name": "reenterPassword",
+        "rearSector": "sSN",
+        "label": "Confirm Password",
+        "placeholder": "Confirm password",
+        "validations": {
+          "string": {
+            "required": "Confirm password is required",
+
+            "oneOf": {
+              "ref": "password",
+
+              "message": "Passwords should match"
+            }
+          }
+        },
+
+        "placement": "col-lg-6",
+        "classNameWrapper": "py-3"
+      }
+    ]
+  ]
+}

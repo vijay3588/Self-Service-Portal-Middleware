@@ -1,0 +1,12 @@
+[
+  {
+    "frontDataSegment": "loggedUserEntity._Result.clientId",
+    "rearDataSegment": "criteria",
+    "rearDataSegmentClass": "actorContact",
+    "rearDataSegmentPath": "",
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping": [
+      { "frontSector": "buid", "rearSector": "actorBUID", "defaultValue": "" }
+    ]
+  }
+]

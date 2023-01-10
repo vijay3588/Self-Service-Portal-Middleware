@@ -1,0 +1,95 @@
+{
+  "listElements": {
+    "elements": [
+      [
+        {
+          "type": "listItem",
+          "product": true,
+          "name": "productList",
+          "label": "productList",
+          "hideLabel": true,
+          "validations": {},
+          "image": "aflac.png",
+
+          "imageIcon": "iconVerified.svg",
+          "iconDescription": "Dependents can be enrolled",
+          "title": "Accident Insurance",
+          "description": "Group accident insurance helps with out of pocket expenses that arise when you have a covered accident such as fracture, dislocation and laceration",
+          "iconClass": "col-2 pt-1 px-1",
+          "pdfUrl": "https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf1_12mb_6pages.pdf",
+          "checkboxValue": false,
+          "checkboxName": "productAccident",
+          "additionalCheck":true,
+          "modalName": "watchVideoDependant",
+          "headerClass": "col-9 pt-1",
+          "urlIcon": ["icon_watch_video.png", "icon_download_brochure.png"],
+          "listClass": "col-12",
+          "olClass": "mb-1 px-3",
+
+          "placement": "col-12 col-md-12"
+        }
+      ]
+    ],
+    "modals": [
+      {
+        "modalName": "watchVideoDependant",
+        "title": "Sample Video",
+        "modalElements": [
+          [
+            [
+              {
+                "type": "video",
+                "width": "820",
+                "height": "710",
+                "src": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+                "alt": "",
+                "id": "video1"
+              }
+            ]
+          ]
+        ]
+      }
+    ]
+  },
+
+  "elements": [
+    [
+      {
+        "type": "readOnly",
+        "name": "Information",
+        "label": "Information",
+        "hideLabel": true,
+        "validations": {},
+        "value": "Your eligible products for open enrollment 2023 are listed below.",
+        "placement": "col-md-12",
+        "contentClassName": "readonly_label_header py-3 px-4",
+        "containerClassName": " col-12 px-3",
+        "display": "inline-block"
+      }
+    ],
+    [
+      {
+        "value": true,
+        "type": "checkbox",
+        "name": "selectAllproducts",
+        "additionalCheck":true,
+        "label": "Select All Products",
+        "placement": "col-lg-6 col-sm-6 ",
+        "classNameWrapper": "py-3 px-2"
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "name": "payLoadObject",
+        "payload": true,
+        "hidden": true,
+        "value": ["sadsad", "asdasda"],
+        "label": "Payload",
+        "placement": "col-lg-6 col-sm-6 ",
+        "classNameWrapper": "py-3 px-2"
+      }
+    ]
+  
+  ]
+}

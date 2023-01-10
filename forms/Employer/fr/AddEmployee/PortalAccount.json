@@ -1,0 +1,60 @@
+{
+  "elements": [
+    [
+      {
+        "type": "text",
+        "name": "userName",
+        "rearSector": "name",
+        "label": "User Name",
+        "placement": "col-md-3 col-12",
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis",
+            "min": { "limit": 6, "message": "Min length is 6" }
+          }
+        }
+      },
+      {
+        "type": "password",
+        "name": "password",
+        "rearSector": "password",
+        "label": "Password",
+        "placement": "col-md-3 col-12",
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis",
+            "min": { "limit": 6, "message": "Min length is 6" }
+          }
+        }
+      }
+    ],
+    [
+      {
+        "type": "email",
+        "name": "email",
+        "rearSector": "email",
+        "label": "Email",
+        "placement": "col-md-3 col-12",
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis",
+            "email": "Invalid email address"
+          }
+        }
+      },
+      {
+        "type": "select",
+        "name": "preferredLanguage",
+        "rearSector": "preferedLanguageCode",
+        "label": "Preferred Language",
+        "placement": "col-md-3 col-12",
+        "validations": {},
+        "defaultValue": null,
+        "options": [
+          { "value": "en", "text": "English" },
+          { "value": "fr", "text": "French" }
+        ]
+      }
+    ]
+  ]
+}

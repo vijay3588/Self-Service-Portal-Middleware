@@ -1,0 +1,6 @@
+{ 
+    "lossName": {"dataType": "string", "defaultValue":""}, 
+    "eventDate": {"dataType": "date", "defaultValue":""}, 
+    "disabilityEndDate": {"dataType": "date", "defaultValue":""},
+    "disabilityKind": {"dataType": "string", "defaultValue":""}
+}

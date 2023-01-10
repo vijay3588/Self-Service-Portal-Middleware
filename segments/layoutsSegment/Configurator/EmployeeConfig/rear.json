@@ -1,0 +1,60 @@
+{
+  "clientId": {
+    "dataType": "number",
+    "defaultValue": 0
+  },
+
+  "middleName": {
+    "dataType": "object",
+    "name": "empProfile"
+  },
+
+  "ssn": {
+    "dataType": "object",
+    "name": "empProfile"
+  },
+
+  "personalEmail": {
+    "dataType": "object",
+    "name": "empProfile"
+  },
+
+  "personalPhone": {
+    "dataType": "object",
+    "name": "empProfile"
+  },
+
+  "salary": {
+    "dataType": "object",
+    "name": "empProfile"
+  },
+
+  "payFrequency": {
+    "dataType": "object",
+    "name": "empProfile"
+  },
+
+  "divisioncode": {
+    "dataType": "object",
+    "name": "empProfile"
+  },
+
+  "workLocation": {
+    "dataType": "object",
+    "name": "empProfile"
+  },
+
+  "employmentStatus": {
+    "dataType": "object",
+    "name": "empProfile"
+  },
+
+  "preferredContact": {
+    "dataType": "object",
+    "name": "optionsField"
+  },
+  "noGroupStart": {
+    "dataType": "object",
+    "name": "empProfile"
+  }
+}

@@ -1,0 +1,1415 @@
+{
+	"cards": [
+		{
+			"title": "panelCard",
+			"type": "panelCard",
+			"name": "panelCard",
+			"cardMembers": [
+				{
+					"cardElements": [
+						{
+							"cardConfig": {
+								"showHeader": true,
+								"showFooter": false,
+								"className": "col-md-12 col-lg-12 pr-0",
+								"alignmentClass": "ml-n3"
+							},
+							"panelHeader": {
+								"config": {
+									"style": {
+										"fontSize": "14px",
+										"backgroundColor": "#f8f8f9",
+										"fontFamily": "Roboto",
+										"fontWeight": "500",
+										"fontStretch": "normal",
+										"color": "#333333",
+										"padding": "0px 10px 0px 75px"
+									}
+								},
+								"elements": [
+									{
+										"type": "label",
+										"name": "ProductsandCoverages",
+										"label": "Numéro de contrat",
+										"placement": "col-lg-2 col-sm-2; mt-2 text-14",
+										"value": "Numéro de contrat"
+									},
+									{
+										"type": "label",
+										"name": "ProductsandCoverages",
+										"label": "Date d’effet",
+										"placement": "col-lg-2 col-sm-2; mt-2 text-14",
+										"value": "Date d’effet"
+									},
+									{
+										"type": "label",
+										"name": "ProductsandCoverages",
+										"label": "Date de fin",
+										"placement": "col-lg-2 col-sm-2; mt-2 text-14",
+										"value": "Date de fin"
+									},
+									{
+										"type": "label",
+										"name": "ProductsandCoverages",
+										"label": "Statut",
+										"placement": "col-lg-2 col-sm-2; mt-2 text-14",
+										"value": "Statut"
+									}
+								]
+							},
+							"panelBody": {
+								"config": {
+									"className": "card-scroll"
+								},
+								"elements": [
+									{
+										"title": "prodAndCoverage",
+										"type": "ViewListCard",
+										"name": "prodAndCoverage",
+
+										"treeConfiguration": {
+											"branchHead": [
+												{
+													"leaflets": [
+														{
+															"field": "COVERAGES",
+															"contentType": "arrowProdHeaderText"
+														},
+														{
+															"field": "EFFECTIVE DATE",
+															"contentType": "prodHeaderText"
+														},
+														{
+															"field": "PAID THROUGH DATE",
+
+															"contentType": "prodHeaderText"
+														},
+														{
+															"field": "STATUS",
+															"contentType": "prodHeaderText"
+														}
+													],
+													"apiObject": "",
+													"contentType": "prodHeaderContainer"
+												}
+											],
+											"branch1": [
+												{
+													"leaflets": [
+														{
+															"dataObject": "",
+															"field": "optionName",
+															"contentType": "prodArrowItem"
+														},
+														{
+															"dataObject": "",
+															"field": "effectiveDate",
+															"contentType": "prodItem"
+														},
+														{
+															"dataObject": "",
+															"field": "paidToDate",
+															"contentType": "prodItem"
+														},
+														{
+															"dataObject": "",
+															"field": "status",
+															"contentType": "prodItem"
+														}
+													],
+													"apiObject": "coverageGeneralInformation",
+													"contentType": "listPlainContainer1"
+												}
+											],
+
+											"branch2": [
+												{
+													"leaflets": [
+														{
+															"contentType": "Elementor",
+															"placement": "col-lg-1 col-sm-1 text-14 table-header text-center-align",
+															"Content": "",
+															"type": "image",
+															"name": "date",
+															"label": "Date",
+															"filename": "amount-due.png",
+															"hideDefaultClass": true
+														},
+														{
+															"placement": "col-lg-3 col-sm-3; mt-2 text-14",
+															"Content": "Subscription Date",
+															"contentType": "Elementor",
+															"type": "readOnly",
+															"name": "effectiveDate",
+															"label": "Subscription Date",
+															"value": "",
+															"field": "effectiveDate"
+														},
+														{
+															"placement": "col-lg-4 col-sm-4; mt-2 text-14",
+															"Content": "Effective Date",
+															"contentType": "Elementor",
+															"type": "readOnly",
+															"name": "effectiveDate",
+															"label": "Effective Date",
+															"value": "",
+															"field": "effectiveDate"
+														}
+													],
+													"apiObject": "coverageGeneralInformation",
+													"contentType": "subListPlainContainer"
+												}
+											],
+											"branch3": [
+												{
+													"leaflets": [
+														{
+															"Content": "Effective Date: 01/01/2019",
+															"contentType": "subheaderSingleContainer1"
+														}
+													]
+												}
+											],
+											"branch4": [
+												{
+													"leaflets": [
+														{
+															"Content": "Plan Designs",
+															"contentType": "headerSingleContainer1"
+														}
+													]
+												}
+											],
+											"branch5": [
+												{
+													"leaflets": [
+														{
+															"Content": "Plan Name",
+															"contentType": "tableHeader"
+														}
+													]
+												}
+											],
+											"branch6": [
+												{
+													"leaflets": [
+														{
+															"Content": "",
+															"contentType": "tableItem"
+														}
+													]
+												}
+											]
+										}
+									}
+								]
+							},
+							"panelFooter": {
+								"elements": []
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "panelCard",
+			"type": "panelCard",
+			"name": "panelCard",
+			"cardMembers": [
+				{
+					"cardElements": [
+						{
+							"cardConfig": {
+								"showHeader": true,
+								"showFooter": false,
+								"className": "col-md-12 col-lg-12 mb-3 pr-0 pl-0"
+							},
+							"panelHeader": {
+								"elements": [
+									{
+										"type": "readOnly",
+										"name": "currentAmountDue",
+										"label": "",
+										"placement": "mr-3",
+										"validations": {},
+										"image": "invoice.png"
+									},
+									{
+										"type": "label",
+										"name": "BillingAndInvoicing",
+										"label": "Avenants au contrat",
+										"placement": "col-lg-8 col-md-6",
+										"value": "Avenants au contrat",
+										"config": {
+											"className": "enrollment-number"
+										}
+									}
+								]
+							},
+							"panelBody": {
+								"config": {
+									"className": "card-scroll"
+								},
+								"elements": [
+									{
+										"title": "billDescInformation",
+										"type": "ViewListCard",
+										"name": "billDescInformation",
+										"highlightTitle": true,
+										"cardElements": [
+											{
+												"list": {
+													"listTitle": {
+														"listName": "List Bill"
+													},
+													"listHeader": [
+														{
+															"value": "Billing Frequency",
+															"config": {
+																"className": ""
+															}
+														},
+														{
+															"value": "Invoicing Frequency",
+															"config": {
+																"className": "second-col-align"
+															}
+														},
+														{
+															"value": "Divisions",
+															"config": {
+																"className": "col"
+															}
+														},
+														{
+															"value": "Member Classes ",
+															"config": {
+																"className": "col"
+															}
+														},
+														{
+															"value": "Coverages ",
+															"config": {
+																"className": "col"
+															}
+														},
+														{
+															"value": "Status ",
+															"config": {
+																"className": "col"
+															}
+														}
+													],
+													"listRowData": [
+														{
+															"name": "billingFrequency",
+															"type": "readOnly",
+															"label": "",
+															"value": "Test",
+															"hideLabel": true,
+															"config": {
+																"childClassName": "first-col-align",
+																"childClassNameWithChild": "first-col-align-child",
+																"grandChildClassName": "first-col-align-grand-child"
+															}
+														},
+														{
+															"name": "invoicingFrequency",
+															"type": "readOnly",
+															"label": "",
+															"value": "Test",
+															"hideLabel": true,
+															"config": {}
+														},
+														{
+															"name": "divisions",
+															"type": "readOnly",
+															"label": "",
+															"value": "Test",
+															"hideLabel": true,
+															"config": {}
+														},
+														{
+															"name": "memberClasses",
+															"type": "readOnly",
+															"label": "",
+															"value": "Test",
+															"hideLabel": true,
+															"config": {}
+														},
+														{
+															"name": "coverages",
+															"type": "readOnly",
+															"label": "",
+															"value": "Test",
+															"hideLabel": true,
+															"config": {}
+														},
+														{
+															"name": "status",
+															"type": "readOnly",
+															"label": "",
+															"value": "Test",
+															"hideLabel": true,
+															"config": {
+																"optionsname": "InvoiceStatusConstants"
+															}
+														}
+													]
+												}
+											}
+										],
+										"cardConfig": {
+											"showHeader": false
+										}
+									},
+									{
+										"title": "ConsolidatedBill",
+										"type": "ViewListCard",
+										"highlightTitle": true,
+										"cardElements": [
+											{
+												"list": {
+													"listTitle": {
+														"listName": "Consolidated Bill"
+													},
+													"listHeader": [
+														{
+															"value": "Billing Frequency",
+															"config": {
+																"className": ""
+															}
+														},
+														{
+															"value": "Invoicing Frequency",
+															"config": {
+																"className": "second-col-align"
+															}
+														},
+														{
+															"value": "Divisions",
+															"config": {
+																"className": "col"
+															}
+														},
+														{
+															"value": "Member Classes ",
+															"config": {
+																"className": "col"
+															}
+														},
+														{
+															"value": "Coverages ",
+															"config": {
+																"className": "col"
+															}
+														},
+														{
+															"value": "Status ",
+															"config": {
+																"className": "col"
+															}
+														}
+													],
+													"listRowData": [
+														{
+															"name": "billingFrequency",
+															"type": "readOnly",
+															"label": "",
+															"value": "Test",
+															"hideLabel": true,
+															"config": {
+																"childClassName": "first-col-align",
+																"childClassNameWithChild": "first-col-align-child",
+																"grandChildClassName": "first-col-align-grand-child"
+															}
+														},
+														{
+															"name": "invoicingFrequency",
+															"type": "readOnly",
+															"label": "",
+															"value": "Test",
+															"hideLabel": true,
+															"config": {}
+														},
+														{
+															"name": "divisions",
+															"type": "readOnly",
+															"label": "",
+															"value": "Test",
+															"hideLabel": true,
+															"config": {}
+														},
+														{
+															"name": "memberClasses",
+															"type": "readOnly",
+															"label": "",
+															"value": "Test",
+															"hideLabel": true,
+															"config": {}
+														},
+														{
+															"name": "coverages",
+															"type": "readOnly",
+															"label": "",
+															"value": "Test",
+															"hideLabel": true,
+															"config": {}
+														},
+														{
+															"name": "status",
+															"type": "readOnly",
+															"label": "",
+															"value": "Test",
+															"hideLabel": true,
+															"config": {}
+														}
+													]
+												}
+											}
+										],
+										"cardConfig": {
+											"showHeader": false
+										}
+									}
+								]
+							},
+							"panelFooter": {
+								"elements": []
+							}
+						}
+					]
+				}
+			]
+		}
+	],
+	"metadata":{
+		"prodAndCoverage": {
+			"header": [{
+				"header": [{
+					"content": [{
+						"content": [
+							[{
+								"content": "Term Life Insurance",
+								"placement": "",
+								"sector": "optionName",
+								"dataSegment": "coverageGeneralInformation"
+							}]
+						],
+						"placement": "prodCardHeader"
+					}]
+				}],
+				"list": [{
+					"content": [{
+							"content": [
+								[{
+										"content": "COVERAGES",
+										"placement": "arrowProdHeaderText"
+									},
+									{
+										"content": "EFFECTIVE DATE",
+										"placement": "prodHeaderText"
+									},
+									{
+										"content": "PAID THROUGH DATE",
+										"placement": "prodHeaderText"
+									},
+									{
+										"content": "STATUS",
+										"placement": "prodHeaderText"
+									}
+								]
+							],
+							"placement": "prodHeaderContainer"
+						},
+						{
+							"content": [
+								[{
+										"content": "",
+										"placement": "prodArrowItem",
+										"dataObject": "",
+										"sector": "optionName",
+										"dataSegment": "coverageGeneralInformation"
+									},
+									{
+										"content": "",
+										"placement": "row col-lg-2 col-sm-2 prod-text-14",
+										"dataObject": "",
+										"sector": "effectiveDate",
+										"dataSegment": "coverageGeneralInformation",
+										"name": "coverage-effectivedate",
+										"label": "Effective Date",
+										"elementor": true,
+										"value": "",
+										"hideLabel": true,
+										"type": "readOnly",
+										"insideSpan": true,
+										"config": {
+											"valueType": "date",
+											"format": "MM/DD/YYYY"
+										}
+									},
+									{
+										"content": "",
+										"placement": "row col-lg-2 col-sm-2 prod-text-14",
+										"dataObject": "",
+										"sector": "subscriptionDate",
+										"dataSegment": "coverageGeneralInformation",
+										"name": " coverage-subscrpitiondate",
+										"label": "Effective Date",
+										"elementor": true,
+										"value": "",
+										"hideLabel": true,
+										"type": "readOnly",
+										"insideSpan": true,
+										"config": {
+											"valueType": "date",
+											"format": "MM/DD/YYYY"
+										}
+									},
+	
+									{
+										"elementor": true,
+										"content": "",
+										"placement": "row col-lg-2 col-sm-2 prod-text-14",
+										"dataObject": "",
+										"sector": "status",
+										"dataSegment": "coverageGeneralInformation",
+										"name": "status-label",
+										"type": "tile",
+										"label": "",
+										"value": "",
+										"hideLabel": true,
+										"config": {
+											"displayName": "InvoiceStatusConstants",
+											"style": {
+												"fontSize": "14px",
+												"borderRadius": "4px",
+												"backgroundColor": "#ef5a88",
+												"fontFamily": "Roboto",
+												"fontWeight": "500",
+												"fontStretch": "normal",
+												"color": "#ffffff",
+												"padding": "0px 19px 0px"
+											}
+										}
+									}
+								],
+								[{
+									"subList": {
+										"content": [
+											[{
+													"content": "",
+													"elementor": true,
+													"placement": "col-lg-1 col-sm-1 text-14 table-header text-center-align",
+													"type": "image",
+													"name": "date",
+													"label": "Date",
+													"filename": "amount-due.png",
+													"hideDefaultClass": true,
+													"value": ""
+												},
+												{
+													"content": "Subscription Date",
+													"elementor": true,
+													"placement": "col-lg-3 col-sm-3; mt-2 text-14",
+													"type": "readOnly",
+													"name": "effectiveDate",
+													"label": "Subscription Date",
+													"value": "",
+													"sector": "subscriptionDate",
+													"dataSegment": "coverageGeneralInformation",
+													"config": {
+														"valueType": "date",
+														"format": "MM/DD/YYYY"
+													}
+												},
+												{
+													"content": "Effective Date",
+													"elementor": true,
+													"placement": "col-lg-4 col-sm-4; mt-2 text-14",
+													"type": "readOnly",
+													"name": "effectiveDate",
+													"label": "Effective Date",
+													"value": "",
+													"sector": "effectiveDate",
+													"dataSegment": "coverageGeneralInformation",
+													"config": {
+														"valueType": "date",
+														"format": "MM/DD/YYYY"
+													}
+												}
+											]
+										],
+										"placement": "subListPlainContainer"
+									}
+								}],
+								[{
+									"subList": {
+										"content": [
+											[{
+													"content": "Coverage Attributes",
+													"placement": "headerSingleContainer1"
+												},
+												{
+													"content": "Attributes List",
+													"placement": "subheaderSingleContainer1"
+												},
+												{
+													"subChildList": {
+														"content": [
+															[{
+																"arrayList": true,
+																"content": {
+																	"header": "fieldName",
+																	"item": "fieldValue",
+																	"sector": "amount"
+																},
+																"placement": {
+																	"header": "tableHeader",
+																	"item": "tableItem"
+																},
+																"sector": "additionalDatas",
+																"dataSegment": "coverageGeneralInformation"
+															}]
+														],
+														"placement": "subTableContainer"
+													}
+												}
+											]
+										],
+										"placement": "subListPlainContainer"
+									}
+								}],
+								[{
+									"subList": {
+										"content": [
+											[{
+													"content": "Plan Designs",
+													"placement": "headerSingleContainer1"
+												},
+												{
+													"content": "Effective Date: ",
+													"elementor": true,
+													"appendText": true,
+													"placement": "col-lg-11 col-sm-11 child-caret-prod prod-text-14 prod-sub-header-single-container",
+													"sector": "effectiveDatePD",
+													"dataSegment": "planDesigns",
+													"type": "readOnly",
+													"name": "plandesign-effectivedate",
+													"label": "Effective Date",
+													"value": "",
+													"hideLabel": true,
+													"insideSpan": true,
+													"config": {
+														"valueType": "date",
+														"format": "MM/DD/YYYY"
+													}
+												},
+												{
+													"subChildList": {
+														"content": [
+															[{
+																	"content": "Plan Name",
+																	"placement": "tableHeader"
+																},
+																{
+																	"content": "",
+																	"placement": "tableItem",
+																	"sector": "name",
+																	"dataSegment": "planDesigns"
+																}
+															],
+															[{
+																	"content": "Plan Code",
+																	"placement": "tableHeader"
+																},
+																{
+																	"content": "",
+																	"placement": "tableItem",
+																	"sector": "identifier",
+																	"dataSegment": "planDesigns"
+																}
+															],
+															[{
+																	"content": "Plan Effective Date",
+																	"placement": "tableHeader"
+																},
+																{
+																	"content": "",
+																	"placement": "tableItem",
+																	"sector": "effectiveDatePD",
+																	"dataSegment": "planDesigns"
+																}
+															],
+															[{
+																"arrayList": true,
+																"content": {
+																	"header": "attributeName",
+																	"item": "attributeValue"
+																},
+																"placement": {
+																	"header": "tableHeader",
+																	"item": "tableItem"
+																},
+																"sector": "attributesPD",
+																"dataSegment": "planDesigns"
+															}],
+															[{
+																"arrayList": true,
+																"content": {
+																	"header": "name",
+																	"item": "member",
+																	"subItem": "attributes",
+																	"subContent": {
+																		"header": "fieldName",
+																		"item": "fieldValue"
+																	}
+																},
+																"placement": {
+																	"header": "tableHeaderLine",
+																	"item": "tableItemLine",
+																	"subPlacement": {
+																		"header": "tableHeaderLine",
+																		"item": "tableItemLineAtt"
+																	}
+																},
+																"sector": "eligibleMemberClasses",
+																"dataSegment": ""
+															}],
+															[{
+																"content": "Benefits",
+																"placement": "tableSingleItem"
+															}],
+															[{
+																"arrayList": true,
+																"content": {
+																	"header": "name",
+																	"item": "subscribed",
+																	"subItem": "attributes",
+																	"subContent": {
+																		"header": "fieldName",
+																		"item": "fieldValue"
+																	}
+																},
+																"placement": {
+																	"header": "tableHeader",
+																	"item": "tableItem",
+																	"subPlacement": {
+																		"header": "tableHeaderAtt",
+																		"item": "tableItem"
+																	}
+																},
+																"sector": "subscribedBenefits",
+																"dataSegment": "subscribedBenefits"
+															}]
+														],
+														"placement": "subTableContainer"
+													}
+												}
+											]
+										],
+										"placement": "subListPlainContainer"
+									}
+								}],
+								[{
+									"subList": {
+										"content": [
+											[{
+													"content": "Participation",
+													"placement": "headerSingleContainer1"
+												},
+												{
+													"subChildList": {
+														"content": [
+															[{
+																"placement": "col-lg-3 col-sm-3; mt-2 itemText",
+																"content": "Subscription Date",
+																"elementor": true,
+																"type": "readOnly",
+																"name": "effectiveDate",
+																"label": "Total Eligible Employees",
+																"value": "",
+																"sector": "eligibleEmployees",
+																"dataSegment": "coverageGeneralInformation"
+															}],
+															[{
+																	"placement": "col-lg-2 col-sm-2; mt-2 itemText",
+																	"content": "Subscription Date",
+																	"elementor": true,
+																	"type": "readOnly",
+																	"name": "effectiveDate",
+																	"label": "Required Participation",
+																	"value": ""
+																},
+																{
+																	"placement": "col-lg-3 col-sm-3;  itemText ",
+																	"content": "",
+																	"elementor": true,
+																	"type": "progressBar",
+																	"name": "progressBar",
+																	"bgColor": "blue",
+																	"value": "",
+																	"sector": "requiredParticipation",
+																	"dataSegment": "coverageGeneralInformation"
+																}
+															],
+															[{
+																	"placement": "col-lg-2 col-sm-2; itemText",
+																	"content": "Subscription Date",
+																	"elementor": true,
+																	"type": "readOnly",
+																	"name": "effectiveDate",
+																	"label": "Current Participation",
+																	"value": ""
+																},
+																{
+																	"placement": "col-lg-3 col-sm-3;  itemText",
+																	"content": "",
+																	"elementor": true,
+																	"type": "progressBar",
+																	"name": "progressBar",
+																	"bgColor": "green",
+																	"value": "",
+																	"sector": "currentParticipationNumber",
+																	"dataSegment": "coverageGeneralInformation"
+																}
+															],
+															[{
+																	"placement": "col-lg-2 col-sm-2; mt-2 itemText",
+																	"content": "Subscription Date",
+																	"elementor": true,
+																	"type": "readOnly",
+																	"name": "effectiveDate",
+																	"label": "Initial Participation",
+																	"value": ""
+																},
+																{
+																	"placement": "col-lg-3 col-sm-3; mb-2 itemText",
+																	"content": "",
+																	"elementor": true,
+																	"type": "progressBar",
+																	"name": "progressBar",
+																	"value": "",
+																	"sector": "actualParticipationNumber",
+																	"dataSegment": "coverageGeneralInformation",
+																	"bgColor": "vilot"
+																}
+															]
+														],
+														"placement": "subBoxPlainContainer"
+													}
+												}
+											]
+										],
+										"placement": "subListPlainContainer"
+									}
+								}]
+							],
+							"placement": "listPlainContainer1"
+						}
+					],
+					"placement": "prodCardItem"
+				}]
+			}]
+		},
+		"billDescInformation": {
+			"header": [{
+				"header": [{
+					"content": [{
+						"content": [
+							[{
+								"content": "Consolidated Bill",
+								"placement": "",
+								"sector": "billDetail",
+								"dataSegment": "billDescInformation"
+							}]
+						],
+						"placement": "billingCardHeader"
+					}]
+				}],
+				"list": [{
+					"content": [{
+							"content": [
+								[{
+										"content": "Billing Frequency",
+										"placement": "arrowHeaderText"
+									},
+									{
+										"content": "Invoicing Frequency",
+										"placement": "listHeaderItem"
+									},
+									{
+										"content": "Divisions",
+										"placement": "listHeaderItem"
+									},
+									{
+										"content": "Member Classes",
+										"placement": "listHeaderItem"
+									},
+									{
+										"content": "Coverages",
+										"placement": "listHeaderItem"
+									},
+									{
+										"content": "Status",
+										"placement": "listHeaderItem"
+									}
+								]
+							],
+							"placement": "listHeaderContainer"
+						},
+						{
+							"content": [
+								[{
+										"content": "Monthly",
+										"placement": "arrowListItem",
+										"sector": "",
+										"dataSegment": "billDescInformation"
+									},
+									{
+										"elementor": true,
+										"content": "",
+										"placement": "col-lg-2 col-sm-2 text-16",
+										"dataObject": "",
+										"sector": "invoiceFrequency",
+										"dataSegment": "billDescInformation",
+										"name": "invoiceFrequency-label",
+										"type": "tile",
+										"label": "",
+										"value": "",
+										"hideLabel": true,
+										"config": {
+											"displayName": "PaymentStatusConstants"
+										}
+									},
+									{
+										"content": "",
+										"placement": "itemText",
+										"element": 0,
+										"sector": "divisions",
+										"dataSegment": "billDescInformation"
+									},
+									{
+										"content": "",
+										"placement": "itemText",
+										"element": 0,
+										"sector": "memberClasses",
+										"dataSegment": "billDescInformation"
+									},
+									{
+										"content": "",
+										"placement": "itemText",
+										"element": 0,
+										"sector": "coverages",
+										"dataSegment": "billDescInformation"
+									},
+									{
+										"content": "",
+										"placement": "itemText",
+										"sector": "status",
+										"dataSegment": "billDescInformation"
+									}
+								]
+							],
+							"placement": "listPlainContainer"
+						},
+						{
+							"content": [
+								[{
+										"content": "Next Due Date",
+										"placement": "headerText"
+									},
+									{
+										"content": "Amount Due",
+										"placement": "headerText"
+									},
+									{
+										"content": "Payment Status",
+										"placement": "headerText"
+									},
+									{
+										"content": "Last Payment Date",
+										"placement": "headerText"
+									},
+									{
+										"content": "Payer",
+										"placement": "headerText"
+									},
+									{
+										"content": "Paid Through Date",
+										"placement": "headerText"
+									}
+								],
+								[{
+										"sector": "nextDueDate",
+										"dataSegment": "billDescInformation",
+										"content": "",
+										"placement": "col-lg-2 col-sm-2 text-16",
+										"dataObject": "",
+										"name": "nextDueDate-effectivedate",
+										"label": "Effective Date",
+										"elementor": true,
+										"value": "",
+										"hideLabel": true,
+										"type": "readOnly",
+										"insideSpan": true,
+										"config": {
+											"valueType": "date",
+											"format": "MM/DD/YYYY"
+										}
+									},
+									{
+										"content": "0",
+										"placement": "itemText",
+										"sector": "amount",
+										"dataSegment": "billDescInformation.dueAmount"
+									},
+									{
+										"content": "",
+										"placement": "itemText",
+										"sector": "payMentStatus",
+										"dataSegment": "billDescInformation"
+									},
+	
+									{
+										"content": "",
+										"sector": "latPayMentDate",
+										"dataSegment": "billDescInformation",
+										"placement": "col-lg-2 col-sm-2 text-16",
+										"dataObject": "",
+										"name": "nextDueDate-effectivedate",
+										"label": "Effective Date",
+										"elementor": true,
+										"value": "",
+										"hideLabel": true,
+										"type": "readOnly",
+										"insideSpan": true,
+										"config": {
+											"valueType": "date",
+											"format": "MM/DD/YYYY"
+										}
+									},
+									{
+										"content": "",
+										"placement": "itemText",
+										"sector": "payer",
+										"dataSegment": "billDescInformation"
+									},
+	
+									{
+										"content": "",
+										"sector": "paidThroughDate",
+										"dataSegment": "billDescInformation",
+										"placement": "col-lg-2 col-sm-2 text-16",
+										"dataObject": "",
+										"name": "nextDueDate-effectivedate",
+										"label": "Effective Date",
+										"elementor": true,
+										"value": "",
+										"hideLabel": true,
+										"type": "readOnly",
+										"insideSpan": true,
+										"config": {
+											"valueType": "date",
+											"format": "MM/DD/YYYY"
+										}
+									}
+								]
+							],
+							"placement": "headerContainer"
+						},
+						{
+							"content": [
+								[{
+										"content": "Billing & Invoicing Settings",
+										"placement": "headerSingleContainer",
+										"sector": "",
+										"dataSegment": "billDescInformation"
+									},
+									{
+										"content": "Billed Entity",
+										"placement": "subheaderSingleContainer"
+									},
+									{
+										"subList": {
+											"content": [
+												[{
+														"content": "Divisions",
+														"placement": "subHeaderText"
+													},
+													{
+														"content": "Member Classes",
+														"placement": "subHeaderText"
+													},
+													{
+														"content": "Coverages",
+														"placement": "subHeaderText"
+													}
+												],
+												[{
+														"content": "",
+														"placement": "subItemText",
+														"element": 0,
+														"sector": "divisions",
+														"dataSegment": "billDescInformation"
+													},
+													{
+														"content": "",
+														"placement": "subItemText",
+														"element": 0,
+														"sector": "memberClasses",
+														"dataSegment": "billDescInformation"
+													},
+													{
+														"content": "",
+														"placement": "subItemText",
+														"element": 0,
+														"sector": "coverages",
+														"dataSegment": "billDescInformation"
+													}
+												]
+											],
+											"placement": "subheaderPlainContainer"
+										}
+									},
+									{
+										"content": "Billing Information",
+										"placement": "subheaderSingleContainer",
+										"sector": "",
+										"dataSegment": "billDescInformation"
+									},
+									{
+										"subList": {
+											"content": [
+												[{
+														"content": "Billing Mode",
+														"placement": "headerText"
+													},
+													{
+														"content": "Billing Frequency",
+														"placement": "headerText"
+													},
+													{
+														"content": "Billing Lead Time (In Days)",
+														"placement": "headerText"
+													},
+													{
+														"content": "Billing Lead Time Calculation",
+														"placement": "headerText"
+													},
+													{
+														"content": "Billing Start Date",
+														"placement": "headerText"
+													},
+													{
+														"content": "Billing Synchronizatio",
+														"placement": "headerText"
+													}
+												],
+												[{
+														"content": "",
+														"placement": "itemText",
+														"sector": "billDetail",
+														"dataSegment": "billDescInformation"
+													},
+													{
+														"content": "",
+														"placement": "itemText",
+														"sector": "",
+														"dataSegment": "billDescInformation"
+													},
+													{
+														"content": "",
+														"placement": "itemText",
+														"sector": "billingLeadTime",
+														"dataSegment": "billDescInformation"
+													},
+	
+													{
+														"content": "",
+														"placement": "itemText",
+														"sector": "billingLeadTimeCalculation",
+														"dataSegment": "billDescInformation",
+														"elementor": true,
+														"dataObject": "",
+														"name": "invoiceFrequency-label",
+														"type": "tile",
+														"label": "",
+														"value": "",
+														"hideLabel": true,
+														"config": {
+															"displayName": "PaymentStatusConstants"
+														}
+													},
+													{
+														"content": "",
+														"placement": "itemText",
+														"sector": "billingStartDate",
+														"dataSegment": "billDescInformation"
+													},
+													{
+														"content": "",
+														"placement": "itemText",
+														"sector": "",
+														"billingSyncDate": "billDescInformation"
+													}
+												]
+											],
+											"placement": "subheaderPlainContainer"
+										}
+									},
+									{
+										"content": "Invoice Information",
+										"placement": "subheaderSingleContainer",
+										"sector": "",
+										"dataSegment": "billDescInformation"
+									},
+									{
+										"subList": {
+											"content": [
+												[{
+														"content": "Invoicing Frequency",
+														"placement": "headerText"
+													},
+													{
+														"content": "Invoicing Lead Time (In Days)",
+														"placement": "headerText"
+													},
+													{
+														"content": "Invoicing Lead Time Calculation",
+														"placement": "headerText"
+													},
+													{
+														"content": "Invoicing Start Date",
+														"placement": "headerText"
+													},
+													{
+														"content": "Invoicing Synchronization Date",
+														"placement": "headerText"
+													}
+												],
+												[
+	
+													{
+														"elementor": true,
+														"content": "",
+														"placement": "col-lg-2 col-sm-2 text-16",
+														"dataObject": "",
+														"sector": "invoiceFrequency",
+														"dataSegment": "billDescInformation",
+														"name": "invoiceFrequency-label",
+														"type": "tile",
+														"label": "",
+														"value": "",
+														"hideLabel": true,
+														"config": {
+															"displayName": "PaymentStatusConstants"
+														}
+													},
+													{
+														"content": "",
+														"placement": "itemText",
+														"sector": "invoicingLeadTime",
+														"dataSegment": "billDescInformation"
+													},
+													{
+														"content": "",
+														"sector": "invoicingLeadTimeCalculation",
+														"dataSegment": "billDescInformation",
+														"elementor": true,
+														"placement": "col-lg-2 col-sm-2 text-16",
+														"dataObject": "",
+														"name": "invoiceFrequency-label",
+														"type": "tile",
+														"label": "",
+														"value": "",
+														"hideLabel": true,
+														"config": {
+															"displayName": "PaymentStatusConstants"
+														}
+													},
+													{
+														"content": "",
+														"sector": "invoicingStartDate",
+														"dataSegment": "billDescInformation",
+														"placement": "row col-lg-2 col-sm-2 prod-text-14",
+														"dataObject": "",
+														"name": "coverage-effectivedate",
+														"label": "Effective Date",
+														"elementor": true,
+														"value": "",
+														"hideLabel": true,
+														"type": "readOnly",
+														"insideSpan": true,
+														"config": {
+															"valueType": "date",
+															"format": "MM/DD/YYYY"
+														}
+													},
+													{
+														"content": "",
+														"placement": "itemText",
+														"sector": "invoicingSyncDate",
+														"dataSegment": "billDescInformation"
+													}
+												]
+											],
+											"placement": "subheaderPlainContainer"
+										}
+									},
+									{
+										"content": "Payer Information",
+										"placement": "subheaderSingleContainer"
+									},
+									{
+										"subList": {
+											"content": [
+												[{
+														"content": "Payer",
+														"placement": "subHeaderText"
+													},
+													{
+														"content": "Send Bill To",
+														"placement": "subHeaderText"
+													},
+													{
+														"content": "Billing Address",
+														"placement": "subHeaderText"
+													}
+												],
+												[{
+														"content": "",
+														"placement": "subItemText",
+														"sector": "payer",
+														"dataSegment": "billDescInformation"
+													},
+													{
+														"content": "",
+														"placement": "subItemText",
+														"sector": "sendBillTo",
+														"dataSegment": "billDescInformation"
+													},
+													{
+														"content": "",
+														"placement": "subItemText",
+														"sector": "billingAddress",
+														"dataSegment": "billDescInformation"
+													}
+												]
+											],
+											"placement": "subheaderPlainContainer"
+										}
+									}
+								]
+							],
+							"placement": "headerPlainContainer"
+						}
+					],
+					"placement": "billingCardItem"
+				}]
+			}]
+		}
+	}
+}

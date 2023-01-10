@@ -1,0 +1,226 @@
+[
+    {
+        "frontSegment": "generalInfo",
+        "dataParentSegment": "",
+        "dataSegmentType": "object",
+        "defaultSectorMapping": [
+            {
+                "frontSector": "fullName",
+                "rearSector": "shortName",
+                "rearDataSegmentPath": "loggedUserEntity._Result.personIdentityHistories.personIdentity",
+                "defaultValue": "",
+                "dataConfig": {
+                    "configType": "additionSector",
+                    "sector": "name",
+                    "splitText": " "
+                }
+            },
+            {
+                "frontSector": "clientId",
+                "rearSector": "internalClientId",
+                "rearDataSegmentPath": "loggedUserEntity._Result.clientId",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "birthDate",
+                "rearSector": "birthDate",
+                "rearDataSegmentPath": "loggedUserEntity._Result.personIdentityHistories.personIdentity",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "country",
+                "rearSector": "personIdentity",
+                "rearDataSegmentPath": "loggedUserEntity._Result",
+                "defaultValue": ""
+            }
+        ]
+    },
+    {
+        "frontSegment": "contactInfo",
+        "dataParentSegment": "loggedUserEntity._Result.correspondences",
+        "dataSegmentType": "array",
+        "defaultSectorMapping": [
+            {
+                "frontSector": "typeOfAddress",
+                "rearSector": "addressUsage",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "isDefault",
+                "rearSector": "isDefaultCorrespondance",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "noMailingAddress",
+                "rearSector": "",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "lineOne",
+                "rearSector": "line1",
+                "rearDataSegmentPath": "address",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "lineTwo",
+                "rearSector": "line2",
+                "rearDataSegmentPath": "address",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "city",
+                "rearSector": "city",
+                "rearDataSegmentPath": "address.zipCodeAndCity",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "state",
+                "rearSector": "state",
+                "rearDataSegmentPath": "address",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "zipCode",
+                "rearSector": "zipCode",
+                "rearDataSegmentPath": "address.zipCodeAndCity",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "country",
+                "rearSector": "country",
+                "rearDataSegmentPath": "address",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "phoneNumberPrimary",
+                "rearSector": "privatePhone",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "extPrimary",
+                "rearSector": "privatePhoneExtension",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "phoneNumberSecondary",
+                "rearSector": "officePhone",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "extSecondary",
+                "rearSector": "officePhoneExtension",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "faxNumber",
+                "rearSector": "fax",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "email",
+                "rearSector": "eMail",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "preferredContactMethod",
+                "rearSector": "mediaType",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "contactName",
+                "rearSector": "contactName",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            }
+        ]
+    },
+    {
+        "frontSegment": "bankAccount",
+        "dataParentSegment": "loggedUserEntity._Result.paymentMethods",
+        "dataSegmentType": "array",
+        "defaultSectorMapping": [
+            {
+                "frontSector": "bankName",
+                "rearSector": "name",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "accountType",
+                "rearSector": "accountType",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "accountNumber",
+                "rearSector": "accountNumber",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "effectiveDate",
+                "rearSector": "effectiveDate",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "expirationDate",
+                "rearSector": "endDate",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "routingNumber",
+                "rearSector": "routingNumber",
+                "rearDataSegmentPath": "",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "lineOne",
+                "rearSector": "line1",
+                "rearDataSegmentPath": "address",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "lineTwo",
+                "rearSector": "line2",
+                "rearDataSegmentPath": "address",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "city",
+                "rearSector": "city",
+                "rearDataSegmentPath": "address.zipCodeAndCity",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "state",
+                "rearSector": "state",
+                "rearDataSegmentPath": "address",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "zipCode",
+                "rearSector": "zipCode",
+                "rearDataSegmentPath": "address.zipCodeAndCity",
+                "defaultValue": ""
+            },
+            {
+                "frontSector": "country",
+                "rearSector": "country",
+                "rearDataSegmentPath": "address",
+                "defaultValue": ""
+            }
+        ]
+    }
+]

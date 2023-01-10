@@ -1,0 +1,131 @@
+[
+    {
+        "frontSegment": "personalInformation",
+        "dataParentSegment": "personalInformation",
+        "dataSegmentType": "object",
+        "defaultSectorMapping": [
+          {
+            "frontSector": "firstName",
+            "rearSector": "name",
+            "rearDataSegmentPath": "actor",
+            "defaultValue": ""
+          },
+          {
+            "frontSector": "middleName",
+            "rearSector": "middleName1",
+            "rearDataSegmentPath": "actor",
+            "defaultValue": ""
+          },
+          {
+            "frontSector": "lastName",
+            "rearSector": "shortName",
+            "rearDataSegmentPath": "actor",
+            "defaultValue": ""
+          },
+          {
+            "frontSector": "gender",
+            "rearSector": "gender",
+            "rearDataSegmentPath": "actor",
+            "defaultValue": ""
+          },
+          {
+            "frontSector": "ssn",
+            "rearSector": "sSN",
+            "rearDataSegmentPath": "actor",
+            "defaultValue": ""
+          },
+          {
+            "frontSector": "dateOfBirth",
+            "rearSector": "birthDate",
+            "rearDataSegmentPath": "actor",
+            "defaultValue": ""
+          },
+          {
+            "frontSector": "line1",
+            "rearSector": "line1",
+            "rearDataSegmentPath": "correspondences[0]",
+            "defaultValue": ""
+          },
+          {
+            "frontSector": "line2",
+            "rearSector": "line2",
+            "rearDataSegmentPath": "correspondences[0]",
+            "defaultValue": ""
+          },
+          {
+            "frontSector": "zipCode",
+            "rearSector": "zipCode",
+            "rearDataSegmentPath": "correspondences[0].address",
+            "defaultValue": ""
+          },
+          {
+            "frontSector": "city",
+            "rearSector": "city",
+            "rearDataSegmentPath": "correspondences[0].address",
+            "defaultValue": ""
+          },
+
+          {
+            "frontSector": "alternateAddressLine1",
+            "rearSector": "line1",
+            "rearDataSegmentPath": "correspondences[1]",
+            "defaultValue": ""
+          },
+          {
+            "frontSector": "alternateAddressLine2",
+            "rearSector": "line2",
+            "rearDataSegmentPath": "correspondences[1]",
+            "defaultValue": ""
+          },
+          {
+            "frontSector": "alternateAddressZipCode",
+            "rearSector": "zipCode",
+            "rearDataSegmentPath": "correspondences[1].address",
+            "defaultValue": ""
+          },
+          {
+            "frontSector": "alternateAddressCity",
+            "rearSector": "city",
+            "rearDataSegmentPath": "correspondences[1].address",
+            "defaultValue": ""
+          },
+
+          {
+            "frontSector": "workPhone",
+            "rearSector": "cellPhone",
+            "rearDataSegmentPath": "correspondences[0]",
+            "defaultValue": ""
+          },
+          {
+            "frontSector": "personalPhone",
+            "rearSector": "privatePhone",
+            "rearDataSegmentPath": "correspondences[0]",
+            "defaultValue": ""
+          },
+          {
+            "frontSector": "workEmail",
+            "rearSector": "eMail",
+            "rearDataSegmentPath": "correspondences[0]",
+            "defaultValue": ""
+          },
+          {
+            "frontSector": "workEmail",
+            "rearSector": "eMail",
+            "rearDataSegmentPath": "correspondences[0]",
+            "defaultValue": ""
+          },
+          {
+            "frontSector": "registeredEmail",
+            "rearSector": "eMail",
+            "rearDataSegmentPath": "correspondences[0]",
+            "defaultValue": ""
+          },
+          {
+            "frontSector": "personalEmail",
+            "rearSector": "eMail",
+            "rearDataSegmentPath": "correspondences[0]",
+            "defaultValue": ""
+          }
+        ]
+    }
+]

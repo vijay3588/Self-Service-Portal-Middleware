@@ -1,0 +1,97 @@
+{
+  "elements": [
+    [     
+
+      {
+        "type": "readOnly",
+        "name": "payer",
+        "label": "Payeur",
+        "placement": "col-md-6",
+        "valueConfig": {
+          "reduxObject": "loggedUserEntity",
+          "mapperObject": {
+            "value": "`${currentObject.personIdentityHistories && currentObject.personIdentityHistories[0].personIdentity.shortName || ''  } ${currentObject.personIdentityHistories && currentObject.personIdentityHistories[0].personIdentity.name || ''  }`"
+          }
+        }
+      }
+    ],
+    [
+      
+
+      {
+        "type": "select",
+        "name": "paymentChannel",
+        "label": "Canal de paiement",
+        "placement": "col-md-3",
+        "rearSector": "channelCode",
+        "rearDataSegmentPath":"input.paymentChannel.moneyChannelIdentifier.thirdPartyID",
+        "options": [
+          { "value": "EFT", "text": "Transfert électronique de fonds" },
+          { "value": "ACH", "text": "Chambre de compensation automatisée" }
+        ],
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis"
+          }
+        }
+      },
+       {
+        "type": "date",
+        "name": "dateOfPayment",
+        "rearSector": "dateOfPayment",
+        "label": "Date de règlement",
+        "placement": "col-md-3",
+        "validations": {
+          "string": {
+            "min": {
+              "limit": 6,
+              "message": "La longueur minimale est de 6"
+            }
+          },
+          "date": {
+            "required": "Ce champ est requis",
+            "min": {
+              "limit": -117,
+              "unit": "y",
+              "message": "Veuillez entrer une date de paiement valide"
+            },
+            "max": {
+              "limit": 0,
+              "unit": "y",
+              "message": "Date de règlement cannot be in the future"
+            }
+          }
+        }
+      },
+      {
+        "type": "currency",
+        "locale": "en-US",
+        "currency": "USD",
+        "name": "amountPaid",       
+        "label": "Le montant payé",
+        "rearSector": "amount",
+        "rearDataSegmentPath":"input.paymentInfo.amount",       
+        "placement": "col-md-3",
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis"
+          }
+        },
+        "decimal": 0
+      },
+      {
+        "type": "text",
+        "name": "paymentId",
+        "label": "Identifiant de paiement",
+        "placement": "col-md-3",
+        "rearSector": "paymentFunctionalIdentifier",
+        "rearDataSegmentPath":"input.paymentId",
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis"
+          }
+        }
+      }
+    ]
+  ]
+}

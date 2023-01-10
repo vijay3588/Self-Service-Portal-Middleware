@@ -1,0 +1,11 @@
+{
+    "issuingCompanyCode": {
+      "dataType": "string",
+      "defaultValue": "WIC"
+    },
+    "channelCode": {
+      "dataType": "string",
+      "defaultValue": ""
+    }
+  }
+  

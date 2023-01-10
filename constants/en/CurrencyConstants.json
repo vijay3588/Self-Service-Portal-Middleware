@@ -1,0 +1,30 @@
+[
+    {
+        "value": "cAustralianDollar",
+        "text": "AUD"
+    },
+    {
+        "value": "cUSDollar",
+        "text": "USD"
+    },
+    {
+        "value": "cCanadianDollar",
+        "text": "CAD"
+    },
+    {
+        "value": "cSwissFranc",
+        "text": "CHF"
+    },
+    {
+        "value": "cEuro",
+        "text": "EUR"
+    },
+    {
+        "value": "cBritishPound",
+        "text": "GBP"
+    },
+    {
+        "value": "Japanese Yen",
+        "text": "JPY"
+    }
+]

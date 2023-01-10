@@ -1,0 +1,8 @@
+{
+  "clientName": { "dataType": "string", "name": "clientName" },
+  
+  "internalClientId": { "dataType": "number", "name": "internalClientId" },
+ 
+  "clientId": { "dataType": "object", "name": "clientId" }
+
+}

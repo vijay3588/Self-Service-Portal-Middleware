@@ -1,0 +1,18 @@
+{ 
+    "internalPolicyId": {"dataType": "string", "defaultValue":""}, 
+    "effectiveDate": {"dataType": "date", "defaultValue":""}, 
+    "signatureDate": {"dataType": "date", "defaultValue":""}, 
+    "terminationDate": {"dataType": "date", "defaultValue":""},
+    "status": {"dataType": "string", "defaultValue":"All"},
+    "ownerLastName": {"dataType": "string", "defaultValue":""},
+    "ownerFirstName": {"dataType": "string", "defaultValue":""},
+    "coverages": {"dataType": "object", "name":"coverages"},
+    "billingFrequency": {"dataType": "string", "defaultValue":""},
+    "billPayer": {"dataType": "string", "defaultValue":""},
+    "paymentMethodName": {"dataType": "string", "defaultValue":""},
+    "className": {"dataType": "string", "defaultValue":""},
+    "name": {"dataType": "string", "defaultValue":""},
+    "accountType": {"dataType": "string", "defaultValue":""},
+    "branchName": {"dataType": "string", "defaultValue":""},
+    "bankName": {"dataType": "string", "defaultValue":""}
+}

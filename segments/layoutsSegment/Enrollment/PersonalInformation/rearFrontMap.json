@@ -1,0 +1,162 @@
+[
+  {
+    "frontSegment": "personalInformation",
+    "dataParentSegment": "",
+    "dataSegmentType": "object",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "firstName",
+        "rearSector": "shortName",
+        "rearDataSegmentPath": "actor",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "middleName",
+        "rearSector": "middleName1",
+        "rearDataSegmentPath": "actor",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "lastName",
+        "rearSector": "name",
+        "rearDataSegmentPath": "actor",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "gender",
+        "rearSector": "gender",
+        "rearDataSegmentPath": "actor",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "ssn",
+        "rearSector": "sSN",
+        "rearDataSegmentPath": "actor",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "dateOfBirth",
+        "rearSector": "birthDate",
+        "rearDataSegmentPath": "actor",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "line1",
+        "rearSector": "line1",
+        "rearDataSegmentPath": "correspondences.address",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "line2",
+        "rearSector": "line2",
+        "rearDataSegmentPath": "correspondences.address",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "zipCode",
+        "rearSector": "zipCode",
+        "rearDataSegmentPath": "correspondences.address.zipCodeAndCity",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "city",
+        "rearSector": "city",
+        "rearDataSegmentPath": "correspondences.address.zipCodeAndCity",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "state",
+        "rearSector": "state",
+        "rearDataSegmentPath": "correspondences.address",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "country",
+        "rearSector": "country",
+        "rearDataSegmentPath": "correspondences.address",
+        "defaultValue": ""
+      },
+
+      {
+        "frontSector": "alternateAddressLine1",
+        "rearSector": "line1",
+        "rearDataSegmentPath": "correspondences[1].address",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "alternateAddressLine2",
+        "rearSector": "line2",
+        "rearDataSegmentPath": "correspondences[1].address",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "alternateAddressZipCode",
+        "rearSector": "zipCode",
+        "rearDataSegmentPath": "correspondences[1].address.zipCodeAndCity",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "alternateAddressCity",
+        "rearSector": "city",
+        "rearDataSegmentPath": "correspondences[1].address.zipCodeAndCity",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "alternateAddressState",
+        "rearSector": "state",
+        "rearDataSegmentPath": "correspondences[1].address",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "alternateAddressCountry",
+        "rearSector": "country",
+        "rearDataSegmentPath": "correspondences[1].address",
+        "defaultValue": ""
+      },
+
+      {
+        "frontSector": "primaryAddress",
+        "rearSector": "primaryAddress",
+        "rearDataSegmentPath": "correspondences.address",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "officePhone",
+        "rearSector": "officePhone",
+        "rearDataSegmentPath": "correspondences",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "personalPhone",
+        "rearSector": "privatePhone",
+        "rearDataSegmentPath": "correspondences",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "workEmail",
+        "rearSector": "eMail",
+        "rearDataSegmentPath": "correspondences",
+        "defaultValue": ""
+      },
+
+      {
+        "frontSector": "registeredEmail",
+        "rearSector": "email",
+        "rearDataSegmentPath": "logins.data.loginEntity",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "personalEmail",
+        "rearSector": "eMail",
+        "rearDataSegmentPath": "correspondences",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "mediaType",
+        "rearSector": "mediaType",
+        "rearDataSegmentPath": "correspondences",
+        "defaultValue": ""
+      }
+    ]
+  }
+]

@@ -1,0 +1,78 @@
+{
+  "className": {
+    "dataType": "string",
+    "defaultValue": "aSPLI_Employee"
+  },
+  "effectiveDate": {
+    "dataType": "string",
+    "defaultValue": "2021-01-13"
+  },
+  "terminationDate": {
+    "dataType": "string",
+    "defaultValue": null
+  },
+  "hireDate": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "employeeID": {
+    "dataType": "string",
+    "defaultValue": null
+  },
+  "worksiteState": {
+    "dataType": "string",
+    "defaultValue": null
+  },
+  "salaryDefinedAtDate": {
+    "dataType": "string",
+    "defaultValue": null
+  },
+  "employmentStatus": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "workingHours": {
+    "dataType": "string",
+    "defaultValue": 0
+  },
+  "workingHoursDefinedForFrequency": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "workingCategory": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "baseSalaryAmount": {
+    "dataType": "object",
+    "name": "baseSalaryAmount"
+  },
+  "baseSalaryFrequency": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "salaryCommissionAmount": {
+    "dataType": "object",
+    "name": "salaryCommissionAmount"
+  },
+  "salaryCommissionFrequency": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "salaryBonusAmount": {
+    "dataType": "object",
+    "name": "salaryBonusAmount"
+  },
+  "salaryBonusFrequency": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "canBeEnrolled": {
+    "dataType": "string",
+    "defaultValue": true
+  },
+  "additionalDynamicDatas": {
+    "dataType": "array",
+    "defaultValue": []
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "className": {
+    "dataType": "string",
+    "defaultValue": "aSPCB_ApplicationLogin"
+  },
+  "name": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "password": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "forbatch": {
+    "dataType": "string",
+    "defaultValue": false
+  },
+  "isDisabled": {
+    "dataType": "string",
+    "defaultValue": false
+  },
+  "jobLabel": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "preferedLanguageCode": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "email": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "fullname": {
+    "dataType": "string",
+    "defaultValue": "",
+    "dataConfig": {
+      "configType": "mappedData",
+      "mappedSector": "name"
+    }
+  }
+}

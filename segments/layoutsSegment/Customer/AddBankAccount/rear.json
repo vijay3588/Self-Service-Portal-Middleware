@@ -1,0 +1,11 @@
+{
+   
+  "customerBuid": {
+      "dataType": "string",
+      "defaultValue": ""
+  },
+  "bankAccount": {
+      "dataType": "object",
+      "name": "aSPCB_US_BankAccount"
+  }
+}

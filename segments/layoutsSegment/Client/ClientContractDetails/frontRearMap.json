@@ -1,0 +1,15 @@
+[
+  {
+    "frontDataSegment": "contract",
+    "rearDataSegmentClass": "inputQuote",
+    "rearDataSegment":"contractID",
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "buid",
+        "rearSector": "buid",
+        "defaultValue": ""
+      }
+    ]
+  }
+]

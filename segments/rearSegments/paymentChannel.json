@@ -1,0 +1,11 @@
+{
+    "moneyChannelIdentifier": {
+      "dataType": "object",
+      "name": "moneyChannelIdentifier"
+    },
+    "buid": {
+      "dataType": "string",
+      "defaultValue": ""
+    }
+  }
+  

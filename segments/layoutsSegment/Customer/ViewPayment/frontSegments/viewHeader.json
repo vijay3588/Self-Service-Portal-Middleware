@@ -1,0 +1,4 @@
+{
+  "paymentNumber": {"dataType": "string", "defaultValue": "", "dataConfig":{"configType":"preText", "text":"Payment Number "}},
+  "paymentStatus": {"dataType": "string", "defaultValue": ""}
+}

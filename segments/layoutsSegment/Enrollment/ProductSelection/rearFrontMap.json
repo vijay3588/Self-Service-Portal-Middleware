@@ -1,0 +1,34 @@
+[
+  {
+    "frontSegment": "productSelection",
+    "dataParentSegment": "",
+    "dataSegmentType": "object",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "productName",
+        "rearSector": "name",
+        "rearDataSegmentPath": "_Result.product",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "productDescription",
+        "rearSector": "entityDescription",
+        "rearDataSegmentPath": "_Result.product",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "coveredDependents",
+        "rearSector": "coveredDependants",
+        "rearDataSegmentPath": "_Result.options.option.insuredConfiguration",
+        "defaultValue": []
+      },
+      {
+        "frontSector": "productBUID",
+        "rearSector": "buid",
+        "rearDataSegmentPath": "_Result.product",
+        "defaultValue": []
+      }
+      
+    ]
+  }
+]

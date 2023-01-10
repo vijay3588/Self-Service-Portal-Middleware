@@ -1,0 +1,137 @@
+[
+  {
+    "frontDataSegment": "EmployeeProfile",
+    "frontDataSegmentPath": "values",
+    "mappingSectorOnly": true,
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "date",
+        "rearSector": "effectiveDate",
+        "dataConfig": {
+          "configType": "currentDate"
+        }
+      },
+      {
+        "frontSector": "addressUsage",
+        "frontDataSegmentPath": "",
+        "rearSector": "addressUsage",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "isDefaultCorrespondance",
+        "frontDataSegmentPath": "",
+        "rearSector": "isDefaultCorrespondance",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "privatePhone",
+        "frontDataSegmentPath": "",
+        "rearSector": "privatePhone",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "privatePhoneExtension",
+        "frontDataSegmentPath": "",
+        "rearSector": "privatePhoneExtension",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "officePhone",
+        "frontDataSegmentPath": "",
+        "rearSector": "officePhone",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "officePhoneExtension",
+        "frontDataSegmentPath": "",
+        "rearSector": "officePhoneExtension",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "cellPhone",
+        "frontDataSegmentPath": "",
+        "rearSector": "cellPhone",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "fax",
+        "frontDataSegmentPath": "",
+        "rearSector": "fax",
+        "defaultValue": "123456"
+      },
+      {
+        "frontSector": "eMail",
+        "frontDataSegmentPath": "",
+        "rearSector": "eMail",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "mediaType",
+        "frontDataSegmentPath": "",
+        "rearSector": "mediaType",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "isInvalid",
+        "frontDataSegmentPath": "",
+        "rearSector": "isInvalid",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "reasonForInvalidAddress",
+        "frontDataSegmentPath": "",
+        "rearSector": "reasonForInvalidAddress",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "buid",
+        "frontDataSegmentPath": "",
+        "rearSector": "buid",
+        "defaultValue": ""
+      },
+      {
+        "frontDataSegment": "EmployeeProfile",
+        "frontDataSegmentPath": "values",
+        "rearDataSegmentClass": "aSPCB_US_PostalAddress",
+
+        "rearDataSegment": "address",
+        "rearDataSegmentType": "object",
+        "defaultSectorMapping": [
+          {
+            "frontSector": "line1",
+            "rearSector": "line1",
+            "defaultValue": ""
+          },
+          {
+            "frontSector": "line1",
+            "rearSector": "line2",
+            "defaultValue": ""
+          },
+          {
+            "frontSector": "line1",
+            "rearSector": "line2",
+            "defaultValue": ""
+          },
+          {
+            "frontSector": "city",
+            "rearSector": "city",
+            "rearDataSegmentPath": "address.city",
+            "defaultValue": ""
+          },
+          {
+            "frontSector": "zipCode",
+            "rearSector": "zipCode",
+            "rearDataSegmentPath": "address.zipCode",
+            "defaultValue": ""
+          },
+          {
+            "frontSector": "country",
+            "rearSector": "country",
+            "defaultValue": ""
+          }
+        ]
+      }
+    ]
+  }
+]

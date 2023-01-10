@@ -1,0 +1,10 @@
+{
+    "DisabilityKind": {
+        "dataType": "string",
+        "defaultValue": "ckMaternity"
+    },
+    "Date": {
+        "dataType": "string",
+        "defaultValue": ""
+    }
+}

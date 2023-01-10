@@ -1,0 +1,23 @@
+{
+  "elements": [
+    [
+      {
+        "type": "color",
+        "name": "bgColor",       
+        "fieldName": "Cells",
+        "label": "Stepper Navigation Bg Color",
+        "value": "",
+        "update": {
+          "reduxPath": "cells.stepperNavigation.bgColor",
+          "formikPath": "Cells"
+        },
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "This field is required"
+          }
+        }
+      }    
+    ]
+  ]
+}

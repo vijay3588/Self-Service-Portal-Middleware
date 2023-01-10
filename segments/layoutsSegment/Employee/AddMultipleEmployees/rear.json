@@ -1,0 +1,10 @@
+{
+    "self": {
+        "dataType": "object",
+        "name": "aSLI_Manage_Employee"
+    },
+    "data": {
+        "dataType": "object",
+        "name": "aSPLI_EmployeeData"
+    }
+}

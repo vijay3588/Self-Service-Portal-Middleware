@@ -1,0 +1,236 @@
+{
+  "isMultiple": true,
+  "multiConfig": {
+    "maxAdds": 100,
+    "tableHeader": [
+      {
+        "value": "Nom de banque",
+        "config": {
+          "className": "d-none d-sm-table-cell"
+        }
+      },
+      {
+        "value": "Type de compte",
+        "config": {
+          "className": "d-none d-sm-table-cell"
+        }
+      },
+      {
+        "value": "Numéro de compte",
+        "config": {
+          "className": "d-none d-sm-table-cell"
+        }
+      },
+      {
+        "value": "Date effective",
+        "config": {
+          "className": "d-none d-sm-table-cell"
+        }
+      },
+      {
+        "value": "Expiration Date",
+        "config": {
+          "className": "d-none d-sm-table-cell"
+        }
+      }
+    ],
+    "tableRow": [
+      {
+        "value": "data.bankName",
+        "type": "expression",
+        "config": {
+          "optionsname": "AddressTypeConstants",
+          "className": "d-none d-sm-table-cell"
+        }
+      },
+      {
+        "value": "data.accountType",
+        "type": "expression",
+        "config": {
+          "optionsname": "AccountTypeConstants",
+          "className": "d-none d-sm-table-cell"
+        }
+      },
+      {
+        "value": "data.accountNumber",
+        "type": "expression",
+        "config": {
+          "optionsname": "AddressTypeConstants",
+          "className": "d-none d-sm-table-cell"
+        }
+      },
+
+      {
+        "value": "data.effectiveDate",
+        "type": "expression",
+        "config": {
+          "valueType": "date",
+          "format" : "MM/DD/YYYY",
+          "className": "d-none d-sm-table-cell"
+        }
+      },
+      {
+        "value": "data.expirationDate",
+        "type": "expression",
+        "config": {
+          "valueType": "date",
+          "format" : "MM/DD/YYYY",
+          "className": "d-none d-sm-table-cell"
+        }
+      }
+    ],
+    "addButtonLabel": "Nouveau compte bancaire",
+    "editButtonLabel": "Modifier le compte bancaire"
+  },
+  "elements": [
+    [
+      {
+        "type": "text",
+        "name": "bankName",
+        "label": "Nom de banque",
+        "placement": "col-md-6 col-12",
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis"
+          }
+        }
+      },
+      {
+        "type": "select",
+        "name": "accountType",
+        "label": "Type de compte",
+        "placement": "col-md-6 col-12",
+        "defaultValue": null,
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis"
+          }
+        },
+        "optionsname": "AccountTypeConstants",
+        "options": ""
+      }
+    ],
+    [
+      {
+        "type": "date",
+        "name": "effectiveDate",
+        "label": "Date effective",
+        "placement": "col-md-3"
+      },
+      {
+        "type": "date",
+        "name": "expirationDate",
+        "label": "Expiration Date",
+        "placement": "col-md-3"
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "name": "accountNumber",
+        "label": "Numéro de compte",
+        "placement": "col-md-6 col-12",
+        "validations": {
+          "string": {
+            "max": { "limit": 17, "message": "maxlength is 17" }
+          }
+        }
+      },
+      {
+        "type": "text",
+        "name": "routingNumber",
+        "label": "Numéro de routage",
+        "placement": "col-md-6 col-12",
+        "validations": {
+          "string": {
+            "min": { "limit": 9, "message": "minlength is 9" },
+            "max": { "limit": 9, "message": "maxlength is 9" }
+          }
+        }
+      }
+    ],
+    [
+      {
+        "type": "panelSideHeader",
+        "label": "Adresse de la banque"
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "name": "lineOne",
+        "label": "Line 1",
+        "placement": "col-md-6 col-12",
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis"
+          }
+        }
+      },
+      {
+        "type": "text",
+        "name": "lineTwo",
+        "label": "Line 2",
+        "placement": "col-md-6 col-12",
+        "validations": {}
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "name": "city",
+        "label": "Ville",
+        "placement": "col-md-4 col-12",
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis"
+          }
+        }
+      },
+      {
+        "type": "select",
+        "name": "state",
+        "label": "État",
+        "placement": "col-md-2 col-12",
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis"
+          }
+        },
+        "options": [
+          { "value": "ca", "text": "California" },
+          { "value": "mn", "text": "Minnesota" },
+          { "value": "nj", "text": "New Jersey" }
+        ]
+      },
+      {
+        "type": "text",
+        "name": "zipCode",
+        "label": "Code postal",
+        "placement": "col-md-2 col-12",
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis"
+          }
+        }
+      },
+      {
+        "type": "select",
+        "name": "country",
+        "label": "Pays",
+        "value": "USA",
+        "placement": "col-md-4 col-12",
+        "options": [
+          { "value": "us", "text": "United States" },
+          { "value": "ca", "text": "Canada" },
+          { "value": "mx", "text": "Mexico" }
+        ],
+        "validations": {
+          "string": {
+            "required": "Ce champ est requis"
+          }
+        }
+      }
+    ]
+  ]
+}

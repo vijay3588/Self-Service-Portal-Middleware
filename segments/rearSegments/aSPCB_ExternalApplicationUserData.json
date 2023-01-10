@@ -1,0 +1,34 @@
+{
+  "className": {
+    "dataType": "string",
+    "defaultValue": "aSPCB_ExternalApplicationUserData"
+  },
+  "bUID": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "dataHistory": {
+    "dataType": "string",
+    "defaultValue": []
+  },
+  "profiles": {
+    "dataType": "array",
+    "name": "aSPCB_ProfileIdentifier"
+  },
+  "extendedProfile": {
+    "dataType": "string",
+    "defaultValue": null
+  },
+  "organizationUnit": {
+    "dataType": "object",
+    "name": "aSPCB_OrganizationUnitIdentifier"
+  },
+  "hasVisibilityOnDistributionTree": {
+    "dataType": "object",
+    "name": "aSPCB_OrganizationUnitIdentifier"
+  },
+  "loginEntity": {
+    "dataType": "object",
+    "name": "aSPCB_ApplicationLogin"
+  }
+}

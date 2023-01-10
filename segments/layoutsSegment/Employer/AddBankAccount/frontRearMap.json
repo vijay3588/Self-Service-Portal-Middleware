@@ -1,0 +1,93 @@
+[
+  {
+    "frontDataSegment": "loggedUserEntity._Result.clientId",
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "buid",
+        "rearSector": "customerBuid",
+        "defaultValue": ""
+      }
+    ]
+  },
+
+  {
+    "frontDataSegment": "values.AddBankAccount",
+    "rearDataSegmentClass": "aSPCB_US_BankAccount",
+    "rearDataSegment": "bankAccount",
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping": [
+      {
+        "frontSector": "holderName",
+        "rearSector": "holderName",
+        "defaultValue": ""
+      },
+
+      {
+        "frontSector": "accountNumber",
+        "rearSector": "accountNumber",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "routingNumber",
+        "rearSector": "routingNumber",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "accountType",
+        "rearSector": "accountType",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "bankName",
+        "rearSector": "bankName",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "bankName",
+        "rearSector": "name",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "zip",
+        "rearSector": "zipCode",
+        "frontDataSegmentPath": "additionalValues",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "city",
+        "rearSector": "city",
+        "frontDataSegmentPath": "additionalValues",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "state",
+        "rearSector": "state",
+        "frontDataSegmentPath": "additionalValues",
+        "defaultValue": ""
+      },
+
+      {
+        "frontSector": "address",
+        "rearSector": "line1",
+        "frontDataSegmentPath": "additionalValues",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "effectiveDate",
+        "rearSector": "effectiveDate",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "effectiveDate",
+        "rearSector": "preNoteProcessCompletionDate",
+        "defaultValue": ""
+      },
+      {
+        "frontSector": "",
+        "rearSector": "branchName",
+        "defaultValue": "Branch"
+      }
+    ]
+  }
+]

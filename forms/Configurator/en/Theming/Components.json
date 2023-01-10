@@ -1,0 +1,316 @@
+{
+  "elements": [
+    [
+      {
+        "type": "color",
+        "name": "appBgColor",
+        "rearSector": "shortName",
+        "value": "#ededed",
+        "label": "App Bg Color",
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "This field is required"
+          }
+        }
+      },
+      {
+        "name": "appBgColorValue",
+        "type": "readOnly",
+        "displayStyle": "list",
+        "label": "Selected hex value",
+        "getValuesFrom": "appBgColor",
+        "placement": "labelElement",
+        "formikPath": "Components"
+      },
+
+      {
+        "type": "color",
+        "name": "appColor",
+        "label": "App Font Color",
+        "placement": "themingElement",
+        "value": "#212529",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+
+      {
+        "name": "appColorValue",
+        "displayStyle": "list",
+        "type": "readOnly",
+        "label": "Selected hex value",
+        "getValuesFrom": "appColor",
+        "placement": "labelElement",
+        "formikPath": "Components"
+      },
+
+      {
+        "type": "color",
+        "name": "headerBgColor",
+        "label": "Header Bg Color",
+        "placement": "companyProfileElement",
+        "value": "#ffffff",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "name": "headerBgColorValue",
+        "type": "readOnly",
+        "displayStyle": "list",
+        "label": "Selected hex value",
+        "getValuesFrom": "headerBgColor",
+        "placement": "labelElement",
+        "formikPath": "Components"
+      },
+
+      {
+        "type": "color",
+        "name": "dropDownColor",
+        "label": "Header Dropdown Font Color",
+        "value": "#1272bd",
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+
+      {
+        "name": "dropDownColorValue",
+        "displayStyle": "list",
+        "type": "readOnly",
+        "label": "Selected hex value",
+        "getValuesFrom": "dropDownColor",
+        "placement": "labelElement",
+        "formikPath": "Components"
+      },
+
+      {
+        "type": "color",
+        "name": "headerBorderColor",
+        "label": "Header Border Color",
+        "value": "#1272bd",
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+
+      {
+        "name": "headerBorderColorValue",
+        "displayStyle": "list",
+        "type": "readOnly",
+        "label": "Selected hex value",
+        "getValuesFrom": "headerBorderColor",
+        "placement": "labelElement",
+        "formikPath": "Components"
+      },
+
+      {
+        "type": "color",
+        "name": "headerFontColor",
+        "label": "Header Font Color",
+        "value": "#1272bd",
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+
+      {
+        "name": "headerFontColorValue",
+        "displayStyle": "list",
+        "type": "readOnly",
+        "label": "Selected hex value",
+        "getValuesFrom": "headerFontColor",
+        "placement": "labelElement",
+        "formikPath": "Components"
+      },
+
+      {
+        "type": "color",
+        "name": "navigationBgColor",
+        "label": "NavigationBar Bg Color",
+        "value": "#04569a",
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "name": "navigationBgColorValue",
+        "type": "readOnly",
+        "label": "Selected hex value",
+        "displayStyle": "list",
+        "getValuesFrom": "navigationBgColor",
+        "placement": "labelElement",
+        "formikPath": "Components"
+      },
+
+      {
+        "type": "color",
+        "name": "navigationMainLinksFontColor",
+        "label": "Navigation Main Links Font Color",
+        "value": "#04569a",
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "name": "navigationMainLinksFontColorValue",
+        "type": "readOnly",
+        "label": "Selected hex value",
+        "displayStyle": "list",
+        "getValuesFrom": "navigationMainLinksFontColor",
+        "placement": "labelElement",
+        "formikPath": "Components"
+      },
+
+      {
+        "type": "color",
+        "name": "footerBgColor",
+        "label": "Footer Bg Color",
+        "value": "#484848",
+        "placement": "themingElement"
+      },
+
+      {
+        "name": "footerBgColorValue",
+        "type": "readOnly",
+        "displayStyle": "list",
+        "label": "Selected hex value",
+        "getValuesFrom": "footerBgColor",
+        "placement": "labelElement",
+        "formikPath": "Components"
+      },
+
+      {
+        "type": "color",
+        "name": "footerLinkFontColor",
+        "label": "Footer Link Font Color",
+        "value": "#484848",
+        "placement": "themingElement"
+      },
+
+      {
+        "name": "footerLinkFontColorValue",
+        "type": "readOnly",
+        "displayStyle": "list",
+        "label": "Selected hex value",
+        "getValuesFrom": "footerLinkFontColor",
+        "placement": "labelElement",
+        "formikPath": "Components"
+      },
+
+      {
+        "type": "color",
+        "name": "copyrightBgColor",
+        "label": "Footer Copyright Bg Color",
+        "value": "#333333",
+        "placement": "themingElement",
+
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+
+      {
+        "name": "copyrightBgColorValue",
+        "type": "readOnly",
+        "displayStyle": "list",
+        "label": "Selected hex value",
+        "getValuesFrom": "copyrightBgColor",
+        "placement": "labelElement",
+        "formikPath": "Components"
+      },
+
+      {
+        "type": "color",
+        "name": "footerCopyrightFontColor",
+        "label": "Footer Copyright Font Color",
+        "value": "#333333",
+        "placement": "themingElement",
+
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+
+      {
+        "name": "footerCopyrightFontColorValue",
+        "type": "readOnly",
+        "displayStyle": "list",
+        "label": "Selected hex value",
+        "getValuesFrom": "footerCopyrightFontColor",
+        "placement": "labelElement",
+        "formikPath": "Components"
+      },
+
+      {
+        "type": "color",
+        "name": "linkColor",
+        "label": "Link Font Color",
+        "value": "#0077c0",
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+
+      {
+        "name": "linkColorValue",
+        "type": "readOnly",
+        "displayStyle": "list",
+        "label": "Selected hex value",
+        "getValuesFrom": "linkColor",
+        "placement": "labelElement",
+        "formikPath": "Components"
+      },
+
+      {
+        "type": "color",
+        "name": "hoverColor",
+        "label": "Link Hover Font Color",
+        "value": "#0056b3",
+        "placement": "themingElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+
+      {
+        "name": "hoverColorValue",
+        "displayStyle": "list",
+        "type": "readOnly",
+        "label": "Selected hex value",
+        "getValuesFrom": "hoverColor",
+        "placement": "labelElement",
+        "formikPath": "Components"
+      }
+    ]
+  ]
+}

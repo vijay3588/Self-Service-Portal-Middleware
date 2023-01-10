@@ -1,0 +1,12 @@
+[
+  {
+    "frontDataSegment": "body",
+    "rearDataSegmentClass": "quoteId",
+    "rearDataSegment":"quoteId",
+    "rearDataSegmentPath": "quoteData",
+    "rearDataSegmentType": "object",
+    "defaultSectorMapping" : [
+      {"frontSector": "buid", "rearSector": "buid", "defaultValue": ""}
+    ]
+  }
+]

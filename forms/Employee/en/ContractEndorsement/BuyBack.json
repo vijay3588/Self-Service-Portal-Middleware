@@ -1,0 +1,99 @@
+{
+	"elements": [
+		[
+			{
+				"name": "effectiveDate",
+				"type": "date",
+				"label": "Date d’effet",
+				"placement": "col-md-4 col-12",
+				"currentDate": true,
+				"image": "calender_icon_medium.png",
+				"config": {
+					"valueType": "date",
+					"format": "MM/DD/YYYY"
+				},
+        "validations": {
+					"string": {
+						"required": "This field is required"
+					}
+				}
+			}
+		],
+		[
+			{
+				"type": "readOnly",
+				"name": "loanAmount",
+				"label": "Montant du prêt",
+				"placement": "col-md-4 col-12",
+				"valueConfig": {
+				  "reduxObject": "onNextResponseList",
+				  "mapperObject": {
+					"value": "`${ currentObject.GetPrincipalBalanceForLoan && currentObject.GetPrincipalBalanceForLoan.principalBalanceForLoan || '0' }`"
+				  }
+				}
+			  },
+			
+			{
+				"type": "checkbox",
+				"name": "fullReimbursment",
+				"rearSector": "",
+				"label": "Rachat total",
+				"placement": "col-md-4 col-12"
+			}
+		],
+		[
+			{
+				"disabled": "fullReimbursment",
+				"config" :{
+					"disableValue" : true
+				},
+				"name": "redemptionAmount",
+				"rearSector": "amount",
+				"rearDataSegment": "baseSalaryAmount",
+				"label": "Montant du rachat",
+				"type": "number",
+				"locale": "fr-FR",
+				"currency": "EUR",
+				"decimal": 0,
+				"placement": "col-md-4 col-12",
+				"validations": {
+					"string": {
+						"required": "This field is required"
+					}
+				}
+			},
+      {
+		"disabled": "fullReimbursment",
+		"config" :{
+			"disableValue" : true
+		},
+				"name": "reimbursementAmount",
+				"rearSector": "",
+				"rearDataSegment": "",
+				"label": "Nouveau Montant du prêt",
+				"type": "number",
+				"locale": "en-IE",
+				"currency": "EUR",
+				"decimal": 0,
+				"placement": "col-md-4 col-12",
+				"validations": {
+					"string": {
+						"required": "This field is required"
+					}
+				}
+			}
+      
+		],
+    [
+      {
+        "type": "button",
+        "name": "uploadDocuments",
+        "label": "Sélectionner et télécharger le justificatif de la banque",
+        "className": "editDetailsButton",
+        "config": {
+       },
+        "placement": "col-md-5 col-12"
+      }
+    ]
+	]
+}

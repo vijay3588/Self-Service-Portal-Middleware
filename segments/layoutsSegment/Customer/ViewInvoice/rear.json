@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "dataType": "object",
+        "name": "aSPLI_GetInvoices_In"
+    },
+    "maxSize": {
+        "dataType": "number",
+        "defaultValue": 1
+    }
+}

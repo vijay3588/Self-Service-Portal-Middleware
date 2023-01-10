@@ -1,0 +1,38 @@
+{
+  "className": {
+    "dataType": "string",
+    "defaultValue": "aSPCB_US_PostalAddress"
+  },
+  "line1": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "line2": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "zipCodeAndCity": {
+    "dataType": "object",
+    "name": "zipCodeAndCity"
+  },
+  "country": {
+    "dataType": "string",
+    "defaultValue": "USA"
+  },
+  "district": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "state": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "county": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "fIPSCode": {
+    "dataType": "number",
+    "defaultValue": 0
+  }
+}

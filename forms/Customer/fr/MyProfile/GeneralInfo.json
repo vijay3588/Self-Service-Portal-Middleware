@@ -1,0 +1,60 @@
+{
+  "elements": [
+    [
+      {
+        "type": "text",
+        "name": "fullName",
+        "label": "Full Name",
+        "value": "",
+        "placement": "companyProfileElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "text",
+        "name": "clientId",
+        "label": "Client ID",
+        "placement": "companyProfileElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      {
+        "type": "date",
+        "name": "birthDate",
+        "label": "Birth Date",
+        "placement": "companyProfileElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        }
+      },
+      
+      {
+        "type": "select",
+        "name": "country",
+        "label": "Country",
+        "value": "USA",
+        "placement": "companyProfileElement",
+        "validations": {
+          "string": {
+            "required": "is required"
+          }
+        },
+        "defaultValue": null,
+        "options": "",
+        "config": {
+          "optionsname": "CountryConstants"
+        }
+      }
+      
+      
+    ]
+  ]
+}

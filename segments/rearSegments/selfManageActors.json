@@ -1,0 +1,6 @@
+{
+    "className":{
+        "dataType": "string",
+        "defaultValue": "aSLI_Manage_Actors"
+    }
+}

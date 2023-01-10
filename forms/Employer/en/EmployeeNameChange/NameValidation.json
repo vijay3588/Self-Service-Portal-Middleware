@@ -1,0 +1,111 @@
+{
+    "changeConfig": {
+      "leftCard": {
+        "element": [
+          "Current Employee Name",
+          "Current First Name",
+          "Current Last Name"
+        ],
+        "className": " col-12 col-lg-5 mb-4 mb-lg-0 p-4 current-name-left-card",
+        "changeType": "Name",
+        "type": "expression",
+        "mappings": [
+          {
+            "mapElement": "crfirstName",
+            "expression": "`${data.firstName || ''}`"
+          },
+          {
+            "mapElement": "crlastName",
+            "expression": "`${data.lastName || ''}`"
+          }
+        ]
+      },
+      "rightCard": {
+        "element": ["New Employee Name", "First Name ", "Last Name"],
+        "className": " col-12 col-lg-6 offset-lg-1 p-4 current-name-right-card",
+        "mapElement": "newName",
+        "changeType": "Name",
+        "type": "expression",
+        "value": ""
+      }
+    },
+    "elements": [
+      [
+        {
+          "name": "effectiveDate",
+          "label": "Effective Date",
+          "placement": "col-lg-3",
+          "type": "readOnly",
+          "getValuesFrom": "NewEmployeeName",
+          "image": "calender_icon_medium.png",
+          "config": {
+            "valueType": "date",
+            "format" : "MM/DD/YYYY"
+          }
+        }
+      ],
+      [
+        {
+          "type": "panelSideHeader",
+          "label": "Current Employee Name"
+        }
+      ],
+      [
+        {
+          "name": "currentFirstName",
+          "type": "readOnly",
+          "label": "Current First Name",
+          "value": "",
+          "hideLabel": true
+        }
+      ],
+      [
+        {
+          "type": "panelSideHeader",
+          "label": "New Employee Name"
+        }
+      ],
+      [
+        {
+          "name": "newFirstName",
+          "type": "readOnly",
+          "label": "New First Name",
+          "value": "",
+          "hideLabel": true
+        }
+      ],
+      [
+        {
+          "name": "firstName",
+          "label": "First Name ",
+          "type": "readOnly",
+          "getValuesFrom": "NewEmployeeName"
+        }
+      ],
+      [
+        {
+          "name": "lastName",
+          "label": "Last Name",
+          "type": "readOnly",
+          "getValuesFrom": "NewEmployeeName"
+        }
+      ],
+      [
+        {
+          "label": "Current First Name",
+          "name":"crFirstName",
+          "type": "readOnly",
+          "getValuesFromData": "firstName"
+        }
+      ],
+      [
+        {
+          "label": "Current Last Name",
+          "type": "readOnly",
+          "name":"crLastName",
+          "getValuesFromData": "lastName"
+        }
+      ]
+    ]
+  }
+  

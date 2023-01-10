@@ -1,0 +1,6 @@
+{
+  "panelBgColor": {
+    "dataType": "string",
+    "defaultValue": ""
+  }
+}

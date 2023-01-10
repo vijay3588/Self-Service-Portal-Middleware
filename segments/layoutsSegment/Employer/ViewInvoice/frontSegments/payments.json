@@ -1,0 +1,5 @@
+{
+    "amountPaid": {"dataType": "string", "defaultValue": ""},
+    "paymentNumber": {"dataType": "string", "defaultValue": ""},
+    "receivedDate": {"dataType": "string", "defaultValue": ""}
+}

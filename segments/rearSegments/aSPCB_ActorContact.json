@@ -1,0 +1,47 @@
+{
+  "className": {
+    "dataType": "string",
+    "defaultValue": "aSPCB_ActorContact"
+  },
+  "correspondenceChoice": {
+    "dataType": "string",
+    "defaultValue": "predefined"
+  },
+  "mediaType": {
+    "dataType": "string",
+    "defaultValue": "",
+    "dataConfig": {
+      "configType": "emptyString",
+      "hasData": true,
+      "validateUISector": "noMailingAddress"
+    }
+  },
+  "isDeaultContact": {
+    "dataType": "string",
+    "defaultValue": false
+  },
+  "name": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "contactName": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "beginDate": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "endDate": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "correspondence": {
+    "dataType": "object",
+    "name": "aSPCB_Correspondence"
+  },
+  "role": {
+    "dataType": "string",
+    "defaultValue": []
+  }
+}

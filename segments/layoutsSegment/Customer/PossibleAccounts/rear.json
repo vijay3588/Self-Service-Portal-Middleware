@@ -1,0 +1,7 @@
+
+{
+    "clientId": {
+        "dataType": "object",
+        "name": "clientIds"
+    }
+}

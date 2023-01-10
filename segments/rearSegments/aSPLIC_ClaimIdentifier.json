@@ -1,0 +1,22 @@
+{
+    "className": {
+        "dataType": "string",
+        "defaultValue": "aSPLIC_ClaimIdentifier"
+      },
+      "internalClaimId": {
+        "dataType": "string",
+        "defaultValue": ""
+      },
+      "externalClaimId": {
+        "dataType": "string",
+        "defaultValue": ""
+      },
+      "bUID": {
+        "dataType": "string",
+        "defaultValue": ""
+      },
+      "description": {
+        "dataType": "string",
+        "defaultValue": ""
+      }
+}

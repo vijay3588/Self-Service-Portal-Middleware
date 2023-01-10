@@ -1,0 +1,8 @@
+[
+  { "value": "cInProgress", "text": "In Progress" },
+  { "value": "cCompleted", "text": "Completed"},
+  { "value": "cAbandoned", "text": "Abandoned"},
+  { "value": "cSubmitted", "text": "Submitted" },
+  { "value": "cExpired", "text": "Expired"},
+  { "value": "cAccepted", "text": "Accepted" }
+]

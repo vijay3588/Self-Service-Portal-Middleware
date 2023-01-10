@@ -1,0 +1,56 @@
+
+
+{
+  "isMultiple": true,
+  "multiConfig": {
+    "maxAdds": 10,
+    "tableHeader": [
+      {
+        "value": "Attribute 1",
+        "config": {
+          "className": ""
+        }
+      },
+      {
+        "value": "First Name",
+        "config": {
+          "className": ""
+        }
+      }
+    ],
+    "tableRow": [
+      {
+        "value": "data.attribute1",
+               "type": "expression"
+      },
+      {
+        "value": "data.personName",
+
+        "type": "expression"
+      }
+    ],
+    "addButtonLabel": "Add New Insured"
+  },
+  "elements": [
+    [
+      {
+        
+        "type": "text",
+        "name": "attribute1",
+        "label": "Attribute 1",
+        "validations": {
+          
+        },
+        "placement": "col-md-6 col-12"
+      },
+      {
+        "type": "text",
+        "name": "personName",
+        "label": "Name",
+        "validations": {},
+        "placement": "col-md-6 col-12"
+      }
+    ]
+  ]
+}
+

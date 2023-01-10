@@ -1,0 +1,288 @@
+{
+  "elements": [
+    [
+      {
+        "type": "panelSideHeader",
+        "outerDiv": false,
+        "name": "Employment Preferred Communication",
+        "label": "Employment Preferred Communication",
+        "placement": "col-md-6 pt-3",
+        "formSideBigHeader": "Employment Preferred Communication",
+        "header": true
+      }
+    ],
+    [
+      {
+        "value": "workEmailAddress",
+        "type": "checkbox",
+        "name": "workEmailAddress",
+        "label": "Work Email address",
+        "placement": "col-lg-6 col-sm-6"
+      }
+    ],
+
+    [
+      {
+        "value": "postalEmail",
+        "type": "checkbox",
+        "name": "postalEmail",
+        "label": "Postal Email",
+        "placement": "col-lg-6 col-sm-6"
+      }
+    ],
+
+    [
+      {
+        "value": "personalPhone",
+        "type": "checkbox",
+        "name": "personalPhone",
+        "label": "Personal Phone",
+        "placement": "col-lg-6 col-sm-6"
+      }
+    ],
+    [
+      {
+        "value": "textMessage",
+        "type": "checkbox",
+        "name": "textMessage",
+        "label": "Text Message",
+        "placement": "col-lg-6 col-sm-6"
+      }
+    ],
+
+    [
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "DataField",
+        "rearSector": "shortName",
+        "label": "Data Field",
+        "mapping": true,
+        "labelTitle": "Data Field",
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "Toggle Field On/Off",
+        "rearSector": "shortName",
+        "label": "Toggle Field On/Off",
+        "mapping": true,
+        "labelTitle": "Toggle Field On/Off",
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "Editable Label",
+        "rearSector": "shortName",
+        "label": "Editable Label",
+        "mapping": true,
+        "labelTitle": "Editable Label",
+
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "Editable Field",
+        "rearSector": "shortName",
+        "label": "Editable Field",
+        "mapping": true,
+        "labelTitle": "Editable Field",
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      }
+    ],
+
+    [
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "workEmailAddress",
+        "rearSector": "workEmailAddress",
+        "label": "Work Email Address",
+        "mapping": true,
+        "labelTitle": "Work Email address",
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+
+      {
+        "type": "checkbox",
+        "name": "workEmailAddressToggle",
+        "label": "",
+        "placement": "col-md-5 col-lg-2 col-12"
+      },
+      {
+        "type": "checkbox",
+        "name": "workEmailAddressEditable",
+        "label": "",
+        "placement": "col-md-5 col-lg-2  col-12"
+      },
+      {
+        "type": "checkbox",
+        "name": "workEmailAddressChangedByEmp",
+        "label": "",
+        "placement": "col-md-5 col-lg-2 col-12"
+      }
+    ],
+
+    [
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "postalMail",
+        "rearSector": "postalMail",
+        "label": "Postal Email",
+        "mapping": true,
+        "labelTitle": "Postal Email",
+
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+
+      {
+        "type": "checkbox",
+        "name": "postalMailToggle",
+        "label": "",
+        "placement": "col-md-5 col-lg-2 col-12"
+      },
+      {
+        "type": "checkbox",
+        "name": "postalMailEditable",
+        "label": "",
+        "placement": "col-md-5 col-lg-2  col-12"
+      },
+      {
+        "type": "checkbox",
+        "name": "postalMailChangedByEmp",
+        "label": "",
+        "placement": "col-md-5 col-lg-2 col-12"
+      }
+    ],
+
+    [
+      {
+        "type": "readOnly",
+        "disabled": true,
+
+        "name": "personalPhone",
+
+        "rearSector": "personalPhone",
+        "label": "Personal Phone",
+        "mapping": true,
+        "labelTitle": "Personal Phone",
+
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+
+      {
+        "type": "checkbox",
+        "name": "personalPhoneToggle",
+        "label": "",
+        "placement": "col-md-5 col-lg-2 col-12"
+      },
+      {
+        "type": "checkbox",
+        "name": "personalPhoneEditable",
+        "label": "",
+        "placement": "col-md-5 col-lg-2  col-12"
+      },
+      {
+        "type": "checkbox",
+        "name": "personalPhoneChangedByEmp",
+        "label": "",
+        "placement": "col-md-5 col-lg-2 col-12"
+      }
+    ],
+    [
+      {
+        "type": "readOnly",
+        "disabled": true,
+
+        "name": "textMessage",
+
+        "rearSector": "textMessage",
+        "label": "Text Message",
+        "mapping": true,
+        "labelTitle": "Text Message",
+
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+
+      {
+        "type": "checkbox",
+        "name": "textMessageToggle",
+        "label": "",
+        "placement": "col-md-5 col-lg-2 col-12"
+      },
+      {
+        "type": "checkbox",
+        "name": "textMessageEditable",
+        "label": "",
+        "placement": "col-md-5 col-lg-2  col-12"
+      },
+      {
+        "type": "checkbox",
+        "name": "textMessageChangedByEmp",
+        "label": "",
+        "placement": "col-md-5 col-lg-2 col-12"
+      }
+    ]
+  ]
+}

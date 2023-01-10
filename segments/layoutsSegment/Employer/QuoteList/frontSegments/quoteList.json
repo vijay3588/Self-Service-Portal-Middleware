@@ -1,0 +1,38 @@
+{
+    "quoteNumber": {
+        "dataType": "string",
+        "defaultValue": 0,
+        "dataConfig": {
+            "configType": "preText",
+            "text": "Quote Number "
+        }
+    },
+    "plainQuoteNumber": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "quoteId": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "quoteStatus": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "submissionDate": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "validityEndDate": {
+        "dataType": "string",
+        "defaultValue": ""
+    },
+    "quoteRemainingDate": {
+        "dataType": "string",
+        "defaultValue": "",
+        "dataConfig": {
+            "configType": "getPastDays",
+            "endString": " days remaining"
+        }
+    }
+}

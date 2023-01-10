@@ -1,0 +1,18 @@
+{
+  "className": {
+    "dataType": "string",
+    "defaultValue": "aSPCB_OrganizationUnitIdentifier"
+  },
+  "bUID": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "description": {
+    "dataType": "string",
+    "defaultValue": ""
+  },
+  "unitCode": {
+    "dataType": "string",
+    "defaultValue": "DistRoot"
+  }
+}
