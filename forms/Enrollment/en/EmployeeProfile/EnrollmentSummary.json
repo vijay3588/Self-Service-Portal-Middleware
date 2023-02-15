@@ -1,0 +1,13 @@
+{
+    "elements": [
+      [
+        {
+          "type": "productTable",
+          "name":"enrollmentSummary",
+          "id":"enrollmentSummary"
+  
+          
+        }
+      ]
+    ]
+  }

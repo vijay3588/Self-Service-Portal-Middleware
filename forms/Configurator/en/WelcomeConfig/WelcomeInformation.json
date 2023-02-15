@@ -1,0 +1,416 @@
+{
+  "elements": [
+    [
+      {
+        "type": "panelSideHeader",
+        "outerDiv": false,
+        "name": "Welcome Screen",
+        "label": "Welcome Screen",
+        "placement": "col-md-6 pt-3",
+        "formSideBigHeader": "Welcome Screen",
+        "header": true
+      }
+    ],
+    [
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "DataField",
+        "rearSector": "shortName",
+        "label": "Data Field",
+        "mapping": true,
+        "labelTitle": "Data Field",
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "Check box to toggle field off in display",
+        "rearSector": "shortName",
+        "label": "Check box to toggle field off in display",
+        "mapping": true,
+        "labelTitle": "Check box to toggle field off in display",
+        "placement": "col-md-2 col-sm-6 col-lg-3 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "Editable Field",
+        "rearSector": "shortName",
+        "label": "Editable  Field",
+        "mapping": true,
+        "labelTitle": "Editable  Field",
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "Editable Field Value",
+        "rearSector": "shortName",
+        "label": "Editable Field Value",
+        "mapping": true,
+        "labelTitle": "Editable Field Value",
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      }
+    ],
+    [
+      {
+        "type": "readOnly",
+        "name": "lifeEventPanel",
+        "label": "QLE Widget",
+        "labelTitle": "QLE Widget",
+        "disabled": true,
+        "mapping": true,
+        "header": false,
+
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6",
+        "validations": {
+          "string": {
+            "matches": {
+              "regex": "^[a-zA-Z]+$",
+              "message": "No special characters allowed"
+            }
+          }
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+
+      {
+        "type": "checkbox",
+        "name": "qleWidgetToggle",
+        "label": "",
+        "update": {
+          "reduxPath": "welcomeConfigInformation.welcomeConfigInfo.welcomeConfigInformation.qleWidgetToggle",
+          "formikPath": "WelcomeInformation"
+        },
+        "value": false,
+        "placement": "col-md-5 col-lg-3 col-12"
+      }
+    ],
+
+    [
+      {
+        "type": "readOnly",
+        "name": "lifeEventPanel",
+        "label": "Number Of Days",
+        "labelTitle": "Number Of Days",
+        "disabled": true,
+        "mapping": true,
+        "header": false,
+
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6",
+        "validations": {
+          "string": {
+            "matches": {
+              "regex": "^[a-zA-Z]+$",
+              "message": "No special characters allowed"
+            }
+          }
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "checkbox",
+        "name": "NoOfDaysToggle",
+        "disabled": true,
+        "label": "",
+        "update": {
+          "reduxPath": "welcomeConfigInformation.welcomeConfigInfo.welcomeConfigInformation.NoOfDaysToggle",
+          "formikPath": "WelcomeInformation"
+        },
+        "value": false,
+        "placement": "col-md-5 col-lg-3 col-12"
+      },
+      {
+        "type": "checkbox",
+        "name": "noOfDaysChangeField",
+        "label": "",
+        "update": {
+          "reduxPath": "welcomeConfigInformation.welcomeConfigInfo.welcomeConfigInformation.noOfDaysChangeField",
+          "formikPath": "WelcomeInformation"
+        },
+        "value": false,
+        "placement": "col-md-5 col-lg-2 col-12"
+      },
+      {
+        "type": "text",
+        "name": "noOfDaysChangeFieldValue",
+        "label": "",
+        "update": {
+          "reduxPath": "welcomeConfigInformation.welcomeConfigInfo.welcomeConfigInformation.noOfDaysChangeFieldValue",
+          "formikPath": "WelcomeInformation"
+        },
+        "value": false,
+        "placement": "col-md-5 col-lg-2 col-12"
+      }
+    ],
+    [
+      {
+        "type": "readOnly",
+        "name": "welcomeTextContainer",
+        "label": "Welcome Title",
+        "labelTitle": "Welcome Title",
+        "disabled": true,
+        "mapping": true,
+        "header": false,
+
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6",
+        "validations": {
+          "string": {
+            "matches": {
+              "regex": "^[a-zA-Z]+$",
+              "message": "No special characters allowed"
+            }
+          }
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "checkbox",
+        "name": "welcomeMsgByClientToggle",
+        "disabled": true,
+        "label": "",
+        "update": {
+          "reduxPath": "welcomeConfigInformation.welcomeConfigInfo.welcomeConfigInformation.NoOfDaysToggle",
+          "formikPath": "WelcomeInformation"
+        },
+        "value": false,
+        "placement": "col-md-5 col-lg-3 col-12"
+      },
+      {
+        "type": "checkbox",
+        "name": "welcomeMsgByClient",
+        "label": "",
+        "update": {
+          "reduxPath": "welcomeConfigInformation.welcomeConfigInfo.welcomeConfigInformation.welcomeMsgByClient",
+          "formikPath": "WelcomeInformation"
+        },
+        "value": false,
+        "placement": "col-md-5 col-lg-2 col-12"
+      },
+      {
+        "type": "text",
+        "name": "welcomeTitleByClient",
+        "label": "",
+        "update": {
+          "reduxPath": "welcomeConfigInformation.welcomeConfigInfo.welcomeConfigInformation.welcomeTitleByClient",
+          "formikPath": "WelcomeInformation"
+        },
+        "value": false,
+        "placement": "col-md-5 col-lg-2 col-12"
+      }
+    ],
+    [
+      {
+        "type": "readOnly",
+        "name": "welcomeTextContainer",
+        "label": "Welcome Title",
+        "labelTitle": "Welcome Description",
+        "disabled": true,
+        "mapping": true,
+        "header": false,
+
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6",
+        "validations": {
+          "string": {
+            "matches": {
+              "regex": "^[a-zA-Z]+$",
+              "message": "No special characters allowed"
+            }
+          }
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "checkbox",
+        "name": "welcomeMsgByClientToggle",
+        "disabled": true,
+        "label": "",
+        "update": {
+          "reduxPath": "welcomeConfigInformation.welcomeConfigInfo.welcomeConfigInformation.NoOfDaysToggle",
+          "formikPath": "WelcomeInformation"
+        },
+        "value": false,
+        "placement": "col-md-5 col-lg-3 col-12"
+      },
+
+      {
+        "type": "checkbox",
+        "name": "welcomeDescTitleByClient",
+        "label": "",
+        "update": {
+          "reduxPath": "welcomeConfigInformation.welcomeConfigInfo.welcomeConfigInformation.welcomeDescTitleByClient",
+          "formikPath": "WelcomeInformation"
+        },
+        "value": false,
+        "placement": "col-md-5 col-lg-2 col-12"
+      },
+      {
+        "type": "text",
+        "name": "welcomeDescriptionByClient",
+        "label": "",
+        "update": {
+          "reduxPath": "welcomeConfigInformation.welcomeConfigInfo.welcomeConfigInformation.welcomeDescriptionByClient",
+          "formikPath": "WelcomeInformation"
+        },
+        "value": false,
+        "placement": "col-md-5 col-lg-2 col-12"
+      }
+    ],
+    [
+      {
+        "type": "readOnly",
+        "name": "welcomeTextContainer",
+        "label": "Steps Title",
+        "labelTitle": "Steps to enroll",
+        "disabled": true,
+        "mapping": true,
+        "header": false,
+
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6",
+        "validations": {
+          "string": {
+            "matches": {
+              "regex": "^[a-zA-Z]+$",
+              "message": "No special characters allowed"
+            }
+          }
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "checkbox",
+        "name": "stepstoToggle",
+        "disabled": true,
+        "label": "",
+        "update": {
+          "reduxPath": "welcomeConfigInformation.welcomeConfigInfo.welcomeConfigInformation.NoOfDaysToggle",
+          "formikPath": "WelcomeInformation"
+        },
+        "value": false,
+        "placement": "col-md-5 col-lg-3 col-12"
+      },
+
+      {
+        "type": "checkbox",
+        "name": "stepsTitleByClient",
+        "label": "",
+        "update": {
+          "reduxPath": "welcomeConfigInformation.welcomeConfigInfo.welcomeConfigInformation.stepsTitleByClient",
+          "formikPath": "WelcomeInformation"
+        },
+        "value": false,
+        "placement": "col-md-5 col-lg-2 col-12"
+      },
+      {
+        "type": "text",
+        "name": "stepsTitleValueByClient",
+        "label": "",
+        "update": {
+          "reduxPath": "welcomeConfigInformation.welcomeConfigInfo.welcomeConfigInformation.stepsTitleValueByClient",
+          "formikPath": "WelcomeInformation"
+        },
+        "value": false,
+        "placement": "col-md-5 col-lg-2 col-12"
+      }
+    ],
+    [
+      {
+        "type": "readOnly",
+        "name": "welcomeTextContainer",
+        "label": "Enter Steps",
+        "labelTitle": "Enter Steps",
+        "disabled": true,
+        "mapping": true,
+        "header": false,
+
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6",
+        "validations": {
+          "string": {
+            "matches": {
+              "regex": "^[a-zA-Z]+$",
+              "message": "No special characters allowed"
+            }
+          }
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+      {
+        "type": "checkbox",
+        "name": "stepstoToggle",
+        "disabled": true,
+        "label": "",
+        "update": {
+          "reduxPath": "welcomeConfigInformation.welcomeConfigInfo.welcomeConfigInformation.NoOfDaysToggle",
+          "formikPath": "WelcomeInformation"
+        },
+        "value": false,
+        "placement": "col-md-5 col-lg-3 col-12"
+      },
+
+      {
+        "type": "checkbox",
+        "name": "stepsToFieldByClient",
+        "label": "",
+        "update": {
+          "reduxPath": "welcomeConfigInformation.welcomeConfigInfo.welcomeConfigInformation.stepsToFieldByClient",
+          "formikPath": "WelcomeInformation"
+        },
+        "value": false,
+        "placement": "col-md-5 col-lg-2 col-12"
+      },
+      {
+        "type": "textarea",
+        "name": "stepsToFieldValueByClient",
+        "label": "",
+        "update": {
+          "reduxPath": "welcomeConfigInformation.welcomeConfigInfo.welcomeConfigInformation.stepsToFieldValueByClient",
+          "formikPath": "WelcomeInformation"
+        },
+        "value": false,
+        "placement": "col-md-6 col-lg-5 col-12"
+      }
+    ]
+  ]
+}

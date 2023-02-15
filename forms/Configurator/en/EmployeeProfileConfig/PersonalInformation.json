@@ -34,12 +34,12 @@
       {
         "type": "readOnly",
         "disabled": true,
-        "name": "Toggle Field On/Off",
+        "name": "Check box to toggle field off in display",
         "rearSector": "shortName",
-        "label": "Toggle Field On/Off",
+        "label": "Check box to toggle field off in display",
         "mapping": true,
-        "labelTitle": "Toggle Field On/Off",
-        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "labelTitle": "Check box to toggle field off in display",
+        "placement": "col-md-3 col-sm-6 col-lg-3 col-xs-6 col-6 ",
         "header": false,
         "validations": {
           "string": {}
@@ -135,7 +135,7 @@
           "formikPath": "PersonalInformation"
         },
         "label": "",
-        "placement": "col-md-5 col-lg-2 col-12"
+        "placement": "col-md-5 col-lg-3 col-12"
       },
       {
         "type": "checkbox",
@@ -184,12 +184,12 @@
       {
         "type": "readOnly",
         "disabled": true,
-        "name": "Toggle Field On/Off",
+        "name": "Check box to toggle field off in display",
         "rearSector": "shortName",
-        "label": "Toggle Field On/Off",
+        "label": "Check box to toggle field off in display",
         "mapping": true,
-        "labelTitle": "Toggle Field On/Off",
-        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "labelTitle": "Check box to toggle field off in display",
+        "placement": "col-md-3 col-sm-6 col-lg-3 col-xs-6 col-6 ",
         "header": false,
         "validations": {
           "string": {}
@@ -266,7 +266,7 @@
           "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.personalEmailAddressToggle",
           "formikPath": "PersonalInformation"
         },
-        "placement": "col-md-5 col-lg-2 col-12"
+        "placement": "col-md-5 col-lg-3 col-12"
       },
 
       {
@@ -323,7 +323,7 @@
           "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.personalPhoneToggle",
           "formikPath": "PersonalInformation"
         },
-        "placement": "col-md-5 col-lg-2 col-12"
+        "placement": "col-md-5 col-lg-3 col-12"
       },
 
       {
@@ -366,10 +366,10 @@
         "disabled": true,
         "name": "noGroupStart",
         "rearSector": "noGroupStart",
-        "label": "Toggle Section On/Off",
+        "label": "Check box to toggle section off in display",
         "mapping": true,
-        "labelTitle": "Toggle Section On/Off",
-        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "labelTitle": "Check box to toggle section off in display",
+        "placement": "col-md-2 col-sm-6 col-lg-3 col-xs-6 col-6 ",
         "header": false,
         "validations": {
           "string": {}
@@ -411,12 +411,12 @@
       {
         "type": "readOnly",
         "disabled": true,
-        "name": "Toggle Field On/Off",
+        "name": "Check box to toggle field off in display",
         "rearSector": "shortName",
-        "label": "Toggle Field On/Off",
+        "label": "Check box to toggle field off in display",
         "mapping": true,
-        "labelTitle": "Toggle Field On/Off",
-        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "labelTitle": "Check box to toggle field off in display",
+        "placement": "col-md-3 col-sm-6 col-lg-3 col-xs-6 col-6 ",
         "header": false,
         "validations": {
           "string": {}
@@ -496,7 +496,7 @@
           "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.salaryToggle",
           "formikPath": "PersonalInformation"
         },
-        "placement": "col-md-5 col-lg-2 col-12"
+        "placement": "col-md-5 col-lg-3 col-12"
       },
       {
         "type": "checkbox",
@@ -552,7 +552,7 @@
           "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.payFrequencyToggle",
           "formikPath": "PersonalInformation"
         },
-        "placement": "col-md-5 col-lg-2 col-12"
+        "placement": "col-md-5 col-lg-3 col-12"
       },
       {
         "type": "checkbox",
@@ -611,7 +611,7 @@
           "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.divisionCodeToggle",
           "formikPath": "PersonalInformation"
         },
-        "placement": "col-md-5 col-lg-2 col-12"
+        "placement": "col-md-5 col-lg-3 col-12"
       },
       {
         "type": "checkbox",
@@ -629,6 +629,7 @@
         "name": "divisionCodeEditableValue",
         "label": "",
         "value": false,
+
         "update": {
           "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.divisionCodeEditableValue",
           "formikPath": "PersonalInformation"
@@ -666,7 +667,7 @@
           "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.workLocationToggle",
           "formikPath": "PersonalInformation"
         },
-        "placement": "col-md-5 col-lg-2 col-12"
+        "placement": "col-md-5 col-lg-3 col-12"
       },
 
       {
@@ -723,7 +724,7 @@
           "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.employmentStatusToggle",
           "formikPath": "PersonalInformation"
         },
-        "placement": "col-md-5 col-lg-2 col-12"
+        "placement": "col-md-5 col-lg-3 col-12"
       },
       {
         "type": "checkbox",
@@ -766,6 +767,25 @@
         "disabled": true,
         "name": "DataField",
         "rearSector": "shortName",
+        "label": "* Atleast one value should be unchecked",
+        "mapping": true,
+        "labelTitle": "* Atleast one value should be unchecked",
+        "placement": "col-md-2 col-sm-6 col-lg-6 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      }
+    ],
+    [
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "DataField",
+        "rearSector": "shortName",
         "label": "Data Field",
         "mapping": true,
         "labelTitle": "Data Field",
@@ -782,12 +802,12 @@
       {
         "type": "readOnly",
         "disabled": true,
-        "name": "Toggle Field On/Off",
+        "name": "Check box to toggle field off in display",
         "rearSector": "shortName",
-        "label": "Toggle Field On/Off",
+        "label": "Check box to toggle field off in display",
         "mapping": true,
-        "labelTitle": "Toggle Field On/Off",
-        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "labelTitle": "Check box to toggle field off in display",
+        "placement": "col-md-3 col-sm-6 col-lg-3 col-xs-6 col-6 ",
         "header": false,
         "validations": {
           "string": {}
@@ -824,6 +844,17 @@
           "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.PCworkEmailAddress",
           "formikPath": "PersonalInformation"
         },
+        "populateCheckBoxValue": {
+          "formName": "PersonalInformation",
+          "from": [
+            "PCworkEmailAddress",
+            "PCpersonalEmailAddress",
+            "PCworkPhone",
+            "PCpostalEmail",
+            "PCpersonalPhone",
+            "PCtextMessage"
+          ]
+        },
         "placement": "col-lg-6 col-sm-6"
       }
     ],
@@ -855,6 +886,17 @@
           "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.PCpersonalEmailAddress",
           "formikPath": "PersonalInformation"
         },
+        "populateCheckBoxValue": {
+          "formName": "PersonalInformation",
+          "from": [
+            "PCworkEmailAddress",
+            "PCpersonalEmailAddress",
+            "PCworkPhone",
+            "PCpostalEmail",
+            "PCpersonalPhone",
+            "PCtextMessage"
+          ]
+        },
         "placement": "col-lg-6 col-sm-6"
       }
     ],
@@ -884,6 +926,17 @@
         "update": {
           "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.PCworkPhone",
           "formikPath": "PersonalInformation"
+        },
+        "populateCheckBoxValue": {
+          "formName": "PersonalInformation",
+          "from": [
+            "PCworkEmailAddress",
+            "PCpersonalEmailAddress",
+            "PCworkPhone",
+            "PCpostalEmail",
+            "PCpersonalPhone",
+            "PCtextMessage"
+          ]
         },
 
         "placement": "col-lg-6 col-sm-6"
@@ -916,6 +969,17 @@
           "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.PCpostalEmail",
           "formikPath": "PersonalInformation"
         },
+        "populateCheckBoxValue": {
+          "formName": "PersonalInformation",
+          "from": [
+            "PCworkEmailAddress",
+            "PCpersonalEmailAddress",
+            "PCworkPhone",
+            "PCpostalEmail",
+            "PCpersonalPhone",
+            "PCtextMessage"
+          ]
+        },
         "placement": "col-lg-6 col-sm-6"
       }
     ],
@@ -946,6 +1010,17 @@
           "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.PCpersonalPhone",
           "formikPath": "PersonalInformation"
         },
+        "populateCheckBoxValue": {
+          "formName": "PersonalInformation",
+          "from": [
+            "PCworkEmailAddress",
+            "PCpersonalEmailAddress",
+            "PCworkPhone",
+            "PCpostalEmail",
+            "PCpersonalPhone",
+            "PCtextMessage"
+          ]
+        },
         "placement": "col-lg-6 col-sm-6"
       }
     ],
@@ -971,11 +1046,38 @@
         "value": "false",
         "type": "checkbox",
         "name": "PCtextMessage",
+        "populateCheckBoxValue": {
+          "formName": "PersonalInformation",
+          "from": [
+            "PCworkEmailAddress",
+            "PCpersonalEmailAddress",
+            "PCworkPhone",
+            "PCpostalEmail",
+            "PCpersonalPhone",
+            "PCtextMessage"
+          ],
+          "to": []
+        },
         "update": {
           "reduxPath": "employeeInformation.empConfigInfo.employmentConfigInformation.PCtextMessage",
           "formikPath": "PersonalInformation"
         },
         "placement": "col-lg-6 col-sm-6"
+      }
+    ],
+    [
+      {
+        "value": "false",
+        "type": "checkbox",
+        "name": "validationChecking",
+        "hidden": true,
+        "updatingCheckBox": true,
+        "placement": "col-lg-6 col-sm-6",
+        "validations": {
+          "string": {
+            "required": "This field is required"
+          }
+        }
       }
     ]
   ]

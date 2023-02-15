@@ -253,6 +253,8 @@
           },
           "type": "stickyNote",
           "name": "securityCodeNote",
+          "color":"#F0FAFF",
+          "borderColor":"#9FE0FF",
           "label": "stickyNote",
           "notNumbered": true,
           "imageForEmail" : true,
@@ -320,8 +322,8 @@
           "placeholder": "Enter email",
           "placement": "col-md-6 col-lg-4 col-xl-4",
           "className": "px-3 py-1 mb-md-3",
-          "apiCall": true,
-          "apiCallURL": [
+          "apiCallNotNeeded": true,
+          "apiCallURLNotNeeded": [
             {
               "url": "/sign-up/send-email-challenge",
               "method": "POST"
@@ -445,8 +447,8 @@
           "placeholder": "",
           "placement": "col-md-3 col-xl-4",
           "className": "mt-3 px-3 py-1 mb-md-3",
-          "apiCall": true,
-          "apiCallURL": [
+          "apiCallNotNeeded": true,
+          "apiCallURLNotNeeded": [
             {
               "url": "/sign-up/activate-factor",
               "method": "POST"

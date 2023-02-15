@@ -98,6 +98,8 @@
           "show": true
         },
         "type": "stickyNote",
+        "color":"#F0FAFF",
+        "borderColor":"#9FE0FF",
         "name": "securityCodeNote",
         "label": "securityCodeNote",
         "hideLabel": true,

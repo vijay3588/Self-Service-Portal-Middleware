@@ -1,1768 +1,3203 @@
 {
-  "modals": [
+  "tables": [
     {
-      "modalName": "addBeneficiary",
-      "title": "Add a Beneficiary",
-      "modalDisplayBeneficiaryElement": "addBeneficiaryValidations",
+      "tableId": "dependentCoverageTable",
+      "isMultiple": true,
+      "dataKey": "dependentsCoverageInfo",
+      "selectionHeader": "",
+      "hasActions": false,
+      "hasRadioButton": true,
 
-      "modalElements": [
-        [
-          [
-            {
-              "type": "radioButtonGroup",
-              "name": "beneficiaryOptions",
-              "rearSector": "options",
-              "radioClassWrapper": " custom-control-inline",
-              "label": "",
-              "labelClassName": "col-12 py-3",
-              "placement": "col-12 col-lg-8 col-md-4 col-sm-6",
-              "isRadio": true,
-              "value": "individual",
-              "checked":"individual",
-              "validations": {
-                "string": {
-                  "validationRequiredOnTrue": {
-                    "value": "addBeneficiaryValidations",
-                    "message": "Please choose the option"
-                  }
-                }
-              },
-              "inputs": [
-                { "label": "New Individual", "value": "individual" },
-                { "label": "New Trust/Group/Estate", "value": "trust" }
-              ]
-            }
-          ],
-          [
-            {
-              "type": "line",
-              "name": "optionsLieBreak",
-              "modal": true,
-
-              "label": "",
-
-              "value": "",
-              "hideLabel": true,
-              "outerDiv": true,
-
-              "placement": "col-md-12"
-            }
-          ],
-
-          [
-            {
-              "displayConfig": {
-                "field": "addBeneficiaryValidations",
-                "show": false
-              },
-              "modal": true,
-              "type": "panelSideHeader",
-              "label": "Fields marked with * are Mandatory",
-              "formMandatory": "Fields marked with * are Mandatory"
-            }
-          ],
-
-          [
-            {
-              "type": "panelSideHeader",
-              "outerDiv": false,
-              "name": "Personal Information",
-              "label": "Personal Information",
-              "placement": "col-md-6",
-              "formSideBigHeader": "Personal Information"
-            }
-          ],
-          [
-            {
-              "type": "panelSideHeader",
-              "outerDiv": false,
-              "name": "General Information",
-              "label": "General Information",
-              "placement": "col-md-6",
-              "formSideBigHeader": "General Information"
-            }
-          ],
-          [
-            {
-              "type": "text",
-              "name": "legalName",
-              "rearSector": "beneficiaryLegalName",
-              "label": "Legal Name",
-              "mapping": true,
-              "modal": true,
-              "editable": true,
-              "placeholder": "Enter Legal Name",
-              "header": false,
-              "value": "",
-              "classNameWrapper": "",
-              "placement": "col-md-4 py-0 py-md-3",
-              "displayConfig": {
-                "field": "addBeneficiaryValidations",
-                "show": false,
-                "renderElements": {
-                  "legalName": true
-                },
-
-                "valueUpdate": {
-                  "addBeneficiaryValidations": false
-                },
-                "validateField": ["legalName"]
-              },
-              "validations": {
-                "string": {
-                  "matches": {
-                    "regex": "^[a-zA-Z]+$",
-                    "message": "No special characters allowed"
-                  },
-                  "validationRequiredOnTrue": {
-                    "value": "addBeneficiaryValidations",
-                    "message": "Please enter your Legal Name"
-                  },
-                  "validationMatchOnTrue": {
-                    "value": "addBeneficiaryValidations",
-                    "message": "Legal Name is invalid",
-                    "regex": "^[a-zA-Z]+$"
-                  }
-                }
-              }
-            },
-            {
-              "type": "select",
-              "label": "Relationship",
-              "name": "legalRelationship",
-              "rearSector": "legalRelationship",
-              "value": "spouse",
-              "header": true,
-              "displayConfig": {
-                "field": "addBeneficiaryValidations",
-
-                "valueUpdate": {
-                  "addDependentValidations": false
-                },
-                "validateField": ["legalRelationship"]
-              },
-
-              "update": {
-                "reduxPath": "personalInformation.personalInformation.mediaType",
-                "formikPath": "EmployeeProfile"
-              },
-              "placement": "col-12 col-lg-4 col-md-4 col-sm-6 ",
-              "validations": {
-                "string": {
-                  "validationRequiredOnTrue": {
-                    "value": "addBeneficiaryValidations",
-                    "message": "Please choose the option"
-                  }
-                }
-              },
-              "options": [
-                { "value": "CH", "text": "Child" },
-                { "value": "SP", "text": "Spouse" },
-                { "value": "DP", "text": "Domestic Partner" },
-                { "value": "OT", "text": "Other" }
-              ]
-            }
-          ],
-
-          [
-            {
-              "type": "text",
-              "name": "beneficiaryFirstName",
-              "rearSector": "beneficiaryFirstName",
-              "label": "First Name",
-              "mapping": true,
-              "modal": true,
-              "editable": true,
-              "placeholder": "Enter First Name",
-              "header": false,
-              "value": "",
-              "classNameWrapper": "",
-              "placement": "col-md-4 py-0 py-md-3",
-              "displayConfig": {
-                "field": "addBeneficiaryValidations",
-
-                "valueUpdate": {
-                  "addBeneficiaryValidations": false
-                },
-                "validateField": ["beneficiaryFirstName"]
-              },
-              "validations": {
-                "string": {
-                  "matches": {
-                    "regex": "^[a-zA-Z]+$",
-                    "message": "No special characters allowed"
-                  },
-                  "validationRequiredOnTrue": {
-                    "value": "addBeneficiaryValidations",
-                    "message": "Please enter your First Name"
-                  },
-                  "validationMatchOnTrue": {
-                    "value": "addBeneficiaryValidations",
-                    "message": "First Name is invalid",
-                    "regex": "^[a-zA-Z]+$"
-                  }
-                }
-              }
-            },
-            {
-              "type": "text",
-              "name": "beneficiaryMiddleName",
-              "rearSector": "beneficiaryMiddleName",
-              "label": "Middle Name",
-              "header": false,
-              "modal": true,
-              "mapping": true,
-              "editable": true,
-              "placeholder": "Enter Middle Name",
-              "value": "",
-              "classNameWrapper": "",
-              "placement": "col-md-4 py-0 py-md-3",
-
-              "validations": {
-                "string": {
-                  "matches": {
-                    "regex": "^[a-zA-Z]+$",
-                    "message": "No special characters allowed"
-                  }
-                }
-              }
-            },
-            {
-              "type": "text",
-              "name": "beneficiaryLastName",
-              "rearSector": "beneficiaryLastName",
-              "label": "Last Name",
-              "mapping": true,
-              "modal": true,
-              "editable": true,
-              "placeholder": "Enter Last Name",
-              "header": false,
-              "value": "",
-              "classNameWrapper": "",
-              "placement": "col-md-4 py-0 py-md-3",
-              "displayConfig": {
-                "field": "addBeneficiaryValidations",
-
-                "valueUpdate": {
-                  "addBeneficiaryValidations": false
-                },
-                "validateField": ["beneficiaryLastName"]
-              },
-              "validations": {
-                "string": {
-                  "matches": {
-                    "regex": "^[a-zA-Z]+$",
-                    "message": "No special characters allowed"
-                  },
-                  "validationRequiredOnTrue": {
-                    "value": "addBeneficiaryValidations",
-                    "message": "Please enter your Last Name"
-                  },
-                  "validationMatchOnTrue": {
-                    "value": "addBeneficiaryValidations",
-                    "message": "Last Name is invalid",
-                    "regex": "^[a-zA-Z]+$"
-                  }
-                }
+      "hasSelectOption": true,
+      "hasWaiveCoverage": true,
+      "mobileActionsHeader": "",
+      "tableData": "dependentsCoverageTable",
+      "actionsStyle": {
+        "backgroundColor": "#0065AC",
+        "color": "#FFFFFF"
+      },
+      "multiConfig": {
+        "maxAdds": 3,
+        "tableHeaderStyle": {
+          "backgroundColor": "#0065AC"
+        },
+        "tableHeader": [
+        
+          {
+            "value": "Coverage Level",
+            "id": "coverageLevel",
+            "mobileClassName": "col-4",
+            "config": {
+              "className": "offset-0 col-5",
+              "style": {
+                "backgroundColor": "#0065AC",
+                "color": "#FFFFFF",
+                "text-transform":"uppercase"
               }
             }
-          ],
-          [
-            {
-              "type": "text",
-              "name": "SSN",
-              "rearSector": "xxx",
-              "label": "SSN",
-              "labelTitle": "SSN",
-              "placeholder": "Enter SSN",
-              "mapping": true,
-              "editable": true,
-              "modal": true,
-              "placement": "col-12 col-lg-4  col-md-4 col-sm-6",
-              "classNameWrapper": "",
-              "header": false,
-              "displayConfig": {
-                "field": "addBeneficiaryValidations",
-
-                "valueUpdate": {
-                  "addBeneficiaryValidations": false
-                },
-                "validateField": ["SSN"]
-              },
-              "validations": {
-                "string": {
-                  "validationRequiredOnTrue": {
-                    "value": "addBeneficiaryValidations",
-                    "message": "Please enter your SSN"
-                  },
-                  "min": { "limit": 9, "message": "SSN must have 9 digits" },
-                  "max": { "limit": 9, "message": "SSN must have 9 digits" },
-                  "matches": {
-                    "regex": "^[0-9]*$",
-                    "message": "SSN must have 9 digits"
-                  }
-                }
-              },
-              "containerClassName": "col-12",
-              "contentClassName": "col-12 pr-0"
-            },
-            {
-              "type": "select",
-              "label": "Relationship",
-              "name": "beneficiaryRelationship",
-              "rearSector": "beneficiaryRelationship",
-              "value": "spouse",
-              "header": true,
-              "displayConfig": {
-                "field": "addBeneficiaryValidations",
-
-                "valueUpdate": {
-                  "addBeneficiaryValidations": false
-                },
-                "validateField": ["beneficiaryRelationship"]
-              },
-
-              "update": {
-                "reduxPath": "personalInformation.personalInformation.mediaType",
-                "formikPath": "EmployeeProfile"
-              },
-              "placement": "col-12 col-lg-4 col-md-4 col-sm-6",
-              "validations": {
-                "string": {
-                  "validationRequiredOnTrue": {
-                    "value": "addBeneficiaryValidations",
-                    "message": "Please choose the option"
-                  }
-                }
-              },
-              "options": [
-                { "value": "CH", "text": "Child" },
-                { "value": "SP", "text": "Spouse" }
-              ]
-            },
-            {
-              "type": "radioButtonGroup",
-              "name": "beneficiaryGender",
-              "rearSector": "options",
-              "radioClassWrapper": " custom-control-inline",
-              "label": "Gender",
-              "labelClassName": "col-12 ",
-              "placement": "col-12 col-lg-4 col-md-4 col-sm-6",
-              "isRadio": true,
-
-              "displayConfig": {
-                "field": "addBeneficiaryValidations",
-                "show": false,
-
-                "valueUpdate": {
-                  "addBeneficiaryValidations": false
-                },
-                "validateField": ["beneficiaryGender"]
-              },
-
-              "validations": {
-                "string": {
-                  "validationRequiredOnTrue": {
-                    "value": "addBeneficiaryValidations",
-                    "message": "Please choose the option"
-                  }
-                }
-              },
-              "inputs": [
-                { "label": "Male", "value": "gMale" },
-                { "label": "Female", "value": "gFemale" },
-                { "label": "Undisclosed", "value": "undisclosed" }
-              ]
-            }
-          ],
-          [
-            {
-              "type": "date",
-              "name": "beneficiaryBirthDate",
-              "rearSector": "birthDate",
-              "label": "Date of Birth",
-              "classNameWrapper": " py-3",
-              "labelClassName": " py-3",
-              "placeholder": "Enter Date of Birth",
-              "placement": "col-12 col-lg-4 col-md-4 col-sm-3",
-              "displayConfig": {
-                "field": "addBeneficiaryValidations",
-
-                "valueUpdate": {
-                  "addBeneficiaryValidations": false
-                },
-                "validateField": ["beneficiaryBirthDate"]
-              },
-              "validations": {
-                "string": {
-                  "validationRequiredOnTrue": {
-                    "value": "alternateAddressValidations",
-                    "message": "Please enter your DOB"
-                  },
-                  "min": {
-                    "limit": 6,
-                    "message": "minlengeth is 6"
-                  }
-                }
+          },
+          {
+            "value": "Plan Type",
+            "id": "planType",
+            "mobileClassName": "col-4",
+            "config": {
+              "mobileClassName": "col-4",
+              "className": "col-2",
+              "style": {
+                "backgroundColor": "#0065AC",
+                "color": "#FFFFFF",
+                "text-transform":"uppercase"
               }
             }
-          ],
-          [
-            {
-              "type": "line",
-              "name": "personalInformationLineBreak",
-              "modal": true,
-
-              "label": "",
-
-              "value": "",
-              "hideLabel": true,
-              "outerDiv": true,
-
-              "placement": "col-md-12"
-            }
-          ],
-          [
-            {
-              "type": "panelSideHeader",
-              "outerDiv": false,
-              "name": "beneficiary's Address",
-              "label": "Address",
-              "placement": "col-md-6",
-              "formSideBigHeader": "Address",
-              "header": true
-            }
-          ],
-
-          [
-            {
-              "type": "radioButtonGroup",
-              "name": "mailingAddressOptions",
-              "rearSector": "options",
-              "radioClassWrapper": " custom-control-inline",
-              "label": "Do you wish to add a mailing address?",
-              "labelClassName": "col-12 py-3",
-              "placement": "col-12 col-lg-4 col-md-4 col-sm-6",
-              "isRadio": true,
-
-              "displayConfig": {
-                "field": "addBeneficiaryValidations",
-                "show": false,
-
-                "valueUpdate": {
-                  "addBeneficiaryValidations": false
-                },
-                "validateField": ["mailingAddressOptions"]
-              },
-
-              "validations": {
-                "string": {
-                  "validationRequiredOnTrue": {
-                    "value": "addBeneficiaryValidations",
-                    "message": "Please choose the option"
-                  }
-                }
-              },
-              "inputs": [
-                { "label": "Yes", "value": "yes" },
-                { "label": "No", "value": "no" }
-              ]
-            }
-          ],
-
-          [
-            {
-              "type": "line",
-              "name": "addressLineBreak",
-              "modal": true,
-
-              "label": "",
-
-              "value": "",
-              "hideLabel": true,
-              "outerDiv": true,
-
-              "placement": "col-md-12"
-            }
-          ],
-          [
-            {
-              "type": "checkbox",
-              "name": "liveInSameAddress",
-              "defaultValue": false,
-              "value": false,
-      
-              "valueType": "bool",
-              "populateValue": {
-                "formName": "EmployeeProfile",
-                "from": [
-                  "line1",
-                  "line2",
-                  "city",
-                  "state",
-                  "zipCode",
-                  "country"
-                ],
-                "to": [
-                  "CoverageSelection.beneficiaryAddressLine1",
-                  "CoverageSelection.beneficiaryAddressLine2",
-                  "CoverageSelection.beneficiaryCity",
-                  "CoverageSelection.beneficiaryState",
-                  "CoverageSelection.beneficiaryZipCode",
-                  "CoverageSelection.beneficiaryCountry"
-                ]
-              },
-
-              "label": "Live at same address as yours",
-
-              "placement": ""
-            }
-          ],
-          [ {
-
-            "displayConfig": {
-              "field": "liveInSameAddress",
-              "show": false,
-    
-              "renderElements": {
-                "primaryAddress": true
-              },
-              "valueUpdate": {
-                "liveInSameAddress": false
-              },
-              "validateField": ["primaryAddress"]
-            },
-            "name": "primaryAddress",
-            "type": "readOnly",
-            "header": false,
-            "hidden": false,
-            "dusabled": true,
-            "outerDiv": true,
-            "update": {
-              "reduxPath": [
-                "employeeInformation.PersonalInformation.personalInformation.line1",
-                "employeeInformation.PersonalInformation.personalInformation.line2",
-                "employeeInformation.PersonalInformation.personalInformation.city",
-                "employeeInformation.PersonalInformation.personalInformation.state",
-                "employeeInformation.PersonalInformation.personalInformation.zipCode",
-                "employeeInformation.PersonalInformation.personalInformation.country"
-              ],
-              "pascalCaseSkip": ["state", "country"],
-              "formikPath": "CoverageSelection.primaryAddress"
-            },
-            "mapping": true,
-            "label": "Primary Address",
-            "value": "1001, Timberlane Road, Denver, Colorado 80014",
-            "hideLabel": true,
-            "placement": "col-lg-12 col-md-12",
-            "containerClassName": "col-12 px-3",
-            "contentClassName": "col-9 col-md-12"
-            
-          
-          }],
-          [
-            {
-              "displayConfig": {
-                "field": "liveInSameAddress",
-                "show": true,
-      
-                "renderElements": {
-                  "MFAOptions": false
-                },
-                "valueUpdate": {
-                  "liveInSameAddress": false
-                },
-                "validateField": ["MFAOptions"]
-              },
-              "type": "text",
-              "name": "beneficiaryAddressLine1",
-              "rearSector": "addressLine1",
-              "label": "Address Line 1",
-              "placeholder": "Enter Address Line 1",
-              "mapping": true,
-              "modal": true,
-              "editable": true,
-              "update": {
-                "reduxPath": "personalInformation.personalInformation.alternateAddressLine1",
-                "formikPath": "EmployeeProfile"
-              },
-
-              "header": false,
-              "value": "",
-              "classNameWrapper": "",
-              "placement": "col-md-6 py-3",
-
-              "validations": {
-                "string": {
-                  "validationRequiredOnTrue": {
-                    "value": "addBeneficiaryValidations",
-                    "message": "Please enter your address"
-                  },
-                  "validationMatchOnTrue": {
-                    "value": "addBeneficiaryValidations",
-                    "message": "Address Line 1 is invalid",
-                    "regex": "^[a-zA-Z]+$"
-                  }
-                }
-              }
-            },
-            {
-              "displayConfig": {
-                "field": "liveInSameAddress",
-                "show": true,
-      
-                "renderElements": {
-                  "MFAOptions": false
-                },
-                "valueUpdate": {
-                  "liveInSameAddress": false
-                },
-                "validateField": ["MFAOptions"]
-              },
-              "type": "text",
-              "name": "beneficiaryAddressLine2",
-              "rearSector": "addressLine2",
-              "label": "Address Line 2",
-              "header": false,
-              "modal": true,
-              "placeholder": "Enter Address Line 2",
-              "mapping": true,
-              "editable": true,
-              "update": {
-                "reduxPath": "personalInformation.personalInformation.alternateAddressLine2",
-                "formikPath": "EmployeeProfile"
-              },
-              "value": "",
-              "classNameWrapper": "",
-              "placement": "col-md-6 py-3",
-
-              "validations": {
-                "string": {}
+          },
+          {
+            "value": "Type of Coverage",
+            "id": "typeOfCoverage",
+            "mobileClassName": "col-5",
+            "config": {
+              "mobileClassName": "col-5",
+              "className": "col-2",
+              "style": {
+                "backgroundColor": "#0065AC",
+                "color": "#FFFFFF",
+                "text-transform":"uppercase"
               }
             }
-          ],
-          [
-            {
-              "displayConfig": {
-                "field": "liveInSameAddress",
-                "show": true,
-      
-                "renderElements": {
-                  "MFAOptions": false
-                },
-                "valueUpdate": {
-                  "liveInSameAddress": false
-                },
-                "validateField": ["MFAOptions"]
-              },
-              "type": "text",
-              "name": "beneficiaryCity",
-              "rearSector": "city",
-              "label": "City",
-              "header": false,
-              "placeholder": "Enter City",
-              "value": "",
-              "placement": "col-12  col-12 col-lg-3 col-md-4 col-sm-4",
-              "modal": true,
-              "mapping": true,
-              "editable": true,
-              "update": {
-                "reduxPath": "personalInformation.personalInformation.alternateAddressCity",
-                "formikPath": "EmployeeProfile"
-              },
-              "validations": {
-                "string": {
-                  "matches": {
-                    "regex": "^[a-zA-Z]+$",
-                    "message": "Please enter your city"
-                  },
-                  "validationRequiredOnTrue": {
-                    "value": "addBeneficiaryValidations",
-                    "message": "Please enter your city"
-                  },
-                  "validationMatchOnTrue": {
-                    "value": "addBeneficiaryValidations",
-                    "message": "City is required",
-                    "regex": "^[a-zA-Z]+$"
-                  }
-                }
-              }
-            },
-            {
-              "displayConfig": {
-                "field": "liveInSameAddress",
-                "show": true,
-      
-                "renderElements": {
-                  "MFAOptions": false
-                },
-                "valueUpdate": {
-                  "liveInSameAddress": false
-                },
-                "validateField": ["MFAOptions"]
-              },
-              "type": "select",
-              "name": "beneficiaryState",
-              "rearSector": "state",
-              "placeholder": "Enter State",
-              "options": "",
-              "optionsname": "StateConstants",
-              "label": "State",
-              "modal": true,
-              "mapping": true,
-              "header": false,
-              "editable": true,
-              "value": " ",
-              "update": {
-                "reduxPath": "personalInformation.personalInformation.alternateAddressState",
-                "formikPath": "EmployeeProfile"
-              },
-              "placement": "col-12  col-12 col-lg-3 col-md-4 col-sm-4 ",
-              "validations": {
-                "string": {
-                  "validationRequiredOnTrue": {
-                    "value": "addBeneficiaryValidations",
-                    "message": "Please enter your State"
-                  },
-                  "validationMatchOnTrue": {
-                    "value": "addBeneficiaryValidations",
-                    "message": "State is required",
-                    "regex": "^[a-zA-Z]+$"
-                  }
-                }
-              }
-            },
-            {
-              "displayConfig": {
-                "field": "liveInSameAddress",
-                "show": true,
-      
-                "renderElements": {
-                  "MFAOptions": false
-                },
-                "valueUpdate": {
-                  "liveInSameAddress": false
-                },
-                "validateField": ["MFAOptions"]
-              },
-              "type": "text",
-              "name": "beneficiaryZipCode",
-              "rearSector": "zipcode",
-              "label": "Zip Code",
-              "placeholder": "Enter Zip Code",
-              "header": false,
-              "value": "",
-              "modal": true,
-              "mapping": true,
-              "editable": true,
-              "update": {
-                "reduxPath": "personalInformation.personalInformation.alternateAddressZipCode",
-                "formikPath": "EmployeeProfile"
-              },
-              "placement": "col-12  col-12 col-lg-3 col-md-4 col-sm-4",
-              "validations": {
-                "string": {
-                  "matches": {
-                    "regex": "^[0-9]*$",
-                    "message": "Zip Code must all be digits"
-                  },
-                  "validationRequiredOnTrue": {
-                    "value": "addBeneficiaryValidations",
-                    "message": "Please enter your Zip Code"
-                  },
-                  "validationMatchOnTrue": {
-                    "value": "addBeneficiaryValidations",
-                    "message": "Please enter a valid Zip Code",
-                    "regex": "^[0-9]*$"
-                  }
-                }
-              }
-            },
-            {
-              "displayConfig": {
-                "field": "liveInSameAddress",
-                "show": true,
-      
-                "renderElements": {
-                  "MFAOptions": false
-                },
-                "valueUpdate": {
-                  "liveInSameAddress": false
-                },
-                "validateField": ["MFAOptions"]
-              },
-              "type": "select",
-              "name": "beneficiaryCountry",
-              "rearSector": "country",
-              "label": "Country",
-              "placeholder": "Enter Country",
-              "header": false,
-              "modal": true,
-              "value": "USA",
-              "editable": true,
-              "mapping": true,
-              "update": {
-                "reduxPath": "personalInformation.personalInformation.alternateAddressCountry",
-                "formikPath": "EmployeeProfile"
-              },
-              "placement": "col-12  col-12 col-lg-3 col-md-4 col-sm-4",
-              "options": "",
-              "optionsname": "CountryConstants",
-              "validations": {
-                "string": {
-                  "validationRequiredOnTrue": {
-                    "value": "addBeneficiaryValidations",
-                    "message": "Please choose the option"
-                  },
-                  "validationMatchOnTrue": {
-                    "value": "addBeneficiaryValidations",
-                    "message": "Please choose the option",
-                    "regex": "^[a-zA-Z]+$"
-                  }
-                }
+          },
+          {
+            "value": "Cost per pay period",
+            "id": "costPerPayPeriod",
+            "mobileClassName": "col-6",
+            "config": {
+              "className": "col-5 text-right",
+              "style": {
+                "backgroundColor": "#0065AC",
+                "color": "#FFFFFF",
+                "fontFamily": "NotoSansSemiBold",
+                "fontSize": "0.875rem",
+                "text-transform":"uppercase"
               }
             }
-          ],
-          [
-            {
-              "type": "line",
-              "name": "buttonLineBreak",
-              "modal": true,
-
-              "label": "",
-
-              "value": "",
-              "hideLabel": true,
-              "outerDiv": true,
-
-              "placement": "col-md-12"
-            }
-          ],
-
-          [
-            {
-              "type": "button",
-              "name": "cancel",
-              "rearSector": "cancel",
-              "modalPopUp": false,
-              "modalName": "addBeneficiary",
-              "label": "Cancel",
-              "placement": "d-flex justify-content-end col-md-2 offset-md-4 py-2",
-              "className": "w-100",
-
-              "header": false,
-              "outerDiv": true,
-              "validations": {}
-            },
-            {
-              "type": "button",
-              "name": "save",
-              "buttonType": "submit",
-              "hidden": false,
-
-              "modalName": "addBeneficiary",
-              "apiCallURL": ["/createOrUpdateInsured"],
-              "apiCallArray": true,
-              "rearSector": "save",
-              "modalPopUp": true,
-              "label": "Save",
-
-              "placement": " col-md-2 py-2",
-              "className": "w-100",
-
-              "header": false,
-              "outerDiv": true,
-              "validations": {}
-            },
-            {
-              "type": "checkbox",
-              "visibility": "hidden",
-
-              "hidden": true,
-              "name": "showButton",
-
-              "label": "show button",
-              "placement": "col-md-3 col-12"
-            }
-          ]
+          }
+        ],
+        "tableRow": [
+        
+          {
+            "value": "`${data.coverageLevel ? `${data.coverageLevel} ` : ''} `",
+            "type": "expression",
+            "id": "coverageLevel"
+          },
+          {
+            "value": "`${data.planType ? `${data.planType}` : ''}`",
+            "type": "expression",
+            "id": "planType"
+          },
+          {
+            "value": "`${data.typeOfCoverage ? `${data.typeOfCoverage}` : ''}`",
+            "type": "expression",
+            "id": "typeOfCoverage"
+          },
+          {
+            "value": "`${data.costPerPayPeriod ? `${data.costPerPayPeriod}` : ''}`",
+            "type": "expression",
+            "id": "costPerPayPeriod"
+          }
         ]
-      ]
-    },
-    {
-      "modalName": "editBeneficiary",
-      "title": "Edit Beneficiary",
-
-      "modalDisplaybeneficiaryElement": "editBeneficiaryValidations",
-
-      "modalElements": [
-        [
-          [
-            {
-              "type": "radioButtonGroup",
-              "name": "editBeneficiaryOptions",
-              "rearSector": "options",
-              "radioClassWrapper": " custom-control-inline",
-              "label": "",
-              "labelClassName": "col-12 py-3",
-              "placement": "col-12 col-lg-8 col-md-4 col-sm-6",
-              "isRadio": true,
-
-              "displayConfig": {
-                "field": "editBeneficiaryValidations",
-                "show": false,
-
-                "valueUpdate": {
-                  "addBeneficiaryValidations": false
-                },
-                "validateField": ["editBeneficiaryOptions"]
-              },
-
-              "validations": {
-                "string": {
-                  "validationRequiredOnTrue": {
-                    "value": "editBeneficiaryValidations",
-                    "message": "Please choose the option"
-                  }
-                }
-              },
-              "inputs": [
-                { "label": "New Individual", "value": "individual" },
-                { "label": "New Trust/Group/Estate", "value": "trust" }
-              ]
-            }
-          ],
-          [
-            {
-              "displayConfig": {
-                "field": "editBeneficiaryValidations",
-                "show": false
-              },
-              "modal": true,
-              "type": "panelSideHeader",
-              "label": "Fields marked with * are Mandatory",
-              "formMandatory": "Fields marked with * are Mandatory"
-            }
-          ],
-          [
-            {
-              "type": "line",
-              "name": "editOptionsLieBreak",
-              "modal": true,
-
-              "label": "",
-
-              "value": "",
-              "hideLabel": true,
-              "outerDiv": true,
-
-              "placement": "col-md-12"
-            }
-          ],
-          [
-            {
-              "type": "panelSideHeader",
-              "outerDiv": false,
-              "name": "Personal Information",
-              "label": "Personal Information",
-              "placement": "col-md-6",
-              "formSideBigHeader": "Personal Information",
-              "header": true
-            }
-          ],
-
-          [
-            {
-              "type": "text",
-              "name": "editLegalName",
-              "rearSector": "beneficiaryLegalName",
-              "label": "Legal Name",
-              "mapping": true,
-              "modal": true,
-              "editable": true,
-              "placeholder": "Enter Legal Name",
-              "header": false,
-              "value": "",
-              "classNameWrapper": "",
-              "placement": "col-md-4 py-0 py-md-3",
-              "displayConfig": {
-                "field": "editBeneficiaryValidations",
-                "show": false,
-                "renderElements": {
-                  "legalName": true
-                },
-
-                "valueUpdate": {
-                  "addBeneficiaryValidations": false
-                },
-                "validateField": ["editLegalName"]
-              },
-              "validations": {
-                "string": {
-                  "matches": {
-                    "regex": "^[a-zA-Z]+$",
-                    "message": "No special characters allowed"
-                  },
-                  "validationRequiredOnTrue": {
-                    "value": "addBeneficiaryValidations",
-                    "message": "Please enter your Legal Name"
-                  },
-                  "validationMatchOnTrue": {
-                    "value": "addBeneficiaryValidations",
-                    "message": "Legal Name is invalid",
-                    "regex": "^[a-zA-Z]+$"
-                  }
-                }
-              }
-            },
-            {
-              "type": "select",
-              "label": "Relationship",
-              "name": "editLegalRelationship",
-              "rearSector": "legalRelationship",
-              "value": "spouse",
-              "header": true,
-              "displayConfig": {
-                "field": "editBeneficiaryValidations",
-
-                "valueUpdate": {
-                  "addDependentValidations": false
-                },
-                "validateField": ["editLegalRelationship"]
-              },
-
-              "update": {
-                "reduxPath": "personalInformation.personalInformation.mediaType",
-                "formikPath": "EmployeeProfile"
-              },
-              "placement": "col-12 col-lg-4 col-md-4 col-sm-6 ",
-              "validations": {
-                "string": {
-                  "validationRequiredOnTrue": {
-                    "value": "addBeneficiaryValidations",
-                    "message": "Please choose the option"
-                  }
-                }
-              },
-              "options": [
-                { "value": "CH", "text": "Child" },
-                { "value": "SP", "text": "Spouse" },
-                { "value": "DP", "text": "Domestic Partner" },
-                { "value": "OT", "text": "Other" }
-              ]
-            }
-          ],
-
-          [
-            {
-              "type": "text",
-              "name": "editbeneficiaryFirstName",
-              "rearSector": "editbeneficiaryFirstName",
-              "label": "First Name",
-              "mapping": true,
-              "modal": true,
-              "editable": true,
-              "placeholder": "Enter First Name",
-              "header": false,
-              "value": "",
-              "classNameWrapper": "",
-              "placement": "col-md-4 py-0 py-md-3",
-              "displayConfig": {
-                "field": "editBeneficiaryValidations",
-                "valueUpdate": {
-                  "editBeneficiaryValidations": false
-                },
-                "validateField": ["editbeneficiaryFirstName"]
-              },
-              "validations": {
-                "string": {
-                  "matches": {
-                    "regex": "^[a-zA-Z]+$",
-                    "message": "No special characters allowed"
-                  },
-                  "validationRequiredOnTrue": {
-                    "value": "editBeneficiaryValidations",
-                    "message": "Please enter your First Name"
-                  },
-                  "validationMatchOnTrue": {
-                    "value": "editBeneficiaryValidations",
-                    "message": "First Name is invalid",
-                    "regex": "^[a-zA-Z]+$"
-                  }
-                }
-              }
-            },
-            {
-              "type": "text",
-              "name": "EditbeneficiaryMiddleName",
-              "rearSector": "EditbeneficiaryMiddleName",
-              "label": "Middle Name",
-              "header": false,
-              "modal": true,
-              "mapping": true,
-              "editable": true,
-              "placeholder": "Enter Middle Name",
-              "value": "",
-              "classNameWrapper": "",
-              "placement": "col-md-4 py-0 py-md-3",
-
-              "validations": {
-                "string": {
-                  "matches": {
-                    "regex": "^[a-zA-Z]+$",
-                    "message": "No special characters allowed"
-                  }
-                }
-              }
-            },
-            {
-              "type": "text",
-              "name": "editbeneficiaryLastName",
-              "rearSector": "editbeneficiaryLastName",
-              "label": "Last Name",
-              "mapping": true,
-              "modal": true,
-              "editable": true,
-              "placeholder": "Enter Last Name",
-              "header": false,
-              "value": "",
-              "classNameWrapper": "",
-              "placement": "col-md-4 py-0 py-md-3",
-              "displayConfig": {
-                "field": "editBeneficiaryValidations",
-                "valueUpdate": {
-                  "editBeneficiaryValidations": false
-                },
-                "validateField": ["editbeneficiaryLastName"]
-              },
-              "validations": {
-                "string": {
-                  "matches": {
-                    "regex": "^[a-zA-Z]+$",
-                    "message": "No special characters allowed"
-                  },
-                  "validationRequiredOnTrue": {
-                    "value": "editBeneficiaryValidations",
-                    "message": "Please enter your Last Name"
-                  },
-                  "validationMatchOnTrue": {
-                    "value": "editBeneficiaryValidations",
-                    "message": "Last Name is invalid",
-                    "regex": "^[a-zA-Z]+$"
-                  }
-                }
-              }
-            }
-          ],
-          [
-            {
-              "type": "text",
-              "name": "editSSN",
-              "rearSector": "xxx",
-              "label": "SSN",
-              "labelTitle": "SSN",
-              "placeholder": "Enter SSN",
-              "mapping": true,
-              "modal": true,
-              "editable": true,
-
-              "placement": "col-12 col-lg-4  col-md-4 col-sm-6",
-              "classNameWrapper": "",
-              "header": false,
-              "displayConfig": {
-                "field": "editBeneficiaryValidations",
-                "valueUpdate": {
-                  "editBeneficiaryValidations": false
-                },
-                "validateField": ["editSSN"]
-              },
-              "validations": {
-                "string": {
-                  "validationRequiredOnTrue": {
-                    "value": "editBeneficiaryValidations",
-                    "message": "Please enter your SSN"
-                  },
-                  "min": { "limit": 9, "message": "SSN must have 9 digits" },
-                  "max": { "limit": 9, "message": "SSN must have 9 digits" },
-                  "matches": {
-                    "regex": "^[0-9]*$",
-                    "message": "SSN must have 9 digits"
-                  }
-                }
-              },
-              "containerClassName": "col-12",
-              "contentClassName": "col-12 pr-0"
-            },
-            {
-              "type": "select",
-              "label": "Relationship with the beneficiary",
-              "name": "editbeneficiaryRelationship",
-              "rearSector": "editbeneficiaryRelationship",
-              "value": "spouse",
-              "header": true,
-              "update": {
-                "reduxPath": "personalInformation.personalInformation.mediaType",
-                "formikPath": "EmployeeProfile"
-              },
-              "placement": "col-12 col-lg-4 col-md-4 col-sm-6 ",
-              "displayConfig": {
-                "field": "editBeneficiaryValidations",
-                "valueUpdate": {
-                  "editBeneficiaryValidations": false
-                },
-                "validateField": ["editbeneficiaryRelationship"]
-              },
-              "validations": {
-                "string": {
-                  "validationRequiredOnTrue": {
-                    "value": "alternateAddressValidations",
-                    "message": "Please choose the option"
-                  }
-                }
-              },
-              "options": [
-                { "value": "CH", "text": "Child" },
-                { "value": "SP", "text": "Spouse" }
-              ]
-            },
-            {
-              "type": "radioButtonGroup",
-              "name": "editbeneficiaryGender",
-              "rearSector": "options",
-              "radioClassWrapper": " custom-control-inline",
-              "label": "Gender",
-              "labelClassName": "col-12 ",
-              "placement": "col-12 col-lg-4 col-md-4 col-sm-6",
-              "isRadio": true,
-              "displayConfig": {
-                "field": "editBeneficiaryValidations",
-                "valueUpdate": {
-                  "editBeneficiaryValidations": false
-                },
-                "validateField": ["editbeneficiaryGender"]
-              },
-
-              "validations": {
-                "string": {
-                  "validationRequiredOnTrue": {
-                    "value": "editBeneficiaryValidations",
-                    "message": "Please choose the option"
-                  }
-                }
-              },
-              "inputs": [
-                { "label": "Male", "value": "gMale" },
-                { "label": "Female", "value": "gFemale" },
-                { "label": "Undisclosed", "value": "undisclosed" }
-              ]
-            }
-          ],
-          [
-            {
-              "type": "date",
-              "name": "editBeneficiaryBirthDate",
-              "rearSector": "birthDate",
-              "label": "Date of Birth",
-              "classNameWrapper": " py-3",
-              "placeholder": "Enter DOB",
-              "placement": "col-12 col-lg-4 col-md-4 col-sm-3",
-              "displayConfig": {
-                "field": "editBeneficiaryValidations",
-                "valueUpdate": {
-                  "editBeneficiaryValidations": false
-                },
-                "validateField": ["editBeneficiaryBirthDate"]
-              },
-              "validations": {
-                "string": {
-                  "validationRequiredOnTrue": {
-                    "value": "alternateAddressValidations",
-                    "message": "Please enter your DOB"
-                  },
-                  "min": {
-                    "limit": 6,
-                    "message": "minlengeth is 6"
-                  }
-                }
-              }
-            }
-          ],
-          [
-            {
-              "type": "line",
-              "name": "editPersonalInformationLineBreak",
-              "modal": true,
-
-              "label": "",
-
-              "value": "",
-              "hideLabel": true,
-              "outerDiv": true,
-
-              "placement": "col-md-12"
-            }
-          ],
-          [
-            {
-              "type": "readOnly",
-              "name": "edithorizontalBar",
-
-              "horizontalBar": true,
-              "hidden": true,
-              "value": "",
-              "hideLabel": true,
-              "outerDiv": true,
-
-              "placement": "col-md-12"
-            }
-          ],
-          [
-            {
-              "type": "panelSideHeader",
-              "outerDiv": false,
-              "name": "editbeneficiary's Address",
-              "label": "Beneficiary's Address",
-              "placement": "col-md-6 py-3",
-              "formSideBigHeader": "Beneficiary's Address",
-              "header": true
-            }
-          ],
-          [
-            {
-              "type": "radioButtonGroup",
-              "name": "editMailingAddressOptions",
-              "rearSector": "options",
-              "radioClassWrapper": " custom-control-inline",
-              "label": "Do you wish to add a mailing address?",
-              "labelClassName": "col-12",
-              "placement": "col-12 col-lg-4 col-md-4 col-sm-6",
-              "isRadio": true,
-
-              "displayConfig": {
-                "field": "editBeneficiaryValidations",
-                "show": false,
-
-                "valueUpdate": {
-                  "addBeneficiaryValidations": false
-                },
-                "validateField": ["editMailingAddressOptions"]
-              },
-
-              "validations": {
-                "string": {
-                  "validationRequiredOnTrue": {
-                    "value": "editBeneficiaryValidations",
-                    "message": "Please choose the option"
-                  }
-                }
-              },
-              "inputs": [
-                { "label": "Yes", "value": "yes" },
-                { "label": "No", "value": "no" }
-              ]
-            }
-          ],
-
-          [
-            {
-              "type": "line",
-              "name": "editAddressLineBreak",
-              "modal": true,
-
-              "label": "",
-
-              "value": "",
-              "hideLabel": true,
-              "outerDiv": true,
-
-              "placement": "col-md-12"
-            }
-          ],
-          [
-            {
-              "type": "checkbox",
-              "name": "editLiveInSameAddress",
-
-              "populateValue": {
-                "formName": "EmployeeProfile",
-                "from": [
-                  "line1",
-                  "line2",
-                  "city",
-                  "state",
-                  "zipCode",
-                  "country"
-                ],
-                "to": [
-                  "CoverageSelection.editBeneficiaryAddressLine1",
-                  "CoverageSelection.editBeneficiaryAddressLine2",
-                  "CoverageSelection.editBeneficiaryCity",
-                  "CoverageSelection.editBeneficiaryState",
-                  "CoverageSelection.editBeneficiaryZipCode",
-                  "CoverageSelection.editBeneficiaryCountry"
-                ]
-              },
-
-              "label": "Live at same address as yours",
-
-              "placement": ""
-            }
-          ],
-          [
-            {
-              "type": "text",
-              "name": "editBeneficiaryAddressLine1",
-              "rearSector": "addressLine1",
-              "label": "Address Line 1",
-              "placeholder": "Enter Address Line 1",
-              "mapping": true,
-              "modal": true,
-              "editable": true,
-              "update": {
-                "reduxPath": "personalInformation.personalInformation.alternateAddressLine1",
-                "formikPath": "EmployeeProfile"
-              },
-
-              "header": false,
-              "value": "",
-              "classNameWrapper": "",
-              "placement": "col-md-6 py-3",
-
-              "validations": {
-                "string": {
-                  "validationRequiredOnTrue": {
-                    "value": "editBeneficiaryValidations",
-                    "message": "Please enter your address"
-                  },
-                  "validationMatchOnTrue": {
-                    "value": "editBeneficiaryValidations",
-                    "message": "Address Line 1 is invalid",
-                    "regex": "^[a-zA-Z]+$"
-                  }
-                }
-              }
-            },
-            {
-              "type": "text",
-              "name": "editBeneficiaryAddressLine2",
-              "rearSector": "addressLine2",
-              "label": "Address Line 2",
-              "header": false,
-              "modal": true,
-              "placeholder": "Enter Address Line 2",
-              "mapping": true,
-              "editable": true,
-              "update": {
-                "reduxPath": "personalInformation.personalInformation.alternateAddressLine2",
-                "formikPath": "EmployeeProfile"
-              },
-              "value": "",
-              "classNameWrapper": "",
-              "placement": "col-md-6 py-3",
-
-              "validations": {
-                "string": {}
-              }
-            }
-          ],
-          [
-            {
-              "type": "text",
-              "name": "editBeneficiaryCity",
-              "rearSector": "city",
-              "label": "City",
-              "header": false,
-              "placeholder": "Enter City",
-              "value": "",
-              "placement": "col-12  col-12 col-lg-3 col-md-4 col-sm-4",
-              "modal": true,
-              "mapping": true,
-              "editable": true,
-              "update": {
-                "reduxPath": "personalInformation.personalInformation.alternateAddressCity",
-                "formikPath": "EmployeeProfile"
-              },
-              "validations": {
-                "string": {
-                  "matches": {
-                    "regex": "^[a-zA-Z]+$",
-                    "message": "No special characters allowed"
-                  },
-                  "validationRequiredOnTrue": {
-                    "value": "editBeneficiaryValidations",
-                    "message": "Please enter your city"
-                  },
-                  "validationMatchOnTrue": {
-                    "value": "editBeneficiaryValidations",
-                    "message": "City is required",
-                    "regex": "^[a-zA-Z]+$"
-                  }
-                }
-              }
-            },
-            {
-              "type": "select",
-              "name": "editBeneficiaryState",
-              "rearSector": "state",
-              "placeholder": "Enter State",
-              "options": "",
-              "optionsname": "StateConstants",
-              "label": "State",
-              "modal": true,
-              "mapping": true,
-              "header": false,
-              "editable": true,
-              "value": " ",
-              "update": {
-                "reduxPath": "personalInformation.personalInformation.alternateAddressState",
-                "formikPath": "EmployeeProfile"
-              },
-              "placement": "col-12  col-12 col-lg-3 col-md-4 col-sm-4 ",
-              "validations": {
-                "string": {
-                  "validationRequiredOnTrue": {
-                    "value": "editBeneficiaryValidations",
-                    "message": "Please enter your State"
-                  },
-                  "validationMatchOnTrue": {
-                    "value": "editBeneficiaryValidations",
-                    "message": "State is required",
-                    "regex": "^[a-zA-Z]+$"
-                  }
-                }
-              }
-            },
-            {
-              "type": "text",
-              "name": "editBeneficiaryZipCode",
-              "rearSector": "zipcode",
-              "label": "Zip Code",
-              "placeholder": "Enter Zip Code",
-              "header": false,
-              "value": "",
-              "modal": true,
-              "mapping": true,
-              "editable": true,
-              "update": {
-                "reduxPath": "personalInformation.personalInformation.alternateAddressZipCode",
-                "formikPath": "EmployeeProfile"
-              },
-              "placement": "col-12  col-12 col-lg-3 col-md-4 col-sm-4 ",
-              "validations": {
-                "string": {
-                  "matches": {
-                    "regex": "^[0-9]*$",
-                    "message": "Zip Code must all be digits"
-                  },
-                  "validationRequiredOnTrue": {
-                    "value": "editBeneficiaryValidations",
-                    "message": "Please enter your Zip Code"
-                  },
-                  "validationMatchOnTrue": {
-                    "value": "editBeneficiaryValidations",
-                    "message": "Please enter a valid Zip Code",
-                    "regex": "^[0-9]*$"
-                  }
-                }
-              }
-            },
-            {
-              "type": "select",
-              "name": "editBeneficiaryCountry",
-              "rearSector": "country",
-              "label": "Country",
-              "placeholder": "Enter Country",
-              "header": false,
-              "modal": true,
-              "value": "USA",
-              "editable": true,
-              "mapping": true,
-              "update": {
-                "reduxPath": "personalInformation.personalInformation.alternateAddressCountry",
-                "formikPath": "EmployeeProfile"
-              },
-              "placement": "col-12  col-12 col-lg-3 col-md-4 col-sm-4",
-              "options": "",
-              "optionsname": "CountryConstants",
-              "validations": {
-                "string": {
-                  "validationRequiredOnTrue": {
-                    "value": "editBeneficiaryValidations",
-                    "message": "Please choose the option"
-                  },
-                  "validationMatchOnTrue": {
-                    "value": "editBeneficiaryValidations",
-                    "message": "Country is required",
-                    "regex": "^[a-zA-Z]+$"
-                  }
-                }
-              }
-            }
-          ],
-          [
-            {
-              "type": "line",
-              "name": "editButtonLineBreak",
-              "modal": true,
-
-              "label": "",
-
-              "value": "",
-              "hideLabel": true,
-              "outerDiv": true,
-
-              "placement": "col-md-12"
-            }
-          ],
-
-          [
-            {
-              "type": "button",
-              "name": "editCancel",
-              "rearSector": "cancel",
-              "modalPopUp": false,
-              "modalName": "editBeneficiary",
-              "label": "Cancel",
-              "placement": "d-flex justify-content-end col-md-2 offset-md-4 py-2",
-              "className": "w-100",
-              "header": false,
-              "outerDiv": true,
-              "validations": {}
-            },
-            {
-              "type": "button",
-              "name": "editSave",
-              "buttonType": "submit",
-              "hidden": false,
-
-              "modalName": "editBeneficiary",
-              "apiCallURL": ["/createOrUpdateInsured"],
-              "apiCallArray": true,
-              "rearSector": "save",
-              "modalPopUp": true,
-              "label": "Save",
-
-              "placement": " col-md-2 py-2",
-              "className": "w-100",
-
-              "header": false,
-              "outerDiv": true,
-              "validations": {}
-            },
-            {
-              "type": "checkbox",
-              "visibility": "hidden",
-
-              "hidden": true,
-              "name": "showEditButton",
-
-              "label": "show button",
-              "placement": "col-md-3 col-12"
-            }
-          ]
-        ]
-      ]
+      }
     }
   ],
+
   "sectionPanels": {
-    "panel": [0, 1],
+    "panel": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,13,14,15,16,17,18],
     "sections": [
       {
         "noGroupStart": 0,
-        "noGroupEnd": 1
+        "noGroupEnd": 18
       }
     ]
   },
   "elements": [
     [
       {
-        "type": "button",
-        "rounded": "rounded",
-        "outline": "outline",
-        "icon": ["fas", "plus"],
-        "name": "addBeneficiary",
-        "rearSector": "addBeneficiary",
-
-        "label": "Add Beneficiary",
-        "modalPopUp": true,
-        "modalName": "addBeneficiary",
-
-        "showElement": true,
-        "placement": "col-lg-12 py-3",
-        "header": false,
-        "outerDiv": true,
-
-        "displayConfig": {
-          "field": "addBeneficiaryValidations",
-
-          "valueUpdate": {
-            "addBeneficiaryValidations": true
-          }
+        "type": "readOnly",
+        "name": "accidentInsurance",
+        "label": "accidentInsurance",
+        "hideLabel": true,
+        "validations": {},
+        "value": "Accident",
+        "placement": "col-6 col-md-6  col-lg-6 ",
+        "contentClassName": " px-3 py-3 ",
+        "containerClassName": " col-12 px-3 ",
+        "display": "inline-block",
+        "style": {
+          "fontSize": "2rem",
+          "color": "#3B3B3B",
+          "fontFamily": "MMCDisplayRegular"
         }
       },
       {
-        "type": "checkbox",
-        "name": "addBeneficiaryValidations",
-
-        "rearSector": "",
-        "label": "Verify Add Beneficiary",
-        "hidden": true,
-        "placement": ""
-      },
+        "type": "image",
+        "name": "carrierLogo",
+        "label": "",
+        "value": "",
+        "hideLabel": true,
+        "outerDiv": true,
+        "placement": "col-6 col-md-6 col-lg-6 py-3 ",
+        "className": "line-class",
+        "filename": "aflac-logo.png"
+      }
+    ],
+    [
       {
-        "type": "checkbox",
-        "name": "editBeneficiaryValidations",
-
-        "rearSector": "",
-        "label": "Verify edit Beneficiary",
-        "hidden": true,
-        "placement": ""
+        "type": "line",
+        "name": "optionsLieBreak",
+        "label": "",
+        "value": "",
+        "hideLabel": true,
+        "outerDiv": true,
+        "placement": "col-md-12",
+        "className": "line-class"
       }
     ],
 
     [
       {
-        "type": "button",
-        "rounded": "rounded",
-        "outline": "outline",
-        "icon": ["fas", "plus"],
-        "name": "editBeneficiary",
-        "rearSector": "editBeneficiary",
-
-        "label": "Edit Beneficiary",
-        "modalPopUp": true,
-        "modalName": "editBeneficiary",
-
-        "showElement": true,
-        "placement": "col-lg-12 py-3",
-        "header": false,
-        "outerDiv": true,
-
         "displayConfig": {
-          "field": "editBeneficiaryValidations",
-
+          "field": "hideDescription",
+          "show": true,
+          "renderElements": {
+            "productDescription": true
+          },
           "valueUpdate": {
-            "addBeneficiaryValidations": true
+            "hideDescription": false,
+            "hideTableCoverage": false
           }
+        },
+        "type": "collapse",
+        "name": "productDescription",
+        "value": "sdfdsfdsfsdfsdf dsfsdf dsfsdf dsfsdfds sdfsdfsdfdsf",
+        "className1": "dropdown-item",
+        "className": "dropdown-item ",
+        "placement":"col-12",
+        "notMenu": true,
+        "video":true,
+        "documents":true,
+        "showFinalDiv":true,
+        "linksToDownload":true,
+        "modalName": "videoCoverageSelection",
+        "pdfURL": "https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf1_12mb_6pages.pdf",
+        "title": "Product Description",
+
+        "subOptions": [
+          {
+            "className": "dropdown-item",
+            "to": "#",
+            "text": "Change Password",
+            "isSubOptions": true,
+            "paddingLeft": "2rem"
+          },
+          {
+            "className": "dropdown-item",
+            "to": "#",
+            "text": "Change MFA Contact",
+            "isSubOptions": true,
+            "paddingLeft": "2rem"
+          }
+        ],
+        "link": "",
+        "upArrow": "sm-arrow-up.svg",
+        "downArrow": "arrow-down.svg",
+        "content": [
+          {
+            "title": "",
+            "content": "As good as the health care is that you receive today, an accident can require a variety of treatments, testing, therapies and other care and services to assist in recovery. Each of these services usually mean extra out-of-pocket costs for you to pay, beyond what your medical plan may cover, including:"
+          },
+          { "title": "", "content": "1. Medical plan deductibles" },
+          {
+            "title": "",
+            "content": "2. Co-payments for doctor visits, hospital stays and specialist care, as well as prescription drugs"
+          },
+          { "title": "", "content": "3. Out-of-network care and treatment" },
+          {
+            "title": "",
+            "content": "4. Other household expenses that may be harder to cover due to lost or reduced income, like your mortgage, car payment, child care or household upkeep while you recover",
+            "hasTopPadding": true
+          }
+        ],
+        "panelLinks": [
+          { "text": "Accident Insurance Plan Summary", "url": "https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf1_12mb_6pages.pdf" },
+          { "text": "Link to Form1", "url": "https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf1_12mb_6pages.pdf" },
+          { "text": "Link to Form2", "url": "https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf1_12mb_6pages.pdf" }
+        ]
+      }
+    ],
+
+
+    [
+      {
+        "displayConfig": {
+          "field": "hideDescription",
+          "show": true,
+          "renderElements": {
+            "productDescription": true
+          },
+          "valueUpdate": {
+            "hideDescription": false,
+            "hideTableCoverage": false
+          }
+        },
+        "type": "readOnly",
+        "name": "Information",
+        "label": "Information",
+        "hideLabel": true,
+        "validations": {},
+        "value": "Let’s check your eligibility.",
+        "placement": " col-md-12 ",
+        "contentClassName1": "  py-3  mx-xl-2 mx-md-2 mx-1 px-xl-4 px-md-4 px-xl-1 px-lg-1 px-4",
+        "contentClassName": "    py-3  mx-xl-2 mx-md-2 mx-1 px-xl-4 px-lg-4 px-md-4  px-4 ",
+
+        "containerClassName": " col-12 px-0 ",
+        "display": "inline-block",
+        "style": {
+          "fontSize": "1rem",
+          "color": "#000000",
+          "fontFamily": "NotoSansSemiBold"
+        }
+      }
+    ],
+
+    [
+      {
+        "displayConfig": {
+          "field": "hideDescription",
+          "show": true,
+          "renderElements": {
+            "productDescription": true
+          },
+          "valueUpdate": {
+            "hideDescription": false,
+            "hideTableCoverage": false
+          }
+        },
+        "type": "readOnly",
+        "name": "Information2",
+        "label": "Information2",
+        "hideLabel": true,
+        "validations": {},
+        "value": "Please answer any required eligibility questions that may be listed below. Click the arrow beside an insured name to expand or collapse the section.",
+        "placement": " col-md-12 ",
+        "contentClassName1": " py-3  mx-xl-2 mx-md-2 mx-1 px-xl-4 px-md-4 px-3",
+        "contentClassName": "  py-3  mx-xl-2 mx-md-2 mx-1 px-xl-4 px-lg-4 px-md-4  px-4 ",
+        "containerClassName": " col-12 px-0 ",
+        "display": "inline-block",
+        "style": {
+          "fontSize": "0.875rem",
+          "color": "#000000",
+          "fontFamily": "NotoSansRegular"
+        }
+      }
+    ],
+   
+    [
+     
+      { 
+        "displayConfig": {
+        "field": "hideDescription",
+        "show": true,
+        "renderElements": {
+          "productDescription": true
+        },
+        "valueUpdate": {
+          "hideDescription": false,
+          "hideTableCoverage": false
+        }
+      },
+        "id": 0,
+        "type": "dependentCollapse",
+        "value": "",
+        "label": "Information3",
+        "name": "Information3",
+        "placement1": " col-12 pl-xl-2 pl-md-2 mx-xl-4 mx-md-4 pr-xl-5 pr-md-5 pl-0  ml-1 mr-0 pr-2",
+        "placement": "     col-12 pl-xl-2 pl-md-2 pl-lg-0 ml-xl-0 ml-lg-0 ml-md-2 pr-xl-2 pr-md-2 pr-lg-0 pl-0  ml-1 mr-0 pr-xl-0 pr-lg-0  pr-2      ",
+        "placementt": "   col-12 pl-xl-2 pl-md-4 pl-lg-0 ml-xl-0 ml-md-4 pr-xl-3 pr-md-2 pr-lg-2 pl-0  ml-1 mr-0 pr-xl-0 pr-lg-0  pr-2   ",
+        "scenarios":  {
+          "type": "select",
+          "name": "scenarios",
+          "id": "scenarios",
+  
+          "label": "Scenarios",
+          "rearSector": "norearSector",
+          "placement": "col-lg-4 col-md-5 col-12 px-1 px-md-3 ",
+          "validations": { },
+          "selectType" : "changeScenario",
+          "defaultValue1": "cDefault",
+          "options": [
+              {
+                "value": "cDefault",
+                "text": "Default"
+              },
+              {
+                  "value": "cFirst",
+                  "text": "No Questions And No Age Eligibility"
+              },
+              {
+                  "value": "cSecond",
+                  "text": "No Questions And Age Eligibility"
+              },
+              {
+                  "value": "cThird",
+                  "text": "Parent Not Eligible"
+              }
+          ]
+      },
+            
+      
+        "accidentCoverageDependents": [
+          {
+            "id": 0,
+            "type": "readOnly",
+            "hideLabel": true,
+            "validations": {},
+            "value": "",
+            "contentClassName": " py-3 px-3",
+            "containerClassName": " col-12 px-3",
+            "insideSpan": true,
+            "content": "Ann Barret",
+            "labelClassName": " pt-3 pb-0 mb-0 ",
+            "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+            "name": "AnnBarret",
+            "label": "Ann Barret",
+            "dependentId": 0,
+            "dependentName": "Ann Barret",
+            "description": "Employee",
+            "nameAndRelation":"Ann Barret  (Employee)",
+            "age": 30,
+            "eligibleForCoverage": null,
+            "editAnswers": null,
+            "answerBasedMessage": "Based on your response, you are not eligible for this coverage at this time",
+            "reasonForDeny": null,
+            "reasonForDenyStyle": {
+              "fontSize": "0.75rem",
+              "color": "#C53532",
+              "fontFamily": "NotoSansMedium",
+              "background": "#FCFCFC"
+            },
+            "filenameDown1": "InsuredIconArrowDown.png",
+            "filenameUp1": "sm-arrow-up.svg",
+            "filenameDown": "arrow-down.svg",
+            "filenameUp": "sm-arrow-up.svg",
+            "placement1": "col-md-12",
+            "contentClassName1": " px-3 py-3",
+            "containerClassName1": " col-12 px-3",
+            "display": "inline-block",
+            "style": {
+              "fontSize": "0.875rem",
+              "color": "#202020",
+              "fontFamily": "NotoSansRegular",
+              "background": "#FCFCFC"
+            },
+            "disabledStyle": {
+              "fontSize": "0.875rem",
+              "color": "#B3B3B3",
+              "fontFamily": "NotoSansRegular"
+            },
+            "noOfAnsweredQuestions": 0,
+            "answeredAllQuestions": false,
+            "noOfAnsweredQuestionsStyle": {
+              "fontSize": "0.875rem",
+              "color": "#000000",
+              "fontFamily": "NotoSansMedium"
+            },
+            "questionsAnswers": [
+              {
+                "question": {
+                  "id": 0,
+                  "type": "readOnly",
+
+                  "hideLabel": true,
+                  "validations": {},
+                  "value": "",
+                  "contentClassName": " py-3 px-3",
+                  "containerClassName": " col-12 px-3",
+                  "insideSpan": true,
+                  "nameAndRelation": "Are you currently covered by at least major medical insurance or at least basic hospital and basic medical insurance?",
+                  "labelClassName": " pt-3 pb-0 mb-0 ",
+                  "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+                  "display": "inline-block",
+                  "style": {
+                    "fontSize": "0.875rem",
+                    "color": "#202020",
+                    "fontFamily": "NotoSansRegular"
+                  },
+                  "label": "Are you currently covered by at least major medical insurance or at least basic hospital and basic medical insurance?",
+                  "question": "Are you currently covered by at least major medical insurance or at least basic hospital and basic medical insurance?",
+                  "answered": ""
+                },
+                "devider":{
+                  "type": "readOnly",
+                  "name": "EmailBar",
+                  "label": "EmailBar",
+                  "hideLabel": true,
+                  "validations": {},
+                  "responseFrom": "",
+                  "value": "",
+                  "borderBottomColorr": "#DADADA",
+                  "borderBottomColor": "blue",
+                  "borderBottomWidth": 1,
+                  "marginLeft": 4,
+                  "marginRight": 5,
+                  "placement": "col-md-12 ",
+                  "content": "",
+                  "flex": 1,
+                  "borderBottom": "1px solid #000",
+                  "containerClassName": " col-11  col-xl-12 border-top my-3 mx-xl-0 "
+                },
+                "answers": {
+                  "type": "radioButtonGroup",
+                  "id": "answerOptions01",
+                  "name": "answerOptions01",
+                  "rearSector": "",
+                  "label": " ",
+                  "hideLabel": true,
+                  "placement": "col-md-12 mb-2  ",
+                  "validations1": {},
+                  "isRadio": true,
+                  "isAnswerRadio": true,
+                  "value": "",
+                  "inputs": [
+                    {
+                      "label": "Yes",
+                      "value": "Yes",
+                      "id": "Yes",
+                      "questionId": 0,
+                      "index": 0,
+                      "isAnswerRadio": true,
+                      "name": "00Yes",
+                      "inputIndex": 0,
+                      "selected": false,
+                      "addSpaceClass": "pr-xl-5 pr-4"
+                    },
+                    {
+                      "label": "No",
+                      "value": "No",
+                      "id": "No",
+                      "questionId": 0,
+                      "index": 0,
+                      "isAnswerRadio": true,
+                      "name": "00No",
+                      "inputIndex": 1,
+                      "selected": false
+                    }
+                  ],
+                  "containerClassName": "  col-12 pt-2 pt-xl-0 ",
+                  "radioClassWrapper": "col-3 offset-5 pr-0 mr-0",
+                  "radioAdditionalClasses1": " col-auto ",
+                  "display": "inline-block"
+                },
+                "id": 1
+
+              },
+              {
+                "question": {
+                  "id": 1,
+                  "type": "readOnly",
+
+                  "hideLabel": true,
+                  "validations": {},
+                  "value": "",
+                  "contentClassName": " py-3 px-3",
+                  "containerClassName": " col-12 px-3",
+                  "insideSpan": true,
+                  "nameAndRelation": "Do you have or are you applying for other accident or sickness coverage?",
+                  "labelClassName": " pt-3 pb-0 mb-0 ",
+                  "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+                  "display": "inline-block",
+                  "style": {
+                    "fontSize": "0.875rem",
+                    "color": "#202020",
+                    "fontFamily": "NotoSansRegular"
+                  },
+                  "question": "Do you have or are you applying for other accident or sickness coverage?",
+                  "answered": ""
+                },
+                "devider":{
+                  "type": "readOnly",
+                  "name": "EmailBar",
+                  "label": "EmailBar",
+                  "hideLabel": true,
+                  "validations": {},
+                  "responseFrom": "",
+                  "value": "",
+                  "borderBottomColorr": "#DADADA",
+                  "borderBottomColor": "blue",
+                  "borderBottomWidth": 1,
+                  "marginLeft": 5,
+                  "marginRight": 5,
+                  "placement": "col-md-12 ",
+                  "content": "",
+                  "flex": 1,
+                  "borderBottom": "1px solid #000",
+                  "containerClassName": " col-11  col-xl-12 border-top my-3 mx-xl-0 "
+                },
+                "answers": {
+                  "type": "radioButtonGroup",
+                  "name": "answerOptions02",
+                  "rearSector": "",
+                  "label": " ",
+                  "hideLabel": true,
+                  "placement": "col-md-12 mb-2  ",
+                  "validations1": {},
+                  "isRadio": true,
+                  "isAnswerRadio": true,
+                  "value": "",
+                  "inputs": [
+                    {
+                      "label": "Yes",
+                      "value": "Yes",
+                      "id": "Yes",
+                      "questionId": 1,
+                      "index": 0,
+                      "isAnswerRadio": true,
+                      "name": "01Yes",
+                      "inputIndex": 0,
+                      "selected": false,
+                      "addSpaceClass": "pr-xl-5 pr-4"
+                    },
+                    {
+                      "label": "No",
+                      "value": "No",
+                      "id": "No",
+                      "questionId": 1,
+                      "index": 0,
+                      "isAnswerRadio": true,
+                      "name": "01No",
+                      "inputIndex": 1,
+                      "selected": false
+                    }
+                  ],
+                  "containerClassName": "  col-12 pt-2 pt-xl-0 ",
+                  "radioClassWrapper": "col-3 offset-5 pr-0 mr-0",
+                  "radioAdditionalClasses1": " col-auto ",
+                  "display": "inline-block"
+                },
+                "id": 2
+              },
+              {
+                "question": {
+                  "id": 2,
+                  "type": "readOnly",
+
+
+                  "hideLabel": true,
+                  "validations": {},
+                  "value": "",
+                  "contentClassName": " py-3 px-3",
+                  "containerClassName": " col-12 px-3",
+                  "insideSpan": true,
+                  "nameAndRelation": "Does the person to be insured have comprehensive health benefits from an insurance policy, an HMO plan, or an employer health benefit plan? Persons without such comprehensive coverage are not eligible for coverage.",
+                  "labelClassName": " pt-3 pb-0 mb-0 ",
+                  "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+                  "display": "inline-block",
+                  "style": {
+                    "fontSize": "0.875rem",
+                    "color": "#202020",
+                    "fontFamily": "NotoSansRegular"
+                  },
+                  "question": "Does the person to be insured have comprehensive health benefits from an insurance policy, an HMO plan, or an employer health benefit plan? Persons without such comprehensive coverage are not eligible for coverage.",
+                  "answered": ""
+                },
+                "devider":{
+                  "type": "readOnly",
+                  "name": "EmailBar",
+                  "label": "EmailBar",
+                  "hideLabel": true,
+                  "validations": {},
+                  "responseFrom": "",
+                  "value": "",
+                  "borderBottomColorr": "#DADADA",
+                  "borderBottomColor": "blue",
+                  "borderBottomWidth": 1,
+                  "marginLeft": 5,
+                  "marginRight": 5,
+                  "placement": "col-md-12 ",
+                  "content": "",
+                  "flex": 1,
+                  "borderBottom": "1px solid #000",
+                  "containerClassName": " col-11  col-xl-12 border-top my-3 mx-xl-0 "
+                },
+                "answers": {
+                  "type": "radioButtonGroup",
+                  "name": "answerOptions03",
+                  "rearSector": "",
+                  "label": " ",
+                  "hideLabel": true,
+                  "placement": "col-md-12 mb-2  ",
+                  "validations1": {},
+                  "isRadio": true,
+                  "isAnswerRadio": true,
+                  "value": "",
+                  "inputs": [
+                    {
+                      "label": "Yes",
+                      "value": "Yes",
+                      "id": "Yes",
+                      "questionId": 2,
+                      "index": 0,
+                      "isAnswerRadio": true,
+                      "name": "02Yes",
+                      "inputIndex": 0,
+                      "selected": false,
+                      "addSpaceClass": "pr-xl-5 pr-4"
+                    },
+                    {
+                      "label": "No",
+                      "value": "No",
+                      "id": "No",
+                      "questionId": 2,
+                      "index": 0,
+                      "isAnswerRadio": true,
+                      "name": "02No",
+                      "inputIndex": 1,
+                      "selected": false
+                    }
+                  ],
+                  "containerClassName": "  col-12 pt-2 pt-xl-0 ",
+                  "radioClassWrapper": "col-3 offset-5 pr-0 mr-0",
+                  "radioAdditionalClasses1": " col-auto ",
+                  "display": "inline-block"
+                },
+                "id": 3
+              },
+              {
+                "question": {
+                  "id": 3,
+                  "type": "readOnly",
+                  "hideLabel": true,
+                  "validations": {},
+                  "value": "",
+                  "contentClassName": " py-3 px-3",
+                  "containerClassName": " col-12 px-3",
+                  "insideSpan": true,
+                  "nameAndRelation": "Have you used tobacco or nicotine products, in any form, in last 12 months?",
+                  "labelClassName": " pt-3 pb-0 mb-0 ",
+                  "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+                  "display": "inline-block",
+                  "style": {
+                    "fontSize": "0.875rem",
+                    "color": "#202020",
+                    "fontFamily": "NotoSansRegular"
+                  },
+                  "question": "Have you used tobacco in last 12 months?",
+                  "answered": ""
+                },
+                "answers": {
+                  "type": "radioButtonGroup",
+                  "name": "answerOptions04",
+                  "rearSector": "",
+                  "label": " ",
+                  "hideLabel": true,
+                  "validations1": {},
+                  "isRadio": true,
+                  "isAnswerRadio": true,
+                  "value": "",
+                  "inputs": [
+                    {
+                      "label": "Yes",
+                      "value": "Yes",
+                      "id": "Yes",
+                      "questionId": 3,
+                      "index": 0,
+                      "isAnswerRadio": true,
+                      "name": "03Yes",
+                      "inputIndex": 0,
+                      "selected": false,
+                      "addSpaceClass": "pr-xl-5 pr-4"
+                    },
+                    {
+                      "label": "No",
+                      "value": "No",
+                      "id": "No",
+                      "questionId": 3,
+                      "index": 0,
+                      "isAnswerRadio": true,
+                      "name": "03No",
+                      "inputIndex": 1,
+                      "selected": false
+                    }
+                  ],
+                  "containerClassName": "  col-12 pt-2 pt-xl-0 ",
+                  "display": "inline-block",
+                  "labelClassName": " px-4 px-xl-3 pb-2 ",
+                  "placement": "col-md-12 pt-3",
+                  "validations": {
+                    "string": {
+                      "required": "This field is required"
+                    }
+                  },
+                  "radioClassWrapper": "col-3 offset-5 pr-0 mr-0"
+                },
+                "id": 4
+              }
+            ]
+          },
+          {
+            "id": 1,
+            "type": "readOnly",
+            "hideLabel": true,
+            "validations": {},
+            "value": "",
+            "contentClassName": " py-3 px-3",
+            "containerClassName": " col-12 px-3",
+            "insideSpan": true,
+            "content": "John Barret",
+            "labelClassName": " pt-3 pb-0 mb-0 ",
+            "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+            "name": "JohnBarret",
+            "label": "John Barret",
+            "dependentId": 1,
+            "style": {
+              "fontSize": "0.875rem",
+              "color": "#202020",
+              "fontFamily": "NotoSansRegular",
+              "background": "#FCFCFC"
+            },
+            "dependentName": "John Barret",
+            "description": "Spouse",
+            "nameAndRelation":"John Barret  (Spouse)",
+            "age": 30,
+            "eligibleForCoverage": null,
+            "editAnswers": null,
+            "answerBasedMessage": "Based on your response, you are not eligible for this coverage at this time",
+            "reasonForDeny": null,
+            "reasonForDenyStyle": {
+              "fontSize": "0.75rem",
+              "color": "#C53532",
+              "fontFamily": "NotoSansMedium",
+              "background": "#FCFCFC"
+            },
+            "disabledStyle": {
+              "fontSize": "0.875rem",
+              "color": "#B3B3B3",
+              "fontFamily": "NotoSansRegular"
+            },
+            "filenameDown1": "InsuredIconArrowDown.png",
+            "filenameDown": "arrow-down.svg",
+            "filenameUp": "sm-arrow-up.svg",
+            "noOfAnsweredQuestions": 0,
+            "answeredAllQuestions": false,
+            "noOfAnsweredQuestionsStyle": {
+              "fontSize": "0.875rem",
+              "color": "#000000",
+              "fontFamily": "NotoSansMedium"
+            },
+            "questionsAnswers": [
+              {
+                "question": {
+                  "id": 0,
+                  "type": "readOnly",
+
+                  "hideLabel": true,
+                  "validations": {},
+                  "value": "",
+                  "contentClassName": " py-3 px-3",
+                  "containerClassName": " col-12 px-3",
+                  "insideSpan": true,
+                  "labelClassName": " pt-3 pb-0 mb-0 ",
+                  "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+                  "display": "inline-block",
+                  "style": {
+                    "fontSize": "0.875rem",
+                    "color": "#202020",
+                    "fontFamily": "NotoSansRegular"
+                  },
+
+                  "nameAndRelation": "Are you currently covered by at least major medical insurance or at least basic hospital and basic medical insurance?",
+                  "question": "Are you currently covered by at least major medical insurance or at least basic hospital and basic medical insurance?",
+                  "answered": ""
+                },
+                "devider":{
+                  "type": "readOnly",
+                  "name": "EmailBar",
+                  "label": "EmailBar",
+                  "hideLabel": true,
+                  "validations": {},
+                  "responseFrom": "",
+                  "value": "",
+                  "borderBottomColorr": "#DADADA",
+                  "borderBottomColor": "blue",
+                  "borderBottomWidth": 1,
+                  "marginLeft": 5,
+                  "marginRight": 5,
+                  "placement": "col-md-12 ",
+                  "content": "",
+                  "flex": 1,
+                  "borderBottom": "1px solid #000",
+                  "containerClassName": " col-11  col-xl-12 border-top my-3 mx-xl-0 "
+                },
+                "answers": {
+                  "type": "radioButtonGroup",
+                  "id": "answerOptions11",
+                  "name": "answerOptions01",
+                  "rearSector": "",
+                  "label": " ",
+                  "hideLabel": true,
+                  "placement": "col-md-12 mb-2  ",
+                  "validations1": {},
+                  "isRadio": true,
+                  "isAnswerRadio": true,
+                  "value": "",
+                  "inputs": [
+                    {
+                      "label": "Yes",
+                      "value": "Yes",
+                      "id": "Yes",
+                      "questionId": 0,
+                      "index": 1,
+                      "isAnswerRadio": true,
+                      "name": "10Yes",
+                      "inputIndex": 0,
+                      "selected": false,
+                      "addSpaceClass": "pr-xl-5 pr-4"
+                    },
+                    {
+                      "label": "No",
+                      "value": "No",
+                      "id": "No",
+                      "questionId": 0,
+                      "index": 1,
+                      "isAnswerRadio": true,
+                      "name": "10No",
+                      "inputIndex": 1,
+                      "selected": false
+                    }
+                  ],
+                  "containerClassName": "  col-12 pt-2 pt-xl-0 ",
+                  "radioClassWrapper": "col-3 offset-5 pr-0 mr-0",
+                  "radioAdditionalClasses1": " col-auto ",
+                  "display": "inline-block"
+                },
+                "id":1
+              },
+              {
+                "question": {
+                  "id": 1,
+                  "type": "readOnly",
+                  "hideLabel": true,
+                  "validations": {},
+                  "value": "",
+                  "contentClassName": " py-3 px-3",
+                  "containerClassName": " col-12 px-3",
+                  "insideSpan": true,
+                  "labelClassName": " pt-3 pb-0 mb-0 ",
+                  "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+                  "display": "inline-block",
+                  "style": {
+                    "fontSize": "0.875rem",
+                    "color": "#202020",
+                    "fontFamily": "NotoSansRegular"
+                  },
+
+                  "nameAndRelation": "Do you have or are you applying for other accident or sickness coverage?",
+                  "answered": ""
+                },
+                "devider":{
+                  "type": "readOnly",
+                  "name": "EmailBar",
+                  "label": "EmailBar",
+                  "hideLabel": true,
+                  "validations": {},
+                  "responseFrom": "",
+                  "value": "",
+                  "borderBottomColorr": "#DADADA",
+                  "borderBottomColor": "blue",
+                  "borderBottomWidth": 1,
+                  "marginLeft": 5,
+                  "marginRight": 5,
+                  "placement": "col-md-12 ",
+                  "content": "",
+                  "flex": 1,
+                  "borderBottom": "1px solid #000",
+                  "containerClassName": " col-11  col-xl-12 border-top my-3 mx-xl-0 "
+                },
+                "answers": {
+                  "type": "radioButtonGroup",
+                  "name": "answerOptions12",
+                  "rearSector": "",
+                  "label": " ",
+                  "hideLabel": true,
+                  "placement": "col-md-12 mb-2  ",
+                  "validations1": {},
+                  "isRadio": true,
+                  "isAnswerRadio": true,
+                  "value": "",
+                  "inputs": [
+                    {
+                      "label": "Yes",
+                      "value": "Yes",
+                      "id": "Yes",
+                      "questionId": 1,
+                      "index": 1,
+                      "isAnswerRadio": true,
+                      "name": "11Yes",
+                      "inputIndex": 0,
+                      "selected": false,
+                      "addSpaceClass": "pr-xl-5 pr-4"
+                    },
+                    {
+                      "label": "No",
+                      "value": "No",
+                      "id": "No",
+                      "questionId": 1,
+                      "index": 1,
+                      "isAnswerRadio": true,
+                      "name": "11No",
+                      "inputIndex": 1,
+                      "selected": false
+                    }
+                  ],
+                  "containerClassName": "  col-12 pt-2 pt-xl-0 ",
+                  "radioClassWrapper": "col-3 offset-5 pr-0 mr-0",
+                  "radioAdditionalClasses1": " col-auto ",
+                  "display": "inline-block"
+                },
+                "id": 2
+              },
+              {
+                "question": {
+                  "id": 2,
+                  "type": "readOnly",
+                  "hideLabel": true,
+                  "validations": {},
+                  "value": "",
+                  "contentClassName": " py-3 px-3",
+                  "containerClassName": " col-12 px-3",
+                  "insideSpan": true,
+                  "labelClassName": " pt-3 pb-0 mb-0 ",
+                  "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+                  "display": "inline-block",
+                  "style": {
+                    "fontSize": "0.875rem",
+                    "color": "#202020",
+                    "fontFamily": "NotoSansRegular"
+                  },
+
+                  "nameAndRelation": "Does the person to be insured have comprehensive health benefits from an insurance policy, an HMO plan, or an employer health benefit plan? Persons without such comprehensive coverage are not eligible for coverage.",
+                  "answered": ""
+                },
+                "devider":{
+                  "type": "readOnly",
+                  "name": "EmailBar",
+                  "label": "EmailBar",
+                  "hideLabel": true,
+                  "validations": {},
+                  "responseFrom": "",
+                  "value": "",
+                  "borderBottomColorr": "#DADADA",
+                  "borderBottomColor": "blue",
+                  "borderBottomWidth": 1,
+                  "marginLeft": 5,
+                  "marginRight": 5,
+                  "placement": "col-md-12 ",
+                  "content": "",
+                  "flex": 1,
+                  "borderBottom": "1px solid #000",
+                  "containerClassName": " col-11  col-xl-12 border-top my-3 mx-xl-0 "
+                },
+                "answers": {
+                  "type": "radioButtonGroup",
+                  "name": "answerOptions13",
+                  "rearSector": "",
+                  "label": " ",
+                  "hideLabel": true,
+                  "placement": "col-md-12 mb-2  ",
+                  "validations1": {},
+                  "isRadio": true,
+                  "isAnswerRadio": true,
+                  "value": "",
+                  "inputs": [
+                    {
+                      "label": "Yes",
+                      "value": "Yes",
+                      "id": "Yes",
+                      "questionId": 2,
+                      "index": 1,
+                      "isAnswerRadio": true,
+                      "name": "12Yes",
+                      "inputIndex": 0,
+                      "selected": false,
+                      "addSpaceClass": "pr-xl-5 pr-4"
+                    },
+                    {
+                      "label": "No",
+                      "value": "No",
+                      "id": "No",
+                      "questionId": 2,
+                      "index": 1,
+                      "isAnswerRadio": true,
+                      "name": "12No",
+                      "inputIndex": 1,
+                      "selected": false
+                    }
+                  ],
+                  "containerClassName": "  col-12 pt-2 pt-xl-0 ",
+                  "radioClassWrapper": "col-3 offset-5 pr-0 mr-0",
+                  "radioAdditionalClasses1": " col-auto ",
+                  "display": "inline-block"
+                },
+                "id": 3
+              },
+              {
+                "question": {
+                  "id": 3,
+                  "type": "readOnly",
+                  "hideLabel": true,
+                  "validations": {},
+                  "value": "",
+                  "contentClassName": " py-3 px-3",
+                  "containerClassName": " col-12 px-3",
+                  "insideSpan": true,
+                  "labelClassName": " pt-3 pb-0 mb-0 ",
+                  "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+                  "display": "inline-block",
+                  "style": {
+                    "fontSize": "0.875rem",
+                    "color": "#202020",
+                    "fontFamily": "NotoSansRegular"
+                  },
+
+                  "nameAndRelation": "Has your spouse used tobacco or nicotine products, in any form, in last 12 months?",
+                  "answered": ""
+                },
+                "answers": {
+                  "type": "radioButtonGroup",
+                  "name": "answerOptions14",
+                  "rearSector": "",
+                  "label": " ",
+                  "hideLabel": true,
+                  "placement": "col-md-12 mb-2  ",
+                  "validations1": {},
+                  "isRadio": true,
+                  "isAnswerRadio": true,
+                  "value": "",
+                  "inputs": [
+                    {
+                      "label": "Yes",
+                      "value": "Yes",
+                      "id": "Yes",
+                      "questionId": 3,
+                      "index": 1,
+                      "isAnswerRadio": true,
+                      "name": "13Yes",
+                      "inputIndex": 0,
+                      "selected": false,
+                      "addSpaceClass": "pr-xl-5 pr-4"
+                    },
+                    {
+                      "label": "No",
+                      "value": "No",
+                      "id": "No",
+                      "questionId": 3,
+                      "index": 1,
+                      "isAnswerRadio": true,
+                      "name": "13No",
+                      "inputIndex": 1,
+                      "selected": false
+                    }
+                  ],
+                  "containerClassName": "  col-12 pt-2 pt-xl-0 ",
+                  "radioClassWrapper": "col-3 offset-5 pr-0 mr-0",
+                  "radioAdditionalClasses1": " col-auto ",
+                  "display": "inline-block"
+                },
+                "id": 4
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "type": "readOnly",
+            "hideLabel": true,
+            "validations": {},
+            "value": "",
+            "contentClassName": " py-3 px-3",
+            "containerClassName": " col-12 px-3",
+            "insideSpan": true,
+            "content": "Jonathan Barret",
+            "labelClassName": " pt-3 pb-0 mb-0 ",
+            "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+            "name": "JonathanBarret",
+            "label": "Jonathan Barret",
+            "dependentId": 2,
+            "style": {
+              "fontSize": "0.875rem",
+              "color": "#202020",
+              "fontFamily": "NotoSansRegular",
+              "background": "#FCFCFC"
+            },
+            "dependentName": "John Barret",
+            "description": "Parent",
+            "nameAndRelation":"Jonathan Barret  (Parent)",
+            "age": 60,
+            "eligibleForCoverage": null,
+            "editAnswers": null,
+            "answerBasedMessage": "Based on your response, you are not eligible for this coverage at this time",
+            "reasonForDeny": null,
+            "answeredAllQuestions": false,
+            "reasonForDenyStyle": {
+              "fontSize": "0.75rem",
+              "color": "#C53532",
+              "fontFamily": "NotoSansMedium",
+              "background": "#FCFCFC"
+            },
+            "disabledStyle": {
+              "fontSize": "0.875rem",
+              "color": "#B3B3B3",
+              "fontFamily": "NotoSansRegular"
+            }
+          },
+          {
+            "id": 3,
+            "type": "readOnly",
+            "hideLabel": true,
+            "validations": {},
+            "value": "",
+            "contentClassName": " py-3 px-3",
+            "containerClassName": " col-12 px-3",
+            "insideSpan": true,
+            "content": "Bruce Barret",
+            "labelClassName": " pt-3 pb-0 mb-0 ",
+            "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+            "name": "BruceBarret",
+            "label": "Bruce Barret",
+            "dependentId":3,
+            "style": {
+              "fontSize": "0.875rem",
+              "color": "#202020",
+              "fontFamily": "NotoSansRegular",
+              "background": "#FCFCFC"
+            },
+            "dependentName": "Bruce Barret",
+            "description": "Child",
+            "nameAndRelation":"Bruce Barret  (Child)",
+            "age": 11,
+            "eligibleForCoverage": null,
+            "editAnswers": null,
+            "reasonForDeny": null,
+            "answeredAllQuestions": false,
+            "reasonForDenyStyle": {
+              "fontSize": "0.75rem",
+              "color": "#C53532",
+              "fontFamily": "NotoSansMedium",
+              "background": "#FCFCFC"
+            },
+            "disabledStyle": {
+              "fontSize": "0.875rem",
+              "color": "#B3B3B3",
+              "fontFamily": "NotoSansRegular"
+            }          },
+          {
+            "id": 4,
+            "type": "readOnly",
+            "hideLabel": true,
+            "validations": {},
+            "value": "",
+            "contentClassName": " py-3 px-3",
+            "containerClassName": " col-12 px-3",
+            "insideSpan": true,
+            "content": "Jane Barret",
+            "labelClassName": " pt-3 pb-0 mb-0 ",
+            "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+            "name": "JaneBarret",
+            "label": "Jane Barret",
+            "dependentId": 4,
+            "style": {
+              "fontSize": "0.875rem",
+              "color": "#202020",
+              "fontFamily": "NotoSansRegular",
+              "background": "#FCFCFC"
+            },
+            "dependentName": "Jane Barret",
+            "description": "Child",
+            "nameAndRelation":"Jane Barret  (Child)",
+            "age": 15,
+            "eligibleForCoverage": null,
+            "editAnswers": null,
+            "reasonForDeny": null,
+            "answeredAllQuestions": false,
+            "reasonForDenyStyle": {
+              "fontSize": "0.75rem",
+              "color": "#C53532",
+              "fontFamily": "NotoSansMedium",
+              "background": "#FCFCFC"
+            },
+            "disabledStyle": {
+              "fontSize": "0.875rem",
+              "color": "#B3B3B3",
+              "fontFamily": "NotoSansRegular"
+            }
+          }
+        ],
+        "accidentCoverageDependentsSecondOption": [
+          {
+            "id": 0,
+            "type": "readOnly",
+            "hideLabel": true,
+            "validations": {},
+            "value": "",
+            "contentClassName": " py-3 px-3",
+            "containerClassName": " col-12 px-3",
+            "insideSpan": true,
+            "content": "Ann Barret",
+            "labelClassName": " pt-3 pb-0 mb-0 ",
+            "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+            "name": "AnnBarret",
+            "label": "Ann Barret",
+            "dependentId": 0,
+            "dependentName": "Ann Barret",
+            "description": "Employee",
+            "nameAndRelation":"Ann Barret  (Employee)",
+            "age": 30,
+            "eligibleForCoverage": true,
+            "editAnswers": null,
+            "answerBasedMessagee": "Based on your response, you are not eligible for this coverage at this time",
+            "reasonForDeny": null,
+            "reasonForDenyStyle": {
+              "fontSize": "0.75rem",
+              "color": "#C53532",
+              "fontFamily": "NotoSansMedium",
+              "background": "#FCFCFC"
+            },
+          
+            "placement1": "col-md-12",
+            "contentClassName1": " px-3 py-3",
+            "containerClassName1": " col-12 px-3",
+            "display": "inline-block",
+            "style": {
+              "fontSize": "0.875rem",
+              "color": "#202020",
+              "fontFamily": "NotoSansRegular",
+              "background": "#FCFCFC"
+            },
+            "disabledStyle": {
+              "fontSize": "0.875rem",
+              "color": "#B3B3B3",
+              "fontFamily": "NotoSansRegular"
+            },
+            "answeredAllQuestions": false,
+            "noOfAnsweredQuestionsStyle": {
+              "fontSize": "0.875rem",
+              "color": "#000000",
+              "fontFamily": "NotoSansMedium"
+            }
+          },
+          {
+            "id": 1,
+            "type": "readOnly",
+            "hideLabel": true,
+            "validations": {},
+            "value": "",
+            "contentClassName": " py-3 px-3",
+            "containerClassName": " col-12 px-3",
+            "insideSpan": true,
+            "content": "John Barret",
+            "labelClassName": " pt-3 pb-0 mb-0 ",
+            "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+            "name": "JohnBarret",
+            "label": "John Barret",
+            "dependentId": 1,
+            "style": {
+              "fontSize": "0.875rem",
+              "color": "#202020",
+              "fontFamily": "NotoSansRegular",
+              "background": "#FCFCFC"
+            },
+            "dependentName": "John Barret",
+            "description": "Spouse",
+            "nameAndRelation":"John Barret  (Spouse)",
+            "age": 30,
+            "eligibleForCoverage": null,
+            "editAnswers": null,
+            "showAnswerBasedMessage": true,
+            "answerBasedMessage": "Based on your response, you are not eligible for this coverage at this time",
+            "reasonForDeny": null,
+            "reasonForDenyStyle": {
+              "fontSize": "0.75rem",
+              "color": "#C53532",
+              "fontFamily": "NotoSansMedium",
+              "background": "#FCFCFC"
+            },
+            "disabledStyle": {
+              "fontSize": "0.875rem",
+              "color": "#B3B3B3",
+              "fontFamily": "NotoSansRegular"
+            },
+           
+            "answeredAllQuestions": false,
+            "noOfAnsweredQuestionsStyle": {
+              "fontSize": "0.875rem",
+              "color": "#000000",
+              "fontFamily": "NotoSansMedium"
+            }
+          },
+          {
+            "id": 2,
+            "type": "readOnly",
+            "hideLabel": true,
+            "validations": {},
+            "value": "",
+            "contentClassName": " py-3 px-3",
+            "containerClassName": " col-12 px-3",
+            "insideSpan": true,
+            "content": "Jonathan Barret",
+            "labelClassName": " pt-3 pb-0 mb-0 ",
+            "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+            "name": "JonathanBarret",
+            "label": "Jonathan Barret",
+            "dependentId": 2,
+            "style": {
+              "fontSize": "0.875rem",
+              "color": "#202020",
+              "fontFamily": "NotoSansRegular",
+              "background": "#FCFCFC"
+            },
+            "dependentName": "John Barret",
+            "description": "Parent",
+            "nameAndRelation":"Jonathan Barret  (Parent)",
+            "age": 60,
+            "eligibleForCoverage": null,
+            "editAnswers": null,
+            "showAnswerBasedMessage": true,
+            "answerBasedMessage": "Not eligible due to age",
+            "reasonForDeny": null,
+            "answeredAllQuestions": false,
+            "reasonForDenyStyle": {
+              "fontSize": "0.75rem",
+              "color": "#C53532",
+              "fontFamily": "NotoSansMedium",
+              "background": "#FCFCFC"
+            },
+            "disabledStyle": {
+              "fontSize": "0.875rem",
+              "color": "#B3B3B3",
+              "fontFamily": "NotoSansRegular"
+            }
+          },
+          {
+            "id": 3,
+            "type": "readOnly",
+            "hideLabel": true,
+            "validations": {},
+            "value": "",
+            "contentClassName": " py-3 px-3",
+            "containerClassName": " col-12 px-3",
+            "insideSpan": true,
+            "content": "Bruce Barret",
+            "labelClassName": " pt-3 pb-0 mb-0 ",
+            "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+            "name": "BruceBarret",
+            "label": "Bruce Barret",
+            "dependentId":3,
+            "style": {
+              "fontSize": "0.875rem",
+              "color": "#202020",
+              "fontFamily": "NotoSansRegular",
+              "background": "#FCFCFC"
+            },
+            "dependentName": "Bruce Barret",
+            "description": "Child",
+            "nameAndRelation":"Bruce Barret  (Child)",
+            "age": 11,
+            "eligibleForCoverage": null,
+            "editAnswers": null,
+            "reasonForDeny": null,
+            "answeredAllQuestions": false,
+            "reasonForDenyStyle": {
+              "fontSize": "0.75rem",
+              "color": "#C53532",
+              "fontFamily": "NotoSansMedium",
+              "background": "#FCFCFC"
+            },
+            "disabledStyle": {
+              "fontSize": "0.875rem",
+              "color": "#B3B3B3",
+              "fontFamily": "NotoSansRegular"
+            }          },
+          {
+            "id": 4,
+            "type": "readOnly",
+            "hideLabel": true,
+            "validations": {},
+            "value": "",
+            "contentClassName": " py-3 px-3",
+            "containerClassName": " col-12 px-3",
+            "insideSpan": true,
+            "content": "Jane Barret",
+            "labelClassName": " pt-3 pb-0 mb-0 ",
+            "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+            "name": "JaneBarret",
+            "label": "Jane Barret",
+            "dependentId": 4,
+            "style": {
+              "fontSize": "0.875rem",
+              "color": "#202020",
+              "fontFamily": "NotoSansRegular",
+              "background": "#FCFCFC"
+            },
+            "dependentName": "Jane Barret",
+            "description": "Child",
+            "nameAndRelation":"Jane Barret  (Child)",
+            "age": 15,
+            "eligibleForCoverage": null,
+            "editAnswers": null,
+            "reasonForDeny": null,
+            "answeredAllQuestions": false,
+            "reasonForDenyStyle": {
+              "fontSize": "0.75rem",
+              "color": "#C53532",
+              "fontFamily": "NotoSansMedium",
+              "background": "#FCFCFC"
+            },
+            "disabledStyle": {
+              "fontSize": "0.875rem",
+              "color": "#B3B3B3",
+              "fontFamily": "NotoSansRegular"
+            }
+          }
+        ],
+        "accidentCoverageDependentsFirstOption": [
+          {
+            "id": 0,
+            "type": "readOnly",
+            "hideLabel": true,
+            "validations": {},
+            "value": "",
+            "contentClassName": " py-3 px-3",
+            "containerClassName": " col-12 px-3",
+            "insideSpan": true,
+            "content": "Ann Barret",
+            "labelClassName": " pt-3 pb-0 mb-0 ",
+            "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+            "name": "AnnBarret",
+            "label": "Ann Barret",
+            "dependentId": 0,
+            "dependentName": "Ann Barret",
+            "description": "Employee",
+            "nameAndRelation":"Ann Barret  (Employee)",
+            "age": 30,
+            "eligibleForCoverage": null,
+            "editAnswers": null,
+            "reasonForDeny": null,
+           
+          
+            "placement1": "col-md-12",
+            "contentClassName1": " px-3 py-3",
+            "containerClassName1": " col-12 px-3",
+            "display": "inline-block",
+            "style": {
+              "fontSize": "0.875rem",
+              "color": "#202020",
+              "fontFamily": "NotoSansRegular",
+              "background": "#FCFCFC"
+            },
+           
+            "answeredAllQuestions": false
+          
+          },
+          {
+            "id": 1,
+            "type": "readOnly",
+            "hideLabel": true,
+            "validations": {},
+            "value": "",
+            "contentClassName": " py-3 px-3",
+            "containerClassName": " col-12 px-3",
+            "insideSpan": true,
+            "content": "John Barret",
+            "labelClassName": " pt-3 pb-0 mb-0 ",
+            "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+            "name": "JohnBarret",
+            "label": "John Barret",
+            "dependentId": 1,
+            "style": {
+              "fontSize": "0.875rem",
+              "color": "#202020",
+              "fontFamily": "NotoSansRegular",
+              "background": "#FCFCFC"
+            },
+            "dependentName": "John Barret",
+            "description": "Spouse",
+            "nameAndRelation":"John Barret  (Spouse)",
+            "age": 30,
+            "eligibleForCoverage": null,
+            "editAnswers": null,
+            "reasonForDeny": null,
+           
+           
+            "answeredAllQuestions": false
+          
+          },
+          {
+            "id": 2,
+            "type": "readOnly",
+            "hideLabel": true,
+            "validations": {},
+            "value": "",
+            "contentClassName": " py-3 px-3",
+            "containerClassName": " col-12 px-3",
+            "insideSpan": true,
+            "content": "Jonathan Barret",
+            "labelClassName": " pt-3 pb-0 mb-0 ",
+            "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+            "name": "JonathanBarret",
+            "label": "Jonathan Barret",
+            "dependentId": 2,
+            "style": {
+              "fontSize": "0.875rem",
+              "color": "#202020",
+              "fontFamily": "NotoSansRegular",
+              "background": "#FCFCFC"
+            },
+            "dependentName": "John Barret",
+            "description": "Parent",
+            "nameAndRelation":"Jonathan Barret  (Parent)",
+            "age": 60,
+            "eligibleForCoverage": null,
+            "editAnswers": null
+            
+          },
+          {
+            "id": 3,
+            "type": "readOnly",
+            "hideLabel": true,
+            "validations": {},
+            "value": "",
+            "contentClassName": " py-3 px-3",
+            "containerClassName": " col-12 px-3",
+            "insideSpan": true,
+            "content": "Bruce Barret",
+            "labelClassName": " pt-3 pb-0 mb-0 ",
+            "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+            "name": "BruceBarret",
+            "label": "Bruce Barret",
+            "dependentId":3,
+            "style": {
+              "fontSize": "0.875rem",
+              "color": "#202020",
+              "fontFamily": "NotoSansRegular",
+              "background": "#FCFCFC"
+            },
+            "dependentName": "Bruce Barret",
+            "description": "Child",
+            "nameAndRelation":"Bruce Barret  (Child)",
+            "age": 11,
+            "eligibleForCoverage": null,
+            "editAnswers": null
+              },
+          {
+            "id": 4,
+            "type": "readOnly",
+            "hideLabel": true,
+            "validations": {},
+            "value": "",
+            "contentClassName": " py-3 px-3",
+            "containerClassName": " col-12 px-3",
+            "insideSpan": true,
+            "content": "Jane Barret",
+            "labelClassName": " pt-3 pb-0 mb-0 ",
+            "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+            "name": "JaneBarret",
+            "label": "Jane Barret",
+            "dependentId": 4,
+            "style": {
+              "fontSize": "0.875rem",
+              "color": "#202020",
+              "fontFamily": "NotoSansRegular",
+              "background": "#FCFCFC"
+            },
+            "dependentName": "Jane Barret",
+            "description": "Child",
+            "nameAndRelation":"Jane Barret  (Child)",
+            "age": 15,
+            "eligibleForCoverage": null,
+            "editAnswers": null,
+            "reasonForDeny": null
+           
+          }
+        ],
+        "accidentCoverageDependentsThirdOption": [
+          {
+            "id": 0,
+            "type": "readOnly",
+            "hideLabel": true,
+            "validations": {},
+            "value": "",
+            "contentClassName": " py-3 px-3",
+            "containerClassName": " col-12 px-3",
+            "insideSpan": true,
+            "content": "Ann Barret",
+            "labelClassName": " pt-3 pb-0 mb-0 ",
+            "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+            "name": "AnnBarret",
+            "label": "Ann Barret",
+            "dependentId": 0,
+            "dependentName": "Ann Barret",
+            "description": "Employee",
+            "nameAndRelation":"Ann Barret  (Employee)",
+            "age": 30,
+            "eligibleForCoverage": null,
+            "editAnswers": null,
+            "answerBasedMessage": "Based on your response, you are not eligible for this coverage at this time",
+            "reasonForDeny": null,
+            "reasonForDenyStyle": {
+              "fontSize": "0.75rem",
+              "color": "#C53532",
+              "fontFamily": "NotoSansMedium",
+              "background": "#FCFCFC"
+            },
+            "filenameDown1": "InsuredIconArrowDown.png",
+            "filenameUp1": "sm-arrow-up.svg",
+            "filenameDown": "arrow-down.svg",
+            "filenameUp": "sm-arrow-up.svg",
+            "placement1": "col-md-12",
+            "contentClassName1": " px-3 py-3",
+            "containerClassName1": " col-12 px-3",
+            "display": "inline-block",
+            "style": {
+              "fontSize": "0.875rem",
+              "color": "#202020",
+              "fontFamily": "NotoSansRegular",
+              "background": "#FCFCFC"
+            },
+            "disabledStyle": {
+              "fontSize": "0.875rem",
+              "color": "#B3B3B3",
+              "fontFamily": "NotoSansRegular"
+            },
+            "noOfAnsweredQuestions": 0,
+            "answeredAllQuestions": false,
+            "noOfAnsweredQuestionsStyle": {
+              "fontSize": "0.875rem",
+              "color": "#000000",
+              "fontFamily": "NotoSansMedium"
+            },
+            "questionsAnswers": [
+              {
+                "question": {
+                  "id": 0,
+                  "type": "readOnly",
+
+                  "hideLabel": true,
+                  "validations": {},
+                  "value": "",
+                  "contentClassName": " py-3 px-3",
+                  "containerClassName": " col-12 px-3",
+                  "insideSpan": true,
+                  "nameAndRelation": "Are you currently covered by at least major medical insurance or at least basic hospital and basic medical insurance?",
+                  "labelClassName": " pt-3 pb-0 mb-0 ",
+                  "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+                  "display": "inline-block",
+                  "style": {
+                    "fontSize": "0.875rem",
+                    "color": "#202020",
+                    "fontFamily": "NotoSansRegular"
+                  },
+                  "label": "Are you currently covered by at least major medical insurance or at least basic hospital and basic medical insurance?",
+                  "question": "Are you currently covered by at least major medical insurance or at least basic hospital and basic medical insurance?",
+                  "answered": ""
+                },
+                "devider":{
+                  "type": "readOnly",
+                  "name": "EmailBar",
+                  "label": "EmailBar",
+                  "hideLabel": true,
+                  "validations": {},
+                  "responseFrom": "",
+                  "value": "",
+                  "borderBottomColorr": "#DADADA",
+                  "borderBottomColor": "blue",
+                  "borderBottomWidth": 1,
+                  "marginLeft": 4,
+                  "marginRight": 5,
+                  "placement": "col-md-12 ",
+                  "content": "",
+                  "flex": 1,
+                  "borderBottom": "1px solid #000",
+                  "containerClassName": " col-11  col-xl-12 border-top my-3 mx-xl-0 "
+                },
+                "answers": {
+                  "type": "radioButtonGroup",
+                  "id": "answerOptions01",
+                  "name": "answerOptions01",
+                  "rearSector": "",
+                  "label": " ",
+                  "hideLabel": true,
+                  "placement": "col-md-12 mb-2  ",
+                  "validations1": {},
+                  "isRadio": true,
+                  "isAnswerRadio": true,
+                  "value": "",
+                  "inputs": [
+                    {
+                      "label": "Yes",
+                      "value": "Yes",
+                      "id": "Yes",
+                      "questionId": 0,
+                      "index": 0,
+                      "isAnswerRadio": true,
+                      "name": "00Yes",
+                      "inputIndex": 0,
+                      "selected": false,
+                      "addSpaceClass": "pr-xl-5 pr-4"
+                    },
+                    {
+                      "label": "No",
+                      "value": "No",
+                      "id": "No",
+                      "questionId": 0,
+                      "index": 0,
+                      "isAnswerRadio": true,
+                      "name": "00No",
+                      "inputIndex": 1,
+                      "selected": false
+                    }
+                  ],
+                  "containerClassName": "  col-12 pt-2 pt-xl-0 ",
+                  "radioClassWrapper": "col-3 offset-5 pr-0 mr-0",
+                  "radioAdditionalClasses1": " col-auto ",
+                  "display": "inline-block"
+                },
+                "id": 1
+
+              },
+              {
+                "question": {
+                  "id": 1,
+                  "type": "readOnly",
+
+                  "hideLabel": true,
+                  "validations": {},
+                  "value": "",
+                  "contentClassName": " py-3 px-3",
+                  "containerClassName": " col-12 px-3",
+                  "insideSpan": true,
+                  "nameAndRelation": "Do you have or are you applying for other accident or sickness coverage?",
+                  "labelClassName": " pt-3 pb-0 mb-0 ",
+                  "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+                  "display": "inline-block",
+                  "style": {
+                    "fontSize": "0.875rem",
+                    "color": "#202020",
+                    "fontFamily": "NotoSansRegular"
+                  },
+                  "question": "Do you have or are you applying for other accident or sickness coverage?",
+                  "answered": ""
+                },
+                "devider":{
+                  "type": "readOnly",
+                  "name": "EmailBar",
+                  "label": "EmailBar",
+                  "hideLabel": true,
+                  "validations": {},
+                  "responseFrom": "",
+                  "value": "",
+                  "borderBottomColorr": "#DADADA",
+                  "borderBottomColor": "blue",
+                  "borderBottomWidth": 1,
+                  "marginLeft": 5,
+                  "marginRight": 5,
+                  "placement": "col-md-12 ",
+                  "content": "",
+                  "flex": 1,
+                  "borderBottom": "1px solid #000",
+                  "containerClassName": " col-11  col-xl-12 border-top my-3 mx-xl-0 "
+                },
+                "answers": {
+                  "type": "radioButtonGroup",
+                  "name": "answerOptions02",
+                  "rearSector": "",
+                  "label": " ",
+                  "hideLabel": true,
+                  "placement": "col-md-12 mb-2  ",
+                  "validations1": {},
+                  "isRadio": true,
+                  "isAnswerRadio": true,
+                  "value": "",
+                  "inputs": [
+                    {
+                      "label": "Yes",
+                      "value": "Yes",
+                      "id": "Yes",
+                      "questionId": 1,
+                      "index": 0,
+                      "isAnswerRadio": true,
+                      "name": "01Yes",
+                      "inputIndex": 0,
+                      "selected": false,
+                      "addSpaceClass": "pr-xl-5 pr-4"
+                    },
+                    {
+                      "label": "No",
+                      "value": "No",
+                      "id": "No",
+                      "questionId": 1,
+                      "index": 0,
+                      "isAnswerRadio": true,
+                      "name": "01No",
+                      "inputIndex": 1,
+                      "selected": false
+                    }
+                  ],
+                  "containerClassName": "  col-12 pt-2 pt-xl-0 ",
+                  "radioClassWrapper": "col-3 offset-5 pr-0 mr-0",
+                  "radioAdditionalClasses1": " col-auto ",
+                  "display": "inline-block"
+                },
+                "id": 2
+              },
+              {
+                "question": {
+                  "id": 2,
+                  "type": "readOnly",
+
+
+                  "hideLabel": true,
+                  "validations": {},
+                  "value": "",
+                  "contentClassName": " py-3 px-3",
+                  "containerClassName": " col-12 px-3",
+                  "insideSpan": true,
+                  "nameAndRelation": "Does the person to be insured have comprehensive health benefits from an insurance policy, an HMO plan, or an employer health benefit plan? Persons without such comprehensive coverage are not eligible for coverage.",
+                  "labelClassName": " pt-3 pb-0 mb-0 ",
+                  "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+                  "display": "inline-block",
+                  "style": {
+                    "fontSize": "0.875rem",
+                    "color": "#202020",
+                    "fontFamily": "NotoSansRegular"
+                  },
+                  "question": "Does the person to be insured have comprehensive health benefits from an insurance policy, an HMO plan, or an employer health benefit plan? Persons without such comprehensive coverage are not eligible for coverage.",
+                  "answered": ""
+                },
+                "devider":{
+                  "type": "readOnly",
+                  "name": "EmailBar",
+                  "label": "EmailBar",
+                  "hideLabel": true,
+                  "validations": {},
+                  "responseFrom": "",
+                  "value": "",
+                  "borderBottomColorr": "#DADADA",
+                  "borderBottomColor": "blue",
+                  "borderBottomWidth": 1,
+                  "marginLeft": 5,
+                  "marginRight": 5,
+                  "placement": "col-md-12 ",
+                  "content": "",
+                  "flex": 1,
+                  "borderBottom": "1px solid #000",
+                  "containerClassName": " col-11  col-xl-12 border-top my-3 mx-xl-0 "
+                },
+                "answers": {
+                  "type": "radioButtonGroup",
+                  "name": "answerOptions03",
+                  "rearSector": "",
+                  "label": " ",
+                  "hideLabel": true,
+                  "placement": "col-md-12 mb-2  ",
+                  "validations1": {},
+                  "isRadio": true,
+                  "isAnswerRadio": true,
+                  "value": "",
+                  "inputs": [
+                    {
+                      "label": "Yes",
+                      "value": "Yes",
+                      "id": "Yes",
+                      "questionId": 2,
+                      "index": 0,
+                      "isAnswerRadio": true,
+                      "name": "02Yes",
+                      "inputIndex": 0,
+                      "selected": false,
+                      "addSpaceClass": "pr-xl-5 pr-4"
+                    },
+                    {
+                      "label": "No",
+                      "value": "No",
+                      "id": "No",
+                      "questionId": 2,
+                      "index": 0,
+                      "isAnswerRadio": true,
+                      "name": "02No",
+                      "inputIndex": 1,
+                      "selected": false
+                    }
+                  ],
+                  "containerClassName": "  col-12 pt-2 pt-xl-0 ",
+                  "radioClassWrapper": "col-3 offset-5 pr-0 mr-0",
+                  "radioAdditionalClasses1": " col-auto ",
+                  "display": "inline-block"
+                },
+                "id": 3
+              },
+              {
+                "question": {
+                  "id": 3,
+                  "type": "readOnly",
+                  "hideLabel": true,
+                  "validations": {},
+                  "value": "",
+                  "contentClassName": " py-3 px-3",
+                  "containerClassName": " col-12 px-3",
+                  "insideSpan": true,
+                  "nameAndRelation": "Have you used tobacco or nicotine products, in any form, in last 12 months?",
+                  "labelClassName": " pt-3 pb-0 mb-0 ",
+                  "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+                  "display": "inline-block",
+                  "style": {
+                    "fontSize": "0.875rem",
+                    "color": "#202020",
+                    "fontFamily": "NotoSansRegular"
+                  },
+                  "question": "Have you used tobacco in last 12 months?",
+                  "answered": ""
+                },
+                "answers": {
+                  "type": "radioButtonGroup",
+                  "name": "answerOptions04",
+                  "rearSector": "",
+                  "label": " ",
+                  "hideLabel": true,
+                  "validations1": {},
+                  "isRadio": true,
+                  "isAnswerRadio": true,
+                  "value": "",
+                  "inputs": [
+                    {
+                      "label": "Yes",
+                      "value": "Yes",
+                      "id": "Yes",
+                      "questionId": 3,
+                      "index": 0,
+                      "isAnswerRadio": true,
+                      "name": "03Yes",
+                      "inputIndex": 0,
+                      "selected": false,
+                      "addSpaceClass": "pr-xl-5 pr-4"
+                    },
+                    {
+                      "label": "No",
+                      "value": "No",
+                      "id": "No",
+                      "questionId": 3,
+                      "index": 0,
+                      "isAnswerRadio": true,
+                      "name": "03No",
+                      "inputIndex": 1,
+                      "selected": false
+                    }
+                  ],
+                  "containerClassName": "  col-12 pt-2 pt-xl-0 ",
+                  "display": "inline-block",
+                  "labelClassName": " px-4 px-xl-3 pb-2 ",
+                  "placement": "col-md-12 pt-3",
+                  "validations": {
+                    "string": {
+                      "required": "This field is required"
+                    }
+                  },
+                  "radioClassWrapper": "col-3 offset-5 pr-0 mr-0"
+                },
+                "id": 4
+              }
+            ]
+          },
+          {
+            "id": 1,
+            "type": "readOnly",
+            "hideLabel": true,
+            "validations": {},
+            "value": "",
+            "contentClassName": " py-3 px-3",
+            "containerClassName": " col-12 px-3",
+            "insideSpan": true,
+            "content": "John Barret",
+            "labelClassName": " pt-3 pb-0 mb-0 ",
+            "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+            "name": "JohnBarret",
+            "label": "John Barret",
+            "dependentId": 1,
+            "style": {
+              "fontSize": "0.875rem",
+              "color": "#202020",
+              "fontFamily": "NotoSansRegular",
+              "background": "#FCFCFC"
+            },
+            "dependentName": "John Barret",
+            "description": "Spouse",
+            "nameAndRelation":"John Barret  (Spouse)",
+            "age": 30,
+            "eligibleForCoverage": null,
+            "editAnswers": null,
+            "answerBasedMessage": "Based on your response, you are not eligible for this coverage at this time",
+            "reasonForDeny": null,
+            "reasonForDenyStyle": {
+              "fontSize": "0.75rem",
+              "color": "#C53532",
+              "fontFamily": "NotoSansMedium",
+              "background": "#FCFCFC"
+            },
+            "disabledStyle": {
+              "fontSize": "0.875rem",
+              "color": "#B3B3B3",
+              "fontFamily": "NotoSansRegular"
+            },
+            "filenameDown1": "InsuredIconArrowDown.png",
+            "filenameDown": "arrow-down.svg",
+            "filenameUp": "sm-arrow-up.svg",
+            "noOfAnsweredQuestions": 0,
+            "answeredAllQuestions": false,
+            "noOfAnsweredQuestionsStyle": {
+              "fontSize": "0.875rem",
+              "color": "#000000",
+              "fontFamily": "NotoSansMedium"
+            },
+            "questionsAnswers": [
+              {
+                "question": {
+                  "id": 0,
+                  "type": "readOnly",
+
+                  "hideLabel": true,
+                  "validations": {},
+                  "value": "",
+                  "contentClassName": " py-3 px-3",
+                  "containerClassName": " col-12 px-3",
+                  "insideSpan": true,
+                  "labelClassName": " pt-3 pb-0 mb-0 ",
+                  "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+                  "display": "inline-block",
+                  "style": {
+                    "fontSize": "0.875rem",
+                    "color": "#202020",
+                    "fontFamily": "NotoSansRegular"
+                  },
+
+                  "nameAndRelation": "Are you currently covered by at least major medical insurance or at least basic hospital and basic medical insurance?",
+                  "question": "Are you currently covered by at least major medical insurance or at least basic hospital and basic medical insurance?",
+                  "answered": ""
+                },
+                "devider":{
+                  "type": "readOnly",
+                  "name": "EmailBar",
+                  "label": "EmailBar",
+                  "hideLabel": true,
+                  "validations": {},
+                  "responseFrom": "",
+                  "value": "",
+                  "borderBottomColorr": "#DADADA",
+                  "borderBottomColor": "blue",
+                  "borderBottomWidth": 1,
+                  "marginLeft": 5,
+                  "marginRight": 5,
+                  "placement": "col-md-12 ",
+                  "content": "",
+                  "flex": 1,
+                  "borderBottom": "1px solid #000",
+                  "containerClassName": " col-11  col-xl-12 border-top my-3 mx-xl-0 "
+                },
+                "answers": {
+                  "type": "radioButtonGroup",
+                  "id": "answerOptions11",
+                  "name": "answerOptions01",
+                  "rearSector": "",
+                  "label": " ",
+                  "hideLabel": true,
+                  "placement": "col-md-12 mb-2  ",
+                  "validations1": {},
+                  "isRadio": true,
+                  "isAnswerRadio": true,
+                  "value": "",
+                  "inputs": [
+                    {
+                      "label": "Yes",
+                      "value": "Yes",
+                      "id": "Yes",
+                      "questionId": 0,
+                      "index": 1,
+                      "isAnswerRadio": true,
+                      "name": "10Yes",
+                      "inputIndex": 0,
+                      "selected": false,
+                      "addSpaceClass": "pr-xl-5 pr-4"
+                    },
+                    {
+                      "label": "No",
+                      "value": "No",
+                      "id": "No",
+                      "questionId": 0,
+                      "index": 1,
+                      "isAnswerRadio": true,
+                      "name": "10No",
+                      "inputIndex": 1,
+                      "selected": false
+                    }
+                  ],
+                  "containerClassName": "  col-12 pt-2 pt-xl-0 ",
+                  "radioClassWrapper": "col-3 offset-5 pr-0 mr-0",
+                  "radioAdditionalClasses1": " col-auto ",
+                  "display": "inline-block"
+                },
+                "id":1
+              },
+              {
+                "question": {
+                  "id": 1,
+                  "type": "readOnly",
+                  "hideLabel": true,
+                  "validations": {},
+                  "value": "",
+                  "contentClassName": " py-3 px-3",
+                  "containerClassName": " col-12 px-3",
+                  "insideSpan": true,
+                  "labelClassName": " pt-3 pb-0 mb-0 ",
+                  "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+                  "display": "inline-block",
+                  "style": {
+                    "fontSize": "0.875rem",
+                    "color": "#202020",
+                    "fontFamily": "NotoSansRegular"
+                  },
+
+                  "nameAndRelation": "Do you have or are you applying for other accident or sickness coverage?",
+                  "answered": ""
+                },
+                "devider":{
+                  "type": "readOnly",
+                  "name": "EmailBar",
+                  "label": "EmailBar",
+                  "hideLabel": true,
+                  "validations": {},
+                  "responseFrom": "",
+                  "value": "",
+                  "borderBottomColorr": "#DADADA",
+                  "borderBottomColor": "blue",
+                  "borderBottomWidth": 1,
+                  "marginLeft": 5,
+                  "marginRight": 5,
+                  "placement": "col-md-12 ",
+                  "content": "",
+                  "flex": 1,
+                  "borderBottom": "1px solid #000",
+                  "containerClassName": " col-11  col-xl-12 border-top my-3 mx-xl-0 "
+                },
+                "answers": {
+                  "type": "radioButtonGroup",
+                  "name": "answerOptions12",
+                  "rearSector": "",
+                  "label": " ",
+                  "hideLabel": true,
+                  "placement": "col-md-12 mb-2  ",
+                  "validations1": {},
+                  "isRadio": true,
+                  "isAnswerRadio": true,
+                  "value": "",
+                  "inputs": [
+                    {
+                      "label": "Yes",
+                      "value": "Yes",
+                      "id": "Yes",
+                      "questionId": 1,
+                      "index": 1,
+                      "isAnswerRadio": true,
+                      "name": "11Yes",
+                      "inputIndex": 0,
+                      "selected": false,
+                      "addSpaceClass": "pr-xl-5 pr-4"
+                    },
+                    {
+                      "label": "No",
+                      "value": "No",
+                      "id": "No",
+                      "questionId": 1,
+                      "index": 1,
+                      "isAnswerRadio": true,
+                      "name": "11No",
+                      "inputIndex": 1,
+                      "selected": false
+                    }
+                  ],
+                  "containerClassName": "  col-12 pt-2 pt-xl-0 ",
+                  "radioClassWrapper": "col-3 offset-5 pr-0 mr-0",
+                  "radioAdditionalClasses1": " col-auto ",
+                  "display": "inline-block"
+                },
+                "id": 2
+              },
+              {
+                "question": {
+                  "id": 2,
+                  "type": "readOnly",
+                  "hideLabel": true,
+                  "validations": {},
+                  "value": "",
+                  "contentClassName": " py-3 px-3",
+                  "containerClassName": " col-12 px-3",
+                  "insideSpan": true,
+                  "labelClassName": " pt-3 pb-0 mb-0 ",
+                  "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+                  "display": "inline-block",
+                  "style": {
+                    "fontSize": "0.875rem",
+                    "color": "#202020",
+                    "fontFamily": "NotoSansRegular"
+                  },
+
+                  "nameAndRelation": "Does the person to be insured have comprehensive health benefits from an insurance policy, an HMO plan, or an employer health benefit plan? Persons without such comprehensive coverage are not eligible for coverage.",
+                  "answered": ""
+                },
+                "devider":{
+                  "type": "readOnly",
+                  "name": "EmailBar",
+                  "label": "EmailBar",
+                  "hideLabel": true,
+                  "validations": {},
+                  "responseFrom": "",
+                  "value": "",
+                  "borderBottomColorr": "#DADADA",
+                  "borderBottomColor": "blue",
+                  "borderBottomWidth": 1,
+                  "marginLeft": 5,
+                  "marginRight": 5,
+                  "placement": "col-md-12 ",
+                  "content": "",
+                  "flex": 1,
+                  "borderBottom": "1px solid #000",
+                  "containerClassName": " col-11  col-xl-12 border-top my-3 mx-xl-0 "
+                },
+                "answers": {
+                  "type": "radioButtonGroup",
+                  "name": "answerOptions13",
+                  "rearSector": "",
+                  "label": " ",
+                  "hideLabel": true,
+                  "placement": "col-md-12 mb-2  ",
+                  "validations1": {},
+                  "isRadio": true,
+                  "isAnswerRadio": true,
+                  "value": "",
+                  "inputs": [
+                    {
+                      "label": "Yes",
+                      "value": "Yes",
+                      "id": "Yes",
+                      "questionId": 2,
+                      "index": 1,
+                      "isAnswerRadio": true,
+                      "name": "12Yes",
+                      "inputIndex": 0,
+                      "selected": false,
+                      "addSpaceClass": "pr-xl-5 pr-4"
+                    },
+                    {
+                      "label": "No",
+                      "value": "No",
+                      "id": "No",
+                      "questionId": 2,
+                      "index": 1,
+                      "isAnswerRadio": true,
+                      "name": "12No",
+                      "inputIndex": 1,
+                      "selected": false
+                    }
+                  ],
+                  "containerClassName": "  col-12 pt-2 pt-xl-0 ",
+                  "radioClassWrapper": "col-3 offset-5 pr-0 mr-0",
+                  "radioAdditionalClasses1": " col-auto ",
+                  "display": "inline-block"
+                },
+                "id": 3
+              },
+              {
+                "question": {
+                  "id": 3,
+                  "type": "readOnly",
+                  "hideLabel": true,
+                  "validations": {},
+                  "value": "",
+                  "contentClassName": " py-3 px-3",
+                  "containerClassName": " col-12 px-3",
+                  "insideSpan": true,
+                  "labelClassName": " pt-3 pb-0 mb-0 ",
+                  "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+                  "display": "inline-block",
+                  "style": {
+                    "fontSize": "0.875rem",
+                    "color": "#202020",
+                    "fontFamily": "NotoSansRegular"
+                  },
+
+                  "nameAndRelation": "Has your spouse used tobacco or nicotine products, in any form, in last 12 months?",
+                  "answered": ""
+                },
+                "answers": {
+                  "type": "radioButtonGroup",
+                  "name": "answerOptions14",
+                  "rearSector": "",
+                  "label": " ",
+                  "hideLabel": true,
+                  "placement": "col-md-12 mb-2  ",
+                  "validations1": {},
+                  "isRadio": true,
+                  "isAnswerRadio": true,
+                  "value": "",
+                  "inputs": [
+                    {
+                      "label": "Yes",
+                      "value": "Yes",
+                      "id": "Yes",
+                      "questionId": 3,
+                      "index": 1,
+                      "isAnswerRadio": true,
+                      "name": "13Yes",
+                      "inputIndex": 0,
+                      "selected": false,
+                      "addSpaceClass": "pr-xl-5 pr-4"
+                    },
+                    {
+                      "label": "No",
+                      "value": "No",
+                      "id": "No",
+                      "questionId": 3,
+                      "index": 1,
+                      "isAnswerRadio": true,
+                      "name": "13No",
+                      "inputIndex": 1,
+                      "selected": false
+                    }
+                  ],
+                  "containerClassName": "  col-12 pt-2 pt-xl-0 ",
+                  "radioClassWrapper": "col-3 offset-5 pr-0 mr-0",
+                  "radioAdditionalClasses1": " col-auto ",
+                  "display": "inline-block"
+                },
+                "id": 4
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "type": "readOnly",
+            "hideLabel": true,
+            "validations": {},
+            "value": "",
+            "contentClassName": " py-3 px-3",
+            "containerClassName": " col-12 px-3",
+            "insideSpan": true,
+            "content": "Jonathan Barret",
+            "labelClassName": " pt-3 pb-0 mb-0 ",
+            "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+            "name": "JonathanBarret",
+            "label": "Jonathan Barret",
+            "dependentId": 2,
+            "style": {
+              "fontSize": "0.875rem",
+              "color": "#202020",
+              "fontFamily": "NotoSansRegular",
+              "background": "#FCFCFC"
+            },
+            "dependentName": "John Barret",
+            "description": "Parent",
+            "nameAndRelation":"Jonathan Barret  (Parent)",
+            "age": 60,
+            "eligibleForCoverage": false,
+            "editAnswers": null,
+            "answerBasedMessage": "Not eligible due to age",
+            "reasonForDeny": null,
+            "answeredAllQuestions": false,
+            "reasonForDenyStyle": {
+              "fontSize": "0.75rem",
+              "color": "#C53532",
+              "fontFamily": "NotoSansMedium",
+              "background": "#FCFCFC"
+            },
+            "disabledStyle": {
+              "fontSize": "0.875rem",
+              "color": "#B3B3B3",
+              "fontFamily": "NotoSansRegular"
+            }
+          },
+          {
+            "id": 3,
+            "type": "readOnly",
+            "hideLabel": true,
+            "validations": {},
+            "value": "",
+            "contentClassName": " py-3 px-3",
+            "containerClassName": " col-12 px-3",
+            "insideSpan": true,
+            "content": "Bruce Barret",
+            "labelClassName": " pt-3 pb-0 mb-0 ",
+            "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+            "name": "BruceBarret",
+            "label": "Bruce Barret",
+            "dependentId":3,
+            "style": {
+              "fontSize": "0.875rem",
+              "color": "#202020",
+              "fontFamily": "NotoSansRegular",
+              "background": "#FCFCFC"
+            },
+            "dependentName": "Bruce Barret",
+            "description": "Child",
+            "nameAndRelation":"Bruce Barret  (Child)",
+            "age": 11,
+            "eligibleForCoverage": false,
+            "editAnswers": null,
+            "reasonForDeny": null,
+            "answeredAllQuestions": false,
+            "reasonForDenyStyle": {
+              "fontSize": "0.75rem",
+              "color": "#C53532",
+              "fontFamily": "NotoSansMedium",
+              "background": "#FCFCFC"
+            },
+            "disabledStyle": {
+              "fontSize": "0.875rem",
+              "color": "#B3B3B3",
+              "fontFamily": "NotoSansRegular"
+            }          },
+          {
+            "id": 4,
+            "type": "readOnly",
+            "hideLabel": true,
+            "validations": {},
+            "value": "",
+            "contentClassName": " py-3 px-3",
+            "containerClassName": " col-12 px-3",
+            "insideSpan": true,
+            "content": "Jane Barret",
+            "labelClassName": " pt-3 pb-0 mb-0 ",
+            "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+            "name": "JaneBarret",
+            "label": "Jane Barret",
+            "dependentId": 4,
+            "style": {
+              "fontSize": "0.875rem",
+              "color": "#202020",
+              "fontFamily": "NotoSansRegular",
+              "background": "#FCFCFC"
+            },
+            "dependentName": "Jane Barret",
+            "description": "Child",
+            "nameAndRelation":"Jane Barret  (Child)",
+            "age": 15,
+            "eligibleForCoverage": null,
+            "editAnswers": null,
+            "reasonForDeny": null,
+            "answeredAllQuestions": false,
+            "reasonForDenyStyle": {
+              "fontSize": "0.75rem",
+              "color": "#C53532",
+              "fontFamily": "NotoSansMedium",
+              "background": "#FCFCFC"
+            },
+            "disabledStyle": {
+              "fontSize": "0.875rem",
+              "color": "#B3B3B3",
+              "fontFamily": "NotoSansRegular"
+            }
+          }
+        ]
+      },
+      {
+        "displayConfig": {
+          "field": "hideDescription",
+          "show": true,
+          "renderElements": {
+            "productDescription": true
+          },
+          "valueUpdate": {
+            "hideDescription": false,
+            "hideTableCoverage": false
+          }
+        },
+        "type": "checkbox",
+        "name": "waiveCoverage",         
+        "label": "Waive Coverage",
+        "isForInsuredWaive": true,
+        "style": {
+          "borderBottomRightRadius": "0.25rem",
+          "fontFamily": "NotoSansRegular",
+          "fontSize": "0.875rem",
+          "textAlign": "center",
+          "backgroundColor": "#F4F4F4",
+          "borderColor": "#DADADA",
+          "minHeight": "2.5rem",
+          "paddingTop": "0.5rem",
+          "marginRight": "0.5rem",
+          "marginLeftt": "2rem"
+        },
+        "placement1": " col-12 pl-xl-4  pr-xl-4 pl-md-4 mr-xl-0 ml-xl-3  ml-md-4 pr-md-5 pl-0  ml-1 mr-0  pr-lg-0  pr-2 ",
+        "placement": "  col-12 pl-xl-2  pr-xl-3 pl-lg-2 pr-lg-3 pl-md-0 mr-xl-0 mr-lg-2 ml-xl-2 ml-lg-2  ml-md-3 pr-md-4 pl-1  ml-2 mr-0   pr-2 "
+
+       
+      }
+    ],
+
+
+
+    [
+      {
+        "displayConfig": {
+          "field": "hideOptions1",
+          "show": false,
+          "renderElements": {
+            "coverageHeader": true
+          },
+          "valueUpdate": {
+            "hideDescription": true,
+            "hideTableCoverage": false,
+            "hideOptions1":false
+          }
+        },
+        "type": "readOnly",
+        "name": "coverageHeader",
+        "label": "CoverageHeader",
+        "hideLabel": true,
+        "hidden": false,
+        "validations": {},
+        "value": "Select Coverage Option",
+        "placement": "col-md-12",
+        "contentClassName": " px-3 py-3",
+        "containerClassName": " col-12 px-3",
+        "display": "inline-block",
+        "style": {
+          "fontSize": "1.5rem",
+          "color": "#202020",
+          "fontFamily": "NotoSansRegular"
+        }
+      }
+    ],
+    [
+      {
+        "displayConfig": {
+          "field": "hideOptions1",
+          "show": false,
+          "renderElements": {
+            "dependentCoverageTable": true
+          },
+          "valueUpdate": {
+            "hideDescription": true,
+            "hideTableCoverage": false,
+            "hideOptions1":false
+          }
+        
+        },
+        "type": "table",
+        "tableId": "dependentCoverageTable",
+        "tableData": "dependentsCoverageTable",
+        "hidden": false,
+        "placement": "col-md-12 px-0",
+        "className": "col-md-12 d-none d-md-block d-lg-block d-xl-block",
+        "mobileClassName": "col-md-12 d-sm-block d-xs-block d-md-none d-lg-none d-xl-none px-0",
+        "columns": [
+          "coverageLevel",
+          "planType",
+          "typeOfCoverage",
+          "costPerPayPeriod"
+        ],
+        "mobileColumns": ["coverageLevel", "costPerPayPeriod"],
+        "mobilePanel": ["planType", "typeOfCoverage"],
+        "tableDataKeys": ["coverageLevel", ""]
+      }
+    ],
+    [
+      {
+        "displayConfig": {
+          "field": "hideOptions1",
+          "show": false,
+          "renderElements": {
+            "Information": true
+          },
+          "valueUpdate": {
+            "hideDescription": true,
+            "hideTableCoverage": false,
+            "hideOptions1":false
+          }
+        },
+       
+        "type": "readOnly",
+        "name": "Information",
+        "label": "Information",
+        "hideLabel": true,
+        "shouldShowOnYes": true,
+        "hidden": false,
+        "validations": {},
+        "value": "Policy Replacement Questions",
+        "placement": "col-md-12",
+        "contentClassName": " px-3 py-3",
+        "containerClassName": " col-12 px-3",
+        "display": "inline-block",
+        "style": {
+          "fontSize": "1.5rem",
+          "color": "#202020",
+          "fontFamily": "NotoSansRegular"
+        }
+      }
+    ],
+    [
+      {
+        "displayConfig": {
+          "field": "hideOptions1",
+          "show": false,
+          "renderElements": {
+            "Information2": true
+          },
+          "valueUpdate": {
+            "hideDescription": true,
+            "hideTableCoverage": false,
+            "hideOptions1":false
+          }
+        },
+        "type": "readOnly",
+        "name": "Information2",
+        "label": "Information2",
+        "hideLabel": true,
+        "shouldShowOnYes": true,
+        "hidden": false,
+        "validations": {},
+        "value": "Are you currently covered under, or does this coverage replace, an Aflac individual policy? ",
+        "placement": "col-md-12",
+        "contentClassName": " px-3",
+        "containerClassName": " col-12 px-3",
+        "display": "inline-block",
+        "style": {
+          "fontSize": "0.875rem",
+          "color": "#000000",
+          "fontFamily": "NotoSansRegular"
+        }
+      }
+    ],
+    [
+      {
+        "displayConfig": {
+          "field": "hideOptions1",
+          "show": false,
+          "renderElements": {
+            "coveragePrefSec": true
+          },
+          "valueUpdate": {
+            "hideDescription": true,
+            "hideTableCoverage": false,
+            "hideOptions1":false
+          }
+        },
+        "type": "radioButtonGroup",
+        "name": "coveragePrefSec",
+        "noNeedAstrik": true,
+        "forRegisteration": true,
+        "shouldShowOnYes": true,
+        "hidden": false,
+        "rearSector": "a",
+        "label": "If this coverage will replace any existing Aflac individual policy, please be aware that it may be in your best interest to maintain your individual guaranteed-renewable policy via direct bill. I have considered all of my existing health insurance coverage with Aflac and believe this additional coverage is appropriate for my insurance needs. I further understand that I can contact Aflac at 1-800-992-3522 regarding my individual policy and for assistance in evaluating the suitability of my insurance coverage.",
+        "labelClassName": " px-4 px-xl-3 pb-2 ",
+        "placement": "col-md-12 pt-3",
+        "validations": {
+          "string": {
+            "required": "This field is required"
+          }
+        },
+        "isRadio": true,
+        "radioClassWrapper1": "px-0 px-md-1",
+        "radioClassWrapper": "pl-2 px-xl-0 mr-0 custom-control-inline",
+        "inputs": [
+          { "label": "Yes", "value": "Yes" },
+          { "label": "No", "value": "No" }
+        ],
+        "style": {
+          "fontSize": "0.875rem",
+          "color": "#000000",
+          "fontFamily": "NotoSansRegular"
+        }
+      }
+    ],
+    [
+      {
+        "displayConfig": {
+          "field": "hideOptions1",
+          "show": false,
+          "renderElements": {
+            "policyPrefSec": true
+          },
+          "valueUpdate": {
+            "hideDescription": true,
+            "hideTableCoverage": false,
+            "hideOptions1":false
+          }
+        },
+        "type": "radioButtonGroup",
+        "name": "policyPrefSec",
+        "noNeedAstrik": true,
+        "forRegisteration": true,
+        "shouldShowOnYes": true,
+        "hidden": false,
+        "rearSector": "a",
+        "label": "Does this policy replace or change any existing insurance?",
+        "labelClassName": " px-4 px-xl-3 pb-2 ",
+        "placement": "col-md-12 pt-3",
+        "validations": {
+          "string": {
+            "required": "This field is required"
+          }
+        },
+        "isRadio": true,
+        "radioClassWrapper1": "px-0 px-md-1",
+        "radioClassWrapper": "pl-2 px-xl-0 mr-0 custom-control-inline",
+        "inputs": [
+          { "label": "Yes", "value": "Yes" },
+          { "label": "No", "value": "No" }
+        ],
+        "style": {
+          "fontSize": "0.875rem",
+          "color": "#000000",
+          "fontFamily": "NotoSansRegular"
+        }
+      }
+    ],
+    [
+      {
+        "displayConfig": {
+          "field": "hideOptions1",
+          "show": false,
+          "renderElements": {
+            "carrierName": true
+          },
+          "valueUpdate": {
+            "hideDescription": true,
+            "hideTableCoverage": false,
+            "hideOptions1":false
+          }
+        },
+        "type": "text",
+        "name": "carrierName",
+        "shouldShowOnYes": true,
+        "forRegisteration": true,
+        "hidden": false,
+        "rearSector": "code",
+        "label": "Carrier Name",
+        "placeholder": "Enter carrier name",
+        "placement": "col-lg-3 col-md-3 col-6",
+        "classNameWrapper": "",
+        "style": {
+          "fontSize": "0.875rem",
+          "color": "#767676",
+          "fontFamily": "NotoSansRegular"
         }
       },
       {
-        "type": "checkbox",
-        "name": "editBeneficiaryValidations",
-
-        "rearSector": "",
-        "label": "Verify Add Beneficiary",
-        "hidden": true,
-        "placement": ""
-      },
-      {
-        "type": "checkbox",
-        "name": "editBeneficiaryValidations",
-
-        "rearSector": "",
-        "label": "Verify edit Beneficiary",
-        "hidden": true,
-        "placement": ""
+        "displayConfig": {
+          "field": "hideOptions1",
+          "show": false,
+          "renderElements": {
+            "policyNumber": true
+          },
+          "valueUpdate": {
+            "hideDescription": true,
+            "hideTableCoverage": false,
+            "hideOptions1":false
+          }
+        },
+        "type": "text",
+        "name": "policyNumber",
+        "shouldShowOnYes": true,
+        "forRegisteration": true,
+        "hidden": false,
+        "rearSector": "code",
+        "label": "Policy Number",
+        "placeholder": "Enter Policy Number",
+        "placement": "col-lg-3 col-md-3 col-6",
+        "classNameWrapper": "",
+        "style": {
+          "fontSize": "0.875rem",
+          "color": "#767676",
+          "fontFamily": "NotoSansRegular"
+        }
       }
-    ]
+    ],
+
+    [
+      {
+        "displayConfig": {
+          "field": "hideTableCoverage",
+          "show": false,
+          "renderElements": {
+            "disclosureStatement": true
+          },
+          "valueUpdate": {
+            "hideDescription": false,
+            "hideTableCoverage": true
+          }
+        },
+        "type": "section",
+        "scroll":true,
+        "name": "disclosureStatement",
+        "hidden": false,
+        "value": ["Any false statement of malpresentation in the application that was made with actual intent to deceive Continental American Life Insurance Company may result in loss of coverage under the certificate. ","* Spouse includes Domestic Partner as defined in California Family Code Section 297.", "If a covered child reaches a limiting age as specified in the certificate or a rider, it is your responsibility to notify the company.","California law prohibits an HIV test from being required or used by health insurance companies as a condition for obtaining health insurance coverage. ","To the best of my knowledge and belief my answers to the questions are true and complete. They are offered to Continental American Insurance Company as the basis for any insurance issued. I understand that no insurance will be in effect unless I am actively at work on the effective date of coverage and until my application is approved and the necessary premium is paid. If I am not actively at work on the effective date of coverage, coverage will become effective on the date I return to an active work status. ","I understand and agree that the coverage I am applying for may have pre-existing condition limitation.","I authorize the Group Policyholder to deduct the appropriate dollar amount from my earnings each pay period to pay Continental American Insurance Company the required premium for my insurance.","(Actively at work means your ability to perform your regular employment duties for a full normal workday. You may perform these activities either at your employer's regular place of business or at a location where you are required to travel to perform the regular duties of your employment)","CAUTION: If your answers on this application are misstated or untrue. Continental American Life Insurance Company may have the right to deny benefits or rescind your accelerated death benefit coverage. ","Any false statement or misrepresentation that was made in the Employee Application/Statement of Insurability shall not bar the right to recovery under the Certificate unless such statement was made with intent to deceive Continental American Life Insurance Company or unless it materially affected either the acceptance of the risk or the hazard assumed by the Company. ","I certify that I am actively at work."],
+
+        "placement": "col-md-12 py-0",
+        "validations": {
+          "string": {
+            "required": "This field is required"
+          }
+        }
+      }
+    ],
+    [
+      {
+        "displayConfig": {
+          "field": "hideTableCoverage",
+          "show": false,
+          "renderElements": {
+            "termsAndConditions": true
+          },
+          "valueUpdate": {
+            "hideDescription": false,
+            "hideTableCoverage": true
+          }
+        },
+        "type": "radioButtonGroup",
+        "name": "termsAndConditions",
+        "noNeedAstrik": true,
+        "forRegisteration": true,
+        "rearSector": "a",
+        "label": "Do you agree to the terms and conditions of the disclosure statement?",
+        "labelClassName": " px-4 px-xl-3 pb-2 py-3 ",
+        "placement": "col-md-12 pt-3",
+        "validations": {
+          "string": {
+            "required": "This field is required"
+          }
+        },
+        "isRadio": true,
+        "radioClassWrapper1": "px-0 px-md-1",
+        "radioClassWrapper": "pl-2 px-xl-0 mr-0 custom-control-inline",
+        "inputs": [
+          { "label": "I agree", "value": "Yes" },
+          { "label": "I disagree", "value": "No" }
+        ],
+        "style": {
+          "fontSize": "0.875rem",
+          "color": "#000000",
+          "fontFamily": "NotoSansRegular"
+        }
+      }
+    ],
+[
+    {
+      "displayConfig": {
+        "field": "hideTableCoverage",
+        "show": false,
+        "renderElements": {
+          "termsAndConditions": true
+        },
+        "valueUpdate": {
+          "hideDescription": false,
+          "hideTableCoverage": true
+        }
+      },
+      "type": "stickyNote",
+      "color":"#FFFAEA",
+      "borderColor": "#FFD55A",
+      "name": "notEligibleWarning",
+      "shouldShowOnYes": true,
+      "label": "notEligibleWarning",
+      "hideLabel": true,
+      "validations": {},
+      "responseFrom": "ContractInformation",
+      "image": "icon-warning.png",
+      "imageForEmail" : true,
+      "title": "Important Note",
+      "iconClass": "col-md-auto col-lg-1 col-2  pt-3 pt-lg-1 pt-md-1 ",
+      "headerClass": "col-9 pt-1",
+      "listClass": "col-10  col-lg-11 col-md-10  ",
+      "olClass": "mb-1",
+      "notNumbered": true,
+      "classNameWrapper":"col-12",
+      "valueArray": [
+        "Based on your response, you are not eligible to select this coverage at this time"
+      
+      ],
+      "valueIn": "seconds",
+
+      "placement": "col-md-12 col-lg-12 py-1 py-md-4 py-lg-4 py-sm-1 pb-3 px-3"
+    }
+  ],
+
+  [    
+    {
+      "displayConfig": {
+        "field": "hideDescription",
+        "show": true
+  
+     
+      },
+      "type": "button",
+      "hidden": false,
+      "outline": false,
+      "name": "backProductButton",
+      "id": "backProductButton",
+      "label": "Back",
+      "apiCallURL": ["/getCoverageDetails"],
+      "apiCallArray": true,
+      "flexPlacement": true,
+      "placement": " col-12 col-md-2 col-lg-2 offset-lg-8 offset-md-8 offset-0 ml-md-auto ",
+      "editPlacement": " col-12 col-md-2 col-lg-2 offset-lg-6 offset-md-5 offset-0 ml-md-auto ",
+      "className": "px-3 py-1 mb-md-3 w-100"
+    },
+    {
+   
+      "displayConfig": {
+        "field": "hideDescription",
+        "show": true,
+  
+        "valueUpdate1": {
+          "hideDescription": true,
+          "hideTableCoverage": false,
+          "hideOptions1":true
+        }
+      },
+      "type": "button",
+      "hideButton": true,
+      "outline": false,
+      "name": "editInsuredSectionButton",
+      "id": "editInsuredSectionButton",
+      "label": "Edit Answers",
+     "showToEnableRadio": true,
+  
+      "placement1": " col-12 col-md-2 col-lg-2 py-3 py-lg-0 py-md-0",
+      "placement2": "  py-3 py-lg-0 py-md-0",
+      "placement": " col-12 col-md-auto col-lg-auto py-3 py-lg-0 py-md-0  ",
+  
+      "className": "px-3 py-1 mb-md-3 w-100"
+    },
+ 
+  {
+    "displayConfig": {
+      "field": "hideDescription",
+      "show": true,
+
+      "valueUpdate": {
+        "hideDescription": true,
+        "hideTableCoverage": false,
+        "hideOptions1":true
+      }
+    },
+    "type": "button",
+    "hidden": false,
+    "outline": false,
+    "name": "continueProductButton",
+    "id": "continueProductButton",
+    "label": "Continue",
+    "apiCallURL": ["/getCoverageDetails"],
+    "apiCallArray": true,
+
+    "placement": " col-12 col-md-2 col-lg-2 py-3 py-lg-0 py-md-0",
+    "className": "px-3 py-1 mb-md-3 w-100"
+  }
+  
+],
+[
+  {
+    "displayConfig": {
+      "field": "hideOptions1",
+      "show": false,
+
+      "renderElements": {
+        "backProductButton": false,
+        "continueTableCoverageButton": false,
+        "policyPrefSec": false,
+        "coveragePrefSec": false,
+        "continueFormButton":true
+      },
+      "valueUpdate": {
+        "hideDescription": false,
+        "hideOptions1":false
+      
+      }
+    },
+
+
+
+    "type": "button",
+    "id": "backProductButton1",
+    "hidden": false,
+    "outline": true,
+    "name": "backProductButton1",
+    "rearSector": "",
+    "showElement": true,
+    "label": "Back",
+    "validations": {},
+    "placement": " col-12 col-md-2 col-lg-2 offset-lg-6 offset-md-5 offset-0 ml-md-auto ",
+    "className": "px-3 py-1 mb-md-3 w-100"
+  },
+
+  {
+    "displayConfig": {
+      "field": "hideOptions1",
+      "show": false,
+      "renderElements": {
+        "productDescription": true,
+        "continueTableCoverageButton":true
+      },
+      "valueUpdate": {
+        "hideTableCoverage": true,
+        "hideDescription": true,
+        "hideOptions1":false
+     
+      }
+    },
+
+    "type": "button",
+    "hidden": false,
+    "outline": false,
+    "disabled1":false,
+    "name": "continueTableCoverageButton",
+    "id": "continueTableCoverageButton",
+    "label": "Continue",
+    "apiCallURL": ["/getCoverageDetails"],
+    "apiCallArray": true,
+    "widePlacement": " col-12 col-md-5 col-lg-4 py-3 py-lg-0 py-md-0",
+    "placement": " col-12 col-md-5 col-lg-2 py-3 py-lg-0 py-md-0",
+    "className": "px-3 py-1 mb-md-3 w-100"
+  }
+],
+  [
+
+  {
+    
+    "displayConfig": {
+      "field": "hideTableCoverage",
+      "show": false,
+    
+      "valueUpdate": {
+        "hideDescription": true,
+        "hideTableCoverage": false,
+        "hideOptions1":true
+      }
+    },
+
+    "type": "button",
+    "id": "backLastButton",
+    "hidden": false,
+    "outline": true,
+    "name": "backLastButton",
+    "rearSector": "",
+    "showElement": true,
+    "label": "Back",
+    "validations": {},
+    "placement": "col-12 col-md-2 col-lg-2 offset-lg-8 offset-md-8 offset-0 py-3",
+    "className": "px-3 py-1 mb-md-3 w-100"
+  },
+ 
+
+
+  {
+    "displayConfig": {
+      "field": "hideTableCoverage",
+      "show": false
+     
+    },
+
+    "type": "button",
+    "hidden": false,
+    "outline": false,
+    "name": "continueFormButton",
+    "id": "continueFormButton",
+    "label": "Continue",
+    "apiCallURL": ["/getCoverageDetails"],
+    "apiCallArray": true,
+
+    "placement": " col-12 col-md-2 col-lg-2 py-3",
+    "className": "px-3 py-1 mb-md-3 w-100"
+  },
+
+
+
+
+  {
+    "type": "checkbox",
+    "visibility": "hidden",
+
+    "hidden": true,
+    "name": "hideDescription",
+    "label": "HideDescription",
+    "placement": "",
+
+    "defaultValue": false,
+    "value": false,
+
+    "valueType": "bool",
+
+    "rearSector": ""
+  },
+
+  {
+    "type": "checkbox",
+    "visibility": "hidden",
+
+    "hidden": true,
+    "name": "hideTableCoverage",
+    "label": "HideTableCoverage",
+    "placement": "",
+
+    "defaultValue": false,
+    "value": false,
+
+    "valueType": "bool",
+
+    "rearSector": ""
+  },
+
+  {
+    "type": "checkbox",
+    "visibility": "hidden",
+
+    "hidden": true,
+    "name": "hideOptions1",
+    "label": "HideOptions",
+    "placement": "",
+
+    "defaultValue": false,
+    "value": false,
+
+    "valueType": "bool",
+
+    "rearSector": ""
+  }
+]
+  ],
+
+  "modals": [
+    {
+      "modalName": "videoCoverageSelection",
+      "title": "Product Video",
+      "productSelection": true,
+      "modalElements": [
+        [
+          [
+            {
+              "type": "video",
+              "width": "820",
+
+              "height": "710",
+              "src": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+              "alt": "",
+              "id": "video1"
+            }
+          ]
+        ]
+      ]
+    }
   ]
 }

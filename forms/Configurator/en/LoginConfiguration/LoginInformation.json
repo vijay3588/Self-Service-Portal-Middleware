@@ -1,0 +1,239 @@
+{
+  "elements": [
+    [
+      {
+        "type": "panelSideHeader",
+        "outerDiv": false,
+        "name": "Login Page Configuration",
+        "label": "Login Page Configuration",
+        "placement": "col-md-6 pt-3",
+        "formSideBigHeader": "Login Configuration",
+        "header": true
+      }
+    ],
+
+    [
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "DataField",
+        "rearSector": "shortName",
+        "label": "Data Field",
+        "mapping": true,
+        "labelTitle": "Data Field",
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+
+      {
+        "type": "readOnly",
+        "disabled": true,
+        "name": "Editable Field and Color and File",
+        "rearSector": "shortName",
+        "label": "Editable Field and Color and File",
+        "mapping": true,
+        "labelTitle": "Editable Field and Color and File",
+        "placement": "col-md-2 col-sm-6 col-lg-3 col-xs-6 col-6 ",
+        "header": false,
+        "validations": {
+          "string": {}
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      }
+    ],
+
+    [
+      {
+        "type": "readOnly",
+        "name": "welcomeTitle",
+        "label": "Welcome Title",
+        "labelTitle": "Welcome Title",
+        "disabled": true,
+        "mapping": true,
+        "header": false,
+
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6",
+        "validations": {
+          "string": {
+            "matches": {
+              "regex": "^[a-zA-Z]+$",
+              "message": "No special characters allowed"
+            }
+          }
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+
+      {
+        "type": "text",
+        "name": "welcomeTitleByClient",
+        "label": "",
+        "update": {
+          "reduxPath": "loginInformation.loginConfigInfo.loginConfigurationInformation.welcomeTitleByClient",
+          "formikPath": "LoginInformation"
+        },
+        "value": false,
+        "placement": "col-md-5 col-lg-2 col-12"
+      }
+    ],
+
+    [
+      {
+        "type": "readOnly",
+        "name": "welcomeMsg",
+        "label": "Welcome Message",
+        "labelTitle": "Welcome Message",
+        "disabled": true,
+        "mapping": true,
+        "header": false,
+
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6",
+        "validations": {
+          "string": {
+            "matches": {
+              "regex": "^[a-zA-Z]+$",
+              "message": "No special characters allowed"
+            }
+          }
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+
+      {
+        "type": "textarea",
+        "name": "welcomeMsgByClient",
+        "label": "",
+        "update": {
+          "reduxPath": "loginInformation.loginConfigInfo.loginConfigurationInformation.welcomeMsgByClient",
+          "formikPath": "LoginInformation"
+        },
+        "value": false,
+        "placement": "col-md-5 col-lg-2 col-12"
+      }
+    ],
+
+    [
+      {
+        "type": "readOnly",
+        "name": "titleColor",
+        "label": "Title Color",
+        "labelTitle": "Title Color",
+        "disabled": true,
+        "mapping": true,
+        "header": false,
+
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6",
+        "validations": {
+          "string": {
+            "matches": {
+              "regex": "^[a-zA-Z]+$",
+              "message": "No special characters allowed"
+            }
+          }
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+
+      {
+        "type": "color",
+        "name": "titleColorByClient",
+        "label": "",
+        "update": {
+          "reduxPath": "loginInformation.loginConfigInfo.loginConfigurationInformation.titleColorByClient",
+          "formikPath": "LoginInformation"
+        },
+        "value": false,
+        "placement": "col-md-5 col-lg-2 col-12"
+      }
+    ],
+
+    [
+      {
+        "type": "readOnly",
+        "name": "msgColor",
+        "label": "Message Color",
+        "labelTitle": "Message Color",
+        "disabled": true,
+        "mapping": true,
+        "header": false,
+
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6",
+        "validations": {
+          "string": {
+            "matches": {
+              "regex": "^[a-zA-Z]+$",
+              "message": "No special characters allowed"
+            }
+          }
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+
+      {
+        "type": "color",
+        "name": "msgColorByClient",
+        "label": "",
+        "update": {
+          "reduxPath": "loginInformation.loginConfigInfo.loginConfigurationInformation.msgColorByClient",
+          "formikPath": "LoginInformation"
+        },
+        "value": false,
+        "placement": "col-md-5 col-lg-2 col-12"
+      }
+    ],
+
+    [
+      {
+        "type": "readOnly",
+        "name": "fileByClient",
+        "label": "Logo upload (recommend size 78x40 px)",
+        "labelTitle": "Logo upload (recommend size 78x40 px)",
+        "disabled": true,
+        "mapping": true,
+        "header": false,
+
+        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6",
+        "validations": {
+          "string": {
+            "matches": {
+              "regex": "^[a-zA-Z]+$",
+              "message": "No special characters allowed"
+            }
+          }
+        },
+        "containerClassName": "col-12",
+        "contentClassName": "col-12",
+        "styleClass": ""
+      },
+
+      {
+        "type": "fileUpload",
+        "name": "fileByClient",
+        "label": "",
+        "showFileName": true,
+        "update": {
+          "reduxPath": "loginInformation.loginConfigInfo.loginConfigurationInformation.fileByClient",
+          "formikPath": "LoginInformation"
+        },
+        "value": false,
+        "placement": "col-md-5 col-lg-2 col-12"
+      }
+    ]
+  ]
+}

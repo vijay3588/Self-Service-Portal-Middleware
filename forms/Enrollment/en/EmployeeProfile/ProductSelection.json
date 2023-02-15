@@ -20,7 +20,7 @@
           "checkboxValue": false,
           "checkboxName": "productAccident",
           "additionalCheck":true,
-          "modalName": "watchVideoDependant",
+          "modalName": "videoProductSelection",
           "headerClass": "col-9 pt-1",
           "urlIcon": ["icon_watch_video.png", "icon_download_brochure.png"],
           "listClass": "col-12",
@@ -32,8 +32,9 @@
     ],
     "modals": [
       {
-        "modalName": "watchVideoDependant",
-        "title": "Sample Video",
+        "modalName": "videoProductSelection",
+        "title": "Product Video",
+        "productSelection":true,
         "modalElements": [
           [
             [
@@ -41,6 +42,7 @@
                 "type": "video",
                 "width": "820",
                 "height": "710",
+               
                 "src": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
                 "alt": "",
                 "id": "video1"
@@ -63,7 +65,7 @@
         "value": "Your eligible products for open enrollment 2023 are listed below.",
         "placement": "col-md-12",
         "contentClassName": "readonly_label_header py-3 px-4",
-        "containerClassName": " col-12 px-3",
+        "containerClassName": " col-12 px-4 ",
         "display": "inline-block"
       }
     ],
@@ -75,7 +77,7 @@
         "additionalCheck":true,
         "label": "Select All Products",
         "placement": "col-lg-6 col-sm-6 ",
-        "classNameWrapper": "py-3 px-2"
+        "classNameWrapper": "py-3 px-4 px-lg-3"
       }
     ],
     [

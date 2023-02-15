@@ -1,15 +1,19 @@
-{ 
+{
   "cases": {
     "open-reenrollment": [
       "calendarHeader",
       "daysRemaining",
       "welcomeBanner",
       "welcomeTextContainer",
-      "reviewProfile",
-      "dependents",
-      "productElections",
-      "preConfirmation",
-      "records",
+      "enrollmentStep0",
+      "enrollmentStep1",
+      "enrollmentStep2",
+      "enrollmentStep3",
+      "enrollmentStep4",
+      "enrollmentStep5",
+      "enrollmentStep6",
+      "enrollmentStep7",
+      "enrollmentStep8",
       "listContainerBanner",
       "elegibleBenefits",
       "daysLeft",
@@ -24,11 +28,15 @@
       "daysLeftReview",
       "welcomeBanner",
       "welcomeTextContainer",
-      "reviewProfile",
-      "dependents",
-      "productElections",
-      "preConfirmation",
-      "records",
+      "enrollmentStep0",
+      "enrollmentStep1",
+      "enrollmentStep2",
+      "enrollmentStep3",
+      "enrollmentStep4",
+      "enrollmentStep5",
+      "enrollmentStep6",
+      "enrollmentStep7",
+      "enrollmentStep8",
       "listContainerBanner",
       "enrolledBenefits",
       "reviewBenefitsElection",
@@ -43,11 +51,15 @@
       "daysRemaining",
       "welcomeBanner",
       "welcomeTextContainer",
-      "reviewProfile",
-      "dependents",
-      "productElections",
-      "preConfirmation",
-      "records",
+      "enrollmentStep0",
+      "enrollmentStep1",
+      "enrollmentStep2",
+      "enrollmentStep3",
+      "enrollmentStep4",
+      "enrollmentStep5",
+      "enrollmentStep6",
+      "enrollmentStep7",
+      "enrollmentStep8",
       "listContainerBanner",
       "elegibleBenefits",
       "daysLeft",
@@ -58,11 +70,15 @@
     "editNewEnrollmentDuringOE": [
       "welcomeBanner",
       "welcomeTextContainer",
-      "reviewProfile",
-      "dependents",
-      "productElections",
-      "preConfirmation",
-      "records",
+      "enrollmentStep0",
+      "enrollmentStep1",
+      "enrollmentStep2",
+      "enrollmentStep3",
+      "enrollmentStep4",
+      "enrollmentStep5",
+      "enrollmentStep6",
+      "enrollmentStep7",
+      "enrollmentStep8",
       "listContainerBanner",
       "currentBenefits",
       "reviewCurrentBenefits",
@@ -76,11 +92,15 @@
       "newHireDaysRemaining",
       "welcomeBanner",
       "welcomeTextContainer",
-      "reviewProfile",
-      "dependents",
-      "productElections",
-      "preConfirmation",
-      "records",
+      "enrollmentStep0",
+      "enrollmentStep1",
+      "enrollmentStep2",
+      "enrollmentStep3",
+      "enrollmentStep4",
+      "enrollmentStep5",
+      "enrollmentStep6",
+      "enrollmentStep7",
+      "enrollmentStep8",
       "listContainerBanner",
       "newHireEnrollmentCurrent",
       "daysLeftNewHire",
@@ -94,11 +114,15 @@
       "newHireDaysRemaining",
       "welcomeBanner",
       "welcomeTextContainer",
-      "reviewProfile",
-      "dependents",
-      "productElections",
-      "preConfirmation",
-      "records",
+      "enrollmentStep0",
+      "enrollmentStep1",
+      "enrollmentStep2",
+      "enrollmentStep3",
+      "enrollmentStep4",
+      "enrollmentStep5",
+      "enrollmentStep6",
+      "enrollmentStep7",
+      "enrollmentStep8",
       "listContainerBanner",
       "newHireEnrollmentCurrent",
       "daysLeftNewHire",
@@ -235,31 +259,31 @@
         "listClassName": "px-0 my-0",
         "listElements": [
           {
-            "id": "reviewProfile",
+            "id": "enrollmentStep0",
             "text": "1. Review your profile",
             "className": "",
             "style": {}
           },
           {
-            "id": "dependents",
+            "id": "enrollmentStep1",
             "text": "2. Add/Update dependents",
             "className": "",
             "style": {}
           },
           {
-            "id": "productElections",
+            "id": "enrollmentStep2",
             "text": "3. Make your product elections and select beneficiaries",
             "className": "",
             "style": {}
           },
           {
-            "id": "preConfirmation",
+            "id": "enrollmentStep3",
             "text": "4. Review the pre-confirmation page and make edits if necessary",
             "className": "",
             "style": {}
           },
           {
-            "id": "records",
+            "id": "enrollmentStep4",
             "text": "5. Once confirmed, make sure you print your confirmation statement and retain a copy for your records",
             "className": "",
             "style": {}
@@ -744,8 +768,6 @@
                   }
                 ]
               }
-            
-              
             ],
             "label": "Get Started",
             "apiCall": true,
@@ -898,7 +920,7 @@
                             "subtitleStyle": {
                               "fontFamily": "NotoSansLight"
                             },
-                            "subtitle":  "Employee + Spouse",
+                            "subtitle": "Employee + Spouse",
                             "badgeStyle": {
                               "color": "#002C77",
                               "backgroundColor": "#C7EDFF",
@@ -935,7 +957,7 @@
                             "subtitleStyle": {
                               "fontFamily": "NotoSansLight"
                             },
-                            "subtitle":  "Value - $20,000.00",
+                            "subtitle": "Value - $20,000.00",
                             "badgeStyle": {
                               "color": "#002C77",
                               "backgroundColor": "#C7EDFF",
@@ -1051,6 +1073,7 @@
         },
         {
           "id": "lifeEventPanel",
+          "name": "lifeEventPanel",
           "hasContainer": false,
           "containerClassName": "",
           "cardElements": [
@@ -1063,6 +1086,7 @@
                   "height": "100%"
                 }
               },
+
               "panelHeader": {
                 "config": {
                   "style": {

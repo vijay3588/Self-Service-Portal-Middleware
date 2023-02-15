@@ -1,0 +1,146 @@
+{"tables": [
+    {
+      "tableId": "dependentCoverageTable",
+      "isMultiple": true,
+      "dataKey": "dependentsCoverageInfo",
+      "selectionHeader": "",
+      "hasActions": false,
+      "hasRadioButton": true,
+
+      "hasSelectOption": true,
+      "hasWaiveCoverage": true,
+      "mobileActionsHeader": "",
+      "tableData": "dependentsCoverageTable",
+      "actionsStyle": {
+        "backgroundColor": "#0065AC",
+        "color": "#FFFFFF"
+      },
+      "multiConfig": {
+        "maxAdds": 3,
+        "tableHeaderStyle": {
+          "backgroundColor": "#0065AC"
+        },
+        "tableHeader": [
+        
+          {
+            "value": "Coverage Level",
+            "id": "coverageLevel",
+            "mobileClassName": "col-4",
+            "config": {
+              "className": "offset-0 col-5",
+              "style": {
+                "backgroundColor": "#0065AC",
+                "color": "#FFFFFF",
+                "text-transform":"uppercase"
+              }
+            }
+          },
+          {
+            "value": "Plan Type",
+            "id": "planType",
+            "mobileClassName": "col-4",
+            "config": {
+              "mobileClassName": "col-4",
+              "className": "col-2",
+              "style": {
+                "backgroundColor": "#0065AC",
+                "color": "#FFFFFF",
+                "text-transform":"uppercase"
+              }
+            }
+          },
+          {
+            "value": "Type of Coverage",
+            "id": "typeOfCoverage",
+            "mobileClassName": "col-5",
+            "config": {
+              "mobileClassName": "col-5",
+              "className": "col-2",
+              "style": {
+                "backgroundColor": "#0065AC",
+                "color": "#FFFFFF",
+                "text-transform":"uppercase"
+              }
+            }
+          },
+          {
+            "value": "Cost per pay period",
+            "id": "costPerPayPeriod",
+            "mobileClassName": "col-6",
+            "config": {
+              "className": "col-5 text-right",
+              "style": {
+                "backgroundColor": "#0065AC",
+                "color": "#FFFFFF",
+                "fontFamily": "NotoSansSemiBold",
+                "fontSize": "0.875rem",
+                "text-transform":"uppercase"
+              }
+            }
+          }
+        ],
+        "tableRow": [
+        
+          {
+            "value": "`${data.coverageLevel ? `${data.coverageLevel} ` : ''} `",
+            "type": "expression",
+            "id": "coverageLevel"
+          },
+          {
+            "value": "`${data.planType ? `${data.planType}` : ''}`",
+            "type": "expression",
+            "id": "planType"
+          },
+          {
+            "value": "`${data.typeOfCoverage ? `${data.typeOfCoverage}` : ''}`",
+            "type": "expression",
+            "id": "typeOfCoverage"
+          },
+          {
+            "value": "`${data.costPerPayPeriod ? `${data.costPerPayPeriod}` : ''}`",
+            "type": "expression",
+            "id": "costPerPayPeriod"
+          }
+        ]
+      }
+    }
+  ],
+  "sectionPanels": {
+    "panel": [0],
+    "sections": [
+      {
+        "noGroupStart": 0,
+        "noGroupEnd": 0
+      }
+    ]
+  },
+  "elements": [[
+    
+        {
+            "type": "table",
+            "tableId": "dependentCoverageTable",
+            "tableData": "dependentsCoverageTable",
+            "hidden": false,
+            "placement": "col-md-12 px-0",
+            "className": "col-md-12 d-none d-md-block d-lg-block d-xl-block",
+            "mobileClassName": "col-md-12 d-sm-block d-xs-block d-md-none d-lg-none d-xl-none px-0",
+            "columns": [
+              "coverageLevel",
+              "planType",
+              "typeOfCoverage",
+              "costPerPayPeriod"
+            ],
+            "mobileColumns": ["coverageLevel", "costPerPayPeriod"],
+            "mobilePanel": ["planType", "typeOfCoverage"],
+            "tableDataKeys": ["coverageLevel", ""]
+          },{
+            "type":"text",
+            "value":""
+          }
+  ]
+    ]
+    
+
+
+
+}

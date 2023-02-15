@@ -22,6 +22,8 @@
                 "name": "securityCodeNote",
                 "label": "stickyNote",
                 "notNumbered": true,
+                "color":"#F0FAFF",
+                "borderColor":"#9FE0FF",
                 "imageForEmail": true,
                 "hideLabel": true,
                 "validations": {},
@@ -80,7 +82,7 @@
                     },
                     {
                         "value": "cMarriage",
-                        "text": "Marriage or New domestice partner"
+                        "text": "Marriage or New domestic partner"
                     },
                     {
                         "value": "cDependent",
@@ -109,8 +111,8 @@
                     },
                     "date": {
                         "required": "This field is required",
-                        "min": {"limit": -30, "unit": "d", "message": "The enrollment window for this life event has expired." },
-                        "max": {"limit": 0, "unit": "d", "message": "The enrollment window for this life event has expired." }
+                        "min": {"limit": -30, "unit": "d", "message": "Based on the date entered, you are not eligible to process this event at the time" },
+                        "max": {"limit": 0, "unit": "d", "message": "Based on the date entered, you are not eligible to process this event at the time" }
                       }
 
                 }

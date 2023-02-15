@@ -102,6 +102,7 @@
           "show": true
         },
         "type": "stickyNote",
+        "color":"#F0FAFF",
         "name": "securityCodeNote",
         "label": "securityCodeNote",
         "hideLabel": true,

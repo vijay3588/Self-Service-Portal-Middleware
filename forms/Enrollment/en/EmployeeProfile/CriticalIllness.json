@@ -1,0 +1,1792 @@
+{
+  "tables": [
+    {
+      "tableId": "dependentCoverageTable",
+      "isMultiple": true,
+      "dataKey": "dependentsCoverageInfo",
+      "selectionHeader": "",
+      "hasActions": false,
+      "hasRadioButton": true,
+
+      "hasSelectOption": true,
+      "hasWaiveCoverage": true,
+      "mobileActionsHeader": "",
+      "tableData": "dependentsCoverageTable",
+      "actionsStyle": {
+        "backgroundColor": "#0065AC",
+        "color": "#FFFFFF"
+      },
+      "multiConfig": {
+        "maxAdds": 3,
+        "tableHeaderStyle": {
+          "backgroundColor": "#0065AC"
+        },
+        "tableHeader": [
+          {
+            "value": "",
+            "id": "sno",
+            "config": {
+              "className": "col-1",
+              "style": {
+                "backgroundColor": "#0065AC",
+                "color": "#FFFFFF"
+              }
+            }
+          },
+          {
+            "value": "COVERAGE LEVEL",
+            "id": "coverageLevel",
+            "config": {
+              "className": "offset-1 col-3 col-lg-5 col-md-5",
+              "style": {
+                "backgroundColor": "#0065AC",
+                "color": "#FFFFFF"
+              }
+            }
+          },
+        
+          {
+            "value": "COVERAGE AMOUNT",
+            "id": "coverageAmount",
+            "config": {
+              "className": "col-4 col-lg-7 col-md-7",
+              "style": {
+                "backgroundColor": "#0065AC",
+                "color": "#FFFFFF"
+              }
+            }
+          },
+          {
+            "value": "COST PER PAY PERIOD",
+            "id": "costPerPayPeriod",
+            "config": {
+              "className": "col-4 col-lg-3 col-md-3",
+              "style": {
+                "backgroundColor": "#0065AC",
+                "color": "#FFFFFF",
+                "fontFamily": "NotoSansSemiBold",
+                "fontSize": "0.875rem"
+              }
+            }
+          }
+        ],
+        "tableRow": [
+          {
+            "value": "",
+            "type": "",
+            "id": "sno"
+          },
+          {
+            "value": "`${data.coverageLevel ? `${data.coverageLevel} ` : ''} `",
+            "type": "expression",
+            "id": "coverageLevel"
+          },
+          {
+            "value": "`${data.coverageAmount ? `${data.coverageAmount}` : ''}`",
+            "type": "expression",
+            "id": "coverageAmount"
+          },
+        
+          {
+            "value": "`${data.costPerPayPeriod ? `${data.costPerPayPeriod}` : ''}`",
+            "type": "expression",
+            "id": "costPerPayPeriod"
+          }
+        ]
+      }
+    }
+  ],
+
+  "sectionPanels": {
+    "panel": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],
+    "sections": [
+      {
+        "noGroupStart": 0,
+        "noGroupEnd": 18
+      }
+    ]
+  },
+  "elements": [
+    [
+      {
+        "type": "readOnly",
+        "name": "accidentInsurance",
+        "label": "accidentInsurance",
+        "hideLabel": true,
+        "validations": {},
+        "value": "Critical Illness",
+        "placement": "col-3 col-md-6  col-lg-6",
+        "contentClassName": " px-3 py-3",
+        "containerClassName": " col-12 px-3",
+        "display": "inline-block",
+        "style": {
+          "fontSize": "2rem",
+          "color": "#3B3B3B",
+          "fontFamily": "MMCDisplayRegular"
+        }
+      },
+      {
+        "type": "image",
+        "name": "carrierLogo",
+        "label": "",
+        "value": "",
+        "hideLabel": true,
+        "outerDiv": true,
+        "placement": "col-9 col-md-6 col-lg-6 py-3 mt-5 mt-lg-0 mt-md-0",
+        "className": "line-class",
+        "filename": "met-life.png"
+      }
+    ],
+    [
+      {
+        "type": "line",
+        "name": "optionsLieBreak",
+        "label": "",
+        "value": "",
+        "hideLabel": true,
+        "outerDiv": true,
+        "placement": "col-md-12",
+        "className": "line-class"
+      }
+    ],
+
+    [
+      {
+        "displayConfig": {
+          "field": "hideDescription",
+          "show": true,
+          "renderElements": {
+            "productDescription": true
+          },
+          "valueUpdate": {
+            "hideDescription": false,
+            "hideTableCoverage": false
+          }
+        },
+        "type": "collapse",
+        "name": "productDescription",
+        "value": "sdfdsfdsfsdfsdf dsfsdf dsfsdf dsfsdfds sdfsdfsdfdsf",
+        "className": "dropdown-item",
+        "notMenu": true,
+        "video": true,
+        "documents":true,
+        "linksToDownload":true,
+        "showFinalDiv":true,
+        "modalName": "videoCoverageSelection",
+        "pdfURL": "https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf1_12mb_6pages.pdf",
+        "title": "Product Description",
+
+        "subOptions": [
+          {
+            "className": "dropdown-item",
+            "to": "#",
+            "text": "Change Password",
+            "isSubOptions": true,
+            "paddingLeft": "2rem"
+          },
+          {
+            "className": "dropdown-item",
+            "to": "#",
+            "text": "Change MFA Contact",
+            "isSubOptions": true,
+            "paddingLeft": "2rem"
+          }
+        ],
+        "link": "",
+        "upArrow": "sm-arrow-up.svg",
+        "downArrow": "arrow-down.svg",
+        "content": [
+          {
+            "title": "What is Critical Illness Insurance?",
+            "content": "",
+            "hasTopPadding": true
+          },
+          {
+            "title": "",
+            "content": "Recovering from a serious illness brings expenses besides medical costs that can add up. Critical illness insurance pays you a lump sum you can use for whatever you wish."
+          },
+          {
+            "title": "What Does Aflac Critical Illness Insurance Offer?",
+            "content": "",
+            "hasTopPadding": true
+          },
+          {
+            "title": "",
+            "content": "1. Benefits are paid directly to you unless otherwise assigned."
+          },
+          {
+            "title": "",
+            "content": "2. Coverage is available for you your spouse, and dependent children."
+          },
+          {
+            "title": "",
+            "content": "3. Coverage is portable (with certain stipulations). That means you can take it with you if you change jobs or retire."
+          },
+          {
+            "title": "",
+            "content": "4. If you have a dependent child(ren), your child(ren) will be covered for 50% of the benefit amount you choose with no extra cost.",
+            "hasTopPadding": true
+          }
+        ],
+        "panelLinks": [
+          {
+            "text": "Critical Illness Plan Summary",
+            "url": "https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf1_12mb_6pages.pdf"
+          },
+          {
+            "text": "Link to Form1",
+            "url": "https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf1_12mb_6pages.pdf"
+          },
+          {
+            "text": "Link to Form2",
+            "url": "https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf1_12mb_6pages.pdf"
+          }
+        ]
+      }
+    ],
+
+    [
+      {
+        "displayConfig": {
+          "field": "hideDescription",
+          "show": true,
+          "renderElements": {
+            "productDescription": true
+          },
+          "valueUpdate": {
+            "hideDescription": false,
+            "hideTableCoverage": false
+          }
+        },
+        "type": "readOnly",
+        "name": "Information",
+        "label": "Information",
+        "hideLabel": true,
+        "validations": {},
+        "value": "Let’s check your eligibility.",
+        "placement": " col-md-12 ",
+        "contentClassName": " py-3  mx-xl-2 mx-md-2 mx-1 px-xl-4 px-md-4 px-3",
+        "containerClassName": " col-12 px-0 ",
+        "display": "inline-block",
+        "style": {
+          "fontSize": "1rem",
+          "color": "#000000",
+          "fontFamily": "NotoSansSemiBold"
+        }
+      }
+    ],
+
+    [
+      {
+        "displayConfig": {
+          "field": "hideDescription",
+          "show": true,
+          "renderElements": {
+            "productDescription": true
+          },
+          "valueUpdate": {
+            "hideDescription": false,
+            "hideTableCoverage": false
+          }
+        },
+        "type": "readOnly",
+        "name": "Information2",
+        "label": "Information2",
+        "hideLabel": true,
+        "validations": {},
+        "value": "Please answer any required eligibility questions that may be listed below. Click the arrow beside an insured name to expand or collapse the section.",
+        "placement": " col-md-12 ",
+        "contentClassName": " py-3  mx-xl-2 mx-md-2 mx-1 px-xl-4 px-md-4 px-3",
+        "containerClassName": " col-12 px-0 ",
+        "display": "inline-block",
+        "style": {
+          "fontSize": "0.875rem",
+          "color": "#000000",
+          "fontFamily": "NotoSansRegular"
+        }
+      }
+    ],
+
+    [
+      {
+        "displayConfig": {
+          "field": "hideDescription",
+          "show": true,
+          "renderElements": {
+            "productDescription": true
+          },
+          "valueUpdate": {
+            "hideDescription": false,
+            "hideTableCoverage": false
+          }
+        },
+        "id": 0,
+        "type": "dependentCollapse",
+        "value": "",
+        "label": "Information3",
+        "name": "Information3",
+        "placement": " col-12 pl-xl-2 pl-md-2 mx-xl-4 mx-md-4 pr-xl-5 pr-md-5 pl-0  ml-1 mr-0 pr-2",
+        "dependents": [
+          {
+            "id": 0,
+            "type": "readOnly",
+            "hideLabel": true,
+            "validations": {},
+            "value": "",
+            "contentClassName": " py-3 px-3",
+            "containerClassName": " col-12 px-3",
+            "insideSpan": true,
+            "content": "Ann Barret",
+            "labelClassName": " pt-3 pb-0 mb-0 ",
+            "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+            "name": "AnnBarret",
+            "label": "Ann Barret",
+            "dependentId": 0,
+            "dependentName": "Ann Barret",
+            "description": "Employee",
+            "nameAndRelation": "Ann Barret  (Employee)",
+            "age": 30,
+            "eligibleForCoverage": null,
+            "reasonForDeny": null,
+            "reasonForDenyStyle": {
+              "fontSize": "0.875rem",
+              "color": "#C53532",
+              "fontFamily": "NotoSansMedium",
+              "background": "#FCFCFC"
+            },
+            "filenameDown1": "InsuredIconArrowDown.png",
+            "filenameUp1": "sm-arrow-up.svg",
+            "filenameDown": "arrow-down.svg",
+            "filenameUp": "sm-arrow-up.svg",
+            "placement1": "col-md-12",
+            "contentClassName1": " px-3 py-3",
+            "containerClassName1": " col-12 px-3",
+            "display": "inline-block",
+            "style": {
+              "fontSize": "0.875rem",
+              "color": "#202020",
+              "fontFamily": "NotoSansRegular",
+              "background": "#FCFCFC"
+            },
+            "noOfAnsweredQuestions": 0,
+            "answeredAllQuestions": false,
+            "noOfAnsweredQuestionsStyle": {
+              "fontSize": "0.875rem",
+              "color": "#000000",
+              "fontFamily": "NotoSansMedium"
+            },
+            "questionsAnswers": [
+              {
+                "question": {
+                  "id": 0,
+                  "type": "readOnly",
+
+                  "hideLabel": true,
+                  "validations": {},
+                  "value": "",
+                  "contentClassName": " py-3 px-3",
+                  "containerClassName": " col-12 px-3",
+                  "insideSpan": true,
+                  "nameAndRelation": "Are you currently covered by at least major medical insurance or at least basic hospital and basic medical insurance?",
+                  "labelClassName": " pt-3 pb-0 mb-0 ",
+                  "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+                  "display": "inline-block",
+                  "style": {
+                    "fontSize": "0.875rem",
+                    "color": "#202020",
+                    "fontFamily": "NotoSansRegular"
+                  },
+                  "label": "Are you currently covered by at least major medical insurance or at least basic hospital and basic medical insurance?",
+                  "question": "Are you currently covered by at least major medical insurance or at least basic hospital and basic medical insurance?",
+                  "answered": ""
+                },
+                "devider": {
+                  "type": "readOnly",
+                  "name": "EmailBar",
+                  "label": "EmailBar",
+                  "hideLabel": true,
+                  "validations": {},
+                  "responseFrom": "",
+                  "value": "",
+                  "borderBottomColorr": "#DADADA",
+                  "borderBottomColor": "blue",
+                  "borderBottomWidth": 1,
+                  "marginLeft": 4,
+                  "marginRight": 5,
+                  "placement": "col-md-12 ",
+                  "content": "",
+                  "flex": 1,
+                  "borderBottom": "1px solid #000",
+                  "containerClassName": " col-11  col-xl-12 border-top my-3 mx-xl-0 "
+                },
+                "answers": {
+                  "type": "radioButtonGroup",
+                  "id": "answerOptions01",
+                  "name": "answerOptions01",
+                  "rearSector": "",
+                  "label": " ",
+                  "hideLabel": true,
+                  "placement": "col-md-12 mb-2  ",
+                  "validations1": {},
+                  "isRadio": true,
+                  "isAnswerRadio": true,
+                  "value": "",
+                  "inputs": [
+                    {
+                      "label": "Yes",
+                      "value": "Yes",
+                      "id": "Yes",
+                      "questionId": 0,
+                      "index": 0,
+                      "isAnswerRadio": true,
+                      "name": "00Yes",
+                      "inputIndex": 0,
+                      "selected": false
+                    },
+                    {
+                      "label": "No",
+                      "value": "No",
+                      "id": "No",
+                      "questionId": 0,
+                      "index": 0,
+                      "isAnswerRadio": true,
+                      "name": "00No",
+                      "inputIndex": 1,
+                      "selected": false
+                    }
+                  ],
+                  "containerClassName": "  col-12 pt-2 pt-xl-0 ",
+                  "radioClassWrapper": "col-3 offset-5 pr-0 mr-0",
+                  "radioAdditionalClasses1": " col-auto ",
+                  "display": "inline-block"
+                },
+                "id": 1
+              },
+              {
+                "question": {
+                  "id": 1,
+                  "type": "readOnly",
+
+                  "hideLabel": true,
+                  "validations": {},
+                  "value": "",
+                  "contentClassName": " py-3 px-3",
+                  "containerClassName": " col-12 px-3",
+                  "insideSpan": true,
+                  "nameAndRelation": "Do you have or are you applying for other accident or sickness coverage?",
+                  "labelClassName": " pt-3 pb-0 mb-0 ",
+                  "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+                  "display": "inline-block",
+                  "style": {
+                    "fontSize": "0.875rem",
+                    "color": "#202020",
+                    "fontFamily": "NotoSansRegular"
+                  },
+                  "question": "Do you have or are you applying for other accident or sickness coverage?",
+                  "answered": ""
+                },
+                "devider": {
+                  "type": "readOnly",
+                  "name": "EmailBar",
+                  "label": "EmailBar",
+                  "hideLabel": true,
+                  "validations": {},
+                  "responseFrom": "",
+                  "value": "",
+                  "borderBottomColorr": "#DADADA",
+                  "borderBottomColor": "blue",
+                  "borderBottomWidth": 1,
+                  "marginLeft": 5,
+                  "marginRight": 5,
+                  "placement": "col-md-12 ",
+                  "content": "",
+                  "flex": 1,
+                  "borderBottom": "1px solid #000",
+                  "containerClassName": " col-11  col-xl-12 border-top my-3 mx-xl-0 "
+                },
+                "answers": {
+                  "type": "radioButtonGroup",
+                  "name": "answerOptions02",
+                  "rearSector": "",
+                  "label": " ",
+                  "hideLabel": true,
+                  "placement": "col-md-12 mb-2  ",
+                  "validations1": {},
+                  "isRadio": true,
+                  "isAnswerRadio": true,
+                  "value": "",
+                  "inputs": [
+                    {
+                      "label": "Yes",
+                      "value": "Yes",
+                      "id": "Yes",
+                      "questionId": 1,
+                      "index": 0,
+                      "isAnswerRadio": true,
+                      "name": "10Yes",
+                      "inputIndex": 0,
+                      "selected": false
+                    },
+                    {
+                      "label": "No",
+                      "value": "No",
+                      "id": "No",
+                      "questionId": 1,
+                      "index": 0,
+                      "isAnswerRadio": true,
+                      "name": "10No",
+                      "inputIndex": 1,
+                      "selected": false
+                    }
+                  ],
+                  "containerClassName": "  col-12 pt-2 pt-xl-0 ",
+                  "radioClassWrapper": "col-3 offset-5 pr-0 mr-0",
+                  "radioAdditionalClasses1": " col-auto ",
+                  "display": "inline-block"
+                },
+                "id": 2
+              },
+              {
+                "question": {
+                  "id": 2,
+                  "type": "readOnly",
+
+                  "hideLabel": true,
+                  "validations": {},
+                  "value": "",
+                  "contentClassName": " py-3 px-3",
+                  "containerClassName": " col-12 px-3",
+                  "insideSpan": true,
+                  "nameAndRelation": "Does the person to be insured have comprehensive health benefits from an insurance policy, an HMO plan, or an employer health benefit plan? Persons without such comprehensive coverage are not eligible for coverage.",
+                  "labelClassName": " pt-3 pb-0 mb-0 ",
+                  "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+                  "display": "inline-block",
+                  "style": {
+                    "fontSize": "0.875rem",
+                    "color": "#202020",
+                    "fontFamily": "NotoSansRegular"
+                  },
+                  "question": "Does the person to be insured have comprehensive health benefits from an insurance policy, an HMO plan, or an employer health benefit plan? Persons without such comprehensive coverage are not eligible for coverage.",
+                  "answered": ""
+                },
+                "devider": {
+                  "type": "readOnly",
+                  "name": "EmailBar",
+                  "label": "EmailBar",
+                  "hideLabel": true,
+                  "validations": {},
+                  "responseFrom": "",
+                  "value": "",
+                  "borderBottomColorr": "#DADADA",
+                  "borderBottomColor": "blue",
+                  "borderBottomWidth": 1,
+                  "marginLeft": 5,
+                  "marginRight": 5,
+                  "placement": "col-md-12 ",
+                  "content": "",
+                  "flex": 1,
+                  "borderBottom": "1px solid #000",
+                  "containerClassName": " col-11  col-xl-12 border-top my-3 mx-xl-0 "
+                },
+                "answers": {
+                  "type": "radioButtonGroup",
+                  "name": "answerOptions03",
+                  "rearSector": "",
+                  "label": " ",
+                  "hideLabel": true,
+                  "placement": "col-md-12 mb-2  ",
+                  "validations1": {},
+                  "isRadio": true,
+                  "isAnswerRadio": true,
+                  "value": "",
+                  "inputs": [
+                    {
+                      "label": "Yes",
+                      "value": "Yes",
+                      "id": "Yes",
+                      "questionId": 2,
+                      "index": 0,
+                      "isAnswerRadio": true,
+                      "name": "20Yes",
+                      "inputIndex": 0,
+                      "selected": false
+                    },
+                    {
+                      "label": "No",
+                      "value": "No",
+                      "id": "No",
+                      "questionId": 2,
+                      "index": 0,
+                      "isAnswerRadio": true,
+                      "name": "20No",
+                      "inputIndex": 1,
+                      "selected": false
+                    }
+                  ],
+                  "containerClassName": "  col-12 pt-2 pt-xl-0 ",
+                  "radioClassWrapper": "col-3 offset-5 pr-0 mr-0",
+                  "radioAdditionalClasses1": " col-auto ",
+                  "display": "inline-block"
+                },
+                "id": 3
+              },
+              {
+                "question": {
+                  "id": 3,
+                  "type": "readOnly",
+                  "hideLabel": true,
+                  "validations": {},
+                  "value": "",
+                  "contentClassName": " py-3 px-3",
+                  "containerClassName": " col-12 px-3",
+                  "insideSpan": true,
+                  "nameAndRelation": "Have you used tobacco or nicotine products, in any form, in last 12 months?",
+                  "labelClassName": " pt-3 pb-0 mb-0 ",
+                  "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+                  "display": "inline-block",
+                  "style": {
+                    "fontSize": "0.875rem",
+                    "color": "#202020",
+                    "fontFamily": "NotoSansRegular"
+                  },
+                  "question": "Have you used tobacco in last 12 months?",
+                  "answered": ""
+                },
+                "answers": {
+                  "type": "radioButtonGroup",
+                  "name": "answerOptions04",
+                  "rearSector": "",
+                  "label": " ",
+                  "hideLabel": true,
+                  "validations1": {},
+                  "isRadio": true,
+                  "isAnswerRadio": true,
+                  "value": "",
+                  "inputs": [
+                    {
+                      "label": "Yes",
+                      "value": "Yes",
+                      "id": "Yes",
+                      "questionId": 3,
+                      "index": 0,
+                      "isAnswerRadio": true,
+                      "name": "30Yes",
+                      "inputIndex": 0,
+                      "selected": false
+                    },
+                    {
+                      "label": "No",
+                      "value": "No",
+                      "id": "No",
+                      "questionId": 3,
+                      "index": 0,
+                      "isAnswerRadio": true,
+                      "name": "30No",
+                      "inputIndex": 1,
+                      "selected": false
+                    }
+                  ],
+                  "containerClassName": "  col-12 pt-2 pt-xl-0 ",
+                  "display": "inline-block",
+                  "labelClassName": " px-4 px-xl-3 pb-2 ",
+                  "placement": "col-md-12 pt-3",
+                  "validations": {
+                    "string": {
+                      "required": "This field is required"
+                    }
+                  },
+                  "radioClassWrapper": "col-3 offset-5 pr-0 mr-0"
+                },
+                "id": 4
+              }
+            ]
+          },
+          {
+            "id": 1,
+            "type": "readOnly",
+            "hideLabel": true,
+            "validations": {},
+            "value": "",
+            "contentClassName": " py-3 px-3",
+            "containerClassName": " col-12 px-3",
+            "insideSpan": true,
+            "content": "John Barret",
+            "labelClassName": " pt-3 pb-0 mb-0 ",
+            "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+            "name": "JohnBarret",
+            "label": "John Barret",
+            "dependentId": 1,
+            "dependentName": "John Barret",
+            "description": "Spouse",
+            "nameAndRelation": "John Barret  (Spouse)",
+            "age": 30,
+            "eligibleForCoverage": null,
+            "reasonForDeny": null,
+            "reasonForDenyStyle": {
+              "fontSize": "0.875rem",
+              "color": "#202020",
+              "fontFamily": "NotoSansRegular",
+              "background": "#FCFCFC"
+            },
+            "filenameDown1": "InsuredIconArrowDown.png",
+            "filenameDown": "arrow-down.svg",
+            "filenameUp": "sm-arrow-up.svg",
+            "noOfAnsweredQuestions": 0,
+            "answeredAllQuestions": false,
+            "noOfAnsweredQuestionsStyle": {
+              "fontSize": "0.875rem",
+              "color": "#000000",
+              "fontFamily": "NotoSansMedium"
+            },
+            "questionsAnswers": [
+              {
+                "question": {
+                  "id": 0,
+                  "type": "readOnly",
+
+                  "hideLabel": true,
+                  "validations": {},
+                  "value": "",
+                  "contentClassName": " py-3 px-3",
+                  "containerClassName": " col-12 px-3",
+                  "insideSpan": true,
+                  "labelClassName": " pt-3 pb-0 mb-0 ",
+                  "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+                  "display": "inline-block",
+                  "style": {
+                    "fontSize": "0.875rem",
+                    "color": "#202020",
+                    "fontFamily": "NotoSansRegular"
+                  },
+
+                  "nameAndRelation": "Are you currently covered by at least major medical insurance or at least basic hospital and basic medical insurance?",
+                  "question": "Are you currently covered by at least major medical insurance or at least basic hospital and basic medical insurance?",
+                  "answered": ""
+                },
+                "devider": {
+                  "type": "readOnly",
+                  "name": "EmailBar",
+                  "label": "EmailBar",
+                  "hideLabel": true,
+                  "validations": {},
+                  "responseFrom": "",
+                  "value": "",
+                  "borderBottomColorr": "#DADADA",
+                  "borderBottomColor": "blue",
+                  "borderBottomWidth": 1,
+                  "marginLeft": 5,
+                  "marginRight": 5,
+                  "placement": "col-md-12 ",
+                  "content": "",
+                  "flex": 1,
+                  "borderBottom": "1px solid #000",
+                  "containerClassName": " col-11  col-xl-12 border-top my-3 mx-xl-0 "
+                },
+                "answers": {
+                  "type": "radioButtonGroup",
+                  "id": "answerOptions11",
+                  "name": "answerOptions01",
+                  "rearSector": "",
+                  "label": " ",
+                  "hideLabel": true,
+                  "placement": "col-md-12 mb-2  ",
+                  "validations1": {},
+                  "isRadio": true,
+                  "isAnswerRadio": true,
+                  "value": "",
+                  "inputs": [
+                    {
+                      "label": "Yes",
+                      "value": "Yes",
+                      "id": "Yes",
+                      "questionId": 0,
+                      "index": 1,
+                      "isAnswerRadio": true,
+                      "name": "01Yes",
+                      "inputIndex": 0,
+                      "selected": false
+                    },
+                    {
+                      "label": "No",
+                      "value": "No",
+                      "id": "No",
+                      "questionId": 0,
+                      "index": 1,
+                      "isAnswerRadio": true,
+                      "name": "01No",
+                      "inputIndex": 1,
+                      "selected": false
+                    }
+                  ],
+                  "containerClassName": "  col-12 pt-2 pt-xl-0 ",
+                  "radioClassWrapper": "col-3 offset-5 pr-0 mr-0",
+                  "radioAdditionalClasses1": " col-auto ",
+                  "display": "inline-block"
+                },
+                "id": 1
+              },
+              {
+                "question": {
+                  "id": 1,
+                  "type": "readOnly",
+                  "hideLabel": true,
+                  "validations": {},
+                  "value": "",
+                  "contentClassName": " py-3 px-3",
+                  "containerClassName": " col-12 px-3",
+                  "insideSpan": true,
+                  "labelClassName": " pt-3 pb-0 mb-0 ",
+                  "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+                  "display": "inline-block",
+                  "style": {
+                    "fontSize": "0.875rem",
+                    "color": "#202020",
+                    "fontFamily": "NotoSansRegular"
+                  },
+
+                  "nameAndRelation": "Do you have or are you applying for other accident or sickness coverage?",
+                  "answered": ""
+                },
+                "devider": {
+                  "type": "readOnly",
+                  "name": "EmailBar",
+                  "label": "EmailBar",
+                  "hideLabel": true,
+                  "validations": {},
+                  "responseFrom": "",
+                  "value": "",
+                  "borderBottomColorr": "#DADADA",
+                  "borderBottomColor": "blue",
+                  "borderBottomWidth": 1,
+                  "marginLeft": 5,
+                  "marginRight": 5,
+                  "placement": "col-md-12 ",
+                  "content": "",
+                  "flex": 1,
+                  "borderBottom": "1px solid #000",
+                  "containerClassName": " col-11  col-xl-12 border-top my-3 mx-xl-0 "
+                },
+                "answers": {
+                  "type": "radioButtonGroup",
+                  "name": "answerOptions12",
+                  "rearSector": "",
+                  "label": " ",
+                  "hideLabel": true,
+                  "placement": "col-md-12 mb-2  ",
+                  "validations1": {},
+                  "isRadio": true,
+                  "isAnswerRadio": true,
+                  "value": "",
+                  "inputs": [
+                    {
+                      "label": "Yes",
+                      "value": "Yes",
+                      "id": "Yes",
+                      "questionId": 1,
+                      "index": 1,
+                      "isAnswerRadio": true,
+                      "name": "11Yes",
+                      "inputIndex": 0,
+                      "selected": false
+                    },
+                    {
+                      "label": "No",
+                      "value": "No",
+                      "id": "No",
+                      "questionId": 1,
+                      "index": 1,
+                      "isAnswerRadio": true,
+                      "name": "11No",
+                      "inputIndex": 1,
+                      "selected": false
+                    }
+                  ],
+                  "containerClassName": "  col-12 pt-2 pt-xl-0 ",
+                  "radioClassWrapper": "col-3 offset-5 pr-0 mr-0",
+                  "radioAdditionalClasses1": " col-auto ",
+                  "display": "inline-block"
+                },
+                "id": 2
+              },
+              {
+                "question": {
+                  "id": 2,
+                  "type": "readOnly",
+                  "hideLabel": true,
+                  "validations": {},
+                  "value": "",
+                  "contentClassName": " py-3 px-3",
+                  "containerClassName": " col-12 px-3",
+                  "insideSpan": true,
+                  "labelClassName": " pt-3 pb-0 mb-0 ",
+                  "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+                  "display": "inline-block",
+                  "style": {
+                    "fontSize": "0.875rem",
+                    "color": "#202020",
+                    "fontFamily": "NotoSansRegular"
+                  },
+
+                  "nameAndRelation": "Does the person to be insured have comprehensive health benefits from an insurance policy, an HMO plan, or an employer health benefit plan? Persons without such comprehensive coverage are not eligible for coverage.",
+                  "answered": ""
+                },
+                "devider": {
+                  "type": "readOnly",
+                  "name": "EmailBar",
+                  "label": "EmailBar",
+                  "hideLabel": true,
+                  "validations": {},
+                  "responseFrom": "",
+                  "value": "",
+                  "borderBottomColorr": "#DADADA",
+                  "borderBottomColor": "blue",
+                  "borderBottomWidth": 1,
+                  "marginLeft": 5,
+                  "marginRight": 5,
+                  "placement": "col-md-12 ",
+                  "content": "",
+                  "flex": 1,
+                  "borderBottom": "1px solid #000",
+                  "containerClassName": " col-11  col-xl-12 border-top my-3 mx-xl-0 "
+                },
+                "answers": {
+                  "type": "radioButtonGroup",
+                  "name": "answerOptions13",
+                  "rearSector": "",
+                  "label": " ",
+                  "hideLabel": true,
+                  "placement": "col-md-12 mb-2  ",
+                  "validations1": {},
+                  "isRadio": true,
+                  "isAnswerRadio": true,
+                  "value": "",
+                  "inputs": [
+                    {
+                      "label": "Yes",
+                      "value": "Yes",
+                      "id": "Yes",
+                      "questionId": 2,
+                      "index": 1,
+                      "isAnswerRadio": true,
+                      "name": "21Yes",
+                      "inputIndex": 0,
+                      "selected": false
+                    },
+                    {
+                      "label": "No",
+                      "value": "No",
+                      "id": "No",
+                      "questionId": 2,
+                      "index": 1,
+                      "isAnswerRadio": true,
+                      "name": "21No",
+                      "inputIndex": 1,
+                      "selected": false
+                    }
+                  ],
+                  "containerClassName": "  col-12 pt-2 pt-xl-0 ",
+                  "radioClassWrapper": "col-3 offset-5 pr-0 mr-0",
+                  "radioAdditionalClasses1": " col-auto ",
+                  "display": "inline-block"
+                },
+                "id": 3
+              },
+              {
+                "question": {
+                  "id": 3,
+                  "type": "readOnly",
+                  "hideLabel": true,
+                  "validations": {},
+                  "value": "",
+                  "contentClassName": " py-3 px-3",
+                  "containerClassName": " col-12 px-3",
+                  "insideSpan": true,
+                  "labelClassName": " pt-3 pb-0 mb-0 ",
+                  "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+                  "display": "inline-block",
+                  "style": {
+                    "fontSize": "0.875rem",
+                    "color": "#202020",
+                    "fontFamily": "NotoSansRegular"
+                  },
+
+                  "nameAndRelation": "Has your spouse used tobacco or nicotine products, in any form, in last 12 months?",
+                  "answered": ""
+                },
+                "answers": {
+                  "type": "radioButtonGroup",
+                  "name": "answerOptions14",
+                  "rearSector": "",
+                  "label": " ",
+                  "hideLabel": true,
+                  "placement": "col-md-12 mb-2  ",
+                  "validations1": {},
+                  "isRadio": true,
+                  "isAnswerRadio": true,
+                  "value": "",
+                  "inputs": [
+                    {
+                      "label": "Yes",
+                      "value": "Yes",
+                      "id": "Yes",
+                      "questionId": 3,
+                      "index": 1,
+                      "isAnswerRadio": true,
+                      "name": "31Yes",
+                      "inputIndex": 0,
+                      "selected": false
+                    },
+                    {
+                      "label": "No",
+                      "value": "No",
+                      "id": "No",
+                      "questionId": 3,
+                      "index": 1,
+                      "isAnswerRadio": true,
+                      "name": "31No",
+                      "inputIndex": 1,
+                      "selected": false
+                    }
+                  ],
+                  "containerClassName": "  col-12 pt-2 pt-xl-0 ",
+                  "radioClassWrapper": "col-3 offset-5 pr-0 mr-0",
+                  "radioAdditionalClasses1": " col-auto ",
+                  "display": "inline-block"
+                },
+                "id": 4
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "type": "readOnly",
+            "hideLabel": true,
+            "validations": {},
+            "value": "",
+            "contentClassName": " py-3 px-3",
+            "containerClassName": " col-12 px-3",
+            "insideSpan": true,
+            "content": "Jonathan Barret",
+            "labelClassName": " pt-3 pb-0 mb-0 ",
+            "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+            "name": "JonathanBarret",
+            "label": "Jonathan Barret",
+            "dependentId": 2,
+            "dependentName": "John Barret",
+            "description": "Parent",
+            "nameAndRelation": "Jonathan Barret  (Parent)",
+            "age": 60,
+            "eligibleForCoverage": null,
+            "reasonForDeny": null,
+            "answeredAllQuestions": false,
+            "reasonForDenyStyle": {
+              "fontSize": "0.875rem",
+              "color": "#202020",
+              "fontFamily": "NotoSansRegular",
+              "background": "#FCFCFC"
+            }
+          },
+          {
+            "id": 3,
+            "type": "readOnly",
+            "hideLabel": true,
+            "validations": {},
+            "value": "",
+            "contentClassName": " py-3 px-3",
+            "containerClassName": " col-12 px-3",
+            "insideSpan": true,
+            "content": "Bruce Barret",
+            "labelClassName": " pt-3 pb-0 mb-0 ",
+            "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+            "name": "BruceBarret",
+            "label": "Bruce Barret",
+            "dependentId": 3,
+            "dependentName": "Bruce Barret",
+            "description": "Child",
+            "nameAndRelation": "Bruce Barret  (Child)",
+            "age": 11,
+            "eligibleForCoverage": null,
+            "reasonForDeny": null,
+            "answeredAllQuestions": false,
+            "reasonForDenyStyle": {
+              "fontSize": "0.875rem",
+              "color": "#202020",
+              "fontFamily": "NotoSansRegular",
+              "background": "#FCFCFC"
+            }
+          },
+          {
+            "id": 4,
+            "type": "readOnly",
+            "hideLabel": true,
+            "validations": {},
+            "value": "",
+            "contentClassName": " py-3 px-3",
+            "containerClassName": " col-12 px-3",
+            "insideSpan": true,
+            "content": "Jane Barret",
+            "labelClassName": " pt-3 pb-0 mb-0 ",
+            "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+            "name": "JaneBarret",
+            "label": "Jane Barret",
+            "dependentId": 4,
+            "dependentName": "Jane Barret",
+            "description": "Child",
+            "nameAndRelation": "Jane Barret  (Child)",
+            "age": 15,
+            "eligibleForCoverage": null,
+            "reasonForDeny": null,
+            "answeredAllQuestions": false,
+            "reasonForDenyStyle": {
+              "fontSize": "0.875rem",
+              "color": "#202020",
+              "fontFamily": "NotoSansRegular",
+              "background": "#FCFCFC"
+            }
+          }
+        ]
+      },
+      {
+        "displayConfig": {
+          "field": "hideDescription",
+          "show": true,
+          "renderElements": {
+            "productDescription": true
+          },
+          "valueUpdate": {
+            "hideDescription": false,
+            "hideTableCoverage": false
+          }
+        },
+        "type": "checkbox",
+        "name": "waiveCoverage",
+        "label": "Waive Coverage",
+        "isForInsuredWaive": true,
+        "style": {
+          "borderBottomRightRadius": "0.25rem",
+          "fontFamily": "NotoSansRegular",
+          "fontSize": "0.875rem",
+          "textAlign": "center",
+          "backgroundColor": "#F4F4F4",
+          "borderColor": "#DADADA",
+          "minHeight": "2.5rem",
+          "paddingTop": "0.5rem"
+        },
+        "placement": "col-12 pr-xl-0 pl-md-2 mx-xl-0 mx-md-4 pr-md-5 ml-xl-2 pr-xl-3 pl-1 pr-1 mx-0 "
+      }
+    ],
+
+    [
+      {
+        "displayConfig": {
+          "field": "hideOptions1",
+          "show": false,
+          "renderElements": {
+            "coverageHeader": true
+          },
+          "valueUpdate": {
+            "hideDescription": true,
+            "hideTableCoverage": false,
+            "hideOptions1": false
+          }
+        },
+        "type": "readOnly",
+        "name": "coverageHeader",
+        "label": "CoverageHeader",
+        "hideLabel": true,
+        "hidden": false,
+        "validations": {},
+        "value": "Select Coverage Option for Employee",
+        "placement": "col-md-12",
+        "contentClassName": " px-3 py-3",
+        "containerClassName": " col-12 px-3",
+        "display": "inline-block",
+        "style": {
+          "fontSize": "1.5rem",
+          "color": "#202020",
+          "fontFamily": "NotoSansRegular"
+        }
+      }
+    ],
+    [
+      {
+        "displayConfig": {
+          "field": "hideOptions1",
+          "show": false,
+          "renderElements": {
+            "dependentCoverageTable": true
+          },
+          "valueUpdate": {
+            "hideDescription": true,
+            "hideTableCoverage": false,
+            "hideOptions1": false
+          }
+        },
+        "type": "table",
+        "tableId": "dependentCoverageTable",
+        "tableData": "dependentsCoverageTable",
+        "hidden": false,
+        "placement": "col-md-12 px-0",
+        "className": "col-md-12 d-none d-md-block d-lg-block d-xl-block",
+        "mobileClassName": "col-md-12 d-sm-block d-xs-block d-md-none d-lg-none d-xl-none px-0",
+        "columns": [
+          "coverageLevel",
+          "coverageAmount",
+          "costPerPayPeriod"
+        ],
+        "mobileColumns": ["coverageLevel", "coverageAmount","costPerPayPeriod"],
+        "tableDataKeys": ["coverageLevel", ""]
+      }
+    ],
+    [
+      {
+        "displayConfig": {
+          "field": "hideOptions1",
+          "show": false,
+          "renderElements": {
+            "Information": true
+          },
+          "valueUpdate": {
+            "hideDescription": true,
+            "hideTableCoverage": false,
+            "hideOptions1": false
+          }
+        },
+
+        "type": "readOnly",
+        "name": "Information",
+        "label": "Information",
+        "hideLabel": true,
+        "shouldShowOnYes": true,
+        "hidden": false,
+        "validations": {},
+        "value": "Policy Replacement Questions",
+        "placement": "col-md-12",
+        "contentClassName": " px-3 py-3",
+        "containerClassName": " col-12 px-3",
+        "display": "inline-block",
+        "style": {
+          "fontSize": "1.5rem",
+          "color": "#202020",
+          "fontFamily": "NotoSansRegular"
+        }
+      }
+    ],
+    [
+      {
+        "displayConfig": {
+          "field": "hideOptions1",
+          "show": false,
+          "renderElements": {
+            "Information2": true
+          },
+          "valueUpdate": {
+            "hideDescription": true,
+            "hideTableCoverage": false,
+            "hideOptions1": false
+          }
+        },
+        "type": "readOnly",
+        "name": "Information2",
+        "label": "Information2",
+        "hideLabel": true,
+        "shouldShowOnYes": true,
+        "hidden": false,
+        "validations": {},
+        "value": "Are you currently covered under, or does this coverage replace, an Aflac individual policy? ",
+        "placement": "col-md-12",
+        "contentClassName": " px-3",
+        "containerClassName": " col-12 px-3",
+        "display": "inline-block",
+        "style": {
+          "fontSize": "0.875rem",
+          "color": "#000000",
+          "fontFamily": "NotoSansRegular"
+        }
+      }
+    ],
+    [
+      {
+        "displayConfig": {
+          "field": "hideOptions1",
+          "show": false,
+          "renderElements": {
+            "coveragePrefSec": true
+          },
+          "valueUpdate": {
+            "hideDescription": true,
+            "hideTableCoverage": false,
+            "hideOptions1": false
+          }
+        },
+        "type": "radioButtonGroup",
+        "name": "coveragePrefSec",
+        "noNeedAstrik": true,
+        "forRegisteration": true,
+        "shouldShowOnYes": true,
+        "hidden": false,
+        "rearSector": "a",
+        "label": "If this coverage will replace any existing Aflac individual policy, please be aware that it may be in your best interest to maintain your individual guaranteed-renewable policy via direct bill. I have considered all of my existing health insurance coverage with Aflac and believe this additional coverage is appropriate for my insurance needs. I further understand that I can contact Aflac at 1-800-992-3522 regarding my individual policy and for assistance in evaluating the suitability of my insurance coverage.",
+        "labelClassName": " px-4 px-xl-3 pb-2 ",
+        "placement": "col-md-12 pt-3",
+        "validations": {
+          "string": {
+            "required": "This field is required"
+          }
+        },
+        "isRadio": true,
+        "radioClassWrapper1": "px-0 px-md-1",
+        "radioClassWrapper": "pl-2 px-xl-0 mr-0 custom-control-inline",
+        "inputs": [
+          { "label": "Yes", "value": "Yes" },
+          { "label": "No", "value": "No" }
+        ],
+        "style": {
+          "fontSize": "0.875rem",
+          "color": "#000000",
+          "fontFamily": "NotoSansRegular"
+        }
+      }
+    ],
+    [
+      {
+        "displayConfig": {
+          "field": "hideOptions1",
+          "show": false,
+          "renderElements": {
+            "policyPrefSec": true
+          },
+          "valueUpdate": {
+            "hideDescription": true,
+            "hideTableCoverage": false,
+            "hideOptions1": false
+          }
+        },
+        "type": "radioButtonGroup",
+        "name": "policyPrefSec",
+        "noNeedAstrik": true,
+        "forRegisteration": true,
+        "shouldShowOnYes": true,
+        "hidden": false,
+        "rearSector": "a",
+        "label": "Does this policy replace or change any existing insurance?",
+        "labelClassName": " px-4 px-xl-3 pb-2 ",
+        "placement": "col-md-12 pt-3",
+        "validations": {
+          "string": {
+            "required": "This field is required"
+          }
+        },
+        "isRadio": true,
+        "radioClassWrapper1": "px-0 px-md-1",
+        "radioClassWrapper": "pl-2 px-xl-0 mr-0 custom-control-inline",
+        "inputs": [
+          { "label": "Yes", "value": "Yes" },
+          { "label": "No", "value": "No" }
+        ],
+        "style": {
+          "fontSize": "0.875rem",
+          "color": "#000000",
+          "fontFamily": "NotoSansRegular"
+        }
+      }
+    ],
+    [
+      {
+        "displayConfig": {
+          "field": "hideOptions1",
+          "show": false,
+          "renderElements": {
+            "carrierName": true
+          },
+          "valueUpdate": {
+            "hideDescription": true,
+            "hideTableCoverage": false,
+            "hideOptions1": false
+          }
+        },
+        "type": "text",
+        "name": "carrierName",
+        "shouldShowOnYes": true,
+        "forRegisteration": true,
+        "hidden": false,
+        "rearSector": "code",
+        "label": "Carrier Name",
+        "placeholder": "Enter carrier name",
+        "placement": "col-lg-3 col-md-3 col-6",
+        "classNameWrapper": "",
+        "style": {
+          "fontSize": "0.875rem",
+          "color": "#767676",
+          "fontFamily": "NotoSansRegular"
+        }
+      },
+      {
+        "displayConfig": {
+          "field": "hideOptions1",
+          "show": false,
+          "renderElements": {
+            "policyNumber": true
+          },
+          "valueUpdate": {
+            "hideDescription": true,
+            "hideTableCoverage": false,
+            "hideOptions1": false
+          }
+        },
+        "type": "text",
+        "name": "policyNumber",
+        "shouldShowOnYes": true,
+        "forRegisteration": true,
+        "hidden": false,
+        "rearSector": "code",
+        "label": "Policy Number",
+        "placeholder": "Enter Policy Number",
+        "placement": "col-lg-3 col-md-3 col-6",
+        "classNameWrapper": "",
+        "style": {
+          "fontSize": "0.875rem",
+          "color": "#767676",
+          "fontFamily": "NotoSansRegular"
+        }
+      }
+    ],
+
+    [
+      {
+        "displayConfig": {
+          "field": "hideTableCoverage",
+          "show": false,
+          "renderElements": {
+            "disclosureStatement": true
+          },
+          "valueUpdate": {
+            "hideDescription": false,
+            "hideTableCoverage": true
+          }
+        },
+        "type": "section",
+        "scroll": true,
+        "name": "disclosureStatement",
+        "hidden": false,
+        "value": [
+          "Disclosure Statement Your Critical Illness certificate provides limited benefits - read your certificate carefully. By enrolling for Critical Illness Insurance, I declare that no person proposed for Critical Illness coverage is covered under any Title XIX program (Medicaid or any similarly named program); that all persons to be insured have medical coverage in force that provides benefits for medical treatment, including hospital, surgical and medical expenses; I acknowledge that I have received a Shopper’s Guide to Cancer Insurance; and I have received and read a copy of the outline of coverage or other disclosure document for the group Critical Illness plan. In addition, I have read the enrollment documentation and declare that all information I have given is true and complete to the best of my knowledge and belief; I have read the applicable Fraud Warning(s) provided.",
+          "To view the disclosures, notices, and fraud statements for your state, please open the document below:"
+        
+        ],
+        "link": "https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf1_12mb_6pages.pdf",
+        "linkText": "Critical Illness Privacy Notice Document",
+
+        "placement": "col-md-12 py-0",
+        "validations": {
+          "string": {
+            "required": "This field is required"
+          }
+        }
+      }
+    ],
+    [
+      {
+        "displayConfig": {
+          "field": "hideTableCoverage",
+          "show": false,
+          "renderElements": {
+            "termsAndConditions": true
+          },
+          "valueUpdate": {
+            "hideDescription": false,
+            "hideTableCoverage": true
+          }
+        },
+        "type": "radioButtonGroup",
+        "name": "termsAndConditions",
+        "noNeedAstrik": true,
+        "forRegisteration": true,
+        "rearSector": "a",
+        "label": "Do you agree to the terms and conditions of the disclosure statement?",
+        "labelClassName": " px-4 px-xl-3 pb-2 py-3 ",
+        "placement": "col-md-12 pt-3",
+        "validations": {
+          "string": {
+            "required": "This field is required"
+          }
+        },
+        "isRadio": true,
+        "radioClassWrapper1": "px-0 px-md-1",
+        "radioClassWrapper": "pl-2 px-xl-0 mr-0 custom-control-inline",
+        "inputs": [
+          { "label": "I agree", "value": "Yes" },
+          { "label": "I disagree", "value": "No" }
+        ],
+        "style": {
+          "fontSize": "0.875rem",
+          "color": "#000000",
+          "fontFamily": "NotoSansRegular"
+        }
+      }
+    ],
+    [
+      {
+        "displayConfig": {
+          "field": "hideTableCoverage",
+          "show": false,
+          "renderElements": {
+            "termsAndConditions": true
+          },
+          "valueUpdate": {
+            "hideDescription": false,
+            "hideTableCoverage": true
+          }
+        },
+        "type": "stickyNote",
+        "color": "#FFFAEA",
+        "borderColor": "#FFD55A",
+        "name": "notEligibleWarning",
+        "shouldShowOnYes": true,
+        "label": "notEligibleWarning",
+        "hideLabel": true,
+        "validations": {},
+        "responseFrom": "ContractInformation",
+        "image": "icon-warning.png",
+        "imageForEmail": true,
+        "title": "Important Note",
+        "iconClass": "col-md-auto col-lg-1 col-2  pt-3 pt-lg-1 pt-md-1 ",
+        "headerClass": "col-9 pt-1",
+        "listClass": "col-10  col-lg-11 col-md-10  ",
+        "olClass": "mb-1",
+        "notNumbered": true,
+        "classNameWrapper": "col-12",
+        "valueArray": [
+          "Based on your response, you are not eligible to elect this coverage at this time"
+        ],
+        "valueIn": "seconds",
+
+        "placement": "col-md-12 col-lg-12 py-1 py-md-4 py-lg-4 py-sm-1 pb-3 px-3"
+      }
+    ],
+
+    [
+      {
+        "displayConfig": {
+          "field": "hideDescription",
+          "show": true
+        },
+        "type": "button",
+        "hidden": false,
+        "outline": false,
+        "name": "backProductButton",
+        "id": "backProductButton",
+        "label": "Back",
+        "apiCallURL": ["/getCoverageDetails"],
+        "apiCallArray": true,
+
+        "placement": " col-12 col-md-2 col-lg-2 offset-lg-8 offset-md-8 offset-0",
+        "className": "px-3 py-1 mb-md-3 w-100"
+      },
+
+      {
+        "displayConfig": {
+          "field": "hideDescription",
+          "show": true,
+
+          "valueUpdate": {
+            "hideDescription": true,
+            "hideTableCoverage": false,
+            "hideOptions1": true
+          }
+        },
+        "type": "button",
+        "hidden": false,
+        "outline": false,
+        "name": "continueProductButton",
+        "id": "continueProductButton",
+        "label": "Continue",
+        "apiCallURL": ["/getCoverageDetails"],
+        "apiCallArray": true,
+
+        "placement": " col-12 col-md-2 col-lg-2 py-3 py-lg-0 py-md-0",
+        "className": "px-3 py-1 mb-md-3 w-100"
+      }
+    ],
+    [
+      {
+        "displayConfig": {
+          "field": "hideOptions1",
+          "show": false,
+
+          "renderElements": {
+            "backProductButton": false,
+            "continueTableCoverageButton": false,
+            "policyPrefSec": false,
+            "coveragePrefSec": false,
+            "continueFormButton": true
+          },
+          "valueUpdate": {
+            "hideDescription": false,
+            "hideOptions1": false
+          }
+        },
+
+        "type": "button",
+        "id": "backProductButton1",
+        "hidden": false,
+        "outline": true,
+        "name": "backProductButton1",
+        "rearSector": "",
+        "showElement": true,
+        "label": "Back",
+        "validations": {},
+        "placement": " col-12 col-md-2 col-lg-2 offset-lg-6 offset-md-5 offset-0 ml-md-auto ",
+        "className": "px-3 py-1 mb-md-3 w-100"
+      },
+
+      {
+        "displayConfig": {
+          "field": "hideOptions1",
+          "show": false,
+          "renderElements": {
+            "productDescription": true,
+            "continueTableCoverageButton": true
+          },
+          "valueUpdate": {
+            "hideTableCoverage": true,
+            "hideDescription": true,
+            "hideOptions1": false
+          }
+        },
+
+        "type": "button",
+        "hidden": false,
+        "outline": false,
+        "disabled1": false,
+        "name": "continueTableCoverageButton",
+        "id": "continueTableCoverageButton",
+        "label": "Continue",
+        "apiCallURL": ["/getCoverageDetails"],
+        "apiCallArray": true,
+        "widePlacement": " col-12 col-md-5 col-lg-4 py-3 py-lg-0 py-md-0",
+        "placement": " col-12 col-md-5 col-lg-2 py-3 py-lg-0 py-md-0",
+        "className": "px-3 py-1 mb-md-3 w-100"
+      }
+    ],
+    [
+      {
+        "displayConfig": {
+          "field": "hideTableCoverage",
+          "show": false,
+
+          "valueUpdate": {
+            "hideDescription": true,
+            "hideTableCoverage": false,
+            "hideOptions1": true
+          }
+        },
+
+        "type": "button",
+        "id": "backLastButton",
+        "hidden": false,
+        "outline": true,
+        "name": "backLastButton",
+        "rearSector": "",
+        "showElement": true,
+        "label": "Back",
+        "validations": {},
+        "placement": "col-12 col-md-2 col-lg-2 offset-lg-8 offset-md-8 offset-0 py-3",
+        "className": "px-3 py-1 mb-md-3 w-100"
+      },
+
+      {
+        "displayConfig": {
+          "field": "hideTableCoverage",
+          "show": false
+        },
+
+        "type": "button",
+        "hidden": false,
+        "outline": false,
+        "name": "continueFormButton",
+        "id": "continueFormButton",
+        "label": "Continue",
+        "apiCallURL": ["/getCoverageDetails"],
+        "apiCallArray": true,
+
+        "placement": " col-12 col-md-2 col-lg-2 py-3",
+        "className": "px-3 py-1 mb-md-3 w-100"
+      },
+
+      {
+        "type": "checkbox",
+        "visibility": "hidden",
+
+        "hidden": true,
+        "name": "hideDescription",
+        "label": "HideDescription",
+        "placement": "",
+
+        "defaultValue": false,
+        "value": false,
+
+        "valueType": "bool",
+
+        "rearSector": ""
+      },
+
+      {
+        "type": "checkbox",
+        "visibility": "hidden",
+
+        "hidden": true,
+        "name": "hideTableCoverage",
+        "label": "HideTableCoverage",
+        "placement": "",
+
+        "defaultValue": false,
+        "value": false,
+
+        "valueType": "bool",
+
+        "rearSector": ""
+      },
+
+      {
+        "type": "checkbox",
+        "visibility": "hidden",
+
+        "hidden": true,
+        "name": "hideOptions1",
+        "label": "HideOptions",
+        "placement": "",
+
+        "defaultValue": false,
+        "value": false,
+
+        "valueType": "bool",
+
+        "rearSector": ""
+      }
+    ]
+  ],
+
+  "modals": [
+    {
+      "modalName": "videoCoverageSelection",
+      "title": "Product Video",
+      "productSelection": true,
+      "modalElements": [
+        [
+          [
+            {
+              "type": "video",
+              "width": "820",
+
+              "height": "710",
+              "src": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+              "alt": "",
+              "id": "video1"
+            }
+          ]
+        ]
+      ]
+    }
+  ]
+}

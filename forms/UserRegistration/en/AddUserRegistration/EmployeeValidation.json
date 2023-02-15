@@ -1,8 +1,6 @@
 {
   "triConfig": {
-    "leftCard": {
-  
-    },
+    "leftCard": {},
     "rightCard": {
       "element": [
         "User Registration",
@@ -12,6 +10,7 @@
         "First Name",
         "Last Name",
         "Employee ID",
+        "SSN",
         "Doing Business As ",
         "icon"
       ],
@@ -44,7 +43,6 @@
         "formMandatory": "Fields marked with * are mandatory"
       }
     ],
-
     [
       {
         "type": "panelSideHeader",
@@ -59,12 +57,10 @@
         }
       }
     ],
-
     [
       {
         "type": "text",
         "name": "firstName",
-        "shouldTriggerError": true,
         "config": "border",
         "rearSector": "firstName",
         "label": "First Name",
@@ -86,14 +82,13 @@
           }
         },
 
-        "placement": " col-lg-6 mx-md-1 mx-0 pl-3 pr-2 pr-xl-0 px-xl-3 mx-xl-0 ",
-        "classNameWrapper":"py-3"
+        "placement": "col-lg-6 mx-md-1 mx-0 pl-3 pr-2 pr-xl-0 px-xl-3 mx-xl-0 ",
+        "classNameWrapper": "py-3"
       },
 
       {
         "type": "text",
         "name": "lastName",
-        "shouldTriggerError": true,
         "rearSector": "name",
         "label": "Last Name",
         "placeholder": "Enter Last Name",
@@ -112,19 +107,17 @@
           }
         },
         "placement": "col-lg-6 mx-md-1 mx-0 pl-3 pr-2 pr-xl-0 px-xl-3 mx-xl-0 ",
-        "classNameWrapper":"py-3"
-      }
-    ],
+        "classNameWrapper": "py-3"
+      },
 
-    [
       {
         "type": "text",
         "name": "employeeId",
         "shouldTriggerError": true,
         "rearSector": "employeeId",
         "label": "Employee ID",
+        "labelTitle": "Employee ID",
         "placeholder": "Enter Employee ID",
-
         "validations": {
           "string": {
             "required": "Employee ID is required",
@@ -140,12 +133,33 @@
           }
         },
         "placement": "col-lg-6 mx-md-1 mx-0 pl-3 pr-2 pr-xl-0 px-xl-3 mx-xl-0 ",
-        "classNameWrapper":"py-3"
+        "classNameWrapper": "py-3"
+      },
+
+      {
+        "type": "text",
+        "name": "SSN",
+        "shouldTriggerError": true,
+        "rearSector": "sSN",
+        "label": "SSN",
+        "placeholder": "Enter SSN",
+        "validations": {
+          "string": {
+            "required": "SSN is required",
+            "min": { "limit": 9, "message": "SSN must have 9 digits" },
+            "max": { "limit": 9, "message": "SSN must have 9 digits" },
+            "matches": {
+              "regex": "^[0-9]*$",
+              "message": "SSN must have 9 digits"
+            }
+          }
+        },
+        "placement": "col-lg-6 mx-md-1 mx-0 pl-3 pr-2 pr-xl-0 px-xl-3 mx-xl-0 ",
+        "classNameWrapper": "py-3"
       },
       {
         "type": "date",
         "name": "birthDate",
-        "shouldTriggerError": true,
         "rearSector": "birthDate",
         "label": "Date of Birth",
         "placeholder": "Date of birth",
@@ -170,7 +184,7 @@
           }
         },
         "placement": "col-lg-6 mx-md-1 mx-0 pl-3 pr-2 pr-xl-0 px-xl-3 mx-xl-0 ",
-        "classNameWrapper":"py-3"
+        "classNameWrapper": "py-3"
       }
     ]
   ]

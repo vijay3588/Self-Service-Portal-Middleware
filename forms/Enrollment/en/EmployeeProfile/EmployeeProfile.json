@@ -650,7 +650,22 @@
         },
         "header": false,
         "validations": {
-        
+          "string": {
+            "required": "Personal Phone is required",
+            "min": {
+              "limit": 14,
+
+              "message": "Invalid Mobile Phone Number",
+
+              "color": "red"
+            },
+
+            "matches": {
+              "regex": "^(?=.*?[0-9])(?=.*?[()-]).{14,}$",
+
+              "message": "Invalid Mobile Phone Number"
+            }
+          }
         },
 
         "containerClassName": "col-12",
@@ -676,12 +691,6 @@
         "outerDiv": true,
         "placement": "col-md-3 col-sm-6 col-xs-6 col-6 pt-1",
         "header": false,
-        "validations": {
-          "string": {
-            "required": "Personal email is required",
-            "email": "Please enter valid email address"
-          }
-        },
         "containerClassName": "col-12",
         "contentClassName": "col-12",
         "styleClass": ""
@@ -707,6 +716,7 @@
         "header": false,
         "validations": {
           "string": {
+            "required": "Personal email is required",
             "email": "Please enter valid email address"
           }
         },

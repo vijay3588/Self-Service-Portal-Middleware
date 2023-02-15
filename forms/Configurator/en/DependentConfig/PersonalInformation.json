@@ -34,12 +34,12 @@
       {
         "type": "readOnly",
         "disabled": true,
-        "name": "Toggle Field On/Off",
+        "name": "Check box to toggle field off in display",
         "rearSector": "shortName",
-        "label": "Toggle Field On/Off",
+        "label": "Check box to toggle field off in display",
         "mapping": true,
-        "labelTitle": "Toggle Field On/Off",
-        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "labelTitle": "Check box to toggle field off in display",
+        "placement": "col-md-2 col-sm-6 col-lg-3 col-xs-6 col-6 ",
         "header": false,
         "validations": {
           "string": {}
@@ -99,12 +99,12 @@
           "reduxPath": "employeeInformation.empConfigInfo.dependentConfigInformation.dependentMiddleNameToggle",
           "formikPath": "PersonalInformation"
         },
-        "placement": "col-md-5 col-lg-2 col-12"
+        "placement": "col-md-5 col-lg-3 col-12"
       },
       {
         "type": "checkbox",
         "name": "dependentMiddleNameRequired",
-        "disabled": true,
+        "disabled": false,
         "label": "",
         "update": {
           "reduxPath": "employeeInformation.empConfigInfo.dependentConfigInformation.dependentMiddleNameRequired",
@@ -147,12 +147,12 @@
       {
         "type": "readOnly",
         "disabled": true,
-        "name": "Toggle Field On/Off",
+        "name": "Check box to toggle field off in display",
         "rearSector": "shortName",
-        "label": "Toggle Field On/Off",
+        "label": "Check box to toggle field off in display",
         "mapping": true,
-        "labelTitle": "Toggle Field On/Off",
-        "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
+        "labelTitle": "Check box to toggle field off in display",
+        "placement": "col-md-2 col-sm-6 col-lg-3 col-xs-6 col-6 ",
         "header": false,
         "validations": {
           "string": {}
@@ -207,11 +207,12 @@
           "reduxPath": "employeeInformation.empConfigInfo.dependentConfigInformation.dependentAddressSameAsEmployeeToggle",
           "formikPath": "PersonalInformation"
         },
-        "placement": "col-md-5 col-lg-2 col-12"
+        "placement": "col-md-5 col-lg-3 col-12"
       },
       {
         "type": "checkbox",
         "name": "dependentAddressSameAsEmployeeRequired",
+        "disabled": true,
         "label": "",
         "update": {
           "reduxPath": "employeeInformation.empConfigInfo.dependentConfigInformation.dependentAddressSameAsEmployeeRequired",
@@ -253,7 +254,7 @@
           "reduxPath": "employeeInformation.empConfigInfo.dependentConfigInformation.dependentStreetAddress2Toggle",
           "formikPath": "PersonalInformation"
         },
-        "placement": "col-md-5 col-lg-2 col-12"
+        "placement": "col-md-5 col-lg-3 col-12"
       },
       {
         "type": "checkbox",
@@ -298,7 +299,7 @@
           "reduxPath": "employeeInformation.empConfigInfo.dependentConfigInformation.dependentCountryToggle",
           "formikPath": "PersonalInformation"
         },
-        "placement": "col-md-5 col-lg-2 col-12"
+        "placement": "col-md-5 col-lg-3 col-12"
       },
       {
         "type": "checkbox",

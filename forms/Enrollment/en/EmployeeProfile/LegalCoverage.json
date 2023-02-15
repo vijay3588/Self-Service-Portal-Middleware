@@ -1,0 +1,703 @@
+{
+  "tables": [
+    {
+      "tableId": "dependentCoverageTable",
+      "isMultiple": true,
+      "dataKey": "dependentsCoverageInfo",
+      "selectionHeader": "",
+      "hasActions": false,
+      "hasRadioButton": true,
+
+      "hasSelectOption": true,
+      "hasWaiveCoverage": true,
+      "mobileActionsHeader": "",
+      "tableData": "dependentsCoverageTable",
+      "actionsStyle": {
+        "backgroundColor": "#0065AC",
+        "color": "#FFFFFF"
+      },
+      "multiConfig": {
+        "maxAdds": 3,
+        "tableHeaderStyle": {
+          "backgroundColor": "#0065AC"
+        },
+        "tableHeader": [
+          {
+            "value": "COVERAGE LEVEL",
+            "id": "coverageLevel",
+            "config": {
+              "className": "col-5",
+              "style": {
+                "backgroundColor": "#0065AC",
+                "color": "#FFFFFF",
+                 "white-space": "nowrap"
+              }
+            }
+          },
+
+          {
+            "value": "COST PER PAY PERIOD",
+            "id": "costPerPayPeriod",
+            "config": {
+              "className": "col-7 col-lg-2 col-md-3",
+              "style": {
+                "backgroundColor": "#0065AC",
+                "color": "#FFFFFF",
+                "fontFamily": "NotoSansSemiBold",
+                "fontSize": "0.875rem"
+              }
+            }
+          }
+        ],
+        "tableRow": [
+          {
+            "value": "",
+            "type": "",
+            "id": "sno"
+          },
+          {
+            "value": "`${data.coverageLevel ? `${data.coverageLevel} ` : ''} `",
+            "type": "expression",
+            "id": "coverageLevel"
+          },
+          {
+            "value": "`${data.costPerPayPeriod ? `${data.costPerPayPeriod}` : ''}`",
+            "type": "expression",
+            "id": "costPerPayPeriod"
+          }
+        ]
+      }
+    }
+  ],
+
+  "sectionPanels": {
+    "panel": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+    "sections": [
+      {
+        "noGroupStart": 0,
+        "noGroupEnd": 13
+      }
+    ]
+  },
+  "elements": [
+    [
+      {
+        "type": "readOnly",
+        "name": "accidentInsurance",
+        "label": "accidentInsurance",
+        "hideLabel": true,
+        "validations": {},
+        "value": "Legal",
+        "placement": "col-6 col-md-6  col-lg-6 ",
+        "contentClassName": " px-3 py-3",
+        "containerClassName": " col-12 px-3",
+        "display": "inline-block",
+        "style": {
+          "fontSize": "2rem",
+          "color": "#3B3B3B",
+          "fontFamily": "MMCDisplayRegular"
+        }
+      },
+      {
+        "type": "image",
+        "name": "carrierLogo",
+        "label": "",
+        "value": "",
+        "hideLabel": true,
+        "outerDiv": true,
+        "placement": "col-6 col-md-6 col-lg-6 py-3 ",
+        "className": "line-class",
+        "filename": "aflac-logo.png"
+      }
+    ],
+    [
+      {
+        "type": "line",
+        "name": "optionsLieBreak",
+        "label": "",
+        "value": "",
+        "hideLabel": true,
+        "outerDiv": true,
+        "placement": "col-md-12",
+        "className": "line-class"
+      }
+    ],
+
+    [
+      {
+        "displayConfig": {
+          "field": "hideDescription",
+          "show": true,
+          "renderElements": {
+            "productDescription": true
+          },
+          "valueUpdate": {
+            "hideDescription": false,
+            "hideTableCoverage": false
+          }
+        },
+        "type": "collapse",
+        "name": "productDescription",
+        "value": "sdfdsfdsfsdfsdf dsfsdf dsfsdf dsfsdfds sdfsdfsdfdsf",
+        "className": "dropdown-item",
+        "placement":"col-12",
+        "notMenu": true,
+        "video" : false,
+        "documents":true,
+        "linksToDownload":true,
+        "showFinalDiv":true,
+        "pdfURL": "https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf1_12mb_6pages.pdf",
+        "title": "Product Description",
+
+        "subOptions": [
+          {
+            "className": "dropdown-item",
+            "to": "#",
+            "text": "Change Password",
+            "isSubOptions": true,
+            "paddingLeft": "2rem"
+          },
+          {
+            "className": "dropdown-item",
+            "to": "#",
+            "text": "Change MFA Contact",
+            "isSubOptions": true,
+            "paddingLeft": "2rem"
+          }
+        ],
+        "link": "",
+        "upArrow": "sm-arrow-up.svg",
+        "downArrow": "arrow-down.svg",
+        "content": [
+          {
+            "title": "",
+            "content": " Many individuals fear the cost of legal fees and don’t know to find the right attorney for their needs. The MetLife Legal plan provides you and your eligible family members access to professional legal representation through a panel of network attorneys for issues ranging from consumer protection to family law to wills and estate planning."
+          },
+          {
+            "title": "",
+            "content": " Once enrolled, you will have access to MetLife’s nationwide network of 18,000 pre-qualified attorneys.",
+            "hasTopPadding": true
+          }
+        ],
+        "panelLinks": [
+          {
+            "text": "Accident Insurance Plan Summary",
+            "url": "https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf1_12mb_6pages.pdf"
+          },
+          {
+            "text": "Link to Form1",
+            "url": "https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf1_12mb_6pages.pdf"
+          },
+          {
+            "text": "Link to Form2",
+            "url": "https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf1_12mb_6pages.pdf"
+          }
+        ]
+      }
+    ],
+
+    [
+      {
+        "displayConfig": {
+          "field": "hideDescription",
+          "show": true,
+          "renderElements": {
+            "productDescription": true
+          },
+          "valueUpdate": {
+            "hideDescription": false,
+            "hideTableCoverage": false
+          }
+        },
+        "type": "readOnly",
+        "name": "Information",
+        "label": "Information",
+        "hideLabel": true,
+        "validations": {},
+        "value": "Let’s check your eligibility.",
+        "placement": " col-md-12 ",
+        "contentClassName": " py-3  mx-xl-2 mx-md-2 mx-1 px-xl-4 px-md-4 px-3 ",
+        "containerClassName": " col-12 px-3 px-lg-1 px-md-1 ",
+        "display": "inline-block",
+        "style": {
+          "fontSize": "1rem",
+          "color": "#000000",
+          "fontFamily": "NotoSansSemiBold"
+        }
+      }
+    ],
+
+    [
+      {
+        "displayConfig": {
+          "field": "hideDescription",
+          "show": true,
+          "renderElements": {
+            "productDescription": true
+          },
+          "valueUpdate": {
+            "hideDescription": false,
+            "hideTableCoverage": false
+          }
+        },
+        "type": "readOnly",
+        "name": "Information2",
+        "label": "Information2",
+        "hideLabel": true,
+        "validations": {},
+        "value": "Please answer any required eligibility questions that may be listed below. Click the arrow beside an insured name to expand or collapse the section.",
+        "placement": " col-md-12 ",
+        "contentClassName": " py-3  mx-xl-2 mx-md-2 mx-1 px-xl-4 px-md-4 px-3 px-lg-4 ",
+        "containerClassName": " col-12 px-3 px-lg-1 px-md-1 ",
+        "display": "inline-block",
+        "style": {
+          "fontSize": "0.875rem",
+          "color": "#000000",
+          "fontFamily": "NotoSansRegular"
+        }
+      }
+    ],
+
+    [
+      {
+        "displayConfig": {
+          "field": "hideDescription",
+          "show": true,
+          "renderElements": {
+            "productDescription": true
+          },
+          "valueUpdate": {
+            "hideDescription": false,
+            "hideTableCoverage": false
+          }
+        },
+
+        "id": 0,
+        "type": "dependentCollapse",
+        "value": "",
+        "label": "Information3",
+        "name": "Information3",
+        "placement": " col-12 pl-xl-2 pl-md-2 pl-lg-0 ml-xl-0 ml-lg-0 ml-md-2 pr-xl-2 pr-md-2 pr-lg-0 pl-0 ml-1 mr-0 pr-xl-0 pr-lg-0 pr-2 ",
+        "dependents": [
+          {
+            "id": 0,
+            "type": "readOnly",
+            "hideLabel": true,
+            "validations": {},
+            "value": "",
+            "contentClassName": " py-3 px-3",
+            "containerClassName": " col-12 px-3",
+            "insideSpan": true,
+            "content": "Ann Barret",
+            "labelClassName": " pt-3 pb-0 mb-0 ",
+            "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+            "name": "AnnBarret",
+            "label": "Ann Barret",
+            "dependentId": 0,
+            "dependentName": "Ann Barret",
+            "description": "Employee",
+            "nameAndRelation": "Ann Barret  (Employee)",
+            "age": 30,
+            "eligibleForCoverage": null,
+            "reasonForDeny": null,
+            "reasonForDenyStyle": {
+              "fontSize": "0.875rem",
+              "color": "#202020",
+              "fontFamily": "NotoSansRegular",
+              "background": "#FCFCFC"
+            },
+            "filenameDown": "InsuredIconArrowDown.png",
+            "filenameUp": "sm-arrow-up.svg",
+            "placement1": "col-md-12",
+            "contentClassName1": " px-3 py-3",
+            "containerClassName1": " col-12 px-3",
+            "display": "inline-block",
+            "style": {
+              "fontSize": "0.875rem",
+              "color": "#202020",
+              "fontFamily": "NotoSansRegular",
+              "background": "#FCFCFC"
+            },
+            "noOfAnsweredQuestions": 0,
+            "answeredAllQuestions": false,
+            "noOfAnsweredQuestionsStyle": {
+              "fontSize": "0.875rem",
+              "color": "#000000",
+              "fontFamily": "NotoSansMedium"
+            }
+          },
+          {
+            "id": 1,
+            "type": "readOnly",
+            "hideLabel": true,
+            "validations": {},
+            "value": "",
+            "contentClassName": " py-3 px-3",
+            "containerClassName": " col-12 px-3",
+            "insideSpan": true,
+            "content": "John Barret",
+            "labelClassName": " pt-3 pb-0 mb-0 ",
+            "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+            "name": "JohnBarret",
+            "label": "John Barret",
+            "dependentId": 1,
+            "dependentName": "John Barret",
+            "description": "Spouse",
+            "nameAndRelation": "John Barret  (Spouse)",
+            "age": 30,
+            "eligibleForCoverage": null,
+            "reasonForDeny": null,
+            "style": {
+              "fontSize": "0.875rem",
+              "color": "#202020",
+              "fontFamily": "NotoSansRegular",
+              "background": "#FCFCFC"
+            },
+            "reasonForDenyStyle": {
+              "fontSize": "0.875rem",
+              "color": "#202020",
+              "fontFamily": "NotoSansRegular",
+              "background": "#FCFCFC"
+            },
+            "filenameDown": "InsuredIconArrowDown.png",
+            "filenameUp": "sm-arrow-up.svg",
+            "noOfAnsweredQuestions": 0,
+            "answeredAllQuestions": false,
+            "noOfAnsweredQuestionsStyle": {
+              "fontSize": "0.875rem",
+              "color": "#000000",
+              "fontFamily": "NotoSansMedium"
+            }
+          },
+          {
+            "id": 2,
+            "type": "readOnly",
+            "hideLabel": true,
+            "validations": {},
+            "value": "",
+            "contentClassName": " py-3 px-3",
+            "containerClassName": " col-12 px-3",
+            "insideSpan": true,
+            "content": "Jonathan Barret",
+            "labelClassName": " pt-3 pb-0 mb-0 ",
+            "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+            "name": "JonathanBarret",
+            "label": "Jonathan Barret",
+            "dependentId": 2,
+            "dependentName": "John Barret",
+            "description": "Parent",
+            "nameAndRelation": "Jonathan Barret  (Parent)",
+            "age": 60,
+            "eligibleForCoverage": null,
+            "reasonForDeny": null,
+            "answeredAllQuestions": false,
+            "style": {
+              "fontSize": "0.875rem",
+              "color": "#202020",
+              "fontFamily": "NotoSansRegular",
+              "background": "#FCFCFC"
+            },
+            "reasonForDenyStyle": {
+              "fontSize": "0.875rem",
+              "color": "#202020",
+              "fontFamily": "NotoSansRegular",
+              "background": "#FCFCFC"
+            }
+          },
+          {
+            "id": 3,
+            "type": "readOnly",
+            "hideLabel": true,
+            "validations": {},
+            "value": "",
+            "contentClassName": " py-3 px-3",
+            "containerClassName": " col-12 px-3",
+            "insideSpan": true,
+            "content": "Bruce Barret",
+            "labelClassName": " pt-3 pb-0 mb-0 ",
+            "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+            "name": "BruceBarret",
+            "label": "Bruce Barret",
+            "dependentId": 3,
+            "dependentName": "Bruce Barret",
+            "description": "Child",
+            "nameAndRelation": "Bruce Barret  (Child)",
+            "age": 11,
+            "eligibleForCoverage": null,
+            "reasonForDeny": null,
+            "answeredAllQuestions": false,
+            "style": {
+              "fontSize": "0.875rem",
+              "color": "#202020",
+              "fontFamily": "NotoSansRegular",
+              "background": "#FCFCFC"
+            },
+            "reasonForDenyStyle": {
+              "fontSize": "0.875rem",
+              "color": "#202020",
+              "fontFamily": "NotoSansRegular",
+              "background": "#FCFCFC"
+            }
+          },
+          {
+            "id": 4,
+            "type": "readOnly",
+            "hideLabel": true,
+            "validations": {},
+            "value": "",
+            "contentClassName": " py-3 px-3",
+            "containerClassName": " col-12 px-3",
+            "insideSpan": true,
+            "content": "Jane Barret",
+            "labelClassName": " pt-3 pb-0 mb-0 ",
+            "placement": "col-auto col-md-12 pt-4 pb-1 px-4 px-xl-3 ",
+            "name": "JaneBarret",
+            "label": "Jane Barret",
+            "dependentId": 4,
+            "dependentName": "Jane Barret",
+            "description": "Child",
+            "nameAndRelation": "Jane Barret  (Child)",
+            "age": 15,
+            "eligibleForCoverage": null,
+            "reasonForDeny": null,
+            "answeredAllQuestions": false,
+            "style": {
+              "fontSize": "0.875rem",
+              "color": "#202020",
+              "fontFamily": "NotoSansRegular",
+              "background": "#FCFCFC"
+            },
+            "reasonForDenyStyle": {
+              "fontSize": "0.875rem",
+              "color": "#202020",
+              "fontFamily": "NotoSansRegular",
+              "background": "#FCFCFC"
+            }
+          }
+        ]
+      }
+     
+    ],
+
+    [
+      {
+        "displayConfig": {
+          "field": "hideOptions1",
+          "show": false,
+          "renderElements": {
+            "coverageHeader": true
+          },
+          "valueUpdate": {
+            "hideDescription": true,
+            "hideTableCoverage": false,
+            "hideOptions1": false
+          }
+        },
+        "type": "readOnly",
+        "name": "coverageHeader",
+        "label": "CoverageHeader",
+        "hideLabel": true,
+        "hidden": false,
+        "validations": {},
+        "value": "Select Coverage Option",
+        "placement": "col-md-12",
+        "contentClassName": " px-3 py-3",
+        "containerClassName": " col-12 px-3",
+        "display": "inline-block",
+        "style": {
+          "fontSize": "1.5rem",
+          "color": "#202020",
+          "fontFamily": "NotoSansRegular"
+        }
+      }
+    ],
+    [
+      {
+        "displayConfig": {
+          "field": "hideOptions1",
+          "show": false,
+          "renderElements": {
+            "dependentCoverageTable": true
+          },
+          "valueUpdate": {
+            "hideDescription": true,
+            "hideTableCoverage": false,
+            "hideOptions1": false
+          }
+        },
+        "type": "table",
+        "tableId": "dependentCoverageTable",
+        "tableData": "dependentsCoverageTable",
+        "hidden": false,
+        "placement": "col-md-12 px-0",
+        "className": "col-md-12 d-none d-md-block d-lg-block d-xl-block",
+        "mobileClassName": "col-md-12 d-sm-block d-xs-block d-md-none d-lg-none d-xl-none px-0",
+        "columns": [
+          "coverageLevel",
+          "costPerPayPeriod"
+        ],
+        "mobileColumns": ["coverageLevel", "costPerPayPeriod"],
+        "tableDataKeys": ["coverageLevel", ""]
+      }
+    ],
+
+    [
+      {
+        "displayConfig": {
+          "field": "hideDescription",
+          "show": true
+        },
+        "type": "button",
+        "hidden": false,
+        "outline": false,
+        "name": "backProductButton",
+        "id": "backProductButton",
+        "label": "Back",
+        "apiCallURL": ["/getCoverageDetails"],
+        "apiCallArray": true,
+
+        "placement": " col-12 col-md-2 col-lg-2 offset-lg-8 offset-md-8 offset-0",
+        "className": "px-3 py-1 mb-md-3 w-100"
+      },
+
+      {
+        "displayConfig": {
+          "field": "hideDescription",
+          "show": true,
+
+          "valueUpdate": {
+            "hideDescription": true,
+            "hideTableCoverage": false,
+            "hideOptions1": true
+          }
+        },
+        "type": "button",
+        "hidden": false,
+        "outline": false,
+        "name": "continueProductButton",
+        "id": "continueProductButton",
+        "label": "Continue",
+        "apiCallURL": ["/getCoverageDetails"],
+        "apiCallArray": true,
+
+        "placement": " col-12 col-md-2 col-lg-2 py-3 py-lg-0 py-md-0",
+        "className": "px-3 py-1 mb-md-3 w-100"
+      }
+    ],
+    [
+      {
+        "displayConfig": {
+          "field": "hideOptions1",
+          "show": false,
+
+          "renderElements": {
+            "backProductButton": false,
+            "continueTableCoverageButton": false,
+            "policyPrefSec": false,
+            "coveragePrefSec": false,
+            "continueFormButton": true
+          },
+          "valueUpdate": {
+            "hideDescription": false,
+            "hideOptions1": false
+          }
+        },
+
+        "type": "button",
+        "id": "backProductButton1",
+        "hidden": false,
+        "outline": true,
+        "name": "backProductButton1",
+        "rearSector": "",
+        "showElement": true,
+        "label": "Back",
+        "validations": {},
+        "placement": " col-12 col-md-2 col-lg-2 offset-lg-6 offset-md-5 offset-0 ml-md-auto ",
+        "className": "px-3 py-1 mb-md-3 w-100"
+      },
+
+      {
+        "displayConfig": {
+          "field": "hideOptions1",
+          "show": false,
+          "renderElements": {
+            "productDescription": true,
+            "continueTableCoverageButton": true
+          },
+          "valueUpdate": {
+            "hideTableCoverage": true,
+            "hideDescription": true,
+            "hideOptions1": false
+          }
+        },
+
+        "type": "button",
+        "hidden": false,
+        "outline": false,
+        "disabled1": false,
+        "name": "continueTableCoverageButton",
+        "id": "continueTableCoverageButton",
+        "label": "Continue",
+        "apiCallURL": ["/getCoverageDetails"],
+        "apiCallArray": true,
+        "widePlacement": " col-12 col-md-5 col-lg-4 py-3 py-lg-0 py-md-0",
+        "placement": " col-12 col-md-4 col-lg-2 py-3 py-lg-0 py-md-0",
+        "className": "px-3 py-1 mb-md-3 w-100"
+      }
+    ],
+    [
+     
+      {
+        "type": "checkbox",
+        "visibility": "hidden",
+
+        "hidden": true,
+        "name": "hideDescription",
+        "label": "HideDescription",
+        "placement": "",
+
+        "defaultValue": false,
+        "value": false,
+
+        "valueType": "bool",
+
+        "rearSector": ""
+      },
+
+      {
+        "type": "checkbox",
+        "visibility": "hidden",
+
+        "hidden": true,
+        "name": "hideTableCoverage",
+        "label": "HideTableCoverage",
+        "placement": "",
+
+        "defaultValue": false,
+        "value": false,
+
+        "valueType": "bool",
+
+        "rearSector": ""
+      },
+
+      {
+        "type": "checkbox",
+        "visibility": "hidden",
+
+        "hidden": true,
+        "name": "hideOptions1",
+        "label": "HideOptions",
+        "placement": "",
+
+        "defaultValue": false,
+        "value": false,
+
+        "valueType": "bool",
+
+        "rearSector": ""
+      }
+    ]
+  ]
+ 
+}

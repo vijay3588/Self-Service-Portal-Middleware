@@ -1,8 +1,6 @@
 {
   "triConfig": {
-    "leftCard": {
-  
-    },
+    "leftCard": {},
     "rightCard": {
       "element": [
         "Retrieve User ID",
@@ -49,12 +47,11 @@
         "label": "Please enter the following information and continue.",
         "valuee": "Please enter the following information and continue.",
         "placementt": " col-12  ",
-        "classNameWrapper":"py-3",
-        "containerClassName": "py-0 px-3 " ,
+        "classNameWrapper": "py-3",
+        "containerClassName": "py-0 px-3 ",
         "fontColor": "#202020",
         "insideSpan": true,
         "content": "Please enter the following information and continue."
-
       }
     ],
     [
@@ -83,7 +80,7 @@
         },
 
         "placement": " col-12  col-lg-12 col-xl-6 col-md-12 mx-1 pl-3 pr-2 pr-xl-0 px-xl-3 mx-xl-0  ",
-        "classNameWrapper":"py-3"
+        "classNameWrapper": "py-3"
       },
 
       {
@@ -108,11 +105,9 @@
           }
         },
         "placement": "col-12  col-lg-12 col-xl-6 col-md-12 mx-1 pl-3 pr-2 pr-xl-0 px-xl-3 mx-xl-0  ",
-        "classNameWrapper":"py-3"
-      }
-    ],
+        "classNameWrapper": "py-3"
+      },
 
-    [
       {
         "type": "text",
         "name": "employeeId",
@@ -135,7 +130,29 @@
           }
         },
         "placement": "col-12  col-lg-12 col-xl-6 col-md-12 mx-1 pl-3 pr-2 pr-xl-0 px-xl-3 mx-xl-0  ",
-        "classNameWrapper":"py-3"
+        "classNameWrapper": "py-3"
+      },
+
+      {
+        "type": "text",
+        "name": "SSN",
+        "shouldTriggerError": true,
+        "rearSector": "sSN",
+        "label": "SSN",
+        "placeholder": "Enter SSN",
+        "validations": {
+          "string": {
+            "required": "SSN is required",
+            "min": { "limit": 9, "message": "SSN must have 9 digits" },
+            "max": { "limit": 9, "message": "SSN must have 9 digits" },
+            "matches": {
+              "regex": "^[0-9]*$",
+              "message": "SSN must have 9 digits"
+            }
+          }
+        },
+        "placement": "col-lg-6 mx-md-1 mx-0 pl-3 pr-2 pr-xl-0 px-xl-3 mx-xl-0 ",
+        "classNameWrapper": "py-3"
       },
       {
         "type": "date",
@@ -164,7 +181,7 @@
           }
         },
         "placement": "col-12  col-lg-12 col-xl-6 col-md-12 mx-1 pl-3 pr-2 pr-xl-0 px-xl-3 mx-xl-0  ",
-        "classNameWrapper":"py-3"
+        "classNameWrapper": "py-3"
       }
     ]
   ]

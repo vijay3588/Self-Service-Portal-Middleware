@@ -50,11 +50,11 @@
       {
         "type": "readOnly",
         "disabled": true,
-        "name": "Toggle Field On/Off",
+        "name": "Check box to toggle field off in display",
         "rearSector": "shortName",
-        "label": "Toggle Field On/Off",
+        "label": "Check box to toggle field off in display",
         "mapping": true,
-        "labelTitle": "Toggle Field On/Off",
+        "labelTitle": "Check box to toggle field off in display",
         "placement": "col-md-2 col-sm-6 col-lg-2 col-xs-6 col-6 ",
         "header": false,
         "validations": {

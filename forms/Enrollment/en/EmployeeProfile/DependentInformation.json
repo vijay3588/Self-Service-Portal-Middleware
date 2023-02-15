@@ -242,11 +242,9 @@
                     "value": "addDependentValidations",
                     "message": "Please enter your SSN"
                   },
-                  "min": { "limit": 9, "message": "SSN must have 9 digits" },
-                  "max": { "limit": 9, "message": "SSN must have 9 digits" },
                   "matches": {
-                    "regex": "^[0-9]*$",
-                    "message": "SSN must have 9 digits"
+                    "regex": "^(?!000|666)[0-8][0-9]{2}-(?!00)[0-9]{2}-(?!0000)[0-9]{4}$",
+                    "message": "SSN must have this structure 123-45-6789"
                   }
                 }
               },
@@ -320,7 +318,7 @@
               "inputs": [
                 { "label": "Male", "value": "gMale" },
                 { "label": "Female", "value": "gFemale" },
-                { "label": "Undisclosed", "value": "undisclosed" }
+                { "label": "Undisclosed", "value": "gUndisclosed" }
               ]
             }
           ],
@@ -333,6 +331,7 @@
               "classNameWrapper": "py-3",
               "placeholder": "Enter DOB",
               "placement": "col-12 col-lg-4 col-md-4 col-sm-3",
+              "disableFutureDates": true,
               "displayConfig": {
                 "field": "addDependentValidations",
 
@@ -347,42 +346,16 @@
                     "value": "alternateAddressValidations",
                     "message": "Please enter your DOB"
                   },
+                  "matches": {
+                    "regex": "^(19|20)[0-9]{2}[-](0?[1-9]|1[0-2])[-](0?[1-9]|1[0-9]|2[0-9]|3[01])$",
+                    "message": "DOB must have this structure MM/DD/YYYY"
+                  },
                   "min": {
                     "limit": 6,
-                    "message": "minlengeth is 6"
+                    "message": "minlength is 6"
                   }
                 }
               }
-            },
-            {
-              "type": "radioButtonGroup",
-              "name": "dependentFullTimeStudent",
-              "rearSector": "options",
-              "label": "Is this Dependent full time student?",
-              "labelClassName": "col-12 py-3",
-              "placement": "col-12  col-lg-4 col-md-4 col-sm-4 pt-2",
-              "radioClassWrapper": "pb-0 custom-control-inline",
-              "isRadio": true,
-              "displayConfig": {
-                "field": "addDependentValidations",
-
-                "valueUpdate": {
-                  "addDependentValidations": false
-                },
-                "validateField": ["dependentFullTimeStudent"]
-              },
-              "validations": {
-                "string": {
-                  "validationRequiredOnTrue": {
-                    "value": "addDependentValidations",
-                    "message": "Please choose the option"
-                  }
-                }
-              },
-              "inputs": [
-                { "label": "Yes", "value": "yes" },
-                { "label": "No", "value": "no" }
-              ]
             },
             {
               "type": "radioButtonGroup",
@@ -443,8 +416,7 @@
           [
             {
               "type": "checkbox",
-              "name": "liveInSameAddress",
-
+              "name": "liveInSameAddress",         
               "populateValue": {
                 "formName": "EmployeeProfile",
                 "from": [
@@ -462,6 +434,14 @@
                   "DependentInformation.dependentState",
                   "DependentInformation.dependentZipCode",
                   "DependentInformation.dependentCountry"
+                ],
+                "hiddenValues": [
+                  "dependentAddressLine1",
+                  "dependentAddressLine2",
+                  "dependentCity",
+                  "dependentState",
+                  "dependentZipCode",
+                  "dependentCountry"
                 ]
               },
 
@@ -472,6 +452,7 @@
           ],
           [
             {
+              "id": "dependentAddressLine1",
               "type": "text",
               "name": "dependentAddressLine1",
               "rearSector": "addressLine1",
@@ -505,6 +486,7 @@
               }
             },
             {
+              "id": "dependentAddressLine2",
               "type": "text",
               "name": "dependentAddressLine2",
               "rearSector": "addressLine2",
@@ -529,6 +511,7 @@
           ],
           [
             {
+              "id": "dependentCity",
               "type": "text",
               "name": "dependentCity",
               "rearSector": "city",
@@ -563,6 +546,7 @@
               }
             },
             {
+              "id": "dependentState",
               "type": "select",
               "name": "dependentState",
               "rearSector": "state",
@@ -595,6 +579,7 @@
               }
             },
             {
+              "id": "dependentZipCode",
               "type": "text",
               "name": "dependentZipCode",
               "rearSector": "zipcode",
@@ -629,6 +614,7 @@
               }
             },
             {
+              "id": "dependentCountry",
               "type": "select",
               "name": "dependentCountry",
               "rearSector": "country",
@@ -732,24 +718,50 @@
 
   ],
   "sectionPanels": {
-    "panel": [0, 1, 2, 3],
+    "panel": [0, 1, 2],
     "sections": [
       {
         "noGroupStart": 0,
-        "noGroupEnd": 3
+        "noGroupEnd": 2
       }
     ]
   },
   "elements": [
     [
       {
+        "id": "dependentTitle",
         "type": "readOnly",
-        "name": "Information",
-        "label": "Information",
+        "name": "dependentTitle",
+        "label": "dependentTitle",
         "hideLabel": true,
         "validations": {},
-        "value": "You have successfully added a dependent. You can add more dependents by continuing the same process. Once you have added all your eligible dependents, click ‘Continue’ to proceed to the next screen.",
-        "placement": "col-md-12",
+        "value": "Kindly click on the 'Add Dependent' button to add eligible dependents you want to cover under your insurance plans. If you do not wish to add any dependent click on the 'Continue' button to proceed further.",
+        "placement": "col-md-12 px-5 mx-3",
+        "containerClassName": " col-12",
+        "display": "inline-block"
+      },
+      {
+        "id": "addedDependentTitle",
+        "type": "readOnly",
+        "name": "addedDependentTitle",
+        "label": "addedDependentTitle",
+        "hideLabel": true,
+        "validations": {},
+        "value": "You have successfully added a dependent.",
+        "placement": "col-md-12 px-5 mx-3",
+        "containerClassName": " col-12",
+        "display": "inline-block",
+        "labelClassName": "addedLabelColor"
+      },
+      {
+        "id": "addedDependentMessage",
+        "type": "readOnly",
+        "name": "addedDependentMessage",
+        "label": "addedDependentMessage",
+        "hideLabel": true,
+        "validations": {},
+        "value": "You can add more dependents by continuing the same process. Once you have added all your eligible dependents, click ‘Continue’ to proceed to the next screen.",
+        "placement": "col-md-12 px-5 mx-3",
         "containerClassName": " col-12",
         "display": "inline-block"
       }
@@ -760,7 +772,7 @@
         "tableId": "dependentTable",
         "tableData": "dependentsTable",
         "placement": "col-md-12",
-        "className": "col-md-12 d-none d-md-block d-lg-block d-xl-block",
+        "className": "col-md-12 d-none d-md-block d-lg-block d-xl-block px-4 mx-2",
         "mobileClassName": "col-md-12 d-sm-block d-xs-block d-md-none d-lg-none d-xl-none px-0",
         "columns": [
           "dependentFullName",
@@ -787,7 +799,7 @@
         "modalName": "addDependent",
 
         "showElement": true,
-        "placement": "col-lg-3 py-3",
+        "placement": "col-lg-3 py-3 mx-5 px-0",
         "header": false,
         "outerDiv": true,
 
@@ -816,25 +828,6 @@
         "label": "Verify edit Dependent",
         "hidden": true,
         "placement": ""
-      }
-    ],
-    [
-      {
-        "id": "enrollmentSummaryBtn",
-        "type": "button",
-        "name": "Enrollment Summary",
-        "className": "my-3 d-flex my-lg-4 my-md-4 current-benefits-button",
-        "hidden": false,
-        "config": {
-          "type": "redirect",
-          "redirectURL": "/enrollment/enrollmentSummary"
-        },
-        "label": "Enrollment Summary",
-        "apiCall": true,
-        "placement": "",
-        "header": false,
-        "outerDiv": true,
-        "validations": {}
       }
     ]
    

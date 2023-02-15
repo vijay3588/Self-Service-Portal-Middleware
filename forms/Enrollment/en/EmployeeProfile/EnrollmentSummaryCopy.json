@@ -1,0 +1,742 @@
+{
+    "elements": [
+        [
+            {
+                "type": "productTable",
+                "elements": [
+                    {
+                        "id": "productAccidentInsurance",
+                        "type": "table",
+                        "name": "elegibleBenefits",
+                        "label": "2023 Eligible Benefits",
+                        "placement": "col-lg-12 col-md-12 text-20",
+                        "value": "2023 Eligible Benefits",
+                        "config": {
+                            "className": "d-flex pb-md-3 pb-2 pb-lg-3 listContainerTitle",
+                            "style": {
+                                "color": "#001F52",
+                                "fontSize": "1.25rem",
+                                "lineHeight": "1.688rem",
+                                "fontWeight": "600"
+                            }
+                        },
+                        "content": {
+                            "title": "Accident Insurance",
+                            "titleImage": "img_bank_info.png",
+                            "id": "AccidentInsuranceSummary",
+                            "name": "AccidentInsurance",
+                            "tables": [
+                                {
+                                    "tableId": "AccidentInsurance",
+                                    "isMultiple": true,
+                                    "hasActions": true,
+                                    "mobileActionsHeader": "",
+                                    "tableData": "dependentsTable",
+                                    "actionsStyle": {
+                                        "backgroundColor": "#0065AC",
+                                        "color": "#FFFFFF"
+                                    },
+                                    "multiConfig": {
+                                        "maxAdds": 6,
+                                        "tableHeaderStyle": {
+                                            "backgroundColor": "#0065AC"
+                                        },
+                                        "tableHeader": [
+                                            {
+                                                "value": "COVERAGE OPTION",
+                                                "id": "COVERAGEOPTION",
+                                                "config": {
+                                                    "className": "col-6",
+                                                    "style": {
+                                                        "backgroundColor": "#0065AC",
+                                                        "color": "#FFFFFF"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "value": "COST PER PAY PERIOD",
+                                                "id": "COSTPERPAYPERIOD",
+                                                "config": {
+                                                    "className": "col-4 text-right",
+                                                    "style": {
+                                                        "backgroundColor": "#0065AC",
+                                                        "color": "#FFFFFF"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "value": "ANNUAL COST",
+                                                "id": "ANNUALCOST",
+                                                "config": {
+                                                    "className": "col-4 text-right",
+                                                    "style": {
+                                                        "backgroundColor": "#0065AC",
+                                                        "color": "#FFFFFF"
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "tableRow": [
+                                            [
+                                                {
+                                                    "value": "Employee + Spouse",
+                                                    "valueType": "expression",
+                                                    "id": "COVERAGEOPTION"
+                                                },
+                                                {
+                                                    "value": "$10.22",
+                                                    "valueType": "expression",
+                                                    "id": "COSTPERPAYPERIOD",
+                                                    "className": "text-right"
+                                                },
+                                                {
+                                                    "value": "$122.64",
+                                                    "valueType": "expression",
+                                                    "id": "ANNUALCOST",
+                                                    "className": "text-right"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "value": "Spouse + Bruce Barret",
+                                                    "valueType": "expression",
+                                                    "id": "COVERAGEOPTION"
+                                                },
+                                                {
+                                                    "value": "$12.05",
+                                                    "valueType": "expression",
+                                                    "id": "COSTPERPAYPERIOD",
+                                                    "className": "text-right"
+                                                },
+                                                {
+                                                    "value": "$144.60",
+                                                    "valueType": "expression",
+                                                    "id": "ANNUALCOST",
+                                                    "className": "text-right"
+                                                }
+                                            ]
+                                        ],
+                                        "tableExpandedRow": [
+                                            {
+                                                "value": "tableExpandedRow 1",
+                                                "id": "PRIMARYBENEFICIARY"
+                                            },
+                                            {
+                                                "value": "tableExpandedRow 2",
+                                                "id": "PERCENTAGEOFALLOCATION"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": "productCriticalIllness",
+                        "type": "table",
+                        "name": "elegibleBenefits",
+                        "label": "2023 Eligible Benefits",
+                        "placement": "col-lg-12 col-md-12 text-20",
+                        "value": "2023 Eligible Benefits",
+                        "config": {
+                            "className": "d-flex pb-md-3 pb-2 pb-lg-3 listContainerTitle",
+                            "style": {
+                                "color": "#001F52",
+                                "fontSize": "1.25rem",
+                                "lineHeight": "1.688rem",
+                                "fontWeight": "600"
+                            }
+                        },
+                        "content": {
+                            "title": "Critical Illness",
+                            "legalTitle": "Legal",
+                            "identityTheftTitle": "Identity-Theft",
+                            "titleImage": "img_bank_info.png",
+                            "tables": [
+                                {
+                                    "tableId": "criticalIllness",
+                                    "isMultiple": true,
+                                    "hasActions": true,
+                                    "mobileActionsHeader": "",
+                                    "tableData": "dependentsTable",
+                                    "actionsStyle": {
+                                        "backgroundColor": "#0065AC",
+                                        "color": "#FFFFFF"
+                                    },
+                                    "multiConfig": {
+                                        "maxAdds": 6,
+                                        "tableHeaderStyle": {
+                                            "backgroundColor": "#0065AC"
+                                        },
+                                        "tableHeader": [
+                                            {
+                                                "value": "COVERAGE OPTION",
+                                                "id": "COVERAGEOPTION",
+                                                "config": {
+                                                    "className": "col-6",
+                                                    "style": {
+                                                        "backgroundColor": "#0065AC",
+                                                        "color": "#FFFFFF"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "value": "COST PER PAY PERIOD",
+                                                "id": "COSTPERPAYPERIOD",
+                                                "config": {
+                                                    "className": "col-4 text-right",
+                                                    "style": {
+                                                        "backgroundColor": "#0065AC",
+                                                        "color": "#FFFFFF"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "value": "ANNUAL COST",
+                                                "id": "ANNUALCOST",
+                                                "config": {
+                                                    "className": "col-4 text-right",
+                                                    "style": {
+                                                        "backgroundColor": "#0065AC",
+                                                        "color": "#FFFFFF"
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "tableRow": [
+                                            [
+                                                {
+                                                    "value": "Employee ($20,000.00)",
+                                                    "valueType": "expression",
+                                                    "id": "COVERAGEOPTION"
+                                                },
+                                                {
+                                                    "value": "$10.22",
+                                                    "valueType": "expression",
+                                                    "id": "COSTPERPAYPERIOD",
+                                                    "className": "text-right"
+                                                },
+                                                {
+                                                    "value": "$122.64",
+                                                    "valueType": "expression",
+                                                    "id": "ANNUALCOST",
+                                                    "className": "text-right"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "value": "Spouse ($5,000.00)",
+                                                    "valueType": "expression",
+                                                    "id": "COVERAGEOPTION"
+                                                },
+                                                {
+                                                    "value": "$12.05",
+                                                    "valueType": "expression",
+                                                    "id": "COSTPERPAYPERIOD",
+                                                    "className": "text-right"
+                                                },
+                                                {
+                                                    "value": "$144.60",
+                                                    "valueType": "expression",
+                                                    "id": "ANNUALCOST",
+                                                    "className": "text-right"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": "productEmployeeProfile",
+                        "type": "table",
+                        "name": "elegibleBenefits",
+                        "label": "2023 Eligible Benefits",
+                        "placement": "col-lg-12 col-md-12 text-20",
+                        "value": "2023 Eligible Benefits",
+                        "config": {
+                            "className": "d-flex pb-md-3 pb-2 pb-lg-3 listContainerTitle",
+                            "style": {
+                                "color": "#001F52",
+                                "fontSize": "1.25rem",
+                                "lineHeight": "1.688rem",
+                                "fontWeight": "600"
+                            }
+                        },
+                        "content": {
+                            "title": "Employee Profile",
+                            "legalTitle": "Legal",
+                            "identityTheftTitle": "Identity-Theft",
+                            "titleImage": "img_bank_info.png",
+                            "tables": [
+                                {
+                                    "tableId": "employeeProfile",
+                                    "isMultiple": true,
+                                    "hasActions": true,
+                                    "mobileActionsHeader": "",
+                                    "actionsStyle": {
+                                        "backgroundColor": "#0065AC",
+                                        "color": "#FFFFFF"
+                                    },
+                                    "multiConfig": {
+                                        "maxAdds": 5,
+                                        "tableHeaderStyle": {
+                                            "backgroundColor": "#0065AC"
+                                        },
+                                        "tableHeader": [
+                                            {
+                                                "value": "NAME",
+                                                "id": "empName",
+                                                "config": {
+                                                    "className": "col-3",
+                                                    "style": {
+                                                        "backgroundColor": "#0065AC",
+                                                        "color": "#FFFFFF"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "value": "ADDRESS",
+                                                "id": "empAddress",
+                                                "config": {
+                                                    "className": "col-3 text-left",
+                                                    "style": {
+                                                        "backgroundColor": "#0065AC",
+                                                        "color": "#FFFFFF"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "value": "PHONE NUMBER",
+                                                "id": "empPhone",
+                                                "config": {
+                                                    "className": "col-2 text-left",
+                                                    "style": {
+                                                        "backgroundColor": "#0065AC",
+                                                        "color": "#FFFFFF"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "value": "EMAIL",
+                                                "id": "empEmail",
+                                                "config": {
+                                                    "className": "col-2 text-left",
+                                                    "style": {
+                                                        "backgroundColor": "#0065AC",
+                                                        "color": "#FFFFFF"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "value": "PREFERRED CONTACT METHOD",
+                                                "id": "empContact",
+                                                "config": {
+                                                    "className": "col-2 text-left",
+                                                    "style": {
+                                                        "backgroundColor": "#0065AC",
+                                                        "color": "#FFFFFF"
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "tableRow": [
+                                            [
+                                                {
+                                                    "value": "Ann Barret",
+                                                    "valueType": "expression",
+                                                    "id": "empName"
+                                                },
+                                                {
+                                                    "value": "1001 Timberlane Road Denver CO 80014",
+                                                    "valueType": "expression",
+                                                    "id": "empAddress",
+                                                    "className": "text-left"
+                                                },
+                                                {
+                                                    "value": "(617)989-0104",
+                                                    "valueType": "expression",
+                                                    "id": "empPhone",
+                                                    "className": "text-left"
+                                                },
+                                                {
+                                                    "value": "annbarret@gmail.com",
+                                                    "valueType": "expression",
+                                                    "id": "empEmail",
+                                                    "className": "text-left"
+                                                },
+                                                {
+                                                    "value": "Email",
+                                                    "valueType": "expression",
+                                                    "id": "empContact",
+                                                    "className": "text-left"
+                                                }
+                                            ]
+                                        ],
+                                        "tableExpandedRow": [
+                                            {
+                                                "value": "tableExpandedRow 1",
+                                                "id": "empName"
+                                            },
+                                            {
+                                                "value": "tableExpandedRow 2",
+                                                "id": "empAddress"
+                                            },
+                                            {
+                                                "value": "tableExpandedRow 3",
+                                                "id": "empPhone"
+                                            },
+                                            {
+                                                "value": "tableExpandedRow 4",
+                                                "id": "empEmail"
+                                            },
+                                            {
+                                                "value": "tableExpandedRow 5",
+                                                "id": "empContact"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": "productDependantInfo",
+                        "type": "table",
+                        "name": "elegibleBenefits",
+                        "label": "2023 Eligible Benefits",
+                        "placement": "col-lg-12 col-md-12 text-20",
+                        "value": "2023 Eligible Benefits",
+                        "config": {
+                            "className": "d-flex pb-md-3 pb-2 pb-lg-3 listContainerTitle",
+                            "style": {
+                                "color": "#001F52",
+                                "fontSize": "1.25rem",
+                                "lineHeight": "1.688rem",
+                                "fontWeight": "600"
+                            }
+                        },
+                        "content": {
+                            "title": "Dependent Information",
+                            "legalTitle": "Legal",
+                            "identityTheftTitle": "Identity-Theft",
+                            "titleImage": "img_bank_info.png",
+                            "tables": [
+                                {
+                                    "tableId": "5",
+                                    "isMultiple": true,
+                                    "hasActions": true,
+                                    "mobileActionsHeader": "",
+                                    "tableData": "dependentsTable",
+                                    "actionsStyle": {
+                                        "backgroundColor": "#0065AC",
+                                        "color": "#FFFFFF"
+                                    },
+                                    "multiConfig": {
+                                        "maxAdds": 6,
+                                        "tableHeaderStyle": {
+                                            "backgroundColor": "#0065AC"
+                                        },
+                                        "tableHeader": [
+                                            {
+                                                "value": "NAME",
+                                                "id": "dependName",
+                                                "config": {
+                                                    "className": "col-3",
+                                                    "style": {
+                                                        "backgroundColor": "#0065AC",
+                                                        "color": "#FFFFFF"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "value": "RELATIONSHIP",
+                                                "id": "dependRelation",
+                                                "config": {
+                                                    "className": "col-3 text-left",
+                                                    "style": {
+                                                        "backgroundColor": "#0065AC",
+                                                        "color": "#FFFFFF"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "value": "GENDER",
+                                                "id": "dependGender",
+                                                "config": {
+                                                    "className": "col-3 text-left",
+                                                    "style": {
+                                                        "backgroundColor": "#0065AC",
+                                                        "color": "#FFFFFF"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "value": "DATE OF BIRTH",
+                                                "id": "dependDOB",
+                                                "config": {
+                                                    "className": "col-3 text-left",
+                                                    "style": {
+                                                        "backgroundColor": "#0065AC",
+                                                        "color": "#FFFFFF"
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "tableRow": [
+                                            [
+                                                {
+                                                    "value": "John Barret",
+                                                    "valueType": "expression",
+                                                    "id": "dependName"
+                                                },
+                                                {
+                                                    "value": "Spouse",
+                                                    "valueType": "expression",
+                                                    "id": "dependRelation",
+                                                    "className": "text-left"
+                                                },
+                                                {
+                                                    "value": "Male",
+                                                    "valueType": "expression",
+                                                    "id": "dependGender",
+                                                    "className": "text-left"
+                                                },
+                                                {
+                                                    "value": "08/20/1976",
+                                                    "valueType": "expression",
+                                                    "id": "dependDOB",
+                                                    "className": "text-left"
+                                                }
+                                            ]
+                                        ],
+                                        "tableExpandedRow": [
+                                            {
+                                                "value": "tableExpandedRow 1",
+                                                "id": "dependName"
+                                            },
+                                            {
+                                                "value": "tableExpandedRow 2",
+                                                "id": "dependRelation"
+                                            },
+                                            {
+                                                "value": "tableExpandedRow 2",
+                                                "id": "dependGender"
+                                            },
+                                            {
+                                                "value": "tableExpandedRow 2",
+                                                "id": "dependDOB"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": "productBeneficiaryInfo",
+                        "type": "table",
+                        "name": "elegibleBenefits",
+                        "label": "2023 Eligible Benefits",
+                        "placement": "col-lg-12 col-md-12 text-20",
+                        "value": "2023 Eligible Benefits",
+                        "config": {
+                            "className": "d-flex pb-md-3 pb-2 pb-lg-3 listContainerTitle",
+                            "style": {
+                                "color": "#001F52",
+                                "fontSize": "1.25rem",
+                                "lineHeight": "1.688rem",
+                                "fontWeight": "600"
+                            }
+                        },
+                        "content": {
+                            "title": "Beneficiary Information",
+                            "legalTitle": "Legal",
+                            "identityTheftTitle": "Identity-Theft",
+                            "titleImage": "img_bank_info.png",
+                            "collapses": [
+                                {
+                                    "title": "Critical Illness Insurance",
+                                    "body": [
+                                        {
+                                            "title": "PRIMARY BENEFICIARY"
+                                        }
+                                    ],
+                                    "tables": [
+                                        {
+                                            "tableId": "5",
+                                            "isMultiple": true,
+                                            "hasActions": true,
+                                            "dataKey": "dependentsInfo",
+                                            "actionsHeader": "Actions",
+                                            "mobileActionsHeader": "",
+                                            "editKey": "editDependentValidations",
+                                            "editModal": "addDependent",
+                                            "tableData": "dependentsTable",
+                                            "actionsStyle": {
+                                                "backgroundColor": "#0065AC",
+                                                "color": "#FFFFFF"
+                                            },
+                                            "multiConfig": {
+                                                "maxAdds": 3,
+                                                "tableHeaderStyle": {
+                                                    "backgroundColor": "#0065AC"
+                                                },
+                                                "tableHeader": [
+                                                    {
+                                                        "value": "PRIMARY BENEFICIARY",
+                                                        "id": "PRIMARYBENEFICIARY",
+                                                        "config": {
+                                                            "className": "col-4",
+                                                            "style": {
+                                                                "backgroundColor": "#0065AC",
+                                                                "color": "#FFFFFF"
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "value": "PERCENTAGE OF ALLOCATION",
+                                                        "id": "PERCENTAGEOFALLOCATION",
+                                                        "config": {
+                                                            "className": "col-4 text-right",
+                                                            "style": {
+                                                                "backgroundColor": "#0065AC",
+                                                                "color": "#FFFFFF"
+                                                            }
+                                                        }
+                                                    }
+                                                ],
+                                                "tableRow": [
+                                                    [
+                                                        {
+                                                            "value": "John Barret",
+                                                            "valueType": "expression",
+                                                            "id": "PRIMARYBENEFICIARY"
+                                                        },
+                                                        {
+                                                            "value": "50%",
+                                                            "valueType": "expression",
+                                                            "id": "PERCENTAGEOFALLOCATION",
+                                                            "className": "text-right"
+                                                        }
+                                                    ],
+                                                    [
+                                                        {
+                                                            "value": "Bruce Barret",
+                                                            "valueType": "expression",
+                                                            "id": "PRIMARYBENEFICIARY"
+                                                        },
+                                                        {
+                                                            "value": "75%",
+                                                            "valueType": "expression",
+                                                            "id": "PERCENTAGEOFALLOCATION",
+                                                            "className": "text-right"
+                                                        }
+                                                    ]
+                                                ],
+                                                "tableExpandedRow": [
+                                                    {
+                                                        "value": "tableExpandedRow 1",
+                                                        "id": "PRIMARYBENEFICIARY"
+                                                    },
+                                                    {
+                                                        "value": "tableExpandedRow 2",
+                                                        "id": "PERCENTAGEOFALLOCATION"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "tableId": "10",
+                                            "isMultiple": true,
+                                            "hasActions": true,
+                                            "dataKey": "dependentsInfo",
+                                            "actionsHeader": "Actions",
+                                            "mobileActionsHeader": "",
+                                            "editKey": "editDependentValidations",
+                                            "editModal": "addDependent",
+                                            "tableData": "dependentsTable",
+                                            "actionsStyle": {
+                                                "backgroundColor": "#0065AC",
+                                                "color": "#FFFFFF"
+                                            },
+                                            "multiConfig": {
+                                                "maxAdds": 3,
+                                                "tableHeaderStyle": {
+                                                    "backgroundColor": "#0065AC"
+                                                },
+                                                "tableHeader": [
+                                                    {
+                                                        "value": "CONTINGENT BENEFICIARY",
+                                                        "id": "CONTINGENTBENEFICIARY",
+                                                        "config": {
+                                                            "className": "col-4",
+                                                            "style": {
+                                                                "backgroundColor": "#0065AC",
+                                                                "color": "#FFFFFF"
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "value": "PERCENTAGE OF ALLOCATION",
+                                                        "id": "PERCENTAGEOFALLOCATION",
+                                                        "config": {
+                                                            "className": "col-4 text-right",
+                                                            "style": {
+                                                                "backgroundColor": "#0065AC",
+                                                                "color": "#FFFFFF"
+                                                            }
+                                                        }
+                                                    }
+                                                ],
+                                                "tableRow": [
+                                                    [
+                                                        {
+                                                            "value": "John Barret",
+                                                            "valueType": "expression",
+                                                            "id": "PRIMARYBENEFICIARY"
+                                                        },
+                                                        {
+                                                            "value": "50%",
+                                                            "valueType": "expression",
+                                                            "id": "PERCENTAGEOFALLOCATION",
+                                                            "className": "text-right"
+                                                        }
+                                                    ],
+                                                    [
+                                                        {
+                                                            "value": "Bruce Barret",
+                                                            "valueType": "expression",
+                                                            "id": "PRIMARYBENEFICIARY"
+                                                        },
+                                                        {
+                                                            "value": "75%",
+                                                            "valueType": "expression",
+                                                            "id": "PERCENTAGEOFALLOCATION",
+                                                            "className": "text-right"
+                                                        }
+                                                    ]
+                                                ],
+                                                "tableExpandedRow": [
+                                                    {
+                                                        "value": "tableExpandedRow 1",
+                                                        "id": "PRIMARYBENEFICIARY"
+                                                    },
+                                                    {
+                                                        "value": "tableExpandedRow 2",
+                                                        "id": "PERCENTAGEOFALLOCATION"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    ]
+}
